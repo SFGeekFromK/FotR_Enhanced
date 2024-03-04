@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+
+<Game_Object_Files>
+
+	<!-- These two need to be at the top -->
+	<File>Mod_Id.xml</File>
+	<File>Debug_Dummies.xml</File>
+	<File>Props\Master_Prop_File.xml</File>
+	
+	<!-- Easier to load Death Clones before Templates -->
+	<File>Units\Death_Clones_Master.xml</File>
+	<File>Units\Death_Clones_Coresaga.xml</File>
+	<File>Units\Death_Clones_FotR.xml</File>
+	
+	<!-- Load all templates to reduce looping -->
+	<File>Units\Templates_Dummy.xml</File>
+	<File>Units\Templates_Instant_Action.xml</File>
+	<File>Units\Templates_Jedi.xml</File>
+	<File>Units\Templates_Master.xml</File>
+	<File>Units\Templates_Fighters.xml</File>
+	<File>Units\Templates_Corvettes.xml</File>
+	<File>Units\Templates_Frigates.xml</File>
+	<File>Units\Templates_Capitals.xml</File>
+	<File>Units\Templates_Master_Ground.xml</File>
+	<File>Units\Templates_Ground.xml</File>
+	<File>Units\Templates_Ground_Militia.xml</File>
+	<File>Units\Templates_BombingRunUnits.xml</File>
+	<File>Structures\Templates_Ground_Structures.xml</File>
+	<File>Structures\Templates_Space_Structures.xml</File>
+	<File>Structures\Templates_Basic_Resource_Structures.xml</File>
+	<File>Structures\Template_Skirmish_Space_Structures.xml</File>
+	<File>Structures\Template_SurvivalBases.xml</File>
+
+	<!--Main Files -->
+	<File>BlackMarketItems.xml</File> <!-- Game looks for it -->
+	<File>Containers.xml</File>
+	<File>Display_Structures_Dummies.xml</File>
+	<File>Era_Dummies.xml</File>
+	<File>GroundIndigenous.xml</File>
+	<File>GroundCompaniesIndigenous.xml</File>
+	<File>Influence_Structures_Dummies.xml</File>
+	<File>LandPrimarySkydomes.xml</File>
+	<File>LandSecondarySkydomes.xml</File>
+	<File>LayerDummies.xml</File>
+	<File>MiscObjects.xml</File>
+	<File>Options.xml</File>
+	<File>Planets.xml</File>
+	<File>Planets_Dummy.xml</File>
+	<File>SpaceBuildablesSkirmish.xml</File>
+	<File>SpacePrimarySkydomes.xml</File>
+	<File>SpaceSecondarySkydomes.xml</File>
+	<File>SpecialEffects.xml</File>
+	<File>SurvivalUpgradeObjects.xml</File>
+	<File>TECHBUILDING_Dummies.xml</File>
+	<File>UpgradeObjects.xml</File>
+	<File>UpgradeObjects_Flagship_Mode.xml</File>
+	<File>UpgradeObjectsGroundSkirmish.xml</File>
+	<File>Structures\GroundStructures.xml</File>
+	<File>Structures\Shipyards.xml</File>
+	<File>Projectiles\Projectiles_Ground_Lasers.xml</File>
+	<File>Projectiles\Projectiles_GroundExplosives.xml</File>
+	<File>Projectiles\Projectiles_Infantry.xml</File>
+	<File>Projectiles\Projectiles.xml</File>
+	<File>Projectiles\Projectiles_Melee.xml</File>
+	<File>Projectiles\Projectiles_Space_Lasers.xml</File>
+	<File>Projectiles\Projectiles_SpaceExplosives.xml</File>
+	<File>Projectiles\Projectiles_SpecialAbility.xml</File>
+	<File>Projectiles\FotR_Ground_Lasers.xml</File>
+	<File>Projectiles\FotR_Lasers.xml</File>
+	<File>Projectiles\Projectiles_Infantry_Heroes.xml</File>
+	<File>Particles\Particles_Galactic.xml</File>
+	<File>Particles\Particles_Land.xml</File>
+	<File>Particles\Particles_Space.xml</File>
+	<File>Particles\Particles_Abilities.xml</File>
+	<File>Units\TransportUnits_Master.xml</File>
+	
+	<!-- Coresaga Files -->
+	<File>Units\TransportUnits_Coresaga.xml</File>
+	
+	<!-- FotR Files -->
+	<File>Deconstruct_Dummies.xml</File>
+	<File>GroundTurrets.xml</File>	 <!-- Load before buildables -->
+	<File>GroundBuildablesRebel.xml</File>
+	<File>GroundBuildablesEmpire.xml</File>
+	<File>Markers.xml</File>
+	<File>Multiplayer_Structure_Markers.XML</File>
+	<File>Options_FotR.xml</File>
+	<File>Research_Dummies_CIS.xml</File>
+	<File>Research_Dummies_Republic.xml</File>
+	<File>Units\Hutt_Space_Units.xml</File>
+	<File>Units\Republic_Space_Units.xml</File>
+	<File>Units\CIS_Space_Units.xml</File>
+	<File>Units\Other_Space_Units.xml</File>
+	<File>Units\Hutt_Government_Dummies.xml</File>
+	<File>Units\Republic_Clones.xml</File>
+	<File>Units\CIS_Droids.xml</File>
+	<File>Units\CIS_Organic_Infantry.xml</File>
+	<File>Units\Republic_Ground_Units.xml</File>
+	<File>Units\CIS_Ground_Units.xml</File>
+	<File>Units\Hutt_Ground_Units.xml</File>
+	<File>Units\Militia_Vehicles.xml</File>
+	<File>Units\Militia_Companies.xml</File>
+	<File>Units\InfluenceRewards.xml</File>
+	<File>Units\InstantAction_Bases.xml</File>
+	<File>Units\InstantAction_Units.xml</File>
+	<File>Units\LandBombingRunUnits.xml</File>
+	<File>Units\TransportUnits_FotR.xml</File>
+	<File>Units\UpgradeDummies.xml</File>
+	<File>Structures\Basic_Resource_Structures.xml</File>
+	<File>Structures\Generic_Structures.xml</File>
+	<File>Structures\Capturable_Barracks.xml</File>
+	<File>Structures\Capturable_Factories.xml</File>
+	<File>Structures\Conquest_Bases.xml</File>
+	<File>Structures\GroundBases.xml</File>
+	<File>Structures\GalacticCorporations.xml</File>
+	<File>Structures\MainStarbases.xml</File>
+	<File>Structures\CIS_Structures.xml</File>
+	<File>Structures\Republic_Structures.xml</File>
+	<File>Structures\Hutt_Structures.xml</File>
+	<File>Structures\Revolt_Structures.xml</File>
+	<File>Structures\SecondaryStructures.xml</File>
+	<File>Structures\Shipyards_Factional.xml</File>
+	<File>Structures\SpecialStructures.xml</File>
+	<File>Structures\SpecialStructures_Underworld.xml</File>
+	<File>Structures\SurvivalBases.xml</File>
+	<File>Heroes\CIS_Heroes.xml</File>
+	<File>Heroes\CIS_Heroes_Mercenaries.xml</File>
+	<File>Heroes\CIS_Heroes_Sith.xml</File>
+	<File>Heroes\Commanders.xml</File>
+    <File>Heroes\Hutt_Heroes.xml</File>
+	<File>Heroes\Hutt_Core_Heroes.xml</File>
+	<File>Heroes\Republic_Heroes.xml</File>
+	<File>Heroes\Republic_Heroes_Clones.xml</File>
+	<File>Heroes\Republic_Heroes_Jedi.xml</File>
+	<File>Heroes\Other_Heroes.xml</File>
+	
+	<!-- Skirmish Files -->
+	<File>Units\Skirmish\SkirmishUnits_Republic.xml</File>
+	<File>Units\Skirmish\SkirmishUnits_CIS.xml</File>
+	<File>Units\Skirmish\SkirmishUnits_Hutt.xml</File>
+	<File>Heroes\SkirmishHeroes.xml</File>
+	<File>GroundBuildablesSkirmish.xml</File>
+	<File>UpgradeObjectsSpaceSkirmish.xml</File>
+	<File>Structures\Skirmish\Skirmish_StarBases.xml</File>
+	<File>Structures\Skirmish\Skirmish_Research_starbases.xml</File>
+	<File>Structures\Skirmish\Skirmish_Defence_Stations.xml</File>
+	
+	<!-- Flagship Files -->
+	<File>Units\Skirmish\Flagship\Skirmish_Flagship_Templates.xml</File>
+	<File>Units\Skirmish\Flagship\Skirmish_Flagship_Templates_Squadrons.xml</File>
+	<File>Units\Skirmish\Flagship\Completed_Unit\Skirmish_Flagship_Units_CIS.xml</File>
+	<File>Units\Skirmish\Flagship\Completed_Unit\Skirmish_Flagship_Units_Republic.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_Republic.xml</File>
+	<File>Structures\Skirmish\Skirmish_starbases_Flagshipmode_CIS.xml</File>
+
+	<!-- Ground War Files -->
+	<File>Structures\GroundWars_Structures.xml</File>
+	<File>Units\Skirmish\Ground_War\Skirmish_GroundWar_Templates.xml</File>
+	<File>Units\Skirmish\Ground_War\Skirmish_GroundWar_Formations.xml</File>
+	<File>Units\Skirmish\Ground_War\Skirmish_GroundWar_Companies.xml</File>
+	
+	<!-- Prop Files -->
+	<File>Props\Props_Coresaga.xml</File>
+	<File>Props\Props_FotR.xml</File>
+
+	<!-- Mission Files -->
+	<File>Heroes\Mission_Heroes.xml</File>
+	<File>Mission\MissionObjects_FotR.xml</File>
+
+	<!-- Loop if higher, so load last -->
+	<File>Ability_Dummies.xml</File>
+	<File>Event_Dummies.xml</File>
+	<File>UpgradeObjectsSpaceSkirmish_FotR.xml</File>
+
+</Game_Object_Files>

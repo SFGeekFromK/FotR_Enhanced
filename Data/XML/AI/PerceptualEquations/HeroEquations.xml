@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+	<Needs_Legitimacy_Group>
+		0.0
+	</Needs_Legitimacy_Group>
+
+
+	<Needs_Commander>
+		0.0
+	</Needs_Commander>
+
+	<Has_Upgradeable_Hero>
+		Variable_Self.HasUnit{
+					Parameter_Type = "Ysanne_Isard",
+					Parameter_Type = "Ardus_Kaine",
+					Parameter_Type = "Iron_Fist_VSD",
+					Parameter_Only_Consider_Complete = 1.0
+				}
+		+
+		Variable_Self.IsFaction{Parameter_Faction = "Pentastar"} * (400 > Game.Age)
+	</Has_Upgradeable_Hero>
+
+	<HFM_Malevolence_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Grievous_Malevolence_Hunt_Campaign"}
+	</HFM_Malevolence_In_Orbit>
+
+	<Brashin_Inquisitor_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Brashin_Inquisitor"}
+	</Brashin_Inquisitor_In_Orbit>
+
+	<Tallon_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Tallon_Silent_Water"}
+	</Tallon_In_Orbit>
+
+	<Ragab_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Ragab_Emancipator"}
+	</Ragab_In_Orbit>
+
+	<Bell_Endurance_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Bell_Endurance"}
+	</Bell_Endurance_In_Orbit>
+
+	<Bell_Swift_Liberty_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Bell_Swift_Liberty"}
+	</Bell_Swift_Liberty_In_Orbit>
+
+	<Home_One_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Home_One"}
+	</Home_One_In_Orbit>
+
+	<Galactic_Voyager_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Galactic_Voyager"}
+	</Galactic_Voyager_In_Orbit>
+
+	<Ackbar_Guardian_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Ackbar_Guardian"}
+	</Ackbar_Guardian_In_Orbit>
+
+	<Drayson_New_Hope_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Drayson_New_Hope"}
+	</Drayson_New_Hope_In_Orbit>
+
+	<Solo_Remonda_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Solo_Remonda"}
+	</Solo_Remonda_In_Orbit>
+
+	<Brand_Indomitable_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Brand_Indomitable"}
+	</Brand_Indomitable_In_Orbit>
+
+	<Brand_Yald_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Brand_Yald"}
+	</Brand_Yald_In_Orbit>
+
+	<Wedge_Lusankya_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Wedge_Lusankya"}
+	</Wedge_Lusankya_In_Orbit>
+
+
+	<Yularen_Resolute_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Yularen_Resolute"}
+	</Yularen_Resolute_In_Orbit>
+
+	<Yularen_Integrity_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Yularen_Integrity"}
+	</Yularen_Integrity_In_Orbit>
+
+	<Yularen_Invincible_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Yularen_Invincible"}
+	</Yularen_Invincible_In_Orbit>
+
+	<Kilian_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Kilian_Endurance"}
+	</Kilian_In_Orbit>
+
+	<Wieler_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Wieler_Resilient"}
+	</Wieler_In_Orbit>
+
+	<Coburn_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Coburn_Triumphant"}
+	</Coburn_In_Orbit>
+
+<!-- FotR_Enhanced -->
+
+	<Dodonna_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Dodonna_Ardent"}
+	</Dodonna_In_Orbit>
+
+	
+</Equations>

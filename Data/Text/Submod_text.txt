@@ -1,0 +1,34 @@
+﻿TEXT_NOTE,Put text changes for submods here
+TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT_COMMANDER,Class: Lieutenant Commander
+TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_NEEDA,- Lorth Needa
+TEXT_HERO_NEEDA,Lorth Needa
+TEXT_HERO_TJ912,TJ-912
+TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC,Build Limit: 12 | Lifetime: "
+TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC_SPHA_T,Build Limit: 3 | Lifetime: 1
+TEXT_TOOLTIP_COMMAND_CARRACK_INTEGRITY,Carrack Cruiser, Integrity
+TEXT_TOOLTIP_DARK_ACOLYTE,Dark Acolytes are Dark Jedis who joined the Confederacy of Independent Systems and directly serve its Head of State, Count Dooku. They served various roles from assassins to spies to civilian commanders. Although trained by Dooku, they are not considered to be Sith due to the Rule of Two.
+TEXT_TOOLTIP_NEEDA,A commanding officer of the Carrack-class cruiser Integrity in Home Fleet Strike Group Five of the Coruscant Home Fleet. 
+TEXT_TOOLTIP_OFC_ASSIGN,Assign the Venator Star Destroyer to The Open Circle Fleet.
+TEXT_TOOLTIP_OFC_SPHA_T_REFIT,Attach SPHA-T on the hanger bay of this OCF Venator.
+TEXT_TOOLTIP_RECUSANT_HERO_HULL,Hull: 2560 (Frigate)
+TEXT_TOOLTIP_RECUSANT_HERO_SHIELD,Shields: 2950 / [42/R] (Frigate)
+TEXT_TOOLTIP_RECUSANT_HERO_WEAP6,6x Light Laser Cannons: 3 / 0.3s / 3.7km
+TEXT_TOOLTIP_RECUSANT_SQUADRON_HERO,Bombers: 0.5 / 2 [Requires research]
+TEXT_TOOLTIP_TJ912,TJ-912 is a tactical droid that served under one of Count Dooku's Dark Acolyte Asajj Ventress. It commanded the Separatists forces during the Battle of Sullust against Generals Obi-Wan Kenobi and Anakin Skywalker. 
+TEXT_TOOLTIP_UMBARAN_FRIGATE,A fleet tender designed by the government of Umbara, this frigate is able to supply and reinforce CIS cruisers in battle and provide reapirs to fighter groups.
+TEXT_TOOLTIP_UMBARAN_FRIGATE_MOVE,Speed: 3.25 | Accel: 1.5 | Turn: 0.3
+TEXT_TOOLTIP_UMBARAN_FRIGATE_SHIELD,Shields: 1300 [19.25/R] (Frigate)
+TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP1,4x Light Turbolasers 2 / 1.0s / 5.1 km
+TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP2,4x Dual Light Lasercannons 2 / 0.4s / 3.7km
+TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP3,2x Light Anti-Fighter Ion Cannons 2 / 1.7s / 3.2km
+TEXT_TOOLTIP_VENATOR_OFC,Venator Star Destroyer assigned under Open Circle Fleet. It has increased fire power in exchange for fighter complements.
+TEXT_TOOLTIP_VENATOR_OFC_HULL,Hull: 3400 (Capital)
+TEXT_TOOLTIP_VENATOR_OFC_SPHA_T,An Open Circle Fleet Venator equiped with SPHA-T on the hangar bay. An idea brought up by Anakin Skywalker, this upgrade made the Venators a more formidable against separatist warships.
+TEXT_TOOLTIP_VENATOR_OFC_UPGRADEABLE,Upgrade: Can be equiped with SPHA-T by Anakin Skywalker. [Requires Anakin Skywalker in orbit]
+TEXT_TOOLTIP_VENATOR_OFC_WEAP1,4x Heavy Dual Turbolasers: 5 / 3.5s / 7.2km
+TEXT_UNIT_DARK_ACOLYTE,Dark Acolyte 
+TEXT_UNIT_DARK_ACOLYTE_COMPANY,Dark Acolyte Squad
+TEXT_UNIT_UMBARAN_FRIGATE,Umbaran Support Frigate
+TEXT_UNIT_VENATOR_OFC,OCF Venator Star Destroyer
+TEXT_UNIT_VENATOR_OFC_SPHA_T,OCF Venator Star Destroyer (SPHA-T)
+TEXT_TOOLTIP_TRAIT_OFC_OFFICER,Open Circle Fleet Offcier

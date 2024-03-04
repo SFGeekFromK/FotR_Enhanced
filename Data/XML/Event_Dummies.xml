@@ -1,0 +1,834 @@
+<?xml version="1.0"?>
+<Event_Dummies>
+
+	<!--- Order 66/65 Selector Dummies -->
+
+	<DummyStructure Name="Republic_Future_Choice_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_REPUBLIC_FUTURE_CHOICE_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>nothing.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Neutralization_Cost>1.0</Neutralization_Cost>
+	</DummyStructure>
+
+	<DummyStructure Name="Republic_Future_Choice_Body">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_REPUBLIC_FUTURE_CHOICE_BODY</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_MULTIPLAY_EMPIRE.TGA</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Neutralization_Cost>1.0</Neutralization_Cost>
+	</DummyStructure>
+
+	<DummyStructure Name="Republic_Future_Choice_Order_66">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_REPUBLIC_FUTURE_CHOICE_ORDER_66_HEADER</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_REPUBLIC_FUTURE_CHOICE_ORDER_66_BODY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_PALPATINE_FOTR.TGA</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Neutralization_Cost>1.0</Neutralization_Cost>
+	</DummyStructure>
+
+	<DummyStructure Name="Republic_Future_Choice_Order_65">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_REPUBLIC_FUTURE_CHOICE_ORDER_65_HEADER </Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_REPUBLIC_FUTURE_CHOICE_ORDER_65_BODY </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_MON_MOTHMA_CW.TGA</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Neutralization_Cost>1.0</Neutralization_Cost>
+	</DummyStructure>
+
+	<!-- Malevolence Hunt Selector Dummies -->
+	<!-- Rimward Campaign Selector Dummies -->
+	<!-- Tennuutta Skirmish Selector Dummies -->
+	<!-- Knight Hammer Selector Dummies -->
+	<!-- Durge's Lance Selector Dummies -->
+	<!-- Foerost Campaign Selector Dummies -->
+	<!-- Outer Rim Sieges Selector Dummies -->
+
+	<!--- Fighter Selector Headers -->
+
+	<DummyStructure Name="Arhul_Narra_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_ARHUL_NARRA_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_arhul_narra.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Erk_HArman_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_ERK_HARMAN_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_erk_harman.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>	
+
+	<DummyStructure Name="Garven_Dreis_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_GARVEN_DREIS_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_garven_dreis.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Nial_Declann_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_NIAL_DECLANN_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_nial_declann.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Odd_Ball_P1_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_ODD_BALL_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_odd_ball_p1.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Odd_Ball_P2_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_ODD_BALL_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Rhys_Dallows_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_RHYS_DALLOWS_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_rhys_dallows.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Warthog_P1_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_ODD_BALL_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="DFS1VR_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_DFS1VR_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_dfs1vr.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Nas_Ghent_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_NAS_GHENT_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_nas_ghent_fotr.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Raina_Quill_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_RAINA_QUILL_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_raina_quill.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Vulpus_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_VULPUS_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_vulpus.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+
+	<DummyStructure Name="Piknab_Carsels_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_PIKNAB_CARSELS_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_piknab.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Ssurussk_Selector_Header">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_EVENT_SSURUSSK_SELECTOR_HEADER</Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_ssurussk.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<!--- Fighter Selector Dummies -->
+
+	<DummyStructure Name="Fighter_Selector_Baraka">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_BARAKA</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_BARAKA.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Grumby">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_JONA_GRUMBY</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_grumby_cw.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Pellaeon">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_PELLAEON</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_pellaeon.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Tallon">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_TALLON</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_ADARTALLON_CW.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Dodonna">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_JAN_DODONNA</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_dodonna_rep.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Parck">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_VOSS_PARCK</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_voss_parck_cw.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Tarkin">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_WILHUFF_TARKIN</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_tarkin.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Therbon">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_THERBON</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_therbon_cw.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Grant">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_GRANT</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_GRANT_CW.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Ravik">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_RAVIK</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_RAVIK_CW.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Praji">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_COLLIN_PRAJI</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_PRAJI_CW.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Screed">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_TERRINALD_SCREED</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_screed_rep.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Autem">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_AUTEM</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_autem.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Dallin">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_DALLIN</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_dallin.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Hauser">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_HAUSER</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_HAUSER_CW.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Maarisa">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_MAARISA</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_maarisa.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Slayke">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ZOZRIDOR_SLAYKE</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_ZOZRIDOR_SLAYKE.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Yularen">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_YULAREN</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_yularen.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Kilian">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_KILIAN</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_kilian.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Wieler">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_WIELER</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_wieler.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Coburn">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_COBURN</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_coburn.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Grievous">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_GRIEVOUS</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_grievous.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Stark">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_STARK</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_STARK.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Tonith">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_TONITH</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_tonith.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Lucid">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_LUCIDVOICE</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_lucid_voice.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Calli">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_CALLI_TRILM</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_calli_trilm.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Ningo">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_DUA_NINGO</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_dua_ningo.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Harsol">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_HARSOL</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_HARSOL.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Merai">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_MERAI</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_MERAI.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Shonn">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_SHONN</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_SHONN_VOLTA.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_K2B4">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_K2B4</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_K2B4.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_TF1726">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_TF1726</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_tf1726.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_AutO">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_AUTO</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_AutO.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Doctor">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_DOCTOR</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_TDOCTOR.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Colicoid">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_COLICOIDSWARM</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_colicoid_swarm.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Riboga">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_RIBOGA</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_RIBOGA.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Ulal">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ULAL</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_ULAL.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Ganis">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_GANIS</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_GANIS.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Jiliac">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_JILIAC</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_JILIAC.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Jabba">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_JABBA</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_jabba.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Pundar">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_PUNDAR</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_pundar.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Quist">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_QUIST</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_quist.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Slagorth">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_SLAGORTH</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_slagorth.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Selima_Kim">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_SELIMA_KIM</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_selima_kim.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Eyttyrmin_Batiiv">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_EYTTYRMIN_BATIIV</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_eyttyrmin_batiiv.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Sorority">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_VEILED_QUEEN</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_veiled_queen.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Zan_Dane">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ZAN_DANE</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_zan_dane.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Targrim">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_TARGRIM</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_targrim.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Aycen">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_AYCEN</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_aycen.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Norulac">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_NORULAC</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_norulac.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Ardella">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ARDELLA</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_ardella.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Renthal">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_RENTHAL</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_renthal.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Drednar">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_DREDNAR</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_drednar.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Vulture_Pirates">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_VULTURE_PIRATES</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_vultures.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Loose_Cannon">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_LOOSE_CANNON</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_LOOSE_CANNON.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+<!-- FotR_Enhanced -->
+
+
+
+</Event_Dummies>

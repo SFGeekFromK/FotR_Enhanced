@@ -1,0 +1,4070 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+
+	<!-- CIS buildable units -->
+
+	<UpgradeObject Name="IA_Pursuer_Enforcement_Ship_Squadron">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_pursuer.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PURSUER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_PURSUER_SQUADRON
+		TEXT_TOOLTIP_PURSUER_HULL
+		TEXT_TOOLTIP_PURSUER_SHIELD
+		TEXT_TOOLTIP_PURSUER_MOVE
+		TEXT_TOOLTIP_PURSUER_WEAP1
+		TEXT_TOOLTIP_PURSUER_WEAP2
+		TEXT_TOOLTIP_PURSUER_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_PURSUER_SQUADRON</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Gozanti_Cruiser_Squadron">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_gozanti.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GOZANTI_CRUISER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GOZANTI_CRUISER_SQUADRON
+		TEXT_TOOLTIP_GOZANTI_CRUISER_HULL
+		TEXT_TOOLTIP_GOZANTI_CRUISER_SHIELD
+		TEXT_TOOLTIP_GOZANTI_CRUISER_MOVE 
+		TEXT_TOOLTIP_GOZANTI_CRUISER_WEAP1
+		TEXT_TOOLTIP_GOZANTI_CRUISER_WEAP2 
+		TEXT_TOOLTIP_GOZANTI_CRUISER_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_GOZANTI_CRUISER_SQUADRON</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Diamond_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_diamond.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_DIAMOND
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_DIAMOND_HULL 
+		TEXT_TOOLTIP_DIAMOND_SHIELD 
+		TEXT_TOOLTIP_DIAMOND_MOVE 
+		TEXT_TOOLTIP_DIAMOND_WEAP1 
+		TEXT_TOOLTIP_DIAMOND_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_DIAMOND_PD
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_DIAMOND</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Hardcell">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_hardcell.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_HARDCELL 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_HARDCELL_HULL 
+		TEXT_TOOLTIP_HARDCELL_SHIELD
+		TEXT_TOOLTIP_HARDCELL_MOVE 
+		TEXT_TOOLTIP_HARDCELL_SQUADRON 
+		TEXT_TOOLTIP_HARDCELL_WEAP1 
+		TEXT_TOOLTIP_HARDCELL_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_HARDCELL</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Lupus_Missile_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_LUPUS.TGA</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_LUPUS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_LUPUS_HULL
+		TEXT_TOOLTIP_LUPUS_SHIELD
+		TEXT_TOOLTIP_LUPUS_MOVE
+		TEXT_TOOLTIP_LUPUS_WEAP1 
+		TEXT_TOOLTIP_LUPUS_WEAP2
+		TEXT_TOOLTIP_LUPUS_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_LUPUS</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Sabaoth_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_SABAOTH_FRIGATE.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SABAOTH_FRIGATE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SABAOTH_FRIGATE_HULL
+		TEXT_TOOLTIP_SABAOTH_FRIGATE_SHIELD
+		TEXT_TOOLTIP_SABAOTH_FRIGATE_MOVE
+		TEXT_TOOLTIP_SABAOTH_FRIGATE_WEAP1 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_SABAOTH_FRIGATE_PD
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SABAOTH_FRIGATE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Sabaoth_Hex_Deployer">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_SABAOTH_DEPLOYER.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SABAOTH_HEX_DEPLOYER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SABAOTH_HEX_DEPLOYER_HULL
+		TEXT_TOOLTIP_SABAOTH_HEX_DEPLOYER_SHIELD
+		TEXT_TOOLTIP_SABAOTH_HEX_DEPLOYER_MOVE
+		TEXT_TOOLTIP_SABAOTH_HEX_DEPLOYER_SQUADRON
+		TEXT_TOOLTIP_SABAOTH_HEX_DEPLOYER_WEAP1 
+		TEXT_TOOLTIP_SABAOTH_HEX_DEPLOYER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SABAOTH_HEX_DEPLOYER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_C9979_Carrier">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_C9979_CIS.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_C9979 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_C9979_HULL
+		TEXT_TOOLTIP_C9979_SHIELD 
+		TEXT_TOOLTIP_C9979_MOVE 
+		TEXT_TOOLTIP_C9979_SQUADRON
+		TEXT_TOOLTIP_C9979_WEAP1 
+		TEXT_TOOLTIP_C9979_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_C9979_PD
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_C9979</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Munifex">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 200 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_MUNIFEX.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MUNIFEX
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MUNIFEX_HULL 
+		TEXT_TOOLTIP_MUNIFEX_SHIELD 
+		TEXT_TOOLTIP_MUNIFEX_MOVE 
+		TEXT_TOOLTIP_MUNIFEX_SQUADRON 
+		TEXT_TOOLTIP_MUNIFEX_WEAP1 
+		TEXT_TOOLTIP_MUNIFEX_WEAP2 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_MUNIFEX</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Auxilia">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_auxilia.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_AUXILIA 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_AUXILIA_HULL
+		TEXT_TOOLTIP_AUXILIA_SHIELD
+		TEXT_TOOLTIP_AUXILIA_MOVE
+		TEXT_TOOLTIP_AUXILIA_WEAP1
+		TEXT_TOOLTIP_AUXILIA_WEAP2 
+		TEXT_TOOLTIP_AUXILIA_WEAP3 
+		TEXT_TOOLTIP_AUXILIA_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_AUXILIA</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Munificent">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 200 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_munificent.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MUNIFICENT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MUNIFICENT_HULL
+		TEXT_TOOLTIP_MUNIFICENT_SHIELD 
+		TEXT_TOOLTIP_MUNIFICENT_MOVE 
+		TEXT_TOOLTIP_MUNIFICENT_SQUADRON_FOTR
+		TEXT_TOOLTIP_MUNIFICENT_WEAP1
+		TEXT_TOOLTIP_MUNIFICENT_WEAP2
+		TEXT_TOOLTIP_MUNIFICENT_WEAP3 
+		TEXT_TOOLTIP_MUNIFICENT_WEAP4 
+		TEXT_TOOLTIP_MUNIFICENT_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_MUNIFICENT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Recusant">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_recusant.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_RECUSANT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_RECUSANT_HULL 
+		TEXT_TOOLTIP_RECUSANT_SHIELD
+		TEXT_TOOLTIP_RECUSANT_MOVE
+		TEXT_TOOLTIP_RECUSANT_SQUADRON_FOTR
+		TEXT_TOOLTIP_RECUSANT_WEAP1
+		TEXT_TOOLTIP_RECUSANT_WEAP2
+		TEXT_TOOLTIP_RECUSANT_WEAP3
+		TEXT_TOOLTIP_RECUSANT_WEAP4 
+		TEXT_TOOLTIP_RECUSANT_WEAP5 
+		TEXT_TOOLTIP_RECUSANT_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_RECUSANT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Captor">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_captor.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_CAPTOR 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPTOR_HULL 
+		TEXT_TOOLTIP_CAPTOR_SHIELD
+		TEXT_TOOLTIP_CAPTOR_MOVE 
+		TEXT_TOOLTIP_CAPTOR_SQUADRON 
+		TEXT_TOOLTIP_CAPTOR_WEAP1
+		TEXT_TOOLTIP_CAPTOR_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CAPTOR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Sabaoth_Destroyer">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_SABAOTH_DESTROYER.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SABAOTH_DESTROYER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SABAOTH_DESTROYER_HULL
+		TEXT_TOOLTIP_SABAOTH_DESTROYER_SHIELD
+		TEXT_TOOLTIP_SABAOTH_DESTROYER_MOVE
+		TEXT_TOOLTIP_SABAOTH_DESTROYER_SQUADRON
+		TEXT_TOOLTIP_SABAOTH_DESTROYER_WEAP1 
+		TEXT_TOOLTIP_SABAOTH_DESTROYER_WEAP2
+		TEXT_TOOLTIP_SABAOTH_DESTROYER_WEAP3
+		TEXT_TOOLTIP_SABAOTH_DESTROYER_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SABAOTH_DESTROYER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Bulwark_I">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 180 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_bulwark_cis.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BULWARK_I
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BULWARK_I_HULL
+		TEXT_TOOLTIP_BULWARK_I_SHIELD 
+		TEXT_TOOLTIP_BULWARK_I_MOVE
+		TEXT_TOOLTIP_BULWARK_I_SQUADRON 
+		TEXT_TOOLTIP_BULWARK_I_WEAP1
+		TEXT_TOOLTIP_BULWARK_I_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_BULWARK_I</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Supply_Ship">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_supplyship.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SUPPLYSHIP
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SUPPLYSHIP_HULL
+		TEXT_TOOLTIP_SUPPLYSHIP_SHIELD
+		TEXT_TOOLTIP_SUPPLYSHIP_MOVE
+		TEXT_TOOLTIP_SUPPLYSHIP_SQUADRON
+		TEXT_TOOLTIP_SUPPLYSHIP_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_SUPPLYSHIP_MINE
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SUPPLYSHIP</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Generic_Providence">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_prov.tga</Icon_Name>
+		
+		 <Encyclopedia_Text> 
+		 TEXT_TOOLTIP_PROVIDENCE 
+		 TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		 TEXT_TOOLTIP_PROVIDENCE_HULL
+		 TEXT_TOOLTIP_PROVIDENCE_SHIELD
+		 TEXT_TOOLTIP_PROVIDENCE_MOVE 
+		 TEXT_TOOLTIP_PROVIDENCE_SQUADRON 
+		 TEXT_TOOLTIP_PROVIDENCE_WEAP1 
+		 TEXT_TOOLTIP_PROVIDENCE_WEAP2
+		 TEXT_TOOLTIP_PROVIDENCE_WEAP3 
+		 TEXT_TOOLTIP_PROVIDENCE_WEAP4 
+		 TEXT_TOOLTIP_PROVIDENCE_WEAP5 
+		 TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		 TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		 TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		 TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		 </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_PROVIDENCE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Bulwark_II">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_bulwark_ii_cis.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BULWARK_II
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BULWARK_II_HULL
+		TEXT_TOOLTIP_BULWARK_II_SHIELD 
+		TEXT_TOOLTIP_BULWARK_II_MOVE
+		TEXT_TOOLTIP_BULWARK_II_SQUADRON
+		TEXT_TOOLTIP_BULWARK_II_WEAP1
+		TEXT_TOOLTIP_BULWARK_II_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_BULWARK_II</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Generic_Lucrehulk">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_lucrehulk_cis.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LUCREHULK 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_LUCREHULK_HULL
+		TEXT_TOOLTIP_LUCREHULK_SHIELD
+		TEXT_TOOLTIP_LUCREHULK_MOVE
+		TEXT_TOOLTIP_LUCREHULK_SQUADRON
+		TEXT_TOOLTIP_LUCREHULK_WEAP1 
+		TEXT_TOOLTIP_LUCREHULK_WEAP2 
+		TEXT_TOOLTIP_LUCREHULK_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_LUCREHULK</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Battleship_Lucrehulk">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_LUCREHULK_BATTLESHIP_CIS.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_LUCREHULKBATTLESHIP 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_LUCREHULKBATTLESHIP_HULL
+		TEXT_TOOLTIP_LUCREHULKBATTLESHIP_SHIELD
+		TEXT_TOOLTIP_LUCREHULKBATTLESHIP_MOVE 
+		TEXT_TOOLTIP_LUCREHULKBATTLESHIP_SQUADRON
+		TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP1
+		TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP2 
+		TEXT_TOOLTIP_LUCREHULKBATTLESHIP_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_LUCREHULKBATTLESHIP</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Subjugator">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_subjugator.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SUBJUGATOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SUBJUGATOR_HULL
+		TEXT_TOOLTIP_SUBJUGATOR_SHIELD
+		TEXT_TOOLTIP_SUBJUGATOR_MOVE 
+		TEXT_TOOLTIP_SUBJUGATOR_SQUADRON
+		TEXT_TOOLTIP_SUBJUGATOR_WEAP1
+		TEXT_TOOLTIP_SUBJUGATOR_WEAP2 
+		TEXT_TOOLTIP_SUBJUGATOR_WEAP3
+		TEXT_TOOLTIP_SUBJUGATOR_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_SUBJUGATOR
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SUBJUGATOR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<!-- CIS non buildable & reward units -->
+
+	<UpgradeObject Name="IA_Interceptor_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_Pirate_frigate.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INTERCEPTOR4_FRIGATE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INTERCEPTOR4_FRIGATE_HULL 
+		TEXT_TOOLTIP_INTERCEPTOR4_FRIGATE_SHIELD 
+		TEXT_TOOLTIP_INTERCEPTOR4_FRIGATE_MOVE
+		TEXT_TOOLTIP_INTERCEPTOR4_FRIGATE_WEAP1
+		TEXT_TOOLTIP_INTERCEPTOR4_FRIGATE_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_INTERCEPTOR4_FRIGATE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Action_VI_Support">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_action_vi_support.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ACTION_VI_SUPPORT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ACTION_VI_SUPPORT_HULL
+		TEXT_TOOLTIP_ACTION_VI_SUPPORT_SHIELD
+		TEXT_TOOLTIP_ACTION_VI_SUPPORT_MOVE 
+		TEXT_TOOLTIP_ACTION_VI_SUPPORT_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER_FIGHTERS
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_ACTION_VI_SUPPORT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Hardcell_Tender">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_hardcell_tender.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_HARDCELL_TENDER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_HARDCELL_HULL
+		TEXT_TOOLTIP_HARDCELL_SHIELD 
+		TEXT_TOOLTIP_HARDCELL_MOVE 
+		TEXT_TOOLTIP_HARDCELL_TENDER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER_FIGHTERS
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_HARDCELL_TENDER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Marauder_Cruiser">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_marauder.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MARAUDER 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_MARAUDER_HULL
+		TEXT_TOOLTIP_MARAUDER_SHIELD
+		TEXT_TOOLTIP_MARAUDER_MOVE
+		TEXT_TOOLTIP_MARAUDER_SQUADRON
+		TEXT_TOOLTIP_MARAUDER_WEAP1 
+		TEXT_TOOLTIP_MARAUDER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_MARAUDER_CRUISER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_CIS_Dreadnaught_Lasers">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_DREADNAUGHT_1.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_HULL 
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_SHIELD
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_MOVE 
+		TEXT_TOOLTIP_DREADNAUGHT_SQUADRON_FOTR
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_WEAP1
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_WEAP2
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_DREADNAUGHT_LASERS</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_CIS_Dreadnaught">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_DREADNAUGHT.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_DREADNAUGHT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_DREADNAUGHT_HULL 
+		TEXT_TOOLTIP_DREADNAUGHT_SHIELD
+		TEXT_TOOLTIP_DREADNAUGHT_MOVE 
+		TEXT_TOOLTIP_DREADNAUGHT_SQUADRON_FOTR
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP1
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP2
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP3
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP4 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_DREADNAUGHT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Storm_Fleet_Destroyer">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_STORM_FLEET_DESTROYER.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STORM_FLEET_DESTROYER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_STORM_FLEET_DESTROYER_HULL
+		TEXT_TOOLTIP_STORM_FLEET_DESTROYER_SHIELD
+		TEXT_TOOLTIP_STORM_FLEET_DESTROYER_MOVE
+		TEXT_TOOLTIP_STORM_FLEET_DESTROYER_WEAP1 
+		TEXT_TOOLTIP_STORM_FLEET_DESTROYER_WEAP2
+		TEXT_TOOLTIP_STORM_FLEET_DESTROYER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_STORM_FLEET_DESTROYER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Lucrehulk_Core_Destroyer">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_lucrehulk_core_destroyer.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LUCREHULK_CORE_DESTROYER 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_LUCREHULK_CORE_DESTROYER_HULL
+		TEXT_TOOLTIP_LUCREHULK_CORE_DESTROYER_SHIELD
+		TEXT_TOOLTIP_LUCREHULK_CORE_DESTROYER_MOVE
+		TEXT_TOOLTIP_LUCREHULK_CORE_DESTROYER_SQUADRON
+		TEXT_TOOLTIP_LUCREHULK_CORE_DESTROYER_WEAP1
+		TEXT_TOOLTIP_LUCREHULK_CORE_DESTROYER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_LUCREHULK_CORE_DESTROYER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Recusant_Dreadnought">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_RESUSANT_DREADNOUGHT.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT_HULL
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT_SHIELD
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT_MOVE
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT_SQUADRON
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT_WEAP1
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT_WEAP2 
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT_WEAP3 
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT_WEAP4
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT_WEAP5 
+		TEXT_TOOLTIP_RECUSANT_DREADNOUGHT_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_RECUSANT_DREADNOUGHT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Providence_Dreadnought">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_PROVIDENCE_DREADNOUGHT.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_HULL
+		TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_SHIELD
+		TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_MOVE 
+		TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_SQUADRON 
+		TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP1 
+		TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP2 
+		TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP3
+		TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP4
+		TEXT_TOOLTIP_PROVIDENCE_DREADNOUGHT_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_PROVIDENCE_DREADNOUGHT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>	
+
+	<UpgradeObject Name="IA_Auxiliary_Lucrehulk">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_LUCREHULK_AUXILIARY.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_HULL
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_SHIELD 
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_MOVE 
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_SQUADRON
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_WEAP1
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_WEAP2 
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_WEAP3 
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_WEAP4 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_LUCREHULKAUXILIARY</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Auxiliary_Lucrehulk_Control">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_LUCREHULK_AUXILIARY_CONTROL.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LUCREHULKAUXILIARYCONTROL
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_HULL
+		TEXT_TOOLTIP_LUCREHULKAUXILIARYCONTROL_SHIELD 
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_MOVE 
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_SQUADRON
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_WEAP1
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_WEAP2 
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_WEAP3 
+		TEXT_TOOLTIP_LUCREHULKAUXILIARY_WEAP4 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_LUCREHULK_DCS_SUPPORT
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER_FIGHTERS
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_LUCREHULKAUXILIARYCONTROL</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Generic_Lucrehulk_Control">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_LUCREHULK_CONTROL_CIS.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LUCREHULKCONTROL
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_LUCREHULK_HULL
+		TEXT_TOOLTIP_LUCREHULKCONTROL_SHIELD
+		TEXT_TOOLTIP_LUCREHULK_MOVE
+		TEXT_TOOLTIP_LUCREHULK_SQUADRON
+		TEXT_TOOLTIP_LUCREHULK_WEAP1
+		TEXT_TOOLTIP_LUCREHULK_WEAP2
+		TEXT_TOOLTIP_LUCREHULK_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_LUCREHULK_DCS_SUPPORT
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER_FIGHTERS
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_LUCREHULKCONTROL</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CIS</Lua_Script>
+	</UpgradeObject>
+
+<!-- *********************************************************************** -->
+<!-- *******************   EMPIRE UNIT SET FOR SURVIVAL MODE   ************* -->
+<!-- *********************************************************************** -->
+
+	<!-- Republic buildables -->
+
+	<UpgradeObject Name="IA_Corellian_Corvette">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_CR90_REP.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CORELLIAN_CORVETTE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_CORELLIAN_CORVETTE_HULL
+		TEXT_TOOLTIP_CORELLIAN_CORVETTE_SHIELD
+		TEXT_TOOLTIP_CORELLIAN_CORVETTE_MOVE
+		TEXT_TOOLTIP_CORELLIAN_CORVETTE_WEAP1
+		TEXT_TOOLTIP_CORELLIAN_CORVETTE_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_CORELLIAN_CORVETTE_PD
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CORELLIAN_CORVETTE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Corellian_Gunboat">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_DP20_REP.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CORELLIAN_GUNBOAT 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CORELLIAN_GUNBOAT_HULL 
+		TEXT_TOOLTIP_CORELLIAN_GUNBOAT_SHIELD
+		TEXT_TOOLTIP_CORELLIAN_GUNBOAT_MOVE 
+		TEXT_TOOLTIP_CORELLIAN_GUNBOAT_WEAP1
+		TEXT_TOOLTIP_CORELLIAN_GUNBOAT_WEAP2 
+		TEXT_TOOLTIP_CORELLIAN_GUNBOAT_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text> 
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CORELLIAN_GUNBOAT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Charger_C70">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_c70_rep.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_C70
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_C70_HULL 
+		TEXT_TOOLTIP_C70_SHIELD
+		TEXT_TOOLTIP_C70_MOVE 
+		TEXT_TOOLTIP_C70_WEAP1
+		TEXT_TOOLTIP_C70_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_C70_PD
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_C70</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Pelta_Assault">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_pelta_assault.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PELTAASSAULT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_PELTAASSAULT_HULL
+		TEXT_TOOLTIP_PELTAASSAULT_SHIELD
+		TEXT_TOOLTIP_PELTAASSAULT_MOVE
+		TEXT_TOOLTIP_PELTAASSAULT_WEAP1
+		TEXT_TOOLTIP_PELTAASSAULT_WEAP2 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_PELTAASSAULT_PD
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_PELTAASSAULT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Arquitens">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_ARQUITENS_REP.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ARQUITENS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_ARQUITENS_HULL
+		TEXT_TOOLTIP_ARQUITENS_SHIELD
+		TEXT_TOOLTIP_ARQUITENS_MOVE
+		TEXT_TOOLTIP_ARQUITENS_WEAP1 
+		TEXT_TOOLTIP_ARQUITENS_WEAP2 
+		TEXT_TOOLTIP_ARQUITENS_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_ARQUITENS</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Pelta_Support">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_pelta_support.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PELTASUPPORT 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_PELTASUPPORT_HULL
+		TEXT_TOOLTIP_PELTASUPPORT_SHIELD
+		TEXT_TOOLTIP_PELTASUPPORT_MOVE 
+		TEXT_TOOLTIP_PELTASUPPORT_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_PELTASUPPORT_MINE
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_PELTASUPPORT_PD
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER		
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_PELTASUPPORT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Carrack_Cruiser">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_CARRACK_REP.TGA</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_CARRACK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_CARRACK_HULL
+		TEXT_TOOLTIP_CARRACK_SHIELD
+		TEXT_TOOLTIP_CARRACK_MOVE
+		TEXT_TOOLTIP_CARRACK_SQUADRON
+		TEXT_TOOLTIP_CARRACK_WEAP1
+		TEXT_TOOLTIP_CARRACK_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CARRACK_REFIT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Carrack_Cruiser_Lasers">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_CARRACK_LASERS_REP.TGA</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_CARRACK_LASERS 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CARRACK_LASERS_HULL
+		TEXT_TOOLTIP_CARRACK_LASERS_SHIELD
+		TEXT_TOOLTIP_CARRACK_LASERS_MOVE
+		TEXT_TOOLTIP_CARRACK_LASERS_SQUADRON
+		TEXT_TOOLTIP_CARRACK_LASERS_WEAP1
+		TEXT_TOOLTIP_CARRACK_LASERS_WEAP2 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CARRACK</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Dreadnaught">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_DREADNAUGHT_REP.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_DREADNAUGHT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_DREADNAUGHT_HULL
+		TEXT_TOOLTIP_DREADNAUGHT_SHIELD
+		TEXT_TOOLTIP_DREADNAUGHT_MOVE
+		TEXT_TOOLTIP_DREADNAUGHT_SQUADRON_FOTR
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP1
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP2
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP3
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP4 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_DREADNAUGHT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Neutron_Star">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_Neutronstar.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_NEUTRONSTAR 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_NEUTRONSTAR_CW_HULL
+		TEXT_TOOLTIP_NEUTRONSTAR_CW_SHIELD 
+		TEXT_TOOLTIP_NEUTRONSTAR_CW_MOVE 
+		TEXT_TOOLTIP_NEUTRONSTAR_CW_SQUADRON
+		TEXT_TOOLTIP_NEUTRONSTAR_CW_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_NEUTRONSTAR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Generic_Acclamator_Assault_Ship_II">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_ACCLAMATOR_II_REP.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ACCLAMATOR_II 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ACCLAMATOR_II_HULL
+		TEXT_TOOLTIP_ACCLAMATOR_II_SHIELD 
+		TEXT_TOOLTIP_ACCLAMATOR_II_MOVE
+		TEXT_TOOLTIP_ACCLAMATOR_II_SQUADRON
+		TEXT_TOOLTIP_ACCLAMATOR_II_WEAP1 
+		TEXT_TOOLTIP_ACCLAMATOR_II_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_ACCLAMATOR_II</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Generic_Acclamator_Assault_Ship_Leveler">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_ACCLAMATOR_Level_REP.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ACCLAMATOR_LEVELER 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ACCLAMATOR_LEVELER_HULL
+		TEXT_TOOLTIP_ACCLAMATOR_LEVELER_SHIELD
+		TEXT_TOOLTIP_ACCLAMATOR_LEVELER_MOVE
+		TEXT_TOOLTIP_ACCLAMATOR_LEVELER_SQUADRON
+		TEXT_TOOLTIP_ACCLAMATOR_LEVELER_WEAP1 
+		TEXT_TOOLTIP_ACCLAMATOR_LEVELER_WEAP2
+		TEXT_TOOLTIP_ACCLAMATOR_LEVELER_WEAP3
+		TEXT_TOOLTIP_ACCLAMATOR_LEVELER_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_ACCLAMATOR_LEVELER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Generic_Acclamator_Assault_Ship_I">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_ACCLAMATOR_REP.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ACCLAMATOR_I
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_ACCLAMATOR_I_HULL
+		TEXT_TOOLTIP_ACCLAMATOR_I_SHIELD
+		TEXT_TOOLTIP_ACCLAMATOR_I_MOVE
+		TEXT_TOOLTIP_ACCLAMATOR_I_SQUADRON
+		TEXT_TOOLTIP_ACCLAMATOR_I_WEAP1
+		TEXT_TOOLTIP_ACCLAMATOR_I_WEAP2 
+		TEXT_TOOLTIP_ACCLAMATOR_I_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text> 
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_ACCLAMATOR_I</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_GENERIC_VICTORY_DESTROYER">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_victory_class_rep.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VICTORY1
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VICTORY1_HULL
+		TEXT_TOOLTIP_VICTORY1_SHIELD 
+		TEXT_TOOLTIP_VICTORY1_MOVE 
+		TEXT_TOOLTIP_VICTORY1_SQUADRON
+		TEXT_TOOLTIP_VICTORY1_WEAP1
+		TEXT_TOOLTIP_VICTORY1_WEAP2
+		TEXT_TOOLTIP_VICTORY1_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_VICTORY_DESTROYER_MK1</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_GENERIC_VICTORY_DESTROYER_TWO">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_victory_ii_rep.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VICTORY2
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VICTORY2_HULL
+		TEXT_TOOLTIP_VICTORY2_SHIELD
+		TEXT_TOOLTIP_VICTORY2_MOVE 
+		TEXT_TOOLTIP_VICTORY2_SQUADRON
+		TEXT_TOOLTIP_VICTORY2_WEAP1
+		TEXT_TOOLTIP_VICTORY2_WEAP2
+		TEXT_TOOLTIP_VICTORY2_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_VICTORY_DESTROYER_MK2</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_GENERIC_VENATOR">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_jedi_Cruiser_rep.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VENATOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VENATOR_HULL
+		TEXT_TOOLTIP_VENATOR_SHIELD 
+		TEXT_TOOLTIP_VENATOR_MOVE 
+		TEXT_TOOLTIP_VENATOR_SQUADRON
+		TEXT_TOOLTIP_VENATOR_WEAP1 
+		TEXT_TOOLTIP_VENATOR_WEAP2
+		TEXT_TOOLTIP_VENATOR_WEAP3 
+		TEXT_TOOLTIP_VENATOR_WEAP4 
+		TEXT_TOOLTIP_VENATOR_WEAP5 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_VENATOR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Invincible_Cruiser">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_invincible_rep.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_INVINCIBLE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_INVINCIBLE_HULL
+		TEXT_TOOLTIP_INVINCIBLE_SHIELD 
+		TEXT_TOOLTIP_INVINCIBLE_MOVE
+		TEXT_TOOLTIP_INVINCIBLE_SQUADRON
+		TEXT_TOOLTIP_INVINCIBLE_WEAP1 
+		TEXT_TOOLTIP_INVINCIBLE_WEAP2 
+		TEXT_TOOLTIP_INVINCIBLE_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_INVINCIBLE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_GENERIC_STAR_DESTROYER">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_imperator_rep.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_STAR_DESTROYER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_STAR_DESTROYER_HULL
+		TEXT_TOOLTIP_STAR_DESTROYER_SHIELD 
+		TEXT_TOOLTIP_STAR_DESTROYER_MOVE 
+		TEXT_TOOLTIP_STAR_DESTROYER_SQUADRON_FOTR
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP1
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP2
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP3 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP4 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP5 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_IMPERATOR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_GENERIC_TECTOR">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_TECTOR_REP.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_TECTOR 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_TECTOR_HULL
+		TEXT_TOOLTIP_TECTOR_SHIELD
+		TEXT_TOOLTIP_TECTOR_MOVE 
+		TEXT_TOOLTIP_TECTOR_WEAP1 
+		TEXT_TOOLTIP_TECTOR_WEAP2 
+		TEXT_TOOLTIP_TECTOR_WEAP3 
+		TEXT_TOOLTIP_TECTOR_WEAP4 
+		TEXT_TOOLTIP_TECTOR_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_TECTOR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_GENERIC_SECUTOR">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_SECUTOR_REP.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SECUTOR 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_SECUTOR_HULL
+		TEXT_TOOLTIP_SECUTOR_SHIELD
+		TEXT_TOOLTIP_SECUTOR_MOVE
+		TEXT_TOOLTIP_SECUTOR_SQUADRON
+		TEXT_TOOLTIP_SECUTOR_WEAP1
+		TEXT_TOOLTIP_SECUTOR_WEAP2
+		TEXT_TOOLTIP_SECUTOR_WEAP3 
+		TEXT_TOOLTIP_SECUTOR_WEAP4 
+		TEXT_TOOLTIP_SECUTOR_WEAP5 
+		TEXT_TOOLTIP_SECUTOR_WEAP6 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SECUTOR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Generic_Maelstrom">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_maelstrom_rep.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_MAELSTROM
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MAELSTROM_HULL
+		TEXT_TOOLTIP_MAELSTROM_SHIELD
+		TEXT_TOOLTIP_MAELSTROM_MOVE
+		TEXT_TOOLTIP_MAELSTROM_SQUADRON
+		TEXT_TOOLTIP_MAELSTROM_WEAP1
+		TEXT_TOOLTIP_MAELSTROM_WEAP2
+		TEXT_TOOLTIP_MAELSTROM_WEAP3 
+		TEXT_TOOLTIP_MAELSTROM_WEAP4 
+		TEXT_TOOLTIP_MAELSTROM_WEAP5  
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_MAELSTROM</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Generic_Procurator">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_procurator.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_PROCURATOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_PROCURATOR_HULL
+		TEXT_TOOLTIP_PROCURATOR_SHIELD
+		TEXT_TOOLTIP_PROCURATOR_MOVE
+		TEXT_TOOLTIP_PROCURATOR_SQUADRON
+		TEXT_TOOLTIP_PROCURATOR_WEAP1
+		TEXT_TOOLTIP_PROCURATOR_WEAP2
+		TEXT_TOOLTIP_PROCURATOR_WEAP3  
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_PROCURATOR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Generic_Praetor">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_PRAETORONE_REP.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_PRAETOR_I 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_PRAETOR_I_HULL
+		TEXT_TOOLTIP_PRAETOR_I_SHIELD
+		TEXT_TOOLTIP_PRAETOR_I_MOVE
+		TEXT_TOOLTIP_PRAETOR_I_SQUADRON
+		TEXT_TOOLTIP_PRAETOR_I_WEAP1 
+		TEXT_TOOLTIP_PRAETOR_I_WEAP2 
+		TEXT_TOOLTIP_PRAETOR_I_WEAP3
+		TEXT_TOOLTIP_PRAETOR_I_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_PRAETOR_I</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Generic_Mandator">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_mandator.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_MANDATOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MANDATOR_HULL
+		TEXT_TOOLTIP_MANDATOR_SHIELD
+		TEXT_TOOLTIP_MANDATOR_MOVE
+		TEXT_TOOLTIP_MANDATOR_SQUADRON
+		TEXT_TOOLTIP_MANDATOR_WEAP1
+		TEXT_TOOLTIP_MANDATOR_WEAP2
+		TEXT_TOOLTIP_MANDATOR_WEAP3
+		TEXT_TOOLTIP_MANDATOR_WEAP4
+		TEXT_TOOLTIP_MANDATOR_WEAP5
+		TEXT_TOOLTIP_MANDATOR_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_RESTRICTED_HYPERDRIVE
+		TEXT_TOOLTIP_MANDATOR_UPGRADEABLE
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_MANDATOR
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_MANDATOR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Generic_Mandator_II">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_mandator2.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_MANDATOR2
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MANDATOR2_HULL
+		TEXT_TOOLTIP_MANDATOR2_SHIELD
+		TEXT_TOOLTIP_MANDATOR2_MOVE
+		TEXT_TOOLTIP_MANDATOR2_SQUADRON
+		TEXT_TOOLTIP_MANDATOR2_WEAP1
+		TEXT_TOOLTIP_MANDATOR2_WEAP2
+		TEXT_TOOLTIP_MANDATOR2_WEAP3
+		TEXT_TOOLTIP_MANDATOR2_WEAP4
+		TEXT_TOOLTIP_MANDATOR2_WEAP5
+		TEXT_TOOLTIP_MANDATOR2_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_MANDATOR2</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<!-- Republic Era 1, non buildables & rewards -->
+
+	<UpgradeObject Name="IA_Citadel_Cruiser_Squadron">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_citadel_cruiser.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CITADEL_CRUISER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CITADEL_CRUISER_SQUADRON
+		TEXT_TOOLTIP_CITADEL_CRUISER_HULL
+		TEXT_TOOLTIP_CITADEL_CRUISER_SHIELD
+		TEXT_TOOLTIP_CITADEL_CRUISER_MOVE 
+		TEXT_TOOLTIP_CITADEL_CRUISER_WEAP1
+		TEXT_TOOLTIP_CITADEL_CRUISER_WEAP2
+		TEXT_TOOLTIP_CITADEL_CRUISER_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_CITADEL_CRUISER_SQUADRON</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Customs_Corvette">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_customs_corvette.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CUSTOMS_CORVETTE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CUSTOMS_CORVETTE_HULL
+		TEXT_TOOLTIP_CUSTOMS_CORVETTE_SHIELD
+		TEXT_TOOLTIP_CUSTOMS_CORVETTE_MOVE 
+		TEXT_TOOLTIP_CUSTOMS_CORVETTE_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_CUSTOMS_CORVETTE_PD
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CUSTOMS_CORVETTE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_IPV1_System_Patrol_Craft">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_ipv.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_IPV
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_IPV_HULL 
+		TEXT_TOOLTIP_IPV_SHIELD 
+		TEXT_TOOLTIP_IPV_MOVE
+		TEXT_TOOLTIP_IPV_WEAP1 
+		TEXT_TOOLTIP_IPV_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_IPV_PD
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_IPV1_SYSTEM</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Class_C_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_CLASS_C.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CLASS_C
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CLASS_C_HULL
+		TEXT_TOOLTIP_CLASS_C_SHIELD
+		TEXT_TOOLTIP_CLASS_C_MOVE
+		TEXT_TOOLTIP_CLASS_C_SQUADRON
+		TEXT_TOOLTIP_CLASS_C_WEAP1
+		TEXT_TOOLTIP_CLASS_C_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_CLASS_C_PD
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CLASS_C</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Class_C_Support">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_CLASS_C_TENDER.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_CLASS_C_SUPPORT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_CLASS_C_SUPPORT_HULL
+		TEXT_TOOLTIP_CLASS_C_SUPPORT_SHIELD
+		TEXT_TOOLTIP_CLASS_C_SUPPORT_MOVE
+		TEXT_TOOLTIP_CLASS_C_SUPPORT_WEAP1
+		TEXT_TOOLTIP_CLASS_C_SUPPORT_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_CLASS_C_SUPPORT_PD
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CLASS_C_SUPPORT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Victory_I_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_VICTORY_FRIGATE_REP.TGA</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VICTORY_I_FRIGATE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VICTORY_I_FRIGATE_HULL
+		TEXT_TOOLTIP_VICTORY_I_FRIGATE_SHIELD
+		TEXT_TOOLTIP_VICTORY_I_FRIGATE_MOVE
+		TEXT_TOOLTIP_VICTORY_I_FRIGATE_WEAP1
+		TEXT_TOOLTIP_VICTORY_I_FRIGATE_WEAP2 
+		TEXT_TOOLTIP_VICTORY_I_FRIGATE_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_VICTORY_I_FRIGATE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Galleon">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_galleon.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GALLEON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GALLEON_HULL
+		TEXT_TOOLTIP_GALLEON_SHIELD
+		TEXT_TOOLTIP_GALLEON_MOVE
+		TEXT_TOOLTIP_GALLEON_SQUADRON
+		TEXT_TOOLTIP_GALLEON_WEAP1
+		TEXT_TOOLTIP_GALLEON_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_GALLEON_PD
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_GALLEON</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_CEC_Light_Cruiser">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_CEC_Light_Cruiser_Rep.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CEC_LIGHT_CRUISER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CEC_LIGHT_CRUISER_HULL
+		TEXT_TOOLTIP_CEC_LIGHT_CRUISER_SHIELD
+		TEXT_TOOLTIP_CEC_LIGHT_CRUISER_MOVE 
+		TEXT_TOOLTIP_CEC_LIGHT_CRUISER_SQUADRON_FOTR
+		TEXT_TOOLTIP_CEC_LIGHT_CRUISER_WEAP1 
+		TEXT_TOOLTIP_CEC_LIGHT_CRUISER_WEAP2 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CEC_LIGHT_CRUISER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_LAC">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_lac.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_LAC
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_LAC_HULL
+		TEXT_TOOLTIP_LAC_SHIELD 
+		TEXT_TOOLTIP_LAC_MOVE
+		TEXT_TOOLTIP_LAC_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_LAC_PD
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_LAC</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Consular_Refit">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_consular_refit.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_CONSULAR_REFIT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CONSULAR_HULL 
+		TEXT_TOOLTIP_CONSULAR_SHIELD
+		TEXT_TOOLTIP_CONSULAR_MOVE 
+		TEXT_TOOLTIP_CONSULAR_REFIT_WEAP1
+		TEXT_TOOLTIP_CONSULAR_REFIT_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CONSULAR_REFIT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Lancer_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_lancer_rep.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LANCER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_LANCER_HULL
+		TEXT_TOOLTIP_LANCER_SHIELD
+		TEXT_TOOLTIP_LANCER_MOVE 
+		TEXT_TOOLTIP_LANCER_CW_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_LANCER_CW_PD
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_LANCER_CW </Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Starbolt">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_starbolt_rep.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBOLT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_STARBOLT_HULL
+		TEXT_TOOLTIP_STARBOLT_SHIELD
+		TEXT_TOOLTIP_STARBOLT_MOVE 
+		TEXT_TOOLTIP_STARBOLT_SQUADRON
+		TEXT_TOOLTIP_STARBOLT_WEAP1 
+		TEXT_TOOLTIP_STARBOLT_WEAP2 
+		TEXT_TOOLTIP_STARBOLT_WEAP3
+		TEXT_TOOLTIP_STARBOLT_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_STARBOLT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Dreadnaught_Lasers">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_DREADNAUGHT_1_REP.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_HULL 
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_SHIELD 
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_MOVE 
+		TEXT_TOOLTIP_DREADNAUGHT_SQUADRON_FOTR
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_WEAP1
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_WEAP2
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_WEAP3 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_DREADNAUGHT_LASERS</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Dreadnaught_Carrier">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_DREADNAUGHT_CARRIER.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_DREADNAUGHT_CARRIER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_DREADNAUGHT_CARRIER_HULL 
+		TEXT_TOOLTIP_DREADNAUGHT_CARRIER_SHIELD
+		TEXT_TOOLTIP_DREADNAUGHT_MOVE 
+		TEXT_TOOLTIP_DREADNAUGHT_CARRIER_SQUADRON
+		TEXT_TOOLTIP_DREADNAUGHT_LASERS_WEAP1
+		TEXT_TOOLTIP_DREADNAUGHT_CARRIER_WEAP2
+		TEXT_TOOLTIP_DREADNAUGHT_CARRIER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_DREADNAUGHT_CARRIER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Generic_Gladiator">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_Gladiator.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GLADIATOR 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GLADIATOR_HULL
+		TEXT_TOOLTIP_GLADIATOR_SHIELD
+		TEXT_TOOLTIP_GLADIATOR_MOVE
+		TEXT_TOOLTIP_GLADIATOR_SQUADRON 
+		TEXT_TOOLTIP_GLADIATOR_WEAP1
+		TEXT_TOOLTIP_GLADIATOR_WEAP2
+		TEXT_TOOLTIP_GLADIATOR_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_GLADIATOR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Generic_Imperial_I_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_IMPERIALIFRIGATE_REP.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_IFI
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_IFI_HULL
+		TEXT_TOOLTIP_IFI_SHIELD
+		TEXT_TOOLTIP_IFI_MOVE 
+		TEXT_TOOLTIP_IFI_SQUADRON
+		TEXT_TOOLTIP_IFI_WEAP1 
+		TEXT_TOOLTIP_IFI_WEAP2 
+		TEXT_TOOLTIP_IFI_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_IMPERIAL_I_FRIGATE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Generic_Victory_Fleet_Destroyer">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_victory_fleet_class_rep.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VICTORY1_ALT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VICTORY1_HULL
+		TEXT_TOOLTIP_VICTORY1_SHIELD 
+		TEXT_TOOLTIP_VICTORY1_MOVE
+		TEXT_TOOLTIP_VICTORY1_SQUADRON
+		TEXT_TOOLTIP_VICTORY1_ALT_WEAP1
+		TEXT_TOOLTIP_VICTORY1_ALT_WEAP2
+		TEXT_TOOLTIP_VICTORY1_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_VICTORY_DESTROYER_MK1_ALT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_VENATOR_OFC">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_jedi_Cruiser_rep_OFC.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_VENATOR_OFC
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_VENATOR_OFC_HULL 
+			TEXT_TOOLTIP_VENATOR_SHIELD
+			TEXT_TOOLTIP_VENATOR_MOVE
+			TEXT_TOOLTIP_VENATOR_OFC_SQUADRON
+			TEXT_TOOLTIP_VENATOR_OFC_WEAP1
+			TEXT_TOOLTIP_VENATOR_WEAP2
+			TEXT_TOOLTIP_VENATOR_WEAP3
+			TEXT_TOOLTIP_VENATOR_WEAP4
+			TEXT_TOOLTIP_VENATOR_WEAP5
+			TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+			TEXT_TOOLTIP_VENATOR_OFC_UPGRADEABLE
+			TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+			TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+			TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+			TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+			TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_VENATOR_OFC </Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>	
+
+<!-- *********************************************************************** -->
+<!-- *******************   EMPIRE UNIT SET FOR SURVIVAL MODE   ************* -->
+<!-- *********************************************************************** -->
+
+	<!-- Influence, Hutts and IF Units -->
+
+	<UpgradeObject Name="IA_Light_Minstrel_Yacht">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_minstrel_yacht_light.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MINSTREL_YACHT_LIGHT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MINSTREL_YACHT_LIGHT_HULL 
+		TEXT_TOOLTIP_MINSTREL_YACHT_LIGHT_SHIELD 
+		TEXT_TOOLTIP_MINSTREL_YACHT_LIGHT_MOVE
+		TEXT_TOOLTIP_MINSTREL_YACHT_LIGHT_WEAP1 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_MINSTREL_YACHT_LIGHT_PD
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_MINSTREL_YACHT_LIGHT</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Heavy_Minstrel_Yacht">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_minstrel_yacht_heavy.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MINSTREL_YACHT_HEAVY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MINSTREL_YACHT_HEAVY_HULL 
+		TEXT_TOOLTIP_MINSTREL_YACHT_HEAVY_SHIELD 
+		TEXT_TOOLTIP_MINSTREL_YACHT_HEAVY_MOVE
+		TEXT_TOOLTIP_MINSTREL_YACHT_HEAVY_SQUADRON
+		TEXT_TOOLTIP_MINSTREL_YACHT_HEAVY_CW_WEAP1 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_MINSTREL_YACHT_HEAVY</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Raka_Freighter_Tender">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_RAKA_FREIGHTER.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_RAKA_FREIGHTER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_RAKA_FREIGHTER_HULL
+		TEXT_TOOLTIP_RAKA_FREIGHTER_SHIELD 
+		TEXT_TOOLTIP_RAKA_FREIGHTER_MOVE
+		TEXT_TOOLTIP_RAKA_FREIGHTER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_RAKA_FREIGHTER_PD
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER_FIGHTERS
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_RAKA_FREIGHTER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Kaloth_Battlecruiser">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_kaloth_battlecruiser.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_KALOTH_BATTLECRUISER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_KALOTH_BATTLECRUISER_HULL 
+		TEXT_TOOLTIP_KALOTH_BATTLECRUISER_SHIELD 
+		TEXT_TOOLTIP_KALOTH_BATTLECRUISER_MOVE
+		TEXT_TOOLTIP_KALOTH_BATTLECRUISER_SQUADRON
+		TEXT_TOOLTIP_KALOTH_BATTLECRUISER_WEAP1 
+		TEXT_TOOLTIP_KALOTH_BATTLECRUISER_WEAP2
+		TEXT_TOOLTIP_KALOTH_BATTLECRUISER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_KALOTH_BATTLECRUISER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Juvard_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_juvard_frigate.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_JUVARD_FRIGATE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_JUVARD_FRIGATE_HULL 
+		TEXT_TOOLTIP_JUVARD_FRIGATE_SHIELD 
+		TEXT_TOOLTIP_JUVARD_FRIGATE_MOVE
+		TEXT_TOOLTIP_JUVARD_FRIGATE_WEAP1 
+		TEXT_TOOLTIP_JUVARD_FRIGATE_WEAP2
+		TEXT_TOOLTIP_JUVARD_FRIGATE_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_JUVARD_FRIGATE_PD
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_JUVARD_FRIGATE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Barabbula_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_barabbula_frigate.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARABBULA_FRIGATE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BARABBULA_FRIGATE_HULL 
+		TEXT_TOOLTIP_BARABBULA_FRIGATE_SHIELD 
+		TEXT_TOOLTIP_BARABBULA_FRIGATE_MOVE
+		TEXT_TOOLTIP_BARABBULA_FRIGATE_WEAP1 
+		TEXT_TOOLTIP_BARABBULA_FRIGATE_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_BARABBULA_FRIGATE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Kossak_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_Kossak_Frigate.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_KOSSAK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_KOSSAK_HULL
+		TEXT_TOOLTIP_KOSSAK_SHIELD
+		TEXT_TOOLTIP_KOSSAK_MOVE 
+		TEXT_TOOLTIP_KOSSAK_SQUADRON
+		TEXT_TOOLTIP_KOSSAK_WEAP1
+		TEXT_TOOLTIP_KOSSAK_WEAP2
+		TEXT_TOOLTIP_KOSSAK_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_KOSSAK_FRIGATE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Ubrikkian_Cruiser_CW">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_ubrikkian_cruiser.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_HULL
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_SHIELD_CW
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_MOVE_CW
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_WEAP1_CW
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_WEAP2_CW
+		TEXT_TOOLTIP_UBRIKKIAN_CRUISER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_UBRIKKIAN_CRUISER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Tempest_Cruiser">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_tempest_cruiser.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_TEMPEST_CRUISER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_TEMPEST_CRUISER_HULL
+		TEXT_TOOLTIP_TEMPEST_CRUISER_SHIELD
+		TEXT_TOOLTIP_TEMPEST_CRUISER_MOVE
+		TEXT_TOOLTIP_TEMPEST_CRUISER_SQUADRON
+		TEXT_TOOLTIP_TEMPEST_CRUISER_WEAP1
+		TEXT_TOOLTIP_TEMPEST_CRUISER_WEAP2
+		TEXT_TOOLTIP_TEMPEST_CRUISER_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_TEMPEST_CRUISER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Szajin_Cruiser">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_SZAJIN_CRUISER.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SZAJIN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SZAJIN_HULL
+		TEXT_TOOLTIP_SZAJIN_SHIELD
+		TEXT_TOOLTIP_SZAJIN_MOVE 
+		TEXT_TOOLTIP_SZAJIN_SQUADRON
+		TEXT_TOOLTIP_SZAJIN_WEAP1
+		TEXT_TOOLTIP_SZAJIN_WEAP2 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK 
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SZAJIN</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Karagga_Destroyer">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_KARAGGA_DESTROYER.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_KARAGGA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_KARAGGA_HULL
+		TEXT_TOOLTIP_KARAGGA_SHIELD
+		TEXT_TOOLTIP_KARAGGA_MOVE 
+		TEXT_TOOLTIP_KARAGGA_SQUADRON
+		TEXT_TOOLTIP_KARAGGA_WEAP1
+		TEXT_TOOLTIP_KARAGGA_WEAP2 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK 
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_KARAGGA</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Vontor_Destroyer">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_VONTOR_DESTROYER.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VONTOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VONTOR_HULL
+		TEXT_TOOLTIP_VONTOR_SHIELD
+		TEXT_TOOLTIP_VONTOR_MOVE 
+		TEXT_TOOLTIP_VONTOR_SQUADRON
+		TEXT_TOOLTIP_VONTOR_WEAP1
+		TEXT_TOOLTIP_VONTOR_WEAP2 
+		TEXT_TOOLTIP_VONTOR_WEAP3
+		TEXT_TOOLTIP_VONTOR_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK 
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_VONTOR</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Voracious_Carrier">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_VORACIOUS_CARRIER.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VORACIOUS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VORACIOUS_HULL
+		TEXT_TOOLTIP_VORACIOUS_SHIELD
+		TEXT_TOOLTIP_VORACIOUS_MOVE 
+		TEXT_TOOLTIP_VORACIOUS_SQUADRON
+		TEXT_TOOLTIP_VORACIOUS_WEAP1
+		TEXT_TOOLTIP_VORACIOUS_WEAP2 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK 
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_VORACIOUS</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_DorBulla_Warship">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_DORBULLA.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_DORBULLA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_DORBULLA_HULL
+		TEXT_TOOLTIP_DORBULLA_SHIELD
+		TEXT_TOOLTIP_DORBULLA_MOVE 
+		TEXT_TOOLTIP_DORBULLA_SQUADRON
+		TEXT_TOOLTIP_DORBULLA_WEAP1
+		TEXT_TOOLTIP_DORBULLA_WEAP2 
+		TEXT_TOOLTIP_DORBULLA_WEAP3
+		TEXT_TOOLTIP_DORBULLA_WEAP4
+		TEXT_TOOLTIP_DORBULLA_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK 
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_DORBULLA</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Hutts</Lua_Script>
+	</UpgradeObject>
+	
+	
+	<UpgradeObject Name="IA_Komrk_Gunship_Squadron">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_komrk_gunship.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_KOMRK_GUNSHIP
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_KOMRK_GUNSHIP_SQUADRON
+		TEXT_TOOLTIP_KOMRK_GUNSHIP_HULL
+		TEXT_TOOLTIP_KOMRK_GUNSHIP_SHIELD
+		TEXT_TOOLTIP_KOMRK_GUNSHIP_MOVE
+		TEXT_TOOLTIP_KOMRK_GUNSHIP_WEAP1
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_KOMRK_GUNSHIP_SQUADRON</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Geonosian_Cruiser">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_geonosiancruiser.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_GEONOSIANCRUISER 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_GEONOSIANCRUISER_HULL 
+		TEXT_TOOLTIP_GEONOSIANCRUISER_SHIELD
+		TEXT_TOOLTIP_GEONOSIANCRUISER_MOVE 
+		TEXT_TOOLTIP_GEONOSIANCRUISER_SQUADRON
+		TEXT_TOOLTIP_GEONOSIANCRUISER_WEAP1 
+		TEXT_TOOLTIP_GEONOSIANCRUISER_WEAP2 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_GEONOSIANCRUISER_PD
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_GEONOSIANCRUISER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Super_Transport_VI">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_SUPERTRANSPORT_VI.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VI
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VI_HULL
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VI_SHIELD
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VI_MOVE 
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VI_SQUADRON
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VI_WEAP1 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FIGHTER_POOL
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SUPER_TRANSPORT_VI</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Super_Transport_VII">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_SUPERTRANSPORT_VII.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VII
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VII_HULL
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VII_SHIELD
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VII_MOVE 
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VII_SQUADRON
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VII_WEAP1 
+		TEXT_TOOLTIP_SUPER_TRANSPORT_VII_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FIGHTER_POOL
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SUPER_TRANSPORT_VII</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Neutron_Star_Mercenary">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_Neutronstar_Mercenary.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_NEUTRONSTAR_MERCENARY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_NEUTRONSTAR_HULL
+		TEXT_TOOLTIP_NEUTRONSTAR_SHIELD
+		TEXT_TOOLTIP_NEUTRONSTAR_MOVE
+		TEXT_TOOLTIP_NEUTRONSTAR_MERCENARY_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_NEUTRONSTAR_MERCENARY</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Space_ARC_Cruiser">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_SPACE_ARC.TGA</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SPACE_ARC_STOCK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SPACE_ARC_HULL
+		TEXT_TOOLTIP_SPACE_ARC_SHIELD
+		TEXT_TOOLTIP_SPACE_ARC_MOVE
+		TEXT_TOOLTIP_SPACE_ARC_SQUADRON
+		TEXT_TOOLTIP_SPACE_ARC_STOCK_WEAP1
+		TEXT_TOOLTIP_SPACE_ARC_STOCK_WEAP2 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SPACE_ARC</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Super_Transport_XI">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_SUPERTRANSPORT_XI.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SUPER_TRANSPORT_XI
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SUPER_TRANSPORT_XI_HULL
+		TEXT_TOOLTIP_SUPER_TRANSPORT_XI_SHIELD
+		TEXT_TOOLTIP_SUPER_TRANSPORT_XI_MOVE 
+		TEXT_TOOLTIP_SUPER_TRANSPORT_XI_SQUADRON
+		TEXT_TOOLTIP_SUPER_TRANSPORT_XI_WEAP2 
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FIGHTER_POOL
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SUPER_TRANSPORT_XI</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Kuari_Princess_Liner">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>I_BUTTON_KUARI_PRINCESS.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_KUARI_PRINCESS_LINER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_KUARI_PRINCESS_LINER_HULL
+		TEXT_TOOLTIP_KUARI_PRINCESS_LINER_SHIELD
+		TEXT_TOOLTIP_KUARI_PRINCESS_LINER_MOVE
+		TEXT_TOOLTIP_KUARI_PRINCESS_LINER_SQUADRON
+		TEXT_TOOLTIP_KUARI_PRINCESS_LINER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_KUARI_PRINCESS_LINER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Calamari_Cruiser_Liner">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_mon_calimari_cruiser_liner.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_LINER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_LINER_HULL
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_LINER_SHIELD
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_LINER_MOVE
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_LINER_SQUADRON
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_LINER_WEAP1
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_LINER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_CALAMARI_CRUISER_LINER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="IA_Home_One_Type_Liner">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_home_one_liner.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MC80_HOT_LINER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MC80_HOT_LINER_HULL
+		TEXT_TOOLTIP_MC80_HOT_LINER_SHIELD
+		TEXT_TOOLTIP_MC80_HOT_LINER_MOVE
+		TEXT_TOOLTIP_MC80_HOT_LINER_SQUADRON
+		TEXT_TOOLTIP_MC80_HOT_LINER_WEAP1
+		TEXT_TOOLTIP_MC80_HOT_LINER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_MC80_HOT_LINER</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Generic_Tagge_Battlecruiser">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_tagge.tga</Icon_Name>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_TAGGE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_TAGGE_HULL
+		TEXT_TOOLTIP_TAGGE_SHIELD
+		TEXT_TOOLTIP_TAGGE_MOVE
+		TEXT_TOOLTIP_TAGGE_SQUADRON
+		TEXT_TOOLTIP_TAGGE_WEAP1
+		TEXT_TOOLTIP_TAGGE_WEAP2
+		TEXT_TOOLTIP_TAGGE_WEAP3 
+		TEXT_TOOLTIP_TAGGE_WEAP4 
+		TEXT_TOOLTIP_TAGGE_WEAP5  
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_TAGGE</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Umbaran_Frigate">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_cis_frigate.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_UMBARAN_FRIGATE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_UMBARAN_FRIGATE_HULL
+		TEXT_TOOLTIP_UMBARAN_FRIGATE_SHIELD
+		TEXT_TOOLTIP_UMBARAN_FRIGATE_MOVE
+		TEXT_TOOLTIP_UMBARAN_FRIGATE_SQUADRON
+		TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP1
+		TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP2
+		TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_FLEET_TENDER
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_UMBARAN_FRIGATE </Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_CSA</Lua_Script>
+	</UpgradeObject>
+
+<!-- *********************************************************************** -->
+<!-- *******************   EMPIRE UNIT SET FOR SURVIVAL MODE   ************* -->
+<!-- *********************************************************************** -->
+	
+	
+	<UpgradeObject Name="IA_Set_Empire">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_gar.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_UPGRADE_IA_FACTION </Encyclopedia_Text>
+		<Text_ID>TEXT_FACTION_REPUBLIC</Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>InstantAction_SetFaction</Lua_Script>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Set_Rebel">
+		<Variant_Of_Existing_Type>IA_Set_Empire</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_CIS.tga</Icon_Name>
+		<Text_ID>TEXT_FACTION_CIS</Text_ID>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Set_Banking_Clan">
+		<Variant_Of_Existing_Type>IA_Set_Empire</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_banking_clan.tga</Icon_Name>
+		<Text_ID>TEXT_FACTION_BANKING_CLAN</Text_ID>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Set_Commerce_Guild">
+		<Variant_Of_Existing_Type>IA_Set_Empire</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_commerce_guild.tga</Icon_Name>
+		<Text_ID>TEXT_FACTION_COMMERCE_GUILD</Text_ID>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Set_Trade_Federation">
+		<Variant_Of_Existing_Type>IA_Set_Empire</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_trade_federation.tga</Icon_Name>
+		<Text_ID>TEXT_FACTION_TRADEFED</Text_ID>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Set_Techno_Union">
+		<Variant_Of_Existing_Type>IA_Set_Empire</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_techno_union.tga</Icon_Name>
+		<Text_ID>TEXT_FACTION_TECHNO_UNION</Text_ID>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Set_Sector_Forces">
+		<Variant_Of_Existing_Type>IA_Set_Empire</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_SECTOR_FORCES.tga</Icon_Name>
+		<Text_ID>TEXT_FACTION_SECTORFORCES</Text_ID>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="IA_Set_Hutt_Cartels">
+		<Variant_Of_Existing_Type>IA_Set_Empire</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HUTTS.tga</Icon_Name>
+		<Text_ID>TEXT_FACTION_HUTTS</Text_ID>
+	</UpgradeObject>
+	
+	
+</UpgradeObjects>

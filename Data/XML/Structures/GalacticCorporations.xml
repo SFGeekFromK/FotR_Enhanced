@@ -1,0 +1,2018 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="KDY_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_KDY</Text_ID>
+
+		<Land_Model_Name>W_ImperialPalace.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_kdy.tga</Icon_Name>
+
+		<Affiliation>Empire, Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union, Sector_Forces</Affiliation>
+
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+
+		<Required_Planets>Kuat, Gyndine, Jaemus, Balmorra</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_KDY_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_KDY
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_KUAT
+		TEXT_OBJECT_STAR_SYSTEM_BALMORRA
+		TEXT_OBJECT_STAR_SYSTEM_JAEMUS
+		TEXT_OBJECT_STAR_SYSTEM_GYNDINE
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Republic_AT_PT_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Republic_AT_PT_Walker, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="KDY_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> 
+				Generic_Mandator, Generic_Mandator_II, Mandator_II_Upgrade, Generic_Praetor, Generic_Procurator, Generic_Maelstrom, Generic_Secutor, Generic_Tector, Generic_Star_Destroyer, Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Generic_Venator, Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II, Generic_Imperial_I_Frigate, Victory_I_Frigate, Arquitens, Pelta_Assault, Pelta_Support, Lancer_Frigate, Class_C_Frigate, Galleon, Captor, Auxilia, Munifex, Lupus_Missile_Frigate, Storm_Fleet_Destroyer,
+				Republic_AT_TE_Walker_Company, Republic_A6_Juggernaut_Company, Republic_AT_AP_Walker_Company, Republic_A5_Juggernaut_Company, Republic_A4_Juggernaut_Company, Republic_AT_OT_Walker_Company, Republic_UT_AT_Speeder_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company, 
+				<!-- FotR_Enhanced--> Venator_OFC, Venator_Imperial
+				</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="KDY_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> 
+				Generic_Mandator, Generic_Mandator_II, Mandator_II_Upgrade, Generic_Praetor, Generic_Procurator, Generic_Maelstrom, Generic_Secutor, Generic_Tector, Generic_Star_Destroyer, Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Generic_Venator, Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II, Generic_Imperial_I_Frigate, Victory_I_Frigate, Arquitens, Pelta_Assault, Pelta_Support, Lancer_Frigate, Class_C_Frigate, Galleon, Captor, Auxilia, Munifex, Lupus_Missile_Frigate, Storm_Fleet_Destroyer,
+				Republic_AT_TE_Walker_Company, Republic_A6_Juggernaut_Company, Republic_AT_AP_Walker_Company, Republic_A5_Juggernaut_Company, Republic_A4_Juggernaut_Company, Republic_AT_OT_Walker_Company, Republic_UT_AT_Speeder_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company,
+				<!-- FotR_Enhanced--> Venator_OFC, Venator_Imperial 
+				</Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Rothana_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Text_ID>TEXT_COMPANY_ROTHANA</Text_ID>
+
+		<Land_Model_Name>W_ImperialPalace.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Build_Cost_Credits>2500</Build_Cost_Credits>
+
+		<Required_Planets>Rothana</Required_Planets>
+
+		<Icon_Name>I_BUTTON_ROTHANAENGINEERING.tga</Icon_Name>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_ROTHANA_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_ROTHANA
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_ROTHANA
+		</Encyclopedia_Text>
+
+		<!-- Placeholder -->
+		<Starting_Spawned_Units_Tech_0>Republic_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Republic_Trooper_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_2>Clonetrooper_Phase_One_Team_Deployed, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Clonetrooper_Phase_One_Team_Deployed, 1</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_4>Clonetrooper_Phase_Two_Team_Deployed, 1</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Clonetrooper_Phase_Two_Team_Deployed, 1</Reserve_Spawned_Units_Tech_4>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Rothana_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> 
+				Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II,
+				Republic_AT_TE_Walker_Company, Republic_AT_OT_Walker_Company, Republic_AT_AP_Walker_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company 
+				</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Rothana_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> 
+				Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II,
+				Republic_AT_TE_Walker_Company, Republic_AT_OT_Walker_Company, Republic_AT_AP_Walker_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company
+				</Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Free_Dac_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_FREE_DAC</Text_ID>
+
+		<Land_Model_Name>NB_Moncal_Building.alo</Land_Model_Name>
+		<Scale_Factor>1.75</Scale_Factor>
+
+		<Icon_Name>i_button_mcs.tga</Icon_Name>
+
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+
+		<Required_Planets>Mon_Calamari, Minntooine, Pammant</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_FREE_DAC_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_FREE_DAC
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_MON_CALAMARI
+		TEXT_OBJECT_STAR_SYSTEM_MINNTOOINE
+		TEXT_OBJECT_STAR_SYSTEM_PAMMANT
+		</Encyclopedia_Text>
+
+		<!-- Placeholder -->
+		<Starting_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Mon_Calamari_Civ_Company, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="MCS_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Subjugator, Generic_Providence, Recusant </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="MCS_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Subjugator, Generic_Providence, Recusant </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Incom_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_INCOM</Text_ID>
+
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name> 
+		<Scale_Factor>1.5</Scale_Factor> 
+
+		<Icon_Name>i_button_freitek.tga</Icon_Name> <!-- Actual Incom icon has an X-wing, so not so great -->
+
+		<Affiliation>Empire</Affiliation>
+
+		<Tech_Level>99</Tech_Level>
+
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+
+		<Required_Planets>Fresia, Cal_Seti</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_INCOM_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_INCOM
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_FRESIA
+		TEXT_OBJECT_STAR_SYSTEM_CAL_SETI
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Police_Responder_Assault_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Police_Responder_Assault_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Incom_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> ARC_170_Squadron_Buildable </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Incom_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> ARC_170_Squadron_Buildable </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Rendili_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_RENDILI</Text_ID>
+
+		<Land_Model_Name>W_ImperialPalace.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_RENDILI.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>5000</Build_Cost_Credits>
+
+		<Required_Planets>Rendili, Sluis_Van, Mon_Calamari</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_RENDILI_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_RENDILI
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_RENDILI
+		TEXT_OBJECT_STAR_SYSTEM_MON_CALAMARI
+		TEXT_OBJECT_STAR_SYSTEM_SLUIS_VAN 
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Rendili_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Invincible_Cruiser, Generic_Gladiator, Generic_Victory_Fleet_Destroyer, Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier, Neutron_Star, Customs_Corvette </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Rendili_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Invincible_Cruiser, Generic_Gladiator, Generic_Victory_Fleet_Destroyer, Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier, Neutron_Star, Customs_Corvette </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="CEC_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_CEC</Text_ID>
+
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_cec.TGA</Icon_Name>
+
+		<Affiliation>Empire, Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+
+		<Required_Planets>Corellia</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_CEC_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_CEC
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_CORELLIA 
+		</Encyclopedia_Text>
+
+		<!-- Placeholder -->
+		<Starting_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="CEC_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> CEC_Light_Cruiser, Starbolt, Corellian_Corvette, Corellian_Gunboat, Consular_Refit, Charger_C70, Gozanti_Cruiser_Squadron </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="CEC_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> CEC_Light_Cruiser, Starbolt, Corellian_Corvette, Corellian_Gunboat, Consular_Refit, Charger_C70, Gozanti_Cruiser_Squadron </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Aratech_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_ARATECH</Text_ID>
+
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_ARATECH.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Carida</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_ARATECH_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_ARATECH
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_CARIDA
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Republic_74Z_Bike, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Republic_74Z_Bike, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Aratech_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Republic_74Z_Bike_Company, Republic_ISP_Company, Republic_BARC_Company </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Aratech_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Republic_74Z_Bike_Company, Republic_ISP_Company, Republic_BARC_Company </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Taim_Bak_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_TAIM_BAK</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_TAIM_BAK.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Rendili</Required_Planets>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_TAIM_BAK_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_TAIM_BAK
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_RENDILI 
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Taim_Bak_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Republic_AV7_Company </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Taim_Bak_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Republic_AV7_Company </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Damorian_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_DAMORIAN</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_DAMORIAN.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+
+		<Required_Planets>Brentaal</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_DAMORIAN_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_DAMORIAN
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_BRENTAAL
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Damorian_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Carrack_Cruiser, Carrack_Cruiser_Lasers </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Damorian_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Carrack_Cruiser, Carrack_Cruiser_Lasers </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="ORSF_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_ORSF</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_ORSF.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>3500</Build_Cost_Credits>
+
+		<Required_Planets>Eriadu</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_ORSF_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_ORSF
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_ERIADU
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Special_Tactics_Trooper_Heavy_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Special_Tactics_Trooper_Heavy_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="ORSF_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Carrack_Cruiser, Carrack_Cruiser_Lasers, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="ORSF_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Carrack_Cruiser, Carrack_Cruiser_Lasers, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Balmorran_Arms_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_BALMORRAN_ARMS</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_BALMORRAN_ARMS.TGA</Icon_Name>
+
+		<Affiliation>Empire, Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Balmorra</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_BALMORRAN_ARMS_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_BALMORRAN_ARMS
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_BALMORRA 
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Balmorran_Arms_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> B1_Droid_Squad, B1_Geo_Droid_Squad, B1_RC_Droid_Squad, Republic_SD_6_Droid_Company </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Balmorran_Arms_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> B1_Droid_Squad, B1_Geo_Droid_Squad, B1_RC_Droid_Squad, Republic_SD_6_Droid_Company </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Uulshos_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_UULSHOS</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_uulshos.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Etti, Ession</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_UULSHOS_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_UULSHOS
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_ETTI
+		TEXT_OBJECT_STAR_SYSTEM_ESSION 
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>PDF_Soldier_Assault_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>PDF_Soldier_Assault_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Uulshos_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Republic_ISP_Company </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Uulshos_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Republic_ISP_Company </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mekuun_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_MEKUUN</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Belsavis, Talhovi</Required_Planets>
+
+		<Icon_Name>i_button_mekuun.tga</Icon_Name>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_MEKUUN_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_MEKUUN
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_BELSAVIS
+		TEXT_OBJECT_STAR_SYSTEM_TALHOVI
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Police_Responder_Assault_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Police_Responder_Assault_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Mekuun_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Republic_UT_AA_Company, Republic_UT_AT_Speeder_Company, Republic_HAET_Group </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Mekuun_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Republic_UT_AA_Company, Republic_UT_AT_Speeder_Company, Republic_HAET_Group </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="SoroSuub_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_SOROSUUB</Text_ID>
+
+		<Land_Model_Name>NB_PirateBase_01.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+
+		<Required_Planets>Sullust, Mechis, Byblos</Required_Planets>
+
+		<Icon_Name>i_button_sorosuub.tga</Icon_Name>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_SOROSUUB_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_SOROSUUB
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_SULLUST
+		TEXT_OBJECT_STAR_SYSTEM_BYBLOS
+		TEXT_OBJECT_STAR_SYSTEM_MECHIS
+		</Encyclopedia_Text>
+
+		<!-- Placeholder -->
+		<Starting_Spawned_Units_Tech_0>Sullustan_Civ_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Sullustan_Civ_Company, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="SoroSuub_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Republic_Flashblind_Group, Republic_Gian_Company</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="SoroSuub_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Republic_Flashblind_Group, Republic_Gian_Company</Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="TransGalMeg_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_TRANSGALMEG</Text_ID>
+
+		<Land_Model_Name>NB_PirateBase_01.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Icon_Name>i_button_transgalmeg.TGA</Icon_Name>
+
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>4500</Build_Cost_Credits>
+
+		<Required_Planets>Saijo, Bespin, Vulpter, Pako_Ramoon</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_TRANSGALMEG_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_TRANSGALMEG_FOTR
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_BESPIN
+		TEXT_OBJECT_STAR_SYSTEM_PAKO_RAMOON
+		TEXT_OBJECT_STAR_SYSTEM_SAIJO
+		TEXT_OBJECT_STAR_SYSTEM_VULPTER
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>OOM_Security_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>OOM_Security_Squad, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="TransGalMeg_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Bulwark_I, Bulwark_II </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="TransGalMeg_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Bulwark_I, Bulwark_II </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Hoersch_Kessel_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_HOERSCH_KESSEL</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_hoersch_kessel.TGA</Icon_Name>
+
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+
+		<Required_Planets>Ord_Trasi, Minntooine, Druckenwell, Balmorra</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_HOERSCH_KESSEL_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_HOERSCH_KESSEL_FOTR
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_BALMORRA
+		TEXT_OBJECT_STAR_SYSTEM_DRUCKENWELL
+		TEXT_OBJECT_STAR_SYSTEM_ORD_TRASI 
+		TEXT_OBJECT_STAR_SYSTEM_MINNTOOINE
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Hoersch_Kessel_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Recusant, Generic_Lucrehulk, Battleship_Lucrehulk, Auxiliary_Lucrehulk, Munificent, Supply_Ship, Lucrehulk_Core_Destroyer </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Hoersch_Kessel_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Recusant, Generic_Lucrehulk, Battleship_Lucrehulk, Auxiliary_Lucrehulk, Munificent, Supply_Ship, Lucrehulk_Core_Destroyer </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Commerce_Guild_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_COMMERCE_GUILD</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_commerce_guild_hq.TGA</Icon_Name>
+
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>450</Build_Cost_Credits>
+
+		<Required_Planets>Raxus, Minntooine, Sullust, Felucia, Saleucami, Castell, Korriban </Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_COMMERCE_GUILD_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_COMMERCE_GUILD
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_RAXUS
+		TEXT_OBJECT_STAR_SYSTEM_MINNTOOINE 
+		TEXT_OBJECT_STAR_SYSTEM_SULLUST 
+		TEXT_OBJECT_STAR_SYSTEM_FELUCIA 
+		TEXT_OBJECT_STAR_SYSTEM_SALEUCAMI 
+		TEXT_OBJECT_STAR_SYSTEM_CASTELL
+		TEXT_OBJECT_STAR_SYSTEM_KORRIBAN
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Dwarf_Spider_Droid_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Dwarf_Spider_Droid_Squad, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="CG_Company_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Diamond_Frigate </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="CG_Company_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Diamond_Frigate </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Geonosian_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_GEONOSIAN</Text_ID>
+
+		<Land_Model_Name>w_Geonosis_Tower01.alo</Land_Model_Name>
+		<Scale_Factor>1.75</Scale_Factor>
+
+		<Icon_Name>i_button_geonosian_industries.TGA</Icon_Name>
+
+		<Affiliation>Empire, Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>1200</Build_Cost_Credits>
+
+		<Required_Planets>Geonosis</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_GEONOSIAN_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_GEONOSIAN
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_GEONOSIS
+		</Encyclopedia_Text>
+
+		<!-- Placeholder -->
+		<Starting_Spawned_Units_Tech_0>Geonosian_Civ_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Geonosian_Civ_Company, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Geonosian_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Geonosian_Cruiser_Influence </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Geonosian_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Geonosian_Cruiser_Influence </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Haor_Chall_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_HAOR_CHALL</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_haor_chall.TGA</Icon_Name>
+
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+
+		<Required_Planets>Charros</Required_Planets>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_HAOR_CHALL_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_HAOR_CHALL
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_CHARROS 
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>OOM_Security_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>OOM_Security_Squad, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Haor_Chall_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> C9979_Carrier, Hailfire_Company, HMP_Group, MAF_Group, CIS_MAF_Group </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Haor_Chall_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> C9979_Carrier, Hailfire_Company, HMP_Group, MAF_Group, CIS_MAF_Group </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Colicoid_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_COLICOID</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_colicoid.TGA</Icon_Name>
+
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Colla</Required_Planets>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_COLICOID_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_COLICOID
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_COLLA
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Destroyer_Droid, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Colicoid_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Destroyer_Droid_Company </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Colicoid_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Destroyer_Droid_Company </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Baktoid_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_BAKTOID</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_baktoid.TGA</Icon_Name>
+
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+
+		<Required_Planets>Cato_Neimoidia, Deko_Neimoidia, Geonosis, Ord_Cestus, Telti, Hypori</Required_Planets>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_BAKTOID_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_BAKTOID
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_CATO_NEIMOIDIA
+		TEXT_OBJECT_STAR_SYSTEM_DEKO_NEIMOIDIA
+		TEXT_OBJECT_STAR_SYSTEM_GEONOSIS
+		TEXT_OBJECT_STAR_SYSTEM_HYPORI
+		TEXT_OBJECT_STAR_SYSTEM_ORD_CESTUS 
+		TEXT_OBJECT_STAR_SYSTEM_TELTI 
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>B2_Droid_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>B2_Droid_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Baktoid_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> B1_Droid_Squad, B1_Geo_Droid_Squad, B1_RC_Droid_Squad, B2_Droid_Squad, BX_Commando_Squad, Dwarf_Spider_Droid_Company, CIS_STAP_Squad, STAP_Squad, AAT_Company, GAT_Group, CIS_GAT_Group, HAG_Company, CA_Artillery_Company, CIS_Super_Tank_Company, Super_Tank_Company, CIS_MTT_Company, MTT_Company, OG9_Company, HMP_Group, J1_Artillery_Corp, Destroyer_Droid_II_Company, HAML_Company </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Baktoid_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> B1_Droid_Squad, B1_Geo_Droid_Squad, B1_RC_Droid_Squad, B2_Droid_Squad, BX_Commando_Squad, Dwarf_Spider_Droid_Company, CIS_STAP_Squad, STAP_Squad, AAT_Company, GAT_Group, CIS_GAT_Group, HAG_Company, CA_Artillery_Company, CIS_Super_Tank_Company, Super_Tank_Company, CIS_MTT_Company, MTT_Company, OG9_Company, HMP_Group, J1_Artillery_Corp, Destroyer_Droid_II_Company, HAML_Company </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Techno_Union_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_TECHNO_UNION</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_techno_union_hq.TGA</Icon_Name>
+
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>450</Build_Cost_Credits>
+
+		<Required_Planets>Geonosis, Balmorra, Ord_Cestus, Telti, Foerost, Kuat, Fondor, Hypori, Metalorn, Mustafar, Nelvaan, Saleucami, Utapau, Vulpter, Tar_Morden</Required_Planets>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_TECHNO_UNION_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_TECHNO_UNION
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_KUAT
+		TEXT_OBJECT_STAR_SYSTEM_BALMORRA 
+		TEXT_OBJECT_STAR_SYSTEM_FOEROST 
+		TEXT_OBJECT_STAR_SYSTEM_FONDOR 
+		TEXT_OBJECT_STAR_SYSTEM_HYPORI
+		TEXT_OBJECT_STAR_SYSTEM_GEONOSIS
+		TEXT_OBJECT_STAR_SYSTEM_ORD_CESTUS
+		TEXT_OBJECT_STAR_SYSTEM_TELTI 
+		TEXT_OBJECT_STAR_SYSTEM_METALORN
+		TEXT_OBJECT_STAR_SYSTEM_MUSTAFAR
+		TEXT_OBJECT_STAR_SYSTEM_NELVAAN
+		TEXT_OBJECT_STAR_SYSTEM_SALEUCAMI
+		TEXT_OBJECT_STAR_SYSTEM_TAR_MORDEN
+		TEXT_OBJECT_STAR_SYSTEM_UTAPAU
+		TEXT_OBJECT_STAR_SYSTEM_VULPTER
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Crab_Droid_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Crab_Droid_Squad, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Techno_Union_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>
+				Hardcell,
+				Crab_Droid_Company, Persuader_Company, Magna_Company
+				</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Techno_Union_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>
+				Hardcell,
+				Crab_Droid_Company, Persuader_Company, Magna_Company 
+				</Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Bespin_Motors_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_BESPIN_MOTORS</Text_ID>
+
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union </Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Bespin</Required_Planets>
+
+		<Icon_Name>I_BUTTON_BESPIN_MOTORS.TGA</Icon_Name>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_BESPIN_MOTORS_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_BESPIN_MOTORS
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_BESPIN
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Bespin_Motors_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Storm_Cloud_Car_Company </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Bespin_Motors_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Storm_Cloud_Car_Company </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mandal_Motors_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_MANDAL_MOTORS</Text_ID>
+
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union </Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Mandalore</Required_Planets>
+
+		<Icon_Name>I_BUTTON_MANDAL_MOTORS.TGA</Icon_Name>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_MANDAL_MOTORS_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_MANDAL_MOTORS
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_MANDALORE
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Mandalorian_Soldier_Team_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Mandalorian_Soldier_Team_Deployed, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Mandal_Motors_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>
+				Pursuer_Enforcement_Ship_Squadron,
+				Komrk_Gunship_Squadron_Influence
+				</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Mandal_Motors_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>
+				Pursuer_Enforcement_Ship_Squadron,
+				Komrk_Gunship_Squadron_Influence
+				</Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Retail_Caucus_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_RETAIL_CAUCUS</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_RETAIL_CAUCUS.TGA</Icon_Name>
+
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union </Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Christophsis</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_RETAIL_CAUCUS_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_RETAIL_CAUCUS
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_CHRISTOPHSIS 
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>LR_57_Combat_Droid_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>LR_57_Combat_Droid_Squad, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Retail_Caucus_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> LR_57_Droid_Company </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Retail_Caucus_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> LR_57_Droid_Company </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Cloning_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Build_Limit_Current_Per_Player>99</Build_Limit_Current_Per_Player>
+
+		<Text_ID>TEXT_COMPANY_CLONING_FACILITY</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_cloning_facility.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+
+		<Required_Planets>Arkania, Byss, Columus, Kamino, Khomm, Wayland, Xuaquarres</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BONUS_PRICE_CLONING_FACILITY
+		TEXT_COMPANY_CLONING_FACILITY_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_CLONING_FACILITY_FOTR_1
+		TEXT_COMPANY_GARRISON_CLONING_FACILITY_FOTR_2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_CLONING_FACILITY
+		TEXT_TOOLTIP_INCOME_NAVAL_CLONING
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_UPKEEP_CLONING
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_ARKANIA
+		TEXT_OBJECT_STAR_SYSTEM_BYSS
+		TEXT_OBJECT_STAR_SYSTEM_COLUMUS
+		TEXT_OBJECT_STAR_SYSTEM_KAMINO
+		TEXT_OBJECT_STAR_SYSTEM_KHOMM
+		TEXT_OBJECT_STAR_SYSTEM_WAYLAND
+		TEXT_OBJECT_STAR_SYSTEM_XUAQUARRES
+		</Encyclopedia_Text>
+
+		<!-- Placeholder -->
+		<Starting_Spawned_Units_Tech_0>Republic_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Republic_Trooper_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_2>Shock_Clonetrooper_Phase_One_Team, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Shock_Clonetrooper_Phase_One_Team, 1</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_4>Shock_Clonetrooper_Phase_Two_Team, 1</Starting_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Shock_Clonetrooper_Phase_Two_Team, 1</Reserve_Spawned_Units_Tech_4>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Cloning_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Clonetrooper_Phase_One_Team, Clonetrooper_Phase_Two_Team, ARC_Phase_One_Team, ARC_Phase_Two_Team, Clone_Commando_Team, Clone_Galactic_Marine_Platoon </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.5</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Cloning_Production_Time_Penalty">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Clonetrooper_Phase_One_Team, Clonetrooper_Phase_Two_Team, ARC_Phase_One_Team, ARC_Phase_Two_Team, Clone_Commando_Team, Clone_Galactic_Marine_Platoon </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>-1.0</Time_Reduction_Percentage>	
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="Maintenance_Cost">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_CLONING_FACILITY_UPKEEP</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>-300</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<!-- <Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies> -->
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Jedi_Temple">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_JEDI_TEMPLE</Text_ID>
+
+		<Icon_Name>I_BUTTON_JEDI_TEMPLE.TGA</Icon_Name>
+
+		<!-- <Land_Model_Name>Jedi_Temple.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor> -->
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+
+		<Required_Planets>Coruscant</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_COMPANY_JEDI_TEMPLE_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_JEDI_TEMPLE
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UNITS_JEDI_TEMPLE
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_CORUSCANT
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Republic_Jedi_Knight, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Republic_Jedi_Knight, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Rishi_Station">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_RISHI_STATION</Text_ID>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_RISHI_STATION_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_RISHI
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_uplink_station.tga</Icon_Name>
+
+		<Land_Model_Name>W_Uplink_Station.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>5150</Build_Cost_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+		<Required_Planets>Rishi</Required_Planets>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+
+		<Galactic_Influence_Range>300.0</Galactic_Influence_Range>
+		<Hyperspace_Fleet_Reveal_Range>300.0</Hyperspace_Fleet_Reveal_Range>
+
+		<Abilities SubObjectList="Yes">	
+			<System_Spy_Ability Name="Rishi_Station_Network">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>Yes</See_Base_Levels>
+				<See_Credit_Income>No</See_Credit_Income>
+				<See_Credit_Income_Breakdown>No</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>No</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>Yes</See_Fleet_Contents>
+				<See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+				<See_Special_Structures>No</See_Special_Structures>
+				<See_Political_Control>Yes</See_Political_Control>
+				<See_Political_Control_Breakdown>Yes</See_Political_Control_Breakdown>
+				<See_Current_Production>No</See_Current_Production>
+				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Praesitlyn_ComCenter">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_PRAESITLYN_COMCENTER</Text_ID>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_PRAESITLYN_COMCENTER_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_PRAESITLYN
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_uplink_station.tga</Icon_Name>
+
+		<Land_Model_Name>W_Uplink_Station.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Affiliation>Empire, Rebel</Affiliation>
+
+		<Build_Cost_Credits>5150</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Required_Planets>Praesitlyn</Required_Planets>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+
+		<Galactic_Influence_Range>300.0</Galactic_Influence_Range>
+		<Hyperspace_Fleet_Reveal_Range>300.0</Hyperspace_Fleet_Reveal_Range>
+
+		<Abilities SubObjectList="Yes">	
+			<System_Spy_Ability Name="Praesitlyn_Station_Network">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>Yes</See_Base_Levels>
+				<See_Credit_Income>No</See_Credit_Income>
+				<See_Credit_Income_Breakdown>No</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>No</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>Yes</See_Fleet_Contents>
+				<See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+				<See_Special_Structures>No</See_Special_Structures>
+				<See_Political_Control>Yes</See_Political_Control>
+				<See_Political_Control_Breakdown>Yes</See_Political_Control_Breakdown>
+				<See_Current_Production>No</See_Current_Production>
+				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Rogue_Jedi_Detention_Facility">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_ROGUE_JEDI_DETENTION_FACILITY</Text_ID>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_ROGUE_JEDI_DETENTION_FACILITY_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		</Encyclopedia_Text>
+
+		<Icon_Name>I_BUTTON_LABOUR_HQ.TGA</Icon_Name>
+
+		<Land_Model_Name>NB_Prison.ALO</Land_Model_Name>
+		<Scale_Factor>0.90</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>5150</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Guarja_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_GUARJA</Text_ID>
+
+		<Land_Model_Name>W_HUTTPALACE.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_GUARJA.TGA</Icon_Name>
+
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+
+		<Required_Planets>Nal_Hutta</Required_Planets>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_GUARJA_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_GUARJA
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_NAL_HUTTA
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Mercenary_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Mercenary_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Guarja_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>
+				Juvard_Frigate, Barabbula_Frigate, Szajin_Cruiser, Karagga_Destroyer, Vontor_Destroyer, DorBulla_Warship
+				</Applicable_Unit_Types> <!-- Skiff for hutts -->
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Guarja_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>
+				Juvard_Frigate, Barabbula_Frigate, Szajin_Cruiser, Karagga_Destroyer, Vontor_Destroyer, DorBulla_Warship
+				</Applicable_Unit_Types> <!-- Skiff for hutts -->
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Ubrikkian_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_UBRIKKIAN</Text_ID>
+
+		<Land_Model_Name>W_HUTTPALACE.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UBRIKKIAN.TGA</Icon_Name>
+
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+
+		<Required_Planets>Charros, Kuat, Kwenn, Ubrikkia</Required_Planets>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_UBRIKKIAN_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_UBRIKKIAN
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_CHARROS
+		TEXT_OBJECT_STAR_SYSTEM_KUAT
+		TEXT_OBJECT_STAR_SYSTEM_KWENN
+		TEXT_OBJECT_STAR_SYSTEM_UBRIKKIA
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Mercenary_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Mercenary_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Ubrikkian_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> 
+				Light_Minstrel_Yacht, Heavy_Minstrel_Yacht, Kossak_Frigate, Barabbula_Frigate,
+				Hutt_Pongeeta_Swamp_Speeder_Company, WLO5_Tank_Company, Hutt_Personnel_Skiff_IV_Company,
+				Hutt_SuperHaul_II_Skiff_Company, Hutt_Bantha_II_Skiff_Company, Luxury_Yacht_Company
+				</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Ubrikkian_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> 
+				Light_Minstrel_Yacht, Heavy_Minstrel_Yacht, Kossak_Frigate, Barabbula_Frigate,
+				Hutt_Pongeeta_Swamp_Speeder_Company, WLO5_Tank_Company, Hutt_Personnel_Skiff_IV_Company,
+				Hutt_SuperHaul_II_Skiff_Company, Hutt_Bantha_II_Skiff_Company, Luxury_Yacht_Company
+				</Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Anaxes_War_College">
+
+		<Lua_Script>Spawner_Anaxes</Lua_Script>
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_ANAXES_WAR_COLLEGE</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_anaxes_academy.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>4500</Build_Cost_Credits>
+
+		<Required_Planets>Anaxes</Required_Planets>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_GENERIC_ACADEMY_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_ANAXES_WAR_COLLEGE
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INCOME_NAVAL_ACADEMY
+		TEXT_TOOLTIP_UPKEEP_ACADEMY_MEDIUM
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_ANAXES
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Republic_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Republic_Trooper_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Maintenance_Cost">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_ACADEMY_UPKEEP</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>-375</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<!-- <Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies> -->
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Carida_Academy">
+
+		<Lua_Script>Spawner_Officer</Lua_Script>
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_GROUND_OFFICER_ACADEMY</Text_ID>
+
+		<Land_Model_Name>EB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_carida_academy.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Carida, Kamino</Required_Planets>
+
+		<Encyclopedia_Text>   
+		TEXT_COMPANY_GENERIC_ACADEMY_DESCRIPTION
+		TEXT_COMPANY_CARIDA_ACADEMY_DESCRIPTION_FOTR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_OFFICER_ACADEMY_FOTR_1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INCOME_NAVAL_ACADEMY
+		TEXT_TOOLTIP_UPKEEP_ACADEMY_SMALL
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_CARIDA
+		TEXT_OBJECT_STAR_SYSTEM_KAMINO
+		</Encyclopedia_Text>
+
+		<!-- Placeholder -->
+		<Starting_Spawned_Units_Tech_0>Republic_Navy_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Republic_Navy_Trooper_Team_Deployed, 1</Reserve_Spawned_Units_Tech_0>
+				
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Maintenance_Cost">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_ACADEMY_UPKEEP</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>-25</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<!-- <Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies> -->
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Tactical_Droid_Factory">
+
+		<Lua_Script>Spawner_Tactical_Droid</Lua_Script>
+
+		<Text_ID>TEXT_COMPANY_TACTICAL_DROID_FACTORY</Text_ID>
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_droid_factory.tga</Icon_Name>
+
+		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+
+		<Build_Cost_Credits>5000</Build_Cost_Credits>
+
+		<Required_Planets>Cato_Neimoidia, Deko_Neimoidia, Geonosis, Balmorra, Ord_Cestus, Telti</Required_Planets>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_TACTICAL_DROID_FACTORY_DESCRIPTION  
+		TEXT_COMPANY_GENERIC_ACADEMY_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_TACTICAL_DROID_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INCOME_NAVAL_ACADEMY
+		TEXT_TOOLTIP_UPKEEP_ACADEMY_BIG
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK 
+		TEXT_OBJECT_STAR_SYSTEM_CATO_NEIMOIDIA
+		TEXT_OBJECT_STAR_SYSTEM_DEKO_NEIMOIDIA
+		TEXT_OBJECT_STAR_SYSTEM_GEONOSIS 
+		TEXT_OBJECT_STAR_SYSTEM_BALMORRA
+		TEXT_OBJECT_STAR_SYSTEM_ORD_CESTUS 
+		TEXT_OBJECT_STAR_SYSTEM_TELTI 
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>OOM_Security_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>OOM_Security_Squad, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Maintenance_Cost">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_ACADEMY_UPKEEP</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>-400</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<!-- <Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies> -->
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Ikas_Adno_HQ">
+
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_IKAS_ADNO</Text_ID>
+
+		<Land_Model_Name>RB_ResearchFacility.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+
+		<Required_Planets>Mulatan</Required_Planets>
+
+		<Icon_Name>I_BUTTON_IKAS_ADNO.TGA</Icon_Name>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_COMPANY
+		TEXT_COMPANY_IKAS_ADNO_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_IKAS_ADNO
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY
+		TEXT_TOOLTIP_INFLUENCE_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_MULATAN
+		</Encyclopedia_Text>
+
+		<Starting_Spawned_Units_Tech_0>Hutt_Starhawk, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Hutt_Starhawk, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Ikas_Adno_Reduce_Production_Price">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Hutt_Starhawk_Company </Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Ikas_Adno_Production_Time_Bonus">
+				<Unit_Strength_Category/>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types> Hutt_Starhawk_Company </Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

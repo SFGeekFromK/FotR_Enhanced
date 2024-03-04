@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Death_Clones_Space>
+
+	<Death_Clone Name="Gun_Platform_Death_Clone">
+		<Space_Model_Name>IGBC_gun_platform_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+
+	<Death_Clone Name="Colicoid_Swarm_Death_Clone">
+		<Space_Model_Name>Providence_Colicoid_Swarm_d.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+		
+	</Death_Clone>
+	
+	<Death_Clone Name="Lucid_Voice_Death_Clone">
+		<Space_Model_Name>Providence_Lucid_Voice_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+
+	<Death_Clone Name="Auxiliary_Lucrehulk_Control_Death_Clone">
+		<Space_Model_Name>lucrehulk_qship_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+
+	<Death_Clone Name="Lucrehulk_Control_Death_Clone_00">
+		<Space_Model_Name>lucrehulk_cship_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</Death_Clone>
+	
+	<Death_Clone Name="Lucrehulk_Control_Death_Clone_01">
+		<Space_Model_Name>lucrehulk_cship_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>3</Specific_Death_Anim_Index>
+	</Death_Clone>
+
+	<Death_Clone Name="Recusant_Dreadnaught_Death_Clone">
+		<Space_Model_Name>Recusant-class_dreadnaught_D.alo</Space_Model_Name>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+		<Scale_Factor>0.5</Scale_Factor>
+	</Death_Clone>
+	
+	<Death_Clone Name="Providence_Dreadnought_Death_Clone">
+		<Space_Model_Name>CIS_Providence_Dreadnought_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+
+	<Death_Clone Name="Trench_Invincible_Death_Clone">
+		<Space_Model_Name>Providence_Dreadnought_Trench_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Hero_Venator_Death_Clone">
+		<Space_Model_Name> Venator_Hero_D.alo </Space_Model_Name>
+		<Scale_Factor>0.48</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Tarkin_Venator_Death_Clone">
+		<Space_Model_Name> Venator_Tarkin_D.alo </Space_Model_Name>
+		<Scale_Factor>0.48</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Dron_Venator_Death_Clone">
+		<Space_Model_Name> Venator_hero_Dron_D.alo </Space_Model_Name>
+		<Scale_Factor>0.48</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Yularen_Integrity_Death_Clone">
+		<Space_Model_Name> Venator_hero_Integrity_D.alo </Space_Model_Name>
+		<Scale_Factor>0.48</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Venator_hero_nonOFC_Death_Clone">
+		<Space_Model_Name> Venator_hero_nonOFC_D.alo </Space_Model_Name>
+		<Scale_Factor>0.48</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Wessex_Redoubt_Death_Clone">
+		<Space_Model_Name> Venator_hero_wessex_D.alo </Space_Model_Name>
+		<Scale_Factor>0.48</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Venator_OFC_Death_Clone">
+		<Space_Model_Name> Venator_OFC_D.alo </Space_Model_Name>
+		<Scale_Factor>0.48</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone> 
+
+	<Death_Clone Name="Auxilia_Death_Clone">
+		<Space_Model_Name>CIS_Auxilia_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Mandator_Death_Clone">
+		<Space_Model_Name>REP_Mandator_D.alo</Space_Model_Name>
+		<Scale_Factor>0.375</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Haven_Starbase_Death_Clone">
+		<Space_Model_Name>Haven-class_station_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="TF_Outpost_Starbase_Death_Clone">
+		<Space_Model_Name>CIS_TradeFederation_Outpost_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Acclamator_Supercruiser_Death_Clone">
+		<Space_Model_Name>ev_acclamator_supercruiser_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+	
+	<Death_Clone Name="Venator_Renown_Death_Clone">
+		<Space_Model_Name>Venator_Renown_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+
+	<Death_Clone Name="Victory_I_Fleet_Destroyer_Death_Clone">
+		<Space_Model_Name>victory_i-class_victory_fleet_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index/>
+	</Death_Clone>	
+	
+	<Death_Clone Name="Sabaoth_Frigate_Death_Clone">
+		<Space_Model_Name>Sabaoth_Frigate_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index/>
+	</Death_Clone>
+	
+	<Death_Clone Name="Sabaoth_Hex_Deployer_Death_Clone">
+		<Space_Model_Name>Sabaoth_Deployer_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index/>
+	</Death_Clone>
+	
+	<Death_Clone Name="Sabaoth_Destroyer_Death_CLone">
+		<Space_Model_Name>Sabaoth_Destroyer_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index/>
+	</Death_Clone>
+	
+	<Death_Clone Name="Supply_Ship_Death_Clone">
+		<Space_Model_Name>cis_supplyship_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index/>
+	</Death_Clone>
+
+	<Death_Clone Name="Procurator_Death_Clone">
+		<Space_Model_Name>Procurator-class_battlecruiser_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index/>
+	</Death_Clone>
+
+	<Death_Clone Name="Munificent_Dread_Death_Clone">
+		<Space_Model_Name>CIS_Munificent_d.alo</Space_Model_Name>
+		<Scale_Factor>1.8</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index />
+	</Death_Clone>
+
+	<Death_Clone Name="Cis_Frigate_Death_Clone">
+		<Space_Model_Name>CIS_Frigate_D.alo</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index/>
+	</Death_Clone>
+
+</Death_Clones_Space>

@@ -2334,17 +2334,20 @@
 	<UniqueUnit Name="Warthog_Torrent">
 		<Variant_Of_Existing_Type>Torrent</Variant_Of_Existing_Type>
 
-		<Text_ID></Text_ID>
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
 		<Encyclopedia_Text>
-		
+		TEXT
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
 
-		<Is_Named_Hero> </Is_Named_Hero>
-		<Icon_Name>.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
 
 		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
 		<Tactical_Health>350</Tactical_Health>
+		
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
 	</UniqueUnit>
 
 	<UniqueUnit Name="Hunter_Torrent">

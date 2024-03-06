@@ -59,10 +59,10 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("REPUBLIC_FIGHTER_DISABLE", self.Remove_Fighter_Sets, self)
 	
 	admiral_data = {
-		total_slots = 3,       --Max number of concurrent slots. Set at the start of the GC and never change.
-		free_hero_slots = 3,   --Slots open to fill with a hero.
+		total_slots = 5,       --Max number of concurrent slots. Set at the start of the GC and never change.
+		free_hero_slots = 5,   --Slots open to fill with a hero.
 		vacant_hero_slots = 0, --Slots that need another action to move to free.
-		vacant_limit = 3,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
+		vacant_limit = 21,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
 		initialized = false,
 		full_list = { --All options for reference operations
 			["Yularen"] = {"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"},"Wulff Yularen"},
@@ -105,10 +105,10 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	}
 	
 	moff_data = {
-		total_slots = 1,			--Max slot number. Set at the start of the GC and never change
-		free_hero_slots = 1,		--Slots open to buy
+		total_slots = 2,			--Max slot number. Set at the start of the GC and never change
+		free_hero_slots = 2,		--Slots open to buy
 		vacant_hero_slots = 0,	    --Slots that need another action to move to free
-		vacant_limit = 1,           --Number of times a lost slot can be reopened
+		vacant_limit = 12,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
 			["Tarkin"] = {"TARKIN_ASSIGN",{"TARKIN_RETIRE","TARKIN_RETIRE2"},{"TARKIN_VENATOR","TARKIN_EXECUTRIX"},"Wilhuff Tarkin"},
@@ -139,10 +139,10 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	}
 	
 	council_data = {
-		total_slots = 3,			--Max slot number. Set at the start of the GC and never change
-		free_hero_slots = 3,		--Slots open to buy
+		total_slots = 5,			--Max slot number. Set at the start of the GC and never change
+		free_hero_slots = 5,		--Slots open to buy
 		vacant_hero_slots = 0,	    --Slots that need another action to move to free
-		vacant_limit = 3,           --Number of times a lost slot can be reopened
+		vacant_limit = 13,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
 			["Yoda"] = {"YODA_ASSIGN",{"YODA_RETIRE","YODA_RETIRE2"},{"YODA","YODA2"},"Yoda", ["Companies"] = {"YODA_DELTA_TEAM","YODA_ETA_TEAM"}},
@@ -182,10 +182,10 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	}
 	
 	clone_data = {
-		total_slots = 2,			--Max slot number. Set at the start of the GC and never change
-		free_hero_slots = 2,		--Slots open to buy
+		total_slots = 4,			--Max slot number. Set at the start of the GC and never change
+		free_hero_slots = 4,		--Slots open to buy
 		vacant_hero_slots = 0,	    --Slots that need another action to move to free
-		vacant_limit = 4,           --Number of times a lost slot can be reopened
+		vacant_limit = 16,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
 			["Cody"] = {"CODY_ASSIGN",{"CODY_RETIRE","CODY_RETIRE"},{"CODY","CODY2"},"Cody", ["Companies"] = {"CODY_TEAM","CODY2_TEAM"}},
@@ -228,10 +228,10 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	}
 	
 	commando_data = {
-		total_slots = 2,			--Max slot number. Set at the start of the GC and never change
-		free_hero_slots = 2,		--Slots open to buy
+		total_slots = 3,			--Max slot number. Set at the start of the GC and never change
+		free_hero_slots = 3,		--Slots open to buy
 		vacant_hero_slots = 0,	    --Slots that need another action to move to free
-		vacant_limit = 2,           --Number of times a lost slot can be reopened
+		vacant_limit = 8,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
 			["Alpha"] = {"ALPHA_ASSIGN",{"ALPHA_RETIRE","ALPHA_RETIRE"},{"ALPHA_17","ALPHA_17_2"},"Alpha-17", ["Companies"] = {"ALPHA_17_TEAM","ALPHA_17_2_TEAM"}},
@@ -262,10 +262,10 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	}
 	
 	general_data = {
-		total_slots = 2,			--Max slot number. Set at the start of the GC and never change
-		free_hero_slots = 2,		--Slots open to buy
+		total_slots = 3,			--Max slot number. Set at the start of the GC and never change
+		free_hero_slots = 3,		--Slots open to buy
 		vacant_hero_slots = 0,	    --Slots that need another action to move to free
-		vacant_limit = 2,           --Number of times a lost slot can be reopened
+		vacant_limit = 8,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
 			["Rom"] = {"ROM_MOHC_ASSIGN",{"ROM_MOHC_RETIRE"},{"ROM_MOHC"},"Rom Mohc", ["Companies"] = {"ROM_MOHC_TEAM"}},

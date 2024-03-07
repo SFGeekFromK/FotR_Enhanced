@@ -110,7 +110,7 @@ function Get_Hero_Entries(upgrade_object)
 		Faction = "Empire"
 	},
 	-- FotR_Enhanced
-	["WARTHOG_BTLB_Y-WING_LOCATION_SET"] = {
+	--[[ ["WARTHOG_BTLB_Y-WING_LOCATION_SET"] = {
 		Hero_Squadron = "Warthog_BTLB_Y-Wing_Hunter_Squadron",
 		PopupHeader = "",
 		NoInit = true,
@@ -121,28 +121,30 @@ function Get_Hero_Entries(upgrade_object)
 		GroundCompany = "",
 		Faction = "Empire"
 
-	},
+	}, ]]
 	["WARTHOG_TORRENT_LOCATION_SET"] = {
-		Hero_Squadron = "",
-		PopupHeader = "",
+		Hero_Squadron = "WARTHOG_TORRENT_HUNTER_SQUADRON",
+		PopupHeader = "WARTHOG_P1_SELECTOR_HEADER",
 		NoInit = true,
 		Options = {
-			{ Locations = {}, GroundPerceptions = {}},
-			{ Locations = {}, GroundPerceptions = {}},
+			{"WIELER", Locations = {"WIELER_RESILIENT"}, GroundPerceptions = {"Wieler_In_Orbit"}},
+			{"COBURN", Locations = {"COBURN_TRIUMPHANT"}, GroundPerceptions = {"Coburn_In_Orbit"}},
+			{"DODONNA", Locations = {"DODONNA_ARDENT"}, GroundPerceptions={"Dodonna_In_Orbit"}}
 		},
-		GroundCompany = "",
+		--GroundCompany = "",
 		Faction = "Empire"
 
 	},
-	["WARTHOG_CLONE_Z95_LOCATION_SET"] = {
-		Hero_Squadron = "",
-		PopupHeader = "",
+	["WARTHOG_REPUBLIC_Z95_LOCATION_SET"] = {
+		Hero_Squadron = "WARTHOG_REPUBLIC_Z95_HUNTER_SQUADRON",
+		PopupHeader = "WARTHOG_P2_SELECTOR_HEADER",
 		NoInit = true,
 		Options = {
-			{ Locations = {}, GroundPerceptions = {}},
-			{ Locations = {}, GroundPerceptions = {}},
+			{"WIELER", Locations = {"WIELER_RESILIENT"}, GroundPerceptions = {"Wieler_In_Orbit"}},
+			{"COBURN", Locations = {"COBURN_TRIUMPHANT"}, GroundPerceptions = {"Coburn_In_Orbit"}},
+			{"DODONNA", Locations = {"DODONNA_ARDENT"}, GroundPerceptions={"Dodonna_In_Orbit"}}
 		},
-		GroundCompany = "",
+		--GroundCompany = "",
 		Faction = "Empire"
 
 	},

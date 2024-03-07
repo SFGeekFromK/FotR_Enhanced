@@ -1653,7 +1653,7 @@
 		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_TRAIT_FIGHTER_COMMANDER
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_ODD_BALL
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
@@ -1728,6 +1728,21 @@
 				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Odd_Ball_Fighter_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>		
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.20</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
 	</UniqueUnit>
 
 	<UniqueUnit Name="Torrent_Squad_Seven">
@@ -1986,7 +2001,7 @@
 		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_TRAIT_FIGHTER_COMMANDER
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_ODD_BALL
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
@@ -2049,6 +2064,19 @@
 				<Single_Target_Heal>Yes</Single_Target_Heal>
 				<Applicable_Unit_Types>Odd_Ball_ARC170</Applicable_Unit_Types>
 			</Force_Healing_Ability>
+
+			<Combat_Bonus_Ability Name="Odd_Ball_Fighter_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>		
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.20</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
 		</Abilities>
 	</UniqueUnit>
 
@@ -2195,7 +2223,7 @@
 	<!-- Warthog / Hunter Squadron  -->
 		
 	<!-- BTLB Y-wing --> <!--22bby-->
-	
+	<!--
 	<DummyStructure Name="Warthog_BTLB_Y-Wing_Location_Set">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		<GUI_Row> 0 </GUI_Row>
@@ -2291,10 +2319,10 @@
 		<Squadron_Units>Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing</Squadron_Units>
 		<Squadron_Units>Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing</Squadron_Units>
 		<Squadron_Units>Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Warthog_BTLB_Y-Wing</Squadron_Units>
-	</Squadron>
+	</Squadron> -->
 
 
-	<!-- V-19 Torrent --> <!--21bby-->
+	<!-- V-19 Torrent --> <!-- Phase 1 -->
 	
 	<DummyStructure Name="Warthog_Torrent_Location_Set">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
@@ -2320,11 +2348,12 @@
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
-		TEXT_TOOLTIP_COMMAND_HUNTER_SQUADRON
+		TEXT_TOOLTIP_COMMAND_HUNTER_SQUADRON_TORRENT
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_COBURN
 		TEXT_HERO_JAN_DODONNA
+		TEXT_HERO_WIELER
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
@@ -2336,9 +2365,19 @@
 
 		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
 		<Encyclopedia_Text>
-		TEXT
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_KEL_DOR_WINGMAN
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_WARTHOG_TORRENT_BASE
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
 
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
@@ -2346,36 +2385,160 @@
 		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
 		<Tactical_Health>350</Tactical_Health>
 		
-		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+		<SpaceBehavior>
+			ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA
+		</SpaceBehavior>
 
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Warthog_Plo_Koon_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Plo_Koon_Delta</Applicable_Unit_Types>
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>	
+		</Abilities>
 	</UniqueUnit>
 
 	<UniqueUnit Name="Hunter_Torrent">
 		<Variant_Of_Existing_Type>Torrent</Variant_Of_Existing_Type>
 
-		<Text_ID></Text_ID>
+		<Text_ID>TEXT_UNIT_HUNTER_TORRENT</Text_ID>
 		<Encyclopedia_Text>
-		
+		TEXT_TOOLTIP_HUNTER_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<SpaceBehavior>
+			ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA
+		</SpaceBehavior>
 
-		<Icon_Name>.tga</Icon_Name>
+		<Tactical_Health>80</Tactical_Health>
 
-		<Tactical_Health>350</Tactical_Health>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
 
 	</UniqueUnit>
 
 	<Container Name="Warthog_Torrent_Hunter_Container">
-		
+		<Variant_Of_Existing_Type>Torrent_Squadron_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_KEL_DOR_WINGMAN
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_WARTHOG_TORRENT_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_SQUADRON
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
 	</Container>
 
 	<Squadron Name="Warthog_Torrent_Hunter_Squadron">
+		<Variant_Of_Existing_Type>Torrent_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_KEL_DOR_WINGMAN
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_WARTHOG_TORRENT_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_SQUADRON
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
+		<Create_Team_Type>Warthog_Torrent_Hunter_Container</Create_Team_Type>
+		<Squadron_Units>Hunter_Torrent, Hunter_Torrent, Hunter_Torrent, Hunter_Torrent</Squadron_Units>
+		<Squadron_Units>Hunter_Torrent, Hunter_Torrent, Hunter_Torrent, Hunter_Torrent</Squadron_Units>
+		<Squadron_Units>Hunter_Torrent, Hunter_Torrent, Hunter_Torrent, Warthog_Torrent</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
 	</Squadron>
 
 
-	<!-- Clone Z95 HeadHunter --> <!--20~19bby-->
+	<!-- Republic Z95 HeadHunter --> <!-- Phase 2-->
 	
-	<DummyStructure Name="Warthog_Clone_Z95_Location_Set">
+	<DummyStructure Name="Warthog_Republic_Z95_Location_Set">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		<GUI_Row> 0 </GUI_Row>
 
@@ -2399,28 +2562,254 @@
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
-		TEXT_TOOLTIP_COMMAND_HUNTER_SQUADRON
+		TEXT_TOOLTIP_COMMAND_HUNTER_REP_Z95
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_COBURN
 		TEXT_HERO_JAN_DODONNA
+		TEXT_HERO_WIELER
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>		
 	</DummyStructure>
 
-	<UniqueUnit Name="Warthog_Clone_Z95">
-	</UniqueUnit>
+	<UniqueUnit Name="Warthog_Republic_Z95">
+		<Variant_Of_Existing_Type>Republic_Z-95_Headhunter</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_KEL_DOR_WINGMAN
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE
+		TEXT_STATBLOCK_REPUBLIC_Z95_MOVE
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP1
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
 
-	<UniqueUnit Name="Hunter_Clone_Z95">
-	</UniqueUnit>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Icon_Name>i_button_warthog_p2.tga</Icon_Name>
 
-	<Container Name="Warthog_Clone_Z95_Hunter_Container">
+		<SpaceBehavior>
+			TELEKINESIS_TARGET, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA
+		</SpaceBehavior>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+
+		<Shield_Points>60</Shield_Points>
+		<Shield_Refresh_Rate>1.6</Shield_Refresh_Rate>
+		<Tactical_Health>150</Tactical_Health>
+
+		<SFXEvent_Select>Unit_Select_rep_fighter</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_rep_fighter</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_rep_fighter</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_rep_fighter</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_rep_fighter</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_rep_fighter </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_rep_fighter </SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_rep_fighter </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_rep_fighter </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_enemy_low_health_rep_fighter </SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> Unit_enemy_critical_health_rep_fighter </SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Health_Low_Warning> Unit_low_health_rep_fighter </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_critical_health_rep_fighter </SFXEvent_Health_Critical_Warning>
 		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Warthog_Plo_Koon_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Plo_Koon_Delta</Applicable_Unit_Types>
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>	
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Hunter_Republic_Z95">
+		<Variant_Of_Existing_Type>Republic_Z-95_Headhunter</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_HUNTER_REPUBLIC_Z95</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_HUNTER_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE
+		TEXT_STATBLOCK_REPUBLIC_Z95_MOVE
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP1
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior>
+			TELEKINESIS_TARGET, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA
+		</SpaceBehavior>
+
+		<Shield_Points>45</Shield_Points>
+		<Shield_Refresh_Rate>1.2</Shield_Refresh_Rate>
+		<Tactical_Health>70</Tactical_Health>
+		<AI_Combat_Power>22</AI_Combat_Power>
+
+		<SFXEvent_Select>Unit_Select_rep_fighter</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_rep_fighter</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_rep_fighter</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_rep_fighter</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_rep_fighter</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_rep_fighter </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_rep_fighter </SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_rep_fighter </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_rep_fighter </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_enemy_low_health_rep_fighter </SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> Unit_enemy_critical_health_rep_fighter </SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Health_Low_Warning> Unit_low_health_rep_fighter </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_critical_health_rep_fighter </SFXEvent_Health_Critical_Warning>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<Container Name="Warthog_Republic_Z95_Hunter_Container">
+		<Variant_Of_Existing_Type>Republic_Z95_Headhunter_Squadron_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_KEL_DOR_WINGMAN
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_Z95_SQUADRON
+		TEXT_STATBLOCK_REPUBLIC_Z95_MOVE
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP1
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p2.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.015  0.015</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>		
 	</Container>
 
-	<Squadron Name="Warthog_Clone_Z95_Hunter_Squadron">
+	<Squadron Name="Warthog_Republic_Z95_Hunter_Squadron">
+		<Variant_Of_Existing_Type>Republic_Z95_Headhunter_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_KEL_DOR_WINGMAN
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_Z95_SQUADRON
+		TEXT_STATBLOCK_REPUBLIC_Z95_MOVE
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP1
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p2.tga</Icon_Name>
+
+		<Create_Team_Type>Warthog_Republic_Z95_Hunter_Container</Create_Team_Type>
+		
+		<Squadron_Units>Hunter_Republic_Z95, Hunter_Republic_Z95, Hunter_Republic_Z95</Squadron_Units>
+		<Squadron_Units>Hunter_Republic_Z95, Hunter_Republic_Z95, Hunter_Republic_Z95</Squadron_Units>
+		<Squadron_Units>Hunter_Republic_Z95, Hunter_Republic_Z95, Hunter_Republic_Z95</Squadron_Units>
+		<Squadron_Units>Hunter_Republic_Z95, Hunter_Republic_Z95, Warthog_Republic_Z95</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>			
 	</Squadron>	
 
 

@@ -3026,6 +3026,7 @@ TEXT_HERO_VORRU,Fliry Vorru
 TEXT_HERO_VOSS_PARCK,Voss Parck
 TEXT_HERO_VULPUS,Vulpus
 TEXT_HERO_VULTURE_PIRATES,Vulture Pirates
+TEXT_HERO_WARTHOG, Warthog
 TEXT_HERO_WAXER,Waxer
 TEXT_HERO_WHORM,Whorm Loathsom
 TEXT_HERO_WIELER,Wieler
@@ -9819,6 +9820,7 @@ TEXT_STATBLOCK_R22_SPEARHEAD_WEAP1,1x Fighter Laser Cannon: 4 / 2.0s / 1.0km
 TEXT_STATBLOCK_RAINA_QUILL_BASE,Health: 300 [2%/5s] | Shields: 150
 TEXT_STATBLOCK_REPUBLIC_TIE_NIAL_DECLANN_ESCORT_BASE,Health: 60 | Unshielded
 TEXT_STATBLOCK_REPUBLIC_Z95_BASE,Health: 15 | Shields: 4
+TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE,Health: 70 | Shields: 45
 TEXT_STATBLOCK_REPUBLIC_Z95_MOVE,Speed: 4.61 | Maneuverability: 4.03
 TEXT_STATBLOCK_REPUBLIC_Z95_SQUADRON,Squadron: 12x - Republic Z-95 Headhunter
 TEXT_STATBLOCK_REPUBLIC_Z95_SQUADRON_DOUBLE,Squadron: 24x - Republic Z-95 Headhunter
@@ -9973,6 +9975,7 @@ TEXT_STATBLOCK_WARPOD_SQUADRON_HALF,Squadron: 6x - #2 Warpod
 TEXT_STATBLOCK_WARPOD_WEAP1,1x Fighter Laser Cannon: 2 / 2.0s / 1.0km
 TEXT_STATBLOCK_WARPOD_WEAP2,1x Proton Rocket (AC): 1 / 30.0s / 3.0km
 TEXT_STATBLOCK_WARPOD_WEAP3,1x Concussion Bomb (AC): 1 / 30.0s / 0.8km
+TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE,Health: 150 | Shields: 60
 TEXT_STATBLOCK_YWING_BASE,Health: 20 | Shields: 12
 TEXT_STATBLOCK_YWING_ESCORT_BASE,Health: 100 | Shields: 60
 TEXT_STATBLOCK_YWING_MOVE,Speed: 4.05 | Maneuverability: 2.95
@@ -12569,6 +12572,8 @@ TEXT_TOOLTIP_COMMAND_GUNGAN_GLORY,Z-95 Squadron, Gungan Glory Squadron
 TEXT_TOOLTIP_COMMAND_HARMZUAY,Kaloth Battlecruiser, Harmzuay
 TEXT_TOOLTIP_COMMAND_HAUSER,Modified Dreadnaught Heavy Cruiser, Ultrachrome
 TEXT_TOOLTIP_COMMAND_HOUNDSTOOTH,Modified YV-666 Light Freighter, Hound's Tooth
+TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95, Republic Z-95 Headhunter Squadron, Hunter Squadron
+TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT, V-19 Torrent Squadron, Hunter Squadron
 TEXT_TOOLTIP_COMMAND_IMRU_OOTMIAN,Light Minstrel Yacht, Imru Ootmian
 TEXT_TOOLTIP_COMMAND_INSTINCTION,Lucrehulk Battle Carrier, Instinction
 TEXT_TOOLTIP_COMMAND_INTEGRITY,Modified Venator Star Destroyer, Integrity
@@ -15814,11 +15819,13 @@ TEXT_TOOLTIP_TRAIT_INTELLIGENCEOFFICER,Intelligence Officer
 TEXT_TOOLTIP_TRAIT_INTERDICTOR_COMMANDER,Immobilizer Commander
 TEXT_TOOLTIP_TRAIT_KUAT_OF_KUAT,Kuat of Kuat
 TEXT_TOOLTIP_TRAIT_MANDO_HATE,Hatred Through The Centuries
+TEXT_TOOLTIP_TRAIT_OFC_OFFICER,Open Circle Fleet Offcier
 TEXT_TOOLTIP_TRAIT_OVERSEER_KOOLOOTA,Overseer (-30%, Corvettes; -20% Frigates)
 TEXT_TOOLTIP_TRAIT_OVERSEER_SLAVELORD,Slavelord (-35%, All)
 TEXT_TOOLTIP_TRAIT_OVERSEER2_GOLAN,Overseer (-25%, Golans)
 TEXT_TOOLTIP_TRAIT_OVERSEER4,Overseer (-15%, All)
 TEXT_TOOLTIP_TRAIT_PERSONAL_COMBAT_ENTHUSIAST,Personal Combat Enthusiast
+TEXT_TOOLTIP_TRAIT_PLO_BRO, Plo's Bros
 TEXT_TOOLTIP_TRAIT_POLITICAL_ANIMAL,Political Animal
 TEXT_TOOLTIP_TRAIT_PROTECTIVE,Protective
 TEXT_TOOLTIP_TRAIT_RECKLESS,Reckless
@@ -16072,6 +16079,7 @@ TEXT_TOOLTIP_VULTURE_LAND_WEAP1,2x Plasma Blaster Cannon: 1 / 4.0s / 380m
 TEXT_TOOLTIP_VULTURE_PIRATES,A pirate group who once attacked the Rebel entrepreneur Dunari but was driven off by Bandit Squadron. Vulture pilots are organized into Pirate and Fury squadrons.
 TEXT_TOOLTIP_VULTURE_RESEARCH,Completing this research option equips Munificent and Recusant warships with externally mounted Vulture droids.
 TEXT_TOOLTIP_VULTURE_SQUADRON,Bombers: 2 / 0
+TEXT_TOOLTIP_WARTHOG,"Warthog" was a veteran clone trooper pilot who often served as the wingman of Jedi general Plo Koon and was also often attached to his 104th battalion. He went on various battles and missions, including First Battle of Felucia, Battle of Kadavo.
 TEXT_TOOLTIP_WAXER,Waxer was a clone trooper who served in the 212th Attack Battalion of the Grand Army of the Republic as a member of Ghost Company. Under General Obi-Wan Kenobi, he took part in the Battle of Ryloth and the Second Battle of Geonosis with his fellow clone Boil. During the Battle of Umbara, Waxer was deceived by Pong Krell into thinking the enemy was wearing captured clone armor, and was killed in a shoot-out with the 501st.
 TEXT_TOOLTIP_WAXER_P1_HEALTH,Health: 125 (Hero)
 TEXT_TOOLTIP_WAXER_P1_MOVE,Speed: 1.0

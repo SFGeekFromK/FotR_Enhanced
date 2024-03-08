@@ -32,3 +32,11 @@ TEXT_UNIT_UMBARAN_FRIGATE,Umbaran Support Frigate
 TEXT_UNIT_VENATOR_OFC,OCF Venator Star Destroyer
 TEXT_UNIT_VENATOR_OFC_SPHA_T,OCF Venator Star Destroyer (SPHA-T)
 TEXT_TOOLTIP_TRAIT_OFC_OFFICER,Open Circle Fleet Offcier
+
+TEXT_HERO_WARTHOG, Warthog
+TEXT_TOOLTIP_TRAIT_PLO_BRO, Plo's Bros
+TEXT_TOOLTIP_WARTHOG,"Warthog" was a veteran clone trooper pilot who often served as the wingman of Jedi general Plo Koon and was also often attached to his 104th battalion. He went on various battles and missions, including First Battle of Felucia, Battle of Kadavo.
+TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT, V-19 Torrent Squadron, Hunter Squadron
+TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95, Republic Z-95 Headhunter Squadron, Hunter Squadron
+TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE,Health: 150 | Shields: 60
+TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE,Health: 70 | Shields: 45

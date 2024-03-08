@@ -1,0 +1,76 @@
+
+    ______    _ _          __   _______ _            _____                  _     _ _       
+   |  ____|  | | |        / _| |__   __| |          |  __ \                | |   | (_)      
+   | |__ __ _| | |   ___ | |_     | |  | |__   ___  | |__) |___ _ __  _   _| |__ | |_  ___  
+   |  __/ _` | | |  / _ \|  _|    | |  | '_ \ / _ \ |  _  // _ \ '_ \| | | | '_ \| | |/ __| 
+   | | | (_| | | | | (_) | |      | |  | | | |  __/ | | \ \  __/ |_) | |_| | |_) | | | (__  
+   |_|  \__,_|_|_|_ \___/|_|      |_|  |_| |_|\___| |_|  \_\___| .__/ \__,_|_.__/|_|_|\___| 
+            |  ____|     | |                            | |    | |                          
+    ______  | |__   _ __ | |__   __ _ _ __   ___ ___  __| |  __|_|_                         
+   |______| |  __| | '_ \| '_ \ / _` | '_ \ / __/ _ \/ _` | |______|                        
+            | |____| | | | | | | (_| | | | | (_|  __/ (_| |                                 
+            |______|_| |_|_| |_|\__,_|_| |_|\___\___|\__,_|                                 
+                                                                                            
+                                                                                            
+
+
+
+Fall of The Republic Enhanced, Submod by Eleian
+_______________________________________________________________________________________________
+
+This Change contains all exhaustive changes.
+_______________________________________________________________________________________________
+
+
+
+ADDED STUFFS
+
+# New Units
+
+-Venator Open Circle Fleet variant 
+--- Different firing rate, fighter complements based on TCW visual depiction
+--- Build limit of total 12
+--- Upgradable to SPHA-T equipped version with Anakin on orbit [in era 5] with build lifetime of 3
+
+-Umbaran Support Frigate(Influence) 
+--- Fleet Tender Available at Umbara at influence
+
+-Republic's Decolorized military
+--- All colorizable Ships/Ground units now have Grey "Decolorized" Version for order 66 swaps
+--- Will also replace standard roster after order 66
+
+
+# New Heroes
+
+-Lorth Needa
+--- Carrick Cruiser Integrity, Command Tier 4, Always Available
+--- Icon & Unique Voice Over for Assign/Retire Dummy ported from AOTR
+
+-TJ912
+--- Recusant light destroyer, Command Tier 4
+--- slightly adjusted firing rate for light laser cannons
+--- self made icon 
+--- spawns in Era 2 :  Yavin / Era 3 : Yagdhul / Era 5 : Raxus
+
+
+CHANGES & ADJUSTMENTS
+
+# Units made available
+-RX-200 falchion - build limit 4
+-A6 juggernaut - build limit 4
+-Senate Commando - available at galactic senate
+-Clone marine - fully unlocked
+-Protodeka - build limit 4
+
+# Republic Hero limits increased
+-NOTE : All vacant limits(limits of affordable losses) increased to match the number of all available Heroes
+-- Moff : 1 -> 2
+-- Admiral 3 -> 5
+-- Jedi : 3 -> 4
+-- Clone Officer : 2 -> 5
+-- Clone Commando : 2 -> 3
+-- Army Officers : 2 -> 3
+
+# Count Dooku Able to build dark Acolyte(Dark Jedi from TR, Requires Dooku in orbit)
+
+# changed Tarkin's Venator model to OCF Variant

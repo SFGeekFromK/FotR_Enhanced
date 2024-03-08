@@ -1,0 +1,104 @@
+Renewed for 1.4
+==========Submod Projects==========
+<Ongoing Projects>
+1. OFC Venator
+- XML Coding
+	- hardpoints(Done)
+	- general data(Done)
+	- fighter spawn(Done)
+	- Starting unit(Planned)
+- Icon
+	- Generic Venator with OFC Logo(Finished)
+	- Unique Venator_OFC logo
+- Text(Done)
+	- Tooltip
+	- Weapons Firing Rate
+	- 
+- Finetune(Later)
+	- Decrease firing rate/projectile number from dual heavy turbolasers
+
+- Upgradable SPHA-T Variant (Done) 
+
+- Build Limit via controlling Lua or New ship market mechanic( )
+
+*** OCF Intergration system ***
+when certain level of point is reached by using certain venator heroes will increase points 
+if achieved certa
+
+
+2. expand Clone Pilot Heroes
+Hunter Squadron(Warthog) (coburn / dodona)
+hawk (yularen) 
+jag (coburn / dodona)
+
+3. Early ATAT
+
+- Copy files from NFOW mod
+- Code XML
+
+
+4. Proper Voice For Heores
+	;Lists
+		Rex
+		Cody
+		Appo
+		Woolfe
+		Gree
+		Luminara Unduli
+		Ki Adi Mundi
+		
+
+
+5. Add New CIS Heroes
+
+TJ-912 - recusant (Done)
+
+TM-171(Originally Canon Source) - dh omni class 
+
+		
+6. Add Paratrooper
+- Learn basic infantry code structure
+- Copy Files from MCA Submod - (Done)
+- XML Code
+- Movie Clones Voicevoer
+
+
+7. Balance CIS Units
+-Providence & Recusant Dreadnought Build Limits - ? Already Unbuildable
+
+
+8. Increase Mandator I build limits ; total of 6 (Kuat 3, humbarine, ixtlar, alsakan each 1) (On Hold) 
+
+
+9. Umbaran Militia Units
+- Umbaran Militia Infantry
+- Umbaran Heavy Movile Canon (?)
+- Umbaran Hover Tank (?)
+- Umbaran Star Fighter
+- Umbaran Support Frigate(Done)
+
+10. Coruscant home defense fleet
+allows for unique heroes & defense units to spawn up on space stations, locks economic structures
+
+<Planned Projects>
+Additional Ground Category filter UI
+Add Units ; ARF Trooper, Clone Assasins, Covert OP Clones, Clone Shadow troopers
+Change Rex Weapons & Animations, Add in Jesse, Kix, Fives etc as torrent company heores
+Cody spawning boil & Waxer
+New Clone Commanders ; Rancor Battalion, Commander Fil, Commander Trauma, Commander Doom, Captain Keely, Commander Ganch, Captain Sharp, Commander Fox(As Republic Capital Garrison Hero), Commander Thorn
+More Detailed Anakin Unit(?)
+Operation Knightfall Story Mission(Officially Planned)
+Christoposis Story Mission,
+Dedicated TCW Historical Campaign
+More Scenarios For GC ; Sideous Choosing CIS as his Empire ; through TR Dark empire function
+**Not sure if possible, but make better ai that fights more like a human ;; by implementing 3rd party ai plugins 
+
+==========EAW System Learning==========
+Basic Game Structure
+Learn More on Game Engines
+Get More Experience on Base Game
+Learn How Story Missions Work
+Learn EAWX Deepcore Systems
+Practice 3D modeling in blender
+Practice Texture 
+reverse engineer the game engine

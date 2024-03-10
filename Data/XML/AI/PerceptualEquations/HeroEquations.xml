@@ -109,5 +109,15 @@
 		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Dodonna_Ardent"}
 	</Dodonna_In_Orbit>
 
+	<Wessex_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Block_Negotiator"}
+	</Wessex_In_Orbit>
 	
+	<Block_Negotiator_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Block_Negotiator"}
+	</Block_Negotiator_In_Orbit>
+
+	<Block_Vigilance_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Block_Vigilance"}
+	</Block_Vigilance_In_Orbit>	
 </Equations>

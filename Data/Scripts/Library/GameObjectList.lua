@@ -275,10 +275,13 @@ return {
 ["ZOZRIDOR_SLAYKE_CR90"] = true,
 -- FotR_Enhanced
 ["NEEDA_INTEGRITY"] = true,
+["BLOCK_NEGOTIATOR"] = true,
+["BLOCK_VIGILANCE"] = true,
 ["TJ912_RECUSANT"] = true,
 ["VENATOR_OFC"] = true,
 ["VENATOR_SPHA_T"] = true,
 ["VENATOR_IMPERIAL"]=true,
 ["UMBARAN_FRIGATE"] = true,
 ["UMBARAN_FRIGATE_INFLUENCE"] = true,
+-- [""] = true,
 }

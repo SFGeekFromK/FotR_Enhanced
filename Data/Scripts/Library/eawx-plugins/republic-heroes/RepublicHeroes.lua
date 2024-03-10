@@ -62,7 +62,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		total_slots = 5,       --Max number of concurrent slots. Set at the start of the GC and never change.
 		free_hero_slots = 5,   --Slots open to fill with a hero.
 		vacant_hero_slots = 0, --Slots that need another action to move to free.
-		vacant_limit = 22,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
+		vacant_limit = 21,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
 		initialized = false,
 		full_list = { --All options for reference operations
 			["Yularen"] = {"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"},"Wulff Yularen"},
@@ -86,8 +86,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Baraka"] = {"BARAKA_ASSIGN",{"BARAKA_RETIRE"},{"BARAKA_NEXU"},"Arikakon Baraka"},
 			["Martz"] = {"MARTZ_ASSIGN",{"MARTZ_RETIRE"},{"MARTZ_PROSECUTOR"},"Stinnet Martz"},
 			-- FotR_Enhanced
-			["Needa"] = {"NEEDA_ASSIGN",{"NEEDA_RETIRE"},{"NEEDA_INTEGRITY"},"Lorth Needa"},
-			["Block"] = {"BLOCK_ASSIGN",{"BLOCK_RETIRE","BLOCK_RETIRE2"},{"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, "Block"}
+			["Needa"] = {"NEEDA_ASSIGN",{"NEEDA_RETIRE"},{"NEEDA_INTEGRITY"},"Lorth Needa"}
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Dallin",
@@ -509,7 +508,6 @@ function RepublicHeroes:init_heroes()
 		Handle_Hero_Exit("Gregor", commando_data)
 
 		RepublicHeroes:Add_Fighter_Set("Odd_Ball_ARC170_Location_Set")
-		--RepublicHeroes:Add_Fighter_Set("Warthog_Republic_Z95_Location_Set")
 	end
 end
 
@@ -523,8 +521,6 @@ function RepublicHeroes:Era_3()
 	end
 	Eta_Unlock()
 	Clear_Fighter_Hero("BROADSIDE_SHADOW_SQUADRON")
-	--RepublicHeroes:Add_Fighter_Set("Warthog_Torrent_Location_Set")
-	--RepublicHeroes:Remove_Fighter_Set("Warthog_BTLB_Y-Wing_Location_Set")
 end
 
 function RepublicHeroes:Era_4()
@@ -768,17 +764,12 @@ function RepublicHeroes:Venator_Heroes()
 		Handle_Hero_Add("Grant", moff_data)
 		Handle_Hero_Add("Vorru", moff_data)	
 		Handle_Hero_Add("Byluir", moff_data)	
-		-- FotR_Enhanced
-		Handle_Hero_Add("Block", admiral_data)
-		--[[if admiral_data.active_player.Get_Tech_Level() < 3 then
-			RepublicHeroes:Add_Fighter_Set("Warthog_BTLB_Y-Wing_Location_Set")
-		end]]
+		
 		if admiral_data.active_player.Get_Tech_Level() < 4 then
 			RepublicHeroes:Add_Fighter_Set("Odd_Ball_Torrent_Location_Set")
-			
 		end
 		RepublicHeroes:Add_Fighter_Set("Arhul_Narra_Location_Set")
-		RepublicHeroes:Add_Fighter_Set("Warthog_Torrent_Location_Set")		
+		
 		local upgrade_unit = Find_Object_Type("Maarisa_Retaliation_Upgrade")
 		admiral_data.active_player.Unlock_Tech(upgrade_unit)
 		
@@ -796,8 +787,6 @@ function Autem_Check()
 		Handle_Hero_Add("Tenant", admiral_data)
 		RepublicHeroes:Add_Fighter_Set("Odd_Ball_ARC170_Location_Set")
 		RepublicHeroes:Remove_Fighter_Set("Odd_Ball_Torrent_Location_Set")
-		RepublicHeroes:Add_Fighter_Set("Warthog_Republic_Z95_Hunter_Squadron")
-		RepublicHeroes:Remove_Fighter_Set("Warthog_Torrent_Location_Set")
 	end
 end
 

@@ -2122,7 +2122,6 @@ TEXT_EVENT_RHYS_DALLOWS_SELECTOR_HEADER,Assign Rhys Dallows' Bravo Squadron
 TEXT_EVENT_SSURUSSK_SELECTOR_HEADER,Assign Nebula Raiders
 TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR,Place the hero squadron in this ship's complement
 TEXT_EVENT_VULPUS_SELECTOR_HEADER,Assign Vulpus' Ginivex Squadron
-TEXT_EVENT_WARTHOG_SELECTOR_HEADER,Assign Warthog's Hunter Squadron
 TEXT_EVIL_LAND_GARRISON,Garrison
 TEXT_EVIL_SPACE_FLEET,Fleet
 TEXT_EXPANSION_TITLE,Star Wars: Empire at War - Forces of Corruption

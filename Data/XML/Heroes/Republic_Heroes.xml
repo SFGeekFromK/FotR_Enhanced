@@ -62,6 +62,7 @@
 		TEXT_TOOLTIP_COMMAND_GUARDIAN_SQUADRON_ARC170
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_JAN_DODONNA
 		TEXT_HERO_VOSS_PARCK
 		TEXT_HERO_WILHUFF_TARKIN
 		TEXT_HERO_THERBON
@@ -1552,8 +1553,8 @@
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_YULAREN
 		TEXT_HERO_KILIAN
-		TEXT_HERO_DEN_WESSEX
-		TEXT_HERO_BLOCK
+		TEXT_HERO_WIELER
+		TEXT_HERO_COBURN
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
@@ -1919,8 +1920,8 @@
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_YULAREN
 		TEXT_HERO_KILIAN
-		TEXT_HERO_DEN_WESSEX
-		TEXT_HERO_BLOCK
+		TEXT_HERO_WIELER
+		TEXT_HERO_COBURN
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
@@ -2251,7 +2252,7 @@
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_COBURN
-		TEXT_HERO_WIELER
+		TEXT_HERO_JAN_DODONNA
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
@@ -2318,8 +2319,8 @@
 		<Squadron_Units>Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing</Squadron_Units>
 		<Squadron_Units>Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing</Squadron_Units>
 		<Squadron_Units>Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Warthog_BTLB_Y-Wing</Squadron_Units>
-	</Squadron> 
-	-->
+	</Squadron> -->
+
 
 	<!-- V-19 Torrent --> <!-- Phase 1 -->
 	
@@ -2351,6 +2352,7 @@
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_COBURN
+		TEXT_HERO_JAN_DODONNA
 		TEXT_HERO_WIELER
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
@@ -2564,6 +2566,7 @@
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_COBURN
+		TEXT_HERO_JAN_DODONNA
 		TEXT_HERO_WIELER
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
@@ -2809,9 +2812,6 @@
 		</Unit_Abilities_Data>			
 	</Squadron>	
 
-	<!-- Captain Jag -->
-
-	
 
 	<!-- Admiral options -->
 
@@ -4467,220 +4467,6 @@
 	</DummyStructure>	
 
 	<!-- Venator heroes -->
-
-	<!-- FotR_Enhanced -->
-
-	<UniqueUnit Name="Block_Negotiator">
-		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
-		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
-		<Icon_Name>i_button_block.tga</Icon_Name>
-		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
-		<Text_ID>TEXT_HERO_BLOCK</Text_ID>
-		<Encyclopedia_Text>
-		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
-		TEXT_TOOLTIP_TRAIT_OFC_OFFICER
-		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
-		TEXT_TOOLTIP_BLOCK
-		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_NEGOTIATOR
-		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_VENATOR_HULL 
-		TEXT_TOOLTIP_VENATOR_SHIELD
-		TEXT_TOOLTIP_VENATOR_MOVE
-		TEXT_TOOLTIP_VENATOR_SQUADRON_BLOCK
-		TEXT_TOOLTIP_VENATOR_WEAP1
-		TEXT_TOOLTIP_VENATOR_WEAP2 
-		TEXT_TOOLTIP_VENATOR_WEAP3
-		TEXT_TOOLTIP_VENATOR_WEAP4
-		TEXT_TOOLTIP_VENATOR_WEAP5
-		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
-		TEXT_TOOLTIP_BLOCK_VILGILANCE_RESPAWN
-		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
-		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
-		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ADMIRAL</Encyclopedia_Unit_Class>
-
-		<SpaceBehavior>SELF_DESTRUCT, SELECTABLE, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
-
-		<Lua_Script>GenericGameObject</Lua_Script>
-		<Tech_Level>99</Tech_Level>
-		<Affiliation>Empire</Affiliation>
-
-		<Score_Cost_Credits> 60000 </Score_Cost_Credits>
-		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
-		<Property_Flags>GTSImmune</Property_Flags>
-
-		<Starting_Spawned_Units_Tech_0>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_0>
-		<Starting_Spawned_Units_Tech_0>Torrent_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
-		<Starting_Spawned_Units_Tech_0>Eta2_Actis_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
-		<Starting_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>V-Wing_Squadron_Double, 2</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>Eta2_Actis_Squadron_Double, 2</Starting_Spawned_Units_Tech_4>
-		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
-		<Reserve_Spawned_Units_Tech_0>Generic_ARC_170_Squadron, 2</Reserve_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Torrent_Squadron_Double, 6</Reserve_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Eta2_Actis_Squadron_Double, 6</Reserve_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 2</Reserve_Spawned_Units_Tech_4>
-		<Reserve_Spawned_Units_Tech_4>V-Wing_Squadron_Double, 6</Reserve_Spawned_Units_Tech_4>
-		<Reserve_Spawned_Units_Tech_4>Eta2_Actis_Squadron_Double, 6</Reserve_Spawned_Units_Tech_4>
-
-
-
-		<Unit_Abilities_Data SubObjectList="Yes">
-			<Unit_Ability>
-				<Type>SELF_DESTRUCT</Type>
-				<Expiration_Seconds>2</Expiration_Seconds>
-				<Recharge_Seconds>10</Recharge_Seconds>
-				<Spawned_Object_Type> Ship_Self_Destruct_Area_Blast_Effect </Spawned_Object_Type>
-				<Supports_Autofire>false</Supports_Autofire>
-			</Unit_Ability>
-
-			<Unit_Ability>
-				<Type>POWER_TO_WEAPONS</Type>
-				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_AMBUSH_NAME</Alternate_Name_Text>
-				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_AMBUSH_DESCRIPTION</Alternate_Description_Text>
-				<Alternate_Icon_Name>i_sa_AMBUSH.tga</Alternate_Icon_Name>
-				
-				<Expiration_Seconds>15</Expiration_Seconds>
-				<Recharge_Seconds>100000</Recharge_Seconds>
-				<Active_By_Default>Yes</Active_By_Default>
-				
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.66f</Mod_Multiplier>
-				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,    1.0f</Mod_Multiplier>
-				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,    1.0f</Mod_Multiplier>
-				<Mod_Multiplier>SPEED_MULTIPLIER,        1.25f</Mod_Multiplier>
-
-				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
-			</Unit_Ability>
-		</Unit_Abilities_Data>
-
-		<Abilites SubObjectList="Yes">
-			<Combat_Bonus_Ability Name="Block_Combat_Bonus">
-				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
-				<Applicable_Unit_Types />
-				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
-				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>    
-				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
-				<Stacking_Category>0</Stacking_Category>
-			</Combat_Bonus_Ability>			
-		</Abilites>
-	</UniqueUnit>
-
-	<!--Block Respawn-->
-	<UniqueUnit Name="Block_Vigilance">
-		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Variant_Of_Existing_Type>Block_Negotiator</Variant_Of_Existing_Type>
-		<Encyclopedia_Text>
-		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
-		TEXT_TOOLTIP_TRAIT_OFC_OFFICER
-		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
-		TEXT_TOOLTIP_BLOCK
-		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_VILGILANCE
-		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_VENATOR_HULL 
-		TEXT_TOOLTIP_VENATOR_SHIELD
-		TEXT_TOOLTIP_VENATOR_MOVE
-		TEXT_TOOLTIP_VENATOR_SQUADRON_BLOCK
-		TEXT_TOOLTIP_VENATOR_WEAP1
-		TEXT_TOOLTIP_VENATOR_WEAP2 
-		TEXT_TOOLTIP_VENATOR_WEAP3
-		TEXT_TOOLTIP_VENATOR_WEAP4
-		TEXT_TOOLTIP_VENATOR_WEAP5
-		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
-		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
-		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
-		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ADMIRAL</Encyclopedia_Unit_Class>
-
-		<SpaceBehavior>SELECTABLE, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
-
-		<Unit_Abilities_Data SubObjectList="Yes">
-			<Unit_Ability>
-				<Type>POWER_TO_WEAPONS</Type>
-				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_AMBUSH_NAME</Alternate_Name_Text>
-				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_AMBUSH_DESCRIPTION</Alternate_Description_Text>
-				<Alternate_Icon_Name>i_sa_AMBUSH.tga</Alternate_Icon_Name>
-				
-				<Expiration_Seconds>15</Expiration_Seconds>
-				<Recharge_Seconds>100000</Recharge_Seconds>
-				<Active_By_Default>Yes</Active_By_Default>
-				
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.66f</Mod_Multiplier>
-				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,    1.0f</Mod_Multiplier>
-				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,    1.0f</Mod_Multiplier>
-				<Mod_Multiplier>SPEED_MULTIPLIER,        1.25f</Mod_Multiplier>
-
-				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
-			</Unit_Ability>
-		</Unit_Abilities_Data>
-	</UniqueUnit>
-
-	<DummyStructure Name="Block_Assign">
-		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
-
-		<Text_ID>TEXT_HERO_BLOCK</Text_ID>
-		<Icon_Name>i_button_block_command.tga</Icon_Name>
-
-		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>	
-
-		<Affiliation>Empire</Affiliation>
-
-		<Encyclopedia_Text> 
-		TEXT_TOOLTIP_ASSIGN_NR_ADMIRAL
-		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
-		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
-		TEXT_TOOLTIP_TRAIT_OFC_OFFICER
-		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
-		TEXT_TOOLTIP_BLOCK
-		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_NEGOTIATOR
-		TEXT_TOOLTIP_COMMAND_VILGILANCE
-		</Encyclopedia_Text>
-	</DummyStructure>
-
-	<DummyStructure Name="Block_Retire">
-		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
-
-		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete> Unit_Unassigned_Admiral_Yularen </SFXEvent_Build_Complete>
-
-		<Text_ID>TEXT_HERO_BLOCK</Text_ID>
-		<Icon_Name>i_button_block_retire.tga</Icon_Name>
-
-		<Tech_Level>0</Tech_Level>
-
-		<Affiliation>Empire</Affiliation>
-
-		<Required_Orbiting_Units>Block_Negotiator</Required_Orbiting_Units>
-	</DummyStructure>
-
-	<DummyStructure Name="Block_Retire2">
-		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
-
-		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>
-
-		<Text_ID>TEXT_HERO_BLOCK</Text_ID>
-		<Icon_Name>i_button_block_retire.tga</Icon_Name>
-
-		<Tech_Level>0</Tech_Level>
-
-		<Affiliation>Empire</Affiliation>
-
-		<Required_Orbiting_Units>Block_Vigilance</Required_Orbiting_Units>
-	</DummyStructure>
 
 	<UniqueUnit Name="Wieler_Resilient">
 		<Is_Named_Hero>Yes</Is_Named_Hero>

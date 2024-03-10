@@ -37,8 +37,7 @@ function Get_Hero_Entries(upgrade_object)
 		Hero_Squadron = "ARHUL_NARRA_GUARDIAN_SQUADRON",
 		PopupHeader = "ARHUL_NARRA_SELECTOR_HEADER",
 		Options = {
-			-- FotR_Enhanced Assignable Heroes changed
-			--{"DODONNA", Locations = {"DODONNA_ARDENT"}},
+			{"DODONNA", Locations = {"DODONNA_ARDENT"}},
 			{"PARCK", Locations = {"PARCK_STRIKEFAST"}},
 			{"TARKIN", Locations = {"TARKIN_VENATOR","TARKIN_EXECUTRIX"}},
 			{"THERBON", Locations = {"THERBON_CERULEAN_SUNRISE"}},
@@ -89,11 +88,10 @@ function Get_Hero_Entries(upgrade_object)
 		PopupHeader = "ODD_BALL_P1_SELECTOR_HEADER",
 		NoInit = true,
 		Options = {
-			-- FotR_Enhanced Assignable Heroes changed
 			{"YULAREN", Locations = {"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"}, GroundPerceptions = {"Yularen_Resolute_In_Orbit","Yularen_Integrity_In_Orbit","Yularen_Invincible_In_Orbit"}},
 			{"KILIAN", Locations = {"KILIAN_ENDURANCE"}, GroundPerceptions = {"Kilian_In_Orbit"}},
-			{"WESSEX", Locations = {"WESSEX_REDOUBT"}, GroundPerceptions = {"Wessex_In_Orbit"}},
-			{"BLOCK", Locations = {"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, GroundPerceptions = {"Block_Negotiator_In_Orbit","Block_Vigilance_In_Orbit"}}
+			{"WIELER", Locations = {"WIELER_RESILIENT"}, GroundPerceptions = {"Wieler_In_Orbit"}},
+			{"COBURN", Locations = {"COBURN_TRIUMPHANT"}, GroundPerceptions = {"Coburn_In_Orbit"}},
 		},
 		GroundCompany = "Odd_Ball_P1_Team",
 		Faction = "Empire"
@@ -103,28 +101,27 @@ function Get_Hero_Entries(upgrade_object)
 		PopupHeader = "ODD_BALL_P2_SELECTOR_HEADER",
 		NoInit = true,
 		Options = {
-			-- FotR_Enhanced Assignable Heroes changed
 			{"YULAREN", Locations = {"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"}, GroundPerceptions = {"Yularen_Resolute_In_Orbit","Yularen_Integrity_In_Orbit","Yularen_Invincible_In_Orbit"}},
 			{"KILIAN", Locations = {"KILIAN_ENDURANCE"}, GroundPerceptions = {"Kilian_In_Orbit"}},
-			{"WESSEX", Locations = {"WESSEX_REDOUBT"}, GroundPerceptions = {"Wessex_In_Orbit"}},
-			{"BLOCK", Locations = {"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, GroundPerceptions = {"Block_Negotiator_In_Orbit","Block_Vigilance_In_Orbit"}}
+			{"WIELER", Locations = {"WIELER_RESILIENT"}, GroundPerceptions = {"Wieler_In_Orbit"}},
+			{"COBURN", Locations = {"COBURN_TRIUMPHANT"}, GroundPerceptions = {"Coburn_In_Orbit"}},
 		},
 		GroundCompany = "Odd_Ball_P2_Team",
 		Faction = "Empire"
 	},
 	-- FotR_Enhanced
-	--[[["WARTHOG_BTLB_Y-WING_LOCATION_SET"] = {
+	--[[ ["WARTHOG_BTLB_Y-WING_LOCATION_SET"] = {
 		Hero_Squadron = "Warthog_BTLB_Y-Wing_Hunter_Squadron",
-		PopupHeader = "WARTHOG_P1_SELECTOR_HEADER",
+		PopupHeader = "",
 		NoInit = true,
 		Options = {
-			{"WIELER", Locations = {"WIELER_RESILIENT"}, GroundPerceptions = {"Wieler_In_Orbit"}},
-			{"COBURN", Locations = {"COBURN_TRIUMPHANT"}, GroundPerceptions = {"Coburn_In_Orbit"}},
+			{ Locations = {}, GroundPerceptions = {}},
+			{ Locations = {}, GroundPerceptions = {}},
 		},
-		--GroundCompany = "",
+		GroundCompany = "",
 		Faction = "Empire"
 
-	},]]
+	}, ]]
 	["WARTHOG_TORRENT_LOCATION_SET"] = {
 		Hero_Squadron = "WARTHOG_TORRENT_HUNTER_SQUADRON",
 		PopupHeader = "WARTHOG_P1_SELECTOR_HEADER",
@@ -132,6 +129,7 @@ function Get_Hero_Entries(upgrade_object)
 		Options = {
 			{"WIELER", Locations = {"WIELER_RESILIENT"}, GroundPerceptions = {"Wieler_In_Orbit"}},
 			{"COBURN", Locations = {"COBURN_TRIUMPHANT"}, GroundPerceptions = {"Coburn_In_Orbit"}},
+			{"DODONNA", Locations = {"DODONNA_ARDENT"}, GroundPerceptions={"Dodonna_In_Orbit"}}
 		},
 		--GroundCompany = "",
 		Faction = "Empire"
@@ -144,22 +142,13 @@ function Get_Hero_Entries(upgrade_object)
 		Options = {
 			{"WIELER", Locations = {"WIELER_RESILIENT"}, GroundPerceptions = {"Wieler_In_Orbit"}},
 			{"COBURN", Locations = {"COBURN_TRIUMPHANT"}, GroundPerceptions = {"Coburn_In_Orbit"}},
+			{"DODONNA", Locations = {"DODONNA_ARDENT"}, GroundPerceptions={"Dodonna_In_Orbit"}}
 		},
 		--GroundCompany = "",
 		Faction = "Empire"
 
 	},
-	--[[["JAG_ARC170_LOCATION_SET"] = {
-		Hero_Squadron = "WARTHOG_REPUBLIC_Z95_HUNTER_SQUADRON",
-		PopupHeader = "WARTHOG_P2_SELECTOR_HEADER",
-		NoInit = true,
-		Options = {
-			{"DODONNA", Locations = {"DODONNA_ARDENT"}},
-		},
-		--GroundCompany = "",
-		Faction = "Empire"
 
-	},	]]
 	--CIS
 	["DFS1VR_LOCATION_SET"] = {
 		Hero_Squadron = "DFS1VR_31ST_SQUADRON",

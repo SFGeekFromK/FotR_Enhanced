@@ -841,6 +841,26 @@
 
 <!-- FotR_Enhanced -->
 
+	<DummyStructure Name="Fighter_Selector_Block">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
 
+		<Text_ID>TEXT_HERO_BLOCK</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_block.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
+	<DummyStructure Name="Fighter_Selector_Wessex">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_DEN_WESSEX</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_denn_wessex.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
 
 </Event_Dummies>

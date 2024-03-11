@@ -64,8 +64,8 @@ function HeroRespawn:on_galactic_hero_killed(hero_name, owner)
 	elseif hero_name == "ZOZRIDOR_SLAYKE_CARRACK" then
 		self:slaykes_second_chance()
 	-- FotR_Enhanced
-	elseif hero_name == "Block_Negotiator" then
-		self:spawn_block("Block_Vigilance")
+	elseif hero_name == "BLOCK_NEGOTIATOR" then
+		self:spawn_block("BLOCK_VIGILANCE")
 	end
 end
 

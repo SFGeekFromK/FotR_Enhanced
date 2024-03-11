@@ -775,10 +775,9 @@ function RepublicHeroes:Venator_Heroes()
 		end]]
 		if admiral_data.active_player.Get_Tech_Level() < 4 then
 			RepublicHeroes:Add_Fighter_Set("Odd_Ball_Torrent_Location_Set")
-			
+			RepublicHeroes:Add_Fighter_Set("Warthog_Torrent_Location_Set")
 		end
-		RepublicHeroes:Add_Fighter_Set("Arhul_Narra_Location_Set")
-		RepublicHeroes:Add_Fighter_Set("Warthog_Torrent_Location_Set")		
+		RepublicHeroes:Add_Fighter_Set("Arhul_Narra_Location_Set")		
 		local upgrade_unit = Find_Object_Type("Maarisa_Retaliation_Upgrade")
 		admiral_data.active_player.Unlock_Tech(upgrade_unit)
 		

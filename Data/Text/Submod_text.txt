@@ -20,7 +20,7 @@ TEXT_TOOLTIP_RECUSANT_HERO_HULL,Hull: 2560 (Frigate)
 TEXT_TOOLTIP_RECUSANT_HERO_SHIELD,Shields: 2950 / [42/R] (Frigate)
 TEXT_TOOLTIP_RECUSANT_HERO_WEAP6,6x Light Laser Cannons: 3 / 0.3s / 3.7km
 TEXT_TOOLTIP_RECUSANT_SQUADRON_HERO,Bombers: 0.5 / 2 [Requires research]
-TEXT_TOOLTIP_TJ912,TJ-912 is a tactical droid that served under one of Count Dooku's Dark Acolyte Asajj Ventress. It commanded the Separatists forces during the Battle of Sullust against Generals Obi-Wan Kenobi and Anakin Skywalker. 
+TEXT_TOOLTIP_TJ912,TJ-912 is a tactical droid that served under one of Count Dooku's Dark Acolyte Asajj Ventress. He commanded the Separatists forces during the Battle of Sullust against Generals Obi-Wan Kenobi and Anakin Skywalker. 
 TEXT_TOOLTIP_TRAIT_OFC_OFFICER,Open Circle Fleet Offcier
 TEXT_TOOLTIP_TRAIT_PLO_BRO, Plo's Bros
 TEXT_TOOLTIP_UMBARAN_FRIGATE,A fleet tender designed by the government of Umbara, this frigate is able to supply and reinforce CIS cruisers in battle and provide reapirs to fighter groups.
@@ -42,5 +42,13 @@ TEXT_UNIT_VENATOR_OFC,OCF Venator Star Destroyer
 TEXT_UNIT_VENATOR_OFC_SPHA_T,OCF Venator Star Destroyer (SPHA-T)
 
 TEXT_SPEECH_BLOCK_RETURNS_VIGILANCE,Admiral Block: Impressive... though it did cost my ship, General Kenobi's idea to self-destruct my ship did manage to deal a huge blow against the enemy at the last moment. - [Admiral Block has returned in control of the Venator-class, Vigilance].
-TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_BLOCK,
-TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_WARTHOG,
+TEXT_TOOLTIP_VENATOR_OFC_SQUADRON, Fighters: 3 / 9 | Bombers: 1 / 3
+TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_BLOCK,- Block (Venator) [ Requires Venator Research ]
+TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_WARTHOG,Warthog (V-19 Torrent/Clone Z-95 Headhunter Squadron) - Unlocks with Venators | Default Hero: Barton Coburn
+TEXT_HERO_BLOCK,Block
+TEXT_TOOLTIP_BLOCK,Admiral Block was the commanding officer of the Negotiator, and later Vigilance, both serving the role as the flagship of Jedi general Obi Wan Kenobi.
+TEXT_TOOLTIP_COMMAND_NEGOTIATOR,Venator Star Destroyer, Negotiator
+TEXT_TOOLTIP_BLOCK_VILGILANCE_RESPAWN,Block respawns in a Vigilance(Venator) after his first death
+TEXT_TOOLTIP_COMMAND_VILGILANCE,Venator Star Destroyer, Vigilance
+TEXT_HERO_ROHN,Rohn
+TEXT_TOOLTIP_ROHN,

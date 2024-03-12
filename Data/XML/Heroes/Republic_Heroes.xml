@@ -1816,7 +1816,6 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 	</UniqueUnit>
-
 	<Container Name="Odd_Ball_Torrent_Squad_Seven_Container">
 		<Variant_Of_Existing_Type>Torrent_Squadron_Container</Variant_Of_Existing_Type>
 
@@ -4489,7 +4488,7 @@
 		TEXT_TOOLTIP_VENATOR_HULL 
 		TEXT_TOOLTIP_VENATOR_SHIELD
 		TEXT_TOOLTIP_VENATOR_MOVE
-		TEXT_TOOLTIP_VENATOR_SQUADRON_BLOCK
+		TEXT_TOOLTIP_VENATOR_OFC_SQUADRON
 		TEXT_TOOLTIP_VENATOR_WEAP1
 		TEXT_TOOLTIP_VENATOR_WEAP2 
 		TEXT_TOOLTIP_VENATOR_WEAP3
@@ -4512,20 +4511,39 @@
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
 		<Property_Flags>GTSImmune</Property_Flags>
 
-		<Starting_Spawned_Units_Tech_0>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_0>
-		<Starting_Spawned_Units_Tech_0>Torrent_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
-		<Starting_Spawned_Units_Tech_0>Eta2_Actis_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Torrent_Squadron_Triple, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>BTLB_Y-WING_SQUADRON, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_2>Torrent_Squadron_Triple, 1</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>BTLB_Y-WING_SQUADRON, 1</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_3>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Torrent_Squadron_Double, 1</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>BTLB_Y-WING_SQUADRON, 1</Starting_Spawned_Units_Tech_3>
 		<Starting_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>V-Wing_Squadron_Double, 2</Starting_Spawned_Units_Tech_4>
-		<Starting_Spawned_Units_Tech_4>Eta2_Actis_Squadron_Double, 2</Starting_Spawned_Units_Tech_4>
-		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
-		<Reserve_Spawned_Units_Tech_0>Generic_ARC_170_Squadron, 2</Reserve_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Torrent_Squadron_Double, 6</Reserve_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_0>Eta2_Actis_Squadron_Double, 6</Reserve_Spawned_Units_Tech_0>
-		<Reserve_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 2</Reserve_Spawned_Units_Tech_4>
-		<Reserve_Spawned_Units_Tech_4>V-Wing_Squadron_Double, 6</Reserve_Spawned_Units_Tech_4>
-		<Reserve_Spawned_Units_Tech_4>Eta2_Actis_Squadron_Double, 6</Reserve_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_4>Torrent_Squadron, 1</Starting_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_4>Republic_Z-95_Headhunter, 1</Starting_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_4>BTLB_Y-WING_SQUADRON, 1</Starting_Spawned_Units_Tech_4>
+		<Starting_Spawned_Units_Tech_5>Generic_ARC_170_Squadron, 1</Starting_Spawned_Units_Tech_5>		
+		<Starting_Spawned_Units_Tech_5>V-Wing_Squadron, 1</Starting_Spawned_Units_Tech_5>	
+		<Starting_Spawned_Units_Tech_5>Republic_Z-95_Headhunter, 1</Starting_Spawned_Units_Tech_5>		
+		<Starting_Spawned_Units_Tech_5>BTLB_Y-WING_SQUADRON, 1</Starting_Spawned_Units_Tech_5>
 
+		<Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
+
+		<Reserve_Spawned_Units_Tech_0>Torrent_Squadron_Triple, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>BTLB_Y-WING_SQUADRON, 3</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_2>Torrent_Squadron_Triple, 3</Reserve_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>BTLB_Y-WING_SQUADRON, 3</Reserve_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_3>Generic_ARC_170_Squadron, 3</Reserve_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Torrent_Squadron_Double, 3</Reserve_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>BTLB_Y-WING_SQUADRON, 3</Reserve_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_4>Generic_ARC_170_Squadron, 3</Reserve_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Torrent_Squadron, 3</Reserve_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>Republic_Z-95_Headhunter, 3</Reserve_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_4>BTLB_Y-WING_SQUADRON, 3</Reserve_Spawned_Units_Tech_4>
+		<Reserve_Spawned_Units_Tech_5>Generic_ARC_170_Squadron, 3</Reserve_Spawned_Units_Tech_5>
+		<Reserve_Spawned_Units_Tech_5>V-Wing_Squadron, 3</Reserve_Spawned_Units_Tech_5>
+		<Reserve_Spawned_Units_Tech_5>Republic_Z95_Headhunter_Squadron, 3</Reserve_Spawned_Units_Tech_5>
+		<Reserve_Spawned_Units_Tech_5>BTLB_Y-WING_SQUADRON, 3</Reserve_Spawned_Units_Tech_5>
 
 
 		<Unit_Abilities_Data SubObjectList="Yes">
@@ -4588,7 +4606,7 @@
 		TEXT_TOOLTIP_VENATOR_HULL 
 		TEXT_TOOLTIP_VENATOR_SHIELD
 		TEXT_TOOLTIP_VENATOR_MOVE
-		TEXT_TOOLTIP_VENATOR_SQUADRON_BLOCK
+		TEXT_TOOLTIP_VENATOR_OFC_SQUADRON
 		TEXT_TOOLTIP_VENATOR_WEAP1
 		TEXT_TOOLTIP_VENATOR_WEAP2 
 		TEXT_TOOLTIP_VENATOR_WEAP3

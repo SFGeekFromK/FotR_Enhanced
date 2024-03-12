@@ -1438,6 +1438,7 @@ TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_ODD_BALL,Davijaan "Odd Ball" (V-19 Torrent
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_PIKNAB,Piknab Carsels (Z-95 Headhunter Squadron) - Unlocked by default | Default Hero: Jabba
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_QUILL,Raina Quill (PDF ARC-170 Squadron) - Unlocked by default | Default Hero: Rel Harsol
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_VULPUS,Vulpus (Ginivex Fighter Squadron) - Unlocked by default | Default Unit: Lucid Voice
+TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_WARTHOG,Warthog (V-19 Torrent/Clone Z-95 Headhunter Squadron) - Unlocks with Venators | Default Hero: Barton Coburn
 TEXT_DOCUMENTATION_HEADER_UNIQUE_UNIT_ARMED_CONSULAR,Consular Armed Cruiser - Pirate Refuge Base
 TEXT_DOCUMENTATION_HEADER_UNIQUE_UNIT_DHC_PDF,PDF Dreadnaught Heavy Cruiser - Pirate Refuge Base
 TEXT_DOCUMENTATION_HEADER_UNIQUE_UNIT_FOTR_ACCLAMATOR_II,Acclamator-II - Unlocks Mid-20 BBY | Heavy Frigate Shipyard
@@ -2303,6 +2304,7 @@ TEXT_GOVERNMENT_PALPATINE_SUPPORT_EFFECT,By enacting emergency powers for Palpat
 TEXT_GOVERNMENT_REPUBLIC,Galactic Republic Government Information:
 TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_AUTEM,- Sagoro Autem (Venator) [ Requires Venator Research | Unlocked in 20 BBY | Locked by Order 66 ]
 TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_BARAKA,- Arikakon Baraka (Supercruiser)
+TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_BLOCK,- Block (Venator) [ Requires Venator Research ]
 TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_COBURN,- Barton Coburn (Venator) [ Requires Venator Research ]
 TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_DALLIN,- Jace Dallin (Modified DHC) [ Locked by Order 66 ]
 TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_DAO,- Dao (Venator) [ Requires Venator Research | Locked in 21 BBY+ starts ]
@@ -2782,6 +2784,7 @@ TEXT_HERO_BACARA,Bacara
 TEXT_HERO_BAIL_ORGANA,Bail Organa
 TEXT_HERO_BARAKA,Arikakon Baraka
 TEXT_HERO_BARRISS,Barriss Offee
+TEXT_HERO_BLOCK,Block
 TEXT_HERO_BLY,Bly
 TEXT_HERO_BO_KATAN,Bo-Katan
 TEXT_HERO_BOIL,Boil
@@ -2957,6 +2960,7 @@ TEXT_HERO_RESHUL,Reshul
 TEXT_HERO_REX,Rex
 TEXT_HERO_RHYS_DALLOWS,Rhys Dallows
 TEXT_HERO_RIBOGA,Riboga
+TEXT_HERO_ROHN,Rohn
 TEXT_HERO_ROM_MOHC,Rom Mohc
 TEXT_HERO_ROMODI,Hurst Romodi
 TEXT_HERO_ROOS_TARPALS,Roos Tarpals
@@ -9533,6 +9537,7 @@ TEXT_SOUND_EFFECTS_VOLUME,Sound Effects Volume
 TEXT_SPACE_FLEETS,Space Fleets
 TEXT_SPACE_STATION,Station:
 TEXT_SPAIN,Spain
+TEXT_SPEECH_BLOCK_RETURNS_VIGILANCE,Admiral Block: Impressive... though it did cost my ship, General Kenobi's idea to self-destruct my ship did manage to deal a huge blow against the enemy at the last moment. - [Admiral Block has returned in control of the Venator-class, Vigilance].
 TEXT_SPEECH_BULWARK_RESEARCH,Wat Tambor: The Techno Union has been developing a new set of battlecruisers from our shipyards at Foerost. Its firepower will mark a new chapter in this war and allow us to compete directly with the newer Republic capital ships. Our associates at Sullust have expressed interest as well, and one of their Home Guard officers has already volunteered to lead the initial fleet. If the Confederacy would be wise enough to invest in this project, I assure you the war will quickly turn in our favour.
 TEXT_SPEECH_BULWARK_RESEARCH_FINISHED,Wat Tambor: The Bulwark Fleet is now at your disposal; make the Republic scum squirm. [Bulwark-I Unlocked] 
 TEXT_SPEECH_BULWARK_UNLOCK,Unlocks: Bulwark-I Battlecruiser
@@ -11962,6 +11967,8 @@ TEXT_TOOLTIP_BELBULLAB24,Derivative of the Belbullab design spun into an average
 TEXT_TOOLTIP_BLAST_DOOR_DESCRIPTION,A type of secured door that was used in numerous facilities as an extra line of defence.
 TEXT_TOOLTIP_BLAST_DOOR_HEALTH,Health: 300 (Structure)
 TEXT_TOOLTIP_BLAST_DOOR_SHIELD,Shield: 250 (Heavy Vehicle)
+TEXT_TOOLTIP_BLOCK,Admiral Block was the commanding officer of the Negotiator, and later Vigilance, both serving the role as the flagship of Jedi general Obi Wan Kenobi.
+TEXT_TOOLTIP_BLOCK_VILGILANCE_RESPAWN,Block respawns in a Vigilance(Venator) after his first death
 TEXT_TOOLTIP_BLOCKADE_ATTRITION,Blockade Attrition: Kills enemy units in orbit on cycle change (GC Level)
 TEXT_TOOLTIP_BLY,Clone Marshall Commander and Advanced Recon Commando, CC-5052 was nicknamed Bly. He served alongside Jedi General Aayla Secura in the 327th Star Corps, a unit well-known for its constantly changing deployments. Despite his undying respect and loyalty to Aayla, his clone programming had won out when Order 66 was issued; he and his men ruthlessly killed her, continuing to fire even after she had fallen.
 TEXT_TOOLTIP_BLY_P1_HEALTH,Health: 135 (Hero)
@@ -12599,6 +12606,7 @@ TEXT_TOOLTIP_COMMAND_MUNIFICENT,Modified Munificent Star Frigate
 TEXT_TOOLTIP_COMMAND_MUNIFICENT_DREAD,Modified Munificent Star Dreadnought
 TEXT_TOOLTIP_COMMAND_NAL_HUTTA_JEWEL,Heavy Minstrel Yacht, Nal Hutta Jewel
 TEXT_TOOLTIP_COMMAND_NEBULA_RAIDERS,Z-95 Squadron, Nebula Raiders
+TEXT_TOOLTIP_COMMAND_NEGOTIATOR,Venator Star Destroyer, Negotiator
 TEXT_TOOLTIP_COMMAND_NEXU,'Supercruiser' Acclamator, Nexu
 TEXT_TOOLTIP_COMMAND_NORULAC,Marauder Cruiser, Xappyh
 TEXT_TOOLTIP_COMMAND_ONARA_KUAT,Mandator-II Star Dreadnought, Pride of the Core
@@ -12655,6 +12663,7 @@ TEXT_TOOLTIP_COMMAND_TWILIGHT,Modified G9 Rigger Light Freighter, Twilight
 TEXT_TOOLTIP_COMMAND_UNREPENTANT,Bulwark-I Battlecruiser, Unrepentant
 TEXT_TOOLTIP_COMMAND_VALORUM,Victory-I Star Destroyer, Valorum
 TEXT_TOOLTIP_COMMAND_VENSENOR,Venator Star Destroyer, Vensenor
+TEXT_TOOLTIP_COMMAND_VILGILANCE,Venator Star Destroyer, Vigilance
 TEXT_TOOLTIP_COMMAND_VORRU,Modified Venator Star Destroyer, Umbra Grimnal
 TEXT_TOOLTIP_COMMAND_VULTURE,Marauder Cruiser, Vulture
 TEXT_TOOLTIP_COMMAND_WESSEL,Acclamator-I (Carrier Loadout), Enterprise
@@ -14938,6 +14947,7 @@ TEXT_TOOLTIP_REX_WEAP1,1x DC-15S Blaster Carbine: 3 / 1.25s / 220m
 TEXT_TOOLTIP_REX_WEAP2,1x Ion Grenade: 1 / 15.0s / 200m
 TEXT_TOOLTIP_RHYS_DALLOWS,A pilot in the Royal Naboo Security Forces Bravo Squadron who trained under ace pilot Essara Till. When his mentor was killed by a mercenary ambush funded by the Trade Federation, Rhys swore revenge, teaming up with Vana Sage and the Lok Revenants leader Nym in several strikes against the conglomerate. Rhys would rejoin Bravo Squadron in an assault on the invaders droid control ship, facing off against Essara's killer and triumphing in the ensuing battle. Dallows would be promoted to Captain and would lead Bravo Squadron through the Clone Wars, later becoming a sympathizer for rebellion against the Galactic Empire.
 TEXT_TOOLTIP_RIBOGA,Riboga estalished himself as the crime lord in the Cularin system several decades before the outbreak of the Clone Wars, supervising a number of unsavory practices including a slaving ring and a spice mining operation on Kemix he built a huge warship to guard. He left due to the alleged unprofitability of the remote system, though in truth he was the victim of an embezzling majordomo who took over the operation and abolished the slave trade.
+TEXT_TOOLTIP_ROHN, Rohn was a general in command of Shrouded Offensive, a military operation at the planet of Oster assigned by Darth Vader himself.
 TEXT_TOOLTIP_ROM_MOHC,An Army officer originally under the tutelage of General Locus Geen. When Mohc was defeated by General Grievous on the spike-stone plains of Mendig he developed an obsession with personal combat that would never stop affecting his career. This led to a keen understanding of cybernetic systems and battle droids as a result of his most commonly encountered opponents during the Clone Wars.
 TEXT_TOOLTIP_ROM_MOHC_HEALTH,Health: 230 (Hero)
 TEXT_TOOLTIP_ROM_MOHC_MOVE,Speed: 1.0
@@ -15714,7 +15724,7 @@ TEXT_TOOLTIP_THETA_SHUTTLE_WEAP3,1x Aft Fighter Turbolaser: 1 / 3.0s / 1.4km
 TEXT_TOOLTIP_TIE_BOMBER,A bomber armed with proton torpedoes. It replaces the unpopular TIE/gt model and is a significant improvement over that design. It is best used to attack the larger enemy ships and space stations along with bombing runs against ground targets.
 TEXT_TOOLTIP_TIE_FIGHTER,A speedy and maneuverable light fighter that became one of the most recognizable Imperial symbol after being chosen to standardize fighter models shortly after the Empire's founding. It is cheap and lacks shielding and adequate armor compared to other designs. It is best used en-masse to engage enemy fighters and bombers.
 TEXT_TOOLTIP_TIE_STARFIGHTER,An upgrade of the Republic's T.I.E Starfighter, the TIE Starfighter was the first member of the TIE family designed in the Imperial era. The Empire needed vast numbers of fighters to occupy an entire galaxy, so the TIE Starfighter was quickly phased out in favor of the less capable and less expensive TIE/ln (better known as the TIE Fighter).
-TEXT_TOOLTIP_TJ912,TJ-912 is a tactical droid that served under one of Count Dooku's Dark Acolyte Asajj Ventress. It commanded the Separatists forces during the Battle of Sullust against Generals Obi-Wan Kenobi and Anakin Skywalker. 
+TEXT_TOOLTIP_TJ912,TJ-912 is a tactical droid that served under one of Count Dooku's Dark Acolyte Asajj Ventress. He commanded the Separatists forces during the Battle of Sullust against Generals Obi-Wan Kenobi and Anakin Skywalker. 
 TEXT_TOOLTIP_TNT,Originally a mining vehicle designed for the spice mines of Kessel during the era of the Republic, the Treaded Neutron Torch was adapted into military usage during the collapse of the Galactic Empire as makeshift assault tanks. A hull designed to survive perilous mine shafts offers a surprising amount of protection in combat and torches capable of melting easily through rock are also capable of burning their way through lots of other material that might see use on a battlefield.
 TEXT_TOOLTIP_TNT_COMPANY,Company: 3x - Treaded Neutron Torch
 TEXT_TOOLTIP_TNT_HEALTH,Health: 250 (Heavy Vehicle)
@@ -15982,6 +15992,7 @@ TEXT_TOOLTIP_VENATOR_MOVE,Speed: 3.25 | Accel: 0.04 | Turn: 0.4
 TEXT_TOOLTIP_VENATOR_OFC,Venator Star Destroyer assigned under Open Circle Fleet. It has increased fire power in exchange for fighter complements.
 TEXT_TOOLTIP_VENATOR_OFC_HULL,Hull: 3400 (Capital)
 TEXT_TOOLTIP_VENATOR_OFC_SPHA_T,An Open Circle Fleet Venator equiped with SPHA-T on the hangar bay. An idea brought up by Anakin Skywalker, this upgrade made the Venators a more formidable against separatist warships.
+TEXT_TOOLTIP_VENATOR_OFC_SQUADRON, Fighters: 3 / 9 | Bombers: 1 / 3
 TEXT_TOOLTIP_VENATOR_OFC_UPGRADEABLE,Upgrade: Can be equiped with SPHA-T by Anakin Skywalker. [Requires Anakin Skywalker in orbit]
 TEXT_TOOLTIP_VENATOR_OFC_WEAP1,4x Heavy Dual Turbolasers: 5 / 3.5s / 7.2km
 TEXT_TOOLTIP_VENATOR_REFIT,Common Venator-class refurbishment employed by a variety of groups, such as criminal organisations and small Hutt clans. Availability spikes as Clone Wars surplus is sold to local forces and groups or picked up at mothballs. Consists mostly of weapon modifications intended to aid in support of other capital ships and for piracy operations. Has a hard time killing other capital-scale vessels on its own.

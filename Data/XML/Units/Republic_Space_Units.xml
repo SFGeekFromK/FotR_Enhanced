@@ -3020,6 +3020,8 @@
 
 	</SpaceUnit>
 
+	<!-- FotR_Enhanced --> <!--Tector Icon Changed-->
+
 	<SpaceUnit Name="Generic_Tector">
 		<Variant_Of_Existing_Type>Template_Tector</Variant_Of_Existing_Type>
 		
@@ -3049,7 +3051,7 @@
 		<Affiliation>Empire, Independent_Forces</Affiliation>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 
-		<Icon_Name>I_BUTTON_TECTOR_REP.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_TECTOR_REP_AUREBSH.tga</Icon_Name>
 		<Lua_Script>GenericGameObject</Lua_Script>
 		
 		<SFXEvent_Select>Unit_Select_rep_Tector</SFXEvent_Select>

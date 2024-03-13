@@ -58,7 +58,7 @@ return {
 			name = "Senate Approval",
 			faction_name = "Empire",
 			faction = Find_Player("Empire"),
-			favour =--[[FotR_Enhanced ; testing order 66]] 100, --0,
+			favour = --[[FotR_Enhanced ; testing order 66]] 100, --0,0,
 			max_value = 100,
 			max_crossplot = "SENATE_SUPPORT_REACHED",
 			cycle_increase = 0,
@@ -104,13 +104,13 @@ return {
 					threshold = 100,
 					remove_cost = false,
 					unique = true, spawned = false,
-					text = true
+					text = "TEXT_GOVERNMENT_CIS_INTEGRATE_TECHNO_WAT_TAMBOR"
 				},
 				["TREETOR_CAPTOR"] = {
 					threshold = 100,
 					remove_cost = false,
 					unique = true, spawned = false,
-					text = true
+					text = "TEXT_GOVERNMENT_CIS_INTEGRATE_TECHNO_DOMB_TREETOR"
 				}
 			},
 			integrates = true,
@@ -143,13 +143,13 @@ return {
 					threshold = 100,
 					remove_cost = false,
 					unique = true, spawned = false,
-					text = true
+					text = "TEXT_GOVERNMENT_CIS_INTEGRATE_COMMERCE_SHU_MAI"
 				},
 				["STARK_RECUSANT"] = {
 					threshold = 100,
 					remove_cost = false,
 					unique = true, spawned = false,
-					text = true
+					text = "TEXT_GOVERNMENT_CIS_INTEGRATE_COMMERCE_IACO_STARK"
 				}
 			},
 			integrates = true,
@@ -182,13 +182,13 @@ return {
 					threshold = 100,
 					remove_cost = false,
 					unique = true, spawned = false,
-					text = true
+					text = "TEXT_GOVERNMENT_CIS_INTEGRATE_IGBC_PORS_TONITH"
 				},
 				["CANTEVAL_MUNIFICENT"] = {
 					threshold = 100,
 					remove_cost = false,
 					unique = true, spawned = false,
-					text = true
+					text = "TEXT_GOVERNMENT_CIS_INTEGRATE_IGBC_CANTEVAL"
 				}
 			},
 			integrates = true,
@@ -221,13 +221,13 @@ return {
 					threshold = 100,
 					remove_cost = false,
 					unique = true,spawned = false,
-					text = true
+					text = "TEXT_GOVERNMENT_CIS_INTEGRATE_TRADEFED_LOK_DURD"
 				},
 				["TUUK_PROCURER"] = {
 					threshold = 100,
 					remove_cost = false,
 					unique = true,spawned = false,
-					text = true
+					text = "TEXT_GOVERNMENT_CIS_INTEGRATE_TRADEFED_MAR_TUUK"
 				}
 			},
 			integrates = true,

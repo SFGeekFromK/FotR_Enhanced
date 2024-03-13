@@ -58,7 +58,7 @@ return {
 			name = "Senate Approval",
 			faction_name = "Empire",
 			faction = Find_Player("Empire"),
-			favour = --[[FotR_Enhanced ; testing order 66]] 100, --0,0,
+			favour = --[[FotR_Enhanced ; testing order 66]] 97, --0,0,
 			max_value = 100,
 			max_crossplot = "SENATE_SUPPORT_REACHED",
 			cycle_increase = 0,

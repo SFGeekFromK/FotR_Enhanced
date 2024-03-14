@@ -149,12 +149,12 @@
 		<Text_ID>TEXT_UNIT_VENATOR_DECOLORIZE</Text_ID>
 		<Lua_Script>HeroSwitcher</Lua_Script>
 		<Affiliation>Empire</Affiliation>
-		<Icon_Name>i_button_jedi_Cruiser.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_JEDI_CRUISER.tga</Icon_Name>
 
 		<Tech_Level>0</Tech_Level>
 		
 		<Encyclopedia_Text> 
-
+		TEXT_TOOLTIP_VENATOR_DECOLORIZE
 		</Encyclopedia_Text>
 		
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_UNIT_DECOLORIZE</Encyclopedia_Unit_Class>

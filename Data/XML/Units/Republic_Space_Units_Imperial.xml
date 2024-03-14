@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Republic_Space_Units_Imeperial>
+    <!--
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+    -->
+
+    <SpaceUnit Name="LAC_Imperial">
+        <Variant_Of_Existing_Type>LAC</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="Corellian_Corvette_Imperial">
+        <Variant_Of_Existing_Type>Corellian_Corvette</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_CORELLIAN_CORVETTE.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="Consular_Imperial">
+        <Variant_Of_Existing_Type>Consular</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+    </SpaceUnit> 
+
+    <SpaceUnit Name="Consular_Refit_Imperial">
+        <Variant_Of_Existing_Type>Consular_Refit</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+    </SpaceUnit> 
+
+    <SpaceUnit Name="Charger_C70_Imperial">
+        <Variant_Of_Existing_Type>Charger_C70</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>i_button_c70.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="Corellian_Gunboat_Imperial">
+        <Variant_Of_Existing_Type>Corellian_Gunboat</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_CORELLIAN_GUNSHIP.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="Lancer_Frigate_Imperial">
+        <Variant_Of_Existing_Type>Lancer_Frigate</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>i_button_lancer.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="CEC_Light_Cruiser_Imperial">
+        <Variant_Of_Existing_Type>CEC_Light_Cruiser</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_CEC_LIGHT_CRUISER.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Arquitens_Imperial">
+        <Variant_Of_Existing_Type>Arquitens</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_ARQUITENS.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Pelta_Assault_Imperial">
+        <Variant_Of_Existing_Type>Pelta_Assault</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+    </SpaceUnit>
+
+    <SpaceUnit Name="Pelta_Support_Imperial">
+        <Variant_Of_Existing_Type>Pelta_Support</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+    </SpaceUnit>
+
+    <SpaceUnit Name="Victory_I_Frigate_Imperial">
+        <Variant_Of_Existing_Type>Victory_I_Frigate</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>i_button_victory_frigate.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Starbolt_Imperial">
+        <Variant_Of_Existing_Type>Starbolt</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>i_button_starbolt.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Dreadnaught_Lasers_Imperial">
+        <Variant_Of_Existing_Type>Dreadnaught_Lasers</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_DREADNAUGHT_1.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Dreadnaught_Imperial">
+        <Variant_Of_Existing_Type>Dreadnaught</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_DREADNAUGHT.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Generic_Gladiator_Imperial">
+        <Variant_Of_Existing_Type>Generic_Gladiator</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>i_button_Gladiator_imp.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Generic_Imperial_I_Frigate_Imperial">
+        <Variant_Of_Existing_Type>Generic_Imperial_I_Frigate</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_IMPERIALIFRIGATE.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Generic_Acclamator_Assault_Ship_Leveler_Imperial">
+        <Variant_Of_Existing_Type>Generic_Acclamator_Assault_Ship_Leveler</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_ACCLAMATOR_Level.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Generic_Acclamator_Assault_Ship_I_Imperial">
+        <Variant_Of_Existing_Type>Generic_Acclamator_Assault_Ship_I</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_ACCLAMATOR_REP.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Generic_Acclamator_Assault_Ship_II_Imperial">
+        <Variant_Of_Existing_Type>Generic_Acclamator_Assault_Ship_II</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_ACCLAMATOR_II.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Generic_Victory_Destroyer_Imperial">
+        <Variant_Of_Existing_Type>Generic_Victory_Destroyer</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_VICTORY_CLASS.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Generic_Victory_Destroyer_Two_Imperial">
+        <Variant_Of_Existing_Type>Generic_Victory_Destroyer_Two</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>i_button_victory_ii.tga</Icon_Name>
+    </SpaceUnit>
+
+
+    <SpaceUnit Name="Generic_Venator_Imperial">
+        <Variant_Of_Existing_Type>Generic_Venator</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>i_button_jedi_Cruiser.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Invincible_Cruiser_Imperial">
+        <Variant_Of_Existing_Type>Invincible_Cruiser</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>i_button_invincible.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="Generic_Star_Destroyer_Imperial">
+        <Variant_Of_Existing_Type>Generic_Star_Destroyer</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+    
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="Generic_Maelstrom_Imperial">
+        <Variant_Of_Existing_Type>Generic_Maelstrom</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>I_BUTTON_MAELSTROM.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+</Republic_Space_Units_Imeperial>

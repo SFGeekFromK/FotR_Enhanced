@@ -23,8 +23,3 @@ Tarkin : SELECTABLE, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDE
 
 
 ------Todo Lists------
-
-Gov rep.lua merge with hotfix
-
-Masterscript gov rep.lua merge with hotfix
-

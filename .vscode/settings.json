@@ -1,0 +1,6 @@
+{
+    "Lua.diagnostics.disable": [
+        "deprecated",
+        "unused-local"
+    ]
+}

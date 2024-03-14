@@ -257,7 +257,7 @@ function GovernmentRepublic:GC_AI_Republic_Future()
 		self.CurrentMilitarizationTag = "IMPERIALIZATION"
 		crossplot:publish("UPDATE_MOBILIZATION", "empty")
 
-		UnitUtil.SetLockList("EMPIRE", {"Jedi_Temple", "Republic_Jedi_Squad", "View_Council", "Generic_Venator", "Venator_OFC"}, false)
+		UnitUtil.SetLockList("EMPIRE", {"Jedi_Temple", "Republic_Jedi_Squad", "View_Council", "Generic_Venator", "Venator_OFC"}, false) -- FotR_Enhanced
 
 		UnitUtil.DespawnList({
 			"YODA", "YODA2",
@@ -279,7 +279,7 @@ function GovernmentRepublic:GC_AI_Republic_Future()
 			"KOTAS_MILITIA_TROOPER", "KOTAS_MILITIA_TROOPER_GUNNER_HEAVY", "KOTAS_MILITIA_TROOPER_GRENADIER", "KOTAS_MILITIA_TROOPER_HAT", "KOTAS_MILITIA_TROOPER_SERGEANT_SPAWNER",
 			"ANTARIAN_RANGER_RIFLE", "ANTARIAN_RANGER_RIFLE_GRENADIER", "ANTARIAN_RANGER_RIFLE_CAPTAIN_SPAWNER",
 		})
-
+		--- [[FotR_Enhanced
 		local Generic_Venator_All=Find_All_Objects_Of_Type("Generic_Venator")
 		for _, Venator_Despawn in pairs(Generic_Venator_All) do
 			UnitUtil.ReplaceAtLocation(Venator_Despawn, "Venator_Imperial")
@@ -293,10 +293,10 @@ function GovernmentRepublic:GC_AI_Republic_Future()
 		local Venator_SPHA_T_All=Find_All_Objects_Of_Type("Venator_SPHA_T")
 		for j, Venator_SPHA_T_Despawn in pairs(Venator_SPHA_T_All) do
 			UnitUtil.ReplaceAtLocation(Venator_SPHA_T_Despawn, "Venator_Imperial")
-		end		        
-		
-		UnitUtil.SetLockList("EMPIRE", {"Yularen_Resolute_Upgrade_Invincible", "Yularen_Integrity_Upgrade_Invincible","Tarkin_Executrix_Upgrade", "Venator_Imperial", "Venator_Decolorize"})
-
+		end --]]
+		--- [[FotR_Enhanced
+		UnitUtil.SetLockList("EMPIRE", {"Yularen_Resolute_Upgrade_Invincible", "Yularen_Integrity_Upgrade_Invincible","Tarkin_Executrix_Upgrade", "Venator_Imperial", "Venator_Decolorize"}) 
+		--]]
 		UnitUtil.ReplaceAtLocation("Anakin", "Vader_Team")
 		UnitUtil.ReplaceAtLocation("Anakin2", "Vader_Team")
 
@@ -645,6 +645,7 @@ function GovernmentRepublic:UpdateDisplay(favour_table, market_name, market_list
 
 		government_display_event.Add_Dialog_Text("TEXT_DOCUMENTATION_BODY_SEPARATOR")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_LIST")
+        government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_NEEDA") -- FotR_Enhanced
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_DALLIN")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_MAARISA")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_PELLAEON")
@@ -662,6 +663,7 @@ function GovernmentRepublic:UpdateDisplay(favour_table, market_name, market_list
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_DAO")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_AUTEM")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_TENANT")
+        government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_BLOCK") -- FotR_Enhanced
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_SCREED")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_DODONNA")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_PARCK")

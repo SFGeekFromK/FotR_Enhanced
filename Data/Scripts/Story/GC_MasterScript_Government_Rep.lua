@@ -62,7 +62,7 @@ end
 
 function State_Republic_Future_Jedi_Gone(message)
     if message == OnEnter then
-		UnitUtil.SetLockList("EMPIRE", {"Jedi_Temple", "Republic_Jedi_Squad", "View_Council"}, false)
+		UnitUtil.SetLockList("EMPIRE", {"Jedi_Temple", "Republic_Jedi_Squad", "View_Council", "Generic_Venator", "Venator_OFC"}, false) -- FotR_Enhanced
 
 		UnitUtil.DespawnList({
 			"YODA", "YODA2",
@@ -85,7 +85,8 @@ function State_Republic_Future_Jedi_Gone(message)
 			"ANTARIAN_RANGER_RIFLE", "ANTARIAN_RANGER_RIFLE_GRENADIER", "ANTARIAN_RANGER_RIFLE_CAPTAIN_SPAWNER",
 		})
 
-		UnitUtil.SetLockList("EMPIRE", {"Venator_Imperial", "Venator_Decolorize"})
+		---[[ FotR_Enhanced
+		UnitUtil.SetLockList("EMPIRE", {"Venator_Imperial", "Venator_Decolorize"}) 
 
         local Generic_Venator_All=Find_All_Objects_Of_Type("Generic_Venator")
         for _, Venator_Despawn in pairs(Generic_Venator_All) do
@@ -100,7 +101,7 @@ function State_Republic_Future_Jedi_Gone(message)
         local Venator_SPHA_T_All=Find_All_Objects_Of_Type("Venator_SPHA_T")
         for j, Venator_SPHA_T_Despawn in pairs(Venator_SPHA_T_All) do
             UnitUtil.ReplaceAtLocation(Venator_SPHA_T_Despawn, "Venator_Imperial")
-        end
+        end --]]
 		
 		crossplot:publish("ORDER_66_EXECUTED", "empty")
 	else

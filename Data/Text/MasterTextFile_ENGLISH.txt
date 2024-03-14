@@ -805,7 +805,7 @@ TEXT_COMPANY_TECHNO_UNION_DESCRIPTION,All Techno Union products: Crab Droid, Per
 TEXT_COMPANY_TRANSGALMEG,TransGalMeg Industries
 TEXT_COMPANY_TRANSGALMEG_DESCRIPTION_FOTR,All TransGalMeg products: Bulwark-I and Bulwark-II battlecruisers.
 TEXT_COMPANY_UBRIKKIAN,Ubrikkian Industries
-TEXT_COMPANY_UBRIKKIAN_DESCRIPTION_FOTR,All Ubrikkian products: Bantha-II Skiff, SuperHaul-II Skiff, Pongeeta Swamp Speeder, Personnel Skiff Model IV, WLO-5 Speeder Tank, Luxury-class Sail Barge, Minstrel Yacht variants, Kossak Frigate.
+TEXT_COMPANY_UBRIKKIAN_DESCRIPTION_FOTR,All Ubrikkian products: Bantha-II Skiff, SuperHaul-II Skiff, Pongeeta Swamp Speeder, Personnel Skiff Model IV, WLO-5 Speeder Tank, Luxury-class Sail Barge, Minstrel Yacht variants, Ubrikkian Cruiser, Kossak Frigate.
 TEXT_COMPANY_URRDORF_CITY,Urrdorf City
 TEXT_COMPANY_URRDORF_CITY_DESCRIPTION,Despite being the smallest of the twenty cities orbiting Duro, Urrdorf City managed to survive the Battle of Duro in the Yuuzhan Vong War as the only city left intact. Urrdorf was not equipped with a hyperdrive like the larger cities, but it had powerful sublight engines and shield generators which enabled it to flee into interstellar space.
 TEXT_COMPANY_UULSHOS,Uulshos Manufacturing
@@ -842,7 +842,7 @@ TEXT_CONQUEST_GOVERNMENT_HUTTS_HUTT_BOARDING_SHUTTLE_AVAILABLE,[Boarding Shuttle
 TEXT_CONQUEST_GOVERNMENT_HUTTS_KOSSAK_AVAILABLE,[Kossak Frigate Unlocked]
 TEXT_CONQUEST_GOVERNMENT_HUTTS_RIBOGA_AVAILABLE,[Riboga has joined your forces] 
 TEXT_CONQUEST_GOVERNMENT_HUTTS_SHADOW_COLLECTIVE_FORMATION,Darth Maul: I come to your Council to seek a partnership that shall be to both our benefits. I am forging an alliance against the Republic and Separatists. You have armies, but what you lack is a vision. My allies and I have skills and abilities that can strike down even Jedi. With our combined power all our enemies will bow before our might. All I ask in return is one thing; vengeance on my former master and the Jedi both.
-TEXT_CONQUEST_GOVERNMENT_HUTTS_SHADOW_COLLECTIVE_JOINED,Darth Maul, Savage Opress & Ziton Moj has joined the Hutt Cartels 
+TEXT_CONQUEST_GOVERNMENT_HUTTS_SHADOW_COLLECTIVE_JOINED,[Darth Maul & Savage Opress has joined your forces]
 TEXT_CONQUEST_GOVERNMENT_HUTTS_TAGOONTA_AVAILABLE,[Tagoonta has joined your forces]
 TEXT_CONQUEST_GOVERNMENT_HUTTS_TOBBA_YTOBBA_AVAILABLE,[Tobba has joined your forces]
 TEXT_CONQUEST_GOVERNMENT_HUTTS_TROONOL_AVAILABLE,[Troonol has joined your forces]
@@ -928,10 +928,10 @@ TEXT_DISPLAY_COLONY_TWO,Economic Station: Golan-II Space Colony
 TEXT_DISPLAY_EIGHT,8
 TEXT_DISPLAY_FIVE,5
 TEXT_DISPLAY_FOUR,4
-TEXT_DISPLAY_GOLAN_ONE_STATION,Secondary Defense: Golan-I Defense Station
-TEXT_DISPLAY_GOLAN_THREE_STATION,Secondary Defense: Golan-III Defense Station
-TEXT_DISPLAY_GOLAN_TWO_STATION,Secondary Defense: Golan-II Defense Station
-TEXT_DISPLAY_HAVEN_STATION,Secondary Defense: Haven Defense Station
+TEXT_DISPLAY_GOLAN_ONE_STATION,Secondary Defense: Golan-I Secondary Defense Station
+TEXT_DISPLAY_GOLAN_THREE_STATION,Secondary Defense: Golan-III Secondary Defense Station
+TEXT_DISPLAY_GOLAN_TWO_STATION,Secondary Defense: Golan-II Secondary Defense Station
+TEXT_DISPLAY_HAVEN_STATION,Secondary Defense: Haven Secondary Defense Station
 TEXT_DISPLAY_NINE,9
 TEXT_DISPLAY_NON_CAPITAL_CATEGORY_DUMMY,DEBUG TEXT: NC Dummy | Amount: %s
 TEXT_DISPLAY_ONE,1
@@ -960,12 +960,12 @@ TEXT_DISPLAY_SPACER_9,
 TEXT_DISPLAY_STRUCTURE,%s
 TEXT_DISPLAY_STRUCTURE_CATEGORY_DUMMY,DEBUG TEXT: S Dummy | Amount: %s
 TEXT_DISPLAY_TEN,10
-TEXT_DISPLAY_TF_OUTPOST_STATION,Secondary Defense: Trade Federation Defense Station
+TEXT_DISPLAY_TF_OUTPOST_STATION,Secondary Defense: Trade Federation Secondary Defense Station
 TEXT_DISPLAY_THREE,3
 TEXT_DISPLAY_TRADE,Economic Station: Trade Port
 TEXT_DISPLAY_TWO,2
-TEXT_DISPLAY_VALIDUSIA,Secondary Defense: Validusia Defense Station
-TEXT_DISPLAY_VALOR_STATION,Secondary Defense: Valor Defense Station
+TEXT_DISPLAY_VALIDUSIA,Secondary Defense: Validusia Secondary Defense Station
+TEXT_DISPLAY_VALOR_STATION,Secondary Defense: Valor Secondary Defense Station
 TEXT_DOCUMENTATION_BODY_AIMODIFIER_ADMIRAL,Admiral: 1.35x Credits | 0.8x build time
 TEXT_DOCUMENTATION_BODY_AIMODIFIER_CAPTAIN,Captain: 1.1x Credits | 0.9x build time
 TEXT_DOCUMENTATION_BODY_AIMODIFIER_CRUELADMIRAL,Cruel Admiral: 4.0x Credits | 0.5x build time
@@ -1729,7 +1729,7 @@ TEXT_ENCYCLOPEDIA_CLASS_SPECFORCE,Class: SpecForce
 TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_OPERATIONS_TROOPER,Class: Special Operations Trooper
 TEXT_ENCYCLOPEDIA_CLASS_SPEEDER_BIKE,Class: Speeder Bike
 TEXT_ENCYCLOPEDIA_CLASS_SSD_STARBASE,Class: SSD Skirmish Starbase
-TEXT_ENCYCLOPEDIA_CLASS_STARBASE,Class: Primary Star Base
+TEXT_ENCYCLOPEDIA_CLASS_STARBASE,Class: Primary Starbase
 TEXT_ENCYCLOPEDIA_CLASS_STATION,Class: Space Station
 TEXT_ENCYCLOPEDIA_CLASS_STORMCOMMANDO,Class: Storm Commando
 TEXT_ENCYCLOPEDIA_CLASS_STORMCOMMANDO_ADMIRAL,Class: Admiral / Storm Commando
@@ -1740,7 +1740,7 @@ TEXT_ENCYCLOPEDIA_CLASS_STORY,Plot Point
 TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT,Story Event
 TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE,Class: Structure
 TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_SECONDARY_CONSTRUCTION,Construction Station
-TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_SECONDARY_DEFENSE,Secondary Defense
+TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_SECONDARY_DEFENSE,Secondary Defense Station
 TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_SECONDARY_ECONOMIC,Economic Station
 TEXT_ENCYCLOPEDIA_CLASS_SUPER_TACTICAL_DROID,Class: Super Tactical Droid
 TEXT_ENCYCLOPEDIA_CLASS_SUPERIOR_GENERAL,Class: Superior General
@@ -1961,7 +1961,7 @@ TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_P2_COMPANY_3,4 * Phase 2 Clone Assault Squ
 TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_CLONE_P2_COMPANY_4,1 * Phase 2 Clone Medic Squad
 TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_COMBAT_AIR_PATROL_1,1 * Flashblind Airspeeder
 TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_COMBAT_AIR_PATROL_2,4 * Gaba-18 Speeder
-TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_HEAVY_MECHANISED_1,10 * Phase 2 Clone Heavy Squad
+TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_HEAVY_MECHANISED_1,10 * Phase 2 Clone Assault Squad
 TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_HEAVY_MECHANISED_2,2 * A5 Juggernaut
 TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_HEAVY_WALKER_1,2 * AT-TE
 TEXT_ENCYCLOPEDIA_GROUNDWAR_REP_HEAVY_WALKER_2,4 * AT-OT
@@ -2224,14 +2224,14 @@ TEXT_GL_PLANET_DESCRIPTION,Some planets can innately support additional structur
 TEXT_GL_RESOURCE_OTHER,Structures
 TEXT_GL_WEBSITE,Construction in progress
 TEXT_GOLAN_ONE_COLONY,Golan-I Space Colony
-TEXT_GOLAN_ONE_STATION,Golan-I Defense Station
-TEXT_GOLAN_ONE_STATION_STARBASE,Golan-I Starbase
+TEXT_GOLAN_ONE_STATION,Golan-I Secondary Defense Station
+TEXT_GOLAN_ONE_STATION_STARBASE,Golan-I Primary Starbase
 TEXT_GOLAN_THREE_COLONY,Golan-III Space Colony
-TEXT_GOLAN_THREE_STATION,Golan-III Defense Station
-TEXT_GOLAN_THREE_STATION_STARBASE,Golan-III Starbase
+TEXT_GOLAN_THREE_STATION,Golan-III Secondary Defense Station
+TEXT_GOLAN_THREE_STATION_STARBASE,Golan-III Primary Starbase
 TEXT_GOLAN_TWO_COLONY,Golan-II Space Colony
-TEXT_GOLAN_TWO_STATION,Golan-II Defense Station
-TEXT_GOLAN_TWO_STATION_STARBASE,Golan-II Starbase
+TEXT_GOLAN_TWO_STATION,Golan-II Secondary Defense Station
+TEXT_GOLAN_TWO_STATION_STARBASE,Golan-II Primary Starbase
 TEXT_GOOD_LAND_GARRISON,Garrison
 TEXT_GOOD_SPACE_FLEET,Fleet
 TEXT_GOVERNMENT_ADMIRAL_LIST,Active Fleet Officers:
@@ -2251,13 +2251,21 @@ TEXT_GOVERNMENT_CIS_FUNCTION_MOD_MISSION,Random Mission: +5
 TEXT_GOVERNMENT_CIS_FUNCTION_MOD_STIMULUS,CIS Subfaction Stimulus: +5
 TEXT_GOVERNMENT_CIS_INTEGRATE_COMMERCE_1,- Get access to new heroes: Shu Mai (Diamond Cruiser, Castell), Iaco Stark (Recusant Light Destroyer, Vainglorious).
 TEXT_GOVERNMENT_CIS_INTEGRATE_COMMERCE_HEADER,Integrate Commerce Guild:
+TEXT_GOVERNMENT_CIS_INTEGRATE_COMMERCE_IACO_STARK,[Iaco Stark has joined your forces]
+TEXT_GOVERNMENT_CIS_INTEGRATE_COMMERCE_SHU_MAI,[Shu Mai has joined your forces]
 TEXT_GOVERNMENT_CIS_INTEGRATE_IGBC_1,- Get access to new heroes: Pors Tonith (Lucrehulk Droid Control Ship, Corpulentus), Canteval (Modified Munificent Star Frigate).
+TEXT_GOVERNMENT_CIS_INTEGRATE_IGBC_CANTEVAL,[Canteval has joined your forces]
 TEXT_GOVERNMENT_CIS_INTEGRATE_IGBC_HEADER,Integrate Banking Clan:
+TEXT_GOVERNMENT_CIS_INTEGRATE_IGBC_PORS_TONITH,[Pors Tonith has joined your forces]
 TEXT_GOVERNMENT_CIS_INTEGRATE_REWARD_HEADER,Integration Rewards:
 TEXT_GOVERNMENT_CIS_INTEGRATE_TECHNO_1,- Get access to new heroes: Wat Tambor (Infantry/Economic), Domb Treetor (Captor Heavy Munitions Carrier, Lapillir).
+TEXT_GOVERNMENT_CIS_INTEGRATE_TECHNO_DOMB_TREETOR,[Domb Treetor has joined your forces]
 TEXT_GOVERNMENT_CIS_INTEGRATE_TECHNO_HEADER,Integrate Techno Union:
+TEXT_GOVERNMENT_CIS_INTEGRATE_TECHNO_WAT_TAMBOR,[Wat Tambor has joined your forces]
 TEXT_GOVERNMENT_CIS_INTEGRATE_TRADEFED_1,- Get access to new heroes: Lok Durd (HAG-M), Mar Tuuk (Lucrehulk Droid Control Ship, Procurer).
 TEXT_GOVERNMENT_CIS_INTEGRATE_TRADEFED_HEADER,Integrate Trade Federation:
+TEXT_GOVERNMENT_CIS_INTEGRATE_TRADEFED_LOK_DURD,[Lok Durd has joined your forces]
+TEXT_GOVERNMENT_CIS_INTEGRATE_TRADEFED_MAR_TUUK,[Mar Tuuk has joined your forces]
 TEXT_GOVERNMENT_CIS_MANDALORE_SUPPORT_CHOICE,Count Dooku: For thousands of years, the Mandalorian clans were thorns in the Jedi's eyes. They might prove formidable weapons in battles yet to come but be warned. Their society is divided. Choose our allies wisely.
 TEXT_GOVERNMENT_CIS_MANDALORE_SUPPORT_DEATH_WATCH,Pre Vizsla: Once more, Mandalore has returned to its roots. Once more, we embraced our past. Pacifism was never the Mandalorian way. It is time that the galaxy starts to learn this lesson again.
 TEXT_GOVERNMENT_CIS_MANDALORE_SUPPORT_HINT,[ Requires influence 8 or higher on Mandalore. Choosing this option will lock all other available groups ]
@@ -2449,8 +2457,6 @@ TEXT_GOVERNMENT_REPUBLIC_MOFF_WESSEX,- Denn Wessex (Venator) [ Requires Venator 
 TEXT_GOVERNMENT_REPUBLIC_SECTORFORCES,Several Republic sectors are maintaining independent control of their own defenses at the moment. This faction (dark red, also indicated with the Republic's galactic roundel next to their planets) will not attack you, and will only defend their own territory. Increasing your senate support via missions will cause one of these planets to join you. Attacking them may result in negative consequences.
 TEXT_GOVERNMENT_REPUBLIC_SECTORFORCES_HEADER,Republic-Aligned Sector Forces:
 TEXT_GOVERNMENT_REQUIREMENTS_NONE,Requirements: Always Present
-TEXT_GOVERNMENT_SHADOW_COLLECTIVE,Form Shadow Collective
-TEXT_GOVERNMENT_SHADOW_COLLECTIVE_EFFECT,Rewards: Darth Maul (Sith) and Savage Opress (Sith).
 TEXT_GOVERNMENT_STIMULUS_COMMERCE,Stimulus: Commerce Guild
 TEXT_GOVERNMENT_STIMULUS_COMMERCE_DESCRIPTION,Increases the Commerce Guild's support for the Separatist Council by 5% and integrates one of this subfaction's planets.
 TEXT_GOVERNMENT_STIMULUS_IGBC,Stimulus: IGBC
@@ -2744,8 +2750,8 @@ TEXT_H60_SQUADRON_HALF,H-60 Tempest Squadron 1/2
 TEXT_H60_SQUADRON2,H-60 Tempest Squadron x2
 TEXT_HARD_AI_PLAYER,Hard AI
 TEXT_HAVEN_KALIIDA_MEDICAL_STATION,Kaliida medical station
-TEXT_HAVEN_STATION,Haven Defense Station
-TEXT_HAVEN_STATION_STARBASE,Haven Starbase
+TEXT_HAVEN_STATION,Haven Secondary Defense Station
+TEXT_HAVEN_STATION_STARBASE,Haven Primary Starbase
 TEXT_HEADHUNTER_BOMBER_SQUADRON,Z-95 Bomber Squadron
 TEXT_HEADHUNTER_BOMBER_SQUADRON_HALF,Z-95 Bomber Squadron 1/2
 TEXT_HEADHUNTER_BOMBER_SQUADRON2,Z-95 Bomber Squadron x2
@@ -10251,6 +10257,7 @@ TEXT_STORY_GOVERNMENT_REPUBLIC_KUAT_POWER_STRUGGLE_GIDDEAN_SPEECH_01,Kuat of Kua
 TEXT_STORY_GOVERNMENT_REPUBLIC_KUAT_POWER_STRUGGLE_GIDDEAN_SPEECH_02,Kuat of Kuat:  I am very interested in finding out what my dear aunt feared so much about Danu. Whatever it may be, I hope it will help me getting her out of her office and into a nice retirement home.
 TEXT_STORY_GOVERNMENT_REPUBLIC_KUAT_POWER_STRUGGLE_ONARA_SPEECH_01,Onara Kuat:  Greetings, youngling. I didn't rise to my position by spending the day on pleasantries, so expect none. My work and I speak for ourselves, and neither of us would want that to change. The Republic needs our ships. Something the Chancellor knows and respects. Yet some senators like Giddean Danu of my own home planet of Kuat seem to not understand the importance of KDY and Kuat in the galaxy. I have set in motion a referendum to have that annoyance be recalled and your support in the senate and throughout the galaxy in unmatched. If you help me, it might prove useful for you.
 TEXT_STORY_GOVERNMENT_REPUBLIC_KUAT_POWER_STRUGGLE_ONARA_SPEECH_02,Onara Kuat:  My recent flagship is nearing completion and will likely just gather dust above Kuat. I am sure you will find it a useful extension of your naval forces. [Onara Kuat can be upgraded on Kuat to a Mandator-II-class]
+TEXT_STORY_GOVERNMENT_REPUBLIC_LIRA_BLISSEX,Lira Blissex: I represent the interests of several ship designers who are eager to build on the successes of our Venator design. Certain additional designs are being worked on as it is, but I dream of a warship capable of engaging entire fleets on its own. I know Chancellor Palpatine has trusted you with the future of our military. With the proper financial support, Kuat Drive Yards can furnish you with warships the likes of which you've never imagined.
 TEXT_STORY_GOVERNMENT_REPUBLIC_ORDER_66_SPEECH_01,PALPATINE: Master Windu. I must say, you're here sooner than expected.
 TEXT_STORY_GOVERNMENT_REPUBLIC_ORDER_66_SPEECH_02,MACE WINDU: In the name of the Galactic Senate of the Republic, you are under arrest, Chancellor.
 TEXT_STORY_GOVERNMENT_REPUBLIC_ORDER_66_SPEECH_03,PALPATINE: Are you threatening me, Master Jedi?
@@ -10451,8 +10458,8 @@ TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_05,Facility Overseer:  I-- I just work he
 TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_05_ALT,Anakin Skywalker:  These new bombers look good enough.  Yet even with my persuasion I can't increase the building capacities of this station.  It will require a bit of funding from your side, if we want to have them in our fleets.
 TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_06,Anakin Skywalker:  Now, that this annoyance is dealt with, we have more urgent matters to attend to.  Killing Grievous.
 TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_07,Anakin Skywalker:  I have just received word about Kaliida...  This is a dark day for the Republic...
-TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_08,Anakin Skywalker:  With the destruction of the Malevolence, we can drive the Separatists further into the Rim.  We can't stop our offensive now.  Grievous and Dooku are still alive and if they build a ship like this once, they can do it again.  Furthermore, Obi-Wan has informed me about a potential attack on the world of Bothawui in retaliation.  Fallen has already fallen into his hands, we can't let this happen again.
-TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_08_ALT,Anakin Skywalker:  With the destruction of the Malevolence, we can drive the Separatists further into the Rim. We can't stop our offensive now. Grievous and Dooku are still alive and if they build a ship like this once, they can do it again. Furthermore, Obi-Wan has informed me about a potential attack on the world of Bothawui in retaliation. Fallen has already fallen into his hands, we can't let this happen again.
+TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_08,Anakin Skywalker:  With the destruction of the Malevolence, we can drive the Separatists further into the Rim.  We can't stop our offensive now.  Grievous and Dooku are still alive and if they build a ship like this once, they can do it again.  Furthermore, Obi-Wan has informed me about a potential attack on the world of Bothawui in retaliation.  Falleen has already fallen into his hands, we can't let this happen again.
+TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_08_ALT,Anakin Skywalker:  With the destruction of the Malevolence, we can drive the Separatists further into the Rim. We can't stop our offensive now. Grievous and Dooku are still alive and if they build a ship like this once, they can do it again. Furthermore, Obi-Wan has informed me about a potential attack on the world of Bothawui in retaliation. Falleen has already fallen into his hands, we can't let this happen again.
 TEXT_STORY_MALEVOLENCE_HUNT_REP_SPEECH_09,Chancellor Palpatine:  You are a true hero of the Republic, my friend.  We will watch your career with great interest.
 TEXT_STORY_MISSION,Mission
 TEXT_STORY_MISSION_BLISSEX_RESEARCH_FUNDING,Story - Enhanced R&D Funding
@@ -11115,8 +11122,8 @@ TEXT_TECH_TREE_PRODUCTION_STRUCTURES_REQUIRES_GOVERNMENT,(Requires Government bu
 TEXT_TECH_TREE_RANCOR_BASE,Rancor Base
 TEXT_TECH_TREE_ROSTER,Core Faction Roster
 TEXT_TECH_TREE_SHIPYARD_TYPE,Shipyard Types
-TEXT_TECH_TREE_SHIPYARD_TYPE_REQUIRES_STARBASE,(Requires Starbase)
-TEXT_TECH_TREE_STARBASE,Starbases (These can be upgraded and unlock additional structures)
+TEXT_TECH_TREE_SHIPYARD_TYPE_REQUIRES_STARBASE,(Requires Primary Starbase)
+TEXT_TECH_TREE_STARBASE,Primary Starbases (These can be upgraded and unlock additional structures)
 TEXT_TECH_TREE_UNITS_ADDITIONAL_WARNING,Some units may unlock and lock through ERA PROGRESSION, RESEARCH, MISSION or GOVERNMENT mechanics. Check STORY EVENTS and/or INFLUENCE AND UNIQUE UNITS guides for further details.
 TEXT_TECH_TREE_UNITS_PIRATE_BASE,Pirate Base
 TEXT_TECH_TREE_UNITS_SABAOTH_HQ,Sabaoth Squadron HQ
@@ -11130,8 +11137,8 @@ TEXT_TEST_CONNECTIONS,Test Connections
 TEXT_TEST_OBJECTIVE_HEADER,Tactical Objectives
 TEXT_TEXTURE_MIP_LEVEL,Texture Detail
 TEXT_TEXTURE_RESOLUTION_CHANGED,Your texture resolution setting has changed.  Please wait while the textures are resized…
-TEXT_TF_OUTPOST_STARBASE,Trade Federation Starbase
-TEXT_TF_OUTPOST_STATION,Trade Federation Defense Station
+TEXT_TF_OUTPOST_STARBASE,Trade Federation Primary Starbase
+TEXT_TF_OUTPOST_STATION,Trade Federation Secondary Defense Station
 TEXT_TIE_BOMBER_SQUADRON,TIE Bomber Squadron
 TEXT_TIE_BOMBER_SQUADRON_HALF,TIE Bomber Squadron 1/2
 TEXT_TIE_BOMBER_SQUADRON2,TIE Bomber Squadron x2
@@ -12870,7 +12877,7 @@ TEXT_TOOLTIP_DROCH,Inspired by the Toothspike Raptors of Colla IV, the Droch was
 TEXT_TOOLTIP_DROCH_HULL,Hull: 80 (Gunship)
 TEXT_TOOLTIP_DROCH_MOVE,Speed: 2.25 | Accel: 0.06 | Turn: 1.0
 TEXT_TOOLTIP_DROCH_SHIELD,Shields: 90 / [1.6/R] (Gunship)
-TEXT_TOOLTIP_DROID_ADVISOR,Opens the Galactic Log, History, Tech Tree & Summery menus
+TEXT_TOOLTIP_DROID_ADVISOR,Opens the Galactic Log, History, Tech Tree & Summary menus
 TEXT_TOOLTIP_DROID_ADVISOR_NAME,Galactic Log Menu
 TEXT_TOOLTIP_DROID_R2D2,Originally an astromech on Queen Amidala's personal starship, R2-D2 critically assisted the Queen's escape from the Trade Federation blockade of the planet, and eventually assisted the young Anakin Skywalker in destroying the Droid Control Ship. During the following years R2-D2 would serve the now Senator Amidala, and during the Clone Wars would be a great ally to Anakin Skywalker and the Republic.
 TEXT_TOOLTIP_DROID_R2D2_HEALTH,Health: 100 (Hero)
@@ -13162,9 +13169,9 @@ TEXT_TOOLTIP_GALLEON_SQUADRON,Fighters: 0.5 / 0.5
 TEXT_TOOLTIP_GALLEON_WEAP1,1x Heavy Turbolaser: 2 / 5.0s / 7.1km
 TEXT_TOOLTIP_GALLEON_WEAP2,1x Heavy Rapid Laser Cannon: 6 / 5.0s / 4.1km
 TEXT_TOOLTIP_GAMORREAN_GUARD,Hardy warriors from Gamorr notorious for serving as guards to criminal elements. Gamorrean culture places great pride on their ability to wield an axe, making them excel at close range combat, but they are also more than capable of wielding blasters at a range. While not known for their tactical intelligence, their bulky frames grant them the ability to persist under great strain in a close quarters encounter.
-TEXT_TOOLTIP_GAMORREAN_GUARD_COMPANY,Company: 12x Gamorrean Guard
-TEXT_TOOLTIP_GAMORREAN_GUARD_COMPANY_WEAP1,12x DL-44 Blaster Pistol: 1 / 1.5s / 220m
-TEXT_TOOLTIP_GAMORREAN_GUARD_COMPANY_WEAP2,12x Blades: 1 / 0.5s / 20m
+TEXT_TOOLTIP_GAMORREAN_GUARD_COMPANY,Company: 24x Gamorrean Guard
+TEXT_TOOLTIP_GAMORREAN_GUARD_COMPANY_WEAP1,24x DL-44 Blaster Pistol: 1 / 1.5s / 220m
+TEXT_TOOLTIP_GAMORREAN_GUARD_COMPANY_WEAP2,24x Blades: 1 / 0.5s / 20m
 TEXT_TOOLTIP_GAMORREAN_GUARD_HEALTH,Health: 40 (Infantry)
 TEXT_TOOLTIP_GAMORREAN_GUARD_MOVE,Speed: 1.0
 TEXT_TOOLTIP_GAMORREAN_GUARD_SQUAD,Squad: 6x Gamorrean Guard
@@ -14157,7 +14164,7 @@ TEXT_TOOLTIP_MILITARYSOLDIER_WEAP1,1x A280 Blaster Rifle: 1 / 1.0s / 240m
 TEXT_TOOLTIP_MILITARYSOLDIER_WEAP2,1x MiniMag PTL Launcher: 1 / 9.0s / 320m
 TEXT_TOOLTIP_MILITARYSOLDIER_WEAP3,1x DLT-20A Repeating Blaster: 5 / 1.0s / 240m
 TEXT_TOOLTIP_MILITARYSOLDIER_WEAP4,1x Thermal Grenade: 1 / 15.0s / 200m
-TEXT_TOOLTIP_MINOR_SHELL_HUTT,The smallest of Hutt clans, Shell Hutts are based primarily on Circumtore and Nar Kaaga. They keep their corpulent forms in heavy, cylindrical shells made of segmented durasteel they stay in until they outgrow it. This armor is fitted with repulsorlifts and servomechanisms allowing them to move without exerting themselves. Their integrated laser cannon is dangerous against vehicular threats but struggles against smaller targets. Minor Shell Hutts have not reached the gargantuan forms of the eldest clan members, but their armor makes them no less dangerous in combat.
+TEXT_TOOLTIP_MINOR_SHELL_HUTT,Shell Hutts spend their lives encased in powered armor, which allows them to grow to enormous sizes. Despite their bulk, they move at incredible speed using their armor's built-in repulsors. These minor Shell Hutts have not yet outgrown their first shells, but even so, their integrated laser cannons are a danger to vehicles.
 TEXT_TOOLTIP_MINOR_SHELL_HUTT_COMPANY,Company: 10x - Minor Shell Hutt
 TEXT_TOOLTIP_MINOR_SHELL_HUTT_COMPANY_WEAP1,10x AV Laser Cannon: 1 / 1.0s / 240m
 TEXT_TOOLTIP_MINOR_SHELL_HUTT_COMPANY_WEAP2,10x Light Concussion Grenade: 1 / 15.0s / 200m
@@ -15456,6 +15463,8 @@ TEXT_TOOLTIP_SPECIALTACTICS_LT_HEALTH,Health: 24 (Infantry)
 TEXT_TOOLTIP_SPECIALTACTICS_MOVE,Speed: 1.0
 TEXT_TOOLTIP_SPECIALTACTICS_SERGEANT_HEALTH,Health: 21 (Infantry)
 TEXT_TOOLTIP_SPECIALTACTICS_SQUAD,Squad: 9x - Special Tactics Trooper
+TEXT_TOOLTIP_SPECIALTACTICS_SQUAD0_WEAP1,9x A280 Blaster Rifle: 1 / 1.0s / 240m
+TEXT_TOOLTIP_SPECIALTACTICS_SQUAD0_WEAP2,3x Thermal Grenade: 1 / 15.0s / 200m
 TEXT_TOOLTIP_SPECIALTACTICS_SQUAD1_WEAP1,8x Blaster Rifle: 1 / 1.0s / 240m
 TEXT_TOOLTIP_SPECIALTACTICS_SQUAD1_WEAP2,1x Heavy Repeating Blaster: 5 / 1.0s / 240m
 TEXT_TOOLTIP_SPECIALTACTICS_SQUAD1_WEAP3,2x Concussion Grenade: 1 / 15.0s / 200m
@@ -15499,7 +15508,6 @@ TEXT_TOOLTIP_STAR_DESTROYER_WEAP3,6x Medium Turbolasers: 2 / 1.0s / 6.3km
 TEXT_TOOLTIP_STAR_DESTROYER_WEAP4,2x Heavy Dual Ion Cannons: 2 / 5.0s / 7.3km
 TEXT_TOOLTIP_STAR_DESTROYER_WEAP5,6x Medium Ion Cannons: 2 / 1.0s / 6.3km
 TEXT_TOOLTIP_STAR_DESTROYER_WEAP6,2x Light Dual Laser Cannons: 2 / 0.5s / 3.8km
-TEXT_TOOLTIP_STARBASE,Shipyard
 TEXT_TOOLTIP_STARBOLT,Corellian carrier design introduced before the Clone Wars, and popularized by mercenary and planetary defense forces as demand increased in wartime. Decently armed for its role, allowing it to support its complement in attacks on other capital vessels. Saw a decline in popularity during the Galactic Civil War.
 TEXT_TOOLTIP_STARBOLT_HULL,Hull: 1300 (Frigate)
 TEXT_TOOLTIP_STARBOLT_MOVE,Speed: 4.0 | Accel: 0.04 | Turn: 0.35
@@ -16719,8 +16727,8 @@ TEXT_UNIT_GUARDIANCORPS_DERELICT,Derelict Guardian Corps
 TEXT_UNIT_GUARDIANCORPS_DERELICT_COMMANDER,Derelict Guardian Corps Commander
 TEXT_UNIT_GUARDIANCORPS_DERELICT_SQUAD,Derelict Guardian Corps Squad
 TEXT_UNIT_GUARDIANCORPS_SQUAD,Guardian Corps Squad
-TEXT_UNIT_GUN_PLATFORM,IGBC Gun Platform
-TEXT_UNIT_GUN_PLATFORM_STARBASE,IGBC Gun Platform Starbase
+TEXT_UNIT_GUN_PLATFORM,IGBC Gun Platform Secondary Defense Station
+TEXT_UNIT_GUN_PLATFORM_STARBASE,IGBC Gun Platform Primary Starbase
 TEXT_UNIT_H_WING,H-wing
 TEXT_UNIT_H60,H-60 Tempest
 TEXT_UNIT_HAET,HAET-221
@@ -17199,8 +17207,8 @@ TEXT_UNIT_UTAA_COMPANY,UT-AA Company
 TEXT_UNIT_VAAT,Variable Altitude Assault Transport/enforcement
 TEXT_UNIT_VAAT_COMPANY,VAAT/e Gunship
 TEXT_UNIT_VALIDUSIA,Validusia-Type Space Station
-TEXT_UNIT_VALOR,Valor-class Station
-TEXT_UNIT_VALOR_STARBASE,Valor-class Starbase
+TEXT_UNIT_VALOR,Valor Secondary Defense Station
+TEXT_UNIT_VALOR_STARBASE,Valor Primary Starbase
 TEXT_UNIT_VENATOR,Venator Star Destroyer
 TEXT_UNIT_VENATOR_DEFENDER,Defender
 TEXT_UNIT_VENATOR_OFC,OCF Venator Star Destroyer
@@ -17232,8 +17240,8 @@ TEXT_UNIT_WOOKFLUTTER_COMPANY,Raddaugh Gnasp Fluttercraft Company
 TEXT_UNIT_X_WING,X-wing
 TEXT_UNIT_X34_TECHNICAL,X-34 Landspeeder Technical
 TEXT_UNIT_X34_TECHNICAL_COMPANY,X-34 Landspeeder Technical Company
-TEXT_UNIT_XQ5,XQ-5 Defense Station
-TEXT_UNIT_XQ5_STARBASE,XQ-5 Starbase
+TEXT_UNIT_XQ5,XQ-5 Secondary Defense Station
+TEXT_UNIT_XQ5_STARBASE,XQ-5 Primary Starbase
 TEXT_UNIT_Y_WING,BTL-S3 Y-wing
 TEXT_UNIT_Z95_BOMBER,Z-95 Bomber
 TEXT_UNIT_Z95_GUNGAN_GLORY,Z-95 Headhunter, Gungan Glory Squadron
@@ -17542,7 +17550,7 @@ TEXT_WIN_CONDITION_ENEMY_COMMAND_HQ_DESTROYED_TEMP,Destroy Command Center
 TEXT_WIN_CONDITION_ENEMY_COMMAND_HQ_DESTROYED_TEMP2,Obliterate Enemy Command Center
 TEXT_WIN_CONDITION_NO_OPPONENT_PLANETS,Opponent Controls No Planets
 TEXT_WIN_CONDITION_PERCENTAGE_CONTROL,Control Percentage of Planets
-TEXT_WIN_CONDITION_SPACE_ENEMY_STARBASE_DESTROYED,Destroy Enemy Space Station
+TEXT_WIN_CONDITION_SPACE_ENEMY_STARBASE_DESTROYED,Destroy Enemy Primary Starbase
 TEXT_WIN_CORRUPTION_MISSION,WORLD CORRUPTED, WELL DONE!
 TEXT_WIN_TACTICAL,WE ARE VICTORIOUS!
 TEXT_WINDOWS_FIREWALL_ENABLED,Windows Firewall :

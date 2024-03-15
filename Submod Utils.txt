@@ -27,3 +27,5 @@ Hutt_HuttGuard_NoHelmet.ALO
 Hutt_HuttGuard.ALO
 
 ------Todo Lists------
+
+Nute Gunray escorts Neimodian Guards

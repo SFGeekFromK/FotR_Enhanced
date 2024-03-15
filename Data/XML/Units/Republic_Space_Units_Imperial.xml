@@ -194,6 +194,7 @@
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
         <Icon_Name>.tga</Icon_Name>
     </SpaceUnit> 
+    
     <SpaceUnit Name="_Imperial">
         <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
@@ -216,6 +217,7 @@
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
         <Icon_Name>.tga</Icon_Name>
     </SpaceUnit> 
+    
     <SpaceUnit Name="_Imperial">
         <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 

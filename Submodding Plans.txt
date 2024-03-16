@@ -2,28 +2,14 @@ Renewed for 1.4
 ==========Submod Projects==========
 <Ongoing Projects>
 1. OFC Venator
-- XML Coding
-	- hardpoints(Done)
-	- general data(Done)
-	- fighter spawn(Done)
-	- Starting unit(Planned)
-- Icon
-	- Generic Venator with OFC Logo(Finished)
-	- Unique Venator_OFC logo
-- Text(Done)
-	- Tooltip
-	- Weapons Firing Rate
-	- 
 - Finetune(Later)
 	- Decrease firing rate/projectile number from dual heavy turbolasers
-
-- Upgradable SPHA-T Variant (Done) 
 
 - Build Limit via controlling Lua or New ship market mechanic( )
 
 *** OCF Intergration system ***
 when certain level of point is reached by using certain venator heroes will increase points 
-if achieved certa
+if achieved certain point is reached it will unlock a upgrade dummy where there is a venator in orbit
 
 
 2. expand Clone Pilot Heroes

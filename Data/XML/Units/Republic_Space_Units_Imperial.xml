@@ -166,10 +166,9 @@
         <Icon_Name>I_BUTTON_MAELSTROM.tga</Icon_Name>
     </SpaceUnit> 
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+    <SpaceUnit Name="Generic_Procurator_Imperial">
+        <Variant_Of_Existing_Type>Generic_Procurator</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
     </SpaceUnit> 
 
     <SpaceUnit Name="_Imperial">
@@ -177,20 +176,20 @@
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
         <Icon_Name>.tga</Icon_Name>
     </SpaceUnit> 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+    <SpaceUnit Name="Generic_Praetor_Imperial">
+        <Variant_Of_Existing_Type>Generic_Praetor</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
         <Icon_Name>.tga</Icon_Name>
     </SpaceUnit> 
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+    <SpaceUnit Name="Generic_Mandator_Imperial">
+        <Variant_Of_Existing_Type>Generic_Mandator</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
         <Icon_Name>.tga</Icon_Name>
     </SpaceUnit> 
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+    <SpaceUnit Name="Generic_Mandator_II_Imperial">
+        <Variant_Of_Existing_Type>Generic_Mandator_II</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
         <Icon_Name>.tga</Icon_Name>
     </SpaceUnit> 

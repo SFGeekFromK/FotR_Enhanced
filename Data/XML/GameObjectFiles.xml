@@ -91,6 +91,7 @@
 	<File>Units\Republic_Space_Units.xml</File>
 	<!-- FotR_Enhanced -->
 	<File>Units\Republic_Space_Units_Imperial.xml</File>
+	<File>Units\Republic_Ground_Units_Imperial.xml</File>
 	<!-- End -->
 	<File>Units\CIS_Space_Units.xml</File>
 	<File>Units\Other_Space_Units.xml</File>

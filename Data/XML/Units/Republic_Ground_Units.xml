@@ -3843,7 +3843,7 @@
 		<Score_Cost_Credits>600</Score_Cost_Credits>
 		<Population_Value>2</Population_Value>
 
-		<Tech_Level>99</Tech_Level>
+		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire</Affiliation>
@@ -3872,7 +3872,7 @@
 		<Tactical_Build_Time_Seconds>37</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>Ground_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<!--<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>-->
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 	</GroundCompany>

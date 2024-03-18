@@ -43,9 +43,18 @@
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
 				<Applicable_Unit_Types> 
-				Generic_Mandator, Generic_Mandator_II, Mandator_II_Upgrade, Generic_Praetor, Generic_Procurator, Generic_Maelstrom, Generic_Secutor, Generic_Tector, Generic_Star_Destroyer, Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Generic_Venator, Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II, Generic_Imperial_I_Frigate, Victory_I_Frigate, Arquitens, Pelta_Assault, Pelta_Support, Lancer_Frigate, Class_C_Frigate, Galleon, Captor, Auxilia, Munifex, Lupus_Missile_Frigate, Storm_Fleet_Destroyer,
-				Republic_AT_TE_Walker_Company, Republic_A6_Juggernaut_Company, Republic_AT_AP_Walker_Company, Republic_A5_Juggernaut_Company, Republic_A4_Juggernaut_Company, Republic_AT_OT_Walker_Company, Republic_UT_AT_Speeder_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company, 
-				<!-- FotR_Enhanced--> Venator_OFC, Venator_Imperial
+					Generic_Mandator, Generic_Mandator_II, Mandator_II_Upgrade, Generic_Praetor, Generic_Procurator, Generic_Maelstrom, Generic_Secutor, Generic_Tector, Generic_Star_Destroyer, 
+					Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Generic_Venator, 
+					Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II, Generic_Imperial_I_Frigate, 
+					Victory_I_Frigate, Arquitens, Pelta_Assault, Pelta_Support, Lancer_Frigate, Class_C_Frigate, Galleon, 
+					<!--CIS--> Captor, Auxilia, Munifex, Lupus_Missile_Frigate, Storm_Fleet_Destroyer,
+					Republic_AT_TE_Walker_Company, Republic_A6_Juggernaut_Company, Republic_AT_AP_Walker_Company, Republic_A5_Juggernaut_Company, Republic_A4_Juggernaut_Company, Republic_AT_OT_Walker_Company, Republic_UT_AT_Speeder_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company, 
+					<!-- FotR_Enhanced--> Venator_OFC, Venator_Imperial, <!-- Imperial Variants--> 
+					Lancer_Frigate_Imperial, Arquitens_Imperial, Pelta_Assault_Imperial, Pelta_Support_Imperial, 
+					Victory_I_Frigate_Imperial, Generic_Imperial_I_Frigate_Imperial, Generic_Acclamator_Assault_Ship_Leveler_Imperial, Generic_Acclamator_Assault_Ship_I_Imperial, Generic_Acclamator_Assault_Ship_II_Imperial, 
+					Generic_Victory_Destroyer_Imperial, Generic_Victory_Destroyer_Two_Imperial, Generic_Venator_Imperial, 
+					Generic_Star_Destroyer_Imperial, , Generic_Maelstrom_Imperial, Generic_Procurator_Imperial, , Generic_Praetor_Imperial, 
+					Generic_Mandator_Imperial, Generic_Mandator_II_Imperial
 				</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -55,9 +64,18 @@
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
 				<Applicable_Unit_Types> 
-				Generic_Mandator, Generic_Mandator_II, Mandator_II_Upgrade, Generic_Praetor, Generic_Procurator, Generic_Maelstrom, Generic_Secutor, Generic_Tector, Generic_Star_Destroyer, Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Generic_Venator, Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II, Generic_Imperial_I_Frigate, Victory_I_Frigate, Arquitens, Pelta_Assault, Pelta_Support, Lancer_Frigate, Class_C_Frigate, Galleon, Captor, Auxilia, Munifex, Lupus_Missile_Frigate, Storm_Fleet_Destroyer,
-				Republic_AT_TE_Walker_Company, Republic_A6_Juggernaut_Company, Republic_AT_AP_Walker_Company, Republic_A5_Juggernaut_Company, Republic_A4_Juggernaut_Company, Republic_AT_OT_Walker_Company, Republic_UT_AT_Speeder_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company,
-				<!-- FotR_Enhanced--> Venator_OFC, Venator_Imperial 
+					Generic_Mandator, Generic_Mandator_II, Mandator_II_Upgrade, Generic_Praetor, Generic_Procurator, Generic_Maelstrom, Generic_Secutor, Generic_Tector, Generic_Star_Destroyer, 
+					Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Generic_Venator, 
+					Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II, Generic_Imperial_I_Frigate, 
+					Victory_I_Frigate, Arquitens, Pelta_Assault, Pelta_Support, Lancer_Frigate, Class_C_Frigate, Galleon, 
+					<!--CIS--> Captor, Auxilia, Munifex, Lupus_Missile_Frigate, Storm_Fleet_Destroyer,
+					Republic_AT_TE_Walker_Company, Republic_A6_Juggernaut_Company, Republic_AT_AP_Walker_Company, Republic_A5_Juggernaut_Company, Republic_A4_Juggernaut_Company, Republic_AT_OT_Walker_Company, Republic_UT_AT_Speeder_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company, 
+					<!-- FotR_Enhanced--> Venator_OFC, Venator_Imperial, <!-- Imperial Variants--> 
+					Lancer_Frigate_Imperial, Arquitens_Imperial, Pelta_Assault_Imperial, Pelta_Support_Imperial, 
+					Victory_I_Frigate_Imperial, Generic_Imperial_I_Frigate_Imperial, Generic_Acclamator_Assault_Ship_Leveler_Imperial, Generic_Acclamator_Assault_Ship_I_Imperial, Generic_Acclamator_Assault_Ship_II_Imperial, 
+					Generic_Victory_Destroyer_Imperial, Generic_Victory_Destroyer_Two_Imperial, Generic_Venator_Imperial, 
+					Generic_Star_Destroyer_Imperial, , Generic_Maelstrom_Imperial, Generic_Procurator_Imperial, , Generic_Praetor_Imperial, 
+					Generic_Mandator_Imperial, Generic_Mandator_II_Imperial
 				</Applicable_Unit_Types>
 				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
@@ -112,8 +130,10 @@
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
 				<Applicable_Unit_Types> 
-				Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II,
-				Republic_AT_TE_Walker_Company, Republic_AT_OT_Walker_Company, Republic_AT_AP_Walker_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company 
+					Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II,
+					Republic_AT_TE_Walker_Company, Republic_AT_OT_Walker_Company, Republic_AT_AP_Walker_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company,
+					<!-- FotR_Enhanced--> <!-- Imperial Variants--> 
+					Generic_Acclamator_Assault_Ship_Leveler_Imperial, Generic_Acclamator_Assault_Ship_I_Imperial, Generic_Acclamator_Assault_Ship_II_Imperial, 
 				</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -123,8 +143,10 @@
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
 				<Applicable_Unit_Types> 
-				Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II,
-				Republic_AT_TE_Walker_Company, Republic_AT_OT_Walker_Company, Republic_AT_AP_Walker_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company
+					Generic_Acclamator_Assault_Ship_I, Generic_Acclamator_Assault_Ship_Leveler, Generic_Acclamator_Assault_Ship_II,
+					Republic_AT_TE_Walker_Company, Republic_AT_OT_Walker_Company, Republic_AT_AP_Walker_Company, Hutt_VAAT_Group, Republic_VAAT_Group, Republic_LAAT_Group, Republic_TX130_Company, Republic_AT_PT_Company, Republic_AT_RT_Company, Republic_AT_XT_Company, Republic_UT_AA_Company,
+					<!-- FotR_Enhanced--> <!-- Imperial Variants--> 
+					Generic_Acclamator_Assault_Ship_Leveler_Imperial, Generic_Acclamator_Assault_Ship_I_Imperial, Generic_Acclamator_Assault_Ship_II_Imperial, 
 				</Applicable_Unit_Types>
 				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
@@ -287,7 +309,11 @@
 			<Reduce_Production_Price_Ability Name="Rendili_Reduce_Production_Price">
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
-				<Applicable_Unit_Types> Invincible_Cruiser, Generic_Gladiator, Generic_Victory_Fleet_Destroyer, Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier, Neutron_Star, Customs_Corvette </Applicable_Unit_Types>
+				<Applicable_Unit_Types> 
+					Invincible_Cruiser, Generic_Gladiator, Generic_Victory_Fleet_Destroyer, Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier, Neutron_Star, Customs_Corvette,
+					<!-- FotR_Enhanced--> <!-- Imperial Variants--> 
+					Invincible_Cruiser_Imperial, Generic_Gladiator_Imperial, Generic_Victory_Destroyer_Imperial, Generic_Victory_Destroyer_Two_Imperial, Dreadnaught_Imperial, Dreadnaught_Lasers_Imperial, 
+				</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Reduce_Production_Price_Ability>
@@ -295,7 +321,11 @@
 			<Reduce_Production_Time_Ability Name="Rendili_Production_Time_Bonus">
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
-				<Applicable_Unit_Types> Invincible_Cruiser, Generic_Gladiator, Generic_Victory_Fleet_Destroyer, Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier, Neutron_Star, Customs_Corvette </Applicable_Unit_Types>
+				<Applicable_Unit_Types> 
+					Invincible_Cruiser, Generic_Gladiator, Generic_Victory_Fleet_Destroyer, Generic_Victory_Destroyer, Generic_Victory_Destroyer_Two, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier, Neutron_Star, Customs_Corvette 
+					<!-- FotR_Enhanced--> <!-- Imperial Variants--> 
+					Invincible_Cruiser_Imperial, Generic_Gladiator_Imperial, Generic_Victory_Destroyer_Imperial, Generic_Victory_Destroyer_Two_Imperial, Dreadnaught_Imperial, Dreadnaught_Lasers_Imperial, 
+				</Applicable_Unit_Types>
 				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> No </Galaxy_Wide>
@@ -342,7 +372,11 @@
 			<Reduce_Production_Price_Ability Name="CEC_Reduce_Production_Price">
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
-				<Applicable_Unit_Types> CEC_Light_Cruiser, Starbolt, Corellian_Corvette, Corellian_Gunboat, Consular_Refit, Charger_C70, Gozanti_Cruiser_Squadron </Applicable_Unit_Types>
+				<Applicable_Unit_Types> 
+					CEC_Light_Cruiser, Starbolt, Corellian_Corvette, Corellian_Gunboat, Consular_Refit, Charger_C70, Gozanti_Cruiser_Squadron
+					<!-- FotR_Enhanced--> <!-- Imperial Variants--> 
+					Corellian_Corvette_Imperial, Corellian_Gunboat_Imperial, Consular_Refit_Imperial, Charger_C70_Imperial
+				</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Reduce_Production_Price_Ability>
@@ -350,7 +384,11 @@
 			<Reduce_Production_Time_Ability Name="CEC_Production_Time_Bonus">
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
-				<Applicable_Unit_Types> CEC_Light_Cruiser, Starbolt, Corellian_Corvette, Corellian_Gunboat, Consular_Refit, Charger_C70, Gozanti_Cruiser_Squadron </Applicable_Unit_Types>
+				<Applicable_Unit_Types> 
+					CEC_Light_Cruiser, Starbolt, Corellian_Corvette, Corellian_Gunboat, Consular_Refit, Charger_C70, Gozanti_Cruiser_Squadron
+					<!-- FotR_Enhanced--> <!-- Imperial Variants--> 
+					Corellian_Corvette_Imperial, Corellian_Gunboat_Imperial, Consular_Refit_Imperial, Charger_C70_Imperial
+				</Applicable_Unit_Types>
 				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> No </Galaxy_Wide>
@@ -558,7 +596,11 @@
 			<Reduce_Production_Price_Ability Name="ORSF_Reduce_Production_Price">
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
-				<Applicable_Unit_Types> Carrack_Cruiser, Carrack_Cruiser_Lasers, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier </Applicable_Unit_Types>
+				<Applicable_Unit_Types> 
+					Carrack_Cruiser, Carrack_Cruiser_Lasers, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier,
+					<!-- FotR_Enhanced--> <!-- Imperial Variants--> 
+					Carrack_Cruiser_Imperial, Carrack_Cruiser_Lasers_Imperial, Dreadnaught_Imperial, Dreadnaught_Lasers_Imperial, 
+				</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.30</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Reduce_Production_Price_Ability>
@@ -566,7 +608,11 @@
 			<Reduce_Production_Time_Ability Name="ORSF_Production_Time_Bonus">
 				<Unit_Strength_Category/>
 				<Applicable_Unit_Categories/>
-				<Applicable_Unit_Types> Carrack_Cruiser, Carrack_Cruiser_Lasers, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier </Applicable_Unit_Types>
+				<Applicable_Unit_Types> 
+					Carrack_Cruiser, Carrack_Cruiser_Lasers, Dreadnaught, Dreadnaught_Lasers, Katana_Dreadnaught, Dreadnaught_Carrier,
+					<!-- FotR_Enhanced--> <!-- Imperial Variants--> 
+					Carrack_Cruiser_Imperial, Carrack_Cruiser_Lasers_Imperial, Dreadnaught_Imperial, Dreadnaught_Lasers_Imperial, 
+				</Applicable_Unit_Types>				
 				<Time_Reduction_Percentage>0.30</Time_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> No </Galaxy_Wide>

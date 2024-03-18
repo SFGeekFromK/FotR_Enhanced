@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Republic_Fighters_Imeperial>
+    <!--
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+    -->
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+
+    <SpaceUnit Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+        <Icon_Name>.tga</Icon_Name>
+    </SpaceUnit> 
+</Republic_Fighters_Imeperial>

@@ -29,4 +29,6 @@ Hutt_HuttGuard.ALO
 
 ------Todo Lists------
 
-add imperialized Republic space unit icons
+add imperialized Republic space unit icons(After TR release)
+morgukai shadow army on salucemi
+royal guards for palpatine(code new royal guards)

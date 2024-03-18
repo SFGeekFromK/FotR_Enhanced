@@ -3602,7 +3602,7 @@
 		<Turret_Bone_Name> B_Turret </Turret_Bone_Name>
 		<Barrel_Bone_Name> B_Barrel </Barrel_Bone_Name>
 
-		<Fire_Projectile_Type>Proj_Heavy_AV_Beam_Blue</Fire_Projectile_Type>
+		<Fire_Projectile_Type>Proj_AV_Beam_Blue</Fire_Projectile_Type>
 		<Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
 		<Fire_Max_Recharge_Seconds>3.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>20</Fire_Pulse_Count>

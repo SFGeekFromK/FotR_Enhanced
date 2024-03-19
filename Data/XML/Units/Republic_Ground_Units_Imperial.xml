@@ -10,98 +10,214 @@
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
     
-	<GroundCompany Name="_Imperial">
+    <GroundCompany Name="_Company">
         <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
         <Icon_Name>.tga</Icon_Name>
 
 		<Company_Units>, , ,</Company_Units>
-    </GroundCompany> 
+    </GroundCompany>
 -->
 
 	<GroundVehicle Name="Republic_BARC_Speeder_Imperial">
 		<Variant_Of_Existing_Type>Republic_BARC_Speeder</Variant_Of_Existing_Type>
 		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
 	</GroundVehicle>
+ 
+    <GroundCompany Name="Republic_BARC_Speeder_Imperial_Company">
+        <Variant_Of_Existing_Type>Republic_BARC_Company</Variant_Of_Existing_Type>
+		<Company_Units>Republic_BARC_Speeder_Imperial, Republic_BARC_Speeder_Imperial</Company_Units>
+        <Company_Units>Republic_BARC_Speeder_Imperial, Republic_BARC_Speeder_Imperial</Company_Units>
+        <Company_Units>Republic_BARC_Speeder_Imperial, Republic_BARC_Speeder_Imperial</Company_Units>
+        <Company_Units>Republic_BARC_Speeder_Imperial, Republic_BARC_Speeder_Imperial</Company_Units>
+    </GroundCompany> 
 
     <GroundVehicle Name="Republic_AT_RT_Walker_Imperial">
         <Variant_Of_Existing_Type>Republic_AT_RT_Walker</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
+
+    <GroundCompany Name="Republic_AT_RT_Walker_Imperial_Compnay">
+        <Variant_Of_Existing_Type>Republic_AT_RT_Walker_Imperial</Variant_Of_Existing_Type>
+
+		<Company_Units>Republic_AT_RT_Walker_Imperial, Republic_AT_RT_Walker_Imperial, Republic_AT_RT_Walker_Imperial, Republic_AT_RT_Walker_Imperial</Company_Units>
+        <Company_Units>Republic_AT_RT_Walker_Imperial, Republic_AT_RT_Walker_Imperial, Republic_AT_RT_Walker_Imperial, Republic_AT_RT_Walker_Imperial</Company_Units>
+    </GroundCompany>
 	
     <GroundVehicle Name="Republic_AT_PT_Walker_Imperial">
         <Variant_Of_Existing_Type>Republic_AT_PT_Walker</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
 
+    <GroundCompany Name="Republic_AT_PT_Walker_Imperial_Company">
+        <Variant_Of_Existing_Type>Republic_AT_PT_Walker_Imperial</Variant_Of_Existing_Type>
+        <Company_Units>Republic_AT_PT_Walker, Republic_AT_PT_Walker, Republic_AT_PT_Walker</Company_Units>
+		<Company_Units>Republic_AT_PT_Walker, Republic_AT_PT_Walker, Republic_AT_PT_Walker</Company_Units>
+    </GroundCompany>
+
     <GroundVehicle Name="Republic_ISP_Imperial">
         <Variant_Of_Existing_Type>Republic_ISP</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
 
+    <GroundCompany Name="Republic_ISP_Imperial_Company">
+        <Variant_Of_Existing_Type>Republic_ISP_Company</Variant_Of_Existing_Type>
+		<Company_Units></Company_Units>
+    </GroundCompany>
+
     <GroundVehicle Name="Republic_ULAV_Imperial">
         <Variant_Of_Existing_Type>Republic_ULAV</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-    </GroundVehicle> 
+    </GroundVehicle>
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 
     <GroundVehicle Name="Republic_AT_XT_Walker_Imperial">
         <Variant_Of_Existing_Type>Republic_AT_XT_Walker</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-    </GroundVehicle> 
+    </GroundVehicle>
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 
     <GroundVehicle Name="Gaba18_Imperial">
         <Variant_Of_Existing_Type>Gaba18</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-    </GroundVehicle> 
+    </GroundVehicle>
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 
 	<GroundVehicle Name="Flashblind_Imperial">
         <Variant_Of_Existing_Type>Flashblind</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
+    
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany>
 
 	<GroundVehicle Name="Republic_TX130_Imperial">
         <Variant_Of_Existing_Type>Republic_TX130</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-    </GroundVehicle> 
+    </GroundVehicle>
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 
 	<GroundVehicle Name="Republic_AV7_Imperial">
         <Variant_Of_Existing_Type>Republic_AV7</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
 
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
+
 	<GroundVehicle Name="Republic_AT_AP_Walker_Imperial">
         <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 
 	<GroundVehicle Name="Republic_UT_AA_Company_Imperial">
         <Variant_Of_Existing_Type>Republic_UT_AA_Company</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
 
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
+
 	<GroundVehicle Name="Republic_LAAT_Imperial">
         <Variant_Of_Existing_Type>Republic_LAAT</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 	
 	<GroundVehicle Name="Republic_HAET_Imperial">
         <Variant_Of_Existing_Type>Republic_HAET</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 	
 	<GroundVehicle Name="Republic_VAAT_Imperial">
         <Variant_Of_Existing_Type>Republic_VAAT</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
 
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
+
 	<GroundVehicle Name="Republic_UT_AT_Speeder_Imperial">
         <Variant_Of_Existing_Type>Republic_UT_AT_Speeder</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
 
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
+
 	<GroundVehicle Name="Republic_AT_OT_Walker_Imperial">
         <Variant_Of_Existing_Type>Republic_AT_OT_Walker</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 
 	<GroundVehicle Name="Republic_AT_TE_Walker_Imperial">
         <Variant_Of_Existing_Type>Republic_AT_TE_Walker</Variant_Of_Existing_Type>
@@ -110,29 +226,67 @@
 		<Land_Model_Anim_Override_Name>all_terrain_tactical_enforcer.alo</Land_Model_Anim_Override_Name>
     </GroundVehicle> 
 
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
+
 	<GroundVehicle Name="Republic_A5_Juggernaut_Imperial">
         <Variant_Of_Existing_Type>Republic_A5_Juggernaut</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 
 	<GroundVehicle Name="Republic_A5RX_Company_Imperial">
         <Variant_Of_Existing_Type>Republic_A5RX_Company</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
 
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
+
     <GroundVehicle Name="Republic_RX200_Falchion_Imperial">
         <Variant_Of_Existing_Type>Republic_RX200_Falchion</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name></Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 
     <GroundVehicle Name="Republic_A6_Juggernaut_Imperial">
         <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
     </GroundVehicle> 
 
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+		<Company_Units></Company_Units>
+    </GroundCompany> 
+
 	<GroundVehicle Name="SPHA_T_Imperial">
         <Variant_Of_Existing_Type>SPHA_T</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
 		<!--<Icon_Name></Icon_Name> needs new icon-->
     </GroundVehicle> 
+
+    <GroundCompany Name="_Company">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Icon_Name>.tga</Icon_Name>
+
+		<Company_Units></Company_Units>
+    </GroundCompany> 
 </Republic_Ground_Companies>

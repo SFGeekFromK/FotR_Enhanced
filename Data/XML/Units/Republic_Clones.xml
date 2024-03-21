@@ -2626,6 +2626,8 @@
 
 	<!-- Clone Troopers -->
 
+	<!-- Clone Phase 1 -->
+
 	<GroundInfantry Name="Clone_Phase_One">
 
 		<Text_ID>TEXT_UNIT_PHASE_ONE_RIFLEMAN</Text_ID>
@@ -3783,6 +3785,7 @@
 		</Presence_Induced_Animations>
 	</Container>
 
+	<!-- Clone Phase 2 -->
 
 	<GroundInfantry Name="Clone_Phase_Two">
 		<Variant_Of_Existing_Type>Clone_Phase_One</Variant_Of_Existing_Type>
@@ -5314,7 +5317,7 @@
 	</Container>
 
 
-	<!-- ARC Troopers -->
+	<!-- ARC Phase 1 -->
 
 	<GroundInfantry Name="ARC_Phase_One">
 		<Text_ID>TEXT_UNIT_ARC_TROOPER_P1</Text_ID>
@@ -6084,6 +6087,7 @@
 		</Abilities>
 	</Container>
 
+	<!-- ARC Phase 2 -->
 
 	<GroundInfantry Name="ARC_Phase_Two">
 		<Variant_Of_Existing_Type>ARC_Phase_One</Variant_Of_Existing_Type>
@@ -9542,8 +9546,8 @@
 		<Death_Clone>DamageL_Flamer, Infantry_Fire_Death_Clone_01</Death_Clone>
 		<Death_Clone>DamageL_ProtonWarhead, Infantry_Fire_Death_Clone_00</Death_Clone>
 		<Death_Clone>DamageL_ProtonWarhead, Infantry_Fire_Death_Clone_01</Death_Clone>
-			<Death_Clone>DamageL_Plasma, Infantry_Plasma_Death_Clone_00</Death_Clone>
-			<Death_Clone>DamageL_Plasma, Infantry_Plasma_Death_Clone_01</Death_Clone>
+		<Death_Clone>DamageL_Plasma, Infantry_Plasma_Death_Clone_00</Death_Clone>
+		<Death_Clone>DamageL_Plasma, Infantry_Plasma_Death_Clone_01</Death_Clone>
 		<Death_Clone>Damage_Fire, Infantry_Fire_Death_Clone_00</Death_Clone>
 		<Death_Clone>Damage_Fire, Infantry_Fire_Death_Clone_01</Death_Clone>
 		<Death_Clone>DamageL_Ion, Infantry_Electric_Death_Clone_00</Death_Clone>
@@ -10453,5 +10457,24 @@
 
 		</Unit_Abilities_Data>
 	</Container>
+
+	<!-- FotR_Enhanced -->
+
+	<!-- Red Guards -->
+	
+	<GroundInfantry Name="Red_Guard">
+		<Text_ID>TEXT_UNIT_RED_GUARD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_RED_GUARD
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_GUARD</Encyclopedia_Unit_Class>
+
+		<Land_Model_Name>EI_RoyalGaurd.alo</Land_Model_Name>
+		<Icon_Name>i_button_imperial_guard.tga</Icon_Name>
+		<LandBehavior>SELECTABLE, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, STUNNABLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+	</GroundInfantry>
 
 </Republic_Infantry>

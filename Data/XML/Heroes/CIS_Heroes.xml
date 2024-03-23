@@ -7199,13 +7199,13 @@
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ADMIRAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TACTICAL_DROID</Encyclopedia_Unit_Class>
 		
 		<Tech_Level>99</Tech_Level>
 		<Affiliation>Rebel</Affiliation>
 		
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
-
+		<Property_Flags>GTSImmune</Property_Flags>
 		<Tactical_Health>2560</Tactical_Health>
 		<Shield_Points>2950</Shield_Points>
 
@@ -7256,5 +7256,43 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 	</UniqueUnit>
+
+	<UnigueUnit Name="TM171">
+		<Variant_Of_Existing_Type>Supply_Ship</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_TM171</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND5_SPACE
+		TEXT_TOOLTIP_TRAIT_SIEGE_SPECIALIST
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_TM171
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_SUPPLYSHIP
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SUPPLYSHIP_HULL
+		TEXT_TOOLTIP_SUPPLYSHIP_SHIELD
+		TEXT_TOOLTIP_SUPPLYSHIP_MOVE
+		TEXT_TOOLTIP_SUPPLYSHIP_SQUADRON
+		TEXT_TOOLTIP_SUPPLYSHIP_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_SUPPLYSHIP_MINE
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FLEET_TENDER
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TACTICAL_DROID</Encyclopedia_Unit_Class>
+
+		<Icon_Name></Icon_Name>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+
+		<CategoryMask> SpaceHero | AntiFighter | Interdictor </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+
+	</UnigueUnit>
 
 </CIS_Heroes>

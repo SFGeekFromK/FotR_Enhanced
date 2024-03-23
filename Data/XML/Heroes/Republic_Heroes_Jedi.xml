@@ -12108,6 +12108,7 @@
 		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK
 		TEXT_TOOLTIP_ESCORT_PALPATINE_P1
 		TEXT_TOOLTIP_ESCORT_PALPATINE_P2
+		TEXT_TOOLTIP_ESCORT_PALPATINE_RED_GUARD
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_TOOLTIP_PALPATINE_FOTR_HEALTH
 		TEXT_TOOLTIP_PALPATINE_MOVE
@@ -12244,6 +12245,10 @@
 		
 		<Starting_Spawned_Units_Tech_0>Shock_Clonetrooper_Phase_One_Team, 2</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_4>Shock_Clonetrooper_Phase_Two_Team, 2</Starting_Spawned_Units_Tech_4>
+		
+		<!-- FotR_Enhanced -->
+		<Starting_Spawned_Units_Tech_0>Red_Guard, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_4>Red_Guard, 2</Starting_Spawned_Units_Tech_4>
 
 		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes">
@@ -12514,7 +12519,8 @@
 		TEXT_TOOLTIP_PALPATINE 
 		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK
 		TEXT_TOOLTIP_ESCORT_PALPATINE_P1
-		TEXT_TOOLTIP_ESCORT_PALPATINE_P2 
+		TEXT_TOOLTIP_ESCORT_PALPATINE_P2
+		TEXT_TOOLTIP_ESCORT_PALPATINE_RED_GUARD 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_TOOLTIP_PALPATINE_FOTR_HEALTH
 		TEXT_TOOLTIP_PALPATINE_MOVE

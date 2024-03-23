@@ -159,7 +159,7 @@ end
 
 -- FotR_Enhanced
 function HeroRespawn:spawn_block(team)
-	--Logger:trace("entering HeroRespawn:spawn_yularen")
+	--Logger:trace("entering HeroRespawn:spawn_block")
 
 	local p_republic = Find_Player("Empire")
 	local planet

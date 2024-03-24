@@ -1837,4 +1837,7 @@
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 	</GroundCompany>
 
+  <GroundInfantry Name="Morgukai_Clone">
+    
+  </GroundInfantry>
 </CIS_Organic_Units>

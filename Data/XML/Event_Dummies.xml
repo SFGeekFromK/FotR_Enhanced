@@ -253,6 +253,19 @@
 		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
 
 		<Icon_Name>i_button_grumby_cw.tga</Icon_Name>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Wessel">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_MARCELLIN_WESSEL</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_WESSEL_CW.tga</Icon_Name>
+
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 	</DummyStructure>
 
@@ -385,6 +398,19 @@
 		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
 
 		<Icon_Name>i_button_dallin.tga</Icon_Name>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+	
+	<DummyStructure Name="Fighter_Selector_Martz">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_MARTZ</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_MARTZ.tga</Icon_Name>
+
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 	</DummyStructure>
 
@@ -762,6 +788,17 @@
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 	</DummyStructure>
 	
+	<DummyStructure Name="Fighter_Selector_Thalassian">
+		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_THALASSIAN</Text_ID>
+		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_thalassian.tga</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	</DummyStructure>
+
 	<DummyStructure Name="Fighter_Selector_Aycen">
 		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
 
@@ -838,6 +875,54 @@
 		<Icon_Name>I_BUTTON_LOOSE_CANNON.tga</Icon_Name>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 	</DummyStructure>
+
+	<SpaceUnit Name="Custom_GC_Republic">
+		<Variant_Of_Existing_Type>Custom_GC_Random_Dummy</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_gar.TGA</Icon_Name>
+		<Text_ID>TEXT_FACTION_REPUBLIC </Text_ID>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Custom_GC_Sector">
+		<Variant_Of_Existing_Type>Custom_GC_Random_Dummy</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_SECTOR_FORCES.TGA</Icon_Name>
+		<Text_ID>TEXT_FACTION_SECTORFORCES </Text_ID>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Custom_GC_CIS">
+		<Variant_Of_Existing_Type>Custom_GC_Random_Dummy</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_CIS.TGA</Icon_Name>
+		<Text_ID>TEXT_FACTION_CIS </Text_ID>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Custom_GC_Hutts">
+		<Variant_Of_Existing_Type>Custom_GC_Random_Dummy</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HUTTS.tga</Icon_Name>
+		<Text_ID>TEXT_FACTION_HUTTS </Text_ID>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Custom_GC_IGBC">
+		<Variant_Of_Existing_Type>Custom_GC_Random_Dummy</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_banking_clan.TGA</Icon_Name>
+		<Text_ID>TEXT_FACTION_BANKING_CLAN </Text_ID>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Custom_GC_Commerce_Guild">
+		<Variant_Of_Existing_Type>Custom_GC_Random_Dummy</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_commerce_guild.TGA</Icon_Name>
+		<Text_ID>TEXT_FACTION_COMMERCE_GUILD </Text_ID>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Custom_GC_Trade_Federation">
+		<Variant_Of_Existing_Type>Custom_GC_Random_Dummy</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_trade_federation.TGA</Icon_Name>
+		<Text_ID>TEXT_FACTION_TRADEFED </Text_ID>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Custom_GC_Techno_Union">
+		<Variant_Of_Existing_Type>Custom_GC_Random_Dummy</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_techno_union.TGA</Icon_Name>
+		<Text_ID>TEXT_FACTION_TECHNO_UNION </Text_ID>
+	</SpaceUnit>
 
 <!-- FotR_Enhanced -->
 

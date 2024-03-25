@@ -236,6 +236,7 @@
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>
 				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
 			</Unit_Ability>
 
 			<Unit_Ability>
@@ -279,6 +280,7 @@
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>
 				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
 			</Unit_Ability>
 
 			<Unit_Ability>
@@ -342,7 +344,7 @@
 		TEXT_STATBLOCK_T19_WEAP1
 		TEXT_STATBLOCK_T19_WEAP2
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SERGEANT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT</Encyclopedia_Unit_Class>
 		<Icon_Name>i_button_erk_harman.tga</Icon_Name>
 
 		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
@@ -417,7 +419,7 @@
 		TEXT_STATBLOCK_T19_WEAP1
 		TEXT_STATBLOCK_T19_WEAP2
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SERGEANT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT</Encyclopedia_Unit_Class>
 		<Icon_Name>i_button_erk_harman.tga</Icon_Name>
 		
 		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
@@ -451,7 +453,7 @@
 		TEXT_STATBLOCK_T19_WEAP1
 		TEXT_STATBLOCK_T19_WEAP2
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SERGEANT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT</Encyclopedia_Unit_Class>
 		<Icon_Name>i_button_erk_harman.tga</Icon_Name>
 
 		<Create_Team_Type>Erk_HArman_Container</Create_Team_Type>
@@ -2005,7 +2007,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
 		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
 		TEXT_STATBLOCK_ARC170_MOVE 
 		TEXT_STATBLOCK_ARC170_WEAP1
 		TEXT_STATBLOCK_ARC170_WEAP2
@@ -2144,7 +2146,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
 		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
-		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
 		TEXT_STATBLOCK_ARC170_ESCORT_BASE
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2163,6 +2165,7 @@
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>
 				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
 			</Unit_Ability>
 
 			<Unit_Ability>
@@ -2184,7 +2187,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
 		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
-		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
 		TEXT_STATBLOCK_ARC170_ESCORT_BASE
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2206,6 +2209,7 @@
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>
 				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
 			</Unit_Ability>
 
 			<Unit_Ability>
@@ -5605,6 +5609,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
 		TEXT_TOOLTIP_COMMAND_RESOLUTE_FOTR
 		TEXT_TOOLTIP_COMMAND_INTEGRITY
+		TEXT_TOOLTIP_COMMAND_YULAREN_INVINCIBLE
 		TEXT_TOOLTIP_VENATOR_WEAP_INTEGRITY
 		</Encyclopedia_Text>
 	</DummyStructure>
@@ -7635,7 +7640,7 @@
 			</Combat_Bonus_Ability>
 
 			<Reduce_Production_Price_Ability Name="Tarkin_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.15</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -7752,7 +7757,7 @@
 			</Combat_Bonus_Ability>
 
 			<Reduce_Production_Price_Ability Name="Tarkin_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.15</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -8145,7 +8150,7 @@
 
 		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete> Unit_Complete_Admiral_Tarkin </SFXEvent_Build_Complete>	
+		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>	
 
 	</DummyStructure>
 
@@ -8399,7 +8404,7 @@
 			</Reduce_Production_Time_Ability>
 
 			<Reduce_Production_Price_Ability Name="Vorru_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.15</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -8441,7 +8446,7 @@
 
 		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete> Unit_Complete_Admiral_Tarkin </SFXEvent_Build_Complete>	
+		<SFXEvent_Build_Complete> Unit_Complete_Jedi_Cruiser </SFXEvent_Build_Complete>	
 
 	</DummyStructure>
 
@@ -8767,8 +8772,7 @@
 
 		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete> Unit_Complete_Admiral_Tarkin </SFXEvent_Build_Complete>	
-
+		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>	
 	</DummyStructure>
 
 	<DummyStructure Name="Praji_Retire">
@@ -8914,7 +8918,7 @@
 
 		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete> Unit_Complete_Admiral_Tarkin </SFXEvent_Build_Complete>	
+		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>		
 
 	</DummyStructure>
 
@@ -9032,7 +9036,7 @@
 
 		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete> Unit_Complete_Admiral_Tarkin </SFXEvent_Build_Complete>	
+		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>	
 
 	</DummyStructure>
 
@@ -10401,7 +10405,7 @@
 			</Combat_Bonus_Ability>
 
 			<Reduce_Production_Price_Ability Name="Solomahal_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.1</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -11033,7 +11037,7 @@
 
         <Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
 
-		<AI_Combat_Power>39</AI_Combat_Power>
+		<AI_Combat_Power>36</AI_Combat_Power>
 
 		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
 
@@ -11323,7 +11327,7 @@
 		TEXT_TOOLTIP_ATOT_WEAP1
 		TEXT_TOOLTIP_ATOT_WEAP2
 		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
-		TEXT_TOOLTIP_ATOT_DEPLOY
+		TEXT_TOOLTIP_GIDEON_TARKIN_DEPLOY
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
 		</Encyclopedia_Text>
@@ -11334,6 +11338,10 @@
 		<Affiliation>Empire</Affiliation>
 		<Lua_Script>GroundHero</Lua_Script>
 		<Property_Flags> GoodInfantryCrusher | IsSupercrusher | GTSImmune </Property_Flags>
+
+		<LandBehavior>
+			SPAWN_SQUADRON,ABILITY_COUNTDOWN, DEPLOY_TROOPERS, WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON,TURRET,POWERED,REVEAL,HIDE_WHEN_FOGGED,UNIT_AI,STUNNABLE,DAMAGE_TRACKING,SQUASH,AFFECTED_BY_SHIELD
+		</LandBehavior>
 
 		<SFXEvent_Select> Unit_Select_Imperial_Walker </SFXEvent_Select>
 		<SFXEvent_Move> Unit_Move_Imperial_Walker </SFXEvent_Move>
@@ -11361,7 +11369,7 @@
 			<Unit_Ability>
 				<Type>DEPLOY_TROOPERS</Type>
 				<Recharge_Seconds>20</Recharge_Seconds>
-				<Spawned_Object_Type>Clonetrooper_Phase_Two_Team_Deployed</Spawned_Object_Type>
+				<Spawned_Object_Type>Special_Tactics_Trooper_Weapons_Team_Deployed</Spawned_Object_Type>
 				<Max_Num_Spawned_Objects>1</Max_Num_Spawned_Objects>
 				<Owner_Attachment_Bone> B_SPAWN_00, B_SPAWN_01, B_SPAWN_02 </Owner_Attachment_Bone>
 			</Unit_Ability>
@@ -11399,7 +11407,7 @@
 		TEXT_TOOLTIP_ATOT_WEAP1
 		TEXT_TOOLTIP_ATOT_WEAP2
 		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
-		TEXT_TOOLTIP_ATOT_DEPLOY
+		TEXT_TOOLTIP_GIDEON_TARKIN_DEPLOY
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
 		</Encyclopedia_Text>
@@ -11499,7 +11507,7 @@
 			</Combat_Bonus_Ability>
 
 			<Reduce_Production_Price_Ability Name="Pestage_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types>Prowler_Probe_Droid_Team</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.25</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -11589,7 +11597,7 @@
 
 		<Abilities SubObjectList="Yes">
 			<Reduce_Production_Price_Ability Name="Orn_Free_Taa_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.1</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -11672,7 +11680,7 @@
 
 		<Abilities SubObjectList="Yes">
 			<Reduce_Production_Price_Ability Name="Ask_Aak_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.1</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -11928,7 +11936,7 @@
 			</Absorb_Blaster_Ability>
 
 			<Reduce_Production_Price_Ability Name="Padme_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.15</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -12167,10 +12175,10 @@
 		</Land_Terrain_Model_Mapping>
 		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
 
-		<Max_Speed>1.1</Max_Speed>
+		<Max_Speed>1.0</Max_Speed>
 		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
-		<OverrideAcceleration> 1.1 </OverrideAcceleration>
-		<OverrideDeceleration> 1.1 </OverrideDeceleration>
+		<OverrideAcceleration> 1.0 </OverrideAcceleration>
+		<OverrideDeceleration> 1.0 </OverrideDeceleration>
 		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
 
 		<Scale_Factor>1.1</Scale_Factor>
@@ -12228,7 +12236,7 @@
 		
 		<Abilities SubObjectList="Yes">
 			<Reduce_Production_Price_Ability Name="Paige_Tarkin_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.15</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -12671,7 +12679,7 @@
 		<Abilities SubObjectList="Yes">
 
 			<Reduce_Production_Price_Ability Name="Danu_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.15</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -13283,7 +13291,7 @@
 		<Abilities SubObjectList="Yes">
 
 			<Reduce_Production_Price_Ability Name="Mothma_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.25</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -13372,7 +13380,7 @@
 		<Abilities SubObjectList="Yes">
 
 			<Reduce_Production_Price_Ability Name="Garm_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
@@ -13471,8 +13479,7 @@
 		<Abilities SubObjectList="Yes">
 
 			<Reduce_Production_Price_Ability Name="Bail_Reduce_Production_Price">
-				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
-				<Applicable_Unit_Types />
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
 				<Price_Reduction_Percentage>0.15</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Reduce_Production_Price_Ability>

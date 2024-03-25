@@ -34,6 +34,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	herokilled_finished_event:attach_listener(self.on_galactic_hero_killed, self)
 	self.hero_clones_p2_disabled = hero_clones_p2_disabled
 	self.inited = false
+	yularen_second_chance_used = false
 	
 	crossplot:subscribe("VENATOR_HEROES", self.Venator_Heroes, self)
 	crossplot:subscribe("VICTORY_HEROES", self.VSD_Heroes, self)
@@ -674,17 +675,29 @@ function RepublicHeroes:on_galactic_hero_killed(hero_name, owner)
 	if tag_admiral == "Dao" then
 		Handle_Hero_Add("Tenant", admiral_data)
 		StoryUtil.Multimedia("TEXT_CONQUEST_GOVERNMENT_REP_HERO_REPLACEMENT_SPEECH_TENANT", 20, nil, "Piett_Loop", 0)
+	elseif tag_admiral == "Yularen" then
+		if yularen_second_chance_used == false then
+			yularen_second_chance_used = true
+			if hero_name == "YULAREN_INVINCIBLE" then 
+				UnitUtil.SetLockList("EMPIRE", {"Yularen_Integrity_Upgrade_Invincible"}, false)
+			end
+			admiral_data.full_list["Yularen"].unit_id = 2 --YULAREN_INTEGRITY
+			Handle_Hero_Add("Yularen", admiral_data)
+			if Find_Player("Empire").Is_Human() then
+				StoryUtil.Multimedia("TEXT_SPEECH_YULAREN_RETURNS_INTEGRITY", 15, nil, "Piett_Loop", 0)
+			end
+		end
 	end
 	Handle_Hero_Killed(hero_name, owner, moff_data)
 	Handle_Hero_Killed(hero_name, owner, council_data)
-	local tag = Handle_Hero_Killed(hero_name, owner, clone_data)
-	if tag == "Bly" then
+	local clone_tag = Handle_Hero_Killed(hero_name, owner, clone_data)
+	if clone_tag == "Bly" then
 		Handle_Hero_Add("Deviss", clone_data)
-	elseif tag == "Bacara" then
+	elseif clone_tag == "Bacara" then
 		Handle_Hero_Add("Jet", clone_data)
-	elseif tag == "Appo" then
+	elseif clone_tag == "Appo" then
 		Bow_Check()
-	elseif tag == "Rex" then
+	elseif clone_tag == "Rex" then
 		Vill_Check()
 	end
 	if hero_name == "ODD_BALL_P1_TEAM" or hero_name == "ODD_BALL_P2_TEAM" then
@@ -794,6 +807,7 @@ function Autem_Check()
 		Handle_Hero_Add("Autem", admiral_data)
 		Handle_Hero_Add("Tenant", admiral_data)
 		RepublicHeroes:Add_Fighter_Set("Odd_Ball_ARC170_Location_Set")
+		Clear_Fighter_Hero("ODD_BALL_TORRENT_SQUAD_SEVEN_SQUADRON")
 		RepublicHeroes:Remove_Fighter_Set("Odd_Ball_Torrent_Location_Set")
 		RepublicHeroes:Add_Fighter_Set("Warthog_Republic_Z95_Hunter_Squadron")
 		RepublicHeroes:Remove_Fighter_Set("Warthog_Torrent_Location_Set")

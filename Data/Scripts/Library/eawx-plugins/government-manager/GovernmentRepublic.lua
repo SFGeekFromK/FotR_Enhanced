@@ -219,7 +219,7 @@ function GovernmentRepublic:ChoiceChecker()
 		if self.RepublicPlayer.Is_Human() then
 		   Story_Event(GCEventTable[self.gc_name].EventName)
 		end
-		self:GC_Blissex_Research_Support()
+		self:GC_Blissex_Research_Funding()
 	end
 	if self.gc_name == "KNIGHT_HAMMER" then
 		if self.RepublicPlayer.Is_Human() then
@@ -253,7 +253,15 @@ end
 
 function GovernmentRepublic:GC_AI_Republic_Future()
 	--Logger:trace("entering GovernmentRepublic:GC_AI_Republic_Future")
-	if FindPlanet("CORUSCANT").Get_Owner() == self.RepublicPlayer then
+	local enabled = true
+	
+	if TestValid(FindPlanet("CORUSCANT")) then
+		if FindPlanet("CORUSCANT").Get_Owner() ~= self.RepublicPlayer then
+			enabled = false
+		end
+	end
+
+	if enabled == true then
 		self.CurrentMilitarizationTag = "IMPERIALIZATION"
 		crossplot:publish("UPDATE_MOBILIZATION", "empty")
 

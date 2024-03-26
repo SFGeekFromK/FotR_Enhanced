@@ -29,7 +29,7 @@ Hutt_HuttGuard.ALO
 
 ------Todo Lists------
 
-add imperialized Republic space unit icons(After TR release)
+add imperialized Republic space unit icons(After TR release) ; gladiator, 
 
 
 

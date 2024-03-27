@@ -163,7 +163,7 @@
     <SpaceUnit Name="Generic_Star_Destroyer_Imperial">
         <Variant_Of_Existing_Type>Generic_Star_Destroyer</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>I_BUTTON_IMPERATOR.TGA</Icon_Name>
+        <Icon_Name>I_BUTTON_IMPERATOR_IMPERIAL.TGA</Icon_Name>
     </SpaceUnit> 
     
     <SpaceUnit Name="Generic_Tector_Imperial">

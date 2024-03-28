@@ -31,7 +31,7 @@ Hutt_HuttGuard.ALO
 
 add imperialized Republic space unit icons(After TR release) ; gladiator, 
 
-
+clone z 95 will be changed for missile ties
 
 
 LANDING, SELECTABLE, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, STUNNABLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING

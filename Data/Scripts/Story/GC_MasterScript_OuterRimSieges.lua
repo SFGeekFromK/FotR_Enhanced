@@ -89,6 +89,8 @@ function State_GC_Set_Up(message)
 
 		-- Republic
 		Find_Player("Empire").Unlock_Tech(Find_Object_Type("Generic_Venator"))
+		-- FotR_Enhanced
+		Find_Player("Empire").Unlock_Tech(Find_Object_Type("Venator_OFC"))
 		Find_Player("Empire").Unlock_Tech(Find_Object_Type("Generic_Victory_Fleet_Destroyer"))
 		Find_Player("Empire").Unlock_Tech(Find_Object_Type("Generic_Victory_Destroyer_Two"))
 

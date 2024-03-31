@@ -290,20 +290,20 @@ function GovernmentRepublic:GC_AI_Republic_Future()
 		--- [[FotR_Enhanced
 		local Generic_Venator_All=Find_All_Objects_Of_Type("Generic_Venator")
 		for _, Venator_Despawn in pairs(Generic_Venator_All) do
-			UnitUtil.ReplaceAtLocation(Venator_Despawn, "Venator_Imperial")
+			UnitUtil.ReplaceAtLocation(Venator_Despawn, "Generic_Venator_Imperial")
 		end
 
 		local Venator_OFC_All=Find_All_Objects_Of_Type("Venator_OFC")
 		for i, Venator_OFC_Despawn in pairs(Venator_OFC_All) do
-			UnitUtil.ReplaceAtLocation(Venator_OFC_Despawn, "Venator_Imperial")
+			UnitUtil.ReplaceAtLocation(Venator_OFC_Despawn, "Generic_Venator_Imperial")
 		end
 
 		local Venator_SPHA_T_All=Find_All_Objects_Of_Type("Venator_SPHA_T")
 		for j, Venator_SPHA_T_Despawn in pairs(Venator_SPHA_T_All) do
-			UnitUtil.ReplaceAtLocation(Venator_SPHA_T_Despawn, "Venator_Imperial")
+			UnitUtil.ReplaceAtLocation(Venator_SPHA_T_Despawn, "Generic_Venator_Imperial")
 		end --]]
 		--- [[FotR_Enhanced
-		UnitUtil.SetLockList("EMPIRE", {"Yularen_Resolute_Upgrade_Invincible", "Yularen_Integrity_Upgrade_Invincible","Tarkin_Executrix_Upgrade", "Venator_Imperial", "Venator_Decolorize"}) 
+		UnitUtil.SetLockList("EMPIRE", {"Yularen_Resolute_Upgrade_Invincible", "Yularen_Integrity_Upgrade_Invincible","Tarkin_Executrix_Upgrade", "Generic_Venator_Imperial", "Venator_Decolorize"}) 
 		--]]
 		UnitUtil.ReplaceAtLocation("Anakin", "Vader_Team")
 		UnitUtil.ReplaceAtLocation("Anakin2", "Vader_Team")

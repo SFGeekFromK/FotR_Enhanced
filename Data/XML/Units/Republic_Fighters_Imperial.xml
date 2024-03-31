@@ -5,181 +5,264 @@
     <SpaceUnit Name="_Imperial">
         <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
     </SpaceUnit> 
-
-    <Squadron Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <Icon_Name></Icon_Name>
-        <Create_Team_Type></Create_Team_Type>
-    </Squadron>
-
+    
     <Container Name="_Imperial">
         <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <Icon_Name></Icon_Name>
         
     </Container>
     
+    <Squadron Name="_Imperial">
+        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+        <Create_Team_Type></Create_Team_Type>
+    </Squadron>
+
     -->
+
+    <!-- arc 170 -->
     <SpaceUnit Name="Generic_ARC_170_Imperial">
         <Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+        <Icon_Name>i_button_arc170_imperial.tga</Icon_Name>
+    </SpaceUnit>
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+    <Container Name="Generic_ARC_170_Squadron_Container_Imperial">
+        <Variant_Of_Existing_Type>ARC_170_Squadron_Container</Variant_Of_Existing_Type>
+        <Icon_Name>i_button_arc170_imperial_one.tga</Icon_Name>
+        
+    </Container>
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+    <Squadron Name="Generic_ARC_170_Squadron_Imperial">
+        <Variant_Of_Existing_Type>Generic_ARC_170_Squadron</Variant_Of_Existing_Type>
+        <Icon_Name>i_button_arc170_imperial_one.tga</Icon_Name>
+        <Create_Team_Type>Generic_ARC_170_Squadron_Container_Imperial</Create_Team_Type>
+        <Squadron_Units>Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial</Squadron_Units>
+    </Squadron>
 
+    <Container Name="Generic_ARC_170_Squadron_Double_Container_Imperial">
+        <Variant_Of_Existing_Type>ARC_170_Squadron_Double_Container</Variant_Of_Existing_Type>
+        <Icon_Name>i_button_arc170_imperial_two.tga</Icon_Name>
+        
+    </Container>
+
+    <Squadron Name="Generic_ARC_170_Squadron_Double_Imperial">
+        <Variant_Of_Existing_Type>Generic_ARC_170_Squadron_Double</Variant_Of_Existing_Type>
+        <Icon_Name>i_button_arc170_imperial_two.tga</Icon_Name>
+        <Create_Team_Type>Generic_ARC_170_Squadron_Double_Container_Imperial</Create_Team_Type>
+        <Squadron_Units>Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial</Squadron_Units>
+        <Squadron_Units>Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial, Generic_ARC_170_Imperial</Squadron_Units>
+    </Squadron>
+
+    <!-- NTB 630 -->
     <SpaceUnit Name="NTB_630_Imperial">
         <Variant_Of_Existing_Type>NTB_630</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
+        <!--<Icon_Name>.tga</Icon_Name>-->
     </SpaceUnit> 
 
+    <Squadron Name="NTB_630_Squadron_Imperial">
+        <Variant_Of_Existing_Type>NTB_630_Squadron</Variant_Of_Existing_Type>
+        <!--<Icon_Name></Icon_Name>-->
+        <Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+		<Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+		<Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+		<Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+    </Squadron>
+    
+    <Squadron Name="NTB_630_Squadron_Double_Imperial">
+        <Variant_Of_Existing_Type>NTB_630_Squadron_Double</Variant_Of_Existing_Type>
+        <!--<Icon_Name></Icon_Name>-->
+        <Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+		<Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+		<Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+		<Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+        <Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+		<Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+		<Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+		<Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+    </Squadron>
+    
+    <Squadron Name="NTB_630_Squadron_Half_Imperial">
+        <Variant_Of_Existing_Type>NTB_630_Squadron_Half</Variant_Of_Existing_Type>
+        <!--<Icon_Name></Icon_Name>-->
+        <Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+		<Squadron_Units>NTB_630_Imperial, NTB_630_Imperial, NTB_630_Imperial</Squadron_Units>
+    </Squadron>
+
+    <!-- Torrent -->
     <SpaceUnit Name="Torrent_Imperial">
         <Variant_Of_Existing_Type>Torrent</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
         <!--<Icon_Name>.tga</Icon_Name>-->
     </SpaceUnit> 
+    
+    <Squadron Name="Torrent_Squadron_Imperial">
+        <Variant_Of_Existing_Type>Torrent_Squadron</Variant_Of_Existing_Type>
+        <!--<Icon_Name>.tga</Icon_Name>-->
+        <Create_Team_Type>Torrent_Squadron_Container</Create_Team_Type>
+        <Squadron_Units>Torrent_Imperial, Torrent_Imperial, Torrent_Imperial</Squadron_Units>
+		<Squadron_Units>Torrent_Imperial, Torrent_Imperial, Torrent_Imperial</Squadron_Units>
+		<Squadron_Units>Torrent_Imperial, Torrent_Imperial, Torrent_Imperial</Squadron_Units>
+		<Squadron_Units>Torrent_Imperial, Torrent_Imperial, Torrent_Imperial</Squadron_Units>
+    </Squadron>
+    
+    <Squadron Name="Torrent_Squadron_Double_Imperial">
+        <Variant_Of_Existing_Type>Torrent_Squadron_Double</Variant_Of_Existing_Type>
+        <!--<Icon_Name>.tga</Icon_Name>-->
+        <Create_Team_Type>Torrent_Squadron_Double_Container</Create_Team_Type>
+        <Squadron_Units>Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial</Squadron_Units>
+        <Squadron_Units>Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial</Squadron_Units>
+        <Squadron_Units>Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial</Squadron_Units>
+        <Squadron_Units>Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial, Torrent_Imperial</Squadron_Units>        
+    </Squadron>
 
+    <!-- Nimbus V wing -->
     <SpaceUnit Name="Generic_Nimbus_V-Wing_Imperial">
         <Variant_Of_Existing_Type>Generic_Nimbus_V-Wing</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
         <!--<Icon_Name>.tga</Icon_Name>-->
-    </SpaceUnit> 
+    </SpaceUnit>
 
+    <Squadron Name="Generic_V-Wing_Squadron_Imperial">
+        <Variant_Of_Existing_Type>Generic_V-Wing_Squadron</Variant_Of_Existing_Type>
+        <!--<Icon_Name>.tga</Icon_Name>-->
+        <Squadron_Units>Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial</Squadron_Units>
+    </Squadron>
+    
+    <Squadron Name="Generic_V-Wing_Squadron_Double_Imperial">
+        <Variant_Of_Existing_Type>Generic_V-Wing_Squadron_Double</Variant_Of_Existing_Type>
+        <!--<Icon_Name>.tga</Icon_Name>-->
+        <Squadron_Units>Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial</Squadron_Units>
+        <Squadron_Units>Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial</Squadron_Units>
+		<Squadron_Units>Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial, Generic_Nimbus_V-Wing_Imperial</Squadron_Units>
+    </Squadron>
+
+    <!-- Missile V wing -->
     <SpaceUnit Name="Missile_Nimbus_Imperial">
         <Variant_Of_Existing_Type>Missile_Nimbus</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
         <!--<Icon_Name>.tga</Icon_Name>-->
     </SpaceUnit> 
 
+    <Squadron Name="Missile_Nimbus_Squadron_Imperial">
+        <Variant_Of_Existing_Type>Missile_Nimbus_Squadron</Variant_Of_Existing_Type>
+        <Squadron_Units>Missile_Nimbus_Imperial, Missile_Nimbus_Imperial, Missile_Nimbus_Imperial, Missile_Nimbus_Imperial</Squadron_Units>
+		<Squadron_Units>Missile_Nimbus_Imperial, Missile_Nimbus_Imperial, Missile_Nimbus_Imperial, Missile_Nimbus_Imperial</Squadron_Units>
+		<Squadron_Units>Missile_Nimbus_Imperial, Missile_Nimbus_Imperial, Missile_Nimbus_Imperial, Missile_Nimbus_Imperial</Squadron_Units>
+    </Squadron>
+
+    <!-- Elite Guard V wing -->
     <SpaceUnit Name="Elite_Guard_Nimbus_Imperial">
         <Variant_Of_Existing_Type>Elite_Guard_Nimbus</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
         <!--<Icon_Name>.tga</Icon_Name>-->
     </SpaceUnit> 
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+    <Squadron Name="Elite_Guard_Nimbus_Squadron_Imperial">
+        <Variant_Of_Existing_Type>Elite_Guard_Nimbus_Squadron</Variant_Of_Existing_Type>
+        <Squadron_Units>Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial</Squadron_Units>
+		<Squadron_Units>Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial</Squadron_Units>
+		<Squadron_Units>Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial</Squadron_Units>
+    </Squadron>
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
-
+    <!-- Republic Ties -->
     <SpaceUnit Name="Twin_Ion_Engine_Starfighter_Imperial">
         <Variant_Of_Existing_Type>Twin_Ion_Engine_Starfighter</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
+        <!--<Icon_Name>.tga</Icon_Name>-->
     </SpaceUnit> 
+
+    <Squadron Name="Twin_Ion_Engine_Starfighter_Squadron_Imperial">
+        <Variant_Of_Existing_Type>Twin_Ion_Engine_Starfighter_Squadron</Variant_Of_Existing_Type>
+        <Squadron_Units>Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial</Squadron_Units>
+		<Squadron_Units>Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial</Squadron_Units>
+		<Squadron_Units>Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial</Squadron_Units>
+    </Squadron>
+
+    <Squadron Name="Twin_Ion_Engine_Starfighter_Squadron_Double_Imperial">
+        <Variant_Of_Existing_Type>Twin_Ion_Engine_Starfighter_Squadron_Double</Variant_Of_Existing_Type>
+        <Squadron_Units>Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial</Squadron_Units>
+		<Squadron_Units>Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial</Squadron_Units>
+		<Squadron_Units>Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial</Squadron_Units>
+        <Squadron_Units>Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial</Squadron_Units>
+		<Squadron_Units>Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial</Squadron_Units>
+		<Squadron_Units>Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial</Squadron_Units>
+    </Squadron>
+
+    <Squadron Name="Twin_Ion_Engine_Starfighter_Squadron_Half_Imperial">
+        <Variant_Of_Existing_Type>Twin_Ion_Engine_Starfighter_Squadron_Half</Variant_Of_Existing_Type>
+        <Squadron_Units>Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial, Twin_Ion_Engine_Starfighter_Imperial</Squadron_Units>
+    </Squadron>
 
     <SpaceUnit Name="Missile_TIE_Imperial">
         <Variant_Of_Existing_Type>Missile_TIE</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
+        <!--<Icon_Name>.tga</Icon_Name>-->
     </SpaceUnit> 
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+    <Squadron Name="Missile_TIE_Squadron_Imperial">
+        <Variant_Of_Existing_Type>Missile_TIE_Squadron</Variant_Of_Existing_Type>
+        <Squadron_Units>Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial</Squadron_Units>
+		<Squadron_Units>Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial</Squadron_Units>
+		<Squadron_Units>Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial</Squadron_Units>
+    </Squadron>
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+    <Squadron Name="Missile_TIE_Squadron_Double_Imperial">
+        <Variant_Of_Existing_Type>Missile_TIE_Squadron_Double</Variant_Of_Existing_Type>
+        <Squadron_Units>Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial</Squadron_Units>
+		<Squadron_Units>Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial</Squadron_Units>
+		<Squadron_Units>Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial</Squadron_Units>
+        <Squadron_Units>Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial</Squadron_Units>
+		<Squadron_Units>Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial</Squadron_Units>
+		<Squadron_Units>Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial, Missile_TIE_Imperial</Squadron_Units>
+    </Squadron>
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+<!-- 
+    Squadron IDs for lua
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+GENERIC_ARC_170_SQUADRON_IMPERIAL
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+GENERIC_ARC_170_SQUADRON_DOUBLE_IMPERIAL
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+NTB_630_SQUADRON_IMPERIAL
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+NTB_630_SQUADRON_DOUBLE_IMPERIAL
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+NTB_630_SQUADRON_HALF_IMPERIAL
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+TORRENT_SQUADRON_IMPERIAL
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+TORRENT_SQUADRON_DOUBLE_IMPERIAL
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+GENERIC_V-WING_SQUADRON_IMPERIAL
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+GENERIC_V-WING_SQUADRON_DOUBLE_IMPERIAL
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+MISSILE_NIMBUS_SQUADRON_IMPERIAL
 
-    <SpaceUnit Name="_Imperial">
-        <Variant_Of_Existing_Type></Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>.tga</Icon_Name>
-    </SpaceUnit> 
+ELITE_GUARD_NIMBUS_SQUADRON_IMPERIAL
+
+TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_IMPERIAL
+
+TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_DOUBLE_IMPERIAL
+
+TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_HALF_IMPERIAL
+
+MISSILE_TIE_SQUADRON_IMPERIAL
+
+MISSILE_TIE_SQUADRON_DOUBLE_IMPERIAL
+
+-->
 </Republic_Fighters_Imeperial>

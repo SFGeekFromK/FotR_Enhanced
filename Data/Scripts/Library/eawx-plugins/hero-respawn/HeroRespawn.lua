@@ -61,11 +61,15 @@ function HeroRespawn:on_galactic_hero_killed(hero_name, owner)
 		self:spawn_yularen("Yularen_Integrity")
 	elseif hero_name == "TRENCH_INVINCIBLE" then
 		self:start_cyber_trench_countdown()
+	elseif hero_name == "TRENCH_INVINCIBLE" then
+		self:start_cyber_trench_countdown()
 	elseif hero_name == "ZOZRIDOR_SLAYKE_CARRACK" then
 		self:slaykes_second_chance()
 	-- FotR_Enhanced
 	elseif hero_name == "BLOCK_NEGOTIATOR" then
 		self:spawn_block("BLOCK_VIGILANCE")
+	elseif hero_name == "YULAREN_RESOLUTE_SPHAT" then
+		self:spawn_yularen("Yularen_Integrity")
 	end
 end
 

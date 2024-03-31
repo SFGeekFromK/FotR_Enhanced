@@ -66,7 +66,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_limit = 22,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
 		initialized = false,
 		full_list = { --All options for reference operations
-			["Yularen"] = {"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"},"Wulff Yularen"},
+			["Yularen"] = --[[FotR_Enhanced Resolute sphat Version added]]{"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3","YULAREN_RETIRE_1"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT"},"Wulff Yularen"},
 			["Wieler"] = {"WIELER_ASSIGN",{"WIELER_RETIRE"},{"WIELER_RESILIENT"},"Wieler"},
 			["Coburn"] = {"COBURN_ASSIGN",{"COBURN_RETIRE"},{"COBURN_TRIUMPHANT"},"Barton Coburn"},
 			["Kilian"] = {"KILIAN_ASSIGN",{"KILIAN_RETIRE"},{"KILIAN_ENDURANCE"},"Shoan Kilian"},

@@ -86,21 +86,21 @@ function State_Republic_Future_Jedi_Gone(message)
 		})
 
 		---[[ FotR_Enhanced
-		UnitUtil.SetLockList("EMPIRE", {"Venator_Imperial", "Venator_Decolorize"}) 
+		UnitUtil.SetLockList("EMPIRE", {"Generic_Venator_Imperial", "Venator_Decolorize"}) 
 
         local Generic_Venator_All=Find_All_Objects_Of_Type("Generic_Venator")
         for _, Venator_Despawn in pairs(Generic_Venator_All) do
-            UnitUtil.ReplaceAtLocation(Venator_Despawn, "Venator_Imperial")
+            UnitUtil.ReplaceAtLocation(Venator_Despawn, "Generic_Venator_Imperial")
         end
 
         local Venator_OFC_All=Find_All_Objects_Of_Type("Venator_OFC")
         for i, Venator_OFC_Despawn in pairs(Venator_OFC_All) do
-            UnitUtil.ReplaceAtLocation(Venator_OFC_Despawn, "Venator_Imperial")
+            UnitUtil.ReplaceAtLocation(Venator_OFC_Despawn, "Generic_Venator_Imperial")
         end
 
         local Venator_SPHA_T_All=Find_All_Objects_Of_Type("Venator_SPHA_T")
         for j, Venator_SPHA_T_Despawn in pairs(Venator_SPHA_T_All) do
-            UnitUtil.ReplaceAtLocation(Venator_SPHA_T_Despawn, "Venator_Imperial")
+            UnitUtil.ReplaceAtLocation(Venator_SPHA_T_Despawn, "Generic_Venator_Imperial")
         end --]]
 		
 		crossplot:publish("ORDER_66_EXECUTED", "empty")

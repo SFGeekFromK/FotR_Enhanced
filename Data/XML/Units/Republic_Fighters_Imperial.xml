@@ -19,6 +19,50 @@
 
     -->
 
+    <SpaceUnit Name="Delta6_Imperial">
+        <Variant_Of_Existing_Type>Delta6</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+    </SpaceUnit> 
+    
+    <Squadron Name="Delta6_Squadron_Imperial">
+        <Variant_Of_Existing_Type>Delta6_Squadron</Variant_Of_Existing_Type>
+        		<Squadron_Units>Delta6_Imperial, Delta6_Imperial, Delta6_Imperial, Delta6_Imperial</Squadron_Units>
+		<Squadron_Units>Delta6_Imperial, Delta6_Imperial, Delta6_Imperial, Delta6_Imperial</Squadron_Units>
+		<Squadron_Units>Delta6_Imperial, Delta6_Imperial, Delta6_Imperial, Delta6_Imperial</Squadron_Units>
+    </Squadron>
+    
+    <Squadron Name="Delta6_Squadron_Double_Imperial">
+        <Variant_Of_Existing_Type>Delta6_Squadron_Double</Variant_Of_Existing_Type>
+        		<Squadron_Units>Delta6_Imperial, Delta6_Imperial, Delta6_Imperial, Delta6_Imperial</Squadron_Units>
+		<Squadron_Units>Delta6_Imperial, Delta6_Imperial, Delta6_Imperial, Delta6_Imperial</Squadron_Units>
+		<Squadron_Units>Delta6_Imperial, Delta6_Imperial, Delta6_Imperial, Delta6_Imperial</Squadron_Units>
+		<Squadron_Units>Delta6_Imperial, Delta6_Imperial, Delta6_Imperial, Delta6_Imperial</Squadron_Units>
+		<Squadron_Units>Delta6_Imperial, Delta6_Imperial, Delta6_Imperial, Delta6_Imperial</Squadron_Units>
+		<Squadron_Units>Delta6_Imperial, Delta6_Imperial, Delta6_Imperial, Delta6_Imperial</Squadron_Units>
+    </Squadron>
+
+    <SpaceUnit Name="Delta7_Imperial">
+        <Variant_Of_Existing_Type>Delta7</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
+    </SpaceUnit> 
+    
+    <Squadron Name="Delta7_Squadron_Imperial">
+        <Variant_Of_Existing_Type>Delta7_Squadron</Variant_Of_Existing_Type>
+        <Squadron_Units>Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, </Squadron_Units>
+        <Squadron_Units>Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, </Squadron_Units>
+        <Squadron_Units>Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, </Squadron_Units>
+    </Squadron>
+    
+    <Squadron Name="Delta7_Squadron_Double_Imperial">
+        <Variant_Of_Existing_Type>Delta7_Squadron_Double</Variant_Of_Existing_Type>
+        <Squadron_Units>Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, Delta7_Imperial </Squadron_Units>
+        <Squadron_Units>Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, Delta7_Imperial </Squadron_Units>
+        <Squadron_Units>Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, Delta7_Imperial </Squadron_Units>
+        <Squadron_Units>Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, Delta7_Imperial </Squadron_Units>
+        <Squadron_Units>Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, Delta7_Imperial </Squadron_Units>
+        <Squadron_Units>Delta7_Imperial, Delta7_Imperial, Delta7_Imperial, Delta7_Imperial </Squadron_Units>
+    </Squadron>
+    
     <!-- arc 170 -->
     <SpaceUnit Name="Generic_ARC_170_Imperial">
         <Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
@@ -162,19 +206,7 @@
 		<Squadron_Units>Missile_Nimbus_Imperial, Missile_Nimbus_Imperial, Missile_Nimbus_Imperial, Missile_Nimbus_Imperial</Squadron_Units>
     </Squadron>
 
-    <!-- Elite Guard V wing -->
-    <SpaceUnit Name="Elite_Guard_Nimbus_Imperial">
-        <Variant_Of_Existing_Type>Elite_Guard_Nimbus</Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <!--<Icon_Name>.tga</Icon_Name>-->
-    </SpaceUnit> 
-
-    <Squadron Name="Elite_Guard_Nimbus_Squadron_Imperial">
-        <Variant_Of_Existing_Type>Elite_Guard_Nimbus_Squadron</Variant_Of_Existing_Type>
-        <Squadron_Units>Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial</Squadron_Units>
-		<Squadron_Units>Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial</Squadron_Units>
-		<Squadron_Units>Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial, Elite_Guard_Nimbus_Imperial</Squadron_Units>
-    </Squadron>
+    <!-- Elite Guard V (Doesn't need one) -->
 
     <!-- Republic Ties -->
     <SpaceUnit Name="Twin_Ion_Engine_Starfighter_Imperial">

@@ -90,7 +90,7 @@ function Get_Hero_Entries(upgrade_object)
 		NoInit = true,
 		Options = {
 			-- FotR_Enhanced Assignable Heroes changed
-			{"YULAREN", Locations = {"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"}, GroundPerceptions = {"Yularen_Resolute_In_Orbit","Yularen_Integrity_In_Orbit","Yularen_Invincible_In_Orbit"}},
+			{"YULAREN", Locations = {"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"}, GroundPerceptions = {"Yularen_Resolute_In_Orbit","Yularen_Integrity_In_Orbit","Yularen_Invincible_In_Orbit", "Yularen_Resolute_SPHAT_In_Orbit"}},
 			{"KILIAN", Locations = {"KILIAN_ENDURANCE"}, GroundPerceptions = {"Kilian_In_Orbit"}},
 			{"WESSEX", Locations = {"WESSEX_REDOUBT"}, GroundPerceptions = {"Wessex_In_Orbit"}},
 			{"BLOCK", Locations = {"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, GroundPerceptions = {"Block_Negotiator_In_Orbit","Block_Vigilance_In_Orbit"}}
@@ -104,7 +104,7 @@ function Get_Hero_Entries(upgrade_object)
 		NoInit = true,
 		Options = {
 			-- FotR_Enhanced Assignable Heroes changed
-			{"YULAREN", Locations = {"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"}, GroundPerceptions = {"Yularen_Resolute_In_Orbit","Yularen_Integrity_In_Orbit","Yularen_Invincible_In_Orbit"}},
+			{"YULAREN", Locations = {"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"}, GroundPerceptions = {"Yularen_Resolute_In_Orbit","Yularen_Integrity_In_Orbit","Yularen_Invincible_In_Orbit", "Yularen_Resolute_SPHAT_In_Orbit"}},
 			{"KILIAN", Locations = {"KILIAN_ENDURANCE"}, GroundPerceptions = {"Kilian_In_Orbit"}},
 			{"WESSEX", Locations = {"WESSEX_REDOUBT"}, GroundPerceptions = {"Wessex_In_Orbit"}},
 			{"BLOCK", Locations = {"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, GroundPerceptions = {"Block_Negotiator_In_Orbit","Block_Vigilance_In_Orbit"}}

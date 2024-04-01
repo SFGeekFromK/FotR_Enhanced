@@ -12052,6 +12052,7 @@
 		<Population_Value>1</Population_Value>
 	</HeroCompany>
 
+	<!-- FotR_Enhanced : Padme Edited to fit new model-->
 
 	<HeroUnit Name="Padme_Amidala">
 		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
@@ -12074,11 +12075,11 @@
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SENATOR </Encyclopedia_Unit_Class>
 
-		<Land_Model_Name>RI_Padme_Amidala_nocape.ALO</Land_Model_Name>
+		<Land_Model_Name>padme_CW.ALO</Land_Model_Name> <!-- FotR_Enhanced : New model -->
 		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
 		<Land_Terrain_Model_Mapping>
 		</Land_Terrain_Model_Mapping>
-		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		<!--<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>--> <!-- FotR_Enhanced : Own animation-->
 		<Icon_Name>i_button_padme.tga</Icon_Name>
 
 		<Max_Speed>1.0</Max_Speed>
@@ -12096,7 +12097,7 @@
 		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
 		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
 
-		<HardPoints>HP_Hero_E5_Carbine</HardPoints>
+		<HardPoints>HP_Padme_Blaster</HardPoints> <!-- FotR_Enhanced : New Hardpoint to match its own blaster -->
 
 		<SFXEvent_Select></SFXEvent_Select>
 		<SFXEvent_Move></SFXEvent_Move>
@@ -12197,6 +12198,13 @@
 		<Population_Value>1</Population_Value>
 	</HeroCompany>
 
+	<HeroUnit Name="Padme_Amidala_Mission">		<!-- FotR_Enhanced : HFM Mission Variant ; blaster difference -->
+		<Variant_Of_Existing_Type>Padme_Amidala</Variant_Of_Existing_Type>
+
+		<HardPoints>HP_Padme_E5_Modified</HardPoints>
+
+		<Lua_Script>PadmeMissionWeapHide</Lua_Script>
+	</HeroUnit>
 
 	<HeroUnit Name="Jar_Jar_Binks">
 		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>

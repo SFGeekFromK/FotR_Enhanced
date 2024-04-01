@@ -272,5 +272,6 @@ return {
     ,TJ912_RECUSANT = {nil, true}
     ,BLOCK_NEGOTIATOR = {nil, true}
     ,BLOCK_VIGILANCE = {nil, true}
+    ,YULAREN_RESOLUTE_SPHAT = {nil, true}
     ,ROHN_TEAM = {nil, false}
 }

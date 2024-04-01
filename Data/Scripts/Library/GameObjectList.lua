@@ -277,6 +277,7 @@ return {
 ["NEEDA_INTEGRITY"] = true,
 ["BLOCK_NEGOTIATOR"] = true,
 ["BLOCK_VIGILANCE"] = true,
+["YULAREN_RESOLUTE_SPHAT"] = true,
 ["TJ912_RECUSANT"] = true,
 ["VENATOR_OFC"] = true,
 ["VENATOR_SPHA_T"] = true,

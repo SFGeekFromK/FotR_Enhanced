@@ -12203,7 +12203,7 @@
 		<Variant_Of_Existing_Type>Padme_Amidala</Variant_Of_Existing_Type>
 
 		<HardPoints>HP_Padme_Blaster</HardPoints>
-		<Lua_Script/>
+		<Lua_Script>GroundHero</Lua_Script>
 	</HeroUnit>
 
 	<HeroUnit Name="Jar_Jar_Binks">

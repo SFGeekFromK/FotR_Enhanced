@@ -42,5 +42,5 @@ return {
 	-- FotR_Enhanced
 	["VENATOR_OFC"] = 0,
     ["VENATOR_SPHA_T"] = 0,
-	["VENATOR_IMPERIAL"] = 0,
+	--["VENATOR_IMPERIAL"] = 0,
 }

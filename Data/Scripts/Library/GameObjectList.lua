@@ -279,10 +279,11 @@ return {
 ["BLOCK_VIGILANCE"] = true,
 ["YULAREN_RESOLUTE_SPHAT"] = true,
 ["TJ912_RECUSANT"] = true,
+["TM171_DH_OMNI"] = true,
 ["VENATOR_OFC"] = true,
 ["VENATOR_SPHA_T"] = true,
 --["VENATOR_IMPERIAL"]=true,
 ["UMBARAN_FRIGATE"] = true,
-["UMBARAN_FRIGATE_INFLUENCE"] = true,
+["UMBARAN_FRIGATE_INFLUENCE"] = true
 -- [""] = true,
 }

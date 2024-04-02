@@ -26,9 +26,9 @@ return {
                 "Republic_AT_XT_Company",
 				"Republic_Flashblind_Group",
 				"Republic_Gian_Company",
-                -- FotR_Enhanced
+                --[[FotR_Enhanced
                 "Venator_Imperial",
-                "Venator_Decolorize",
+                "Venator_Decolorize"]]
             }, false)
 			
 			UnitUtil.SetLockList("EMPIRE", {

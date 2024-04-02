@@ -270,6 +270,7 @@ return {
     -- FotR_Enhanced
     ,NEEDA_INTEGRITY = {nil, true}
     ,TJ912_RECUSANT = {nil, true}
+    ,TM171_DH_OMNI={nil, true}
     ,BLOCK_NEGOTIATOR = {nil, true}
     ,BLOCK_VIGILANCE = {nil, true}
     ,YULAREN_RESOLUTE_SPHAT = {nil, true}

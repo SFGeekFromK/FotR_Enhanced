@@ -45,7 +45,7 @@ function Get_Swap_Entry(upgrade_object)
 		["YULAREN_RESOLUTE_UPGRADE_RESOLUTE_SPHAT"] = {"Yularen_Resolute","Yularen_Resolute_SPHAT"},
 		["YULAREN_RESOLUTE_SPHAT_UPGRADE_INVINCIBLE"] = {"Yularen_Resolute_SPHAT","Yularen_Invincible"},
 		["OFC_SPHA_T_REFIT"] = {"Venator_OFC","Venator_SPHA_T",["location_check"] = true},
-		["VENATOR_DECOLORIZE"]={"Generic_Venator","Imperial_Venator",["location_check"] = true},
+		--["VENATOR_DECOLORIZE"]={"Generic_Venator","Imperial_Venator",["location_check"] = true},
 	}
 	return swaps[upgrade_object]
 end

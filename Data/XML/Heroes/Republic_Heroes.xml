@@ -12098,7 +12098,7 @@
 		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
 
 		<HardPoints>HP_Padme_E5_Modified</HardPoints> <!-- FotR_Enhanced : New Hardpoint to match its own blaster -->
-		<Lua_Script>PadmeMissionWeapHide</Lua_Script> <!-- FotR_Enhanced : Existing new model's hard point deletion -->
+		<Lua_Script>PadmeMissionWeapHide</Lua_Script> <!-- FotR_Enhanced : Delets New model's original hardpoint -->
 
 		<SFXEvent_Select></SFXEvent_Select>
 		<SFXEvent_Move></SFXEvent_Move>

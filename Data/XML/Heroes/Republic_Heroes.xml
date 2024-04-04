@@ -12054,7 +12054,7 @@
 
 	<!-- FotR_Enhanced : Padme Edited to fit new model-->
 
-	<HeroUnit Name="Padme_Amidala"> <!-- FotR_Enhanced : For HFM Mission ; blaster difference -->
+	<HeroUnit Name="Padme_Amidala"> 
 		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Text_ID>TEXT_HERO_PADME</Text_ID>
@@ -12097,8 +12097,7 @@
 		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
 		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
 
-		<HardPoints>HP_Padme_E5_Modified</HardPoints> <!-- FotR_Enhanced : New Hardpoint to match its own blaster -->
-		<Lua_Script>PadmeMissionWeapHide</Lua_Script> <!-- FotR_Enhanced : Delets New model's original hardpoint -->
+		<HardPoints>HP_Padme_Blaster</HardPoints> <!-- FotR_Enhanced : New Hardpoint to match its own blaster -->
 
 		<SFXEvent_Select></SFXEvent_Select>
 		<SFXEvent_Move></SFXEvent_Move>
@@ -12198,13 +12197,6 @@
 		<Ranking_In_Category> 1 </Ranking_In_Category>
 		<Population_Value>1</Population_Value>
 	</HeroCompany>
-
-	<HeroUnit Name="Padme_Amidala_NonMission">		<!-- FotR_Enhanced : Non Mission Variant ; blaster difference -->
-		<Variant_Of_Existing_Type>Padme_Amidala</Variant_Of_Existing_Type>
-
-		<HardPoints>HP_Padme_Blaster</HardPoints>
-		<Lua_Script>GroundHero</Lua_Script>
-	</HeroUnit>
 
 	<HeroUnit Name="Jar_Jar_Binks">
 		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>

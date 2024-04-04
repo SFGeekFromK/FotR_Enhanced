@@ -282,7 +282,6 @@ return {
 ["TM171_DH_OMNI"] = true,
 ["VENATOR_OFC"] = true,
 ["VENATOR_SPHA_T"] = true,
---["VENATOR_IMPERIAL"]=true,
 ["UMBARAN_FRIGATE"] = true,
 ["UMBARAN_FRIGATE_INFLUENCE"] = true
 -- [""] = true,

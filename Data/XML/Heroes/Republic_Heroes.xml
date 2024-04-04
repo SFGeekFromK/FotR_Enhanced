@@ -12169,7 +12169,7 @@
 		<Required_Planets></Required_Planets>
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 		<Company_Transport_Unit>T6_Shuttle_Landing_Craft</Company_Transport_Unit>
-		<Company_Units>Padme_Amidala_NonMission</Company_Units> 
+		<Company_Units>Padme_Amidala</Company_Units> 
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 

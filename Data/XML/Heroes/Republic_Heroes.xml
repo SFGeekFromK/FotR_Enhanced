@@ -4594,8 +4594,7 @@
 		</Abilites>
 	</UniqueUnit>
 
-	<!--Block Respawn-->
-	<UniqueUnit Name="Block_Vigilance">
+	<UniqueUnit Name="Block_Vigilance"> <!-- Respawn -->
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Variant_Of_Existing_Type>Block_Negotiator</Variant_Of_Existing_Type>
 		<Encyclopedia_Text>
@@ -5922,7 +5921,7 @@
 		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name>
 		<Icon_Name>i_button_kilian.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
-			<Is_Named_Hero>Yes</Is_Named_Hero>	
+		<Is_Named_Hero>Yes</Is_Named_Hero>	
 		<Text_ID>TEXT_HERO_KILIAN</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
@@ -13735,7 +13734,7 @@
 		<Variant_Of_Existing_Type>Corellian_Corvette</Variant_Of_Existing_Type>
 		<Icon_Name>I_BUTTON_CAPTAIN_ANTILLIES_CW.TGA</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
-			<Is_Named_Hero>Yes</Is_Named_Hero>	
+		<Is_Named_Hero>Yes</Is_Named_Hero>	
 		<Text_ID>TEXT_HERO_ANTILLES_CW</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 

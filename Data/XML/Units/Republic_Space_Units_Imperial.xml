@@ -108,7 +108,7 @@
     <SpaceUnit Name="Generic_Gladiator_Imperial">
         <Variant_Of_Existing_Type>Generic_Gladiator</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>i_button_Gladiator_imp.tga</Icon_Name>
+        <Icon_Name>I_BUTTON_GLADIATOR.TGA</Icon_Name>
     </SpaceUnit>
 
     <SpaceUnit Name="Generic_Imperial_I_Frigate_Imperial">

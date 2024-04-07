@@ -1,5 +1,7 @@
 ﻿TEXT_NOTE,Put text changes for submods here
 
+TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_UMBARA_FOTR,Umbara: Can build Umbaran Support Frigate at 8+ influence.
+TEXT_DOCUMENTATION_HEADER_FOTR_ENHANCED_FEATS,-- FotR_Enhanced features --
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_WARTHOG,Warthog (V-19 Torrent/Clone Z-95 Headhunter Squadron) - Unlocks with Venators | Default Hero: Barton Coburn
 TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT_COMMANDER,Class: Lieutenant Commander
 TEXT_EVENT_WARTHOG_SELECTOR_HEADER,Assign Warthog's Hunter Squadron
@@ -11,6 +13,7 @@ TEXT_HERO_ROHN,Rohn
 TEXT_HERO_TJ912,TJ-912
 TEXT_HERO_TM171,TM-171
 TEXT_HERO_WARTHOG, Warthog
+TEXT_PLANET_INFO_UMBARA_INFLUENCE_REWARD,•Unlocks Umbaran Support Frigate at 8+ influence
 TEXT_SPEECH_BLOCK_RETURNS_VIGILANCE,Admiral Block: Impressive... though it did cost my ship, General Kenobi's idea to self-destruct my ship did manage to deal a huge blow against the enemy at the last moment. - [Admiral Block has returned in control of the Venator-class, Vigilance].
 TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE,Health: 70 | Shields: 45
 TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE,Health: 150 | Shields: 60
@@ -37,8 +40,10 @@ TEXT_TOOLTIP_RED_GUARD, Nicknamed Redrobes, they were elite guards drawn from se
 TEXT_TOOLTIP_RED_GUARD_HEALTH,Health: 80 (Hero)
 TEXT_TOOLTIP_RED_GUARD_MOVE,Speed: 1.2
 TEXT_TOOLTIP_RED_GUARD_WEAP1,1x Forcepike: 1 / 1.0s / 1m
+TEXT_TOOLTIP_RESOLUTE_SPHAT_UPGRADE, Equip Resolute with SPHA-T in the hanger.
 TEXT_TOOLTIP_ROHN, Rohn was a general in command of Shrouded Offensive, a military operation at the planet of Oster assigned by Darth Vader himself.
 TEXT_TOOLTIP_TJ912,TJ-912 is a tactical droid that served under one of Count Dooku's Dark Acolyte Asajj Ventress. He commanded the Separatists forces during the Battle of Sullust against Generals Obi-Wan Kenobi and Anakin Skywalker. 
+TEXT_TOOLTIP_TM171,TM-171 was a CIS T-series tactical droid who was in charge of resupplying Umbaran Militia during the Republic campaign against the planet Umbara. During the resupply operation, three clone troopers infiltrated his ship and destroyed it despite droid's presence, preventing munitions delivery from the Confederacy.
 TEXT_TOOLTIP_TRAIT_OFC_OFFICER,Open Circle Fleet Offcier
 TEXT_TOOLTIP_TRAIT_PLO_BRO, Plo's Bros
 TEXT_TOOLTIP_UMBARAN_FRIGATE,A fleet tender designed by the government of Umbara, this frigate is able to supply and reinforce CIS cruisers in battle and provide reapirs to fighter groups.
@@ -63,6 +68,4 @@ TEXT_UNIT_VENATOR_DECOLORIZE,Decolorize Venators
 TEXT_UNIT_VENATOR_OFC,OCF Venator Star Destroyer
 TEXT_UNIT_VENATOR_OFC_SPHA_T,OCF Venator Star Destroyer (SPHA-T)
 
-
-TEXT_TOOLTIP_RESOLUTE_SPHAT_UPGRADE, 
-TEXT_TOOLTIP_TM171,
+TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+% Damage (OCF Venators Only) [Stacking bonus]

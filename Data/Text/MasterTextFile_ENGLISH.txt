@@ -1095,6 +1095,7 @@ TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_LIST_CIS_FACTORIES,CIS Factory worlds: 
 TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_MANDALORE_FOTR,Mandalore: Can build Mandalorian Soldiers and Kom'rk Fighters at 7+ influence, Mandalorian Commandos at 8+ influence
 TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_TD_FACTORY_FOTR,CIS Factory worlds: Can gain Tactical Droid minor heroes (ground and space) from Factory at 4 influence and higher (CIS)
 TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_THYRSUS,Thyrsus: Can build Sun Guard at 7+ influence
+TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_UMBARA_FOTR,Umbara: Can build Umbaran Support Frigate at 8+ influence.
 TEXT_DOCUMENTATION_BODY_INFLUENCE_SPACE_STRUCTURE,All Space Structure Slots Full: +1 (Starbase, Economic, Construction, Secondary Defense)
 TEXT_DOCUMENTATION_BODY_ION_1,| 3    | - Ion Beam
 TEXT_DOCUMENTATION_BODY_ION_2,| 6    | - Ion Grenade
@@ -1311,6 +1312,7 @@ TEXT_DOCUMENTATION_BODY_TRAITINTELLIGENCEOFFICER,Intelligence Officer: Full Syst
 TEXT_DOCUMENTATION_BODY_TRAITINTERDICTORCOMMANDER,Immobilizer Commander: +10% Health\+5% Shield\+10% Damage\+5% Defense (Immobilizer Cruisers Only) [Stacking bonus]
 TEXT_DOCUMENTATION_BODY_TRAITKUATOFKUAT,Kuat of Kuat: +5% Health\+5% Shield (KDY Products Only), 10% cost reduction on all KDY Products
 TEXT_DOCUMENTATION_BODY_TRAITMANDOHATE,Hatred Through The Centuries: -20% Health (Mandalorians Only, including heroes) [Stacking bonus]
+TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+% Damage (OCF Venators Only) [Stacking bonus]
 TEXT_DOCUMENTATION_BODY_TRAITOVERSEER,Overseer: Time reduction bonus
 TEXT_DOCUMENTATION_BODY_TRAITPERSONALCOMBATENTHUSIAST,Personal Combat Enthusiast: 5% Health\+10% Damage\+10% Speed (Infantry Only)
 TEXT_DOCUMENTATION_BODY_TRAITPOLITICALANIMAL,Political Animal: 10% build time reduction, 10% build cost increase
@@ -1415,6 +1417,7 @@ TEXT_DOCUMENTATION_HEADER_COMPANIES_TECHNO_UNION_FOTR,Techno Union - Geonosis, B
 TEXT_DOCUMENTATION_HEADER_COMPANIES_TRANSGALMEG_FOTR,TransGalMeg - Bespin, Pako Ramoon, Saijo, Vulpter | CIS
 TEXT_DOCUMENTATION_HEADER_COMPANIES_UBRIKKIAN_FOTR,Ubrikkian Industries - Charros, Kuat, Kwenn, Ubrikkia | Hutts
 TEXT_DOCUMENTATION_HEADER_COMPANIES_UULSHOS_FOTR,Uulshos Manufacturing - Etti IV, Ession | GAR
+TEXT_DOCUMENTATION_HEADER_FOTR_ENHANCED_FEATS,-- FotR_Enhanced features --
 TEXT_DOCUMENTATION_HEADER_GENERIC_MISSIONS,=== Generic Missions (Available to all factions) ======================
 TEXT_DOCUMENTATION_HEADER_HISTORICALS,=== Guide: Historical Galactic Conquest Progression ==================================
 TEXT_DOCUMENTATION_HEADER_INFLUENCE,=== Influence ==========================================
@@ -9010,7 +9013,7 @@ TEXT_PLANET_INFO_UMARENK_POPULATION,Native: Umaren'k'sa\nImmigrated: Hemes Arbor
 TEXT_PLANET_INFO_UMARENK_REVOLT_OWNER,Independent Forces
 TEXT_PLANET_INFO_UMBARA_FAUNA,Banshee | Gladiopod | Mantorr | Skeeris | Slybex | Vixian Mauler | Vixus
 TEXT_PLANET_INFO_UMBARA_HISTORY,Informally known as the "Shadow World", Umbara is a perpetually darkened planet in the realm of the Ghost Nebula. Umbara has a mixed history of galactic allegiance; a member of the Republic since its earliest days but also spending considerable periods under Sith influence, such as under the New Sith Empire and later the Brotherhood of Darkness when the planet hosted a Sith assassin training academy.
-TEXT_PLANET_INFO_UMBARA_INFLUENCE_REWARD,None
+TEXT_PLANET_INFO_UMBARA_INFLUENCE_REWARD,•Unlocks Umbaran Support Frigate at 8+ influence
 TEXT_PLANET_INFO_UMBARA_POPULATION,Native: Umbaran\n55 Million
 TEXT_PLANET_INFO_UMBARA_REVOLT_OWNER,Independent Forces
 TEXT_PLANET_INFO_URCH_FAUNA,Various
@@ -14845,6 +14848,7 @@ TEXT_TOOLTIP_RESEARCH_WEAP2,1x Medium Laser Cannon: 3 / 3.0s / 4.4km
 TEXT_TOOLTIP_RESEARCH_WEAP3,1x Concussion Missile: 2 / 5.0s / 4.4km
 TEXT_TOOLTIP_RESHUL,Reshul was a Shell Hutt of some repute, a small and somewhat reclusive clan of Hutts famous for living in armored repulsor shells.
 TEXT_TOOLTIP_RESIDUAL_INFLUENCE,Residual Influence
+TEXT_TOOLTIP_RESOLUTE_SPHAT_UPGRADE, Equip Resolute with SPHA-T in the hanger.
 TEXT_TOOLTIP_RESOURCE_GARRISON,Corporate Security Trooper Squad: 1 / 0
 TEXT_TOOLTIP_RESPAWN_DOOKU,Force Doppelgänger: Respawns after his first death
 TEXT_TOOLTIP_RESPAWN_DURGE,Ancient Revenant: Respawn chance after his death (Decreases after each death)
@@ -15740,7 +15744,7 @@ TEXT_TOOLTIP_TIE_BOMBER,A bomber armed with proton torpedoes. It replaces the un
 TEXT_TOOLTIP_TIE_FIGHTER,A speedy and maneuverable light fighter that became one of the most recognizable Imperial symbol after being chosen to standardize fighter models shortly after the Empire's founding. It is cheap and lacks shielding and adequate armor compared to other designs. It is best used en-masse to engage enemy fighters and bombers.
 TEXT_TOOLTIP_TIE_STARFIGHTER,An upgrade of the Republic's T.I.E Starfighter, the TIE Starfighter was the first member of the TIE family designed in the Imperial era. The Empire needed vast numbers of fighters to occupy an entire galaxy, so the TIE Starfighter was quickly phased out in favor of the less capable and less expensive TIE/ln (better known as the TIE Fighter).
 TEXT_TOOLTIP_TJ912,TJ-912 is a tactical droid that served under one of Count Dooku's Dark Acolyte Asajj Ventress. He commanded the Separatists forces during the Battle of Sullust against Generals Obi-Wan Kenobi and Anakin Skywalker. 
-TEXT_TOOLTIP_TM171,
+TEXT_TOOLTIP_TM171,TM-171 was a CIS T-series tactical droid who was in charge of resupplying Umbaran Militia during the Republic campaign against the planet Umbara. During the resupply operation, three clone troopers infiltrated his ship and destroyed it despite droid's presence, preventing munitions delivery from the Confederacy.
 TEXT_TOOLTIP_TNT,Originally a mining vehicle designed for the spice mines of Kessel during the era of the Republic, the Treaded Neutron Torch was adapted into military usage during the collapse of the Galactic Empire as makeshift assault tanks. A hull designed to survive perilous mine shafts offers a surprising amount of protection in combat and torches capable of melting easily through rock are also capable of burning their way through lots of other material that might see use on a battlefield.
 TEXT_TOOLTIP_TNT_COMPANY,Company: 3x - Treaded Neutron Torch
 TEXT_TOOLTIP_TNT_HEALTH,Health: 250 (Heavy Vehicle)
@@ -16940,7 +16944,7 @@ TEXT_UNIT_NIMBUS_COMMANDO_SQUAD,Nimbus Commando Squad
 TEXT_UNIT_NOVA_COURIER,YKL-37R Nova Courier
 TEXT_UNIT_NOVASWORD,NovaSword Space Superiority Fighter
 TEXT_UNIT_NTB_630,NTB-630 Naval Bomber
-TEXT_UNIT_NU_SHUTTLE,Nu-class Shuttle
+TEXT_UNIT_NU_SHUTTLE,Nu-class attack shuttle
 TEXT_UNIT_OG9_COMPANY,OG-9 Homing Spider Droid Company
 TEXT_UNIT_OG9HOMINGSPIDERDROID,OG-9 Homing Spider Droid
 TEXT_UNIT_OOM_DROID,OOM Command Droid

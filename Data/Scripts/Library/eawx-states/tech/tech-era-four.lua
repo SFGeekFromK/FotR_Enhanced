@@ -24,10 +24,7 @@ return {
                 "Invincible_Cruiser",
                 "Republic_Gaba18_Group",
                 "Republic_AT_XT_Company",
-				"Republic_Gian_Company",
-                --[[FotR_Enhanced
-                "Venator_Imperial",
-                "Venator_Decolorize"]]
+				"Republic_Gian_Company"
             }, false)
            
             UnitUtil.SetLockList("REBEL", {

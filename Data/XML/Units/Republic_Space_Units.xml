@@ -3966,7 +3966,6 @@
 			TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC
 		</Encyclopedia_Text>
 
-		<Armor_Type> ArmourS_Capital </Armor_Type>
 		<Tactical_Health>3400</Tactical_Health>
 		<HardPoints>
 		Venator_Bay, Venator_Engines, HP_Venator_OFC_01, HP_Venator_OFC_02, HP_Venator_OFC_03, HP_Venator_OFC_04, HP_Venator_OFC_05, HP_Venator_OFC_06, HP_Venator_07, HP_Venator_08, HP_Venator_OFC_Turret_01, HP_Venator_OFC_Turret_02, HP_Venator_OFC_Turret_03, HP_Venator_OFC_Turret_04 
@@ -4141,15 +4140,9 @@
 		</Abilities>
 	</SpaceUnit>
 
-    <SpaceUnit Name="Generic_Venator_Imperial">
-        <Variant_Of_Existing_Type>Generic_Venator</Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color> 
-        <Icon_Name>i_button_jedi_Cruiser.tga</Icon_Name>
-    </SpaceUnit> <!--Remove Soon-->
-
 	<SpaceUnit Name="Template_Venator_Hero">
 		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
-
+		<Tactical_Health>3580</Tactical_Health>
 		<Hardpoints></Hardpoints>
 	</SpaceUnit>
 

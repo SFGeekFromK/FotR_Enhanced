@@ -4484,6 +4484,7 @@
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
 		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
 		TEXT_TOOLTIP_TRAIT_OFC_OFFICER
+		TEXT_TOOLTIP_TRAIT_AMBUSHER
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_BLOCK
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
@@ -7785,10 +7786,10 @@
 
 	<UniqueUnit Name="Tarkin_Venator">
 		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
-		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name>
+		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name> <!-- FotR_Enhanced -->
 		<Icon_Name>i_button_tarkin.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
-			<Is_Named_Hero>Yes</Is_Named_Hero>	
+		<Is_Named_Hero>Yes</Is_Named_Hero>	
 		<Text_ID>TEXT_HERO_WILHUFF_TARKIN</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
@@ -12153,7 +12154,7 @@
 		</Abilities>
 	</HeroUnit>
 
-	<HeroCompany Name="Padme_Amidala_Team"> <!-- FotR_Enhanced : Spawns nonmission variant -->
+	<HeroCompany Name="Padme_Amidala_Team">
 		<Text_ID>TEXT_HERO_PADME</Text_ID>
 		<Icon_Name>i_button_padme.tga</Icon_Name>
 		<Is_Dummy>Yes</Is_Dummy>

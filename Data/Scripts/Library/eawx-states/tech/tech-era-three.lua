@@ -28,10 +28,7 @@ return {
                 "Republic_HAET_Group",
                 "Republic_AT_AP_Walker_Company",
                 "Republic_AT_OT_Walker_Company",
-				"Republic_Gian_Company",
-                --[[FotR_Enhanced
-                "Venator_Imperial",
-                "Venator_Decolorize"]]
+				"Republic_Gian_Company"
             }, false)
 			           
             UnitUtil.SetLockList("REBEL", {

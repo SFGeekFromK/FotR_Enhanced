@@ -3001,7 +3001,7 @@
 		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
 	</UpgradeObject>	
 
-	<UpgradeObject Name="IA_YULAREN_TESTING">
+	<UpgradeObject Name="IA_YULAREN_RESOLUTE">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire, Rebel</Affiliation>
 		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>

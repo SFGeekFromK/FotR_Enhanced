@@ -5168,7 +5168,6 @@
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
 			</Combat_Bonus_Ability>
 		</Abilities>

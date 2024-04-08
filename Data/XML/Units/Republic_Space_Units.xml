@@ -3966,10 +3966,6 @@
 			TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC
 		</Encyclopedia_Text>
 
-		<Tactical_Health>3400</Tactical_Health>
-		<HardPoints>
-		Venator_Bay, Venator_Engines, HP_Venator_OFC_01, HP_Venator_OFC_02, HP_Venator_OFC_03, HP_Venator_OFC_04, HP_Venator_OFC_05, HP_Venator_OFC_06, HP_Venator_07, HP_Venator_08, HP_Venator_OFC_Turret_01, HP_Venator_OFC_Turret_02, HP_Venator_OFC_Turret_03, HP_Venator_OFC_Turret_04 
-		</HardPoints>
 		<Affiliation>Empire</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Timeline>0</Required_Timeline>
@@ -4031,26 +4027,9 @@
 		<Reserve_Spawned_Units_Tech_5>V-Wing_Squadron, 3</Reserve_Spawned_Units_Tech_5>		
 		<Reserve_Spawned_Units_Tech_5>Republic_Z95_Headhunter_Squadron, 3</Reserve_Spawned_Units_Tech_5>		
 		<Reserve_Spawned_Units_Tech_5>BTLB_Y-WING_SQUADRON, 3</Reserve_Spawned_Units_Tech_5>
-
-
-		<Lua_Script>GenericGameObject</Lua_Script>
 		
 		<Death_Clone>Damage_Normal, Venator_OFC_Death_Clone</Death_Clone>
 		
-		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary ability -->
-			<Unit_Ability>
-				<Type>power_to_weapons</Type>
-				<Expiration_Seconds>15</Expiration_Seconds>
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.85f</Mod_Multiplier>
-				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-1f</Mod_Multiplier>
-				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
-				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
-				<Recharge_Seconds>80</Recharge_Seconds>
-
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Venator_OFC</SFXEvent_GUI_Unit_Ability_Activated>
-			</Unit_Ability>
-		</Unit_Abilities_Data>
 	</SpaceUnit>
 
 	<SpaceUnit Name="Venator_SPHA_T">
@@ -4142,8 +4121,13 @@
 
 	<SpaceUnit Name="Template_Venator_Hero">
 		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
-		<Tactical_Health>3580</Tactical_Health>
-		<Hardpoints></Hardpoints>
+		<Tactical_Health>3576</Tactical_Health>
+		<Hardpoints>
+			HP_Venator_Hero_Turret_01, HP_Venator_Hero_Turret_02, HP_Venator_Hero_Turret_03, HP_Venator_Hero_Turret_04, 
+			HP_Venator_Hero_01, HP_Venator_Hero_02, HP_Venator_Hero_03, HP_Venator_Hero_04, 
+			HP_Venator_Hero_05, HP_Venator_Hero_06, HP_Venator_Hero_07, HP_Venator_Hero_08,
+			Venator_Hero_Bay, Venator_Hero_Engines
+		</Hardpoints>
 	</SpaceUnit>
 
 	<!-- Fighters -->

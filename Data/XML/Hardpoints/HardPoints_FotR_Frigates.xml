@@ -2740,12 +2740,12 @@
 
   <!-- Venator Heroes -->
 
-	<HardPoint Name="HP_Venator_Turret_01">
+	<HardPoint Name="HP_Venator_Hero_Turret_01">
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_TURBOLASER_HEAVY_DUAL</Tooltip_Text>
-		<Health>230.0</Health>
+		<Health>254.0</Health>
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2762,8 +2762,8 @@
 		<Fire_Cone_Width>190.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green_Blue_Dual_Heavy</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>2</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>3600.0</Fire_Range_Distance>
@@ -2780,12 +2780,12 @@
 		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
-	<HardPoint Name="HP_Venator_Turret_02">
+	<HardPoint Name="HP_Venator_Hero_Turret_02">
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_TURBOLASER_HEAVY_DUAL</Tooltip_Text>
-		<Health>230.0</Health>
+		<Health>254.0</Health>
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2802,8 +2802,8 @@
 		<Fire_Cone_Width>190.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green_Blue_Dual_Heavy</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>2</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>3600.0</Fire_Range_Distance>
@@ -2820,12 +2820,12 @@
 		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
-	<HardPoint Name="HP_Venator_Turret_03">
+	<HardPoint Name="HP_Venator_Hero_Turret_03">
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_TURBOLASER_HEAVY_DUAL</Tooltip_Text>
-		<Health>230.0</Health>
+		<Health>254.0</Health>
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2842,8 +2842,8 @@
 		<Fire_Cone_Width>190.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green_Blue_Dual_Heavy</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>2</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>3600.0</Fire_Range_Distance>
@@ -2860,12 +2860,12 @@
 		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
-	<HardPoint Name="HP_Venator_Turret_04">
+	<HardPoint Name="HP_Venator_Hero_Turret_04">
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_TURBOLASER_HEAVY_DUAL</Tooltip_Text>
-		<Health>230.0</Health>
+		<Health>254.0</Health>
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2882,8 +2882,8 @@
 		<Fire_Cone_Width>190.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green_Blue_Dual_Heavy</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>2</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>3600.0</Fire_Range_Distance>
@@ -2900,12 +2900,12 @@
 		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
-	<HardPoint Name="HP_Venator_01">
+	<HardPoint Name="HP_Venator_Hero_01">
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_TURBOLASER_DUAL</Tooltip_Text>
-		<Health>230.0</Health> <!-- Was 250 -->
+		<Health>254.0</Health> <!-- Was 250 -->
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2919,8 +2919,8 @@
 		<Fire_Cone_Width>165.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green_Blue_Dual_Medium</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>1</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
@@ -2937,12 +2937,12 @@
 		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
-	<HardPoint Name="HP_Venator_02">
+	<HardPoint Name="HP_Venator_Hero_02">
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_TURBOLASER_DUAL</Tooltip_Text>
-		<Health>230.0</Health> <!-- Was 250 -->
+		<Health>254.0</Health> <!-- Was 250 -->
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2956,8 +2956,8 @@
 		<Fire_Cone_Width>165.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green_Blue_Dual_Medium</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>1</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
@@ -2974,12 +2974,12 @@
 		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
-	<HardPoint Name="HP_Venator_03">
+	<HardPoint Name="HP_Venator_Hero_03">
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
-		<Health>230.0</Health>
+		<Health>254.0</Health>
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2993,8 +2993,8 @@
 		<Fire_Cone_Width>165.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green_Blue_Medium</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>1.67</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>1.67</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>1.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.5</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>2</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
@@ -3011,12 +3011,12 @@
 		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
-	<HardPoint Name="HP_Venator_04">
+	<HardPoint Name="HP_Venator_Hero_04">
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
-		<Health>230.0</Health>
+		<Health>254.0</Health>
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -3030,8 +3030,8 @@
 		<Fire_Cone_Width>165.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green_Blue_Medium</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>1.67</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>1.67</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>1.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.5</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>2</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>3100.0</Fire_Range_Distance>
@@ -3048,12 +3048,12 @@
 		<Fire_Inaccuracy_Distance> SuperCapital, 1.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
-	<HardPoint Name="HP_Venator_05">
+	<HardPoint Name="HP_Venator_Hero_05">
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_LASERCANNON_LIGHT_DUAL</Tooltip_Text>
-		<Health>230.0</Health> <!-- Was 250 -->
+		<Health>254.0</Health> <!-- Was 250 -->
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -3067,8 +3067,8 @@
 		<Fire_Cone_Width>165.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Laser_Cannon_Green_Blue_Dual_Light</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>0.38</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>0.38</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>0.34</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>0.34</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>2</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>1850.0</Fire_Range_Distance>
@@ -3085,12 +3085,12 @@
 		<Fire_Inaccuracy_Distance> SuperCapital, 10.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
-	<HardPoint Name="HP_Venator_06">
+	<HardPoint Name="HP_Venator_Hero_06">
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_LASERCANNON_LIGHT_DUAL</Tooltip_Text>
-		<Health>230.0</Health> <!-- Was 250 -->
+		<Health>254.0</Health> <!-- Was 250 -->
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -3104,8 +3104,8 @@
 		<Fire_Cone_Width>165.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Laser_Cannon_Green_Blue_Dual_Light</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>0.38</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>0.38</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>0.34</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>0.34</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>2</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>1850.0</Fire_Range_Distance>
@@ -3122,12 +3122,12 @@
 		<Fire_Inaccuracy_Distance> SuperCapital, 10.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 	
-	<HardPoint Name="HP_Venator_07">
+	<HardPoint Name="HP_Venator_Hero_07">
 		<Type> HARD_POINT_WEAPON_TORPEDO </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_TORPEDOES</Tooltip_Text>
-		<Health>230.0</Health>
+		<Health>254.0</Health>
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Torpedo_Death</Death_Explosion_SFXEvent>
@@ -3141,8 +3141,8 @@
 		<Fire_Cone_Width>155.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Proton_Torpedo</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>20.0</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>20.0</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>18.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>18.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>2</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>2600.0</Fire_Range_Distance>
@@ -3151,12 +3151,12 @@
 		<Fire_Category_Restrictions> Fighter, Bomber, Transport </Fire_Category_Restrictions>
 	</HardPoint>
 
-	<HardPoint Name="HP_Venator_08">
+	<HardPoint Name="HP_Venator_Hero_08">
 		<Type> HARD_POINT_WEAPON_TORPEDO </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_WEAPON_TORPEDOES</Tooltip_Text>
-		<Health>230.0</Health>
+		<Health>254.0</Health>
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Torpedo_Death</Death_Explosion_SFXEvent>
@@ -3170,8 +3170,8 @@
 		<Fire_Cone_Width>155.0</Fire_Cone_Width>
 		<Fire_Cone_Height>180.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_Ship_Proton_Torpedo</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>20.0</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>20.0</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>18.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>18.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>2</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>2600.0</Fire_Range_Distance>
@@ -3180,7 +3180,37 @@
 		<Fire_Category_Restrictions> Fighter, Bomber, Transport </Fire_Category_Restrictions>
 	</HardPoint>
 
+	<HardPoint Name="Venator_Hero_Bay">
+		<Type> HARD_POINT_FIGHTER_BAY </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>
+		<Health>274.0</Health>
+		
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>  <!-- STUBBED PLACEHOLDER -->
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent> <!-- STUBBED PLACEHOLDER -->
+		
+		<Attachment_Bone>Hangar</Attachment_Bone>
+		<Collision_Mesh>Hangar</Collision_Mesh>
+		<Damage_Particles>Hangar</Damage_Particles>
+	</HardPoint>
 
+	<HardPoint Name="Venator_Hero_Engines">
+		<Type> HARD_POINT_ENGINE </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
+		<Health>254.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Engines_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>EV_Venator_Engine_Blast.alo</Model_To_Attach>
+		<Attachment_Bone>Engines</Attachment_Bone> <!-- This is an attachment bone for the HUD reticle centering, even though no model is attached -->
+		<Collision_Mesh>Engines</Collision_Mesh>
+		<Damage_Decal>Venator_Blast</Damage_Decal>
+		<Damage_Particles>Venator_Blast</Damage_Particles>
+	</HardPoint>
 
 
 

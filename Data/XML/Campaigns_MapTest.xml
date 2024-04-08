@@ -106,20 +106,7 @@
 		<Starting_Forces> Empire, Coruscant, Pelta_Support </Starting_Forces>		
 		<Starting_Forces> Empire, Coruscant, Pelta_Support </Starting_Forces>		
 		<Starting_Forces> Empire, Coruscant, Pelta_Support </Starting_Forces>
-		<!--<Starting_Forces> Empire, Coruscant, Yularen_Integrity </Starting_Forces>-->
-
-		<Starting_Forces> Empire, Coruscant, Yularen_Resolute </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Tarkin_Venator </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
-
-
+		<Starting_Forces> Empire, Coruscant, Yularen_Integrity </Starting_Forces>		
 		<Starting_Forces> Empire, Coruscant, Dreadnaught </Starting_Forces>		
 		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>		
 		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
@@ -131,9 +118,9 @@
 		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
-		<!--<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>-->
+		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
 		
 		
 		<Starting_Forces> Empire, Coruscant, E_Ground_Barracks </Starting_Forces>

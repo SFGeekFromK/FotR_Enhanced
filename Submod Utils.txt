@@ -38,7 +38,40 @@ Hutt_HuttGuard.ALO
 
 ------Todo Lists------
 
+Change OCF Officer Heroes' template with template_venator_hero
+adjust hardpoints on yularen sphat variants
+add in ocf bonus to all ocf officers
+venator_sphat hardpoint adjustment, 
+venator_ofc fighter complement override
+venator_ofc stat change 
 
 
 
 ----------------------
+
+
+
+            <!-- FotR_Enhanced -->
+			<Combat_Bonus_Ability Name="_OFC_Officer_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+
+
+*** Venator OFC Test results *** 
+
+Venator OFC with HERO
+00:45
+
+Venator OFC Without HERO
+00:53
+
+Generic Venator
+00:53

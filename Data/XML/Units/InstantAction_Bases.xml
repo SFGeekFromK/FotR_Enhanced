@@ -66,8 +66,7 @@
 				IA_Generic_Gladiator,
 				IA_Generic_Imperial_I_Frigate,
 				IA_Generic_Victory_Fleet_Destroyer,
-				IA_VENATOR_OFC,
-				IA_YULAREN_RESOLUTE
+				IA_VENATOR_OFC
 		</Tactical_Buildable_Objects_Campaign>
 
 		<Space_Model_Name>INSTANTACTION_Republic.alo</Space_Model_Name>

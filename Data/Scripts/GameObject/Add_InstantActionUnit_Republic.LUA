@@ -53,7 +53,8 @@ function Definitions()
 	"GENERIC_GLADIATOR",
 	"GENERIC_IMPERIAL_I_FRIGATE",
 	-- FotR_Enhanced
-	"VENATOR_OFC"
+	"VENATOR_OFC",
+	"YULAREN_RESOLUTE"
 }
 
 	Define_State("State_Init", State_Init);

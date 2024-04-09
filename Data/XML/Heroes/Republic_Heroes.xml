@@ -1818,6 +1818,7 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 	</UniqueUnit>
+	
 	<Container Name="Odd_Ball_Torrent_Squad_Seven_Container">
 		<Variant_Of_Existing_Type>Torrent_Squadron_Container</Variant_Of_Existing_Type>
 
@@ -4475,7 +4476,7 @@
 
 	<UniqueUnit Name="Block_Negotiator">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
 		<Icon_Name>i_button_block.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -4493,7 +4494,7 @@
 		TEXT_TOOLTIP_VENATOR_HULL 
 		TEXT_TOOLTIP_VENATOR_SHIELD
 		TEXT_TOOLTIP_VENATOR_MOVE
-		TEXT_TOOLTIP_VENATOR_OFC_SQUADRON
+		TEXT_TOOLTIP_VENATOR_SQUADRON_BLOCK
 		TEXT_TOOLTIP_VENATOR_WEAP1
 		TEXT_TOOLTIP_VENATOR_WEAP2 
 		TEXT_TOOLTIP_VENATOR_WEAP3
@@ -4591,7 +4592,19 @@
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
-			</Combat_Bonus_Ability>			
+			</Combat_Bonus_Ability>
+			
+			<!-- FotR_Enhanced -->
+			<Combat_Bonus_Ability Name="Block_OFC_Officer_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
 		</Abilites>
 	</UniqueUnit>
 
@@ -4610,7 +4623,7 @@
 		TEXT_TOOLTIP_VENATOR_HULL 
 		TEXT_TOOLTIP_VENATOR_SHIELD
 		TEXT_TOOLTIP_VENATOR_MOVE
-		TEXT_TOOLTIP_VENATOR_OFC_SQUADRON
+		TEXT_TOOLTIP_VENATOR_SQUADRON_BLOCK
 		TEXT_TOOLTIP_VENATOR_WEAP1
 		TEXT_TOOLTIP_VENATOR_WEAP2 
 		TEXT_TOOLTIP_VENATOR_WEAP3
@@ -4706,7 +4719,7 @@
 
 	<UniqueUnit Name="Wieler_Resilient">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name>
 		<Icon_Name>i_button_wieler.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -4769,6 +4782,18 @@
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<!-- FotR_Enhanced -->
+			<Combat_Bonus_Ability Name="Wieler_OFC_Officer_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
 			</Combat_Bonus_Ability>
 
 		</Abilities>
@@ -4834,7 +4859,7 @@
 
 
 	<UniqueUnit Name="Coburn_Triumphant">
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
 		<Icon_Name>i_button_coburn.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -4919,6 +4944,17 @@
 				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
+			<!-- FotR_Enhanced -->
+			<Combat_Bonus_Ability Name="Coburn_OFC_Officer_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
 		</Abilities>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
@@ -4969,7 +5005,7 @@
 
 
 	<UniqueUnit Name="Yularen_Resolute">
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name>
 		<Icon_Name>i_button_yularen.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -5064,10 +5100,6 @@
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Hangar_Admiral_Yularen </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Unit_Health_Critical_Admiral_Yularen </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Health_Critical_Admiral_Yularen </SFXEvent_Hardpoint_Destroyed>
-
-		<HardPoints>
-		Venator_Bay, Venator_Engines, HP_Venator_01, HP_Venator_02, HP_Venator_03, HP_Venator_04, HP_Venator_05, HP_Venator_06, HP_Venator_07, HP_Venator_08, HP_Venator_Turret_01, HP_Venator_Turret_02, HP_Venator_Turret_03, HP_Venator_Turret_04, Yularen_Venator_Bay_SPHAT
-		</HardPoints>
 
 		<Score_Cost_Credits> 60000 </Score_Cost_Credits>
 		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
@@ -5207,7 +5239,10 @@
 		<SpaceBehavior> LURE, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
 
 		<HardPoints>
-		Venator_Bay, Venator_Engines, HP_Venator_01, HP_Venator_02, HP_Venator_03, HP_Venator_04, HP_Venator_05, HP_Venator_06, HP_Venator_07, HP_Venator_08, HP_Venator_Turret_01, HP_Venator_Turret_02, HP_Venator_Turret_03, HP_Venator_Turret_04, Yularen_Venator_Bay_SPHAT
+		HP_Venator_Hero_Turret_01, HP_Venator_Hero_Turret_02, HP_Venator_Hero_Turret_03, HP_Venator_Hero_Turret_04, 
+			HP_Venator_Hero_01, HP_Venator_Hero_02, HP_Venator_Hero_03, HP_Venator_Hero_04, 
+			HP_Venator_Hero_05, HP_Venator_Hero_06, HP_Venator_Hero_07, HP_Venator_Hero_08,
+			Venator_Hero_Bay, Venator_Hero_Engines, Yularen_Venator_Bay_SPHAT
 		</HardPoints>
 
 		<Unit_Abilities_Data SubObjectList="Yes">
@@ -5338,7 +5373,7 @@
 	</UniqueUnit>
 
 	<UniqueUnit Name="Yularen_Integrity">
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_hero_Integrity.alo</Space_Model_Name>
 		<Icon_Name>i_button_yularen.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -5444,7 +5479,10 @@
 		<Hyperspace_Fleet_Reveal_Range>200.0</Hyperspace_Fleet_Reveal_Range>
 
 		<HardPoints>
-		Venator_Bay, Venator_Engines, HP_Venator_01, HP_Venator_02, HP_Venator_03, HP_Venator_04, HP_Venator_05, HP_Venator_06, HP_Venator_07, HP_Venator_08, HP_Venator_Turret_01, HP_Venator_Turret_02, HP_Venator_Turret_03, HP_Venator_Turret_04, Yularen_Venator_Bay_SPHAT
+		HP_Venator_Hero_Turret_01, HP_Venator_Hero_Turret_02, HP_Venator_Hero_Turret_03, HP_Venator_Hero_Turret_04, 
+			HP_Venator_Hero_01, HP_Venator_Hero_02, HP_Venator_Hero_03, HP_Venator_Hero_04, 
+			HP_Venator_Hero_05, HP_Venator_Hero_06, HP_Venator_Hero_07, HP_Venator_Hero_08,
+			Venator_Hero_Bay, Venator_Hero_Engines, Yularen_Venator_Bay_SPHAT
 		</HardPoints>
 
 		<Unit_Abilities_Data SubObjectList="Yes">
@@ -5941,7 +5979,7 @@
 
 
 	<UniqueUnit Name="Kilian_Endurance">
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name>
 		<Icon_Name>i_button_kilian.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -6040,6 +6078,18 @@
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<!-- FotR_Enhanced -->
+			<Combat_Bonus_Ability Name="Kilian_OFC_Officer_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
 			</Combat_Bonus_Ability>
 		</Abilities>
 
@@ -6227,7 +6277,7 @@
 
 
 	<UniqueUnit Name="Tenant_Venator">
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
 		<Icon_Name>i_button_tenant.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -6316,6 +6366,18 @@
 				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
 				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<!-- FotR_Enhanced -->
+			<Combat_Bonus_Ability Name="Tenant_OFC_Officer_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
 			</Combat_Bonus_Ability>
 		</Abilities>
 
@@ -6599,7 +6661,7 @@
 
 	<UniqueUnit Name="Autem_Venator">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
 		<Icon_Name>i_button_autem.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -6684,6 +6746,18 @@
 				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
 				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
 			</System_Spy_Ability>
+			
+			<!-- FotR_Enhanced -->
+			<Combat_Bonus_Ability Name="Autem_OFC_Officer_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
 		</Abilities>
 	</UniqueUnit>
 
@@ -7808,7 +7882,7 @@
 	<!-- Venator heroes -->
 
 	<UniqueUnit Name="Tarkin_Venator">
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name> <!-- FotR_Enhanced -->
 		<Icon_Name>i_button_tarkin.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -7877,6 +7951,18 @@
 				<Price_Reduction_Percentage>0.15</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Reduce_Production_Price_Ability>
+			
+			<!-- FotR_Enhanced -->
+			<Combat_Bonus_Ability Name="Tarkin_OFC_Officer_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
 
 		</Abilities>
 

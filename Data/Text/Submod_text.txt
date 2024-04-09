@@ -68,4 +68,4 @@ TEXT_UNIT_VENATOR_DECOLORIZE,Decolorize Venators
 TEXT_UNIT_VENATOR_OFC,OCF Venator Star Destroyer
 TEXT_UNIT_VENATOR_OFC_SPHA_T,OCF Venator Star Destroyer (SPHA-T)
 
-TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+10% Firing Rate (OCF Venators Only) [Stacking bonus]
+TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+10% Firing Rate (OCF Venator & OCF Venator SPHA-T Only) [Stacking bonus]

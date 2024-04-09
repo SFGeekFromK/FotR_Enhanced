@@ -3948,11 +3948,11 @@
 		<Encyclopedia_Text> 
 			TEXT_TOOLTIP_VENATOR_OFC
 			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-			TEXT_TOOLTIP_VENATOR_OFC_HULL 
+			TEXT_TOOLTIP_VENATOR_HULL 
 			TEXT_TOOLTIP_VENATOR_SHIELD
 			TEXT_TOOLTIP_VENATOR_MOVE
-			TEXT_TOOLTIP_VENATOR_OFC_SQUADRON
-			TEXT_TOOLTIP_VENATOR_OFC_WEAP1
+			TEXT_TOOLTIP_VENATOR_SQUADRON
+			TEXT_TOOLTIP_VENATOR_WEAP1
 			TEXT_TOOLTIP_VENATOR_WEAP2
 			TEXT_TOOLTIP_VENATOR_WEAP3
 			TEXT_TOOLTIP_VENATOR_WEAP4
@@ -4039,11 +4039,11 @@
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_VENATOR_OFC_SPHA_T
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
-		TEXT_TOOLTIP_VENATOR_OFC_HULL 
+		TEXT_TOOLTIP_VENATOR_HULL 
 		TEXT_TOOLTIP_VENATOR_SHIELD
 		TEXT_TOOLTIP_VENATOR_MOVE 
-		TEXT_TOOLTIP_VENATOR_OFC_SQUADRON
-		TEXT_TOOLTIP_VENATOR_OFC_WEAP1
+		TEXT_TOOLTIP_VENATOR_SQUADRON
+		TEXT_TOOLTIP_VENATOR_WEAP1
 		TEXT_TOOLTIP_VENATOR_WEAP2 
 		TEXT_TOOLTIP_VENATOR_WEAP3
 		TEXT_TOOLTIP_VENATOR_WEAP4
@@ -4059,8 +4059,8 @@
 		</Encyclopedia_Text>
 
 		<HardPoints>
-		Venator_Bay, Yularan_Venator_Bay_SPHAT, Venator_Engines, HP_Venator_OFC_01, HP_Venator_OFC_02, HP_Venator_OFC_03, HP_Venator_OFC_04, HP_Venator_OFC_05, HP_Venator_OFC_06, HP_Venator_07, HP_Venator_08, HP_Venator_OFC_Turret_01, HP_Venator_OFC_Turret_02, HP_Venator_OFC_Turret_03, HP_Venator_OFC_Turret_04 
-		</HardPoints>
+		  Venator_Bay, Venator_Engines, HP_Venator_01, HP_Venator_02, HP_Venator_03, HP_Venator_04, HP_Venator_05, HP_Venator_06, HP_Venator_07, HP_Venator_08, HP_Venator_Turret_01, HP_Venator_Turret_02, HP_Venator_Turret_03, HP_Venator_Turret_04, Yularen_Venator_Bay_SPHAT
+		  </HardPoints>
 		<Tech_Level>99</Tech_Level>
 		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
 		<Icon_Name>i_button_jedi_Cruiser_rep_OFC_SPHA_T.tga</Icon_Name>
@@ -4122,6 +4122,8 @@
 	<SpaceUnit Name="Template_Venator_Hero">
 		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
 		<Tactical_Health>3576</Tactical_Health>
+		<Shield_Points>3150</Shield_Points>
+		
 		<Hardpoints>
 			HP_Venator_Hero_Turret_01, HP_Venator_Hero_Turret_02, HP_Venator_Hero_Turret_03, HP_Venator_Hero_Turret_04, 
 			HP_Venator_Hero_01, HP_Venator_Hero_02, HP_Venator_Hero_03, HP_Venator_Hero_04, 

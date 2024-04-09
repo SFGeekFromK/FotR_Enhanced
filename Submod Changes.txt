@@ -20,7 +20,7 @@ ________________________________________________________________________________
 
 This Change contains all exhaustive changes.
 _______________________________________________________________________________________________
-
+*([[ ]]) means changes that are currently disabled
 
 
 ADDED STUFFS
@@ -28,17 +28,16 @@ ADDED STUFFS
 # New Units
 
 -Venator Open Circle Fleet variant 
---- Different firing rate, fighter complements based on TCW visual depiction
+--- Has bonuses(Health & Firing rate, shield), fighter complements based on TCW visual depiction
 --- Build limit of total 12
 --- Upgradable to SPHA-T equipped version with Anakin on orbit [in era 5] with build lifetime of 3
 
 -Umbaran Support Frigate(Influence) 
 --- Fleet Tender Available at Umbara at influence
 
--Republic's Decolorized military
+[[-Republic's Decolorized military
 --- All colorizable Ships/Ground units now have Grey "Decolorized" Version for order 66 swaps
---- Will also replace standard roster after order 66
-
+--- Will also replace standard roster after order 66]]
 
 # New Heroes
 
@@ -51,6 +50,11 @@ ADDED STUFFS
 --- slightly adjusted firing rate for light laser cannons
 --- self made icon 
 --- spawns in Era 2 :  Yavin / Era 3 : Yagdhul / Era 5 : Raxus
+
+-TM-171
+--- Dh Omni supply vessel, command tier 5
+--- siege specialist trait
+--- spawns in era 3 start and era 3 reward only
 
 
 CHANGES & ADJUSTMENTS

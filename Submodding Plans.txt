@@ -3,10 +3,10 @@ Renewed for 1.4
 <Ongoing Projects>
 
 # OFC Venator
-- Finetune(Later)
+- Finetune(Done)
 	- Decrease firing rate/projectile number from dual heavy turbolasers
 
-- Build Limit via controlling Lua or New ship market mechanic( )
+- Build Limit via controlling Lua or New ship market mechanic(Ongoing)
 
 *** OCF Intergration system ***
 when certain level of point is reached by using certain venator heroes will increase points 
@@ -16,6 +16,8 @@ if achieved certain point is reached it will unlock a upgrade dummy where there 
 # Add New CIS Heroes
 
 TM-171(Originally Canon Source) - dh omni class 
+
+TZ-21
 
 
 # morgukai shadow army on salucemi

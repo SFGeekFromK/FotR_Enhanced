@@ -3951,7 +3951,7 @@
 			TEXT_TOOLTIP_VENATOR_HULL 
 			TEXT_TOOLTIP_VENATOR_SHIELD
 			TEXT_TOOLTIP_VENATOR_MOVE
-			TEXT_TOOLTIP_VENATOR_SQUADRON
+			TEXT_TOOLTIP_VENATOR_SQUADRON_OFC
 			TEXT_TOOLTIP_VENATOR_WEAP1
 			TEXT_TOOLTIP_VENATOR_WEAP2
 			TEXT_TOOLTIP_VENATOR_WEAP3
@@ -4042,7 +4042,7 @@
 		TEXT_TOOLTIP_VENATOR_HULL 
 		TEXT_TOOLTIP_VENATOR_SHIELD
 		TEXT_TOOLTIP_VENATOR_MOVE 
-		TEXT_TOOLTIP_VENATOR_SQUADRON
+		TEXT_TOOLTIP_VENATOR_SQUADRON_OFC
 		TEXT_TOOLTIP_VENATOR_WEAP1
 		TEXT_TOOLTIP_VENATOR_WEAP2 
 		TEXT_TOOLTIP_VENATOR_WEAP3
@@ -4060,7 +4060,7 @@
 
 		<HardPoints>
 		  Venator_Bay, Venator_Engines, HP_Venator_01, HP_Venator_02, HP_Venator_03, HP_Venator_04, HP_Venator_05, HP_Venator_06, HP_Venator_07, HP_Venator_08, HP_Venator_Turret_01, HP_Venator_Turret_02, HP_Venator_Turret_03, HP_Venator_Turret_04, Yularen_Venator_Bay_SPHAT
-		  </HardPoints>
+		</HardPoints>
 		<Tech_Level>99</Tech_Level>
 		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
 		<Icon_Name>i_button_jedi_Cruiser_rep_OFC_SPHA_T.tga</Icon_Name>
@@ -10181,7 +10181,7 @@
 		<Attack_Move_Response_Range>500.0</Attack_Move_Response_Range>
 		<Autonomous_Move_Extension_Vs_Attacker>1200.0</Autonomous_Move_Extension_Vs_Attacker>
 
-	<Unit_Abilities_Data SubObjectList="Yes">
+		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary ability -->
 			<Unit_Ability>
 				<Type>HUNT</Type>
@@ -10358,7 +10358,7 @@
 		<Attack_Move_Response_Range>500.0</Attack_Move_Response_Range>
 		<Autonomous_Move_Extension_Vs_Attacker>1200.0</Autonomous_Move_Extension_Vs_Attacker>
 
-	<Unit_Abilities_Data SubObjectList="Yes">
+		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary ability -->
 			<Unit_Ability>
 				<Type>HUNT</Type>

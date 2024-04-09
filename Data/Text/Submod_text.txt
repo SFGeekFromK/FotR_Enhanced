@@ -39,7 +39,7 @@ TEXT_TOOLTIP_RECUSANT_SQUADRON_HERO,Bombers: 0.5 / 2 [Requires research]
 TEXT_TOOLTIP_RED_GUARD, Nicknamed Redrobes, they were elite guards drawn from senate guards to protect Supreme Chancellor Palpatine.
 TEXT_TOOLTIP_RED_GUARD_HEALTH,Health: 80 (Hero)
 TEXT_TOOLTIP_RED_GUARD_MOVE,Speed: 1.2
-TEXT_TOOLTIP_RED_GUARD_WEAP1,1x Forcepike: 1 / 1.0s / 1m
+TEXT_TOOLTIP_RED_GUARD_WEAP1,1x Force Pike: 1 / 1.0s / 1m
 TEXT_TOOLTIP_RESOLUTE_SPHAT_UPGRADE, Equip Resolute with SPHA-T in the hanger.
 TEXT_TOOLTIP_ROHN, Rohn was a general in command of Shrouded Offensive, a military operation at the planet of Oster assigned by Darth Vader himself.
 TEXT_TOOLTIP_TJ912,TJ-912 is a tactical droid that served under one of Count Dooku's Dark Acolyte Asajj Ventress. He commanded the Separatists forces during the Battle of Sullust against Generals Obi-Wan Kenobi and Anakin Skywalker. 
@@ -54,9 +54,8 @@ TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP2,4x Dual Light Lasercannons 2 / 0.4s / 3.7km
 TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP3,2x Light Anti-Fighter Ion Cannons 2 / 1.7s / 3.2km
 TEXT_TOOLTIP_VENATOR_DECOLORIZE, Decolorize Venators to wipe out traces of Republic.
 TEXT_TOOLTIP_VENATOR_OFC,Venator Star Destroyer assigned under Open Circle Fleet. It has increased fire power in exchange for fighter complements.
-TEXT_TOOLTIP_VENATOR_OFC_HULL,Hull: 3400 (Capital)
 TEXT_TOOLTIP_VENATOR_OFC_SPHA_T,An Open Circle Fleet Venator equiped with SPHA-T on the hangar bay. An idea brought up by Anakin Skywalker, this upgrade made the Venators a more formidable against separatist warships.
-TEXT_TOOLTIP_VENATOR_OFC_SQUADRON, Fighters: 3 / 9 | Bombers: 1 / 3
+
 TEXT_TOOLTIP_VENATOR_OFC_UPGRADEABLE,Upgrade: Can be equiped with SPHA-T by Anakin Skywalker. [Requires Anakin Skywalker in orbit]
 TEXT_TOOLTIP_VENATOR_OFC_WEAP1,4x Heavy Dual Turbolasers: 5 / 3.5s / 7.2km
 TEXT_TOOLTIP_WARTHOG,"Warthog" was a veteran clone trooper pilot who often served as the wingman of Jedi general Plo Koon and was also often attached to his 104th battalion. He went on various battles and missions, including First Battle of Felucia, Battle of Kadavo.
@@ -64,8 +63,8 @@ TEXT_UNIT_DARK_ACOLYTE,Dark Acolyte
 TEXT_UNIT_DARK_ACOLYTE_COMPANY,Dark Acolyte Squad
 TEXT_UNIT_RED_GUARD,Red Guard
 TEXT_UNIT_UMBARAN_FRIGATE,Umbaran Support Frigate
-TEXT_UNIT_VENATOR_DECOLORIZE,Decolorize Venators
 TEXT_UNIT_VENATOR_OFC,OCF Venator Star Destroyer
 TEXT_UNIT_VENATOR_OFC_SPHA_T,OCF Venator Star Destroyer (SPHA-T)
 
 TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+10% Firing Rate (OCF Venator & OCF Venator SPHA-T Only) [Stacking bonus]
+TEXT_TOOLTIP_VENATOR_SQUADRON_OFC, Fighters: 3 / 8 | Bombers: 2 / 6

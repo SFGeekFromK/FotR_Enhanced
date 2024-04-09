@@ -1,0 +1,10 @@
+EAW Mods Tag or lua functions
+
+Energy Capacity ; unused mechanic Tag
+
+Size_Value ; Unknown
+
+applicable unit types ; units that are affected by the abilities
+<-> excluded unit types
+
+Hide_Sub_Object(X,Y,Z), X = game object, Y = 0,1, Z = string : hides model's meshes. not possible if permenantly attached.

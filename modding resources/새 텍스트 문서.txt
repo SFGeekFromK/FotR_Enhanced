@@ -1,0 +1,14 @@
+Paratrooper
+
+
+Unlocking units is a story event. Locking units is also a story event.
+Story events are only available to the main three factions
+You can trigger story events off of the completion of LUA functions, and vice versa. Usually EAWX story LUA scripts are used to trigger story events relating to dummy constructions
+Though you can use story events to check for the construction of dummy objects and also delete them. Presumably LUA is more reliable or offers finer control or something.
+If you want to see examples of unit locks and unlocks, there should be a series of XML documents for TR with universal lock in the name
+That script controls how the new class ships for the new Republic are unlocked and the old ships are locked on certain era transitions
+- Mord -
+
+
+
+Dark Acolytes are Dark Jedis who joined the Confederacy of Independent Systems and directly serve its Head of State, Count Dooku. They served various roles from assassins to spies to civilian commanders. Although trained by Dooku, they are not considered to be Sith due to the Rule of Two.

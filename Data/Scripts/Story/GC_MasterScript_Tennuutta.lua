@@ -697,7 +697,9 @@ function State_Rep_Tennuutta_Jedi_Found(message)
 	if message == OnEnter then
 		if p_republic.Is_Human() then
 			StoryUtil.SpawnAtSafePlanet("HANDOOINE", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Yularen_Resolute"})
-
+			-- FotR_Enhanced
+			Find_Player("Empire").Unlock_Tech(Find_Object_Type("Venator_OFC"))
+			--
 			Story_Event("REP_JEDI_FOUND_START")
 		end
 	end

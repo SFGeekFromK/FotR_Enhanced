@@ -136,7 +136,7 @@
 		
 	</SpaceUnit>
 
-	<SpaceUnit Name="Venator_Decolorize">
+	<!--<SpaceUnit Name="Venator_Decolorize">
 		<Variant_Of_Existing_Type>Generic_Venator</Variant_Of_Existing_Type>
 		<GUI_Row> 0 </GUI_Row>
 
@@ -164,7 +164,7 @@
 		
 	</SpaceUnit>
 
-	<!--<SpaceUnit Name="OFC_Assign">
+	<SpaceUnit Name="OFC_Assign">
 		<Variant_Of_Existing_Type>Generic_Venator</Variant_Of_Existing_Type>
 		<GUI_Row> 0 </GUI_Row>
 

@@ -4032,6 +4032,11 @@
 		
 	</SpaceUnit>
 
+	<SpaceUnit Name="Venator_OFC_Campaign">
+		<Variant_Of_Existing_Type>Venator_OFC</Variant_Of_Existing_Type>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+	</SpaceUnit>
+
 	<SpaceUnit Name="Venator_SPHA_T">
 		<Variant_Of_Existing_Type>Venator_OFC</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_VENATOR_OFC_SPHA_T</Text_ID>

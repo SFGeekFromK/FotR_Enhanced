@@ -1,0 +1,3 @@
+return {
+    FLAGS={FULLINHERIT = "VENATOR_OFC"}
+}

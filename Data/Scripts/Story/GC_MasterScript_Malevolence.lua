@@ -142,13 +142,14 @@ function State_Historical_GC_Choice(choice)
 	end
 end
 
-function State_Framework_Activation(message)
+function State_Framework_Activation(message) -- FotR_Enhanced : admiral decrement,
     if message == OnEnter then
 		GlobalValue.Set("CURRENT_ERA", 2)
 		crossplot:publish("INITIALIZE_AI", "empty")
 		crossplot:publish("VENATOR_HEROES", "empty")
 
 		--Admirals:
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 2, 1) 
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Coburn","Yularen"}, 1)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Maarisa","Martz","Baraka","Grumby","Forral","Autem","Tallon","Dallin","Pellaeon","Dao"}, 1)
 

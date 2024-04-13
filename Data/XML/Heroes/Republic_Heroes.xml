@@ -2815,6 +2815,266 @@
 
 	<!-- Captain Jag -->
 
+	<DummyStructure Name="Jag_ARC170_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_JAG</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_jag_p2_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_YULAREN
+		TEXT_HERO_KILIAN
+		TEXT_HERO_DEN_WESSEX
+		TEXT_HERO_BLOCK
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Jag_ARC170">
+		<Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_FIGHTER_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>																						 
+		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+		
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		
+		<Tactical_Health>180</Tactical_Health>
+		<Shield_Points>150</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name>Fighter_Sensor_Jamming</GUI_Activated_Ability_Name> 
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+				<Recharge_Seconds>55.0</Recharge_Seconds> 
+				<Expiration_Seconds>5.0</Expiration_Seconds>
+				<Effective_Radius>100.0</Effective_Radius>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Fighter_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+				<Owner_Particle_Effect>Sensor_Jamming_Effect_100</Owner_Particle_Effect>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Sensor_Jamming_Ability>
+
+			<Force_Healing_Ability Name="Odd_Ball_ARC170_Self_Heal">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Percent>0.02</Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Types>Odd_Ball_ARC170</Applicable_Unit_Types>
+			</Force_Healing_Ability>
+
+			<Combat_Bonus_Ability Name="Odd_Ball_Fighter_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>		
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.20</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="ARC170_127th">
+		<Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_SQUAD_SEVEN_ARC170</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SQUAD_SEVEN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>90</Tactical_Health>
+		<Shield_Points>75</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+		<AI_Combat_Power>30</AI_Combat_Power>
+
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA </SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name>Fighter_Sensor_Jamming</GUI_Activated_Ability_Name> 
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+				<Recharge_Seconds>55.0</Recharge_Seconds> 
+				<Expiration_Seconds>5.0</Expiration_Seconds>
+				<Effective_Radius>100.0</Effective_Radius>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Fighter_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+				<Owner_Particle_Effect>Sensor_Jamming_Effect_100</Owner_Particle_Effect>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Sensor_Jamming_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<Container Name="Jag_ARC170_127th_Container">
+		<Variant_Of_Existing_Type>ARC_170_Squadron_Container</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_SQUADRON
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>	
+		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Squadron Name="Jag_ARC170_127th_Squadron">
+		<Variant_Of_Existing_Type>Generic_ARC_170_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>	
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_SQUADRON
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+
+		<Create_Team_Type>Odd_Ball_ARC170_Squad_Seven_Container</Create_Team_Type>
+		<Squadron_Units>ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven</Squadron_Units>
+		<Squadron_Units>ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven</Squadron_Units>
+		<Squadron_Units>ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven, Odd_Ball_ARC170</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
 	
 
 	<!-- Admiral options -->

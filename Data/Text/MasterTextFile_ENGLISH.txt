@@ -1437,7 +1437,7 @@ TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_DECLANN,Nial Declann (T.I.E. Starfighter S
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_DFS1VR,DFS-1VR (Vulture Droid Squadron) - Unlocked by default | Default Hero: TF-1726
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_DREIS,Garven Dreis (Z-95 Headhunter Squadron) - Unlocked by default | Default Hero: Octavian Grant
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_GHENT,Nas Ghent (Z-95 Headhunter Squadron) - Unlocked by default | Default Hero: Grievous
-TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_JAG, Jag (ARC-170 Starfighter Squadron) - Unlocks with Victory Is | Default Hero: Jan Dodonna
+TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_JAG,Jag (ARC-170 Starfighter Squadron) - Unlocks with Victory Is | Default Hero: Jan Dodonna
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_NARRA,Arhul Narra (ARC-170 Starfighter Squadron) - Unlocks with Venators | Default Hero: Wilhuff Tarkin (Era 3 & 4), Jan Dodonna (Era 5)
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_ODD_BALL,Davijaan "Odd Ball" (V-19 Torrent/ARC-170 Starfighter Squadron & LAAT/i Gunship) - Unlocks with Venators | Default Hero: Wullf Yularen
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_PIKNAB,Piknab Carsels (Z-95 Headhunter Squadron) - Unlocked by default | Default Hero: Jabba
@@ -2113,7 +2113,7 @@ TEXT_EVENT_HISTORICAL_STORY_CHOICE_NO_STORY_HEADER,Sandbox Mode
 TEXT_EVENT_HISTORICAL_STORY_CHOICE_STORY_BODY,Experience the storyline of the Galactic Conquest including a narrative opening mission.
 TEXT_EVENT_HISTORICAL_STORY_CHOICE_STORY_HEADER,Story Mode (Full)
 TEXT_EVENT_HISTORICAL_STORY_MAIN_BODY,Pick an option
-TEXT_EVENT_JAG_SELECTOR_HEADER, Assign Jag's 127th Gunship Wing
+TEXT_EVENT_JAG_SELECTOR_HEADER,Assign Jag's 127th Gunship Wing
 TEXT_EVENT_NAS_GHENT_SELECTOR_HEADER,Assign Nas Ghent's Z-95 Squadron
 TEXT_EVENT_NIAL_DECLANN_SELECTOR_HEADER,Assign Nial Declann's T.I.E. Squadron
 TEXT_EVENT_ODD_BALL_SELECTOR_HEADER,Assign Odd Ball's Squad Seven
@@ -2873,7 +2873,7 @@ TEXT_HERO_HOOLIDAN_KEGGLE,Hoolidan Keggle
 TEXT_HERO_IMAGUNDI,Ima-Gun Di
 TEXT_HERO_IROTAH,Irotah
 TEXT_HERO_JABBA,Jabba Desilijic Tiure
-TEXT_HERO_JAG, Jai'galaar "Jag" 
+TEXT_HERO_JAG,Jai'galaar "Jag" 
 TEXT_HERO_JAING,Jaing Skirata
 TEXT_HERO_JAN_DODONNA,Jan Dodonna
 TEXT_HERO_JAN_DODONNA_TEAM,Jan Dodonna
@@ -3045,7 +3045,7 @@ TEXT_HERO_VORRU,Fliry Vorru
 TEXT_HERO_VOSS_PARCK,Voss Parck
 TEXT_HERO_VULPUS,Vulpus
 TEXT_HERO_VULTURE_PIRATES,Vulture Pirates
-TEXT_HERO_WARTHOG, Warthog
+TEXT_HERO_WARTHOG,Warthog
 TEXT_HERO_WAXER,Waxer
 TEXT_HERO_WHORM,Whorm Loathsom
 TEXT_HERO_WIELER,Wieler
@@ -12558,7 +12558,7 @@ TEXT_TOOLTIP_COLONY_TWO_HULL,Hull: 4800 (Heavy Frigate)
 TEXT_TOOLTIP_COLONY_TWO_SHIELD,Shields: 5200 / [13/R] (Capital)
 TEXT_TOOLTIP_COLONY_TWO_SQUADRON,Fighters: 2 / 7 | Bombers: 2 / 7
 TEXT_TOOLTIP_COLONY_TWO_WEAP1,6x Medium Dual Laser Cannons: 2 / 5.0s / 3.8km
-TEXT_TOOLTIP_COMMAND_127TH_ARC170, ARC-170 Starfighter Squadron, 127th Gunship Wing
+TEXT_TOOLTIP_COMMAND_127TH_ARC170,ARC-170 Starfighter Squadron, 127th Gunship Wing
 TEXT_TOOLTIP_COMMAND_31ST_FLIGHT,Vulture Droid Squadron, 31st Flight
 TEXT_TOOLTIP_COMMAND_91ST_RECON_CORPS,91st Mobile Reconnaissance Corps
 TEXT_TOOLTIP_COMMAND_AGRELCU_HAALTA,Ubrikkian Cruiser, Agrelcu Haalta
@@ -12597,8 +12597,8 @@ TEXT_TOOLTIP_COMMAND_GUNGAN_GLORY,Z-95 Squadron, Gungan Glory Squadron
 TEXT_TOOLTIP_COMMAND_HARMZUAY,Kaloth Battlecruiser, Harmzuay
 TEXT_TOOLTIP_COMMAND_HAUSER,Modified Dreadnaught Heavy Cruiser, Ultrachrome
 TEXT_TOOLTIP_COMMAND_HOUNDSTOOTH,Modified YV-666 Light Freighter, Hound's Tooth
-TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95, Republic Z-95 Headhunter Squadron, Hunter Squadron
-TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT, V-19 Torrent Squadron, Hunter Squadron
+TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95,Republic Z-95 Headhunter Squadron, Hunter Squadron
+TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT,V-19 Torrent Squadron, Hunter Squadron
 TEXT_TOOLTIP_COMMAND_IMRU_OOTMIAN,Light Minstrel Yacht, Imru Ootmian
 TEXT_TOOLTIP_COMMAND_INSTINCTION,Lucrehulk Battle Carrier, Instinction
 TEXT_TOOLTIP_COMMAND_INTEGRITY,Modified Venator Star Destroyer, Integrity
@@ -14788,7 +14788,7 @@ TEXT_TOOLTIP_RECUSANT_WEAP3,1x Medium Turbolaser: 2 / 2.0s / 6.2km
 TEXT_TOOLTIP_RECUSANT_WEAP4,2x Medium Dual Laser Cannons: 2 / 0.33s / 4.2km
 TEXT_TOOLTIP_RECUSANT_WEAP5,1x Light Dual Laser Cannon: 2 / 0.42s / 3.7km
 TEXT_TOOLTIP_RECUSANT_WEAP6,6x Light Laser Cannons: 2 / 0.5s / 3.7km
-TEXT_TOOLTIP_RED_GUARD, Nicknamed Redrobes, they were elite guards drawn from senate guards to protect Supreme Chancellor Palpatine.
+TEXT_TOOLTIP_RED_GUARD,Nicknamed Redrobes, they were elite guards drawn from senate guards to protect Supreme Chancellor Palpatine.
 TEXT_TOOLTIP_RED_GUARD_HEALTH,Health: 80 (Hero)
 TEXT_TOOLTIP_RED_GUARD_MOVE,Speed: 1.2
 TEXT_TOOLTIP_RED_GUARD_WEAP1,1x Force Pike: 1 / 1.0s / 1m
@@ -14854,7 +14854,7 @@ TEXT_TOOLTIP_RESEARCH_WEAP2,1x Medium Laser Cannon: 3 / 3.0s / 4.4km
 TEXT_TOOLTIP_RESEARCH_WEAP3,1x Concussion Missile: 2 / 5.0s / 4.4km
 TEXT_TOOLTIP_RESHUL,Reshul was a Shell Hutt of some repute, a small and somewhat reclusive clan of Hutts famous for living in armored repulsor shells.
 TEXT_TOOLTIP_RESIDUAL_INFLUENCE,Residual Influence
-TEXT_TOOLTIP_RESOLUTE_SPHAT_UPGRADE, Equip Resolute with SPHA-T in the hanger.
+TEXT_TOOLTIP_RESOLUTE_SPHAT_UPGRADE,Equip Resolute with SPHA-T in the hanger.
 TEXT_TOOLTIP_RESOURCE_GARRISON,Corporate Security Trooper Squad: 1 / 0
 TEXT_TOOLTIP_RESPAWN_DOOKU,Force Doppelgänger: Respawns after his first death
 TEXT_TOOLTIP_RESPAWN_DURGE,Ancient Revenant: Respawn chance after his death (Decreases after each death)
@@ -14971,7 +14971,7 @@ TEXT_TOOLTIP_REX_WEAP1,1x DC-15S Blaster Carbine: 3 / 1.25s / 220m
 TEXT_TOOLTIP_REX_WEAP2,1x Ion Grenade: 1 / 15.0s / 200m
 TEXT_TOOLTIP_RHYS_DALLOWS,A pilot in the Royal Naboo Security Forces Bravo Squadron who trained under ace pilot Essara Till. When his mentor was killed by a mercenary ambush funded by the Trade Federation, Rhys swore revenge, teaming up with Vana Sage and the Lok Revenants leader Nym in several strikes against the conglomerate. Rhys would rejoin Bravo Squadron in an assault on the invaders droid control ship, facing off against Essara's killer and triumphing in the ensuing battle. Dallows would be promoted to Captain and would lead Bravo Squadron through the Clone Wars, later becoming a sympathizer for rebellion against the Galactic Empire.
 TEXT_TOOLTIP_RIBOGA,Riboga estalished himself as the crime lord in the Cularin system several decades before the outbreak of the Clone Wars, supervising a number of unsavory practices including a slaving ring and a spice mining operation on Kemix he built a huge warship to guard. He left due to the alleged unprofitability of the remote system, though in truth he was the victim of an embezzling majordomo who took over the operation and abolished the slave trade.
-TEXT_TOOLTIP_ROHN, Rohn was a general in command of Shrouded Offensive, a military operation at the planet of Oster assigned by Darth Vader himself.
+TEXT_TOOLTIP_ROHN,Rohn was a general in command of Shrouded Offensive, a military operation at the planet of Oster assigned by Darth Vader himself.
 TEXT_TOOLTIP_ROM_MOHC,An Army officer originally under the tutelage of General Locus Geen. When Mohc was defeated by General Grievous on the spike-stone plains of Mendig he developed an obsession with personal combat that would never stop affecting his career. This led to a keen understanding of cybernetic systems and battle droids as a result of his most commonly encountered opponents during the Clone Wars.
 TEXT_TOOLTIP_ROM_MOHC_HEALTH,Health: 230 (Hero)
 TEXT_TOOLTIP_ROM_MOHC_MOVE,Speed: 1.0
@@ -15862,7 +15862,7 @@ TEXT_TOOLTIP_TRAIT_OVERSEER_SLAVELORD,Slavelord (-35%, All)
 TEXT_TOOLTIP_TRAIT_OVERSEER2_GOLAN,Overseer (-25%, Golans)
 TEXT_TOOLTIP_TRAIT_OVERSEER4,Overseer (-15%, All)
 TEXT_TOOLTIP_TRAIT_PERSONAL_COMBAT_ENTHUSIAST,Personal Combat Enthusiast
-TEXT_TOOLTIP_TRAIT_PLO_BRO, Plo's Bros
+TEXT_TOOLTIP_TRAIT_PLO_BRO,Plo's Bros
 TEXT_TOOLTIP_TRAIT_POLITICAL_ANIMAL,Political Animal
 TEXT_TOOLTIP_TRAIT_PROTECTIVE,Protective
 TEXT_TOOLTIP_TRAIT_RECKLESS,Reckless
@@ -16012,9 +16012,9 @@ TEXT_TOOLTIP_VAZUS_WEAP1,1x E-5 Carbine: 3 / 1.25s / 220m
 TEXT_TOOLTIP_VAZUS_WEAP2,1x Proton Grenade: 1 / 15.0s / 200m
 TEXT_TOOLTIP_VEILED_QUEEN,The Veiled Sorority is a secretive pirate group led by a Pirate Queen and an all-female advisory council. The Sorority remains almost unknown to the public and authorities due to limiting their targets to other criminal organizations which led to a costly confrontation with the Zann Consortium.
 TEXT_TOOLTIP_VEILED_QUEEN_SQUADRON,Fighters: 0.5 / 0
-TEXT_TOOLTIP_VENAOTR_OFC_SPECIAL, Special: 2x Republic Z-95 Squadron 1/2 [E3]
+TEXT_TOOLTIP_VENAOTR_OFC_SPECIAL,Special: 2x Republic Z-95 Squadron 1/2 [E3]
 TEXT_TOOLTIP_VENATOR,An iconic carrier-destroyer hybrid. The Republic-designed Star Destroyer was introduced early in the Clone Wars with a large hangar and notable dual-bridge towers. It relies heavily on its fighter complement and is intended to be supported by other vessels such as its counterpart, the Victory-I. It is decently well rounded in spite of its focus on fighter tactics but best not used against larger ships.
-TEXT_TOOLTIP_VENATOR_DECOLORIZE, Decolorize Venators to wipe out traces of Republic.
+TEXT_TOOLTIP_VENATOR_DECOLORIZE,Decolorize Venators to wipe out traces of Republic.
 TEXT_TOOLTIP_VENATOR_HULL,Hull: 3240 (Heavy Frigate)
 TEXT_TOOLTIP_VENATOR_MOVE,Speed: 3.25 | Accel: 0.04 | Turn: 0.4
 TEXT_TOOLTIP_VENATOR_OFC,Venator Star Destroyer assigned under Open Circle Fleet. It has increased fire power in exchange for fighter complements.
@@ -16034,7 +16034,7 @@ TEXT_TOOLTIP_VENATOR_RESEARCH,Enables the construction of the powerful Venator-c
 TEXT_TOOLTIP_VENATOR_SHIELD,Shields: 3000 / [30/R] (Heavy Frigate)
 TEXT_TOOLTIP_VENATOR_SQUADRON,Fighters: 2 / 7 | Bombers: 2 / 7
 TEXT_TOOLTIP_VENATOR_SQUADRON_COBURN,Fighters: 4 / 12
-TEXT_TOOLTIP_VENATOR_SQUADRON_OFC, Fighters: 2 / 8 [E2-3], 3 / 8 [E4-5] | Bombers: 2 / 6
+TEXT_TOOLTIP_VENATOR_SQUADRON_OFC,Fighters: 2 / 8 [E2-3], 3 / 8 [E4-5] | Bombers: 2 / 6
 TEXT_TOOLTIP_VENATOR_SQUADRON_TARKIN,Fighters: 5 / 14
 TEXT_TOOLTIP_VENATOR_SQUADRON_WIELER,Fighters: 9 / 26
 TEXT_TOOLTIP_VENATOR_TRANQUILITY,The Tranquility was a Venator-class Star Destroyer within the Open Circle Fleet that served as the flagship of Jedi General Luminara. The ship housed a highly secure detention level with several cells, each fitted with ray shields capable of withstanding several blaster shots and even lightsabers. Following the capture of Separatist Leader Viceroy Nute Gunray, the Tranquility was tasked with transporting him from Rodia to Coruscant where he would stand trial for his crimes against the Republic.

@@ -1,3 +1,3 @@
 return {
-    FLAGS={FULLINHERIT = "VENATOR_OFC"}
+    Flags = {FULLINHERIT = "VENATOR_OFC"}
 }

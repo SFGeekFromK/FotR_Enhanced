@@ -4,20 +4,20 @@ TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_UMBARA_FOTR,Umbara: Can build Umbaran S
 TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+10% Firing Rate (OCF Venator & OCF Venator SPHA-T Only) [Stacking bonus]
 TEXT_DOCUMENTATION_BODY_TRAITPLOBRO,Plo's Bros: +20% Health (Plo Koon Only)
 TEXT_DOCUMENTATION_HEADER_FOTR_ENHANCED_FEATS,==== FotR_Enhanced features ==================
-TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_JAG, Jag (ARC-170 Starfighter Squadron) - Unlocks with Victory Is | Default Hero: Jan Dodonna
+TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_JAG,Jag (ARC-170 Starfighter Squadron) - Unlocks with Victory Is | Default Hero: Jan Dodonna
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_WARTHOG,Warthog (V-19 Torrent/Republic Z-95 Headhunter Squadron) - Unlocks with Venators | Default Hero: Barton Coburn
 TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT_COMMANDER,Class: Lieutenant Commander
-TEXT_EVENT_JAG_SELECTOR_HEADER, Assign Jag's 127th Gunship Wing
+TEXT_EVENT_JAG_SELECTOR_HEADER,Assign Jag's 127th Gunship Wing
 TEXT_EVENT_WARTHOG_SELECTOR_HEADER,Assign Warthog's Hunter Squadron
 TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_BLOCK,- Block (Venator) [ Requires Venator Research ]
 TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_NEEDA,- Lorth Needa
 TEXT_HERO_BLOCK,Block
-TEXT_HERO_JAG, Jai'galaar "Jag" 
+TEXT_HERO_JAG,Jai'galaar "Jag" 
 TEXT_HERO_NEEDA,Lorth Needa
 TEXT_HERO_ROHN,Rohn
 TEXT_HERO_TJ912,TJ-912
 TEXT_HERO_TM171,TM-171
-TEXT_HERO_WARTHOG, Warthog
+TEXT_HERO_WARTHOG,Warthog
 TEXT_PLANET_INFO_UMBARA_INFLUENCE_REWARD,•Unlocks Umbaran Support Frigate at 8+ influence
 TEXT_SPEECH_BLOCK_RETURNS_VIGILANCE,Admiral Block: Impressive... though it did cost my ship, General Kenobi's idea to self-destruct my ship did manage to deal a huge blow against the enemy at the last moment. - [Admiral Block has returned in control of the Venator-class, Vigilance].
 TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE,Health: 70 | Shields: 45
@@ -27,10 +27,10 @@ TEXT_TOOLTIP_BLOCK_VILGILANCE_RESPAWN,Block respawns in a Vigilance(Venator) aft
 TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC,Build Limit: 12 | Lifetime: "
 TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC_SPHA_T,Build Limit: 3 | Lifetime: 1
 TEXT_TOOLTIP_CAPITAL_GAR_16,Red Guard: 2 / 0
-TEXT_TOOLTIP_COMMAND_127TH_ARC170, ARC-170 Starfighter Squadron, 127th Gunship Wing
+TEXT_TOOLTIP_COMMAND_127TH_ARC170,ARC-170 Starfighter Squadron, 127th Gunship Wing
 TEXT_TOOLTIP_COMMAND_CARRACK_INTEGRITY,Carrack Cruiser, Integrity
-TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95, Republic Z-95 Headhunter Squadron, Hunter Squadron
-TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT, V-19 Torrent Squadron, Hunter Squadron
+TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95,Republic Z-95 Headhunter Squadron, Hunter Squadron
+TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT,V-19 Torrent Squadron, Hunter Squadron
 TEXT_TOOLTIP_COMMAND_NEGOTIATOR,Venator Star Destroyer, Negotiator
 TEXT_TOOLTIP_COMMAND_VILGILANCE,Venator Star Destroyer, Vigilance
 TEXT_TOOLTIP_DARK_ACOLYTE,Dark Acolytes are Dark Jedis who joined the Confederacy of Independent Systems and directly serve its Head of State, Count Dooku. They served various roles from assassins to spies to civilian commanders. Although trained by Dooku, they are not considered to be Sith due to the Rule of Two.
@@ -43,29 +43,29 @@ TEXT_TOOLTIP_RECUSANT_HERO_HULL,Hull: 2560 (Frigate)
 TEXT_TOOLTIP_RECUSANT_HERO_SHIELD,Shields: 2950 / [42/R] (Frigate)
 TEXT_TOOLTIP_RECUSANT_HERO_WEAP6,6x Light Laser Cannons: 3 / 0.3s / 3.7km
 TEXT_TOOLTIP_RECUSANT_SQUADRON_HERO,Bombers: 0.5 / 2 [Requires research]
-TEXT_TOOLTIP_RED_GUARD, Nicknamed Redrobes, they were elite guards drawn from senate guards to protect Supreme Chancellor Palpatine.
+TEXT_TOOLTIP_RED_GUARD,Nicknamed Redrobes, they were elite guards drawn from senate guards to protect Supreme Chancellor Palpatine.
 TEXT_TOOLTIP_RED_GUARD_HEALTH,Health: 80 (Hero)
 TEXT_TOOLTIP_RED_GUARD_MOVE,Speed: 1.2
 TEXT_TOOLTIP_RED_GUARD_WEAP1,1x Force Pike: 1 / 1.0s / 1m
-TEXT_TOOLTIP_RESOLUTE_SPHAT_UPGRADE, Equip Resolute with SPHA-T in the hanger.
-TEXT_TOOLTIP_ROHN, Rohn was a general in command of Shrouded Offensive, a military operation at the planet of Oster assigned by Darth Vader himself.
+TEXT_TOOLTIP_RESOLUTE_SPHAT_UPGRADE,Equip Resolute with SPHA-T in the hanger.
+TEXT_TOOLTIP_ROHN,Rohn was a general in command of Shrouded Offensive, a military operation at the planet of Oster assigned by Darth Vader himself.
 TEXT_TOOLTIP_TJ912,TJ-912 is a tactical droid that served under one of Count Dooku's Dark Acolyte Asajj Ventress. He commanded the Separatists forces during the Battle of Sullust against Generals Obi-Wan Kenobi and Anakin Skywalker. 
 TEXT_TOOLTIP_TM171,TM-171 was a CIS T-series tactical droid who was in charge of resupplying Umbaran Militia during the Republic campaign against the planet Umbara. During the resupply operation, three clone troopers infiltrated his ship and destroyed it despite droid's presence, preventing munitions delivery from the Confederacy.
 TEXT_TOOLTIP_TRAIT_OFC_OFFICER,Open Circle Fleet Offcier
-TEXT_TOOLTIP_TRAIT_PLO_BRO, Plo's Bros
+TEXT_TOOLTIP_TRAIT_PLO_BRO,Plo's Bros
 TEXT_TOOLTIP_UMBARAN_FRIGATE,A fleet tender designed by the government of Umbara, this frigate is able to supply and reinforce CIS cruisers in battle and provide reapirs to fighter groups.
 TEXT_TOOLTIP_UMBARAN_FRIGATE_MOVE,Speed: 3.25 | Accel: 1.5 | Turn: 0.3
 TEXT_TOOLTIP_UMBARAN_FRIGATE_SHIELD,Shields: 1300 [19.25/R] (Frigate)
 TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP1,4x Light Turbolasers 2 / 1.0s / 5.1 km
 TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP2,4x Dual Light Lasercannons 2 / 0.4s / 3.7km
 TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP3,2x Light Anti-Fighter Ion Cannons 2 / 1.7s / 3.2km
-TEXT_TOOLTIP_VENAOTR_OFC_SPECIAL, Special: 2x Republic Z-95 Squadron 1/2 [E3]
-TEXT_TOOLTIP_VENATOR_DECOLORIZE, Decolorize Venators to wipe out traces of Republic.
+TEXT_TOOLTIP_VENAOTR_OFC_SPECIAL,Special: 2x Republic Z-95 Squadron 1/2 [E3]
+TEXT_TOOLTIP_VENATOR_DECOLORIZE,Decolorize Venators to wipe out traces of Republic.
 TEXT_TOOLTIP_VENATOR_OFC,Venator Star Destroyer assigned under Open Circle Fleet. It has increased fire power in exchange for fighter complements.
 TEXT_TOOLTIP_VENATOR_OFC_SPHA_T,An Open Circle Fleet Venator equiped with SPHA-T on the hangar bay. An idea brought up by Anakin Skywalker, this upgrade made the Venators a more formidable against separatist warships.
 TEXT_TOOLTIP_VENATOR_OFC_UPGRADEABLE,Upgrade: Can be equiped with SPHA-T by Anakin Skywalker. [Requires Anakin Skywalker in orbit]
 TEXT_TOOLTIP_VENATOR_OFC_WEAP1,4x Heavy Dual Turbolasers: 5 / 3.5s / 7.2km
-TEXT_TOOLTIP_VENATOR_SQUADRON_OFC, Fighters: 2 / 8 [E2-3], 3 / 8 [E4-5] | Bombers: 2 / 6
+TEXT_TOOLTIP_VENATOR_SQUADRON_OFC,Fighters: 2 / 8 [E2-3], 3 / 8 [E4-5] | Bombers: 2 / 6
 TEXT_TOOLTIP_WARTHOG,"Warthog" was a veteran clone trooper pilot who often served as the wingman of Jedi general Plo Koon and was also often attached to his 104th battalion. He went on various battles and missions, including First Battle of Felucia, Battle of Kadavo.
 TEXT_UNIT_DARK_ACOLYTE,Dark Acolyte 
 TEXT_UNIT_DARK_ACOLYTE_COMPANY,Dark Acolyte Squad

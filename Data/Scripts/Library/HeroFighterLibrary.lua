@@ -79,7 +79,7 @@ function Get_Hero_Entries(upgrade_object)
 		PopupHeader = "RHYS_DALLOWS_SELECTOR_HEADER",
 		Options = {
 			{"AUTEM", Locations = {"AUTEM_VENATOR"}},
-			{"DALLIN", Locations = {"DALLIN_KEBIR"}},
+			--{"DALLIN", Locations = {"DALLIN_KEBIR"}}, text also changed
 			{"HAUSER", Locations = {"HAUSER_DREADNAUGHT"}},
 			{"MAARISA", Locations = {"MAARISA_CAPTOR","MAARISA_RETALIATION"}},
 		}
@@ -149,17 +149,16 @@ function Get_Hero_Entries(upgrade_object)
 		Faction = "Empire"
 
 	},
-	--[[["JAG_ARC170_LOCATION_SET"] = {
-		Hero_Squadron = "WARTHOG_REPUBLIC_Z95_HUNTER_SQUADRON",
-		PopupHeader = "WARTHOG_P2_SELECTOR_HEADER",
-		NoInit = true,
+	["JAG_ARC170_LOCATION_SET"] = {
+		Hero_Squadron = "JAG_ARC170_127TH_SQUADRON",
+		PopupHeader = "JAG_P2_SELECTOR_HEADER",
 		Options = {
 			{"DODONNA", Locations = {"DODONNA_ARDENT"}},
+			{"DALLIN", Locations =  {"DALLIN_KEBIR"}}
 		},
-		--GroundCompany = "",
 		Faction = "Empire"
 
-	},	]]
+	},
 	--CIS
 	["DFS1VR_LOCATION_SET"] = {
 		Hero_Squadron = "DFS1VR_31ST_SQUADRON",

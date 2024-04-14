@@ -846,6 +846,7 @@ function RepublicHeroes:VSD_Heroes()
 	Handle_Hero_Add("Ravik", moff_data)
 	
 	RepublicHeroes:Add_Fighter_Set("Arhul_Narra_Location_Set")
+	RepublicHeroes:Add_Fighter_Set("Jag_ARC170_Location_Set")
 end
 
 function RepublicHeroes:VSD2_Heroes()

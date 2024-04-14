@@ -1312,7 +1312,7 @@ TEXT_DOCUMENTATION_BODY_TRAITINTELLIGENCEOFFICER,Intelligence Officer: Full Syst
 TEXT_DOCUMENTATION_BODY_TRAITINTERDICTORCOMMANDER,Immobilizer Commander: +10% Health\+5% Shield\+10% Damage\+5% Defense (Immobilizer Cruisers Only) [Stacking bonus]
 TEXT_DOCUMENTATION_BODY_TRAITKUATOFKUAT,Kuat of Kuat: +5% Health\+5% Shield (KDY Products Only), 10% cost reduction on all KDY Products
 TEXT_DOCUMENTATION_BODY_TRAITMANDOHATE,Hatred Through The Centuries: -20% Health (Mandalorians Only, including heroes) [Stacking bonus]
-TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+% Damage (OCF Venators Only) [Stacking bonus]
+TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+10% Firing Rate (OCF Venator & OCF Venator SPHA-T Only) [Stacking bonus]
 TEXT_DOCUMENTATION_BODY_TRAITOVERSEER,Overseer: Time reduction bonus
 TEXT_DOCUMENTATION_BODY_TRAITPERSONALCOMBATENTHUSIAST,Personal Combat Enthusiast: 5% Health\+10% Damage\+10% Speed (Infantry Only)
 TEXT_DOCUMENTATION_BODY_TRAITPOLITICALANIMAL,Political Animal: 10% build time reduction, 10% build cost increase
@@ -1417,7 +1417,7 @@ TEXT_DOCUMENTATION_HEADER_COMPANIES_TECHNO_UNION_FOTR,Techno Union - Geonosis, B
 TEXT_DOCUMENTATION_HEADER_COMPANIES_TRANSGALMEG_FOTR,TransGalMeg - Bespin, Pako Ramoon, Saijo, Vulpter | CIS
 TEXT_DOCUMENTATION_HEADER_COMPANIES_UBRIKKIAN_FOTR,Ubrikkian Industries - Charros, Kuat, Kwenn, Ubrikkia | Hutts
 TEXT_DOCUMENTATION_HEADER_COMPANIES_UULSHOS_FOTR,Uulshos Manufacturing - Etti IV, Ession | GAR
-TEXT_DOCUMENTATION_HEADER_FOTR_ENHANCED_FEATS,-- FotR_Enhanced features --
+TEXT_DOCUMENTATION_HEADER_FOTR_ENHANCED_FEATS,==== FotR_Enhanced features ==================
 TEXT_DOCUMENTATION_HEADER_GENERIC_MISSIONS,=== Generic Missions (Available to all factions) ======================
 TEXT_DOCUMENTATION_HEADER_HISTORICALS,=== Guide: Historical Galactic Conquest Progression ==================================
 TEXT_DOCUMENTATION_HEADER_INFLUENCE,=== Influence ==========================================
@@ -1436,12 +1436,13 @@ TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_DECLANN,Nial Declann (T.I.E. Starfighter S
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_DFS1VR,DFS-1VR (Vulture Droid Squadron) - Unlocked by default | Default Hero: TF-1726
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_DREIS,Garven Dreis (Z-95 Headhunter Squadron) - Unlocked by default | Default Hero: Octavian Grant
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_GHENT,Nas Ghent (Z-95 Headhunter Squadron) - Unlocked by default | Default Hero: Grievous
+TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_JAG, Jag (ARC-170 Starfighter Squadron) - Unlocks with Victory Is | Default Hero: Jan Dodonna
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_NARRA,Arhul Narra (ARC-170 Starfighter Squadron) - Unlocks with Venators | Default Hero: Wilhuff Tarkin (Era 3 & 4), Jan Dodonna (Era 5)
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_ODD_BALL,Davijaan "Odd Ball" (V-19 Torrent/ARC-170 Starfighter Squadron & LAAT/i Gunship) - Unlocks with Venators | Default Hero: Wullf Yularen
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_PIKNAB,Piknab Carsels (Z-95 Headhunter Squadron) - Unlocked by default | Default Hero: Jabba
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_QUILL,Raina Quill (PDF ARC-170 Squadron) - Unlocked by default | Default Hero: Rel Harsol
 TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_VULPUS,Vulpus (Ginivex Fighter Squadron) - Unlocked by default | Default Unit: Lucid Voice
-TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_WARTHOG,Warthog (V-19 Torrent/Clone Z-95 Headhunter Squadron) - Unlocks with Venators | Default Hero: Barton Coburn
+TEXT_DOCUMENTATION_HEADER_UNIQUE_HERO_WARTHOG,Warthog (V-19 Torrent/Republic Z-95 Headhunter Squadron) - Unlocks with Venators | Default Hero: Barton Coburn
 TEXT_DOCUMENTATION_HEADER_UNIQUE_UNIT_ARMED_CONSULAR,Consular Armed Cruiser - Pirate Refuge Base
 TEXT_DOCUMENTATION_HEADER_UNIQUE_UNIT_DHC_PDF,PDF Dreadnaught Heavy Cruiser - Pirate Refuge Base
 TEXT_DOCUMENTATION_HEADER_UNIQUE_UNIT_FOTR_ACCLAMATOR_II,Acclamator-II - Unlocks Mid-20 BBY | Heavy Frigate Shipyard
@@ -2111,6 +2112,7 @@ TEXT_EVENT_HISTORICAL_STORY_CHOICE_NO_STORY_HEADER,Sandbox Mode
 TEXT_EVENT_HISTORICAL_STORY_CHOICE_STORY_BODY,Experience the storyline of the Galactic Conquest including a narrative opening mission.
 TEXT_EVENT_HISTORICAL_STORY_CHOICE_STORY_HEADER,Story Mode (Full)
 TEXT_EVENT_HISTORICAL_STORY_MAIN_BODY,Pick an option
+TEXT_EVENT_JAG_SELECTOR_HEADER, Assign Jag's 127th Gunship Wing
 TEXT_EVENT_NAS_GHENT_SELECTOR_HEADER,Assign Nas Ghent's Z-95 Squadron
 TEXT_EVENT_NIAL_DECLANN_SELECTOR_HEADER,Assign Nial Declann's T.I.E. Squadron
 TEXT_EVENT_ODD_BALL_SELECTOR_HEADER,Assign Odd Ball's Squad Seven
@@ -2870,6 +2872,7 @@ TEXT_HERO_HOOLIDAN_KEGGLE,Hoolidan Keggle
 TEXT_HERO_IMAGUNDI,Ima-Gun Di
 TEXT_HERO_IROTAH,Irotah
 TEXT_HERO_JABBA,Jabba Desilijic Tiure
+TEXT_HERO_JAG, Jai'galaar "Jag" 
 TEXT_HERO_JAING,Jaing Skirata
 TEXT_HERO_JAN_DODONNA,Jan Dodonna
 TEXT_HERO_JAN_DODONNA_TEAM,Jan Dodonna
@@ -12554,6 +12557,7 @@ TEXT_TOOLTIP_COLONY_TWO_HULL,Hull: 4800 (Heavy Frigate)
 TEXT_TOOLTIP_COLONY_TWO_SHIELD,Shields: 5200 / [13/R] (Capital)
 TEXT_TOOLTIP_COLONY_TWO_SQUADRON,Fighters: 2 / 7 | Bombers: 2 / 7
 TEXT_TOOLTIP_COLONY_TWO_WEAP1,6x Medium Dual Laser Cannons: 2 / 5.0s / 3.8km
+TEXT_TOOLTIP_COMMAND_127TH_ARC170, ARC-170 Starfighter Squadron, 127th Gunship Wing
 TEXT_TOOLTIP_COMMAND_31ST_FLIGHT,Vulture Droid Squadron, 31st Flight
 TEXT_TOOLTIP_COMMAND_91ST_RECON_CORPS,91st Mobile Reconnaissance Corps
 TEXT_TOOLTIP_COMMAND_AGRELCU_HAALTA,Ubrikkian Cruiser, Agrelcu Haalta
@@ -13628,6 +13632,7 @@ TEXT_TOOLTIP_JABBA,Jabba Desilijic Tiure, better known as Jabba the Hutt and oft
 TEXT_TOOLTIP_JABBA_HEALTH,Health: 150 (Hero)
 TEXT_TOOLTIP_JABBA_MOVE,Speed: 1.0
 TEXT_TOOLTIP_JABBA_WEAP1,1x DL-44 Heavy Pistol: 1 / 1.0s / 260m
+TEXT_TOOLTIP_JAG, CT-55/11-9009, known as Jai'galaar or Jag, was a clone pilot captin in the Clone Army. Originally a Clone Commander, he was demoted to captain after the Retreat at Katraasii. Later, Jedi General Plo Koon drafted the captin as the test pilot for the new ARC-170 starfighters and flew with him on many battles including the battle over Cato Neimoidia.
 TEXT_TOOLTIP_JAING,Null-10 was a null class Advanced Recon Commando who named himself Jaing after his Mandalorian trainer. After Order 66 Jaing deserted the Grand Army of the Republic and joined the Mandalorian Clan Skirata via a formal adoption by one of its members.
 TEXT_TOOLTIP_JAING_P1_HEALTH,Health: 175 (Hero)
 TEXT_TOOLTIP_JAING_P1_MOVE,Speed: 1.2
@@ -14785,7 +14790,7 @@ TEXT_TOOLTIP_RECUSANT_WEAP6,6x Light Laser Cannons: 2 / 0.5s / 3.7km
 TEXT_TOOLTIP_RED_GUARD, Nicknamed Redrobes, they were elite guards drawn from senate guards to protect Supreme Chancellor Palpatine.
 TEXT_TOOLTIP_RED_GUARD_HEALTH,Health: 80 (Hero)
 TEXT_TOOLTIP_RED_GUARD_MOVE,Speed: 1.2
-TEXT_TOOLTIP_RED_GUARD_WEAP1,1x Forcepike: 1 / 1.0s / 1m
+TEXT_TOOLTIP_RED_GUARD_WEAP1,1x Force Pike: 1 / 1.0s / 1m
 TEXT_TOOLTIP_REFORM_SQUAD_SEVEN,Locate replacements for fallen pilots to reform the squadron.
 TEXT_TOOLTIP_REINFORCEMENT_POINT_DESCRIPTION,Allows a player to bring in reinforcements from space. Must be captured before it can be used. Capture it by keeping only friendly infantry near it for several seconds.
 TEXT_TOOLTIP_REINFORCEMENT_POINT_NAME,Reinforcement point
@@ -16006,6 +16011,7 @@ TEXT_TOOLTIP_VAZUS_WEAP1,1x E-5 Carbine: 3 / 1.25s / 220m
 TEXT_TOOLTIP_VAZUS_WEAP2,1x Proton Grenade: 1 / 15.0s / 200m
 TEXT_TOOLTIP_VEILED_QUEEN,The Veiled Sorority is a secretive pirate group led by a Pirate Queen and an all-female advisory council. The Sorority remains almost unknown to the public and authorities due to limiting their targets to other criminal organizations which led to a costly confrontation with the Zann Consortium.
 TEXT_TOOLTIP_VEILED_QUEEN_SQUADRON,Fighters: 0.5 / 0
+TEXT_TOOLTIP_VENAOTR_OFC_SPECIAL, Special: 2x Republic Z-95 Squadron 1/2 [E3]
 TEXT_TOOLTIP_VENATOR,An iconic carrier-destroyer hybrid. The Republic-designed Star Destroyer was introduced early in the Clone Wars with a large hangar and notable dual-bridge towers. It relies heavily on its fighter complement and is intended to be supported by other vessels such as its counterpart, the Victory-I. It is decently well rounded in spite of its focus on fighter tactics but best not used against larger ships.
 TEXT_TOOLTIP_VENATOR_DECOLORIZE, Decolorize Venators to wipe out traces of Republic.
 TEXT_TOOLTIP_VENATOR_HULL,Hull: 3240 (Heavy Frigate)
@@ -16027,6 +16033,7 @@ TEXT_TOOLTIP_VENATOR_RESEARCH,Enables the construction of the powerful Venator-c
 TEXT_TOOLTIP_VENATOR_SHIELD,Shields: 3000 / [30/R] (Heavy Frigate)
 TEXT_TOOLTIP_VENATOR_SQUADRON,Fighters: 2 / 7 | Bombers: 2 / 7
 TEXT_TOOLTIP_VENATOR_SQUADRON_COBURN,Fighters: 4 / 12
+TEXT_TOOLTIP_VENATOR_SQUADRON_OFC, Fighters: 2 / 8 [E2-3], 3 / 8 [E4-5] | Bombers: 2 / 6
 TEXT_TOOLTIP_VENATOR_SQUADRON_TARKIN,Fighters: 5 / 14
 TEXT_TOOLTIP_VENATOR_SQUADRON_WIELER,Fighters: 9 / 26
 TEXT_TOOLTIP_VENATOR_TRANQUILITY,The Tranquility was a Venator-class Star Destroyer within the Open Circle Fleet that served as the flagship of Jedi General Luminara. The ship housed a highly secure detention level with several cells, each fitted with ray shields capable of withstanding several blaster shots and even lightsabers. Following the capture of Separatist Leader Viceroy Nute Gunray, the Tranquility was tasked with transporting him from Rodia to Coruscant where he would stand trial for his crimes against the Republic.

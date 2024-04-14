@@ -18,10 +18,10 @@ return {
 			DEFAULT = {Initial = 1, Reserve = 4}
 		},
 		["2_WARPOD_SQUADRON"] = {
-			DEFAULT = {Initial = 2, Reserve = 5, ResearchType = "RepublicWarpods"}
+			DEFAULT = {Initial = 2, Reserve = 6, ResearchType = "RepublicWarpods"}
 		},
 		["GENERIC_BTLB_Y-WING_SQUADRON"] = {
-			DEFAULT = {Initial = 2, Reserve = 5, HeroOverride = {{"AUTEM_VENATOR", "WESSEX_REDOUBT"}, {"NTB_630_SQUADRON","NTB_630_SQUADRON"}}, ResearchType = "~RepublicWarpods"}
+			DEFAULT = {Initial = 2, Reserve = 6, HeroOverride = {{"AUTEM_VENATOR", "WESSEX_REDOUBT"}, {"NTB_630_SQUADRON","NTB_630_SQUADRON"}}, ResearchType = "~RepublicWarpods"}
 		}
 	},
 	Scripts = {"multilayer", "fighter-spawn"}

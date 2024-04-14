@@ -281,6 +281,7 @@ return {
 ["TJ912_RECUSANT"] = true,
 ["TM171_DH_OMNI"] = true,
 ["VENATOR_OFC"] = true,
+["VENATOR_OFC_CAMPAIGN"] = true, 
 ["VENATOR_SPHA_T"] = true,
 ["UMBARAN_FRIGATE"] = true,
 ["UMBARAN_FRIGATE_INFLUENCE"] = true

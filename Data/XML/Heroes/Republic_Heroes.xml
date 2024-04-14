@@ -929,7 +929,6 @@
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_AUTEM
-		TEXT_HERO_DALLIN
 		TEXT_HERO_HAUSER
 		TEXT_HERO_MAARISA
 		</Encyclopedia_Text>
@@ -2842,10 +2841,8 @@
 		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
-		TEXT_HERO_YULAREN
-		TEXT_HERO_KILIAN
-		TEXT_HERO_DEN_WESSEX
-		TEXT_HERO_BLOCK
+		TEXT_HERO_JAN_DODONNA
+		TEXT_HERO_DALLIN
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
@@ -2855,24 +2852,24 @@
 	<UniqueUnit Name="Jag_ARC170">
 		<Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Text_ID>TEXT_HERO_JAG</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_FIGHTER_COMMANDER
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
-		TEXT_TOOLTIP_ODD_BALL
-		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_JAG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_127TH_ARC170
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
-		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_MOVE
 		TEXT_STATBLOCK_ARC170_WEAP1
 		TEXT_STATBLOCK_ARC170_WEAP2
 		TEXT_STATBLOCK_ARC170_WEAP3
 		TEXT_STATBLOCK_ARC170_WEAP4
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>																						 
-		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN</Encyclopedia_Unit_Class>																						 
+		<Icon_Name>i_button_jag_p2.tga</Icon_Name>
 		
 		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
@@ -2913,27 +2910,27 @@
 				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
 			</Sensor_Jamming_Ability>
 
-			<Force_Healing_Ability Name="Odd_Ball_ARC170_Self_Heal">
+			<Force_Healing_Ability Name="Jag_ARC170_Self_Heal">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Heal_Range>5.0</Heal_Range>
 				<Heal_Percent>0.02</Heal_Percent>
 				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
 				<Single_Target_Heal>Yes</Single_Target_Heal>
-				<Applicable_Unit_Types>Odd_Ball_ARC170</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Jag_ARC170</Applicable_Unit_Types>
 			</Force_Healing_Ability>
 
-			<Combat_Bonus_Ability Name="Odd_Ball_Fighter_Bonus">
+			<Combat_Bonus_Ability Name="Jag_Plo_Koon_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
-				<Applicable_Unit_Types />
-				<Excluded_Unit_Types> </Excluded_Unit_Types>		
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Plo_Koon_Delta</Applicable_Unit_Types>
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.20</Damage_Bonus_Percentage>    
-				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
-			</Combat_Bonus_Ability>
+			</Combat_Bonus_Ability>	
 		</Abilities>
 	</UniqueUnit>
 
@@ -2994,14 +2991,14 @@
 	<Container Name="Jag_ARC170_127th_Container">
 		<Variant_Of_Existing_Type>ARC_170_Squadron_Container</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Text_ID>TEXT_HERO_JAG</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
-		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_JAG
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_COMMAND_127TH_ARC170
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
 		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
@@ -3014,8 +3011,8 @@
 		TEXT_STATBLOCK_ARC170_WEAP3
 		TEXT_STATBLOCK_ARC170_WEAP4
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>	
-		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN</Encyclopedia_Unit_Class>	
+		<Icon_Name>i_button_jag_p2.tga</Icon_Name>
 
 		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
 
@@ -3035,14 +3032,14 @@
 	<Squadron Name="Jag_ARC170_127th_Squadron">
 		<Variant_Of_Existing_Type>Generic_ARC_170_Squadron</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>	
+		<Text_ID>TEXT_HERO_JAG</Text_ID>	
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
-		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_JAG
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_COMMAND_127TH_ARC170
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
 		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
@@ -3055,13 +3052,13 @@
 		TEXT_STATBLOCK_ARC170_WEAP3
 		TEXT_STATBLOCK_ARC170_WEAP4
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
-		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_jag_p2.tga</Icon_Name>
 
-		<Create_Team_Type>Odd_Ball_ARC170_Squad_Seven_Container</Create_Team_Type>
-		<Squadron_Units>ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven</Squadron_Units>
-		<Squadron_Units>ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven</Squadron_Units>
-		<Squadron_Units>ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven, Odd_Ball_ARC170</Squadron_Units>
+		<Create_Team_Type>Jag_ARC170_127th_Container</Create_Team_Type>
+		<Squadron_Units>ARC170_127th, ARC170_127th, ARC170_127th, ARC170_127th</Squadron_Units>
+		<Squadron_Units>ARC170_127th, ARC170_127th, ARC170_127th, ARC170_127th</Squadron_Units>
+		<Squadron_Units>ARC170_127th, ARC170_127th, ARC170_127th, Jag_ARC170</Squadron_Units>
 
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>

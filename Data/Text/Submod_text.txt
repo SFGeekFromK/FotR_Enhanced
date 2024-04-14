@@ -1,4 +1,6 @@
-﻿TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_UMBARA_FOTR,Umbara: Can build Umbaran Support Frigate at 8+ influence.
+﻿TEXT_NOTE,Put text changes for submods here
+
+TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_UMBARA_FOTR,Umbara: Can build Umbaran Support Frigate at 8+ influence.
 TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+10% Firing Rate (OCF Venator & OCF Venator SPHA-T Only) [Stacking bonus]
 TEXT_DOCUMENTATION_BODY_TRAITPLOBRO,Plo's Bros: +20% Health (Plo Koon Only)
 TEXT_DOCUMENTATION_HEADER_FOTR_ENHANCED_FEATS,==== FotR_Enhanced features ==================
@@ -16,7 +18,6 @@ TEXT_HERO_ROHN,Rohn
 TEXT_HERO_TJ912,TJ-912
 TEXT_HERO_TM171,TM-171
 TEXT_HERO_WARTHOG, Warthog
-TEXT_NOTE,Put text changes for submods here
 TEXT_PLANET_INFO_UMBARA_INFLUENCE_REWARD,•Unlocks Umbaran Support Frigate at 8+ influence
 TEXT_SPEECH_BLOCK_RETURNS_VIGILANCE,Admiral Block: Impressive... though it did cost my ship, General Kenobi's idea to self-destruct my ship did manage to deal a huge blow against the enemy at the last moment. - [Admiral Block has returned in control of the Venator-class, Vigilance].
 TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE,Health: 70 | Shields: 45

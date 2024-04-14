@@ -38,9 +38,15 @@ Hutt_HuttGuard.ALO
 
 ------Todo Lists------
 
-venator_ofc fighter complement override
-venator_ofc stat text change(fighters)
+Add text block to autem & Wessex regarding venator ofc fighter override
 
+lock sphat and grant them only as starting unit/mission rewards
+
+ofc venator starting unit (cf : above obi wan venator)
+
+HFM Generic Venator Lock Info
+
+Check if venator ofcs really has firing rate bonuses
 
 
 ----------------------

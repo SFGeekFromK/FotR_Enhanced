@@ -142,36 +142,36 @@ function State_Historical_GC_Choice(choice)
 	end
 end
 
-function State_Framework_Activation(message) -- FotR_Enhanced : admiral decrement,
+function State_Framework_Activation(message) -- FotR_Enhanced : hero decrements matched to vanilla amounts
     if message == OnEnter then
 		GlobalValue.Set("CURRENT_ERA", 2)
 		crossplot:publish("INITIALIZE_AI", "empty")
 		crossplot:publish("VENATOR_HEROES", "empty")
 
 		--Admirals:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 2, 1) 
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 2, 1) -- 5 - (2+2) = 1 
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Coburn","Yularen"}, 1)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Maarisa","Martz","Baraka","Grumby","Forral","Autem","Tallon","Dallin","Pellaeon","Dao"}, 1)
 
 		--Moffs:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 2)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 2, 2)
 
 		--Jedi:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 3)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 2, 3) -- 
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Plo"}, 3)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Ahsoka","Luminara","Barriss","Kit","Shaak","Kota","Knol"}, 3)
 
 		--Clone Officers:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", -1, 4)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 2, 4) -- 4 - (1+2) = 1 
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Rex"}, 4)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Gree_Clone","Bacara","Cody"}, 4)
 		crossplot:publish("REPUBLIC_ADMIRAL_RETURN", {"Jet"}, 4)
 
 		--Commandos:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 2, 5)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 3, 5)
 
 		--Generals:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 2, 6)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 3, 6)
 	else
 		crossplot:update()
     end
@@ -183,6 +183,8 @@ function State_Generic_Story_Set_Up()
 	StoryUtil.SpawnAtSafePlanet("NABOO", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Rex_Team"})
 	StoryUtil.SpawnAtSafePlanet("BORMUS", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Plo_Koon_Delta_Team","Ask_Aak_Team"})
 	StoryUtil.SpawnAtSafePlanet("KALIIDA_NEBULA", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Anakin_Ahsoka_Twilight_Team"})
+
+	Clear_Fighter_Research("RepublicWarpods")
 
 	gc_start = true
 

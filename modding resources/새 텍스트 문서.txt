@@ -16,3 +16,8 @@ Dark Acolytes are Dark Jedis who joined the Confederacy of Independent Systems a
 
 CT-55/11-9009, known as Jai'galaar or Jag, was a clone pilot captin in the Clone Army. Originally a Clone Commander, he was demoted to captain after the Retreat at Katraasii.
 Later, Jedi General Plo Koon drafted the captin as the test pilot for the new ARC-170 starfighters and flew with him on many battles including the battle over Cato Neimoidia.
+
+
+The Pelta-class frigate is locked until the Malevolence is destroyed.  The older C-Class frigate will act as its replacement.
+
+Only for the duration of this campaign, Open Circle Fleet Venators are default, only buildable Venators without build limits. 

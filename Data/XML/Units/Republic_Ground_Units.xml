@@ -1312,7 +1312,7 @@
 
 		<Create_Team_Type/>
 		<Max_Squad_Size>1</Max_Squad_Size>
-		<Company_Transport_Unit>Flashblind_Landing_Craft_Landing</Company_Transport_Unit>
+		<Company_Transport_Unit>Flashblind_Landing_Craft</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>

@@ -1,6 +1,5 @@
-Renewed for 1.4
-==========Submod Projects==========
-<Ongoing Projects>
+========== FotR Enhanced ==========
+<Working On>
 
 # OFC Venator
 - Finetune(Done)
@@ -15,25 +14,22 @@ if achieved certain point is reached it will unlock a upgrade dummy where there 
 
 # Add New CIS Heroes
 
-TM-171(Originally Canon Source) - dh omni class (Done)
-
-TZ-21
-
+TX-20
+TX-21
+TZ-33
+TN-123(Name Canon Source)
 
 # morgukai shadow army on salucemi
 - bok and his clones with cloning facility
 
 
 # Expanded Clone Pilot Heroes
-Hunter Squadron BTLB Ywing config (Warthog) (coburn / wieler)
+Hunter Squadron BTLB Ywing config (Warthog) (?)
 hawk (yularen) 
-jag (dodona / ?)
+Alpha 17 (phase 2?)
 
-
-# Early ATAT
-
-- Copy files from NFOW mod
-- Code XML
+# Additional Ground Category filter UI
+Filter Ground Units, Structures by different classes.
 
 
 # Proper Voice For Heores
@@ -43,21 +39,12 @@ jag (dodona / ?)
 		Appo
 		Woolfe
 		Gree
-		Luminara Unduli
+		Luminara Unduli(?)
 		
-
-# Add Paratrooper
-- Learn basic infantry code structure
-- Copy Files from MCA Submod - (Done)
-- XML Code
-- Movie Clones Voicevoer
-
 
 # Balance CIS Units
 -Providence & Recusant Dreadnought Build Limits - ? Already Unbuildable
 
-
-# Increase Mandator I build limits ; total of 6 (Kuat 3, humbarine, ixtlar, alsakan each 1) (On Hold) 
 
 
 # Umbaran Militia Units
@@ -73,7 +60,7 @@ allows for unique heroes & defense units to spawn up on space stations, locks ec
 
 
 <Planned Projects>
-Additional Ground Category filter UI
+
 Add Units ; ARF Trooper, Clone Assasins, Covert OP Clones, Clone Shadow troopers
 Change Rex Weapons & Animations, Add in Jesse, Kix, Fives etc as torrent company heores
 Cody spawning boil & Waxer
@@ -84,6 +71,87 @@ Christoposis Story Mission,
 Dedicated TCW Historical Campaign
 More Scenarios For GC ; Sideous Choosing CIS as his Empire ; through TR Dark empire function
 **Not sure if possible, but make better ai that fights more like a human ;; by implementing 3rd party ai plugins 
+
+
+<Reconsidering Plans>
+
+# Add Paratrooper(Wait til official model release?)
+- Learn basic infantry code structure
+- Copy Files from MCA Submod - (Done)
+- XML Code
+- Movie Clones Voicevoer
+
+# Early ATAT(Reconsider)
+
+- Copy files from NFOW mod
+- Code XML
+
+# Increase Mandator I build limits ; total of 6 (Kuat 3, humbarine, ixtlar, alsakan each 1) 
+
+
+
+
+========== FotR : New Face Of War (Currently Ideas Only) ==========
+
+#Lore Accuracy
+Remove TCW only units & Heroes
+List : [
+	UNITS{
+		Rep : 
+			Arquitens
+			pelta varaints
+			republic z95
+			Y wing
+			Charger C 70
+			AV 7
+			rx-200 falchion
+			A5-RX
+		CIS : 
+			Malevalance
+			DH omni support vessel
+			Hyena Bomber
+			supertank
+			Commando Droid
+			J1 proto canon
+	}
+	HEORES{
+		Rep : 
+			Yularen
+			Wieler
+			Dron
+			Coburn
+			Tenant
+			Dao
+			Kilian
+			Mcquarrie
+			Ozzel
+			Jayfon
+			Jesra
+			Rex
+			Jet
+			Wolffe
+			Gaffa
+			Gregor
+			Ahsoka
+			Phase 1 oddball
+		CIS : 
+			whorm loathsome
+			trench
+			lok durd
+			mar tuuk
+			AutO
+			kalani
+			tf-
+			k2-b4
+			osi sobek 
+			all tactical droid unlisted
+	}
+	
+
+]
+
+
+
 
 ==========EAW System Learning==========
 Basic Game Structure

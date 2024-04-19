@@ -41,10 +41,16 @@ ADDED STUFFS
 
 # New Heroes
 
+[REP]
 -Lorth Needa
 --- Carrick Cruiser Integrity, Command Tier 4, Always Available
 --- Icon & Unique Voice Over for Assign/Retire Dummy ported from AOTR
 
+-Block
+--- Venator Negoiator, Vigilance(Respawn), Command Tier 4
+--- Icon from Google
+
+[CIS]
 -TJ912
 --- Recusant light destroyer, Command Tier 4
 --- slightly adjusted firing rate for light laser cannons
@@ -56,6 +62,10 @@ ADDED STUFFS
 --- siege specialist trait
 --- spawns in era 3 start and era 3 reward only
 
+# New Mechanic
+- Open Circle Fleet Officer
+--- Has bonuses for OCF Venators(self appliable)
+--- bonuses for 10% Health, 5% shield, -10% recharge time, 
 
 CHANGES & ADJUSTMENTS
 
@@ -65,6 +75,7 @@ CHANGES & ADJUSTMENTS
 -Senate Commando - available at galactic senate
 -Clone marine - fully unlocked
 -Protodeka - build limit 4
+-SPHA-Ts unlocked
 
 # Republic Hero limits increased
 -NOTE : All vacant limits(limits of affordable losses) increased to match the number of all available Heroes
@@ -78,3 +89,5 @@ CHANGES & ADJUSTMENTS
 # Count Dooku Able to build dark Acolyte(Dark Jedi from TR, Requires Dooku in orbit)
 
 # changed Tarkin's Venator model to OCF Variant
+
+# OCF Venator replaces Generic Venator in Hunt For Malevolence(Without buildlimit)

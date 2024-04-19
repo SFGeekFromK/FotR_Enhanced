@@ -24,7 +24,7 @@ function Definitions()
 	}
 
 	venator_list = {
-		"Venator_OFC"
+		"Generic_Venator"
 	}
 
 	twilight_list = {
@@ -103,9 +103,9 @@ function Begin_Battle(message)
 		venator_1_marker = Find_Hint("STORY_TRIGGER_ZONE_00", "venator1")
 		venator_2_marker = Find_Hint("STORY_TRIGGER_ZONE_00", "venator2")
 
-		player_plo = Find_Hint("VENATOR_OFC", "venatorplo")
-		venator_1 = Find_Hint("VENATOR_OFC", "venator1")
-		venator_2 = Find_Hint("VENATOR_OFC", "venator2")
+		player_plo = Find_Hint("GENERIC_VENATOR", "venatorplo")
+		venator_1 = Find_Hint("GENERIC_VENATOR", "venator1")
+		venator_2 = Find_Hint("GENERIC_VENATOR", "venator2")
 
 		player_plo_intro = Find_Hint("SKIRMISH_VENATOR", "venatorplointro")
 		venator_1_intro = Find_Hint("SKIRMISH_VENATOR", "venator1intro")
@@ -181,7 +181,7 @@ function Begin_Battle(message)
 		p_republic.Make_Ally(p_cis)
 		p_cis.Make_Ally(p_republic)
 
-		plo_hide_table = Find_All_Objects_Of_Type("VENATOR_OFC")
+		plo_hide_table = Find_All_Objects_Of_Type("GENERIC_VENATOR")
 		for y,plohiding in pairs(plo_hide_table) do
 			if TestValid(plohiding) then
 				Hide_Object(plohiding, 1)

@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--***** Hunt for the Malevolence: Abregado Ambush *****-->
+<!--*****************************************************-->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+
+	<Event Name="Trigger_Plo_Death">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PLO_DEATH</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Pods_Death_Lua">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PODS_DEATH</Event_Param2>
+	</Event>
+
+	<Event Name="Trigger_Pods_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Trigger_Pods_Death_Lua</Prereq>
+		<Prereq>CIS_Goal_03_Complete</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Escape_Reached">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ESCAPE_REACHED</Event_Param2>
+	</Event>
+
+
+	<Event Name="Venators_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>VENATOR_OFC</Event_Param1>
+		<Event_Param3>3</Event_Param3>
+		<Prereq>Goal_Trigger_Rep_Act_I</Prereq>
+		<Prereq>Goal_Trigger_CIS_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Fleet_Destroyed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Prereq>Venators_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="Twilight_Destroyed">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Twilight</Event_Param1>
+		<Event_Param3>1</Event_Param3>
+		<Prereq>Goal_Trigger_Rep_Act_II</Prereq>
+		<Prereq>Goal_Trigger_Rep_Act_III</Prereq>
+		<Prereq>Goal_Trigger_CIS_Act_III</Prereq>
+	</Event>
+
+</Story>

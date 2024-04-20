@@ -2,7 +2,7 @@ return {
 	["EMPIRE"] = {
 	["CORUSCANT"] = {"Mace_Windu_Delta_Team", "Pestage_Team"},
 	["KAMINO"] = {"Delta_Squad", "Shaak_Ti_Delta_Team"},
-	["ANAXES"] = {"Tallon_Sundiver", "Geen_Team"},
+	["ANAXES"] = {"Tallon_Sundiver"--[[FotR_Enhanced ; "Geen_Team"]]},
 	["CARIDA"] = {"Pellaeon_Leveler", "Ozzel_Team"},
 	["RISHI"] = {"Cody_Team", "Rex_Team"},
 	["GEONOSIS"] = {"Anakin_Delta_Team", "Obi_Wan_Delta_Team", "Fordo_Team"},

@@ -5,9 +5,9 @@ return {
 		{month = 11, name = "VENATOR_RESEARCH"},
 	},
 	["21 BBY"] = {
+		{month = --[[11]] 1, name = "PHASE_TWO_RESEARCH"},
 		{month = 6, name = "VICTORY_RESEARCH"},
 		{month = 6, name = "YEAR_ONE_CIS_FINISHED"},
-		{month = --[[11]] 1, name = "PHASE_TWO_RESEARCH"},		
 	},
 	["20 BBY"] = {
 		{month = 2, name = "BULWARK_RESEARCH"},

@@ -18,7 +18,7 @@ function TechManager:new(galactic_conquest, human_player, planets, unlocktech)
 			"Template_Research_Dummy", {"Empire"}, 
 			{"Republic_UT_AT_Speeder_Company"}, 
 			{}, 
-			{"Republic_UT_AT_Speeder_Company", "Republic_UT_AT_Speeder_Company"}, "Kuat",
+			{"Republic_UT_AT_Speeder_Company", "Republic_UT_AT_Speeder_Company"},"Kuat",
 			{"GEEN_UNLOCK"})
 
 		self.VenatorResearch = GenericResearch(self.galactic_conquest, 

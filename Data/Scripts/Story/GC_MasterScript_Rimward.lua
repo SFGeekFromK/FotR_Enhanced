@@ -242,7 +242,9 @@ function State_Framework_Activation(message)
 		GlobalValue.Set("CURRENT_ERA", 2)
 		crossplot:publish("INITIALIZE_AI", "empty")
 		crossplot:publish("VENATOR_HEROES", "empty")
-
+		-- FotR_Enhanced
+		crossplot:publish("UTAT_RESEARCH_FINISHED", "empty")
+		
 		--Admirals:
 		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", -1, 1)
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Kilian","Yularen"}, 1)

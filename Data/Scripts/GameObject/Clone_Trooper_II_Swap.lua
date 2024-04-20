@@ -1,5 +1,6 @@
 require("PGStateMachine")
-UnitUtil=require("eawx-util/UnitUtil")
+require("PGSpawnUnits")
+UnitUtil = require("eawx-util/UnitUtil")
 
 
 function Definitions()

@@ -28,7 +28,8 @@ return {
                 "Republic_HAET_Group",
                 "Republic_AT_AP_Walker_Company",
                 "Republic_AT_OT_Walker_Company",
-				"Republic_Gian_Company"
+				"Republic_Gian_Company",
+                "Republic_UT_AT_Speeder_Company"
             }, false)
 			
 			UnitUtil.SetLockList("EMPIRE", {

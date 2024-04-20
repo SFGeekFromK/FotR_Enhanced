@@ -2,23 +2,6 @@
 
 <Story>
 
-	<!-- UTAT Research -->
-
-	<Event Name="UTAT_Dialog">
-		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>UTAT_RESEARCH_STARTED</Event_Param2>
-		<Story_Dialog>Dialog_UTAT_Research</Story_Dialog>
-		<Story_Chapter>0</Story_Chapter>
-		<Story_Tag>UTAT_TAG</Story_Tag>
-	</Event>
-	
-	<Event Name="UTAT_Completed">
-		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>UTAT_RESEARCH_COMPLETED</Event_Param2>
-		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
-		<Reward_Param1>UTAT_TAG</Reward_Param1>
-	</Event>
-
 	<!-- Clone Phase II -->
 
 	<Event Name="Clone_Trooper_II_Dialog">

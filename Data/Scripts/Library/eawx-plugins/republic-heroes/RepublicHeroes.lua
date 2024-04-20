@@ -60,7 +60,6 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("REPUBLIC_FIGHTER_DISABLE", self.Remove_Fighter_Sets, self)
 	-- FotR_Enhanced
 	crossplot:subscribe("GEEN_UNLOCK", self.Geen_Unlock, self)
-	crossplot:subscribe("UTAT_RESEARCH_FINISHED", self.Geen_Unlock, self)
 
 	admiral_data = {
 		total_slots = 5,       --Max number of concurrent slots. Set at the start of the GC and never change.
@@ -997,5 +996,5 @@ end
 
 -- FotR_Enhanced
 function RepublicHeroes:Geen_Unlock()
-	Handle_Hero_Add("Geen",general_data)
+	Handle_Hero_Add("Geen", general_data)
 end

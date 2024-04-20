@@ -138,6 +138,7 @@ function State_Framework_Activation(message)
 		crossplot:publish("INITIALIZE_AI", "empty")
 		crossplot:publish("VENATOR_HEROES", "empty")
 		crossplot:publish("VICTORY_HEROES", "empty")
+		--crossplot:publish("GEEN_UNLOCK", "empty")
 
 		--Admirals:
 		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 1)

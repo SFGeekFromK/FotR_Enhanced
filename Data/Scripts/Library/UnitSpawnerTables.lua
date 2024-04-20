@@ -134,7 +134,7 @@ function DefineUnitTable(faction, rosterOverride)
 				,{"Republic_AT_AP_Walker_Company", 1, StartYear = -19}
 				,{"Republic_A5RX_Company", 0.2, StartYear = -22}							
 				,{"Republic_A5_Juggernaut_Company", 1, StartYear = -22}
-				,{"Republic_UT_AT_Speeder_Company", 1, StartYear = -22}
+				,{"Republic_UT_AT_Speeder_Company", 1, StartYear = -21}
 				,{"Republic_AT_TE_Walker_Company", 1, StartYear = -22}
 				,{"Republic_Gian_Company", 1, LastYear = -21}
 				,{"SPHA_T_Company", 1.5, StartYear = -22, LastYear = -22}

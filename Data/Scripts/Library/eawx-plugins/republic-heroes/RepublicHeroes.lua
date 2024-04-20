@@ -58,7 +58,10 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("CLONE_UPGRADES", self.Phase_II, self)
 	crossplot:subscribe("REPUBLIC_FIGHTER_ENABLE", self.Add_Fighter_Sets, self)
 	crossplot:subscribe("REPUBLIC_FIGHTER_DISABLE", self.Remove_Fighter_Sets, self)
-	
+	-- FotR_Enhanced
+	crossplot:subscribe("GEEN_UNLOCK", self.Geen_Unlock, self)
+	crossplot:subscribe("UTAT_RESEARCH_FINISHED", self.Geen_Unlock, self)
+
 	admiral_data = {
 		total_slots = 5,       --Max number of concurrent slots. Set at the start of the GC and never change.
 		free_hero_slots = 5,   --Slots open to fill with a hero.
@@ -282,7 +285,6 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Rom",
 			"Gentis",
-			"Geen",
 			"Ozzel",
 			"Romodi",
 			"Solomahal",
@@ -991,4 +993,9 @@ function RepublicHeroes:Remove_Fighter_Set(set, nolock)
 	if fighter_assign_enabled and nolock == nil then
 		Enable_Fighter_Sets()
 	end
+end
+
+-- FotR_Enhanced
+function RepublicHeroes:Geen_Unlock()
+	Handle_Hero_Add("Geen",general_data)
 end

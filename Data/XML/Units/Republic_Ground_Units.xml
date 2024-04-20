@@ -2532,7 +2532,7 @@
 		<IsDeathCloneObstacle> true </IsDeathCloneObstacle>
 	</Death_Clone>
 
-	<GroundCompany Name="Republic_UT_AT_Speeder_Company">
+	<GroundCompany Name="Republic_UT_AT_Speeder_Company"> <!-- Unlocked with Research -->
 
 		<Text_ID>TEXT_UNIT_UT_AT</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
@@ -2567,7 +2567,7 @@
 		<Required_Special_Structures>E_Ground_Advanced_Vehicle_Factory | KDY_HQ | Mekuun_HQ</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
-		<Build_Initially_Locked>no</Build_Initially_Locked>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 		<Piracy_Value_Credits>50</Piracy_Value_Credits>
 		<Score_Cost_Credits>1000</Score_Cost_Credits>
 		<Population_Value>1</Population_Value>

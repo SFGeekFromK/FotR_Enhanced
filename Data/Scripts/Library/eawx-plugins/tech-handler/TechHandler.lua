@@ -13,6 +13,13 @@ function TechManager:new(galactic_conquest, human_player, planets, unlocktech)
 	self.unlocktech = unlocktech
 	
 	if self.unlocktech ~= false then
+		self.UtatResearch = GenericResearch(self.galactic_conquest, 
+			"UTAT_RESEARCH", 
+			"Dummy_Research_UTAT", {"Empire"}, 
+			{"Republic_UT_AT_Speeder_Company"}, 
+			{}, 
+			{"Republic_UT_AT_Speeder_Company", "Republic_UT_AT_Speeder_Company"}, "Kuat",
+			{"GEEN_UNLOCK"})
 
 		self.VenatorResearch = GenericResearch(self.galactic_conquest, 
 			"VENATOR_RESEARCH", 

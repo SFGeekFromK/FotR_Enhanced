@@ -46,6 +46,7 @@ ofc venator starting unit (cf : above obi wan venator)
 
 Check if venator ofcs really has firing rate bonuses
 
+make icon : I_BUTTON_RESEARCH_UTAT,
 
 ----------------------
 

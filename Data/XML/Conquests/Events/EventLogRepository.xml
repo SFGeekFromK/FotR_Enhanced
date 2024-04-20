@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+
+<Story>
+
+	<!-- UTAT Research -->
+
+	<Event Name="UTAT_Dialog">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UTAT_RESEARCH_STARTED</Event_Param2>
+		<Story_Dialog>Dialog_UTAT_Research</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>UTAT_TAG</Story_Tag>
+	</Event>
+	
+	<Event Name="UTAT_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UTAT_RESEARCH_COMPLETED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>UTAT_TAG</Reward_Param1>
+	</Event>
+
+	<!-- Clone Phase II -->
+
+	<Event Name="Clone_Trooper_II_Dialog">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PHASE_TWO_RESEARCH_STARTED</Event_Param2>
+		<Story_Dialog>Dialog_Clone_Trooper_II_Research</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>CLONE_TROOPER_II_TAG</Story_Tag>
+	</Event>
+	
+	<Event Name="Clone_Trooper_II_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>PHASE_TWO_RESEARCH_COMPLETED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>CLONE_TROOPER_II_TAG</Reward_Param1>
+	</Event>
+	
+	<!-- Venator Research -->
+	
+	<Event Name="Venator_Dialog">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VENATOR_RESEARCH_STARTED</Event_Param2>
+		<Story_Dialog>Dialog_Venator_Research</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Venator_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="Venator_Dialog_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VENATOR_RESEARCH_COMPLETED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Venator_Tag</Reward_Param1>
+	</Event>
+	
+	<!-- Victory Research --> 
+	
+	<Event Name="Victory_Dialog">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VICTORY_RESEARCH_STARTED</Event_Param2>
+		<Story_Dialog>Dialog_Victory_Research</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Victory_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="Victory_Dialog_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VICTORY_RESEARCH_COMPLETED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Victory_Tag</Reward_Param1>
+	</Event>
+	
+	<!-- Bulwark 1 Research -->
+	
+	<Event Name="Bulwark_Dialog">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BULWARK_RESEARCH_STARTED</Event_Param2>
+		<Story_Dialog>Dialog_Bulwark_Research</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Bulwark_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="Bulwark_Dialog_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BULWARK_RESEARCH_COMPLETED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Bulwark_Tag</Reward_Param1>
+	</Event>
+	
+	<!-- Victory 2 Research --> 
+	
+	<Event Name="Victory2_Dialog">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VICTORY2_RESEARCH_STARTED</Event_Param2>
+		<Story_Dialog>Dialog_Victory2_Research</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Victory2_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="Victory2_Dialog_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VICTORY2_RESEARCH_COMPLETED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Victory2_Tag</Reward_Param1>
+	</Event>
+	
+	<!-- Bulwark 2 Research -->
+	
+	<Event Name="Bulwark2_Dialog">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BULWARK2_RESEARCH_STARTED</Event_Param2>
+		<Story_Dialog>Dialog_Bulwark2_Research</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Bulwark2_Tag</Story_Tag>
+	</Event>
+	
+	<Event Name="Bulwark2_Dialog_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BULWARK2_RESEARCH_COMPLETED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Bulwark2_Tag</Reward_Param1>
+	</Event>
+
+	<!-- Mandalore Support -->
+
+	<Event Name="Mandalore_Support_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_MANDALORE_SUPPORT_STARTED</Event_Param2>
+	</Event>
+
+	<Event Name="Mandalore_Support_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+		<Story_Dialog>Dialog_Mandalore_Support</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>MANDALORE_SUPPORT_TAG</Story_Tag>
+		<Prereq>Mandalore_Support_Timer</Prereq>
+	</Event>
+
+	<Event Name="Mandalore_Support_Completed_Timer">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_MANDALORE_SUPPORT_DEATH_WATCH</Event_Param2>
+	</Event>
+
+	<Event Name="Mandalore_Support_Completed">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>MANDALORE_SUPPORT_TAG</Reward_Param1>
+		<Prereq>Mandalore_Support_Completed_Timer</Prereq>
+	</Event>
+	
+</Story>

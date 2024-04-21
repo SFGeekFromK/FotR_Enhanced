@@ -14374,10 +14374,10 @@
 				<Applicable_Unit_Types/>
 				<Excluded_Unit_Types/>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>-0.10</Damage_Bonus_Percentage>    
+				<Damage_Bonus_Percentage>-0.10</Damage_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>-0.05</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
 			
@@ -14430,6 +14430,7 @@
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
 		TEXT_TOOLTIP_TRAIT_ARROGANT
+		TEXT_TOOLTIP_TRAIT_UNYIELDING
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_ROHN
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 

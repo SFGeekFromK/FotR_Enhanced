@@ -14342,6 +14342,7 @@
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
 		TEXT_TOOLTIP_TRAIT_ARROGANT
+		TEXT_TOOLTIP_TRAIT_UNYIELDING
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_ROHN
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
@@ -14365,6 +14366,26 @@
 		<Lua_Script>GroundHero</Lua_Script>
 		<Property_Flags>GoodInfantryCrusher | CanContainGarrison | IsSupercrusher | HealsInfantry | GTSImmune </Property_Flags>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Rohn_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Excluded_Unit_Types/>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>-0.10</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Retreat_Prevention_Ability Name="Rohn_Unyielding_Retreat_Prevention">
+				<!-- maybe it should be space only? -->
+				<Activation_Style>Combat_Automatic</Activation_Style>
+			</Retreat_Prevention_Ability>
+		</Abilities>
 	</UniqueUnit>
 
 	<HeroCompany Name="Rohn_Team">

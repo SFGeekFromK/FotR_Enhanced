@@ -123,7 +123,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Byluir"] = {"BYLUIR_ASSIGN",{"BYLUIR_RETIRE"},{"BYLUIR_VENATOR"},"Byluir"},
 			["Hauser"] = {"HAUSER_ASSIGN",{"HAUSER_RETIRE"},{"HAUSER_DREADNAUGHT"},"Lynch Hauser"},
 			["Wessel"] = {"WESSEL_ASSIGN",{"WESSEL_RETIRE"},{"WESSEL_ACCLAMATOR"},"Marcellin Wessel"},
-			["Seerdon"] = {"SEERDON_ASSIGN",{"SEERDON_RETIRE"},{"SEERDON_INVINCIBLE"},"Kohl Seerdon"},			
+			["Seerdon"] = {"SEERDON_ASSIGN",{"SEERDON_RETIRE"},{"SEERDON_INVINCIBLE"},"Kohl Seerdon"},
 			["Praji"] = {"PRAJI_ASSIGN",{"PRAJI_RETIRE"},{"PRAJI_VALORUM"},"Collin Praji"},
 			["Ravik"] = {"RAVIK_ASSIGN",{"RAVIK_RETIRE"},{"RAVIK_VICTORY"},"Ravik"},
 			["Therbon"] = {"THERBON_ASSIGN",{"THERBON_RETIRE"},{"THERBON_CERULEAN_SUNRISE"},"Therbon"},
@@ -509,6 +509,7 @@ function RepublicHeroes:init_heroes()
 		Handle_Hero_Exit("Ahsoka", council_data)
 		Handle_Hero_Exit("Halcyon", council_data)
 		Handle_Hero_Exit("Gregor", commando_data)
+		set_unit_index("Block", 2, admiral_data)
 
 		RepublicHeroes:Add_Fighter_Set("Odd_Ball_ARC170_Location_Set")
 		RepublicHeroes:Add_Fighter_Set("Warthog_Republic_Z95_Location_Set")

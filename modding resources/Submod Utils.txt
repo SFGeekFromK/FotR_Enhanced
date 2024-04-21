@@ -37,6 +37,7 @@ Hutt_HuttGuard_NoHelmet.ALO
 Hutt_HuttGuard.ALO
 
 ------Todo Lists------
+Bythen Forral Fighter Hero convertion
 
 Add text block to autem & Wessex regarding venator ofc fighter override
 

@@ -7314,13 +7314,40 @@
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Text_ID>TEXT_HERO_TX21</Text_ID>
 		<Encyclopedia_Text>
-		
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_
 		</Encyclopedia_Text>
 
-		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TACTICAL_DROID</Encyclopedia_Unit_Class>
+		
+		<Icon_Name>I_BUTTON_TX21.tga</Icon_Name>
 
+		<Highlight_Blob_Material_Name>Highlight_CIS_Hero</Highlight_Blob_Material_Name>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Affiliation>Rebel</Affiliation>
+		<Lua_Script>GroundHero</Lua_Script>
+		<Property_Flags>GTSImmune</Property_Flags>
 
 	</HeroUnit>
 
-	<HeroCompany Name="TX21_Team"
+	<HeroCompany Name="TX21_Team">
+		<Variant_Of_Existing_Type>CIS_Super_Tank_Company</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Text_ID>TEXT_HERO_TX21</Text_ID>
+		<Encyclopedia_Text>
+		
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TACTICAL_DROID</Encyclopedia_Unit_Class>
+		
+		<Icon_Name>I_BUTTON_TX21.tga</Icon_Name>
+
+		<Tech_Level>99</Tech_Level>
+		<Score_Cost_Credits> 18000 </Score_Cost_Credits>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Units>TX21_SuperTank</Company_Units>
+	</HeroCompany>
 </CIS_Heroes>

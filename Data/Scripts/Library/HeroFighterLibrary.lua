@@ -59,7 +59,7 @@ function Get_Hero_Entries(upgrade_object)
 			{"GRANT", Locations = {"GRANT_VENATOR"}},
 			{"RAVIK", Locations = {"RAVIK_VICTORY"}},
 			{"PRAJI", Locations = {"PRAJI_VALORUM"}},
-			{"GRUMBY", Locations = {"GRUMBY_INVINCIBLE"}},
+			--{"GRUMBY", Locations = {"GRUMBY_INVINCIBLE"}},
 			{"SCREED", Locations = {"SCREED_ARLIONNE"}},
 		}
 	},
@@ -67,7 +67,7 @@ function Get_Hero_Entries(upgrade_object)
 		Hero_Squadron = "NIAL_DECLANN_SQUADRON",
 		PopupHeader = "NIAL_DECLANN_SELECTOR_HEADER",
 		Options = {
-			{"BARAKA", Locations = {"BARAKA_NEXU"}},
+			--{"BARAKA", Locations = {"BARAKA_NEXU"}},
 			{"WESSEL", Locations = {"WESSEL_ACCLAMATOR"}},
 			{"PELLAEON", Locations = {"PELLAEON_LEVELER"}},
 			{"MARTZ", Locations = {"MARTZ_PROSECUTOR"}},
@@ -158,6 +158,14 @@ function Get_Hero_Entries(upgrade_object)
 		},
 		Faction = "Empire"
 
+	},
+	["BYTHEN_FORRAL_LOCATION_SET"] = {
+		Hero_Squadron = "BYTHEN_FORRAL_SQUADRON",
+		PopupHeader = "BYTHEN_FORRAL_SELECTOR_HEADER",
+		Options = {
+			{"GRUMBY", Locations = {"GRUMBY_INVINCIBLE"}},
+			{"BARAKA", Locations = {"BARAKA_NEXU"}},
+		}
 	},
 	--CIS
 	["DFS1VR_LOCATION_SET"] = {

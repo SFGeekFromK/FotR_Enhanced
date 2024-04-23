@@ -245,30 +245,30 @@ function State_Framework_Activation(message)
 		-- FotR_Enhanced
 		crossplot:publish("UTAT_RESEARCH_FINISHED", "empty")
 		
-		--Admirals:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", -1, 1)
+		--Admirals: total 4 = 2 locked + 2 free
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 1)
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Kilian","Yularen"}, 1)
 
-		--Moffs:
+		--Moffs: total 1 = 1 locked
 		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 2)
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Byluir"}, 2)
 
-		--Jedi:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", -1, 3)
+		--Jedi: 
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 0, 3)
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Aayla","Ahsoka","Kit","Shaak"}, 3)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Mace","Mundi","Kota","Knol"}, 3)
 
 		--Clone Officers:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", -2, 4)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 0, 4)
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Rex","Cody"}, 4)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Bacara"}, 4)
 		crossplot:publish("REPUBLIC_ADMIRAL_RETURN", {"Jet"}, 4)
 
 		--Commandos:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 0, 5)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 5)
 
 		--Generals:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 6)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 2, 6)
 
 		Set_Fighter_Hero("AXE_BLUE_SQUADRON","YULAREN_RESOLUTE")
 		Clear_Fighter_Hero("BROADSIDE_SHADOW_SQUADRON")

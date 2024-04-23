@@ -501,7 +501,6 @@
 		TEXT_HERO_GRANT
 		TEXT_HERO_RAVIK
 		TEXT_HERO_COLLIN_PRAJI
-		TEXT_HERO_JONA_GRUMBY
 		TEXT_HERO_TERRINALD_SCREED
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
@@ -708,7 +707,6 @@
 		TEXT_REPUBLIC_TIE_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
-		TEXT_HERO_BARAKA
 		TEXT_HERO_MARCELLIN_WESSEL
 		TEXT_HERO_PELLAEON
 		TEXT_HERO_MARTZ
@@ -3088,7 +3086,7 @@
 		
 		<CategoryMask>Wall</CategoryMask>
 		
-		<Text_ID>TEXT_HERO_BYTHEN_FORRAL</Text_ID>
+		<Text_ID>TEXT_HERO_FORRAL</Text_ID>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 		<Affiliation>Empire</Affiliation>
 		<Icon_Name>I_BUTTON_FORRAL_FIGHTER_SET.tga</Icon_Name>
@@ -3099,10 +3097,11 @@
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
-		TEXT_TOOLTIP_COMMAND_
+		TEXT_CLOAKSHAPE_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
-		
+		TEXT_HERO_JONA_GRUMBY
+		TEXT_HERO_BARAKA
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
@@ -3112,14 +3111,14 @@
 	<UniqueUnit Name="Bythen_Forral">
 		<Variant_Of_Existing_Type>Cloakshape</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_HERO_BYTHEN_FORRAL</Text_ID>
+		<Text_ID>TEXT_HERO_FORRAL</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
 		TEXT_TOOLTIP_TRAIT_ACEPILOT
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
 		TEXT_TOOLTIP_FORRAL
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
-		TEXT_TOOLTIP_COMMAND_
+		TEXT_CLOAKSHAPE_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_STATBLOCK_BYTHEN_FORRAL_BASE
 		TEXT_STATBLOCK_CLOAKSHAPE_CW_MOVE
@@ -3134,22 +3133,161 @@
 
 		<Tactical_Health>260</Tactical_Health>
 
-		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
 
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>
-				<Type>POWER_TO_WEAPONS</Type>
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
-				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
-				<Recharge_Seconds>60</Recharge_Seconds>
-				<Expiration_Seconds>15</Expiration_Seconds>
-				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
-				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
-				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Garven_Dreis</SFXEvent_GUI_Unit_Ability_Activated>
+				<Type>REPLENISH_WINGMEN</Type>
+				<Recharge_Seconds>-1</Recharge_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<Recharge_Seconds>55</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAMP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAMP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_sprint.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilites SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Bythen_Forral_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilites>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Cloakshape_Bythen_Forral_Escort">
+		<Variant_Of_Existing_Type>Cloakshape</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CLOAKSHAPE_CW
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_BYTHEN_FORRAL_BASE
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_MOVE
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP1
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP2
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>90</Tactical_Health>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<Recharge_Seconds>55</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAMP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAMP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_sprint.tga</Alternate_Icon_Name>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 	</UniqueUnit>
+	
+	<Container Name="Bythen_Forral_Container">
+		<Variant_Of_Existing_Type>Cloakshape_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_FORRAL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_FORRAL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_CLOAKSHAPE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_BYTHEN_FORRAL_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_BYTHEN_FORRAL_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_CLOAKSHAPE_SQUADRON
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_MOVE
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP1
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_FORRAL_FIGHTER.tga</Icon_Name>
+		
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<Recharge_Seconds>55</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAMP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAMP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_sprint.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+	
+	<Squadron Name="Bythen_Forral_Squadron">
+		<Variant_Of_Existing_Type>Cloakshape_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_FORRAL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_FORRAL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_CLOAKSHAPE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_BYTHEN_FORRAL_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_BYTHEN_FORRAL_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_CLOAKSHAPE_SQUADRON
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_MOVE
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP1
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_FORRAL_FIGHTER.tga</Icon_Name>
+
+		<Create_Team_Type>Bythen_Forral_Container</Create_Team_Type>
+		<Squadron_Units>Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort</Squadron_Units>
+		<Squadron_Units>Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort</Squadron_Units>
+		<Squadron_Units>Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Bythen_Forral</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<Recharge_Seconds>55</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAMP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAMP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_sprint.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
 
 	<!-- Admiral options -->
 

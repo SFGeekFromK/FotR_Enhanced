@@ -280,7 +280,7 @@ end
 function State_Generic_Story_Set_Up()
 	StoryUtil.SpawnAtSafePlanet("KAMINO", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Nala_Se_Team"})
 	StoryUtil.SpawnAtSafePlanet("RODIA", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Padme_Amidala_Team"})
-	StoryUtil.SpawnAtSafePlanet("BOTHAWUI", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Yularen_Resolute", "Anakin_Delta_Team", "Ahsoka_Delta_Team", "Rex_Team", "Generic_Venator"})
+	StoryUtil.SpawnAtSafePlanet("BOTHAWUI", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Yularen_Resolute", "Anakin_Delta_Team", "Ahsoka_Delta_Team", "Rex_Team", "Venator_OFC"})
 
 	StoryUtil.SpawnAtSafePlanet("MURKHANA", Find_Player("Rebel"), StoryUtil.GetSafePlanetTable(), {"Grievous_Team_Munificent"})
 
@@ -413,7 +413,7 @@ function State_CIS_Bothawui_Business_Epilogue()
 			end
 
 		elseif (GlobalValue.Get("Rimward_Bothawui_Business_Outcome") == 1) then
-			StoryUtil.SpawnAtSafePlanet("BOTHAWUI", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Yularen_Resolute", "Anakin_Delta_Team", "Ahsoka_Delta_Team", "Rex_Team", "Generic_Venator", "Generic_Venator", "Dreadnaught_Lasers", "Dreadnaught_Lasers", "Carrack_Cruiser_Lasers", "Carrack_Cruiser_Lasers", "Corellian_Corvette", "Corellian_Corvette", "Corellian_Corvette"})
+			StoryUtil.SpawnAtSafePlanet("BOTHAWUI", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Yularen_Resolute", "Anakin_Delta_Team", "Ahsoka_Delta_Team", "Rex_Team", "Venator_OFC", "Venator_OFC", "Dreadnaught_Lasers", "Dreadnaught_Lasers", "Carrack_Cruiser_Lasers", "Carrack_Cruiser_Lasers", "Corellian_Corvette", "Corellian_Corvette", "Corellian_Corvette"})
 
 			if (GlobalValue.Get("Rimward_CIS_GC_Version") == 1) then
 				StoryUtil.SpawnAtSafePlanet("MURKHANA", Find_Player("Rebel"), StoryUtil.GetSafePlanetTable(), {"Grievous_Team_Malevolence"})
@@ -873,7 +873,7 @@ function State_Rep_Bothawui_Business_Epilogue(message)
 				StoryUtil.SpawnAtSafePlanet("MURKHANA", Find_Player("Rebel"), Safe_House_Planet, {"Grievous_Team_Munificent"})
 
 				local Safe_House_Planet = StoryUtil.GetSafePlanetTable()
-				StoryUtil.SpawnAtSafePlanet("BOTHAWUI", Find_Player("Empire"), Safe_House_Planet, {"Yularen_Resolute", "Anakin_Delta_Team", "Ahsoka_Delta_Team", "Rex_Team", "Generic_Venator"})
+				StoryUtil.SpawnAtSafePlanet("BOTHAWUI", Find_Player("Empire"), Safe_House_Planet, {"Yularen_Resolute", "Anakin_Delta_Team", "Ahsoka_Delta_Team", "Rex_Team", "Venator_OFC"})
 			end
 		end
     end
@@ -1712,7 +1712,7 @@ function State_Hutts_Story_Set_Up()
 
 		StoryUtil.SpawnAtSafePlanet("KAMINO", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Nala_Se_Team"})
 		StoryUtil.SpawnAtSafePlanet("RODIA", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Padme_Amidala_Team"})
-		StoryUtil.SpawnAtSafePlanet("BOTHAWUI", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Yularen_Resolute", "Anakin_Delta_Team", "Ahsoka_Delta_Team", "Rex_Team", "Generic_Venator"})
+		StoryUtil.SpawnAtSafePlanet("BOTHAWUI", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Yularen_Resolute", "Anakin_Delta_Team", "Ahsoka_Delta_Team", "Rex_Team", "Venator_OFC"})
 
 		StoryUtil.SpawnAtSafePlanet("MURKHANA", Find_Player("Rebel"), StoryUtil.GetSafePlanetTable(), {"Grievous_Team_Munificent"})
 

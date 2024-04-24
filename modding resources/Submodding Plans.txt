@@ -29,6 +29,10 @@ Hunter Squadron BTLB Ywing config (Warthog) (?)
 hawk (yularen) 
 Alpha 17 (phase 2?)
 
+# Order 65 Senator Hero
+order 65 path will unlock senator econmoic hero options
+these heroes will be members of 'delegation of 2000' and each will have unique bonus abilities
+
 # Additional Ground Category filter UI
 Filter Ground Units, Structures by different classes.
 

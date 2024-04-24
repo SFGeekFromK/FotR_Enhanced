@@ -142,7 +142,9 @@ function State_Republic_Future_Mothma(message)
     if message == OnEnter then
 		Story_Event("START_REPUBLIC_NEW_ELECTIONS")
 		GlobalValue.Set("ChiefOfState", "DUMMY_CHIEFOFSTATE_MOTHMA")
-
+		-- FotR_Enhanced
+		crossplot:publish("ORDER_65_EXECUTED", "empty")
+		--	
 		UnitUtil.DespawnList({"Sate_Pestage"})
 		StoryUtil.SpawnAtSafePlanet("CORUSCANT", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Mon_Mothma_Team", "Garm_Team", "Bail_Team", "Raymus_Tantive"})  
 

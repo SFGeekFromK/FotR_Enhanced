@@ -60,6 +60,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("REPUBLIC_FIGHTER_DISABLE", self.Remove_Fighter_Sets, self)
 	-- FotR_Enhanced
 	crossplot:subscribe("GEEN_UNLOCK", self.Geen_Unlock, self)
+	crossplot:subscribe("FORRAL_RETIRE", self.Forral_Switch, self)
+	crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)
 
 	admiral_data = {
 		total_slots = 5,       --Max number of concurrent slots. Set at the start of the GC and never change.
@@ -300,6 +302,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		"Garven_Dreis_Location_Set",
 		"Nial_Declann_Location_Set",
 		"Rhys_Dallows_Location_Set",
+		"Bythen_Forral_Location_Set"
 	}
 	fighter_assign_enabled = false
 	
@@ -777,7 +780,7 @@ function RepublicHeroes:Venator_Heroes()
 		Handle_Hero_Add("Dao", admiral_data)
 		Handle_Hero_Add("Denimoor", admiral_data)
 		Handle_Hero_Add("Dron", admiral_data)
-		Handle_Hero_Add("Forral", admiral_data)
+		--Handle_Hero_Add("Forral", admiral_data) forral's now a fighter hero by default. 
 		Handle_Hero_Add("Tarkin", moff_data)
 		Handle_Hero_Add("Wessex", moff_data)
 		Handle_Hero_Add("Grant", moff_data)
@@ -872,6 +875,7 @@ function RepublicHeroes:Order_66_Handler()
 	Handle_Hero_Exit("Dallin", admiral_data)
 	Clear_Fighter_Hero("IMA_GUN_DI_DELTA")
 	Decrement_Hero_Amount(10, council_data)
+	Forral_Switch()
 end
 
 function RepublicHeroes:New_Padawan_Handler()
@@ -998,4 +1002,14 @@ end
 -- FotR_Enhanced
 function RepublicHeroes:Geen_Unlock()
 	Handle_Hero_Add("Geen", general_data)
+end
+
+function RepublicHeroes:Order_65_Handler()
+	
+end
+
+function Forral_Switch()
+	Handle_Hero_Add("Forral", admiral_data)
+	Clear_Fighter_Hero("BYTHEN_FORRAL_SQUADRON")
+	RepublicHeroes:Remove_Fighter_Set("Bythen_Forral_Location_Set")
 end

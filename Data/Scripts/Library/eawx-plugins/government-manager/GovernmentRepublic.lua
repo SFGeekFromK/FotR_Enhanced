@@ -318,8 +318,11 @@ function GovernmentRepublic:GC_AI_Republic_Future()
 		UnitUtil.DespawnList({"Sate_Pestage"})	
 		local Mothma_Spawns = {"Mon_Mothma_Team", "Garm_Team", "Bail_Team", "Raymus_Tantive"}
 		StoryUtil.SpawnAtSafePlanet("CORUSCANT", self.RepublicPlayer, self.Active_Planets, Mothma_Spawns)  
-
+		
 		UnitUtil.SetLockList("EMPIRE", {"Tallon_Battalion_Upgrade", "Neutron_Star"})
+		-- FotR_Enhanced
+		crossplot:publish("ORDER_65_EXECUTED", "empty")
+		--	
 	end
 end
 

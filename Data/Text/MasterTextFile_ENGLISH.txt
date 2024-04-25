@@ -2076,6 +2076,7 @@ TEXT_ETA2_SQUADRON,Eta-2 Actis Squadron
 TEXT_ETA2_SQUADRON_HALF,Eta-2 Actis Squadron 1/2
 TEXT_ETA2_SQUADRON2,Eta-2 Actis Squadron x2
 TEXT_EVENT_ARHUL_NARRA_SELECTOR_HEADER,Assign Arhul Narra's Guardian Squadron
+TEXT_EVENT_BYTHEN_FORRAL_SELECTOR_HEADER,Assign Bythen Forral
 TEXT_EVENT_CUSTOM_EQUAL_START,Equal Planets
 TEXT_EVENT_CUSTOM_EQUAL_START_DESCRIPTION,Perfectly balanced, as all thing should be
 TEXT_EVENT_CUSTOM_GC_FIXED_LOCATION,Fixed Location
@@ -9675,8 +9676,10 @@ TEXT_STATBLOCK_BTLB_YWING_SQUADRON_HALF,Squadron: 6x - BTL-B Y-wing
 TEXT_STATBLOCK_BTLS1_YWING_SQUADRON,Squadron: 12x - BTL-S1 Y-wing
 TEXT_STATBLOCK_BTLS1_YWING_SQUADRON_DOUBLE,Squadron: 24x - BTL-S1 Y-wing
 TEXT_STATBLOCK_BTLS1_YWING_SQUADRON_HALF,Squadron: 6x - BTL-S1 Y-wing
+TEXT_STATBLOCK_BYTHEN_FORRAL_BASE,Health: 260 | Unshielded
 TEXT_STATBLOCK_CLOAKSHAPE_BASE,Health: 18 | Shields: 4
 TEXT_STATBLOCK_CLOAKSHAPE_CW_BASE,Health: 18 | Unshielded
+TEXT_STATBLOCK_CLOAKSHAPE_CW_BYTHEN_FORRAL_BASE,Health: 90 | Unshielded
 TEXT_STATBLOCK_CLOAKSHAPE_CW_MOVE,Speed: 4.8 | Maneuverability: 3.6
 TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP1,1x Fighter Laser Cannon: 4 / 2.0s / 1.0km
 TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP2,1x Fighter Concussion Missile: 1 / 25.0s / 1.8km
@@ -10443,6 +10446,7 @@ TEXT_STORY_MALEVOLENCE_HUNT_LORE_BODY_02,The starship featured two mega-ion cann
 TEXT_STORY_MALEVOLENCE_HUNT_LORE_BODY_03,In the aftermath of the battle Grievous started to target convoys of medical ships, striking the Republic where they are the most vulnerable.
 TEXT_STORY_MALEVOLENCE_HUNT_REP_ACT_I_HINT_01,Certain heroes are required to advance the story! [Anakin Skywalker; Admiral Yularen]
 TEXT_STORY_MALEVOLENCE_HUNT_REP_ACT_I_HINT_02,The Pelta-class frigate is locked until the Malevolence is destroyed.  The older C-Class frigate will act as its replacement.
+TEXT_STORY_MALEVOLENCE_HUNT_REP_ACT_I_HINT_03,Only for the duration of this campaign, Open Circle Fleet Venators will replace Generic Venators.
 TEXT_STORY_MALEVOLENCE_HUNT_REP_ACT_I_OBJECTIVE,Destroy the Malevolence!
 TEXT_STORY_MALEVOLENCE_HUNT_REP_ACT_I_TITLE,Story - Shadow of the Malevolence
 TEXT_STORY_MALEVOLENCE_HUNT_REP_ACT_II_HINT,Certain heroes are required to advance the story! [Anakin Skywalker]
@@ -15803,6 +15807,7 @@ TEXT_TOOLTIP_TRAIT_ARTLOVER,Art Lover
 TEXT_TOOLTIP_TRAIT_BLACK_MARKETEER,Black Marketeer
 TEXT_TOOLTIP_TRAIT_BLACK_MARKETEER1,Black Marketeer (+20%)
 TEXT_TOOLTIP_TRAIT_BLACK_MARKETEER2,Black Marketeer (+15%)
+TEXT_TOOLTIP_TRAIT_BLOCKADE_ENFORCER,Blockade Enforcer
 TEXT_TOOLTIP_TRAIT_BOUNTY_HUNTER,Bounty Hunter
 TEXT_TOOLTIP_TRAIT_CAUTIOUS,Cautious
 TEXT_TOOLTIP_TRAIT_CLAIRVOYANT,Clairvoyant

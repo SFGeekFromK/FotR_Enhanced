@@ -29,9 +29,14 @@ Hunter Squadron BTLB Ywing config (Warthog) (?)
 hawk (yularen) 
 Alpha 17 (phase 2?)
 
-# Order 65 Senator Hero
+# Order 65 Path Expanded
+- Senate Hero
 order 65 path will unlock senator econmoic hero options
 these heroes will be members of 'delegation of 2000' and each will have unique bonus abilities
+
+- Peace Treaty
+if the separatist senate exists and all the core leaderships (count dooku, grievous, all corporate leaders) killed, 
+a peace treaty dummy will appear which results in automatic victory
 
 # Additional Ground Category filter UI
 Filter Ground Units, Structures by different classes.
@@ -69,7 +74,9 @@ allows for unique heroes & defense units to spawn up on space stations, locks ec
 Add Units ; ARF Trooper, Clone Assasins, Covert OP Clones, Clone Shadow troopers
 Change Rex Weapons & Animations, Add in Jesse, Kix, Fives etc as torrent company heores
 Cody spawning boil & Waxer
-New Clone Commanders ; Rancor Battalion, Commander Fil, Commander Trauma, Commander Doom, Captain Keely, Commander Ganch, Captain Sharp, Commander Fox(As Republic Capital Garrison Hero), Commander Thorn
+New Clone Commanders ; 
+	Rancor Battalion, Commander Fil, Commander Trauma, Commander Doom, Captain Keely, Commander Ganch, 
+	Captain Sharp, Commander Fox(As Republic Capital Garrison Hero), Commander Thorn
 More Detailed Anakin Unit(?)
 Operation Knightfall Story Mission(Officially Planned)
 Christoposis Story Mission,

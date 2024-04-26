@@ -61,7 +61,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	-- FotR_Enhanced
 	crossplot:subscribe("GEEN_UNLOCK", self.Geen_Unlock, self)
 	crossplot:subscribe("FORRAL_RETIRE", self.Forral_Switch, self)
-	crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)
+	--crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)
 
 	admiral_data = {
 		total_slots = 5,       --Max number of concurrent slots. Set at the start of the GC and never change.
@@ -298,6 +298,33 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		disabled = true
 	}
 	
+	--[[senator_data = {
+		total_slots = 2,			--Max slot number. Set at the start of the GC and never change
+		free_hero_slots = 3,		--Slots open to buy
+		vacant_hero_slots = 0,	    --Slots that need another action to move to free
+		vacant_limit = 8,           --Number of times a lost slot can be reopened
+		initialized = false,
+		full_list = { --All options for reference operations
+			["Garm"] = {"ROM_MOHC_ASSIGN",{"ROM_MOHC_RETIRE"},{"ROM_MOHC"},"Rom Mohc", ["Companies"] = {"ROM_MOHC_TEAM"}},
+			["Danu"] = {"GENTIS_ASSIGN",{"GENTIS_RETIRE"},{"GENTIS_AT_TE"},"Gentis", ["Companies"] = {"GENTIS_TEAM"}},
+			["Zar"] = {"GEEN_ASSIGN",{"GEEN_RETIRE"},{"GEEN_UT_AT"},"Locus Geen", ["Companies"] = {"GEEN_TEAM"}},
+			["Breemu"] = {"OZZEL_ASSIGN",{"OZZEL_RETIRE"},{"OZZEL_LAAT"},"Kendal Ozzel", ["Companies"] = {"OZZEL_TEAM"}},
+			["Alavar"] = {"ROMODI_ASSIGN",{"ROMODI_RETIRE"},{"ROMODI_A5_JUGGERNAUT"},"Hurst Romodi", ["Companies"] = {"ROMODI_TEAM"}},
+			["Papanoida"] = {"SOLOMAHAL_ASSIGN",{"SOLOMAHAL_RETIRE"},{"SOLOMAHAL_RX200"},"Solomahal", ["Companies"] = {"SOLOMAHAL_TEAM"}},
+			["Padme"] = {"JESRA_LOTURE_ASSIGN",{"JESRA_LOTURE_RETIRE"},{"JESRA_LOTURE"},"Jesra Loture", ["Companies"] = {"JESRA_LOTURE_TEAM"}},
+			["Taa"] = {"JAYFON_ASSIGN",{"JAYFON_RETIRE"},{"JAYFON"},"Jayfon", ["Companies"] = {"JAYFON_TEAM"}},
+		},
+		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
+			
+		},
+		story_locked_list = {},--Heroes not accessible, but able to return with the right conditions
+		active_player = Find_Player("Empire"),
+		extra_name = "EXTRA_SENATOR_SLOT",
+		random_name = "RANDOM_SENATOR_ASSIGN",
+		global_display_list = "REP_SENATOR_LIST", --Name of global array used for documention of currently active heroes
+		disabled = true
+	}]]
+
 	fighter_assigns = {
 		"Garven_Dreis_Location_Set",
 		"Nial_Declann_Location_Set",
@@ -1004,9 +1031,10 @@ function RepublicHeroes:Geen_Unlock()
 	Handle_Hero_Add("Geen", general_data)
 end
 
-function RepublicHeroes:Order_65_Handler()
-	
-end
+--[[function RepublicHeroes:Order_65_Handler()
+	init_hero_system(senator_data)
+	Forral_Switch()
+end]]
 
 function Forral_Switch()
 	Handle_Hero_Add("Forral", admiral_data)

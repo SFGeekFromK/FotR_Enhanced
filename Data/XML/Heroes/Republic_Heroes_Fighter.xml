@@ -1,0 +1,3291 @@
+<?xml version="1.0" ?>
+<Republic_Fighter_Heroes>
+    <!-- Squadron heroes -->
+
+	<!-- Reassignable squadron heroes -->
+
+	<DummyStructure Name="View_Fighters">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 1 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<CategoryMask>Wall</CategoryMask>
+
+		<Text_ID>TEXT_HERO_VIEW_FIGHTERS</Text_ID>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_view_pilots.tga</Icon_Name>
+
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VIEW_NR_ADMIRAL
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<!-- Arhul Narra / Guardian Squadron / ARC-170 -->
+
+	<DummyStructure Name="Arhul_Narra_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_ARHUL_NARRA</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_arhul_narra_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_GUARDIAN_SQUADRON_ARC170
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_VOSS_PARCK
+		TEXT_HERO_WILHUFF_TARKIN
+		TEXT_HERO_THERBON
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Arhul_Narra">
+		<Variant_Of_Existing_Type>ARC_170</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ARHUL_NARRA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT 
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_ARHUL_NARRA
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_GUARDIAN_SQUADRON_ARC170
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARHUL_NARRA_BASE
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_arhul_narra.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>180</Tactical_Health>
+		<Shield_Points>150</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name>Fighter_Sensor_Jamming</GUI_Activated_Ability_Name> 
+				<Recharge_Seconds>55</Recharge_Seconds> 
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<Effective_Radius>100</Effective_Radius>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Fighter_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+				<Owner_Particle_Effect>Sensor_Jamming_Effect_100</Owner_Particle_Effect>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Sensor_Jamming_Ability>
+
+			<Combat_Bonus_Ability Name="Arhul_Narra_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Arhul_Narra_Self_Heal">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Percent>0.02</Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Types>Arhul_Narra</Applicable_Unit_Types>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="ARC170_Guardian">
+		<Variant_Of_Existing_Type>ARC_170</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_ARC170_GUARDIAN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ARC170_GUARDIAN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE 
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>90</Tactical_Health>
+		<Shield_Points>75</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name>Fighter_Sensor_Jamming</GUI_Activated_Ability_Name> 
+				<Recharge_Seconds>55</Recharge_Seconds> 
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<Effective_Radius>100</Effective_Radius>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Fighter_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+				<Owner_Particle_Effect>Sensor_Jamming_Effect_100</Owner_Particle_Effect>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Sensor_Jamming_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<Container Name="Arhul_Narra_Guardian_Container">
+		<Variant_Of_Existing_Type>ARC_170_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_ARHUL_NARRA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT 
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_ARHUL_NARRA
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_GUARDIAN_SQUADRON_ARC170
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_ARHUL_NARRA_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_SQUADRON
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_arhul_narra.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Squadron Name="Arhul_Narra_Guardian_Squadron">
+		<Variant_Of_Existing_Type>Generic_ARC_170_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ARHUL_NARRA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT 
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ARHUL_NARRA
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_GUARDIAN_SQUADRON_ARC170
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_ARHUL_NARRA_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_SQUADRON
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_arhul_narra.tga</Icon_Name>
+
+		<Create_Team_Type>Arhul_Narra_Guardian_Container</Create_Team_Type>
+		<Squadron_Units>ARC170_Guardian, ARC170_Guardian, ARC170_Guardian, ARC170_Guardian</Squadron_Units>
+		<Squadron_Units>ARC170_Guardian, ARC170_Guardian, ARC170_Guardian, ARC170_Guardian</Squadron_Units>
+		<Squadron_Units>ARC170_Guardian, ARC170_Guardian, ARC170_Guardian, Arhul_Narra</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+	<!-- Erk H'Arman / T19 -->
+
+	<DummyStructure Name="Erk_HArman_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<CategoryMask>Wall</CategoryMask>
+
+		<Text_ID>TEXT_HERO_ERK_HARMAN</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_erk_harman_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_T19_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_ZOZRIDOR_SLAYKE
+		TEXT_HERO_WILHUFF_TARKIN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+	
+	<UniqueUnit Name="Erk_HArman">
+		<Variant_Of_Existing_Type>T19_Starfighter</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ERK_HARMAN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_ERK_HARMAN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_T19_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ERK_HARMAN_BASE
+		TEXT_STATBLOCK_T19_MOVE
+		TEXT_STATBLOCK_T19_WEAP1
+		TEXT_STATBLOCK_T19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_erk_harman.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		
+		<Tactical_Health>340</Tactical_Health>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+	
+	<UniqueUnit Name="T19_Erk_HArman_Escort">
+		<Variant_Of_Existing_Type>T19_Starfighter</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_T19 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_T19_ERK_HARMAN_ESCORT_BASE
+		TEXT_STATBLOCK_T19_MOVE
+		TEXT_STATBLOCK_T19_WEAP1
+		TEXT_STATBLOCK_T19_WEAP2
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>80</Tactical_Health>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+	
+	<Container Name="Erk_HArman_Container">
+		<Variant_Of_Existing_Type>T19_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_ERK_HARMAN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_ERK_HARMAN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_T19_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_ERK_HARMAN_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_T19_ERK_HARMAN_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_T19_SQUADRON
+		TEXT_STATBLOCK_T19_MOVE
+		TEXT_STATBLOCK_T19_WEAP1
+		TEXT_STATBLOCK_T19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_erk_harman.tga</Icon_Name>
+		
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+	
+	<Squadron Name="Erk_HArman_Squadron">
+		<Variant_Of_Existing_Type>T19_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ERK_HARMAN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_ERK_HARMAN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_T19_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_ERK_HARMAN_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_T19_ERK_HARMAN_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_T19_SQUADRON
+		TEXT_STATBLOCK_T19_MOVE
+		TEXT_STATBLOCK_T19_WEAP1
+		TEXT_STATBLOCK_T19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_erk_harman.tga</Icon_Name>
+
+		<Create_Team_Type>Erk_HArman_Container</Create_Team_Type>
+		<Squadron_Units>T19_Erk_HArman_Escort, T19_Erk_HArman_Escort, T19_Erk_HArman_Escort, T19_Erk_HArman_Escort</Squadron_Units>
+		<Squadron_Units>T19_Erk_HArman_Escort, T19_Erk_HArman_Escort, T19_Erk_HArman_Escort, T19_Erk_HArman_Escort</Squadron_Units>
+		<Squadron_Units>T19_Erk_HArman_Escort, T19_Erk_HArman_Escort, T19_Erk_HArman_Escort, Erk_HArman</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+	<!-- Garven Dreis / Rarefied Air Cavalry / Z-95 -->
+
+	<DummyStructure Name="Garven_Dreis_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_GARVEN_DREIS</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_garven_dreis_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_RAREFIED_AIR_CAVALRY
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_GRANT
+		TEXT_HERO_RAVIK
+		TEXT_HERO_COLLIN_PRAJI
+		TEXT_HERO_TERRINALD_SCREED
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Garven_Dreis">
+		<Variant_Of_Existing_Type>Generic_Z-95_Headhunter</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_GARVEN_DREIS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_GARVEN_DREIS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_RAREFIED_AIR_CAVALRY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_GARVEN_DREIS_BASE
+		TEXT_STATBLOCK_Z95_MOVE
+		TEXT_STATBLOCK_Z95_WEAP1
+		TEXT_STATBLOCK_Z95_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_garven_dreis.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>250</Tactical_Health>
+		<Shield_Points>125</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<SFXEvent_Select>Unit_Select_Garven_Dreis</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Garven_Dreis</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Garven_Dreis</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Garven_Dreis</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Garven_Dreis</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Garven_Dreis</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Garven_Dreis</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Health_Low_Warning>Unit_Enemy_Health_Low_Garven_Dreis</SFXEvent_Enemy_Health_Low_Warning>
+		<SFXEvent_Enemy_Health_Critical_Warning>Unit_Enemy_Health_Critical_Garven_Dreis</SFXEvent_Enemy_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Death_Garven_Dreis</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Garven_Dreis</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Z95_Headhunter_Rarefied">
+		<Variant_Of_Existing_Type>Generic_Z-95_Headhunter</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_Z95_RAREFIED</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_Z95_RAREFIED
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_Z95_ESCORT_BASE
+		TEXT_STATBLOCK_Z95_MOVE
+		TEXT_STATBLOCK_Z95_WEAP1
+		TEXT_STATBLOCK_Z95_WEAP2
+		</Encyclopedia_Text>
+
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Points>50</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<SFXEvent_Select>Unit_Select_Garven_Dreis</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Garven_Dreis</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Garven_Dreis</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Garven_Dreis</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Garven_Dreis</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Garven_Dreis</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Garven_Dreis</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Health_Low_Warning>Unit_Enemy_Health_Low_Garven_Dreis</SFXEvent_Enemy_Health_Low_Warning>
+		<SFXEvent_Enemy_Health_Critical_Warning>Unit_Enemy_Health_Critical_Garven_Dreis</SFXEvent_Enemy_Health_Critical_Warning>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Garven_Dreis</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<Container Name="Garven_Dreis_Rarefied_Container">
+		<Variant_Of_Existing_Type>Generic_Z95_Headhunter_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_GARVEN_DREIS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_GARVEN_DREIS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_RAREFIED_AIR_CAVALRY
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_GARVEN_DREIS_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_Z95_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_Z95_SQUADRON
+		TEXT_STATBLOCK_Z95_MOVE
+		TEXT_STATBLOCK_Z95_WEAP1
+		TEXT_STATBLOCK_Z95_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_garven_dreis.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Squadron Name="Garven_Dreis_Rarefied_Squadron">
+		<Variant_Of_Existing_Type>Generic_Z95_Headhunter_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_GARVEN_DREIS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_GARVEN_DREIS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_RAREFIED_AIR_CAVALRY
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_GARVEN_DREIS_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_Z95_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_Z95_SQUADRON
+		TEXT_STATBLOCK_Z95_MOVE
+		TEXT_STATBLOCK_Z95_WEAP1
+		TEXT_STATBLOCK_Z95_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_garven_dreis.tga</Icon_Name>
+
+		<Create_Team_Type>Garven_Dreis_Rarefied_Container</Create_Team_Type>
+		<Squadron_Units>Z95_Headhunter_Rarefied, Z95_Headhunter_Rarefied, Z95_Headhunter_Rarefied, Z95_Headhunter_Rarefied</Squadron_Units>
+		<Squadron_Units>Z95_Headhunter_Rarefied, Z95_Headhunter_Rarefied, Z95_Headhunter_Rarefied, Z95_Headhunter_Rarefied</Squadron_Units>
+		<Squadron_Units>Z95_Headhunter_Rarefied, Z95_Headhunter_Rarefied, Z95_Headhunter_Rarefied, Garven_Dreis</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+	<!-- Nial Declann / T.I.E. Starfighter -->
+	
+	<DummyStructure Name="Nial_Declann_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<CategoryMask>Wall</CategoryMask>
+
+		<Text_ID>TEXT_HERO_NIAL_DECLANN</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_nial_declann_set.tga</Icon_Name>
+
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>3</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_REPUBLIC_TIE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_MARCELLIN_WESSEL
+		TEXT_HERO_PELLAEON
+		TEXT_HERO_MARTZ
+		TEXT_HERO_TALLON
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Nial_Declann">
+		<Variant_Of_Existing_Type>Twin_Ion_Engine_Starfighter</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_NIAL_DECLANN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_NIAL_DECLANN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_REPUBLIC_TIE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_NIAL_DECLANN_BASE
+		TEXT_STATBLOCK_REPUBLICTIE_MOVE
+		TEXT_STATBLOCK_REPUBLICTIE_WEAP1
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_nial_declann.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>400</Tactical_Health>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Nial_Declann_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			 <Battlefield_Modifier_Ability Name="Nial_Declann_FOW_Increase">
+			   <Initially_Enabled>Yes</Initially_Enabled>
+			   <Activation_Style>Space_Automatic</Activation_Style>
+			   <FOW_Reveal_Range_Multiplier>1.3</FOW_Reveal_Range_Multiplier>
+			   <Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+			   <Stacking_Category>0</Stacking_Category>
+		   </Battlefield_Modifier_Ability>
+
+		   <Absorb_Blaster_Ability Name="Jedi_Fighter_Absorb_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Absorb_Chance>0.25</Absorb_Chance>
+				<!-- Absorb Percentage and Amount work together in the following way: -->
+				<!-- Actual Amount healed = (Projectile Damage * Absorb Percentage) + Absorb Amount -->
+				<!-- Either value can be zero, but at least one should be non-zero. -->
+				<Damage_Absorb_Percentage>0.01</Damage_Absorb_Percentage>
+				<Damage_Absorb_Amount>0.01</Damage_Absorb_Amount>
+				<!-- We can absorb shots from the following units types (but no missiles or grenades): -->
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Force_Absorb</SFXEvent_Activate>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 0.4, 0.4</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2></Owner_Light_Effect_Color2>
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count></Owner_Light_Effect_Pulse_Count>
+			</Absorb_Blaster_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="T_I_E_Nial_Declann_Escort">
+		<Variant_Of_Existing_Type>Twin_Ion_Engine_Starfighter</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REPUBLIC_TIE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_TIE_NIAL_DECLANN_ESCORT_BASE
+		TEXT_STATBLOCK_REPUBLICTIE_MOVE
+		TEXT_STATBLOCK_REPUBLICTIE_WEAP1
+		</Encyclopedia_Text>
+
+		<Tactical_Health>60</Tactical_Health>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<Container Name="Nial_Declann_Container">
+		<Variant_Of_Existing_Type>Twin_Ion_Engine_Starfighter_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_NIAL_DECLANN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_NIAL_DECLANN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_REPUBLIC_TIE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_NIAL_DECLANN_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_TIE_NIAL_DECLANN_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLICTIE_SQUADRON
+		TEXT_STATBLOCK_REPUBLICTIE_MOVE
+		TEXT_STATBLOCK_REPUBLICTIE_WEAP1
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_nial_declann.tga</Icon_Name>
+		
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Squadron Name="Nial_Declann_Squadron">
+		<Variant_Of_Existing_Type>Twin_Ion_Engine_Starfighter_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_NIAL_DECLANN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_NIAL_DECLANN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_REPUBLIC_TIE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_NIAL_DECLANN_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_TIE_NIAL_DECLANN_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLICTIE_SQUADRON
+		TEXT_STATBLOCK_REPUBLICTIE_MOVE
+		TEXT_STATBLOCK_REPUBLICTIE_WEAP1
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_nial_declann.tga</Icon_Name>
+
+		<Create_Team_Type>Nial_Declann_Container</Create_Team_Type>
+		<Squadron_Units>T_I_E_Nial_Declann_Escort, T_I_E_Nial_Declann_Escort, T_I_E_Nial_Declann_Escort, T_I_E_Nial_Declann_Escort</Squadron_Units>
+		<Squadron_Units>T_I_E_Nial_Declann_Escort, T_I_E_Nial_Declann_Escort, T_I_E_Nial_Declann_Escort, T_I_E_Nial_Declann_Escort</Squadron_Units>
+		<Squadron_Units>T_I_E_Nial_Declann_Escort, T_I_E_Nial_Declann_Escort, T_I_E_Nial_Declann_Escort, Nial_Declann</Squadron_Units>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+	<!-- Rhys Dallows / Bravo Squadron / N1 -->
+
+	<DummyStructure Name="Rhys_Dallows_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_RHYS_DALLOWS</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_rhys_dallows_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BRAVO_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_AUTEM
+		TEXT_HERO_HAUSER
+		TEXT_HERO_MAARISA
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Rhys_Dallows">
+		<Variant_Of_Existing_Type>N1</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_RHYS_DALLOWS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT 
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_RHYS_DALLOWS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BRAVO_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_RHYS_DALLOWS_BASE
+		TEXT_STATBLOCK_N1_MOVE
+		TEXT_STATBLOCK_N1_WEAP1
+		TEXT_STATBLOCK_N1_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_rhys_dallows.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>180</Tactical_Health>
+		<Shield_Points>160</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+
+		<No_Colorization_Color> 255, 255, 0, 255 </No_Colorization_Color>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<SFXEvent_Select>Unit_Select_Rhys</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Rhys</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rhys</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Rhys</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Rhys</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Rhys </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Rhys </SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_Rhys </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_Rhys </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Rhys </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Rhys </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Health_Low_Warning> Unit_Enemy_Health_Low_Rhys </SFXEvent_Enemy_Health_Low_Warning>
+		<SFXEvent_Enemy_Health_Critical_Warning> Unit_Enemy_Health_Critical_Rhys </SFXEvent_Enemy_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Death_Rhys </Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Strike_Rhys</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Rhys_Dallows_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Rhys_Dallows_Self_Heal">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Percent>0.02</Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Types>Rhys_Dallows</Applicable_Unit_Types>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="N1_Bravo">
+		<Variant_Of_Existing_Type>N1</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_N1_BRAVO</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_N1_BRAVO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_N1_BRAVO_BASE 
+		TEXT_STATBLOCK_N1_MOVE
+		TEXT_STATBLOCK_N1_WEAP1
+		TEXT_STATBLOCK_N1_WEAP2
+		</Encyclopedia_Text>
+
+		<Tactical_Health>90</Tactical_Health>
+		<Shield_Points>80</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+
+		<No_Colorization_Color> 255, 255, 0, 255 </No_Colorization_Color>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<SFXEvent_Select>Unit_Select_Rhys</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Rhys</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rhys</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Rhys</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Rhys</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Rhys </SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Rhys </SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_Rhys </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_Rhys </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Rhys </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Rhys </SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Health_Low_Warning> Unit_Enemy_Health_Low_Rhys </SFXEvent_Enemy_Health_Low_Warning>
+		<SFXEvent_Enemy_Health_Critical_Warning> Unit_Enemy_Health_Critical_Rhys </SFXEvent_Enemy_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_N1_Death_SFX </Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Rhys </SFXEvent_Attack_Hardpoint>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Strike_Rhys</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<Container Name="Rhys_Dallows_Bravo_Container">
+		<Variant_Of_Existing_Type>N1_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_RHYS_DALLOWS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT 
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_RHYS_DALLOWS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BRAVO_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_RHYS_DALLOWS_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_N1_BRAVO_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_N1_SQUADRON
+		TEXT_STATBLOCK_N1_MOVE
+		TEXT_STATBLOCK_N1_WEAP1
+		TEXT_STATBLOCK_N1_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_rhys_dallows.tga</Icon_Name>	
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Squadron Name="Rhys_Dallows_Bravo_Squadron">
+		<Variant_Of_Existing_Type>N1_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_RHYS_DALLOWS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT 
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_RHYS_DALLOWS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BRAVO_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_RHYS_DALLOWS_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_N1_BRAVO_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_N1_SQUADRON
+		TEXT_STATBLOCK_N1_MOVE
+		TEXT_STATBLOCK_N1_WEAP1
+		TEXT_STATBLOCK_N1_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_rhys_dallows.tga</Icon_Name>
+		
+		<Create_Team_Type>Rhys_Dallows_Bravo_Container</Create_Team_Type>
+		<Squadron_Units>N1_Bravo, N1_Bravo, N1_Bravo, N1_Bravo</Squadron_Units>
+		<Squadron_Units>N1_Bravo, N1_Bravo, N1_Bravo, N1_Bravo</Squadron_Units>
+		<Squadron_Units>N1_Bravo, N1_Bravo, N1_Bravo, Rhys_Dallows</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+	<!-- Non-assignable squadron heroes -->
+
+	<!-- Broadside / Shadow Squadron / BTL-B Y-wing (Locked to Yularen_Resolute; available after Y-Wing research and in era 3-5 starts  -->
+
+	<UniqueUnit Name="Broadside">
+		<Variant_Of_Existing_Type>Generic_BTLB_Y-Wing</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_BROADSIDE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_BROADSIDE
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_SHADOW_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_BROADSIDE_BASE 
+		TEXT_STATBLOCK_YWINGB_MOVE
+		TEXT_STATBLOCK_YWING_WEAP1 
+		TEXT_STATBLOCK_YWING_WEAP2
+		TEXT_STATBLOCK_YWING_WEAP3
+		TEXT_STATBLOCK_YWING_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_shadow_squadron.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>220</Tactical_Health>
+		<Shield_Points>120</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, GARRISON_UNIT, TARGETING, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA </SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+				<Projectile_Types_Override>Proj_Ship_Bomber_Critical_Strike</Projectile_Types_Override>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+				<SFXEvent_Target_Ability>Unit_hunt_Rep_y_wing</SFXEvent_Target_Ability>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Broadside_Self_Heal">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Percent>0.02</Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Types>Rhys_Dallows</Applicable_Unit_Types>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="BTLB_Y-Wing_Shadow">
+		<Variant_Of_Existing_Type>Generic_BTLB_Y-Wing</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_BTLB_YWING_SHADOW</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BTLB_YWING_SHADOW
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_BTLB_YWING_SHADOW_BASE
+		TEXT_STATBLOCK_YWINGB_MOVE
+		TEXT_STATBLOCK_YWING_WEAP1 
+		TEXT_STATBLOCK_YWING_WEAP2
+		TEXT_STATBLOCK_YWING_WEAP3
+		TEXT_STATBLOCK_YWING_WEAP4
+		</Encyclopedia_Text>
+
+		<Tactical_Health>110</Tactical_Health>
+		<Shield_Points>60</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+		
+		<No_Colorization_Color> 255, 243, 55, 0 </No_Colorization_Color>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+				<Projectile_Types_Override>Proj_Ship_Bomber_Critical_Strike</Projectile_Types_Override>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+				<SFXEvent_Target_Ability>Unit_hunt_Rep_y_wing</SFXEvent_Target_Ability>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<Container Name="Broadside_Shadow_Container">
+		<Variant_Of_Existing_Type>BTLB_Y-Wing_Squadron_Container</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_BROADSIDE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_BROADSIDE
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_SHADOW_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_BROADSIDE_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_BTLB_YWING_SHADOW_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_YWING_SQUADRON 
+		TEXT_STATBLOCK_YWINGB_MOVE
+		TEXT_STATBLOCK_YWING_WEAP1 
+		TEXT_STATBLOCK_YWING_WEAP2
+		TEXT_STATBLOCK_YWING_WEAP3
+		TEXT_STATBLOCK_YWING_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_shadow_squadron.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LUCKY_SHOT</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Projectile_Types_Override>Proj_Ship_Bomber_Critical_Strike</Projectile_Types_Override>
+				<GUI_Activated_Ability_Name>Broadside_Shadow_Critical_Strike</GUI_Activated_Ability_Name> 
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_CRITICAL_STRIKE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_CRITICAL_STRIKE_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Lucky_Shot_Attack_Ability Name="Broadside_Shadow_Critical_Strike">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital | SuperCapital | SpaceStructure | SpaceHero </Applicable_Unit_Categories>
+			</Lucky_Shot_Attack_Ability>
+		</Abilities>
+	</Container>
+
+	<Squadron Name="Broadside_Shadow_Squadron">
+		<Variant_Of_Existing_Type>Generic_BTLB_Y-Wing_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_BROADSIDE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_BROADSIDE
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_SHADOW_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_BROADSIDE_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_BTLB_YWING_SHADOW_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_YWING_SQUADRON 
+		TEXT_STATBLOCK_YWINGB_MOVE
+		TEXT_STATBLOCK_YWING_WEAP1 
+		TEXT_STATBLOCK_YWING_WEAP2
+		TEXT_STATBLOCK_YWING_WEAP3
+		TEXT_STATBLOCK_YWING_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_shadow_squadron.tga</Icon_Name>
+
+		<Create_Team_Type>Broadside_Shadow_Container</Create_Team_Type>
+		<Squadron_Units>BTLB_Y-Wing_Shadow, BTLB_Y-Wing_Shadow, BTLB_Y-Wing_Shadow, BTLB_Y-Wing_Shadow</Squadron_Units>
+		<Squadron_Units>BTLB_Y-Wing_Shadow, BTLB_Y-Wing_Shadow, BTLB_Y-Wing_Shadow, BTLB_Y-Wing_Shadow</Squadron_Units>
+		<Squadron_Units>BTLB_Y-Wing_Shadow, BTLB_Y-Wing_Shadow, BTLB_Y-Wing_Shadow, Broadside</Squadron_Units>
+	</Squadron>
+
+	<!-- Axe / Blue Squadron / V-19 Torrent (Locked to Yularen_Resolute; historicals only: HFM, Rimward, Tennuutta -->
+
+	<UniqueUnit Name="Axe">
+		<Variant_Of_Existing_Type>Torrent</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_AXE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_AXE
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BLUE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_AXE_BASE
+		TEXT_STATBLOCK_V19_MOVE 
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_blue_squadron_axe.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>350</Tactical_Health>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Torrent_Blue">
+		<Variant_Of_Existing_Type>Torrent</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_TORRENT_BLUE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_TORRENT_BLUE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_STATBLOCK_V19_MOVE 
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>80</Tactical_Health>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<Container Name="Axe_Blue_Container">
+		<Variant_Of_Existing_Type>Torrent_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_AXE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_AXE
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BLUE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_AXE_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_SQUADRON
+		TEXT_STATBLOCK_V19_MOVE 
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_blue_squadron_axe.tga</Icon_Name>
+		
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Squadron Name="Axe_Blue_Squadron">
+		<Variant_Of_Existing_Type>Torrent_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_AXE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_AXE
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BLUE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_AXE_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_SQUADRON
+		TEXT_STATBLOCK_V19_MOVE 
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_blue_squadron_axe.tga</Icon_Name>
+
+		<Create_Team_Type>Axe_Blue_Container</Create_Team_Type>
+		<Squadron_Units>Torrent_Blue, Torrent_Blue, Torrent_Blue, Torrent_Blue</Squadron_Units>
+		<Squadron_Units>Torrent_Blue, Torrent_Blue, Torrent_Blue, Torrent_Blue</Squadron_Units>
+		<Squadron_Units>Torrent_Blue, Torrent_Blue, Torrent_Blue, Axe</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+	<!-- Mixed ground-space squadron heroes -->
+
+	<!-- Odd Ball / Squad Seven -->
+	
+	<DummyStructure Name="Reform_Squad_Seven">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_REFORM_SQUAD_SEVEN</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_REFORM_SQUAD_SEVEN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+		<!-- V-19 Torrent -->	
+	
+	<DummyStructure Name="Odd_Ball_Torrent_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_odd_ball_p1_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_YULAREN
+		TEXT_HERO_KILIAN
+		TEXT_HERO_DEN_WESSEX
+		TEXT_HERO_BLOCK
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Odd_Ball_P1_LAAT">
+		<Variant_Of_Existing_Type>Republic_LAAT</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_LAAT_HEALTH 
+		TEXT_TOOLTIP_LAAT_SHIELD 
+		TEXT_TOOLTIP_LAAT_MOVE 
+		TEXT_TOOLTIP_LAAT_WEAP1 
+		TEXT_TOOLTIP_LAAT_WEAP2 
+		TEXT_TOOLTIP_LAAT_WEAP3
+		TEXT_TOOLTIP_LAAT_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_TRANSPORT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_odd_ball_p1.tga</Icon_Name>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Lua_Script>GroundHero</Lua_Script>
+		<Property_Flags>CanContainGarrison | GarrisonCanFire </Property_Flags>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+
+		<No_Colorization_Color> 25, 25, 25, 255 </No_Colorization_Color>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<SFXEvent_Select>Unit_Select_Clone_Gunship</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Clone_Gunship</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Gunship</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Clone_Gunship</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Clone_Gunship</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Clone_Gunship</SFXEvent_Health_Low_Warning>
+	</UniqueUnit>
+
+	<HeroCompany Name="Odd_Ball_P1_Team">
+		<Variant_Of_Existing_Type>Republic_LAAT_Group</Variant_Of_Existing_Type>
+	
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_ODD_BALL_TORRENT_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_SQUADRON
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		TEXT_TOOLTIP_LAAT_COMPANY
+		TEXT_TOOLTIP_LAAT_HEALTH 
+		TEXT_TOOLTIP_LAAT_SHIELD 
+		TEXT_TOOLTIP_LAAT_MOVE 
+		TEXT_TOOLTIP_LAAT_WEAP1 
+		TEXT_TOOLTIP_LAAT_WEAP2 
+		TEXT_TOOLTIP_LAAT_WEAP3
+		TEXT_TOOLTIP_LAAT_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_TRANSPORT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_odd_ball_p1.tga</Icon_Name>	
+
+		<Company_Units>Odd_Ball_P1_LAAT</Company_Units>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Tech_Level>99</Tech_Level>
+	</HeroCompany>
+
+	<UniqueUnit Name="Odd_Ball_Torrent">
+		<Variant_Of_Existing_Type>Torrent</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_FIGHTER_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ODD_BALL_TORRENT_BASE
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>																						 
+		<Icon_Name>i_button_odd_ball_p1.tga</Icon_Name>
+		
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>350</Tactical_Health>	
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<SFXEvent_Select> Unit_Select_Clone_Arc_170 </SFXEvent_Select>
+		<SFXEvent_Move> Unit_Move_Clone_Arc_170 </SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Arc_170</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack> Unit_Attack_Clone_Arc_170 </SFXEvent_Attack>
+		<SFXEvent_Guard> Unit_Guard_Clone_Arc_170 </SFXEvent_Guard>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Clone_Arc_170</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Clone_Arc_170</SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_Clone_Arc_170 </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_Clone_Arc_170 </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_Enemy_Health_Low_Clone_Arc_170 </SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> Unit_Enemy_Health_Critical_Clone_Arc_170 </SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Clone_Arc_170</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Clone_Arc_170 </SFXEvent_Health_Critical_Warning>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Odd_Ball_Fighter_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>		
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.20</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Torrent_Squad_Seven">
+		<Variant_Of_Existing_Type>Torrent</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_SQUAD_SEVEN_TORRENT</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SQUAD_SEVEN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>80</Tactical_Health>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<SFXEvent_Select> Unit_Select_Clone_Arc_170 </SFXEvent_Select>
+		<SFXEvent_Move> Unit_Move_Clone_Arc_170 </SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Arc_170</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack> Unit_Attack_Clone_Arc_170 </SFXEvent_Attack>
+		<SFXEvent_Guard> Unit_Guard_Clone_Arc_170 </SFXEvent_Guard>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Clone_Arc_170</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Clone_Arc_170</SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_Clone_Arc_170 </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_Clone_Arc_170 </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_Enemy_Health_Low_Clone_Arc_170 </SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> Unit_Enemy_Health_Critical_Clone_Arc_170 </SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Clone_Arc_170</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Clone_Arc_170 </SFXEvent_Health_Critical_Warning>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Clone_Arc_170 </SFXEvent_Attack_Hardpoint>
+		
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+	
+	<Container Name="Odd_Ball_Torrent_Squad_Seven_Container">
+		<Variant_Of_Existing_Type>Torrent_Squadron_Container</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_ODD_BALL_TORRENT_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_SQUADRON
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>	
+		<Icon_Name>i_button_odd_ball_p1.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Squadron Name="Odd_Ball_Torrent_Squad_Seven_Squadron">
+		<Variant_Of_Existing_Type>Torrent_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_ODD_BALL_TORRENT_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_SQUADRON
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>	
+		<Icon_Name>i_button_odd_ball_p1.tga</Icon_Name>
+
+		<Create_Team_Type>Odd_Ball_Torrent_Squad_Seven_Container</Create_Team_Type>
+		<Squadron_Units>Torrent_Squad_Seven, Torrent_Squad_Seven, Torrent_Squad_Seven, Torrent_Squad_Seven</Squadron_Units>
+		<Squadron_Units>Torrent_Squad_Seven, Torrent_Squad_Seven, Torrent_Squad_Seven, Torrent_Squad_Seven</Squadron_Units>
+		<Squadron_Units>Torrent_Squad_Seven, Torrent_Squad_Seven, Torrent_Squad_Seven, Odd_Ball_Torrent</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+		<!-- ARC-170 -->
+	
+	<DummyStructure Name="Odd_Ball_ARC170_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_odd_ball_p2_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_YULAREN
+		TEXT_HERO_KILIAN
+		TEXT_HERO_DEN_WESSEX
+		TEXT_HERO_BLOCK
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Odd_Ball_P2_LAAT">
+		<Variant_Of_Existing_Type>Odd_Ball_P1_LAAT</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_LAAT_HEALTH 
+		TEXT_TOOLTIP_LAAT_SHIELD 
+		TEXT_TOOLTIP_LAAT_MOVE 
+		TEXT_TOOLTIP_LAAT_WEAP1 
+		TEXT_TOOLTIP_LAAT_WEAP2 
+		TEXT_TOOLTIP_LAAT_WEAP3
+		TEXT_TOOLTIP_LAAT_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_TRANSPORT
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+
+		<No_Colorization_Color> 0, 64, 125, 255 </No_Colorization_Color>
+	</UniqueUnit>
+
+	<HeroCompany Name="Odd_Ball_P2_Team">
+		<Variant_Of_Existing_Type>Odd_Ball_P1_Team</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_SQUADRON
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		TEXT_TOOLTIP_LAAT_COMPANY
+		TEXT_TOOLTIP_LAAT_HEALTH 
+		TEXT_TOOLTIP_LAAT_SHIELD 
+		TEXT_TOOLTIP_LAAT_MOVE 
+		TEXT_TOOLTIP_LAAT_WEAP1 
+		TEXT_TOOLTIP_LAAT_WEAP2 
+		TEXT_TOOLTIP_LAAT_WEAP3
+		TEXT_TOOLTIP_LAAT_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_TRANSPORT
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>	
+
+		<Company_Units>Odd_Ball_P2_LAAT</Company_Units>
+	</HeroCompany>
+
+	<UniqueUnit Name="Odd_Ball_ARC170">
+		<Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_FIGHTER_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>																						 
+		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+		
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		
+		<Tactical_Health>180</Tactical_Health>
+		<Shield_Points>150</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name>Fighter_Sensor_Jamming</GUI_Activated_Ability_Name> 
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+				<Recharge_Seconds>55.0</Recharge_Seconds> 
+				<Expiration_Seconds>5.0</Expiration_Seconds>
+				<Effective_Radius>100.0</Effective_Radius>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Fighter_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+				<Owner_Particle_Effect>Sensor_Jamming_Effect_100</Owner_Particle_Effect>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Sensor_Jamming_Ability>
+
+			<Force_Healing_Ability Name="Odd_Ball_ARC170_Self_Heal">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Percent>0.02</Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Types>Odd_Ball_ARC170</Applicable_Unit_Types>
+			</Force_Healing_Ability>
+
+			<Combat_Bonus_Ability Name="Odd_Ball_Fighter_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>		
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.20</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.10</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.10</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="ARC170_Squad_Seven">
+		<Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_SQUAD_SEVEN_ARC170</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SQUAD_SEVEN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>90</Tactical_Health>
+		<Shield_Points>75</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+		<AI_Combat_Power>30</AI_Combat_Power>
+
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA </SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name>Fighter_Sensor_Jamming</GUI_Activated_Ability_Name> 
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+				<Recharge_Seconds>55.0</Recharge_Seconds> 
+				<Expiration_Seconds>5.0</Expiration_Seconds>
+				<Effective_Radius>100.0</Effective_Radius>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Fighter_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+				<Owner_Particle_Effect>Sensor_Jamming_Effect_100</Owner_Particle_Effect>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Sensor_Jamming_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<Container Name="Odd_Ball_ARC170_Squad_Seven_Container">
+		<Variant_Of_Existing_Type>ARC_170_Squadron_Container</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_SQUADRON
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>	
+		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Squadron Name="Odd_Ball_ARC170_Squad_Seven_Squadron">
+		<Variant_Of_Existing_Type>Generic_ARC_170_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>	
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ODD_BALL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_SQUADRON
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+
+		<Create_Team_Type>Odd_Ball_ARC170_Squad_Seven_Container</Create_Team_Type>
+		<Squadron_Units>ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven</Squadron_Units>
+		<Squadron_Units>ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven</Squadron_Units>
+		<Squadron_Units>ARC170_Squad_Seven, ARC170_Squad_Seven, ARC170_Squad_Seven, Odd_Ball_ARC170</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+
+	<!-- FotR_Enhanced -->
+
+	<!-- Warthog / Hunter Squadron  -->
+		
+	<!-- BTLB Y-wing --> <!--22bby-->
+	<!--
+	<DummyStructure Name="Warthog_BTLB_Y-Wing_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_warthog_p1_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_HUNTER_SQUADRON_BTLB_YWING
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_COBURN
+		TEXT_HERO_WIELER
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>		
+	</DummyStructure>
+
+	<UniqueUnit Name="Warthog_BTLB_Y-Wing">
+		<Variant_Of_Existing_Type>Generic_BTLB_Y-Wing</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		
+	</UniqueUnit>
+
+	<UniqueUnit Name="Hunter_BTLB_Y-Wing">
+		<Variant_Of_Existing_Type>Generic_BTLB_Y-Wing</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_HUNTER_BTLB_YWING</Text_ID>
+		<Encyclopedia_Text>
+		
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		
+		<Icon_Name></Icon_Name>
+		
+	</UniqueUnit>
+
+	<Container Name="Warthog_BTLB_Y-Wing_Hunter_Container">
+		<Variant_Of_Existing_Type>BTLB_Y-Wing_Squadron_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+	</Container>
+
+	<Squadron Name="Warthog_BTLB_Y-Wing_Hunter_Squadron">
+		<Variant_Of_Existing_Type>Generic_BTLB_Y-Wing_Squadron</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
+
+		<Create_Team_Type></Create_Team_Type>
+
+		<Squadron_Units>Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing</Squadron_Units>
+		<Squadron_Units>Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing</Squadron_Units>
+		<Squadron_Units>Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Hunter_BTLB_Y-Wing, Warthog_BTLB_Y-Wing</Squadron_Units>
+	</Squadron> 
+	-->
+
+	<!-- V-19 Torrent --> <!-- Phase 1 -->
+	
+	<DummyStructure Name="Warthog_Torrent_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_warthog_p1_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_COBURN
+		TEXT_HERO_WIELER
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>		
+	</DummyStructure>
+
+	<UniqueUnit Name="Warthog_Torrent">
+		<Variant_Of_Existing_Type>Torrent</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_STATBLOCK_WARTHOG_TORRENT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ODD_BALL_TORRENT_BASE
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Tactical_Health>350</Tactical_Health>
+		
+		<SpaceBehavior>
+			ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA
+		</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Warthog_Plo_Koon_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Plo_Koon_Delta</Applicable_Unit_Types>
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>	
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Hunter_Torrent">
+		<Variant_Of_Existing_Type>Torrent</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_HUNTER_TORRENT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_HUNTER_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<SpaceBehavior>
+			ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA
+		</SpaceBehavior>
+
+		<Tactical_Health>80</Tactical_Health>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</UniqueUnit>
+
+	<Container Name="Warthog_Torrent_Hunter_Container">
+		<Variant_Of_Existing_Type>Torrent_Squadron_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_ODD_BALL_TORRENT_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_SQUADRON
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+	</Container>
+
+	<Squadron Name="Warthog_Torrent_Hunter_Squadron">
+		<Variant_Of_Existing_Type>Torrent_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_ODD_BALL_TORRENT_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_V19_SQUADRON
+		TEXT_STATBLOCK_V19_MOVE
+		TEXT_STATBLOCK_V19_WEAP1
+		TEXT_STATBLOCK_V19_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
+		<Create_Team_Type>Warthog_Torrent_Hunter_Container</Create_Team_Type>
+		<Squadron_Units>Hunter_Torrent, Hunter_Torrent, Hunter_Torrent, Hunter_Torrent</Squadron_Units>
+		<Squadron_Units>Hunter_Torrent, Hunter_Torrent, Hunter_Torrent, Hunter_Torrent</Squadron_Units>
+		<Squadron_Units>Hunter_Torrent, Hunter_Torrent, Hunter_Torrent, Warthog_Torrent</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+
+	<!-- Republic Z95 HeadHunter --> <!-- Phase 2-->
+	
+	<DummyStructure Name="Warthog_Republic_Z95_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_warthog_p2_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_HUNTER_REP_Z95
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_COBURN
+		TEXT_HERO_WIELER
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>		
+	</DummyStructure>
+
+	<UniqueUnit Name="Warthog_Republic_Z95">
+		<Variant_Of_Existing_Type>Republic_Z-95_Headhunter</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE
+		TEXT_STATBLOCK_REPUBLIC_Z95_MOVE
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP1
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Icon_Name>i_button_warthog_p2.tga</Icon_Name>
+
+		<SpaceBehavior>
+			TELEKINESIS_TARGET, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA
+		</SpaceBehavior>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+
+		<Shield_Points>60</Shield_Points>
+		<Shield_Refresh_Rate>1.6</Shield_Refresh_Rate>
+		<Tactical_Health>150</Tactical_Health>
+
+		<SFXEvent_Select>Unit_Select_rep_fighter</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_rep_fighter</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_rep_fighter</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_rep_fighter</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_rep_fighter</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_rep_fighter </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_rep_fighter </SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_rep_fighter </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_rep_fighter </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_enemy_low_health_rep_fighter </SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> Unit_enemy_critical_health_rep_fighter </SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Health_Low_Warning> Unit_low_health_rep_fighter </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_critical_health_rep_fighter </SFXEvent_Health_Critical_Warning>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Warthog_Plo_Koon_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Plo_Koon_Delta</Applicable_Unit_Types>
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>	
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Hunter_Republic_Z95">
+		<Variant_Of_Existing_Type>Republic_Z-95_Headhunter</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_HUNTER_REPUBLIC_Z95</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_HUNTER_TORRENT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE
+		TEXT_STATBLOCK_REPUBLIC_Z95_MOVE
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP1
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP2
+		</Encyclopedia_Text>
+
+		<SpaceBehavior>
+			TELEKINESIS_TARGET, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA
+		</SpaceBehavior>
+
+		<Shield_Points>45</Shield_Points>
+		<Shield_Refresh_Rate>1.2</Shield_Refresh_Rate>
+		<Tactical_Health>70</Tactical_Health>
+		<AI_Combat_Power>22</AI_Combat_Power>
+
+		<SFXEvent_Select>Unit_Select_rep_fighter</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_rep_fighter</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_rep_fighter</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_rep_fighter</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_rep_fighter</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_rep_fighter </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_rep_fighter </SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_rep_fighter </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_rep_fighter </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning> Unit_enemy_low_health_rep_fighter </SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning> Unit_enemy_critical_health_rep_fighter </SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Health_Low_Warning> Unit_low_health_rep_fighter </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_critical_health_rep_fighter </SFXEvent_Health_Critical_Warning>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_target_turret_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_rep_fighter </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<Container Name="Warthog_Republic_Z95_Hunter_Container">
+		<Variant_Of_Existing_Type>Republic_Z95_Headhunter_Squadron_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_Z95_SQUADRON
+		TEXT_STATBLOCK_REPUBLIC_Z95_MOVE
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP1
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p2.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.015  0.015</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>		
+	</Container>
+
+	<Squadron Name="Warthog_Republic_Z95_Hunter_Squadron">
+		<Variant_Of_Existing_Type>Republic_Z95_Headhunter_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_REPUBLIC_Z95_SQUADRON
+		TEXT_STATBLOCK_REPUBLIC_Z95_MOVE
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP1
+		TEXT_STATBLOCK_REPUBLIC_Z95_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+
+		<Icon_Name>i_button_warthog_p2.tga</Icon_Name>
+
+		<Create_Team_Type>Warthog_Republic_Z95_Hunter_Container</Create_Team_Type>
+		
+		<Squadron_Units>Hunter_Republic_Z95, Hunter_Republic_Z95, Hunter_Republic_Z95</Squadron_Units>
+		<Squadron_Units>Hunter_Republic_Z95, Hunter_Republic_Z95, Hunter_Republic_Z95</Squadron_Units>
+		<Squadron_Units>Hunter_Republic_Z95, Hunter_Republic_Z95, Hunter_Republic_Z95</Squadron_Units>
+		<Squadron_Units>Hunter_Republic_Z95, Hunter_Republic_Z95, Warthog_Republic_Z95</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>			
+	</Squadron>	
+
+	<!-- Captain Jag -->
+
+	<DummyStructure Name="Jag_ARC170_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_JAG</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_jag_p2_set.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_JAN_DODONNA
+		TEXT_HERO_DALLIN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Jag_ARC170">
+		<Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_JAG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_JAG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_127TH_ARC170
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_STATBLOCK_ARC170_MOVE
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN</Encyclopedia_Unit_Class>																						 
+		<Icon_Name>i_button_jag_p2.tga</Icon_Name>
+		
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		
+		<Tactical_Health>180</Tactical_Health>
+		<Shield_Points>150</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name>Fighter_Sensor_Jamming</GUI_Activated_Ability_Name> 
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+				<Recharge_Seconds>55.0</Recharge_Seconds> 
+				<Expiration_Seconds>5.0</Expiration_Seconds>
+				<Effective_Radius>100.0</Effective_Radius>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Fighter_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+				<Owner_Particle_Effect>Sensor_Jamming_Effect_100</Owner_Particle_Effect>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Sensor_Jamming_Ability>
+
+			<Force_Healing_Ability Name="Jag_ARC170_Self_Heal">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Percent>0.02</Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Types>Jag_ARC170</Applicable_Unit_Types>
+			</Force_Healing_Ability>
+
+			<Combat_Bonus_Ability Name="Jag_Plo_Koon_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Plo_Koon_Delta</Applicable_Unit_Types>
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.20</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>	
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="ARC170_127th">
+		<Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_SQUAD_SEVEN_ARC170</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SQUAD_SEVEN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>90</Tactical_Health>
+		<Shield_Points>75</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>	
+		<AI_Combat_Power>30</AI_Combat_Power>
+
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA </SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name>Fighter_Sensor_Jamming</GUI_Activated_Ability_Name> 
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+				<Recharge_Seconds>55.0</Recharge_Seconds> 
+				<Expiration_Seconds>5.0</Expiration_Seconds>
+				<Effective_Radius>100.0</Effective_Radius>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_RAPID_FIRE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Fighter_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+				<Owner_Particle_Effect>Sensor_Jamming_Effect_100</Owner_Particle_Effect>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Sensor_Jamming_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<Container Name="Jag_ARC170_127th_Container">
+		<Variant_Of_Existing_Type>ARC_170_Squadron_Container</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_JAG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_JAG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_127TH_ARC170
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_SQUADRON
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN</Encyclopedia_Unit_Class>	
+		<Icon_Name>i_button_jag_p2.tga</Icon_Name>
+
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Squadron Name="Jag_ARC170_127th_Squadron">
+		<Variant_Of_Existing_Type>Generic_ARC_170_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_JAG</Text_ID>	
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_JAG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_127TH_ARC170
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ARC170_SQUADRON
+		TEXT_STATBLOCK_ARC170_MOVE 
+		TEXT_STATBLOCK_ARC170_WEAP1
+		TEXT_STATBLOCK_ARC170_WEAP2
+		TEXT_STATBLOCK_ARC170_WEAP3
+		TEXT_STATBLOCK_ARC170_WEAP4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_jag_p2.tga</Icon_Name>
+
+		<Create_Team_Type>Jag_ARC170_127th_Container</Create_Team_Type>
+		<Squadron_Units>ARC170_127th, ARC170_127th, ARC170_127th, ARC170_127th</Squadron_Units>
+		<Squadron_Units>ARC170_127th, ARC170_127th, ARC170_127th, ARC170_127th</Squadron_Units>
+		<Squadron_Units>ARC170_127th, ARC170_127th, ARC170_127th, Jag_ARC170</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION_100</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+	
+	<!-- Bythen Forral ; Fighter Hero -->
+
+	<DummyStructure Name="Bythen_Forral_Location_Set">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_FORRAL</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>I_BUTTON_BYTHEN_FORRAL_SET.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_HERO_SQUAD
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_CLOAKSHAPE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_ASSIGN_LOCATIONS
+		TEXT_HERO_JONA_GRUMBY
+		TEXT_HERO_BARAKA
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<UniqueUnit Name="Bythen_Forral">
+		<Variant_Of_Existing_Type>Cloakshape</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_FORRAL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_FORRAL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_CLOAKSHAPE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_BYTHEN_FORRAL_BASE
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_MOVE
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP1
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_BYTHEN_FORRAL.tga</Icon_Name>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>260</Tactical_Health>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>REPLENISH_WINGMEN</Type>
+				<Recharge_Seconds>-1</Recharge_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<Recharge_Seconds>55</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAMP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAMP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_sprint.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilites SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Bythen_Forral_Combat_Bonus_Ace_Pilot">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilites>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Cloakshape_Bythen_Forral_Escort">
+		<Variant_Of_Existing_Type>Cloakshape</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CLOAKSHAPE_CW
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_BYTHEN_FORRAL_BASE
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_MOVE
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP1
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP2
+		</Encyclopedia_Text>
+		
+		<Tactical_Health>90</Tactical_Health>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<Recharge_Seconds>55</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAMP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAMP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_sprint.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+	
+	<Container Name="Bythen_Forral_Container">
+		<Variant_Of_Existing_Type>Cloakshape_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_FORRAL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_FORRAL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_CLOAKSHAPE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_BYTHEN_FORRAL_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_BYTHEN_FORRAL_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_CLOAKSHAPE_SQUADRON
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_MOVE
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP1
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_BYTHEN_FORRAL.tga</Icon_Name>
+		
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<Recharge_Seconds>55</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAMP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAMP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_sprint.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+	
+	<Squadron Name="Bythen_Forral_Squadron">
+		<Variant_Of_Existing_Type>Cloakshape_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_FORRAL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_FORRAL
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_CLOAKSHAPE_SQUADRON
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
+		TEXT_STATBLOCK_BYTHEN_FORRAL_BASE
+		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_BYTHEN_FORRAL_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_CLOAKSHAPE_SQUADRON
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_MOVE
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP1
+		TEXT_STATBLOCK_CLOAKSHAPE_CW_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_BYTHEN_FORRAL.tga</Icon_Name>
+
+		<Create_Team_Type>Bythen_Forral_Container</Create_Team_Type>
+		<Squadron_Units>Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort</Squadron_Units>
+		<Squadron_Units>Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort</Squadron_Units>
+		<Squadron_Units>Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Bythen_Forral</Squadron_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<Recharge_Seconds>55</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAMP_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAMP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_sprint.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+</Republic_Fighter_Heroes>

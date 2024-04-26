@@ -140,7 +140,7 @@
 	<File>Heroes\Republic_Heroes.xml</File>
 	<File>Heroes\Republic_Heroes_Clones.xml</File>
 	<!-- FotR_Enhanced -->
-	<File>Heroes\Republic_Fighter_Heroes.xml</File>
+	<File>Heroes\Republic_Heroes_Fighter.xml</File>
 	<!-- End -->
 	<File>Heroes\Republic_Heroes_Jedi.xml</File>
 	<File>Heroes\Other_Heroes.xml</File>

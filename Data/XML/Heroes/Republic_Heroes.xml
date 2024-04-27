@@ -10877,6 +10877,80 @@
 		<Population_Value>1</Population_Value>
 	</HeroCompany>
 
+	<!--<DummyStructure Name="Extra_Senator_Slot">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 1 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<Text_ID>TEXT_HERO_OPEN_NR_ADMIRAL</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_view_admirals_extra.tga</Icon_Name>
+
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_OPEN_NR_ADMIRAL
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>-->
+
+	<DummyStructure Name="View_Senator">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 1 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<CategoryMask>Wall</CategoryMask>
+
+		<Text_ID>TEXT_HERO_VIEW_SENATORS</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_view_senators.tga</Icon_Name>
+
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VIEW_NR_SENATROS
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+	<DummyStructure Name="Random_Senator_Assign">
+		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+		
+		<Text_ID>TEXT_UNIT_RANDOM_SENATOR</Text_ID>
+		<Icon_Name>I_BUTTON_UNKNOWN.tga</Icon_Name>
+
+		<CategoryMask>Upgrade</CategoryMask>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_RANDOM_SENATOR
+		TEXT_DOCUMENTATION_SEPARATOR_SMALL
+		TEXT_TOOLTIP_ASSIGN_RANDOM_SENATOR2
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
 
 	<HeroUnit Name="Garm_Bel_Iblis">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
@@ -10954,7 +11028,7 @@
 		<Required_Special_Structures></Required_Special_Structures>
 		<Required_Planets></Required_Planets>
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
-		<Company_Transport_Unit>CR20_Landing_Craft</Company_Transport_Unit> <!-- Corellian senator using corellian lander -->
+		<Company_Transport_Unit>CR20_Landing_Craft_Garm</Company_Transport_Unit> <!-- Corellian senator using corellian lander -->
 		<Company_Units>Garm_Bel_Iblis</Company_Units>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Encyclopedia_Text> 
@@ -10976,6 +11050,36 @@
 		<Population_Value>1</Population_Value>
 	</HeroCompany>
 
+	<DummyStructure Name="Garm_Assign">
+		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_GARM_BEL_IBLIS</Text_ID>
+		<Icon_Name>I_BUTTON_GARM_CW_COMMAND.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_NR_SENATOR
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ADMIN3
+		TEXT_TOOLTIP_TRAIT_COMMERCIAL_GARM
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_GARM_CW
+		</Encyclopedia_Text>
+	</DummyStructure>
+
+	<DummyStructure Name="Garm_Retire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_GARM_BEL_IBLIS</Text_ID>
+		<Icon_Name>I_BUTTON_GARM_CW_RETIRE.tga</Icon_Name>
+
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Orbiting_Units>Theta_Shuttle_Landing_Craft_Jesra_Loture</Required_Orbiting_Units>
+	</DummyStructure>
 
 	<HeroUnit Name="Bail_Organa">
 
@@ -11062,6 +11166,199 @@
 		<Population_Value>1</Population_Value>
 	</HeroCompany>
 
+	<HeroUnit Name="Fang_Zar">
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_FANG_ZAR</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_ADMIN3
+		TEXT_TOOLTIP_TRAIT_COMMERCIAL_GARM
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_FANG_ZAR
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SENATOR </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_FANG_ZAR.TGA</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<!-- must use a special ability to modify political control in order to stack correctly -->
+		<Political_Control>0</Political_Control>
+		<Political_Faction>Empire</Political_Faction>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<IsBuildable>No</IsBuildable>
+		<Spawn_Planet>Alderaan</Spawn_Planet>
+		<Size_Value>75</Size_Value>
+		<Damage>100</Damage>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<Neutralization_Cost>1000.0</Neutralization_Cost>
+
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+
+		<Abilities SubObjectList="Yes">
+
+			<Reduce_Production_Price_Ability Name="Zar_Reduce_Production_Price">
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Zar_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_ZAR</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>0.2</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+
+		</Abilities>
+	</HeroUnit>
+
+	<HeroCompany Name="Zar_Team">
+		<Text_ID>TEXT_HERO_FANG_ZAR</Text_ID>
+		<Icon_Name>I_BUTTON_FANG_ZAR.TGA</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>CR20_Landing_Craft</Company_Transport_Unit> <!-- Corellian senator using corellian lander -->
+		<Company_Units>Fang_Zar</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_ADMIN3
+		TEXT_TOOLTIP_TRAIT_COMMERCIAL_GARM
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_FANG_ZAR
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SENATOR </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
+
+	<HeroUnit Name="Bana_Breemu">
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_BANA_BREEMU</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_ADMIN3
+		TEXT_TOOLTIP_TRAIT_COMMERCIAL_GARM
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_BANA_BREEMU
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SENATOR </Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_BUTTON_BREEMU.TGA</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<!-- must use a special ability to modify political control in order to stack correctly -->
+		<Political_Control>0</Political_Control>
+		<Political_Faction>Empire</Political_Faction>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<IsBuildable>No</IsBuildable>
+		<Spawn_Planet>Alderaan</Spawn_Planet>
+		<Size_Value>75</Size_Value>
+		<Damage>100</Damage>
+		<Autoresolve_Health>500</Autoresolve_Health>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<Neutralization_Cost>1000.0</Neutralization_Cost>
+
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+
+		<Abilities SubObjectList="Yes">
+
+			<Reduce_Production_Price_Ability Name="Breemu_Reduce_Production_Price">
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SuperCapital | Infantry | Vehicle | Air | Structure | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Breemu_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_BREEMU</Specific_Mod_Source_Text>
+				<!-- 3% bonus to base planetary income -->
+				<Percentage_Income_Modifier>0.2</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+
+		</Abilities>
+	</HeroUnit>
+
+	<HeroCompany Name="Breemu_Team">
+		<Text_ID>TEXT_HERO_BANA_BREEMU</Text_ID>
+		<Icon_Name>I_BUTTON_BREEMU.TGA</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>CR20_Landing_Craft</Company_Transport_Unit> <!-- Corellian senator using corellian lander -->
+		<Company_Units>Bana_Breemu</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_ADMIN3
+		TEXT_TOOLTIP_TRAIT_COMMERCIAL_GARM
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_BANA_BREEMU
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SENATOR </Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Ranking_In_Category> 1 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+	</HeroCompany>
 
 	<UniqueUnit Name="Raymus_Tantive">
 		<Variant_Of_Existing_Type>Corellian_Corvette</Variant_Of_Existing_Type>

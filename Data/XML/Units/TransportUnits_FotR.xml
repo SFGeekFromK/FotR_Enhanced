@@ -895,11 +895,6 @@
 		<Variant_Of_Existing_Type>CIS_Sheathipede_Landing_Craft_Landing</Variant_Of_Existing_Type>
 	</TransportUnit>
 
-	<!-- Dooku's Variant for 'Required_Orbiting_Units' feature -->
-
-	<TransportUnit Name="CIS_Sheathipede_Landing_Craft_Dooku">
-		<Variant_Of_Existing_Type>CIS_Sheathipede_Landing_Craft</Variant_Of_Existing_Type>
-	</TransportUnit>
 
 	<!-- Sheathipede B-->
 	<TransportUnit Name="Sheathipede_B_Type_Landing_Craft">
@@ -1728,6 +1723,43 @@
 
 	<TransportUnit Name="CIS_Hero_Landing_Craft_Landing">
 		<Variant_Of_Existing_Type>CIS_Sheathipede_Landing_Craft_Landing</Variant_Of_Existing_Type>
+	</TransportUnit>
+
+
+	<!-- FotR_Enhanced -->
+
+	<!-- Dooku's Variant for 'Required_Orbiting_Units' feature -->
+
+	<TransportUnit Name="CIS_Sheathipede_Landing_Craft_Dooku">
+		<Variant_Of_Existing_Type>CIS_Sheathipede_Landing_Craft</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>CIS_Sheathipede_Landing_Craft_Dooku_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="CIS_Sheathipede_Landing_Craft_Dooku_Landing">
+		<Variant_Of_Existing_Type>CIS_Sheathipede_Landing_Craft_Landing</Variant_Of_Existing_Type>
+	</TransportUnit>
+
+	<!-- Order 65 Senator Heroes -->
+
+	<!--
+	<TransportUnit Name="_">
+		<Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="_Landing">
+		<Variant_Of_Existing_Type>_Landing</Variant_Of_Existing_Type>
+	</TransportUnit>
+	-->
+
+
+	<TransportUnit Name="CR20_Landing_Craft_Garm">
+		<Variant_Of_Existing_Type>CR20_Landing_Craft</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>CR20_Landing_Craft_Garm_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="CR20_Landing_Craft_Garm_Landing">
+		<Variant_Of_Existing_Type>CR20_Landing_Craft_Landing</Variant_Of_Existing_Type>
 	</TransportUnit>
 
 </TransportUnits>

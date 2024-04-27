@@ -60,8 +60,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("REPUBLIC_FIGHTER_DISABLE", self.Remove_Fighter_Sets, self)
 	-- FotR_Enhanced
 	crossplot:subscribe("GEEN_UNLOCK", self.Geen_Unlock, self)
-	crossplot:subscribe("FORRAL_RETIRE", self.Forral_Switch, self)
-	--crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)
+	--crossplot:subscribe("FORRAL_RETIRE", self.Forral_Switch, self)
+	crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)
 
 	admiral_data = {
 		total_slots = 5,       --Max number of concurrent slots. Set at the start of the GC and never change.
@@ -298,16 +298,16 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		disabled = true
 	}
 	
-	--[[senator_data = {
+	senator_data = {
 		total_slots = 2,			--Max slot number. Set at the start of the GC and never change
-		free_hero_slots = 3,		--Slots open to buy
+		free_hero_slots = 2,		--Slots open to buy
 		vacant_hero_slots = 0,	    --Slots that need another action to move to free
 		vacant_limit = 8,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
-			["Garm"] = {"ROM_MOHC_ASSIGN",{"ROM_MOHC_RETIRE"},{"ROM_MOHC"},"Rom Mohc", ["Companies"] = {"ROM_MOHC_TEAM"}},
+			["Garm"] = {"GARM_ASSIGN",{"GARM_RETIRE"},{"GARM_BEL_IBLIS"},"Garm Bel Iblis", ["Companies"] = {"GARM_TEAM"}},
 			["Danu"] = {"GENTIS_ASSIGN",{"GENTIS_RETIRE"},{"GENTIS_AT_TE"},"Gentis", ["Companies"] = {"GENTIS_TEAM"}},
-			["Zar"] = {"GEEN_ASSIGN",{"GEEN_RETIRE"},{"GEEN_UT_AT"},"Locus Geen", ["Companies"] = {"GEEN_TEAM"}},
+			["Zar"] = {"GEEN_ASSIGN",{"GEEN_RETIRE"},{"FANG_ZAR"},"Fang Zar", ["Companies"] = {"ZAR_TEAM"}},
 			["Breemu"] = {"OZZEL_ASSIGN",{"OZZEL_RETIRE"},{"OZZEL_LAAT"},"Kendal Ozzel", ["Companies"] = {"OZZEL_TEAM"}},
 			["Alavar"] = {"ROMODI_ASSIGN",{"ROMODI_RETIRE"},{"ROMODI_A5_JUGGERNAUT"},"Hurst Romodi", ["Companies"] = {"ROMODI_TEAM"}},
 			["Papanoida"] = {"SOLOMAHAL_ASSIGN",{"SOLOMAHAL_RETIRE"},{"SOLOMAHAL_RX200"},"Solomahal", ["Companies"] = {"SOLOMAHAL_TEAM"}},
@@ -323,7 +323,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		random_name = "RANDOM_SENATOR_ASSIGN",
 		global_display_list = "REP_SENATOR_LIST", --Name of global array used for documention of currently active heroes
 		disabled = true
-	}]]
+	}
 
 	fighter_assigns = {
 		"Garven_Dreis_Location_Set",
@@ -341,6 +341,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		["VIEW_COMMANDOS"] = 5,
 		["VIEW_GENERALS"] = 6,
 		["VIEW_FIGHTERS"] = 7,
+		--["VIEW_SENATORS"] = 8,
 	}
 	
 	old_view = 1
@@ -353,6 +354,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	Tenant_Checks = 0
 	
 	Venator_init = false
+
+	Forral_Checks = 0
 end
 
 function RepublicHeroes:on_production_finished(planet, object_type_name)--object_type_name, owner)
@@ -828,6 +831,7 @@ function RepublicHeroes:Venator_Heroes()
 		
 		Autem_Check()
 		Trachta_Check()
+		Forral_Check()
 	end
 	Venator_init = true
 end
@@ -902,7 +906,7 @@ function RepublicHeroes:Order_66_Handler()
 	Handle_Hero_Exit("Dallin", admiral_data)
 	Clear_Fighter_Hero("IMA_GUN_DI_DELTA")
 	Decrement_Hero_Amount(10, council_data)
-	Forral_Switch()
+	Forral_Check()
 end
 
 function RepublicHeroes:New_Padawan_Handler()
@@ -1031,13 +1035,22 @@ function RepublicHeroes:Geen_Unlock()
 	Handle_Hero_Add("Geen", general_data)
 end
 
---[[function RepublicHeroes:Order_65_Handler()
-	init_hero_system(senator_data)
-	Forral_Switch()
-end]]
+function RepublicHeroes:Order_65_Handler()
+	--init_hero_system(senator_data)
+	Forral_Check()
+	if Handle_Hero_Exit("Forral", admiral_data) then
+		if admiral_data.active_player.Is_Human() then
+			StoryUtil.Multimedia("TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL", 20, nil, "Commander_Moff_Loop", 0)
+		end
+	end
+end
 
-function Forral_Switch()
-	Handle_Hero_Add("Forral", admiral_data)
-	Clear_Fighter_Hero("BYTHEN_FORRAL_SQUADRON")
-	RepublicHeroes:Remove_Fighter_Set("Bythen_Forral_Location_Set")
+function Forral_Check()
+	--Logger:trace("entering RepublicHeroes:Autem_Check")
+	Forral_Checks = Forral_Checks + 1
+	if Forral_Checks == 2 then
+		Handle_Hero_Add("Forral", admiral_data)
+		Clear_Fighter_Hero("BYTHEN_FORRAL_SQUADRON")
+		RepublicHeroes:Remove_Fighter_Set("Bythen_Forral_Location_Set")
+	end
 end

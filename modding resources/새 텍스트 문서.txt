@@ -21,3 +21,11 @@ Later, Jedi General Plo Koon drafted the captin as the test pilot for the new AR
 The Pelta-class frigate is locked until the Malevolence is destroyed.  The older C-Class frigate will act as its replacement.
 
 Only for the duration of this campaign, Open Circle Fleet Venators are default, only buildable Venators without build limits. 
+
+Admiral Kilian:  My days of fighting are nearly over.  I have decided to retire on Anaxes and train young cadets for a career in the military. 
+[Shoan Kilian has retired from the Republic Command Staff]
+Republic Intelligence Officer:  I regret to report that Captain Martz has been declared KIA 
+after a commando team found the Prosecutor had been commandeered by Trandoshan mercenaries.  
+[Stinnet Martz has been removed from the Republic Command Staff]
+Rear Admiral Tenant:  Reports indicate that Admiral Dao's fleet was dead on arrival.  I have been tasked with taking over his forces.  
+[Nils Tenant (Venator) has been added to the Republic Command Staff]

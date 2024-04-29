@@ -69,7 +69,7 @@ ofc venator starting unit (cf : above obi wan venator)
 
 Check if venator ofcs really has firing rate bonuses
 
-add/remove/modify moff heores(?)
+swap out therbon with someone else
 
 adjust historical gc hero amounts(to match base fotr)
 

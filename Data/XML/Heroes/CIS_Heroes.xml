@@ -7309,7 +7309,7 @@
 		</Abilities>
 	</UnigueUnit>
 
-	<HeroUnit Name="TX21_SuperTank">
+<!--	<HeroUnit Name="TX21_SuperTank">
 		<Variant_Of_Existing_Type>CIS_Super_Tank</Variant_Of_Existing_Type>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Text_ID>TEXT_HERO_TX21</Text_ID>
@@ -7349,5 +7349,5 @@
 		<Score_Cost_Credits> 18000 </Score_Cost_Credits>
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 		<Company_Units>TX21_SuperTank</Company_Units>
-	</HeroCompany>
+	</HeroCompany> -->
 </CIS_Heroes>

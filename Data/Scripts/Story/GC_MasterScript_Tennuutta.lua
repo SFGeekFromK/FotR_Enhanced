@@ -148,8 +148,8 @@ function State_Framework_Activation(message)
 		-- FotR_Enhanced
 		crossplot:publish("GEEN_UNLOCK", "empty")
 
-		--Admirals: 2
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 1)
+		--Admirals: 5 - 3 = 2
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 3, 1)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Kilian","Yularen"}, 1)
 
 		--Moffs: 0
@@ -164,9 +164,10 @@ function State_Framework_Activation(message)
 		crossplot:publish("REPUBLIC_ADMIRAL_RETURN", {"Jet"}, 4)
 
 		--Commandos: 1
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 5)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 2, 5)
 
 		--Generals: 2 (with Rom locked in)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 6)
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Rom"}, 6)
 
 		Clear_Fighter_Hero("AXE_BLUE_SQUADRON")

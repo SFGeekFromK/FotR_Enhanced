@@ -149,29 +149,28 @@ function State_Framework_Activation(message)
 		-- FotR_Enhanced
 		crossplot:publish("GEEN_UNLOCK", "empty")
 
-		--Admirals:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 1)
-		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Yularen","Coburn","Kilian","Screed","Dodonna","Wieler","Dao","Tenant"}, 1)
+		--Admirals: 5 - 3 = 2 -- FotR_Enhanced : block and needa unavailable
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 3, 1)
+		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Yularen","Coburn","Kilian","Screed","Dodonna","Wieler","Dao","Tenant","Block","Needa",}, 1)
 
-		--Moffs:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", -1, 2)
+		--Moffs: 2 - 1 = 1
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Grant"}, 2)
 
-		--Jedi:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", -1, 3)
+		--Jedi: 5 - 1 - 1 = 3
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 3)
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Mace"}, 3)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Aayla","Barriss","Kit","Shaak","Ahsoka","Knol","Halcyon"}, 3)
 
-		--Clone Officers:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 4)
+		--Clone Officers: 4 - 3 = 1 (if phaes 2 then 2)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 3, 4)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Rex","Bly","Cody","Wolffe","Gree_Clone"}, 4)
 
-		--Commandos:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 0, 5)
+		--Commandos: 3 - 1 = 2
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 5)
 
-		--Generals:
+		--Generals: 3 - 1 - 1 = 1
 		crossplot:publish("REPUBLIC_ADMIRAL_LOCKIN", {"Gentis"}, 6)
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 0, 6)
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 6)
 	else
 		crossplot:update()
     end

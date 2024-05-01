@@ -146,6 +146,7 @@
 		Storm_Fleet_Destroyer,
 		<!--Submod Units/Heores-->
 		TJ912_Recusant,
+		TM171_DH_Omni,
 		<!--Heroes-->
 		Colicoid_Swarm,
 		Lucid_Voice,
@@ -898,10 +899,10 @@
 		<!--Submod Units/Heroes-->
 		Venator_OFC,
 		Venator_SPHA_T,
-		Venator_Imperial,
 		Needa_Integrity,
 		Block_Negotiator,
 		Block_Vigilance,
+		Yularen_Resolute_SPHAT,
 		<!--Heroes-->
 		Onara_Kuat_Mandator,
 		Trachta_Venator,

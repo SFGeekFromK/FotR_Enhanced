@@ -522,6 +522,7 @@ function RepublicHeroes:init_heroes()
 		Handle_Hero_Add("Autem", admiral_data)
 
 		set_unit_index("Maarisa", 2, admiral_data)
+		set_unit_index("Block", 2, admiral_data)
 
 		Eta_Unlock()
 		Trachta_Checks = 1

@@ -1,0 +1,162 @@
+<?xml version="1.0" ?>
+<Ground_Structures>
+
+	<SpecialStructure Name="Pilot_Academy">
+		
+		<Variant_Of_Existing_Type>Template_Pilot_Academy</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+		<Starting_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Naval_Academy">
+
+		<Variant_Of_Existing_Type>Template_Naval_Academy</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+		<Starting_Spawned_Units_Tech_0>Military_Soldier_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		
+	</SpecialStructure>
+
+	<SpecialStructure Name="Local_Infrastructure">
+
+		<Variant_Of_Existing_Type>Template_Local_Infrastructure</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		
+	</SpecialStructure>
+
+	<SpecialStructure Name="Tax_Agency">
+
+		<Variant_Of_Existing_Type>Template_Tax_Agency</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+
+		<Required_Special_Structures>Empire_MoffPalace | NewRep_SenatorsOffice</Required_Special_Structures>
+		
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Smuggler_Cantina">
+
+		<Variant_Of_Existing_Type>Template_Cantina</Variant_Of_Existing_Type>
+		
+		<Affiliation>Hutt_Cartels</Affiliation>
+
+		<Required_Special_Structures>Hutt_LocalOffice | Shadow_Collective_LocalOffice</Required_Special_Structures>
+		
+		<Starting_Spawned_Units_Tech_0>Light_Mercenary_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility">
+		
+		<Variant_Of_Existing_Type>Template_Mining_Facility</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_MINING_00 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_TAX_FACILITY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_RESOURCE_GARRISON
+		TEXT_TOOLTIP_RESOURCE_GARRISON_TNT
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_INCOME_MINES
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_MINES
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+		<Starting_Spawned_Units_Tech_0>Security_Trooper_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Treaded_Neutron_Torch, 1</Starting_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Imperial_Prison">
+		
+		<Variant_Of_Existing_Type>Template_Labour_Camp</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Commerce_Guild, Trade_Federation, Techno_Union, Banking_Clan, Sector_Forces</Affiliation>
+		
+		<Starting_Spawned_Units_Tech_0>Police_Responder_Assault_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Generic_TradeStation">
+		
+		<Variant_Of_Existing_Type>Template_Generic_TradeStation</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Generic_Colony_One">
+		
+		<Variant_Of_Existing_Type>Template_Generic_Colony_One</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+		<Death_Clone>Damage_Normal, Golan_Colony_One_Death_Clone</Death_Clone>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Generic_Colony_Two">
+		
+		<Variant_Of_Existing_Type>Template_Generic_Colony_Two</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+		<!-- <Death_Clone>Damage_Normal, Golan_Colony_Two_Death_Clone</Death_Clone> -->
+
+	</SpecialStructure>
+
+
+
+	<DummyStructure Name="Trade_Income_Dummy">
+		
+		<Variant_Of_Existing_Type>Template_Trade_Income_Dummy</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+	</DummyStructure>
+
+	<DummyStructure Name="Trade_Hub_Income_Dummy">
+		
+		<Variant_Of_Existing_Type>Template_Trade_Hub_Income_Dummy</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+	</DummyStructure>
+
+	<DummyStructure Name="Infrastructure_Surplus">
+		
+		<Variant_Of_Existing_Type>Template_Infrastructure_Surplus</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+	</DummyStructure>
+
+	<DummyStructure Name="Infrastructure_Deficit_Small">
+		
+		<Variant_Of_Existing_Type>Template_Infrastructure_Deficit_Small</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+	</DummyStructure>
+
+	<DummyStructure Name="Infrastructure_Deficit_Severe">
+		
+		<Variant_Of_Existing_Type>Template_Infrastructure_Deficit_Severe</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Trade_Federation, Techno_Union, Banking_Clan, Commerce_Guild, Sector_Forces</Affiliation>
+		
+	</DummyStructure>
+
+</Ground_Structures>

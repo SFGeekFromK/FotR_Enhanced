@@ -165,7 +165,8 @@ function Get_Hero_Entries(upgrade_object)
 		Options = {
 			{"GRUMBY", Locations = {"GRUMBY_INVINCIBLE"}},
 			{"BARAKA", Locations = {"BARAKA_NEXU"}},
-		}
+		},
+		Faction = "Empire"
 	},
 	--CIS
 	["DFS1VR_LOCATION_SET"] = {

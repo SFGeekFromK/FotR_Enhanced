@@ -1,90 +1,32 @@
 <?xml version="1.0" ?>
 <Republic_Heroes_Imperial>
 
+<!--
+
+
+-->
+
+	<UniqueUnit Name="_imp">
+		<Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+	</UniqueUnit>
+
+	<DummyStructure Name="_imp">
+		<Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+		
+		<Required_Orbiting_Units>_imp</Required_Orbiting_Units>
+	</DummyStructure>
+
 	<!-- Always available -->
 
 	<!-- FotR_Enhanced -->
 
 	<UniqueUnit Name="Needa_Integrity_imp">
-		<Variant_Of_Existing_Type>Carrack_Cruiser_Lasers</Variant_Of_Existing_Type>
-		<Icon_Name>i_button_needa.tga</Icon_Name>
-		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
-		<Is_Named_Hero>Yes</Is_Named_Hero>	
-		<Text_ID>TEXT_HERO_NEEDA</Text_ID>
-		<Encyclopedia_Text> 
-		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
-		TEXT_TOOLTIP_TRAIT_COMMAND4_SPACE
-		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
-		TEXT_TOOLTIP_NEEDA
-		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
-		TEXT_TOOLTIP_COMMAND_CARRACK_INTEGRITY
-		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_CARRACK_LASERS_HULL 
-		TEXT_TOOLTIP_CARRACK_LASERS_SHIELD
-		TEXT_TOOLTIP_CARRACK_LASERS_MOVE
-		TEXT_TOOLTIP_CARRACK_LASERS_SQUADRON
-		TEXT_TOOLTIP_CARRACK_LASERS_WEAP1
-		TEXT_TOOLTIP_CARRACK_LASERS_WEAP2
-		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
-		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
-		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT_COMMANDER </Encyclopedia_Unit_Class>
-
-		<SpaceBehavior>TELEKINESIS_TARGET, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
-		<Lua_Script>GenericGameObject</Lua_Script>
-		<Tech_Level>99</Tech_Level>
-		<Affiliation>Empire</Affiliation>
-		<Required_Star_Base_Level>1</Required_Star_Base_Level>
-		<Score_Cost_Credits> 60000 </Score_Cost_Credits>
-		<CategoryMask> SpaceHero | AntiCorvette </CategoryMask>
-
-		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
-		<Tactical_Build_Cost_Multiplayer>1045</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies></Build_Limit_Lifetime_For_All_Allies>  
-		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
-
-		<Unit_Abilities_Data SubObjectList="Yes">
-			<!--Primary ability-->
-			<Unit_Ability>
-				<Type>DEFEND</Type>
-				<Recharge_Seconds>60</Recharge_Seconds>
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.25f</Mod_Multiplier>
-				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
-				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.20f</Mod_Multiplier> <!--make it faster to recharge-->
-				<Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.20f</Mod_Multiplier> <!--make it faster to recharge-->
-				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	3.0f</Mod_Multiplier>
-				<Mod_Multiplier>SPEED_MULTIPLIER,		0.8f</Mod_Multiplier>
-				<Expiration_Seconds>15</Expiration_Seconds>
-
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Lorth_Needa</SFXEvent_GUI_Unit_Ability_Activated>
-			</Unit_Ability>
-		</Unit_Abilities_Data>
-
-		<Abilities SubObjectList="Yes">
-			<Combat_Bonus_Ability Name="Needa_Combat_Bonus">
-				<Activation_Style>Space_Automatic</Activation_Style>
-				<Unit_Strength_Category>All</Unit_Strength_Category>
-				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
-				<Applicable_Unit_Types />
-				<Excluded_Unit_Types> </Excluded_Unit_Types>
-				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
-				<Stacking_Category>0</Stacking_Category>
-			</Combat_Bonus_Ability>
-		</Abilities>
-
+		<Variant_Of_Existing_Type>Needa_Integrity</Variant_Of_Existing_Type>
+		<
 	</UniqueUnit>
 
-	<DummyStructure Name="Needa_Retire_IMP">
+	<DummyStructure Name="Needa_Retire_imp">
 		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
 		
 		<SFXEvent_Build_Started> </SFXEvent_Build_Started>

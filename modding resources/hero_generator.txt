@@ -1,0 +1,10 @@
+    <UniqueUnit Name="_imp">
+		<Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+	</UniqueUnit>
+
+	<DummyStructure Name="_imp">
+		<Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+		
+		<Required_Orbiting_Units>_imp</Required_Orbiting_Units>
+	</DummyStructure>

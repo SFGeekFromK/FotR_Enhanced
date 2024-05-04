@@ -23,24 +23,12 @@
 
 	<UniqueUnit Name="Needa_Integrity_imp">
 		<Variant_Of_Existing_Type>Needa_Integrity</Variant_Of_Existing_Type>
-		<
+		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
 	</UniqueUnit>
 
 	<DummyStructure Name="Needa_Retire_imp">
-		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
-		
-		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete> Unit_Unassigned_Lorth_Needa </SFXEvent_Build_Complete>
-		
-		<Text_ID>TEXT_HERO_NEEDA</Text_ID>
-		<Icon_Name>i_button_needa_retire.tga</Icon_Name>
-
-		<Tech_Level>0</Tech_Level>
-
-		<Affiliation>Empire</Affiliation>
-
-		<Required_Orbiting_Units>Needa_Integrity</Required_Orbiting_Units>
+		<Variant_Of_Existing_Type>Needa_Retire</Variant_Of_Existing_Type>
+		<Required_Orbiting_Units>Needa_Integrity_imp</Required_Orbiting_Units>
 	</DummyStructure>
 
 	<UniqueUnit Name="Dallin_Kebir">

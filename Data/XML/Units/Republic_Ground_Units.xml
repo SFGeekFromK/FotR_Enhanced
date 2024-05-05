@@ -3903,9 +3903,9 @@
 
 		<Lua_Script>A6_Prototype_Mesh</Lua_Script>
 
-		<Tactical_Health>1200</Tactical_Health>
+		<Tactical_Health>1100</Tactical_Health>
 
-		<Num_Garrison_Slots>10</Num_Garrison_Slots>
+		<Num_Garrison_Slots>9</Num_Garrison_Slots>
 
 		<HardPoints> 
 			HP_Juggernaut_A6_Right_Dual, HP_Juggernaut_A6_Left_Dual, 

@@ -110,3 +110,9 @@ vorru
 
 kinatro (must)
 
+
+
+
+a6 prototype
+
+replace missiles with grenades(same as the one from at-xt), no tower, rear gun replaced with heavy aa blaster

@@ -3888,6 +3888,9 @@
 		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
 
+		<Collision_Mesh>LaserAOE_00</Collision_Mesh>
+		<Attachment_Bone>LaserAOE_00</Attachment_Bone>
+
 		<Fire_Bone_A>LaserAOE_00_FP_00</Fire_Bone_A>
 		<Fire_Bone_B>LaserAOE_00_FP_01</Fire_Bone_B>
 		<Fire_Cone_Width>60.0</Fire_Cone_Width>
@@ -3912,11 +3915,9 @@
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
-		<Health>210.0</Health>
+
 		<Collision_Mesh>LaserAOE_01</Collision_Mesh>
 		<Attachment_Bone>LaserAOE_01</Attachment_Bone>
-		<Damage_Particles>LaserAOE_01</Damage_Particles>
-		<Tooltip_Text>TEXT_WEAPONGROUND_AOEBLASTER</Tooltip_Text>
 
 		<Fire_Bone_A>LaserAOE_01_FP_00</Fire_Bone_A>
 		<Fire_Bone_B>LaserAOE_01_FP_01</Fire_Bone_B>
@@ -3939,133 +3940,49 @@
 		<!-- AA Accurate -->
     </HardPoint>
 	
-	<HardPoint Name="HP_A6_Prototype_Right_Front">
-		<Type> HARD_POINT_WEAPON_LASER </Type>
+	<HardPoint Name="HP_A6_Prototype_Right_Front_Dummy">
+		<Type> HARD_POINT_DUMMY_ART </Type>
 		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
-		<Health>160.0</Health>
+
 		<Collision_Mesh>LaserAOE_02</Collision_Mesh>
 		<Attachment_Bone>LaserAOE_02</Attachment_Bone>
-		<Damage_Particles>LaserAOE_02</Damage_Particles>
-		<Tooltip_Text>TEXT_WEAPONGROUND_AOEBLASTER</Tooltip_Text>
-
-
-		<Fire_Bone_A>LaserAOE_02</Fire_Bone_A>
-		<Fire_Bone_B>LaserAOE_02</Fire_Bone_B>
-		<Fire_Cone_Width>60.0</Fire_Cone_Width>
-		<Fire_Cone_Height>180.0</Fire_Cone_Height>
-		<Fire_Projectile_Type>Proj_AOE_AI_Blaster_Green_Blue</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>1</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>1</Fire_Max_Recharge_Seconds>
-		<Fire_Pulse_Count>2</Fire_Pulse_Count>
-		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
-		<Fire_Range_Distance>400.0</Fire_Range_Distance>
-		<Fire_SFXEvent>Unit_A6_Juggernaut_AI_Fire</Fire_SFXEvent>
-
-
-		<Fire_Inaccuracy_Distance> Infantry, 10.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Air, 30.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Structure, 2.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> LandHero, 15.0 </Fire_Inaccuracy_Distance>
     </HardPoint>
 	
-	<HardPoint Name="HP_A6_Prototype_Right_Rear">
-		<Type> HARD_POINT_WEAPON_LASER </Type>
+	<HardPoint Name="HP_A6_Prototype_Right_Rear_Dummy">
+		<Type> HARD_POINT_DUMMY_ART </Type>
 		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
-		<Health>160.0</Health>
+
 		<Collision_Mesh>LaserAOE_03</Collision_Mesh>
 		<Attachment_Bone>LaserAOE_03</Attachment_Bone>
-		<Damage_Particles>LaserAOE_03</Damage_Particles>
-		<Tooltip_Text>TEXT_WEAPONGROUND_AOEBLASTER</Tooltip_Text>
-
-		<Fire_Bone_A>LaserAOE_03</Fire_Bone_A>
-		<Fire_Bone_B>LaserAOE_03</Fire_Bone_B>
-		<Fire_Cone_Width>60.0</Fire_Cone_Width>
-		<Fire_Cone_Height>180.0</Fire_Cone_Height>
-		<Fire_Projectile_Type>Proj_AOE_AI_Blaster_Green_Blue</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>1</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>1</Fire_Max_Recharge_Seconds>
-		<Fire_Pulse_Count>2</Fire_Pulse_Count>
-		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
-		<Fire_Range_Distance>400.0</Fire_Range_Distance>
-		<Fire_SFXEvent>Unit_A6_Juggernaut_AI_Fire</Fire_SFXEvent>
-
-
-		<Fire_Inaccuracy_Distance> Infantry, 10.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Air, 30.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Structure, 2.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> LandHero, 15.0 </Fire_Inaccuracy_Distance>
     </HardPoint>
 	
-	<HardPoint Name="HP_A6_Prototype_Left_Front">
-		<Type> HARD_POINT_WEAPON_LASER </Type>
+	<HardPoint Name="HP_A6_Prototype_Left_Front_Dummy">
+		<Type> HARD_POINT_DUMMY_ART </Type>
 		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
-		<Health>160.0</Health>
+
 		<Collision_Mesh>LaserAOE_04</Collision_Mesh>
 		<Attachment_Bone>LaserAOE_04</Attachment_Bone>
-		<Damage_Particles>LaserAOE_04</Damage_Particles>
-		<Tooltip_Text>TEXT_WEAPONGROUND_AOEBLASTER</Tooltip_Text>
-
-
-		<Fire_Bone_A>LaserAOE_04</Fire_Bone_A>
-		<Fire_Bone_B>LaserAOE_04</Fire_Bone_B>
-		<Fire_Cone_Width>60.0</Fire_Cone_Width>
-		<Fire_Cone_Height>180.0</Fire_Cone_Height>
-		<Fire_Projectile_Type>Proj_AOE_AI_Blaster_Green_Blue</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>1</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>1</Fire_Max_Recharge_Seconds>
-		<Fire_Pulse_Count>2</Fire_Pulse_Count>
-		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
-		<Fire_Range_Distance>400.0</Fire_Range_Distance>
-		<Fire_SFXEvent>Unit_A6_Juggernaut_AI_Fire</Fire_SFXEvent>
-
-
-		<Fire_Inaccuracy_Distance> Infantry, 10.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Air, 30.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Structure, 2.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> LandHero, 15.0 </Fire_Inaccuracy_Distance>
     </HardPoint>
 	
-	<HardPoint Name="HP_A6_Prototype_Left_Rear">
-		<Type> HARD_POINT_WEAPON_LASER </Type>
+	<HardPoint Name="HP_A6_Prototype_Left_Rear_Dummy">
+		<Type> HARD_POINT_DUMMY_ART </Type>
 		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
-		<Health>160.0</Health>
+
 		<Collision_Mesh>LaserAOE_05</Collision_Mesh>
 		<Attachment_Bone>LaserAOE_05</Attachment_Bone>
-		<Damage_Particles>LaserAOE_05</Damage_Particles>
-		<Tooltip_Text>TEXT_WEAPONGROUND_AOEBLASTER</Tooltip_Text>
-
-
-		<Fire_Bone_A>LaserAOE_05</Fire_Bone_A>
-		<Fire_Bone_B>LaserAOE_05</Fire_Bone_B>
-		<Fire_Cone_Width>60.0</Fire_Cone_Width>
-		<Fire_Cone_Height>180.0</Fire_Cone_Height>
-		<Fire_Projectile_Type>Proj_AOE_AI_Blaster_Green_Blue</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>1</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>1</Fire_Max_Recharge_Seconds>
-		<Fire_Pulse_Count>2</Fire_Pulse_Count>
-		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
-		<Fire_Range_Distance>400.0</Fire_Range_Distance>
-		<Fire_SFXEvent>Unit_A6_Juggernaut_AI_Fire</Fire_SFXEvent>
-
-
-		<Fire_Inaccuracy_Distance> Infantry, 10.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Air, 30.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Structure, 2.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> LandHero, 15.0 </Fire_Inaccuracy_Distance>
     </HardPoint>
 	
-	<HardPoint Name="HP_A6_Prototype_Grenade_1">
-		<Type> HARD_POINT_WEAPON_LASER </Type>
+	<HardPoint Name="HP_A6_Prototype_Missile_1">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
 		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
+
+		<Collision_Mesh>ProtonMissile_00</Collision_Mesh>
+		<Attachment_Bone>ProtonMissile_00</Attachment_Bone>
 
 		<Fire_Bone_A>ProtonMissile_00_FP_00</Fire_Bone_A>
 		<Fire_Bone_B>ProtonMissile_00_FP_01</Fire_Bone_B>
@@ -4073,8 +3990,8 @@
 		<Fire_Cone_Height>360.0</Fire_Cone_Height>
 		<Randomize_Between_Fire_Bones>Yes</Randomize_Between_Fire_Bones>
 		<Fire_Projectile_Type>Proj_Proton_Missile</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>12.0</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>12.0</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>20.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>20.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>3</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>600.0</Fire_Range_Distance>
@@ -4088,10 +4005,13 @@
 		<Fire_Inaccuracy_Distance> LandHero, 30.0 </Fire_Inaccuracy_Distance>
     </HardPoint>
 	
-	<HardPoint Name="HP_A6_Prototype_Grenade_2">
-		<Type> HARD_POINT_WEAPON_LASER </Type>
+	<HardPoint Name="HP_A6_Prototype_Missile_2">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
 		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
+
+		<Collision_Mesh>ProtonMissile_01</Collision_Mesh>
+		<Attachment_Bone>ProtonMissile_01</Attachment_Bone>
 
 		<Fire_Bone_A>ProtonMissile_01_FP_00</Fire_Bone_A>
 		<Fire_Bone_B>ProtonMissile_01_FP_01</Fire_Bone_B>
@@ -4099,8 +4019,8 @@
 		<Fire_Cone_Height>360.0</Fire_Cone_Height>
 		<Randomize_Between_Fire_Bones>Yes</Randomize_Between_Fire_Bones>
 		<Fire_Projectile_Type>Proj_Proton_Missile</Fire_Projectile_Type>
-		<Fire_Min_Recharge_Seconds>12.0</Fire_Min_Recharge_Seconds>
-		<Fire_Max_Recharge_Seconds>12.0</Fire_Max_Recharge_Seconds>
+		<Fire_Min_Recharge_Seconds>20.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>20.0</Fire_Max_Recharge_Seconds>
 		<Fire_Pulse_Count>3</Fire_Pulse_Count>
 		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
 		<Fire_Range_Distance>600.0</Fire_Range_Distance>
@@ -4121,6 +4041,7 @@
 
 		<Model_To_Attach>a6_juggernaut_midgun.alo</Model_To_Attach>
 		<Attachment_Bone>AV_Blaster_Superheavy_00</Attachment_Bone>
+		<Collision_Mesh>AV_Blaster_Superheavy_00</Collision_Mesh>
 		
 		<Fire_Bone_A>AV_Blaster_00</Fire_Bone_A>
 		<Fire_Bone_B>AV_Blaster_00</Fire_Bone_B>
@@ -4139,10 +4060,10 @@
 		<Turret_Bone_Name>TURRET_00</Turret_Bone_Name>
 		<Barrel_Bone_Name>BARREL_00</Barrel_Bone_Name>
 
-		<Fire_Projectile_Type>Proj_SuperHeavy_AV_Blaster_Green_Blue</Fire_Projectile_Type>
-        <Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-        <Fire_Max_Recharge_Seconds>3.0</Fire_Max_Recharge_Seconds>
-        <Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Projectile_Type>Proj_Heavy_AV_Blaster_Green_Blue</Fire_Projectile_Type>
+        <Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
+        <Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
+        <Fire_Pulse_Count>4</Fire_Pulse_Count>
         <Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
         <Fire_Range_Distance>650.0</Fire_Range_Distance>
 		<Fire_Min_Range_Distance>50.0</Fire_Min_Range_Distance>
@@ -4163,6 +4084,7 @@
 
 		<Model_To_Attach>a6_juggernaut_reargun.alo</Model_To_Attach>
 		<Attachment_Bone>AV_Blaster_Heavy_00</Attachment_Bone>
+		<Collision_Mesh>AV_Blaster_Heavy_00</Collision_Mesh>
 
 		<Fire_Bone_A>AV_Blaster_01</Fire_Bone_A>
 		<Fire_Bone_B>AV_Blaster_01</Fire_Bone_B>
@@ -4184,7 +4106,7 @@
 		<Fire_Projectile_Type>Proj_Heavy_AI_Blaster_Green_Blue</Fire_Projectile_Type>
         <Fire_Min_Recharge_Seconds>1.0</Fire_Min_Recharge_Seconds>
         <Fire_Max_Recharge_Seconds>1.0</Fire_Max_Recharge_Seconds>
-        <Fire_Pulse_Count>7</Fire_Pulse_Count>
+        <Fire_Pulse_Count>8</Fire_Pulse_Count>
         <Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
         <Fire_Range_Distance>500.0</Fire_Range_Distance>
 		<Fire_Min_Range_Distance>50.0</Fire_Min_Range_Distance>

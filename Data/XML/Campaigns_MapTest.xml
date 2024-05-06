@@ -122,8 +122,23 @@
 		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
 		
+		<!-- FotR_Enhaced : Custom ground starting forces -->
+		<Starting_Forces> Empire, Coruscant, Republic_A6_Prototype_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_A6_Juggernaut_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_A5_Juggernaut_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, ARC_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, ARC_Phase_One_Team </Starting_Forces>
+		
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_Two_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
+		
+		<Starting_Forces> Empire, Coruscant, Senate_Commando_Platoon </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Navy_Trooper_Squad </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_Trooper_Team </Starting_Forces>
 		
 		<Starting_Forces> Empire, Coruscant, E_Ground_Barracks </Starting_Forces>
+		<!--
 		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
@@ -181,7 +196,8 @@
 		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Republic_AT_TE_Walker_Company </Starting_Forces>
-		
+		-->
+
 		<!-- Keep in case we need to test fighters
 		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Firespray_Squadron </Starting_Forces>

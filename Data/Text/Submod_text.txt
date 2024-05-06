@@ -28,7 +28,7 @@ TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE,Health: 150 | Shields: 60
 TEXT_STORY_MALEVOLENCE_HUNT_REP_ACT_I_HINT_03,Only for the duration of this campaign, Open Circle Fleet Venators will replace Generic Venators.
 TEXT_TOOLTIP_BLOCK,Admiral Block was the commanding officer of the Negotiator, and later Vigilance, both serving the role as the flagship of Jedi general Obi Wan Kenobi.
 TEXT_TOOLTIP_BLOCK_VILGILANCE_RESPAWN,Block respawns in a Vigilance(Venator) after his first death
-TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC,Build Limit: 12 | Lifetime: "
+TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC,Build Limit: 12 | Lifetime: ∞
 TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC_SPHA_T,Build Limit: 3 | Lifetime: 1
 TEXT_TOOLTIP_CAPITAL_GAR_16,Red Guard: 2 / 0
 TEXT_TOOLTIP_COMMAND_127TH_ARC170,ARC-170 Starfighter Squadron, 127th Gunship Wing
@@ -81,3 +81,5 @@ TEXT_UNIT_VENATOR_OFC_SPHA_T,OCF Venator Star Destroyer (SPHA-T)
 
 TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL,
 TEXT_TOOLTIP_RESOURCE_GARRISON_TNT, Treaded Neutron Torch: 1 / 0
+TEXT_TOOLTIP_AUTEM_OVERRIDE_2,Fighter Override: NTB-630 Naval Bomber on OCF Venator
+TEXT_TOOLTIP_WESSEX_OVERRIDE,Fighter Override: NTB-630 Naval Bomber on OCF Venator

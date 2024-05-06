@@ -2,8 +2,9 @@
 <Working On>
 
 # OFC Venator
-- Finetune(Done)
-	- Decrease firing rate/projectile number from dual heavy turbolasers
+- Spawn a buff dummy if a ofc officer is present(see bloodlust mechanic?)
+	see ; Proj_Cronal_Local_Debuff_Mod_1, Cronal_DeBuff_Particle, 
+
 
 - Build Limit via controlling Lua or New ship market mechanic(Ongoing)
 

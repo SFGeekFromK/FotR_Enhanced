@@ -4038,10 +4038,15 @@
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
+		<Health>260</Health>
+
+		<Death_Explosion_Particles> Small_Explosion_Land </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent> Unit_Hardpoint_Laser_Death </Death_Explosion_SFXEvent>
 
 		<Model_To_Attach>a6_juggernaut_midgun.alo</Model_To_Attach>
 		<Attachment_Bone>AV_Blaster_Superheavy_00</Attachment_Bone>
 		<Collision_Mesh>AV_Blaster_Superheavy_00</Collision_Mesh>
+		<Damage_Particles>ATTACH_00</Damage_Particles>
 		
 		<Fire_Bone_A>AV_Blaster_00</Fire_Bone_A>
 		<Fire_Bone_B>AV_Blaster_00</Fire_Bone_B>
@@ -4081,10 +4086,15 @@
 		<Type> HARD_POINT_WEAPON_LASER </Type>
 		<Is_Targetable>No</Is_Targetable>
 		<Is_Destroyable>No</Is_Destroyable>
+		<Health>260</Health>
+
+		<Death_Explosion_Particles> Small_Explosion_Land </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent> Unit_Hardpoint_Laser_Death </Death_Explosion_SFXEvent>
 
 		<Model_To_Attach>a6_juggernaut_reargun.alo</Model_To_Attach>
 		<Attachment_Bone>AV_Blaster_Heavy_00</Attachment_Bone>
 		<Collision_Mesh>AV_Blaster_Heavy_00</Collision_Mesh>
+		<Damage_Particles>ATTACH_01</Damage_Particles>
 
 		<Fire_Bone_A>AV_Blaster_01</Fire_Bone_A>
 		<Fire_Bone_B>AV_Blaster_01</Fire_Bone_B>

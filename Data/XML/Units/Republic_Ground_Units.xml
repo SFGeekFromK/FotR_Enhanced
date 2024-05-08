@@ -3899,11 +3899,11 @@
 		TEXT_TOOLTIP_CAPABILITY_SUPER_TRANSPORT
 		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TRANSPORT</Encyclopedia_Unit_Class>
 		<Icon_Name>i_button_a6_juggernaut_proto.tga</Icon_Name>
 		<Affiliation>Empire</Affiliation>
 
-		<Scale_Factor>0.5</Scale_Factor>
+		<Scale_Factor>0.7</Scale_Factor>
 		<Select_Box_Scale>160</Select_Box_Scale>
 		<Size_Value>75</Size_Value>
 

@@ -4068,7 +4068,7 @@
 		<Fire_Projectile_Type>Proj_Heavy_AV_Blaster_Green_Blue</Fire_Projectile_Type>
         <Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
         <Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
-        <Fire_Pulse_Count>4</Fire_Pulse_Count>
+        <Fire_Pulse_Count>3</Fire_Pulse_Count>
         <Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
         <Fire_Range_Distance>650.0</Fire_Range_Distance>
 		<Fire_Min_Range_Distance>50.0</Fire_Min_Range_Distance>

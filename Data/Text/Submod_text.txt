@@ -79,7 +79,8 @@ TEXT_UNIT_UMBARAN_FRIGATE,Umbaran Support Frigate
 TEXT_UNIT_VENATOR_OFC,OCF Venator Star Destroyer
 TEXT_UNIT_VENATOR_OFC_SPHA_T,OCF Venator Star Destroyer (SPHA-T)
 
-TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL,The war seems to near its end and I shall leave way for the new generations of ace pilot to 
+TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL,The war seems to near its end. I shall share my skill of piloting for the new generations of ace pilots. [Bythen Forral has retired and established Vensenor Flight Academy]
 TEXT_TOOLTIP_RESOURCE_GARRISON_TNT, Treaded Neutron Torch: 1 / 0
 TEXT_TOOLTIP_AUTEM_OVERRIDE_2,Fighter Override: NTB-630 Naval Bomber on OCF Venator
 TEXT_TOOLTIP_WESSEX_OVERRIDE,Fighter Override: NTB-630 Naval Bomber on OCF Venator
+TEXT_UNIT_A6_PROTOTYPE,A6 Juggernaut Prototype

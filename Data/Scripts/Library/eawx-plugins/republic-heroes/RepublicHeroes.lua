@@ -69,8 +69,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_hero_slots = 0, --Slots that need another action to move to free.
 		vacant_limit = 22,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
 		initialized = false,
-		full_list = { --All options for reference operations -- FotR_Enhanced ; Resolute sphat Version added
-			["Yularen"] = {"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3","YULAREN_RETIRE_1"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT"},"Wulff Yularen"},
+		full_list = { --All options for reference operations
+			["Yularen"] = --[[FotR_Enhanced Resolute sphat Version added]]{"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3","YULAREN_RETIRE_1"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT"},"Wulff Yularen"},
 			["Wieler"] = {"WIELER_ASSIGN",{"WIELER_RETIRE","WIELER_RETIRE_IMP"},{"WIELER_RESILIENT"},"Wieler"},
 			["Coburn"] = {"COBURN_ASSIGN",{"COBURN_RETIRE","COBURN_RETIRE_IMP"},{"COBURN_TRIUMPHANT"},"Barton Coburn"},
 			["Kilian"] = {"KILIAN_ASSIGN",{"KILIAN_RETIRE"},{"KILIAN_ENDURANCE"},"Shoan Kilian"},
@@ -89,7 +89,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Maarisa"] = {"MAARISA_ASSIGN",{"MAARISA_RETIRE", "MAARISA_RETIRE2", "MAARISA_RETIRE_IMP", "MAARISA_RETIRE2_IMP"},{"MAARISA_CAPTOR", "MAARISA_RETALIATION"},"Maarisa Zsinj"},
 			["Grumby"] = {"GRUMBY_ASSIGN",{"GRUMBY_RETIRE", "GRUMBY_RETIRE_IMP"},{"GRUMBY_INVINCIBLE"},"Jona Grumby"},
 			["Baraka"] = {"BARAKA_ASSIGN",{"BARAKA_RETIRE", "BARAKA_RETIRE_IMP"},{"BARAKA_NEXU"},"Arikakon Baraka"},
-			["Martz"] = {"MARTZ_ASSIGN",{"MARTZ_RETIRE","MARTZ_RETIRE_IMP"},{"MARTZ_PROSECUTOR"},"Stinnet Martz"},
+			["Martz"] = {"MARTZ_ASSIGN",{"MARTZ_RETIRE"},{"MARTZ_PROSECUTOR"},"Stinnet Martz"},
 			-- FotR_Enhanced
 			["Needa"] = {"NEEDA_ASSIGN",{"NEEDA_RETIRE", "NEEDA_RETIRE_IMP"},{"NEEDA_INTEGRITY"},"Lorth Needa"},
 			["Block"] = {"BLOCK_ASSIGN",{"BLOCK_RETIRE","BLOCK_RETIRE2", "BLOCK_RETIRE_IMP", "BLOCK_RETIRE2_IMP"},{"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, "Block"}
@@ -357,7 +357,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 
 	Forral_Checks = 0
 	
-	Decolor_Hero_Table = {admiral_data, moff_data}
+	Decolor_Hero_Table = {admiral_data, moff_data, general_data}
 end
 
 function RepublicHeroes:on_production_finished(planet, object_type_name)--object_type_name, owner)
@@ -909,6 +909,7 @@ function RepublicHeroes:Order_66_Handler()
 	Handle_Hero_Exit("Dallin", admiral_data)
 	Clear_Fighter_Hero("IMA_GUN_DI_DELTA")
 	Decrement_Hero_Amount(10, council_data)
+	Forral_Check()
 	for i, herotable in pairs(Decolor_Hero_Table) do
 		for j, herolist in pairs(herotable) do
 			for k, hero_entry in pairs(herolist.full_list) do
@@ -917,8 +918,6 @@ function RepublicHeroes:Order_66_Handler()
 			end
 		end
 	end
-	Forral_Check()
-	
 end
 
 function RepublicHeroes:New_Padawan_Handler()

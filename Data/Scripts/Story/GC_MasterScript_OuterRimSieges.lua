@@ -141,22 +141,22 @@ function State_Framework_Activation(message)
 		-- FotR_Enhanced
 		crossplot:publish("GEEN_UNLOCK", "empty")
 		
-		--Admirals:
+		--Admirals: 5 - 1 = 4
 		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 1)
 
-		--Moffs:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", -1, 2)
+		--Moffs: 2 - 0 = 0
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 0, 2)
 
-		--Jedi:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", -1, 3)
+		--Jedi: 5 - 1 = 4 
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 3)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Halcyon","Ahsoka","Knol"}, 3)
 
 		--Clone Officers:
 		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 0, 4)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Rex"}, 4)
 
-		--Commandos:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 0, 5)
+		--Commandos: 3 - 1 = 2
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 5)
 
 		--Generals:
 		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 0, 6)

@@ -5536,7 +5536,7 @@
 			<Reduce_Production_Price_Ability Name="Wessex_Reduce_Production_Price">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Generic_Venator, Generic_Victory_Destroyer, Generic_Star_Destroyer</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator, Generic_Victory_Destroyer, Generic_Star_Destroyer<!-- FotR_Enhanced-->Generic_Victory_Fleet_Destroyer, Venator_OFC,</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.10</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Reduce_Production_Price_Ability>

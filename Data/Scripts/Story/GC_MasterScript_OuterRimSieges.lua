@@ -151,8 +151,8 @@ function State_Framework_Activation(message)
 		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 3)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Halcyon","Ahsoka","Knol"}, 3)
 
-		--Clone Officers:
-		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 0, 4)
+		--Clone Officers: 5 - 1
+		crossplot:publish("REPUBLIC_ADMIRAL_DECREMENT", 1, 4)
 		crossplot:publish("REPUBLIC_ADMIRAL_EXIT", {"Rex"}, 4)
 
 		--Commandos: 3 - 1 = 2

@@ -3133,6 +3133,7 @@
 
 		<Tactical_Health>260</Tactical_Health>
 		<Behavior>Transport</Behavior>
+		<Create_Team_Type>Bythen_Forral_Squadron</Create_Team_Type>
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
 
 		<Unit_Abilities_Data SubObjectList="Yes">

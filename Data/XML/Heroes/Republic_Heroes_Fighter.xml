@@ -3132,16 +3132,16 @@
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 
 		<Tactical_Health>260</Tactical_Health>
-		<Behavior>Transport</Behavior>
-		<Create_Team_Type>Bythen_Forral_Squadron</Create_Team_Type>
-		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+		<!--<Behavior>Transport</Behavior>
+		<Create_Team_Type>Bythen_Forral_Squadron</Create_Team_Type>-->
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA, GARRISON_UNIT</SpaceBehavior>
 
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<Unit_Ability>
+			<!--<Unit_Ability>
 				<Type>REPLENISH_WINGMEN</Type>
 				<Recharge_Seconds>-1</Recharge_Seconds>
 				<Active_By_Default>Yes</Active_By_Default>
-			</Unit_Ability>
+			</Unit_Ability>-->
 
 			<Unit_Ability>
 				<Type>TURBO</Type>
@@ -3226,9 +3226,9 @@
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
 		<Icon_Name>I_BUTTON_BYTHEN_FORRAL.tga</Icon_Name>
-		
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
 		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
-		<Population_Value>1</Population_Value>
+		<!--<Population_Value>1</Population_Value>-->
 
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>

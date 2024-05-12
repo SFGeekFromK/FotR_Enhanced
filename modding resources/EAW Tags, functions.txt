@@ -8,3 +8,5 @@ applicable unit types ; units that are affected by the abilities
 <-> excluded unit types
 
 Hide_Sub_Object(X,Y,Z), X = game object, Y = 0,1, Z = string : hides model's meshes. not possible if permenantly attached.
+
+**Note : <Population_Value>1</Population_Value> is needed on container if replenish_wingmen ability is added

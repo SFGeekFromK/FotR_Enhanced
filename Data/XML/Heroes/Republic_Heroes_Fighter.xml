@@ -3136,11 +3136,11 @@
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
 
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<Unit_Ability>
+			<!--<Unit_Ability>
 				<Type>REPLENISH_WINGMEN</Type>
 				<Recharge_Seconds>-1</Recharge_Seconds>
 				<Active_By_Default>Yes</Active_By_Default>
-			</Unit_Ability>
+			</Unit_Ability>-->
 
 			<Unit_Ability>
 				<Type>TURBO</Type>
@@ -3184,7 +3184,7 @@
 		
 		<Tactical_Health>90</Tactical_Health>
 
-		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+		<!--<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>-->
 
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>

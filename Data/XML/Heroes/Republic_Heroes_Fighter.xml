@@ -3132,15 +3132,15 @@
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 
 		<Tactical_Health>260</Tactical_Health>
-
+		<Behavior>Transport</Behavior>
 		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
 
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<!--<Unit_Ability>
+			<Unit_Ability>
 				<Type>REPLENISH_WINGMEN</Type>
 				<Recharge_Seconds>-1</Recharge_Seconds>
 				<Active_By_Default>Yes</Active_By_Default>
-			</Unit_Ability>-->
+			</Unit_Ability>
 
 			<Unit_Ability>
 				<Type>TURBO</Type>
@@ -3184,7 +3184,7 @@
 		
 		<Tactical_Health>90</Tactical_Health>
 
-		<!--<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>-->
+		<SpaceBehavior>ABILITY_COUNTDOWN, TELEKINESIS_TARGET, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
 
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>
@@ -3267,6 +3267,8 @@
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
 		<Icon_Name>I_BUTTON_BYTHEN_FORRAL.tga</Icon_Name>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN</SpaceBehavior>
 
 		<Create_Team_Type>Bythen_Forral_Container</Create_Team_Type>
 		<Squadron_Units>Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort, Cloakshape_Bythen_Forral_Escort</Squadron_Units>

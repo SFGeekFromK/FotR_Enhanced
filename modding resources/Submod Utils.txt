@@ -67,6 +67,8 @@ Royal Guards fix(doesn't move, oversized blob material, health bar length)
 
 Increase Imperial ships spawning chances
 
+senate commando despawn(replace with something else)
+
 Add text block to autem & Wessex regarding venator ofc fighter override
 
 lock sphat and grant them only as starting unit/mission rewards(Done)

@@ -134,7 +134,7 @@ end
 
 function State_Framework_Activation(message)
     if message == OnEnter then
-		GlobalValue.Set("CURRENT_ERA", 4)
+		GlobalValue.Set("CURRENT_ERA", 5)
 		crossplot:publish("INITIALIZE_AI", "empty")
 		crossplot:publish("VENATOR_HEROES", "empty")
 		crossplot:publish("VICTORY_HEROES", "empty")

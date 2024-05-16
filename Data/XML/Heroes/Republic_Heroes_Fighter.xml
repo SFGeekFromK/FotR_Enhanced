@@ -3157,7 +3157,7 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 
-		<Abilites SubObjectList="Yes">
+		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Bythen_Forral_Combat_Bonus_Ace_Pilot">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories> Fighter | Bomber </Applicable_Unit_Categories>
@@ -3168,7 +3168,7 @@
 				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
-		</Abilites>
+		</Abilities>
 	</UniqueUnit>
 
 	<UniqueUnit Name="Cloakshape_Bythen_Forral_Escort">

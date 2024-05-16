@@ -1766,7 +1766,7 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 
-		<Abilites SubObjectList="Yes">
+		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Block_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
@@ -1791,7 +1791,7 @@
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
 			</Combat_Bonus_Ability>
-		</Abilites>
+		</Abilities>
 	</UniqueUnit>
 
 	<UniqueUnit Name="Block_Vigilance"> <!-- Respawn -->
@@ -2782,6 +2782,18 @@
 				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
 				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
 			</System_Spy_Ability>
+
+			<!-- FotR_Enhanced -->
+			<Combat_Bonus_Ability Name="Yularen_OFC_Officer_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
 		</Abilities>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  

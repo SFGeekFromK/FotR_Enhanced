@@ -13200,14 +13200,14 @@
 		<MovementClass>Infantry</MovementClass>
 		<OccupationStyle>1x1</OccupationStyle>
 		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
-		<Blob_Shadow_Scale>2.0, 2.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
 		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
 		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
 		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
 		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
 		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>		
 
-		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Scale>100</Select_Box_Scale>
 		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
 		
 		<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>

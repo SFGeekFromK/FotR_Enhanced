@@ -13135,97 +13135,101 @@
 		
 		<Is_Minor_Hero>Yes</Is_Minor_Hero>
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
-		<LandBehavior>SELECTABLE, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, STUNNABLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
-		
+		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, HOLSTER_WEAPON, GARRISON_UNIT, <!--STUNNABLE,--></LandBehavior>
+
 		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
-		
+	
+		<LOD_Bias>5</LOD_Bias>
+
+		<Garrison_Category> Infantry </Garrison_Category>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Is_Visible_On_Enemy_Radar>Yes</Is_Visible_On_Enemy_Radar>
 		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<CanCellStack>yes</CanCellStack>
-		<Select_Box_Scale>200</Select_Box_Scale>
-		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
 		<Mass>1.0</Mass>
-		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
-		
-		<Is_Combustible>yes</Is_Combustible>
-		<On_Fire_Speed_Modifier>1.2f</On_Fire_Speed_Modifier>
-		<Targeting_Allowed_When_Burning>no</Targeting_Allowed_When_Burning>
-		<Burning_Damage_Per_Second>0.1</Burning_Damage_Per_Second>
-		<Is_Squashable> true </Is_Squashable>
-
-		<Influences_Capture_Point>True</Influences_Capture_Point>
-		
-		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
-		<Rotation_Animation_Speed> 2.0 </Rotation_Animation_Speed>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Movement_Animation_Speed> 5.75 </Movement_Animation_Speed>
 		<Max_Speed>1.2</Max_Speed>
-		<Max_Rate_Of_Turn>10.0</Max_Rate_Of_Turn>
-		<Custom_Soft_Footprint_Radius> 3.5 </Custom_Soft_Footprint_Radius>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Custom_Soft_Footprint_Radius> 6.5 </Custom_Soft_Footprint_Radius>
 		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
 		<Custom_Hard_YExtent> 2.0 </Custom_Hard_YExtent>
 		<Space_Layer> Land </Space_Layer>
 		<UnitCollisionClass> Infantry </UnitCollisionClass>
-		<FormationSpacing> 0.4 </FormationSpacing>
+		<FormationSpacing> .5 </FormationSpacing>
 		<MinimumPushReturnDistance> 10 </MinimumPushReturnDistance>
-		<Min_Speed> .192 </Min_Speed>
-		<OverrideAcceleration> 1.0 </OverrideAcceleration>
-		<OverrideDeceleration> 1.0 </OverrideDeceleration>
-		<FormationOrder> 2 </FormationOrder>
-		<FormationGrouping> Standard </FormationGrouping>
+		<Min_Speed> .1 </Min_Speed>
+		<OverrideAcceleration> 1.2 </OverrideAcceleration>
+		<OverrideDeceleration> 1.2 </OverrideDeceleration>
 
-		<Scale_Factor>1.1</Scale_Factor>
-
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>			
+		<Scale_Factor>0.09</Scale_Factor>
+		<Type>Walk</Type>
+		<Deploys>No</Deploys>
 		<Affiliation>Empire</Affiliation>
-		<Tech_Level>99</Tech_Level>
-		
-		<Garrison_Category> Infantry </Garrison_Category>
-		
 		<Size_Value>10</Size_Value>
-		<Armor_Type> ArmourG_Hero </Armor_Type>
-		<Damage>12</Damage>
-		<Tactical_Health>80</Tactical_Health>
+		<Sensor_Range>20</Sensor_Range>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>120</Tactical_Health>
+		<Autoresolve_Health>350</Autoresolve_Health>
+		<Damage>100</Damage>
 		<Stealth_Capable>No</Stealth_Capable>
-		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
-		<Blob_Shadow_Scale>10.0, 10.0</Blob_Shadow_Scale>
-		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
-		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
-		<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
 
+		<Armor_Type> ArmourG_Hero </Armor_Type>
+		
 		<Is_Stationary_When_Attacking>Yes</Is_Stationary_When_Attacking>
-		<Has_Land_Evaluator>True</Has_Land_Evaluator>
-
-		<Projectile_Types>Proj_Force_Pike</Projectile_Types>
-		<Targeting_Max_Attack_Distance>25.0</Targeting_Max_Attack_Distance>
-		<Projectile_Appearance_Delay_Frames> 6 </Projectile_Appearance_Delay_Frames>
+		<Projectile_Types> Proj_Force_Pike </Projectile_Types>
 		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
-	
-		<!--
-		<Turret_Rotate_Extent_Degrees>100.0</Turret_Rotate_Extent_Degrees>
-		<Turret_Elevate_Extent_Degrees>30.0</Turret_Elevate_Extent_Degrees>
-		-->
+		<Projectile_Appearance_Delay_Frames> 20 </Projectile_Appearance_Delay_Frames>
 
-		<Target_Bones>B_Chest</Target_Bones>
-		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
-		<!-- Bone and adjust for vanilla asset rig -->
-		
-		<Idle_Chase_Range>60.0</Idle_Chase_Range>
-		<Guard_Chase_Range>200.0</Guard_Chase_Range>
-		<Attack_Move_Response_Range>250.0</Attack_Move_Response_Range>
-		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
-		<AI_Combat_Power>40</AI_Combat_Power>
-		
-		<MovementClass>Infantry</MovementClass>
-		<CategoryMask> LandHero </CategoryMask>
-		<Ranking_In_Category> 5 </Ranking_In_Category>
-		<Victory_Relevant>Yes</Victory_Relevant>
-		<Weather_Category>Infantry</Weather_Category>
-		
-		<OccupationStyle>1x1</OccupationStyle>
-		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Targeting_Fire_Inaccuracy> Infantry, 0.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 0.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 0.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 0.0 </Targeting_Fire_Inaccuracy>
 
 		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
 		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
-		<Sensor_Range>20</Sensor_Range>
+		<Targeting_Max_Attack_Distance>20.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+
+		<CategoryMask> LandHero </CategoryMask>
+		<Ranking_In_Category> 5 </Ranking_In_Category>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+		<Ground_Infantry_Turret_Target> Yes </Ground_Infantry_Turret_Target>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>		
+
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		
+		<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Idle_Chase_Range>100.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Neutralization_Cost>3500.0</Neutralization_Cost>
+
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+		<Death_Fade_Time>0.25</Death_Fade_Time>		
+
+		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
 
 		<SFXEvent_Select>Unit_Select_Imp_Guard</SFXEvent_Select>
 		<SFXEvent_Move>Unit_Move_Imp_Guard</SFXEvent_Move>
@@ -13233,12 +13237,6 @@
 		<SFXEvent_Assist_Move>Unit_Assist_Move_Imp_Guard</SFXEvent_Assist_Move>
 		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Imp_Guard</SFXEvent_Assist_Attack>
 		<SFXEvent_Guard>Unit_Guard_Imp_Guard</SFXEvent_Guard>
-
-		<Death_Fade_Time>0.25</Death_Fade_Time>
-		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
-
-		<Neutralization_Cost>3500.0</Neutralization_Cost>
-		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
 
   		<!-- Normal red blood for human-ish -->
         	<Death_Explosions>Organic_Infantry_Blood, Organic_Infantry_Blood_Alt, Tiny_Dud</Death_Explosions>

@@ -13164,15 +13164,15 @@
 		<OverrideDeceleration> 1.2 </OverrideDeceleration>
 
 		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>			
-		<Scale_Factor>0.09</Scale_Factor>
+		<Scale_Factor>1.1</Scale_Factor>
 		<Type>Walk</Type>
 		<Deploys>No</Deploys>
 		<Affiliation>Empire</Affiliation>
 		<Size_Value>10</Size_Value>
 		<Sensor_Range>20</Sensor_Range>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>120</Tactical_Health>
-		<Autoresolve_Health>350</Autoresolve_Health>
+		<Tactical_Health>100</Tactical_Health>
+		<Autoresolve_Health>200</Autoresolve_Health>
 		<Damage>100</Damage>
 		<Stealth_Capable>No</Stealth_Capable>
 		<Victory_Relevant>yes</Victory_Relevant>

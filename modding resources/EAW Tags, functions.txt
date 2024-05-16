@@ -12,3 +12,5 @@ Hide_Sub_Object(X,Y,Z), X = game object, Y = 0,1, Z = string : hides model's mes
 **Note : <Population_Value>1</Population_Value> is needed on container if replenish_wingmen ability is added
 
 IMPOSING_PRESENCE : used by storm troopers in base game when palpatine/vader is in battle ; induces  Presence_Induced_Animations tag
+
+<Select_Box_Scale> : also controls highlight_blob sizes

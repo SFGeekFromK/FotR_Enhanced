@@ -13138,8 +13138,6 @@
 		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, HOLSTER_WEAPON, GARRISON_UNIT, <!--STUNNABLE,--></LandBehavior>
 
 		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
-	
-		<LOD_Bias>5</LOD_Bias>
 
 		<Garrison_Category> Infantry </Garrison_Category>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
@@ -13171,8 +13169,8 @@
 		<Size_Value>10</Size_Value>
 		<Sensor_Range>20</Sensor_Range>
 		<Shield_Points>0</Shield_Points>
-		<Tactical_Health>100</Tactical_Health>
-		<Autoresolve_Health>200</Autoresolve_Health>
+		<Tactical_Health>150</Tactical_Health>
+		<Autoresolve_Health>250</Autoresolve_Health>
 		<Damage>100</Damage>
 		<Stealth_Capable>No</Stealth_Capable>
 		<Victory_Relevant>yes</Victory_Relevant>

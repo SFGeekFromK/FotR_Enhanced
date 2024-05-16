@@ -11572,7 +11572,7 @@
 	<!-- FotR_Enhanced -->
 	
 	<UniqueUnit Name="Rohn_AT_TE">
-		<Variant_Of_Existing_Type>Imperial_AT_TE_Walker</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Republic_AT_TE_Walker</Variant_Of_Existing_Type>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>		
 		<Text_ID>TEXT_HERO_ROHN</Text_ID>
@@ -11600,6 +11600,7 @@
 		<Icon_Name>I_BUTTON_ROHN.tga</Icon_Name>
 		<Affiliation>Empire</Affiliation>
 		<Land_Model_Name>all_terrain_tactical_enforcer_empire.ALO</Land_Model_Name>
+		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
 		<Lua_Script>GroundHero</Lua_Script>
 		<Property_Flags>GoodInfantryCrusher | CanContainGarrison | IsSupercrusher | HealsInfantry | GTSImmune </Property_Flags>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>

@@ -3001,6 +3001,58 @@
 		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
 	</UpgradeObject>	
 
+	<UpgradeObject Name="IA_Yularen_Resolute_SPHAT">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire, Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 3 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+		
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_yularen.tga</Icon_Name>
+		
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+			TEXT_TOOLTIP_TRAIT_COMMAND2_SPACE
+			TEXT_TOOLTIP_TRAIT_OFC_OFFICER
+			TEXT_TOOLTIP_TRAIT_SKYWATCHER 
+			TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+			TEXT_TOOLTIP_YULAREN
+			TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+			TEXT_TOOLTIP_COMMAND_RESOLUTE_FOTR
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_VENATOR_HULL 
+			TEXT_TOOLTIP_VENATOR_SHIELD
+			TEXT_TOOLTIP_VENATOR_MOVE
+			TEXT_TOOLTIP_VENATOR_SQUADRON
+			TEXT_TOOLTIP_YULAREN_SPECIAL
+			TEXT_TOOLTIP_VENATOR_WEAP1
+			TEXT_TOOLTIP_VENATOR_WEAP2 
+			TEXT_TOOLTIP_VENATOR_WEAP3
+			TEXT_TOOLTIP_VENATOR_WEAP4
+			TEXT_TOOLTIP_VENATOR_WEAP5
+			TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+			TEXT_TOOLTIP_VENATOR_WEAP_INTEGRITY
+			TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+			TEXT_TOOLTIP_YULAREN_INTEGRITY_RESPAWN
+			TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+			TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_HERO_YULAREN </Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		
+		<CategoryMask>Wall</CategoryMask>
+		<Lua_Script>Add_InstantActionUnit_Republic</Lua_Script>
+	</UpgradeObject>	<!-- ofc testing purpose -->
+
 
 <!-- *********************************************************************** -->
 <!-- *******************   EMPIRE UNIT SET FOR SURVIVAL MODE   ************* -->

@@ -110,12 +110,12 @@ Venator OFC with HERO
 00:45
 
 Venator OFC Without HERO
-00:53
+01:06
 
-Generic Venator
-00:53
+Generic With Venator
+00:45
 
-
+conclusion : Mod_Multiplier in Combat_Bonus_Ability doesn't work
 
 Moff Replace suspicion List
 

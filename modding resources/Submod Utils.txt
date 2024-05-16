@@ -63,7 +63,12 @@ Bythen Forral Replenish wingmen ability fix
 
 Rohn bug fix(spawning issue, no turrets)
 
-Royal Guards fix(doesn't move, oversized blob material, health bar length)
+Royal Guards fix(
+	issues
+	1. awkward moving animation
+	1. oversized blob material,
+	2. health bar length
+	)
 
 Increase Imperial ships spawning chances
 

@@ -13149,7 +13149,7 @@
 		<CanCellStack>yes</CanCellStack>
 		<Mass>1.0</Mass>
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
-		<Movement_Animation_Speed> 5.75 </Movement_Animation_Speed>
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
 		<Max_Speed>1.2</Max_Speed>
 		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
 		<Custom_Soft_Footprint_Radius> 6.5 </Custom_Soft_Footprint_Radius>

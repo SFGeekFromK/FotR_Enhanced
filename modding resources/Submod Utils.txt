@@ -70,7 +70,7 @@ Royal Guards fix(
 	2. health bar length
 	)
 
-Increase Imperial ships spawning chances
+Increase Imperial ships spawning chances(done)
 
 senate commando despawn(replace with something else)
 
@@ -80,7 +80,7 @@ lock sphat and grant them only as starting unit/mission rewards(Done)
 
 ofc venator starting unit (cf : above obi wan venator) (Almost done?)
 
-Check if venator ofcs really has firing rate bonuses
+Check if venator ofcs really has firing rate bonuses(nope)
 
 swap out therbon with someone else
 

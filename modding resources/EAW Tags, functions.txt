@@ -16,3 +16,9 @@ IMPOSING_PRESENCE : used by storm troopers in base game when palpatine/vader is 
 <Select_Box_Scale> : also controls highlight_blob sizes
 
 Mod_Multiplier in Combat_Bonus_Ability doesn't work
+
+<Story_Name> { (Faction name), (story file) } ... </Story_Name>
+
+<Era_Start></Era_Start> : eawx custom made - works only for their python tool
+
+<Is_Listed> (Boolean) </Is_Listed> : lists the galactic conquest in the menu

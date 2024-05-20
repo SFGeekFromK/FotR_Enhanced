@@ -61,16 +61,10 @@ Hutt_HuttGuard.ALO
 ------Todo Lists------
 Bythen Forral Replenish wingmen ability fix
 
-Rohn bug fix(spawning issue, no turrets)
-
 Royal Guards fix(
 	issues
-	1. awkward moving animation
-	1. oversized blob material,
 	2. health bar length
 	)
-
-Increase Imperial ships spawning chances(done)
 
 senate commando despawn(replace with something else)
 
@@ -80,11 +74,7 @@ lock sphat and grant them only as starting unit/mission rewards(Done)
 
 ofc venator starting unit (cf : above obi wan venator) (Almost done?)
 
-Check if venator ofcs really has firing rate bonuses(nope)
-
 swap out therbon with someone else
-
-adjust historical gc hero amounts(to match base fotr)(done)
 
 ----------------------
 

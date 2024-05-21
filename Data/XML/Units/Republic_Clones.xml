@@ -10471,8 +10471,7 @@
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_TOOLTIP_WOLFPACK_HEALTH
 		TEXT_TOOLTIP_CLONE_P1_MOVE
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_WEAP1
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_WEAP3
+		TEXT_TOOLTIP_CLONE_WEAP1
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
@@ -10502,6 +10501,8 @@
 		<Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
 		<Walk_Animation_Speed>0.366</Walk_Animation_Speed>
 		<Crouch_Animation_Speed> 0.537 </Crouch_Animation_Speed>
+
+		<Lua_Script>ObjectScript_Wolfpack</Lua_Script>
 
 		<Presence_Induced_Animations>
 			Attention,
@@ -10541,7 +10542,8 @@
 
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
 		<LandBehavior>SELECTABLE, ABILITY_COUNTDOWN, SURFACE_FX, POWERED, WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
-		<HardPoints>HP_Clone_Rifle, HP_ARC_Wrist_Rocket</HardPoints>
+		
+		<HardPoints> HP_Clone_Rifle_Skilled</HardPoints>
 
 		<Garrison_Category> Infantry </Garrison_Category>
 		<Garrison_Value>1</Garrison_Value>
@@ -10701,42 +10703,62 @@
 		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
 	</Death_Clone>
 
-	<GroundInfantry Name="Clone_Super_Trooper">
-		<Variant_Of_Existing_Type>Clone_Blaze_Trooper</Variant_Of_Existing_Type>
+	<GroundInfantry Name="Wolfpack_Phase_One_Carbine">
+		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_CLONE_SUPER_TROOPER</Text_ID>
 		<Encyclopedia_Text>
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER
+		TEXT_TOOLTIP_WOLFPACK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_HEALTH
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_MOVE
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_WEAP2
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_WEAP3
-		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
-		TEXT_TOOLTIP_BONUS_ARMOR_SHIELD
+		TEXT_TOOLTIP_WOLFPACK_HEALTH
+		TEXT_TOOLTIP_CLONE_P1_MOVE
+		TEXT_TOOLTIP_CLONE_WEAP2
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
-		
-		<Land_Model_Name>Clone_Super_trooper.ALO</Land_Model_Name>
-		<Land_Model_Anim_Override_Name>Clone_Blaze_trooper.ALO</Land_Model_Anim_Override_Name>
 
-		<HardPoints>HP_Blaze_Trooper_Laser_Cannon, HP_Blaze_Trooper_Pistol</HardPoints>
-		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
-		
+		<HardPoints>HP_Clone_Carbine_Skilled</HardPoints>
+
 	</GroundInfantry>
-	
+
+	<GroundInfantry Name="Wolfpack_Phase_One_Carbine">
+		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_CLONE_SUPER_TROOPER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_WOLFPACK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_WOLFPACK_HEALTH
+		TEXT_TOOLTIP_CLONE_P1_MOVE
+		TEXT_TOOLTIP_CLONE_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
+		</Encyclopedia_Text>
+
+		<HardPoints>HP_Clone_Carbine_Skilled</HardPoints>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>Proj_Light_Ion_Grenade_Infantry</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>	
+
+	</GroundInfantry>
+
 	<GroundInfantry Name="Wolfpack_Sergeant_Spawner">
 		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
 		
 		<LandBehavior>SPAWN_SQUADRON, SELECTABLE, ABILITY_COUNTDOWN, SURFACE_FX, POWERED, WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
 
-		<HardPoints>Commander_Dummy_Hangar, HP_Blaze_Trooper_Flamer, HP_Blaze_Trooper_Pistol</HardPoints>
+		<HardPoints>Commander_Dummy_Hangar, </HardPoints>
 		
 		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
 		<Starting_Spawned_Units_Tech_0>Clone_Blaze_Trooper_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
 	</GroundInfantry>
 	
-	<GroundCompany Name="Clone_Blaze_Trooper_Squad">
+	<GroundCompany Name="Wolfpack_Squad">
 
 		<Text_ID>TEXT_UNIT_CLONE_BLAZE_TROOPER_PLATOON</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_INFANTRY</Encyclopedia_Unit_Class>
@@ -10828,7 +10850,7 @@
 
 	</GroundCompany>
 	
-	<GroundCompany Name="Clone_Blaze_Trooper_Squad_Deployed">
+	<GroundCompany Name="Wolpack_Squad_Deployed">
 		<Variant_Of_Existing_Type>Clone_Blaze_Trooper_Squad</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_CLONE_BLAZE_TROOPER_SQUAD</Text_ID>
 
@@ -10853,7 +10875,7 @@
 		
 	</GroundCompany>
 	
-	<Container Name="Clone_Blaze_Trooper_Team">
+	<Container Name="Wolfpack_Team">
 
 		<Text_ID>TEXT_UNIT_CLONE_BLAZE_TROOPER_SQUAD</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_INFANTRY</Encyclopedia_Unit_Class>

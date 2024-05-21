@@ -59,6 +59,8 @@ Hutt_HuttGuard_NoHelmet.ALO
 Hutt_HuttGuard.ALO
 
 ------Todo Lists------
+wolfpack add infantry type : grenaiders, wrist rockets, emps
+
 Bythen Forral Replenish wingmen ability fix
 
 Royal Guards fix(

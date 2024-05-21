@@ -10705,7 +10705,7 @@
 
 	<GroundInfantry Name="Wolfpack_Phase_One_Carbine">
 		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_CLONE_SUPER_TROOPER</Text_ID>
+		<Text_ID>TEXT_UNIT_WOLFPACK_CARBINER</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_WOLFPACK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -10719,10 +10719,37 @@
 		<HardPoints>HP_Clone_Carbine_Skilled</HardPoints>
 
 	</GroundInfantry>
-
-	<GroundInfantry Name="Wolfpack_Phase_One_Carbine">
+	
+	<GroundInfantry Name="Wolfpack_Phase_One_Grenadier">
 		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_CLONE_SUPER_TROOPER</Text_ID>
+		<Text_ID>TEXT_UNIT_WOLFPACK_CARBINER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_WOLFPACK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_WOLFPACK_HEALTH
+		TEXT_TOOLTIP_CLONE_P1_MOVE
+		TEXT_TOOLTIP_CLONE_WEAP1
+		TEXT_TOOLTIP_CLONE_WEAP8
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
+		</Encyclopedia_Text>
+
+		<HardPoints>HP_Clone_Carbine_Skilled</HardPoints>
+		
+		<Projectile_Types>Proj_Light_Concussion_Grenade_Infantry</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>
+
+	</GroundInfantry>
+
+	<GroundInfantry Name="Wolfpack_Phase_One_Carbine_Grenadier">
+		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_WOLFPACK_CARBINER_GRENADIER</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_WOLFPACK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK

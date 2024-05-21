@@ -1978,7 +1978,7 @@
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage></Mod_Multiplier>
+				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
@@ -2138,7 +2138,7 @@
 				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage><Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage></Mod_Multiplier>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage><Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
@@ -2386,7 +2386,7 @@
 				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage><Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage></Mod_Multiplier>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage><Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
 			</Combat_Bonus_Ability>
@@ -2552,7 +2552,7 @@
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage></Mod_Multiplier>
+				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
@@ -2793,7 +2793,7 @@
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage></Mod_Multiplier>
+				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
@@ -3289,7 +3289,7 @@
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage></Mod_Multiplier>
+				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
@@ -3577,7 +3577,7 @@
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage></Mod_Multiplier>
+				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
@@ -3995,7 +3995,7 @@
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage></Mod_Multiplier>
+				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>
@@ -5201,7 +5201,7 @@
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
-				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage></Mod_Multiplier>
+				<Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
 				<Stacking_Category>1</Stacking_Category>

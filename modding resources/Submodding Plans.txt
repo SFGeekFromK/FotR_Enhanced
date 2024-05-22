@@ -39,6 +39,17 @@ these heroes will be members of 'delegation of 2000' and each will have unique b
 if the separatist senate exists and all the core leaderships (count dooku, grievous, all corporate leaders) killed, 
 a peace treaty dummy will appear which results in automatic victory
 
+
+# Outer Rim Sieges Story Missions(or narrative)
+- Battle of rendili(Foerost or ORS?)
+- Boz pity
+- Salucemi
+- battle of Coruscant
+- battle of utapau
+- 
+- mustafar duel 
+
+
 # Additional Ground Category filter UI
 Filter Ground Units, Structures by different classes.
 

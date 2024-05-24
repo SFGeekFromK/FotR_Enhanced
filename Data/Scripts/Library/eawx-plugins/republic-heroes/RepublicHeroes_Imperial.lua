@@ -315,10 +315,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Taa"] = {"JAYFON_ASSIGN",{"JAYFON_RETIRE"},{"JAYFON"},"Jayfon", ["Companies"] = {"JAYFON_TEAM"}},
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
-			"Dallin",
-			"Maarisa",
-			"Grumby",
-			"Needa"
+
 		},
 		story_locked_list = {},--Heroes not accessible, but able to return with the right conditions
 		active_player = Find_Player("Empire"),

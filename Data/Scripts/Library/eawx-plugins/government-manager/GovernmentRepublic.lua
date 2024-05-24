@@ -526,6 +526,19 @@ function GovernmentRepublic:UpdateDisplay(favour_table, market_name, market_list
 				end
 			end
 		end
+		local admiral_list = GlobalValue.Get("REP_SENATOR_LIST")
+		--[[
+		if admiral_list ~= nil then
+			if table.getn(admiral_list) > 0 then
+				government_display_event.Add_Dialog_Text("TEXT_DOCUMENTATION_BODY_SEPARATOR")
+				government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_SENATOR_LIST")
+			
+				for index, obj in pairs(admiral_list) do
+					government_display_event.Add_Dialog_Text(obj)
+				end
+			end
+		end
+		]]
 
 		government_display_event.Add_Dialog_Text("TEXT_DOCUMENTATION_BODY_SEPARATOR")
 		government_display_event.Add_Dialog_Text("TEXT_NONE")

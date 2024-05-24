@@ -3658,7 +3658,7 @@
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN </Encyclopedia_Unit_Class>
 
-		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+		<SpaceBehavior> LURE, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
 		<Lua_Script>GenericGameObject</Lua_Script>
 		<Tech_Level>99</Tech_Level>
 		<Affiliation>Empire</Affiliation>
@@ -3929,6 +3929,7 @@
 		TEXT_TOOLTIP_VENATOR_WEAP5
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_AUTEM_OVERRIDE
+		TEXT_TOOLTIP_AUTEM_OVERRIDE_2
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
@@ -10806,7 +10807,7 @@
 
 	</UniqueUnit>
 
-	<!-- Order 65 -->
+	<!-- Order 65 --> <!-- Senator Heroes -->
 
 	<HeroUnit Name="Mon_Mothma">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
@@ -10921,7 +10922,7 @@
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
-	</DummyStructure>-->
+	</DummyStructure>
 
 	<DummyStructure Name="View_Senator">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
@@ -10970,7 +10971,7 @@
 		<Affiliation>Empire</Affiliation>
 
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
-	</DummyStructure>
+	</DummyStructure> -->
 
 	<HeroUnit Name="Garm_Bel_Iblis">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
@@ -11185,6 +11186,36 @@
 		<Ranking_In_Category> 1 </Ranking_In_Category>
 		<Population_Value>1</Population_Value>
 	</HeroCompany>
+
+	<DummyStructure Name="Bail_Assign">
+		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_BAIL_ORGANA</Text_ID>
+		<Icon_Name>i_button_Bail_Organa_command.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_NR_SENATOR
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_ADMIN4
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_BAIL_ORGANA_CW
+		</Encyclopedia_Text>
+	</DummyStructure>
+
+	<DummyStructure Name="Bail_Retire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_BAIL_ORGANA</Text_ID>
+		<Icon_Name>I_BUTTON_GARM_CW_RETIRE.tga</Icon_Name>
+
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Orbiting_Units>Theta_Shuttle_Landing_Craft_Jesra_Loture</Required_Orbiting_Units>
+	</DummyStructure>
 
 	<HeroUnit Name="Fang_Zar">
 		<Is_Named_Hero>Yes</Is_Named_Hero>

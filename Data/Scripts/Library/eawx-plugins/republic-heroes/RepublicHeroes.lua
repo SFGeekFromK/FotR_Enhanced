@@ -305,6 +305,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_limit = 8,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
+			["Organa"] = {"ORGANA_ASSIGN",{"ORGANA_RETIRE"},{"BAIL_ORGANA"},"Bail Organa", ["Companies"]={"BAIL_TEAM"}},
 			["Garm"] = {"GARM_ASSIGN",{"GARM_RETIRE"},{"GARM_BEL_IBLIS"},"Garm Bel Iblis", ["Companies"] = {"GARM_TEAM"}},
 			["Danu"] = {"GENTIS_ASSIGN",{"GENTIS_RETIRE"},{"GENTIS_AT_TE"},"Gentis", ["Companies"] = {"GENTIS_TEAM"}},
 			["Zar"] = {"GEEN_ASSIGN",{"GEEN_RETIRE"},{"FANG_ZAR"},"Fang Zar", ["Companies"] = {"ZAR_TEAM"}},

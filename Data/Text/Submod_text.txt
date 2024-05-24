@@ -84,3 +84,5 @@ TEXT_TOOLTIP_RESOURCE_GARRISON_TNT, Treaded Neutron Torch: 1 / 0
 TEXT_TOOLTIP_AUTEM_OVERRIDE_2,Fighter Override: NTB-630 Naval Bomber on OCF Venator
 TEXT_TOOLTIP_WESSEX_OVERRIDE,Fighter Override: NTB-630 Naval Bomber on OCF Venator
 TEXT_UNIT_A6_PROTOTYPE,A6 Juggernaut Prototype
+
+TEXT_GOVERNMENT_SENATOR_LIST,Active Senators:

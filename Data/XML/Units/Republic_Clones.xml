@@ -10464,18 +10464,18 @@
 	<!-- Wolffe Pack -->
 <!---->
 	<GroundInfantry Name="Wolfpack_Phase_One">
-		<Text_ID>TEXT_UNIT_WOLFPACK</Text_ID>
+		<Text_ID>TEXT_UNIT_WOLFPACK_P1</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_INFANTRY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_WOLFPACK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_WOLFPACK_HEALTH
+		TEXT_TOOLTIP_WOLFPACK_P1_HEALTH
 		TEXT_TOOLTIP_CLONE_P1_MOVE
 		TEXT_TOOLTIP_CLONE_WEAP1
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
-		<Icon_Name>I_BUTTON_CLONE_BLAZE_TROOPER.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_WOLFPACK.tga</Icon_Name>
 		
 		<Land_Model_Name>clone_jumptrooper_phase1_legions.ALO</Land_Model_Name>
 		
@@ -10705,11 +10705,11 @@
 
 	<GroundInfantry Name="Wolfpack_Phase_One_Carbine">
 		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_WOLFPACK_CARBINER</Text_ID>
+		<Text_ID>TEXT_UNIT_WOLFPACK_P1_CARBINER</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_WOLFPACK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_WOLFPACK_HEALTH
+		TEXT_TOOLTIP_WOLFPACK_P1_HEALTH
 		TEXT_TOOLTIP_CLONE_P1_MOVE
 		TEXT_TOOLTIP_CLONE_WEAP2
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
@@ -10720,22 +10720,51 @@
 
 	</GroundInfantry>
 	
-	<GroundInfantry Name="Wolfpack_Phase_One_Grenadier">
+	<GroundInfantry Name="Wolfpack_Phase_One_Grenadier_Rifle">
 		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_WOLFPACK_CARBINER</Text_ID>
+		<Text_ID>TEXT_UNIT_WOLFPACK_P1_RIFLEMAN_GRENADIER</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_WOLFPACK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_WOLFPACK_HEALTH
+		TEXT_TOOLTIP_WOLFPACK_P1_HEALTH
 		TEXT_TOOLTIP_CLONE_P1_MOVE
 		TEXT_TOOLTIP_CLONE_WEAP1
-		TEXT_TOOLTIP_CLONE_WEAP8
+		TEXT_TOOLTIP_CLONE_WEAP9
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
 
 		<HardPoints>HP_Clone_Carbine_Skilled</HardPoints>
 		
+
+		<!-- Grenade throw -->
+		<Projectile_Types>Proj_Light_Ion_Grenade_Infantry</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>
+
+	</GroundInfantry>
+
+	<GroundInfantry Name="Wolfpack_Phase_One_Grenadier_Carbine">
+		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_WOLFPACK_P1_CARBINER_GRENADIER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_WOLFPACK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_WOLFPACK_P1_HEALTH
+		TEXT_TOOLTIP_CLONE_P1_MOVE
+		TEXT_TOOLTIP_CLONE_WEAP2
+		TEXT_TOOLTIP_CLONE_WEAP8
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
+		</Encyclopedia_Text>
+
+		<HardPoints>HP_Clone_Carbine_Skilled</HardPoints>
+
 		<Projectile_Types>Proj_Light_Concussion_Grenade_Infantry</Projectile_Types>
 		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
 		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
@@ -10747,64 +10776,67 @@
 
 	</GroundInfantry>
 
-	<GroundInfantry Name="Wolfpack_Phase_One_Carbine_Grenadier">
+	<GroundInfantry Name="Wolfpack_Phase_One_EMP">
 		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_WOLFPACK_CARBINER_GRENADIER</Text_ID>
+		<Text_ID>TEXT_UNIT_WOLFPACK_P1_EMP</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_WOLFPACK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_WOLFPACK_HEALTH
+		TEXT_TOOLTIP_WOLFPACK_P1_HEALTH
 		TEXT_TOOLTIP_CLONE_P1_MOVE
-		TEXT_TOOLTIP_CLONE_WEAP2
+		TEXT_TOOLTIP_CLONE_JUMPTROOPER_P2_WEAP4
+		TEXT_TOOLTIP_CLONE_JUMPTROOPER_P2_WEAP6
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
 
-		<HardPoints>HP_Clone_Carbine_Skilled</HardPoints>
-
-		<!-- Grenade throw -->
-		<Projectile_Types>Proj_Light_Ion_Grenade_Infantry</Projectile_Types>
-		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
-		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
-		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
-		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
-		<SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
-
-		<Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>	
+		<HardPoints>HP_EMP_Launcher, HP_ARC_Wrist_Rocket</HardPoints>
+		
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Special</Highlight_Blob_Material_Name>
 
 	</GroundInfantry>
 
-	<GroundInfantry Name="Wolfpack_Sergeant_Spawner">
+	<GroundInfantry Name="Wolfpack_Phase_One_Gunner_Light">
 		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
-		
-		<LandBehavior>SPAWN_SQUADRON, SELECTABLE, ABILITY_COUNTDOWN, SURFACE_FX, POWERED, WALK_LOCOMOTOR,IDLE,TARGETING,WEAPON,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
+		<Text_ID>TEXT_UNIT_WOLFPACK_P1_GUNNER_LIGHT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_WOLFPACK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_WOLFPACK_P1_HEALTH
+		TEXT_TOOLTIP_CLONE_P1_MOVE
+		TEXT_TOOLTIP_CLONE_JUMPTROOPER_P2_WEAP3
+		TEXT_TOOLTIP_CLONE_JUMPTROOPER_P2_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
+		</Encyclopedia_Text>
 
-		<HardPoints>Commander_Dummy_Hangar, </HardPoints>
+		<HardPoints>HP_T21_LMG_Rep, HP_ARC_Wrist_Rocket</HardPoints>
 		
-		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
-		<Starting_Spawned_Units_Tech_0>Clone_Blaze_Trooper_Squad_Deployed, 2</Starting_Spawned_Units_Tech_0>
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Gunner</Highlight_Blob_Material_Name>
+
 	</GroundInfantry>
 	
-	<GroundCompany Name="Wolfpack_Squad">
+	<GroundCompany Name="Wolfpack_Phase_One_Team_Deployed">
 
-		<Text_ID>TEXT_UNIT_CLONE_BLAZE_TROOPER_PLATOON</Text_ID>
+		<Text_ID>TEXT_UNIT_WOLFPACK_P1_SQUAD</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_INFANTRY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER
+		TEXT_TOOLTIP_WOLFPACK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_COMPANY
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_SQUAD
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_HEALTH
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_MOVE
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_COMPANY_WEAP1
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_COMPANY_WEAP2
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_COMPANY_WEAP3
-		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
-		TEXT_TOOLTIP_BONUS_ARMOR_SHIELD
+		TEXT_TOOLTIP_WOLFPACK_P1_SQUAD
+		TEXT_TOOLTIP_WOLFPACK_P1_HEALTH
+		TEXT_TOOLTIP_CLONE_P1_MOVE
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP1
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP2
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP3
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP4
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP5
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP6
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP7
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
-		<Icon_Name>I_BUTTON_CLONE_BLAZE_TROOPER.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_WOLFPACK.tga</Icon_Name>
 
 		<Autoresolve_Health>100</Autoresolve_Health>
 		<Damage>18</Damage>
@@ -10825,7 +10857,7 @@
 		
 		<Piracy_Value_Credits>50</Piracy_Value_Credits>
 		<Score_Cost_Credits>54</Score_Cost_Credits>
-		<Population_Value>1</Population_Value>
+		<Population_Value>0</Population_Value>
 
 		<Tech_Level>99</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
@@ -10835,8 +10867,8 @@
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 
-		<Create_Team_Type> Clone_Blaze_Trooper_Team </Create_Team_Type>
-		<Max_Squad_Size> 4 </Max_Squad_Size>
+		<Create_Team_Type> Wolfpack_Team </Create_Team_Type>
+		<Max_Squad_Size> 9 </Max_Squad_Size>
 		<Company_Transport_Unit>CR25_Landing_Craft_Clones</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
@@ -10848,8 +10880,14 @@
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
 		<!-- fix single squad spawn with 2x spawners -->
-		<Company_Units>Clone_Super_Trooper, Clone_Blaze_Trooper_Spawner, Clone_Super_Trooper, Clone_Blaze_Trooper_Spawner</Company_Units>
+		<Company_Units>Wolfpack_Phase_One, Wolfpack_Phase_One, Wolfpack_Phase_One_Carbine, Wolfpack_Phase_One_Carbine,  Wolfpack_Phase_One_Grenadier_Rifle, Wolfpack_Phase_One_Grenadier_Carbine, Wolfpack_Phase_One_Grenadier_Carbine, Wolfpack_Phase_One_EMP, Wolfpack_Phase_One_Gunner_Light</Company_Units>
 		<Maintenance_Cost>0.0</Maintenance_Cost>
+		<Presence_Induced_Animations>
+			Attention,
+				Emperor_Palpatine,
+				Vader, 
+				Plo_Koon
+		</Presence_Induced_Animations>
 		
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary ability -->
@@ -10877,52 +10915,29 @@
 
 	</GroundCompany>
 	
-	<GroundCompany Name="Wolpack_Squad_Deployed">
-		<Variant_Of_Existing_Type>Clone_Blaze_Trooper_Squad</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_CLONE_BLAZE_TROOPER_SQUAD</Text_ID>
+	<Container Name="Wolfpack_Phase_One_Team">
 
-		<Encyclopedia_Text>
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER
-		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_SQUAD
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_HEALTH
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_MOVE
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_SQUAD_WEAP1
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_SQUAD_WEAP2
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_SQUAD_WEAP3
-		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
-		TEXT_TOOLTIP_BONUS_ARMOR_SHIELD
-		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
-		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
-		</Encyclopedia_Text>
-
-		<Company_Units>Clone_Super_Trooper, Clone_Blaze_Trooper, Clone_Super_Trooper, Clone_Blaze_Trooper</Company_Units>
-		<Tech_Level>99</Tech_Level>
-		<Population_Value>0</Population_Value>
-		
-	</GroundCompany>
-	
-	<Container Name="Wolfpack_Team">
-
-		<Text_ID>TEXT_UNIT_CLONE_BLAZE_TROOPER_SQUAD</Text_ID>
+		<Text_ID>TEXT_UNIT_WOLFPACK_P1_SQUAD</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_INFANTRY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER
+		TEXT_TOOLTIP_WOLFPACK
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_SQUAD
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_HEALTH
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_MOVE
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_SQUAD_WEAP1
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_SQUAD_WEAP2
-		TEXT_TOOLTIP_CLONE_BLAZE_TROOPER_SQUAD_WEAP3
-		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
-		TEXT_TOOLTIP_BONUS_ARMOR_SHIELD
+		TEXT_TOOLTIP_WOLFPACK_P1_SQUAD
+		TEXT_TOOLTIP_WOLFPACK_P1_HEALTH
+		TEXT_TOOLTIP_CLONE_P1_MOVE
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP1
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP2
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP3
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP4
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP5
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP6
+		TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP7
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
-		<Icon_Name>I_BUTTON_CLONE_BLAZE_TROOPER.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_WOLFPACK.tga</Icon_Name>
 
-		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Scale>45</Select_Box_Scale>
 		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
 		
 		<Land_Model_Name/>
@@ -10931,7 +10946,7 @@
 		<Alternate_Max_Speed> 2.0 </Alternate_Max_Speed>
 		<OverrideAcceleration>0.1</OverrideAcceleration>
 		<OverrideDeceleration>0.1</OverrideDeceleration>
-		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
 		<Alternate_Max_Rate_Of_Turn> 6.0 </Alternate_Max_Rate_Of_Turn>
 
 		<CategoryMask>Infantry | AntiInfantry</CategoryMask>
@@ -10962,20 +10977,20 @@
 		<Space_Layer> Land </Space_Layer>
 		<UnitCollisionClass> Infantry </UnitCollisionClass>
 		<OccupationStyle>1x1</OccupationStyle>
-		<ContainerArrangement> Rows </ContainerArrangement>
+		<ContainerArrangement> Dartborad </ContainerArrangement>
 		<FormationSpacing> 1 </FormationSpacing>
-		<FormationOrder> 2 </FormationOrder>
-		<MovementPredictionInterval> 4.0 </MovementPredictionInterval>
+		<FormationOrder> 1 </FormationOrder>
+		<MovementPredictionInterval> 0.1 </MovementPredictionInterval>
 
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
 
 		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
 
-		<Targeting_Max_Attack_Distance>250.0</Targeting_Max_Attack_Distance>
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
 		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
 		<Idle_Chase_Range>50.0</Idle_Chase_Range>
-		<Guard_Chase_Range>275.0</Guard_Chase_Range>
-		<Attack_Move_Response_Range>275.0</Attack_Move_Response_Range>
+		<Guard_Chase_Range>300.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
 		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
 
 		<SpaceBehavior>REVEAL</SpaceBehavior>
@@ -10989,7 +11004,7 @@
 				<Type>JET_PACK</Type>
 				<Recharge_Seconds>45.0</Recharge_Seconds>
 				<GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
-				<SFXEvent_Target_Ability> Unit_Ability_Blaze_Assassin </SFXEvent_Target_Ability>
+				<SFXEvent_Target_Ability> Unit_Move_Clone_Trooper </SFXEvent_Target_Ability>
 				<!-- Disabling these, since we now want Boba to be able to fly anywhere on the map, even into FOW -->
 				<!-- <Area_Effect_Decal_Distance> 50.0 </Area_Effect_Decal_Distance> -->
 				<!-- <Effective_Radius> 300.0 </Effective_Radius> -->

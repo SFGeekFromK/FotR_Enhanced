@@ -61,6 +61,8 @@ Hutt_HuttGuard.ALO
 ------Todo Lists------
 wolfpack add infantry type : grenaiders, wrist rockets, emps
 
+2 rifle 2 carbine 1 rifle grenade(ion) 2 carbine grenade(thermal/concussion) 1 wrist rocket & emp  1 repeatnig blaster
+
 Bythen Forral Replenish wingmen ability fix
 
 Royal Guards fix(

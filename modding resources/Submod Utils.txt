@@ -59,6 +59,10 @@ Hutt_HuttGuard_NoHelmet.ALO
 Hutt_HuttGuard.ALO
 
 ------Todo Lists------
+ORS Planet trade routes, campaign editing etc 
+
+Wolfpack phase 2
+
 Write Texts for wolpack
 
 Bythen Forral Replenish wingmen ability fix

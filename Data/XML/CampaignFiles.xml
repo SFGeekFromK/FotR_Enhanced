@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+
+<Campaign_Files>
+	<File>Conquests\Dividers\Shell.xml</File>
+	<!--<File>Conquests\Tutorial\Tutorial_Campaign.xml</File>-->
+
+	<File>Conquests\CloneWarsMalevolence\Campaigns_Malevolence.xml</File>
+	<File>Conquests\CloneWarsRimward\Campaigns_Rimward.xml</File>
+	<File>Conquests\CloneWarsTennuutta\Campaigns_Tennuutta.xml</File>
+	<File>Conquests\CloneWarsDurgesLance\Campaigns_DurgesLance.xml</File>
+	<File>Conquests\CloneWarsFoerost\Campaigns_Foerost.xml</File>
+	<File>Conquests\CloneWarsKnightHammer\Campaigns_KnightHammer.xml</File>
+	<File>Conquests\CloneWarsOuterRimSieges\Campaigns_OuterRimSieges.xml</File>
+	<File>Conquests\CloneWarsFTGU\Campaigns_FTGU.xml</File>
+
+	<!--<File>Conquests\HistoricalBattles\Campaigns_HistoricalBattles.xml</File>-->
+
+	<File>Campaigns_BattleTest.xml</File>
+	<!--Testing-->
+	<File>Campaigns_MapTest.xml</File>
+	<File>Campaigns_FullMap.xml</File>
+
+	<File>Conquests\Progressive\CampaignLoaders\Campaigns_CloneWars_Small.xml</File>
+	<File>Conquests\Progressive\CampaignLoaders\Campaigns_CloneWars_Medium.xml</File>
+	<File>Conquests\Progressive\CampaignLoaders\Campaigns_CloneWars.xml</File>
+	
+	<File>Conquests\Progressive\CampaignLoaders\Campaigns_Known_Galaxy_Small.xml</File>
+	<File>Conquests\Progressive\CampaignLoaders\Campaigns_Known_Galaxy_Medium.xml</File>
+	<File>Conquests\Progressive\CampaignLoaders\Campaigns_Known_Galaxy.xml</File>
+	
+	<File>Conquests\Progressive\Clone_Wars_Small_Era_2.xml</File>
+	<File>Conquests\Progressive\Clone_Wars_Medium_Era_2.xml</File>
+	<File>Conquests\Progressive\Clone_Wars_Large_Era_2.xml</File>
+
+	<File>Conquests\Progressive\Clone_Wars_Small_Era_3.xml</File>
+	<File>Conquests\Progressive\Clone_Wars_Medium_Era_3.xml</File>
+	<File>Conquests\Progressive\Clone_Wars_Large_Era_3.xml</File>
+
+	<File>Conquests\Progressive\Clone_Wars_Small_Era_4.xml</File>
+	<File>Conquests\Progressive\Clone_Wars_Medium_Era_4.xml</File>
+	<File>Conquests\Progressive\Clone_Wars_Large_Era_4.xml</File>
+
+	<File>Conquests\Progressive\Clone_Wars_Small_Era_5.xml</File>
+	<File>Conquests\Progressive\Clone_Wars_Medium_Era_5.xml</File>
+	<File>Conquests\Progressive\Clone_Wars_Large_Era_5.xml</File>
+
+	<File>Conquests\Progressive\Known_Galaxy_Small_Era_2.xml</File>
+	<File>Conquests\Progressive\Known_Galaxy_Medium_Era_2.xml</File>
+	<File>Conquests\Progressive\Known_Galaxy_Large_Era_2.xml</File>
+
+	<File>Conquests\Progressive\Known_Galaxy_Small_Era_3.xml</File>
+	<File>Conquests\Progressive\Known_Galaxy_Medium_Era_3.xml</File>
+	<File>Conquests\Progressive\Known_Galaxy_Large_Era_3.xml</File>
+
+	<File>Conquests\Progressive\Known_Galaxy_Small_Era_4.xml</File>
+	<File>Conquests\Progressive\Known_Galaxy_Medium_Era_4.xml</File>
+	<File>Conquests\Progressive\Known_Galaxy_Large_Era_4.xml</File>
+
+	<File>Conquests\Progressive\Known_Galaxy_Small_Era_5.xml</File>
+	<File>Conquests\Progressive\Known_Galaxy_Medium_Era_5.xml</File>
+	<File>Conquests\Progressive\Known_Galaxy_Large_Era_5.xml</File>
+
+	<File>Conquests\Survival\Campaigns_Survival.xml</File>
+</Campaign_Files>

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+
+<!--****************************************************-->
+<!--****   Fall of the Republic: Outer Rim Sieges   ****-->
+<!--****************************************************-->
+
+<Story>
+
+	<Event Name="Historical_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Reveal_All_Planets">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Reward_Type>REVEAL_ALL_PLANETS</Reward_Type>
+		<Prereq>Historical_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="Trigger_GC_Set_Up">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_Framework_Activation">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+	</Event>
+
+</Story>

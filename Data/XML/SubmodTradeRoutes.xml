@@ -1,8 +1,26 @@
 <?xml version="1.0"?>
 <TradeRoutes>
-    <TradeRoute Name="Saleucami_Honoghr">
-		<Point_A>Saleucami</Point_A>
-		<Point_B>Honoghr</Point_B>
+    <TradeRoute Name="Honoghr_Saleucami">
+		<Point_A>Honoghr</Point_A>
+		<Point_B>Saleucami</Point_B>
+		<HS_Speed_Factor>1.0</HS_Speed_Factor>
+		<Political_Control_Gain>0</Political_Control_Gain>
+		<Credit_Gain_Factor>0</Credit_Gain_Factor>
+		<Visible_Line_Name>DEFAULT</Visible_Line_Name>
+	</TradeRoute>
+
+	<TradeRoute Name="Honoghr_Boz_Pity">
+		<Point_A>Honoghr</Point_A>
+		<Point_B>Boz_Pity</Point_B>
+		<HS_Speed_Factor>1.0</HS_Speed_Factor>
+		<Political_Control_Gain>0</Political_Control_Gain>
+		<Credit_Gain_Factor>0</Credit_Gain_Factor>
+		<Visible_Line_Name>DEFAULT</Visible_Line_Name>
+	</TradeRoute>
+
+	<TradeRoute Name="Nelvaan_Ragmar">
+		<Point_A>Nelvaan</Point_A>
+		<Point_B>Ragmar</Point_B>
 		<HS_Speed_Factor>1.0</HS_Speed_Factor>
 		<Political_Control_Gain>0</Political_Control_Gain>
 		<Credit_Gain_Factor>0</Credit_Gain_Factor>

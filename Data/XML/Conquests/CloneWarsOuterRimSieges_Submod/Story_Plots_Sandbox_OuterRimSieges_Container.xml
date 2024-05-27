@@ -5,11 +5,11 @@
 <!--****************************************************-->
 
 <Story_Mode_Plots>
-	<Lua_Script>GCPlayerAgnosticOuterRimSieges</Lua_Script>
+	<Lua_Script>GCPlayerAgnosticOuterRimSieges_Submod</Lua_Script>
 	<Active_Plot>Conquests\Player_Agnostic_Plot.xml</Active_Plot>
 
 	<Lua_Script>GC_MasterScript_OuterRimSieges</Lua_Script>
-	<Active_Plot>Conquests\CloneWarsOuterRimSieges\Story_Sandbox_OuterRimSieges_Container.XML</Active_Plot>
+	<Active_Plot>Conquests\CloneWarsOuterRimSieges_Submod\Story_Sandbox_OuterRimSieges_Container.XML</Active_Plot>
 
 	<Lua_Script>GCUtilityDetectCancels</Lua_Script>
 	<Active_Plot>Conquests\Filter_Force_Click.xml</Active_Plot>

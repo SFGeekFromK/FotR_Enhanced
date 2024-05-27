@@ -6,7 +6,7 @@
 
 <Campaigns>
 
-	<Campaign Name="Sandbox_OuterRimSieges_CIS">
+	<Campaign Name="Sandbox_OuterRimSieges_Submod_CIS">
 		<Campaign_Set>Sandbox_OuterRimSieges</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 
@@ -54,6 +54,7 @@
 			Muunilinst,
 			Mygeeto,
 			New_Bornalex,
+			New_Plympto,
 			Ord_Mantell,
 			Ord_Radama,
 			Ord_Trasi,
@@ -81,6 +82,7 @@
 			YagDhul,
 			Yavin,
 		</Locations>
+
 		<Trade_Routes>
 			Alderaan_Brentaal,
 			Alderaan_Columus,
@@ -110,6 +112,7 @@
 			Cato_Neimoidia_Commenor,
 			Cato_Neimoidia_Corellia,
 			Cato_Neimoidia_Llanic,
+			Cato_Neimoidia_Rendili,
 			Centares_Jabiim,
 			Centares_Roche,
 			Charros_Kashyyyk,
@@ -118,10 +121,10 @@
 			Columex_Ossus,
 			Columus_Corellia,
 			Columus_Empress_Teta,
-			Columus_Fondor,
+			Columus_New_Plympto,
 			Commenor_Kashyyyk,
 			Corellia_Duro,
-			Corellia_Kuat,
+			Corellia_Rendili,
 			Coruscant_Empress_Teta,
 			Duro_Fondor,
 			Duro_Llanic,
@@ -133,13 +136,17 @@
 			Felucia_Lianna,
 			Fondor_Sarrish,
 			Fondor_Thyferra,
+			Fondor_New_Plympto,
 			Garqi_Ord_Trasi,
 			Garqi_Orinda,
 			Garqi_Scipio,
+			Honoghr_Boz_Pity,
+			Honoghr_Saleucami,
 			Jabiim_Murkhana,
 			Jabiim_Saleucami,
 			Kashyyyk_Roche,
 			Kashyyyk_Tythe,
+			Kuat_Rendili,
 			Lianna_Ossus,
 			Llanic_Ragmar,
 			Llanic_Tythe,
@@ -151,13 +158,15 @@
 			Mygeeto_Ord_Trasi,
 			Mygeeto_Scipio,
 			New_Bornalex_Yavin,
+			Nelvaan_Ragmar,
+			Nelvaan_Tythe,
+			Nelvaan_Ryloth,
 			Ord_Mantell_Orinda,
 			Ord_Radama_Serenno,
 			Ord_Radama_Yavin,
 			Praesitlyn_Utapau,
 			Praesitlyn_Xagobah,
 			Ragmar_Ryloth,
-			Ragmar_Tythe,
 			Ragmar_Utapau,
 			Roche_Saleucami,
 			Ryloth_Siskeen,
@@ -181,9 +190,9 @@
 
         <Starting_Active_Player> Rebel </Starting_Active_Player>
 		
-		<Rebel_Story_Name>Conquests\CloneWarsOuterRimSieges\Story_Plots_Sandbox_OuterRimSieges_CIS.xml</Rebel_Story_Name>
-       	<Empire_Story_Name>Conquests\CloneWarsOuterRimSieges\Story_Plots_Sandbox_OuterRimSieges_Republic.xml</Empire_Story_Name>
-		<Underworld_Story_Name>Conquests\CloneWarsOuterRimSieges\Story_Plots_Sandbox_OuterRimSieges_Container.xml</Underworld_Story_Name>
+		<Rebel_Story_Name>Conquests\CloneWarsOuterRimSieges_Submod\Story_Plots_Sandbox_OuterRimSieges_Submod_CIS.xml</Rebel_Story_Name>
+       	<Empire_Story_Name>Conquests\CloneWarsOuterRimSieges_Submod\Story_Plots_Sandbox_OuterRimSieges_Submod_Republic.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\CloneWarsOuterRimSieges_Submod\Story_Plots_Sandbox_OuterRimSieges_Submod_Container.xml</Underworld_Story_Name>
 		
 		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
 		<AI_Player_Control> Empire, RepublicAI </AI_Player_Control>
@@ -1367,7 +1376,7 @@
 		<Starting_Forces> Rebel, Ragmar, B1_Droid_Squad </Starting_Forces>
  	</Campaign>
 
-	<Campaign Name="Sandbox_AU_1_OuterRimSieges_CIS">
+	<Campaign Name="Sandbox_AU_1_OuterRimSieges_Submod_CIS">
 		<Campaign_Set>Sandbox_AU_1_OuterRimSieges</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 		<Is_Listed>false</Is_Listed>
@@ -1404,6 +1413,7 @@
 			Fondor,
 			Galaxy_Core_Art_Model,
 			Garqi,
+			Honoghr,
 			Jabiim,
 			Kashyyyk,
 			Kuat,
@@ -1415,6 +1425,7 @@
 			Muunilinst,
 			Mygeeto,
 			New_Bornalex,
+			New_Plympto,
 			Ord_Mantell,
 			Ord_Radama,
 			Ord_Trasi,
@@ -1422,6 +1433,7 @@
 			Ossus,
 			Praesitlyn,
 			Ragmar,
+			Rendili,
 			Roche,
 			Ryloth,
 			Saleucami,
@@ -1470,8 +1482,8 @@
 			Brentaal_Coruscant,
 			Cato_Neimoidia_Commenor,
 			Cato_Neimoidia_Corellia,
-			Cato_Neimoidia_Kuat,
 			Cato_Neimoidia_Llanic,
+			Cato_Neimoidia_Rendili,
 			Centares_Jabiim,
 			Centares_Roche,
 			Charros_Kashyyyk,
@@ -1480,10 +1492,10 @@
 			Columex_Ossus,
 			Columus_Corellia,
 			Columus_Empress_Teta,
-			Columus_Fondor,
+			Columus_New_Plympto,
 			Commenor_Kashyyyk,
 			Corellia_Duro,
-			Corellia_Kuat,
+			Corellia_Rendili,
 			Coruscant_Empress_Teta,
 			Duro_Fondor,
 			Duro_Llanic,
@@ -1495,13 +1507,17 @@
 			Felucia_Lianna,
 			Fondor_Sarrish,
 			Fondor_Thyferra,
+			Fondor_New_Plympto,
 			Garqi_Ord_Trasi,
 			Garqi_Orinda,
 			Garqi_Scipio,
+			Honoghr_Boz_Pity,
+			Honoghr_Saleucami,
 			Jabiim_Murkhana,
 			Jabiim_Saleucami,
 			Kashyyyk_Roche,
 			Kashyyyk_Tythe,
+			Kuat_Rendili,
 			Lianna_Ossus,
 			Llanic_Ragmar,
 			Llanic_Tythe,
@@ -1513,13 +1529,15 @@
 			Mygeeto_Ord_Trasi,
 			Mygeeto_Scipio,
 			New_Bornalex_Yavin,
+			Nelvaan_Ragmar,
+			Nelvaan_Tythe,
+			Nelvaan_Ryloth,
 			Ord_Mantell_Orinda,
 			Ord_Radama_Serenno,
 			Ord_Radama_Yavin,
 			Praesitlyn_Utapau,
 			Praesitlyn_Xagobah,
 			Ragmar_Ryloth,
-			Ragmar_Tythe,
 			Ragmar_Utapau,
 			Roche_Saleucami,
 			Ryloth_Siskeen,
@@ -2732,7 +2750,7 @@
 		<Starting_Forces> Rebel, Ragmar, B1_Droid_Squad </Starting_Forces>
  	</Campaign>
 
-	<Campaign Name="Sandbox_AU_2_OuterRimSieges_CIS">
+	<Campaign Name="Sandbox_AU_2_OuterRimSieges_Submod_CIS">
 		<Campaign_Set>Sandbox_AU_2_OuterRimSieges</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 		<Is_Listed>false</Is_Listed>
@@ -2769,6 +2787,7 @@
 			Fondor,
 			Galaxy_Core_Art_Model,
 			Garqi,
+			Honoghr,
 			Jabiim,
 			Kashyyyk,
 			Kuat,
@@ -2780,6 +2799,7 @@
 			Muunilinst,
 			Mygeeto,
 			New_Bornalex,
+			New_Plympto,
 			Ord_Mantell,
 			Ord_Radama,
 			Ord_Trasi,
@@ -2787,6 +2807,7 @@
 			Ossus,
 			Praesitlyn,
 			Ragmar,
+			Rendili,
 			Roche,
 			Ryloth,
 			Saleucami,
@@ -2806,6 +2827,7 @@
 			YagDhul,
 			Yavin,
 		</Locations>
+		
 		<Trade_Routes>
 			Alderaan_Brentaal,
 			Alderaan_Columus,
@@ -2834,8 +2856,8 @@
 			Brentaal_Coruscant,
 			Cato_Neimoidia_Commenor,
 			Cato_Neimoidia_Corellia,
-			Cato_Neimoidia_Kuat,
 			Cato_Neimoidia_Llanic,
+			Cato_Neimoidia_Rendili,
 			Centares_Jabiim,
 			Centares_Roche,
 			Charros_Kashyyyk,
@@ -2844,10 +2866,10 @@
 			Columex_Ossus,
 			Columus_Corellia,
 			Columus_Empress_Teta,
-			Columus_Fondor,
+			Columus_New_Plympto,
 			Commenor_Kashyyyk,
 			Corellia_Duro,
-			Corellia_Kuat,
+			Corellia_Rendili,
 			Coruscant_Empress_Teta,
 			Duro_Fondor,
 			Duro_Llanic,
@@ -2859,13 +2881,17 @@
 			Felucia_Lianna,
 			Fondor_Sarrish,
 			Fondor_Thyferra,
+			Fondor_New_Plympto,
 			Garqi_Ord_Trasi,
 			Garqi_Orinda,
 			Garqi_Scipio,
+			Honoghr_Boz_Pity,
+			Honoghr_Saleucami,
 			Jabiim_Murkhana,
 			Jabiim_Saleucami,
 			Kashyyyk_Roche,
 			Kashyyyk_Tythe,
+			Kuat_Rendili,
 			Lianna_Ossus,
 			Llanic_Ragmar,
 			Llanic_Tythe,
@@ -2877,13 +2903,15 @@
 			Mygeeto_Ord_Trasi,
 			Mygeeto_Scipio,
 			New_Bornalex_Yavin,
+			Nelvaan_Ragmar,
+			Nelvaan_Tythe,
+			Nelvaan_Ryloth,
 			Ord_Mantell_Orinda,
 			Ord_Radama_Serenno,
 			Ord_Radama_Yavin,
 			Praesitlyn_Utapau,
 			Praesitlyn_Xagobah,
 			Ragmar_Ryloth,
-			Ragmar_Tythe,
 			Ragmar_Utapau,
 			Roche_Saleucami,
 			Ryloth_Siskeen,
@@ -4112,7 +4140,7 @@
 		<Starting_Forces> Rebel, Ragmar, B1_Droid_Squad </Starting_Forces>
  	</Campaign>
 
-	<Campaign Name="Sandbox_AU_3_OuterRimSieges_CIS">
+	<Campaign Name="Sandbox_AU_3_OuterRimSieges_Submod_CIS">
 		<Campaign_Set>Sandbox_AU_3_OuterRimSieges</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 		<Is_Listed>false</Is_Listed>
@@ -4149,6 +4177,7 @@
 			Fondor,
 			Galaxy_Core_Art_Model,
 			Garqi,
+			Honoghr,
 			Jabiim,
 			Kashyyyk,
 			Kuat,
@@ -4160,6 +4189,7 @@
 			Muunilinst,
 			Mygeeto,
 			New_Bornalex,
+			New_Plympto,
 			Ord_Mantell,
 			Ord_Radama,
 			Ord_Trasi,
@@ -4167,6 +4197,7 @@
 			Ossus,
 			Praesitlyn,
 			Ragmar,
+			Rendili,
 			Roche,
 			Ryloth,
 			Saleucami,
@@ -4186,6 +4217,7 @@
 			YagDhul,
 			Yavin,
 		</Locations>
+		
 		<Trade_Routes>
 			Alderaan_Brentaal,
 			Alderaan_Columus,
@@ -4214,8 +4246,8 @@
 			Brentaal_Coruscant,
 			Cato_Neimoidia_Commenor,
 			Cato_Neimoidia_Corellia,
-			Cato_Neimoidia_Kuat,
 			Cato_Neimoidia_Llanic,
+			Cato_Neimoidia_Rendili,
 			Centares_Jabiim,
 			Centares_Roche,
 			Charros_Kashyyyk,
@@ -4224,10 +4256,10 @@
 			Columex_Ossus,
 			Columus_Corellia,
 			Columus_Empress_Teta,
-			Columus_Fondor,
+			Columus_New_Plympto,
 			Commenor_Kashyyyk,
 			Corellia_Duro,
-			Corellia_Kuat,
+			Corellia_Rendili,
 			Coruscant_Empress_Teta,
 			Duro_Fondor,
 			Duro_Llanic,
@@ -4239,13 +4271,17 @@
 			Felucia_Lianna,
 			Fondor_Sarrish,
 			Fondor_Thyferra,
+			Fondor_New_Plympto,
 			Garqi_Ord_Trasi,
 			Garqi_Orinda,
 			Garqi_Scipio,
+			Honoghr_Boz_Pity,
+			Honoghr_Saleucami,
 			Jabiim_Murkhana,
 			Jabiim_Saleucami,
 			Kashyyyk_Roche,
 			Kashyyyk_Tythe,
+			Kuat_Rendili,
 			Lianna_Ossus,
 			Llanic_Ragmar,
 			Llanic_Tythe,
@@ -4257,13 +4293,15 @@
 			Mygeeto_Ord_Trasi,
 			Mygeeto_Scipio,
 			New_Bornalex_Yavin,
+			Nelvaan_Ragmar,
+			Nelvaan_Tythe,
+			Nelvaan_Ryloth,
 			Ord_Mantell_Orinda,
 			Ord_Radama_Serenno,
 			Ord_Radama_Yavin,
 			Praesitlyn_Utapau,
 			Praesitlyn_Xagobah,
 			Ragmar_Ryloth,
-			Ragmar_Tythe,
 			Ragmar_Utapau,
 			Roche_Saleucami,
 			Ryloth_Siskeen,
@@ -5479,7 +5517,7 @@
 		<Starting_Forces> Rebel, Ragmar, B1_Droid_Squad </Starting_Forces>
  	</Campaign>
 
-	<Campaign Name="Sandbox_OuterRimSieges_Republic">
+	<Campaign Name="Sandbox_OuterRimSieges_Submod_Republic">
 		<Campaign_Set>Sandbox_OuterRimSieges</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 
@@ -5515,6 +5553,7 @@
 			Fondor,
 			Galaxy_Core_Art_Model,
 			Garqi,
+			Honoghr,
 			Jabiim,
 			Kashyyyk,
 			Kuat,
@@ -5526,6 +5565,7 @@
 			Muunilinst,
 			Mygeeto,
 			New_Bornalex,
+			New_Plympto,
 			Ord_Mantell,
 			Ord_Radama,
 			Ord_Trasi,
@@ -5533,6 +5573,7 @@
 			Ossus,
 			Praesitlyn,
 			Ragmar,
+			Rendili,
 			Roche,
 			Ryloth,
 			Saleucami,
@@ -5552,6 +5593,7 @@
 			YagDhul,
 			Yavin,
 		</Locations>
+		
 		<Trade_Routes>
 			Alderaan_Brentaal,
 			Alderaan_Columus,
@@ -5581,6 +5623,7 @@
 			Cato_Neimoidia_Commenor,
 			Cato_Neimoidia_Corellia,
 			Cato_Neimoidia_Llanic,
+			Cato_Neimoidia_Rendili,
 			Centares_Jabiim,
 			Centares_Roche,
 			Charros_Kashyyyk,
@@ -5589,10 +5632,10 @@
 			Columex_Ossus,
 			Columus_Corellia,
 			Columus_Empress_Teta,
-			Columus_Fondor,
+			Columus_New_Plympto,
 			Commenor_Kashyyyk,
 			Corellia_Duro,
-			Corellia_Kuat,
+			Corellia_Rendili,
 			Coruscant_Empress_Teta,
 			Duro_Fondor,
 			Duro_Llanic,
@@ -5604,13 +5647,17 @@
 			Felucia_Lianna,
 			Fondor_Sarrish,
 			Fondor_Thyferra,
+			Fondor_New_Plympto,
 			Garqi_Ord_Trasi,
 			Garqi_Orinda,
 			Garqi_Scipio,
+			Honoghr_Boz_Pity,
+			Honoghr_Saleucami,
 			Jabiim_Murkhana,
 			Jabiim_Saleucami,
 			Kashyyyk_Roche,
 			Kashyyyk_Tythe,
+			Kuat_Rendili,
 			Lianna_Ossus,
 			Llanic_Ragmar,
 			Llanic_Tythe,
@@ -5622,13 +5669,15 @@
 			Mygeeto_Ord_Trasi,
 			Mygeeto_Scipio,
 			New_Bornalex_Yavin,
+			Nelvaan_Ragmar,
+			Nelvaan_Tythe,
+			Nelvaan_Ryloth,
 			Ord_Mantell_Orinda,
 			Ord_Radama_Serenno,
 			Ord_Radama_Yavin,
 			Praesitlyn_Utapau,
 			Praesitlyn_Xagobah,
 			Ragmar_Ryloth,
-			Ragmar_Tythe,
 			Ragmar_Utapau,
 			Roche_Saleucami,
 			Ryloth_Siskeen,
@@ -5646,7 +5695,6 @@
 			Sullust_YagDhul,
 			Thyferra_YagDhul,
 		</Trade_Routes>
-
 		<Home_Location> Rebel, Serenno </Home_Location>
         <Home_Location> Empire, Coruscant </Home_Location>
 
@@ -6801,7 +6849,7 @@
 		<Starting_Forces> Rebel, Ragmar, B1_Droid_Squad </Starting_Forces>
 	</Campaign>
 
-	<Campaign Name="Sandbox_AU_1_OuterRimSieges_Republic">
+	<Campaign Name="Sandbox_AU_1_OuterRimSieges_Submod_Republic">
 		<Campaign_Set>Sandbox_AU_1_OuterRimSieges</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 		<Is_Listed>false</Is_Listed>
@@ -6838,6 +6886,7 @@
 			Fondor,
 			Galaxy_Core_Art_Model,
 			Garqi,
+			Honoghr,
 			Jabiim,
 			Kashyyyk,
 			Kuat,
@@ -6849,6 +6898,7 @@
 			Muunilinst,
 			Mygeeto,
 			New_Bornalex,
+			New_Plympto,
 			Ord_Mantell,
 			Ord_Radama,
 			Ord_Trasi,
@@ -6856,6 +6906,7 @@
 			Ossus,
 			Praesitlyn,
 			Ragmar,
+			Rendili,
 			Roche,
 			Ryloth,
 			Saleucami,
@@ -6875,6 +6926,7 @@
 			YagDhul,
 			Yavin,
 		</Locations>
+		
 		<Trade_Routes>
 			Alderaan_Brentaal,
 			Alderaan_Columus,
@@ -6903,8 +6955,8 @@
 			Brentaal_Coruscant,
 			Cato_Neimoidia_Commenor,
 			Cato_Neimoidia_Corellia,
-			Cato_Neimoidia_Kuat,
 			Cato_Neimoidia_Llanic,
+			Cato_Neimoidia_Rendili,
 			Centares_Jabiim,
 			Centares_Roche,
 			Charros_Kashyyyk,
@@ -6913,10 +6965,10 @@
 			Columex_Ossus,
 			Columus_Corellia,
 			Columus_Empress_Teta,
-			Columus_Fondor,
+			Columus_New_Plympto,
 			Commenor_Kashyyyk,
 			Corellia_Duro,
-			Corellia_Kuat,
+			Corellia_Rendili,
 			Coruscant_Empress_Teta,
 			Duro_Fondor,
 			Duro_Llanic,
@@ -6928,13 +6980,17 @@
 			Felucia_Lianna,
 			Fondor_Sarrish,
 			Fondor_Thyferra,
+			Fondor_New_Plympto,
 			Garqi_Ord_Trasi,
 			Garqi_Orinda,
 			Garqi_Scipio,
+			Honoghr_Boz_Pity,
+			Honoghr_Saleucami,
 			Jabiim_Murkhana,
 			Jabiim_Saleucami,
 			Kashyyyk_Roche,
 			Kashyyyk_Tythe,
+			Kuat_Rendili,
 			Lianna_Ossus,
 			Llanic_Ragmar,
 			Llanic_Tythe,
@@ -6946,13 +7002,15 @@
 			Mygeeto_Ord_Trasi,
 			Mygeeto_Scipio,
 			New_Bornalex_Yavin,
+			Nelvaan_Ragmar,
+			Nelvaan_Tythe,
+			Nelvaan_Ryloth,
 			Ord_Mantell_Orinda,
 			Ord_Radama_Serenno,
 			Ord_Radama_Yavin,
 			Praesitlyn_Utapau,
 			Praesitlyn_Xagobah,
 			Ragmar_Ryloth,
-			Ragmar_Tythe,
 			Ragmar_Utapau,
 			Roche_Saleucami,
 			Ryloth_Siskeen,

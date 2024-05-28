@@ -10522,7 +10522,7 @@
 		<Max_Lift> .6 </Max_Lift>
 
 		<Armor_Type> ArmourG_Infantry </Armor_Type>
-		<Tactical_Health>25</Tactical_Health>
+		<Tactical_Health>22</Tactical_Health>
 		<Surface_Type_Cover_Damage_Shield>.5</Surface_Type_Cover_Damage_Shield>
 
 		<Damage>0.6</Damage>
@@ -11013,5 +11013,46 @@
 
 		</Unit_Abilities_Data>
 	</Container>
+
+	<GroundInfantry Name="Wolfpack_Phase_Two">
+		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+
+		<Tactical_Health>24</Tactical_Health>
+		<Max_Speed>1.2</Max_Speed>
+
+		<Land_Model_Name>clone_jumptrooper_phase1_legions.ALO</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			clone_jumptrooper_phase2_legions.ALO,
+			Urban, 				clone_jumptrooper_phase2_legions.ALO,
+			Arctic, 			clone_jumptrooper_phase2_snow_legions.ALO,
+			Volcanic, 			clone_jumptrooper_phase2_legions.ALO,
+			Desert, 			clone_jumptrooper_phase2_legions.ALO,
+			Forest, 			clone_jumptrooper_phase2_legions.ALO,
+			Swamp, 				clone_jumptrooper_phase2_legions.ALO
+		</Land_Terrain_Model_Mapping>
+		
+
+
+	</GroundInfantry>
+
+	<Death_Clone Name="Wolfpack_Phase_Two_Force_Whirlwind_Death_Clone">
+		<Variant_Of_Existing_Type>Wolfpack_Phase_Two</Variant_Of_Existing_Type>
+		<CategoryMask>None</CategoryMask>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</Death_Clone>
+
+	<Death_Clone Name="Wolfpack_Phase_Two_Crush_Death_Clone">
+		<Variant_Of_Existing_Type>Wolfpack_Phase_Two</Variant_Of_Existing_Type>
+		<CategoryMask>None</CategoryMask>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</Death_Clone>
+
+	<Death_Clone Name="Wolfpack_Phase_Two_Remote_Bomb_Death_Clone">
+		<Variant_Of_Existing_Type>Wolfpack_Phase_Two</Variant_Of_Existing_Type>
+		<CategoryMask>None</CategoryMask>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</Death_Clone>
 
 </Republic_Infantry>

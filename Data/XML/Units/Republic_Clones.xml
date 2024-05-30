@@ -10462,9 +10462,11 @@
 <!-- FotR_Enhanced -->
 
 	<!-- Wolffe Pack -->
-<!---->
+	
+	<!-- Phase 1 -->
+	
 	<GroundInfantry Name="Wolfpack_Phase_One">
-		<Text_ID>TEXT_UNIT_WOLFPACK_P1</Text_ID>
+		<Text_ID>TEXT_UNIT_WOLFPACK_P1_RIFLEMAN</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_INFANTRY</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_WOLFPACK
@@ -11014,10 +11016,20 @@
 		</Unit_Abilities_Data>
 	</Container>
 
+	<!-- Phase 2 -->
+
 	<GroundInfantry Name="Wolfpack_Phase_Two">
 		<Variant_Of_Existing_Type>Wolfpack_Phase_One</Variant_Of_Existing_Type>
-		<Text_ID></Text_ID>
-		<Encyclopedia_Text> </Encyclopedia_Text>
+		<Text_ID>TEXT_UNIT_WOLFPACK_P2_RIFLEMAN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_WOLFPACK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_WOLFPACK_P2_HEALTH
+		TEXT_TOOLTIP_CLONE_P2_MOVE
+		TEXT_TOOLTIP_CLONE_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
+		</Encyclopedia_Text>
 
 		<Tactical_Health>24</Tactical_Health>
 		<Max_Speed>1.2</Max_Speed>

@@ -1,0 +1,845 @@
+<?xml version="1.0"?>
+<Template_Data>
+
+   <!--# This file contains basic template data for space units.-->
+   <!--It contains some assumptions about the game's xml tags: 1 = purpose known, 2 = purpose unsure, 3 = no clue-->
+   <!--For more info on most tags see space and ground unit templates-->
+
+   <!--Hierarchy:
+      Template_Ground_Structure
+      Template_Ground_Structure_Big
+      Template_Ground_Structure_Big_Base_Building
+      Template_Ground_Structure_Big_Base_Building_Spawn
+      Template_Ground_Structure_Big_Base_Building_Spawn_HQ
+      Template_Ground_Structure_Small
+      Template_Ground_Structure_Build_Pad
+      Template_Ground_Structure_Special
+      Template_Ground_Structure_Special_GTSW
+      Template_Ground_Structure_Special_BUILD_ON
+      Template_Ground_Structure_Special_Base_Shield
+      Template_Ground_Structure_Special_Garrison
+      Template_Ground_Structure_Special_Capture
+      Template_Ground_Structure_Special_Capture_Command_Post
+      Template_Ground_Structure_Special_Gravity_Generator
+      Template_Ground_Structure_Special_Superweapon
+
+
+         to all jammers
+ 			<Battlefield_Modifier_Ability Name="E_Comm_Array_Slower_Reinforcements_Effect">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Reinforcement_Time_Multiplier>2.0</Reinforcement_Time_Multiplier>
+				<Reverse_Application_Logic>Yes</Reverse_Application_Logic>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+
+         <Modifies_Reveal_Range>yes</Modifies_Reveal_Range>
+         <Reveal_Range_Modifier>-.50</Reveal_Range_Modifier>
+
+         <Reinforcement_Prevention_Radius>800</Reinforcement_Prevention_Radius>
+
+   -->
+
+
+<!--
+<SFXEvent_Ambient_Loop>Structure_Communications_Array_Loop</SFXEvent_Ambient_Loop>
+<SFXEvent_Select> Structure_Arena_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select> Structure_Cantina_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select> Structure_Comm_Array_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select> Structure_Hutt_Palace_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select> Structure_Jamming_Station_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select> Structure_Power_Gen_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select> Structure_Scanner_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select> Structure_Shield_Gen_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select> Structure_Turret_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select>Structure_Advanced_Factory_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select>Structure_Heavy_Factory_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select>Structure_Hyper_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select>Structure_Ion_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+<SFXEvent_Select>Structure_Research_Select_SFX</SFXEvent_Select>
+-->
+
+   <Template Name="Template_Ground_Structure" Description="Base template"><!--#-->
+
+      <!--Prevent this from being builable-->
+      <Tech_Level>99</Tech_Level>
+
+      <!--Text-->
+      <Text_ID>TEXT_GROUND_BUNKER</Text_ID>
+      <Encyclopedia_Text>TEXT_ENCYCLOPEDIA_SECONDARY_OUTPOST</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_ENCYCLOPEDIA_BUNKER</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+      <!--Art-->
+      <Icon_Name>i_button_bunker.tga</Icon_Name>
+      <Land_Model_Name>EB_LightFactory.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Select_Box_Scale>50</Select_Box_Scale>
+      <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+
+      <!--
+      CAPTURE_POINT
+      DUMMY_GROUND_STRUCTURE
+      HIDE_WHEN_FOGGED
+      HINT
+      IDLE
+      REVEAL
+      SELECTABLE
+      TACTICAL_SELL
+      UNIT_AI
+      -->
+      <!-- Dev Comment: TACTICAL_UNDER_CONSTRUCTION does not work as a Land_Behavior, since the type->Behaves_Like() fails for some reason when it should not - need to fix -->
+      <Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+
+      <!--
+      ABILITY_COUNTDOWN
+      BASE_SHIELD
+      CAPTURE_POINT
+      DAMAGE_TRACKING
+      DUMMY_GROUND_STRUCTURE
+      DUMMY_LAND_BASE_LEVEL_COMPONENT
+      EARTHQUAKE_TARGET
+      GARRISON_STRUCTURE
+      GRAVITY_CONTROL_FIELD
+      HIDE_WHEN_FOGGED
+      IDLE
+      ION_STUN_EFFECT
+      LAND_OBSTACLE
+      LOBBING_SUPERWEAPON
+      POWERED
+      REVEAL
+      SELECTABLE
+      SHIELDED
+      SPAWN_SQUADRON
+      STUNNABLE
+      TARGETING
+      TERRAIN_TEXTURE_MODIFICATION
+      TURRET
+      UNIT_AI
+      WEAPON-->
+      <LandBehavior>DAMAGE_TRACKING, DUMMY_GROUND_STRUCTURE, DUMMY_LAND_BASE_LEVEL_COMPONENT, EARTHQUAKE_TARGET, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, LAND_OBSTACLE, POWERED, REVEAL, STUNNABLE, TARGETING, UNIT_AI</LandBehavior>
+
+      <Affiliation>Neutral</Affiliation>
+
+      <!--If we have an idle animataion we need to add the respective <LandBehavior> and should enable the tag below-->
+      <!--Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00-->
+
+      <!--Balance-->
+      <Tactical_Health>100</Tactical_Health>
+      <Autoresolve_Health>100</Autoresolve_Health>
+      <AI_Combat_Power>200</AI_Combat_Power>
+      <Armor_Type>Armor_Structure</Armor_Type>
+      <!--Shield_Points>1000</Shield_Points>
+      <Shield_Refresh_Rate>10</Shield_Refresh_Rate-->
+
+      <Build_Cost_Credits>1000</Build_Cost_Credits>
+      <Build_Time_Seconds>18</Build_Time_Seconds>
+      <Sabotage_Cost_Credits>1000</Sabotage_Cost_Credits><!--Should be build cost * 1.2-->
+      <Score_Cost_Credits>6000</Score_Cost_Credits>
+
+      <!--Stuff that can be built at the structure-->
+      <Tactical_Buildable_Objects_Campaign></Tactical_Buildable_Objects_Campaign>
+      <Tactical_Buildable_Objects_Multiplayer></Tactical_Buildable_Objects_Multiplayer>
+
+      <Destruction_Survivors> </Destruction_Survivors>
+      <!--Minimum_Destruction_Survivor_Count>4</Minimum_Destruction_Survivor_Count>
+		<Maximum_Destruction_Survivor_Count>8</Maximum_Destruction_Survivor_Count-->
+
+      <!--================== Values below this point don't usually need to be changed ==================-->
+
+      <!--1: The unit is available for the player without research-->
+      <Build_Initially_Locked>No</Build_Initially_Locked>
+
+      <!--1: -1=infinite. Some buildings should get a production boost, see barracks. TODO=========================================-->
+      <Build_Max_Instances_Per_Planet>-1</Build_Max_Instances_Per_Planet>
+
+      <!--1: Units will always fire at the root bone of the building If this is set higher, hostiles will target it this much above the root bone unless there are <Target_Bones> specified.-->
+      <Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+
+      <!--rebel tech system which we don't use-->
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+      <Slice_Cost_Credits>1</Slice_Cost_Credits>
+
+      <!--On Death-->
+      <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+      <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+
+      <!--Standard buildings are available in the lower row-->
+      <GUI_Row>0</GUI_Row>
+
+      <!--Sometimes yes, sometimes No, mhhhh-->
+      <Is_Dummy>Yes</Is_Dummy>
+
+      <!--Audio-->
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Unit_Lost></SFXEvent_Unit_Lost>
+      <SFXEvent_Unit_Under_Attack></SFXEvent_Unit_Under_Attack>
+      <SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+
+      <!--Requirements-->
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level><!--2: The ground base level is defined through the number of player buildings I think. This tag does NOT derive to variants!-->
+      <Required_Timeline>0</Required_Timeline> <!--2: I think that this tag is deprectated-->
+      <Required_Planets /> <!--1: Can be used multiple times, doesn't overwrite-->
+      <Required_Special_Structures /><!--1: Does also count for skirmish. Can be used multiple times, doesn't overwrite-->
+
+      <!--Default tags that are set for all of our base buildings-->
+      <Mass>1.0</Mass>
+      <CategoryMask>Structure</CategoryMask>
+      <Size_Value>50</Size_Value>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+      <Can_Contain_Heroes_During_Ground_Battle>Yes</Can_Contain_Heroes_During_Ground_Battle>
+      <Influences_Capture_Point>False</Influences_Capture_Point>
+      <Political_Control>0</Political_Control>
+      <Energy_Capacity>10000</Energy_Capacity>
+      <Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+      <Reveal_During_Setup_Phase>true</Reveal_During_Setup_Phase>
+      <Victory_Relevant>yes</Victory_Relevant>
+      <Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+      <!--FOW and Radar-->
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <Radar_Show_Facing>No</Radar_Show_Facing>
+      <Land_FOW_Reveal_Range>350.0</Land_FOW_Reveal_Range>
+      <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+      <Last_State_Visible_Under_FOW>Yes</Last_State_Visible_Under_FOW>
+      <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+      <!--graphics-->
+      <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+      <Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+      <Blob_Shadow_Material_Name>Square_Shadow</Blob_Shadow_Material_Name>
+      <Blob_Shadow_Scale>25.0, 25.0</Blob_Shadow_Scale>
+
+      <!--GUI stuff-->
+      <GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+      <GUI_Bracket_Size>1</GUI_Bracket_Size>
+      <!--GUI_Bracket_Height>0</GUI_Bracket_Height>
+      <GUI_Bracket_Width>40</GUI_Bracket_Width>
+      <GUI_Distance>1000</GUI_Distance>
+      <GUI_Model_Name>W_CANTINATAT.ALO</GUI_Model_Name>
+      <GUI_Offset>0 0 0</GUI_Offset>
+      <GUI_Velocity>45</GUI_Velocity>
+      <GUI_X_Rot>90</GUI_X_Rot-->
+   </Template>
+
+
+   <Template Name="Template_Ground_Structure_Big" Description="Used for all kind of buildings which are more than a small bp turret"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure</Variant_Of_Existing_Type>
+      <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+      <GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+      <!--Set tgis to troe for the really big stuff-->
+      <Exclude_From_Distance_Fade>false</Exclude_From_Distance_Fade>
+
+      <!-- The ground structures have this data which looks like it's space only because the
+      snowspeeders are using space style pathfinding which needs this information so that we won't
+      path speeders through structures -->
+      <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+      <Space_Layer> Corvette </Space_Layer>
+
+      <!--Check the damage stages (ALT model)-->
+      <!--Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX-->
+
+      <!--If the strcture was built on a build pad-->
+      <!--Obstacle_Proxy_Type> Communications_Array_E_Build_Pad</Obstacle_Proxy_Type-->
+
+      <!--After the structure dies it will leave ruins behind. The tags below make sure that they cannot be walked through-->
+      <!--Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>40.0</Obstacle_Height>
+		<Obstacle_X_Offset>-20.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset-->
+
+      <!--Used to overwrite collision-->
+      <!--Custom_Hard_XExtent>26.0</Custom_Hard_XExtent>
+      <Custom_Hard_YExtent>26.0</Custom_Hard_YExtent-->
+
+      <!--We can cause the building to spawn a seperate texture around it. Requires TERRAIN_TEXTURE_MODIFICATION behaviour. Not used in TPC-->
+      <!--Terrain_Texture_Modifier_Join_Distance>500.0</Terrain_Texture_Modifier_Join_Distance>
+      <Terrain_Texture_Modifier_Material>62</Terrain_Texture_Modifier_Material>
+      <Terrain_Texture_Modifier_Square>False</Terrain_Texture_Modifier_Square-->
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </Template>
+
+
+    <Template Name="Template_Ground_Structure_Big_Base_Building" Description="Used for base buildings in skirmish and GC"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big</Variant_Of_Existing_Type>
+
+      <!--Deprecated tag from vanilla EaW before ground buildings became movable on GC layer. Alternative: Out_Base-->
+      <Base_Position>In_Base</Base_Position>
+
+      <Property_Flags>InBase</Property_Flags>
+      <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+      <Victory_Relevant>yes</Victory_Relevant>
+      <Tactical_Health>1500</Tactical_Health>
+      <Autoresolve_Health>1500</Autoresolve_Health>
+      <AI_Combat_Power>500</AI_Combat_Power>
+      <Armor_Type>Armor_Structure</Armor_Type>
+      <Build_Cost_Credits>500</Build_Cost_Credits>
+      <Build_Time_Seconds>22</Build_Time_Seconds>
+      <Score_Cost_Credits>1000</Score_Cost_Credits>
+
+      <!--Only necessary for multiplayer skirmish-->
+      <Is_Community_Property>Yes</Is_Community_Property>
+
+      <!--Most likely unused tag that was required when ground base levels where a thing-->
+      <Base_Level_Available>1</Base_Level_Available>
+
+      <!--Every building does self heal. Note that for skirmish, an income stream nees to be added.-->
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Generic_Base_Structure_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Amount>0.0</Heal_Amount>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Applicable_Unit_Categories />
+            <Applicable_Unit_Types />
+            <SFXEvent_Target_Affected />
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2 />
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+
+
+   <Template Name="Template_Ground_Structure_Big_Base_Building_Spawn" Description="Base buildings that spawn units"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+
+      <!--This needs to be added to the building-->
+      <!--LandBehavior>SPAWN_SQUADRON</LandBehavior-->
+      <LandBehavior>DAMAGE_TRACKING, DUMMY_GROUND_STRUCTURE, DUMMY_LAND_BASE_LEVEL_COMPONENT, EARTHQUAKE_TARGET, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, LAND_OBSTACLE, POWERED, REVEAL, SPAWN_SQUADRON, STUNNABLE, TARGETING, UNIT_AI</LandBehavior>
+
+      <!--1: Defines how many units of the given type are spawned/active at the same time resp. can be respawned. -1 means infinite. Requires SPAWN_SQUADRON behaviour. Doesn't overwrite and can be used multiple times-->
+      <!--Starting_Spawned_Units_Tech_0>AT_AT_Walker, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>AT_AT_Walker, -1</Reserve_Spawned_Units_Tech_0-->
+
+      <Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+      <Spawned_Squadron_Delay_Seconds>25</Spawned_Squadron_Delay_Seconds>
+      <Spawned_Squadron_Location_Bones>ROOT</Spawned_Squadron_Location_Bones>
+      <Spawned_Squadron_Location_Flyout_Distances>110.0</Spawned_Squadron_Location_Flyout_Distances>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+
+
+   <Template Name="Template_Ground_Structure_Big_Base_Building_Spawn_HQ" Description="Headquarters!"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn</Variant_Of_Existing_Type>
+      <Tactical_Health>4000</Tactical_Health>
+      <Autoresolve_Health>4000</Autoresolve_Health>
+      <AI_Combat_Power>1500</AI_Combat_Power>
+      <Build_Cost_Credits>1000</Build_Cost_Credits>
+      <Build_Time_Seconds>25</Build_Time_Seconds>
+      <Score_Cost_Credits>4000</Score_Cost_Credits>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      
+      <SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+      <HQ_Win_Condition_Relevant>yes</HQ_Win_Condition_Relevant>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+
+
+
+   <Template Name="Template_Ground_Structure_Small" Description="Only used for small, unimportant stuff"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure</Variant_Of_Existing_Type>
+      <Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+      <Reveal_During_Setup_Phase>false</Reveal_During_Setup_Phase>
+      <Victory_Relevant>no</Victory_Relevant>
+      <GUI_Bracket_Size>0</GUI_Bracket_Size>
+      <Blob_Shadow_Scale>10.0, 10.0</Blob_Shadow_Scale>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+   
+   
+   
+   <Template Name="Template_Ground_Structure_Build_Pad" Description="For skirmish buildings to be constructed"><!--#-->
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_NONE</MP_Encyclopedia_Text>      
+      <Icon_Name>DUMMY.tga</Icon_Name>
+      <Land_Model_Name>DUMMY.ALO</Land_Model_Name>      
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Neutral</Affiliation>
+      <!--Tactical_Buildable_Objects_Multiplayer>Rebel, UC_R_Ground_Barracks</Tactical_Buildable_Objects_Multiplayer-->      
+      
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+      <Minimum_Time_Before_Pad_Can_Build_Again> 80 </Minimum_Time_Before_Pad_Can_Build_Again>
+      <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>      
+      <Behavior>TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+      <GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>	
+		<Victory_Relevant>No</Victory_Relevant>
+		<Hides_When_Built_On>True</Hides_When_Built_On>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>	
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Is_Visible_On_Radar>True</Is_Visible_On_Radar>	
+		<Mass>1.0</Mass>
+		<Is_Dummy>No</Is_Dummy>
+		<Space_Layer> Corvette </Space_Layer>
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>		
+		<Size_Value>50</Size_Value>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>		
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Immune_To_Damage>True</Immune_To_Damage>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+   
+  
+   
+   <Template Name="Template_Ground_Structure_UC" Description="For skirmish buildings that are under construction"><!--#-->
+      <Text_ID>TEXT_NONE</Text_ID> 
+      <Encyclopedia_Text> EXT_NONE</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>TEXT_NONE</MP_Encyclopedia_Text>		
+      <Land_Model_Name>DUMMY_UC.alo</Land_Model_Name>
+      <Icon_Name>DUMMY.tga</Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Neutral</Affiliation>
+      <!--Tactical_Buildable_Constructed> Rebel_Command_Center </Tactical_Buildable_Constructed-->
+		<Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      
+      <Tactical_Health>4000</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer> 2200 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 45 </Tactical_Build_Time_Seconds>
+      
+      <!--Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX-->     
+      <!-- <Obstacle_Proxy_Type> Rebel_Command_Center_Build_Pad </Obstacle_Proxy_Type> -->  
+       
+      <Encyclopedia_Unit_Class>TEXT_REBEL_BUILD_PAD</Encyclopedia_Unit_Class>     
+      <Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+      <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+      <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+      <SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+      <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+      <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+      		
+		<Behavior>TACTICAL_UNDER_CONSTRUCTION, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<LandBehavior>TERRAIN_TEXTURE_MODIFICATION, LAND_OBSTACLE, SPACE_OBSTACLE</LandBehavior>
+		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>		
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Size_Value>50</Size_Value>			
+		<Space_Layer> Corvette </Space_Layer>		
+		<Mass>1.0</Mass>
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>		
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator> 	
+		<Influences_Capture_Point> False </Influences_Capture_Point>		
+   </Template>
+
+
+
+   <Template Name="Template_Ground_Structure_Special" Description="Collection of special tags - do not use"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure</Variant_Of_Existing_Type>
+
+      <!--1: Allows to set a special icon in galactic map view-->
+      <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+
+      <!--1: Only needed for buildings with <HardPoints>. Prevents the building from blowing up after HPs have been destroyed-->
+      <Should_Be_Destroyed_When_All_Hardpoints_Destroyed>No</Should_Be_Destroyed_When_All_Hardpoints_Destroyed>
+
+      <!--3: Only on shield and shield gen, most likely a mistake since usually buildings don't leave footsteps...-->
+      <Custom_Soft_Footprint_Radius> 40 </Custom_Soft_Footprint_Radius>
+
+      <!--1: When one of these objects is created in galactic mode, we will populate every marker in land mode
+      that is a specific marker for E_Ground_Turbolaser_Tower. The galactic object will persist unless all
+      instances of those tactical objects have been destroyed. -->
+      <Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+      <Place_Other_Type_At_Every_Specific_Marker_Position>E_Ground_Turbolaser_Tower</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+      <!--3: Only used on cantina-->
+      <Build_Requires_Initial_Placement>true</Build_Requires_Initial_Placement>
+
+      <!--3: Used on the ground shutter shields-->
+      <Bombing_Run_Prevention_Radius>1000</Bombing_Run_Prevention_Radius>
+
+      <!--3: ???-->
+      <Secondary_Objective> TEXT_TACTICAL_SECONDARY_TURBOLASER_CAPTURE</Secondary_Objective>
+
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+   <Template Name="Template_Ground_Structure_Special_GTSW" Description="Collection of special tags - do not use"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Special</Variant_Of_Existing_Type>
+      <!--3: ???-->
+      <Prevents_Blockade_Run_Attrition>True</Prevents_Blockade_Run_Attrition>
+      <SFXEvent_Special_Weapon_Ready></SFXEvent_Special_Weapon_Ready>
+      <Weapon_Quantity>1</Weapon_Quantity>
+      <Weapon_Type>Ion_Cannon_Planetary</Weapon_Type>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+   <Template Name="Template_Ground_Structure_Special_BUILD_ON" Description="Collection of special tags - do not use"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Special</Variant_Of_Existing_Type>
+      <LandBehavior>TACTICAL_SELL</LandBehavior>
+
+      <!--1: For how much you can sell the building if it was constructed on a build pad.-->
+      <Tactical_Sell_Credits> 400</Tactical_Sell_Credits>
+
+      <!--3: ???-->
+      <SFXEvent_Sold_Tactical></SFXEvent_Sold_Tactical>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+   <Template Name="Template_Ground_Structure_Special_Base_Shield" Description="Collection of special tags - do not use"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Special</Variant_Of_Existing_Type>
+      <SecondaryOccupationPassability> Shield</SecondaryOccupationPassability>
+      <Base_Shield_Always_Off> False</Base_Shield_Always_Off>
+      <Base_Shield_Radius>370</Base_Shield_Radius>
+      <Radar_Range_Icon_Name>i_radar_shield.tga</Radar_Range_Icon_Name><!-- icon for when the shield's up -->
+      <!--Related to Death_Clone_Is_Obstacle?-->
+      <Fine_Tune_Occupied_Passability> false </Fine_Tune_Occupied_Passability>
+
+      <Shield_Normal_Color>0.2, 0.2, 0.8, 1.0</Shield_Normal_Color>
+      <Shield_Upgraded_Color>0.2, 0.7, 0.8, 1.0</Shield_Upgraded_Color>
+      <Shield_Off_Anim>SHIELD_OFF</Shield_Off_Anim>
+      <Shield_On_Anim>SHIELD_ON</Shield_On_Anim>
+
+      <SFXEvent_Powered_Active_Loop> Structure_Shutter_Shield_Generator_Loop</SFXEvent_Powered_Active_Loop>
+
+      <!--Pgen-->
+      <Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Power_Generator_Cinematic_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <Requires_Base_Power>True</Requires_Base_Power>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+   <Template Name="Template_Ground_Structure_Special_Garrison" Description="Collection of special tags - do not use"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Special</Variant_Of_Existing_Type>
+      <LandBehavior>GARRISON_STRUCTURE</LandBehavior>
+
+      <!--3: Where units can shoot from?-->
+      <Garrison_Bone_Names>b_garrison_00, b_garrison_01, b_garrison_02, b_garrison_03</Garrison_Bone_Names>
+
+      <!--1:How close units need to come to enter-->
+      <Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+
+      <!--3: Fire range?-->
+      <Garrison_Radius>5</Garrison_Radius>
+
+      <!--3: ???-->
+      <Num_Garrison_Guns>8</Num_Garrison_Guns>
+
+      <!--1: How many units can the structure fit-->
+      <Num_Garrison_Slots>5</Num_Garrison_Slots>
+
+      <!--1: Unit types that can be garrisoned-->
+      <Garrison_Category> Infantry</Garrison_Category>
+
+      <!--1: How far units will leave the structure when kicked out-->
+      <Garrison_Exit_Dist>50</Garrison_Exit_Dist>
+
+      <!--3: Only used on the bunker...-->
+      <Space_Layer>Land</Space_Layer>
+      <UnitCollisionClass>Vehicle</UnitCollisionClass>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+   <Template Name="Template_Ground_Structure_Special_Capture" Description="Collection of special tags - do not use"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Special</Variant_Of_Existing_Type>
+      <Ownership_Sticks>Yes</Ownership_Sticks>
+      <Begin_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</Begin_Control_Transition_Radar_Event>
+      <End_Control_Transition_Radar_Event>DEFAULT_CONTROL_POINT_TRANSITION</End_Control_Transition_Radar_Event>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+   <Template Name="Template_Ground_Structure_Special_Capture_Command_Post" Description="Collection of special tags - do not use"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Special_Capture</Variant_Of_Existing_Type>
+      <Behavior>CAPTURE_POINT</Behavior>
+      <Capture_Point_Radius>200.0</Capture_Point_Radius>
+      <Capture_Point_Transition_Time_Seconds>10.0</Capture_Point_Transition_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+   <Template Name="Template_Ground_Structure_Special_Gravity_Generator" Description="Collection of special tags - do not use"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Special</Variant_Of_Existing_Type>
+      <LandBehavior>GRAVITY_CONTROL_FIELD</LandBehavior>
+      <Gravity_Control_Field_Range> 3000.0 </Gravity_Control_Field_Range>
+		<Gravity_Control_Field_Slow_Fraction>0.9</Gravity_Control_Field_Slow_Fraction>
+		<Gravity_Control_Field_Effect>Repulsor_Jammer_Effect</Gravity_Control_Field_Effect>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+   <Template Name="Template_Ground_Structure_Special_Superweapon" Description="Collection of special tags - do not use"><!--#-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Special</Variant_Of_Existing_Type>
+      <Lobbing_Superweapon_Chargeup_Frames>90</Lobbing_Superweapon_Chargeup_Frames>
+      <Lobbing_Superweapon_Chargeup_Particle_Bone_Name>attack_cool_bone</Lobbing_Superweapon_Chargeup_Particle_Bone_Name>
+      <Lobbing_Superweapon_Chargeup_Particle>Magnepulse_Chargeup_Particles</Lobbing_Superweapon_Chargeup_Particle>
+      <Lobbing_Superweapon_SFXEvent_Chargeup></Lobbing_Superweapon_SFXEvent_Chargeup>
+      <Lobbing_Superweapon_SFXEvent_Fire></Lobbing_Superweapon_SFXEvent_Fire>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </Template>
+
+
+   <!--==========Turret Templates==========-->
+
+
+   <Template Name="Abstract_Turret">
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+
+      <Behavior> SELECTABLE, TACTICAL_SELL </Behavior>
+      <LandBehavior> TURRET, TARGETING, WEAPON, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, STUNNABLE, EARTHQUAKE_TARGET </LandBehavior>
+
+      <Select_Box_Scale>45</Select_Box_Scale>
+      <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+      <Tactical_Health>700</Tactical_Health>
+      <Land_FOW_Reveal_Range>260.0</Land_FOW_Reveal_Range>
+	   <Targeting_Max_Attack_Distance>260.0</Targeting_Max_Attack_Distance>
+	   <Targeting_Min_Attack_Distance>10.0</Targeting_Min_Attack_Distance>
+      <Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+      <Tactical_Sell_Credits>250</Tactical_Sell_Credits>
+
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Vehicle </UnitCollisionClass>
+      <Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+      <Armor_Type>Armor_Turret</Armor_Type>
+      <Targeting_Stickiness_Time_Threshold>30.0</Targeting_Stickiness_Time_Threshold>
+
+      <Has_Land_Evaluator>True</Has_Land_Evaluator>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <Mass>1.0</Mass>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Shield_Points>0</Shield_Points>
+      <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+      <Damage>30</Damage>
+      <Energy_Capacity>999</Energy_Capacity>
+      <Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+      <Influences_Capture_Point>False</Influences_Capture_Point>
+      <Base_Level_Available>1</Base_Level_Available>
+      <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+      <Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+      <Turret_Rotate_Speed>5.0</Turret_Rotate_Speed>
+      <Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+      <Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+      <Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+      <Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+      <Death_Explosions>Small_Explosion_Land</Death_Explosions>
+      <Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+      <Remove_Upon_Death>true</Remove_Upon_Death>
+
+      <Victory_Relevant>no</Victory_Relevant>
+      <Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+      <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <Radar_Icon_Size>0.075 0.075</Radar_Icon_Size>
+      <GUI_Bracket_Width>20</GUI_Bracket_Width>
+      <GUI_Bracket_Height>0</GUI_Bracket_Height>
+      <GUI_Bracket_Size>0</GUI_Bracket_Size>
+
+      <Property_Flags>Turret | TacticalStructure</Property_Flags>
+
+      <SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor </SFXEvent_Turret_Rotating_Loop>
+      <SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+
+      <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Turret_Self_Repair">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.010</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>Yes</Single_Target_Heal>
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types />
+                <SFXEvent_Target_Affected />
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2 />
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+
+   </Template>
+
+
+   <Template Name="Abstract_Anti_Infantry_Turret">
+      <Variant_Of_Existing_Type> Abstract_Turret </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_STRUCTURE_TURRET_AI</Text_ID>
+      <Encyclopedia_Text>TEXT_TOOLTIP_AI_TURRET</Encyclopedia_Text>
+
+      <LandBehavior> TURRET, TARGETING, WEAPON, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, STUNNABLE, POWERED, EARTHQUAKE_TARGET </LandBehavior>
+
+      <Turret_Rotate_Speed>5.0</Turret_Rotate_Speed>
+      <Targeting_Min_Attack_Distance>10.0</Targeting_Min_Attack_Distance>
+
+      <Land_FOW_Reveal_Range>260.0</Land_FOW_Reveal_Range>
+	  <Targeting_Max_Attack_Distance>260.0</Targeting_Max_Attack_Distance>
+      <Attack_Category_Restrictions> Structure </Attack_Category_Restrictions>
+
+      <Targeting_Priority_Set>AntiInfantryTurret</Targeting_Priority_Set>
+      <Attack_Category_Restrictions> Air </Attack_Category_Restrictions>
+      <Targeting_Stickiness_Time_Threshold>30.0</Targeting_Stickiness_Time_Threshold>
+      <CategoryMask> Structure | AntiInfantry </CategoryMask>
+
+      <Targeting_Fire_Inaccuracy> Infantry, 7.0 </Targeting_Fire_Inaccuracy>
+      <Targeting_Fire_Inaccuracy> Vehicle, 20.0 </Targeting_Fire_Inaccuracy>
+      <Targeting_Fire_Inaccuracy> Air, 0.0 </Targeting_Fire_Inaccuracy>
+      <Targeting_Fire_Inaccuracy> Structure, 0.0 </Targeting_Fire_Inaccuracy>
+
+      <SFXEvent_Fire></SFXEvent_Fire>
+      <Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>50</Turret_Elevate_Extent_Degrees>
+      <Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+      <Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+      <AI_Combat_Power>100</AI_Combat_Power>
+      <Score_Cost_Credits> 800 </Score_Cost_Credits>
+
+      <SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor </SFXEvent_Turret_Rotating_Loop>
+      <SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+
+   </Template>
+
+
+   <Template Name="Abstract_Anti_Vehicle_Turret">
+      <Variant_Of_Existing_Type> Abstract_Turret </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_STRUCTURE_TURRET_AV</Text_ID>
+      <Encyclopedia_Text>TEXT_TOOLTIP_AV_TURRET</Encyclopedia_Text>
+
+      <LandBehavior> TURRET, TARGETING,WEAPON, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, STUNNABLE, POWERED, EARTHQUAKE_TARGET </LandBehavior>
+
+      <Turret_Rotate_Speed>3.0</Turret_Rotate_Speed>
+      <Targeting_Min_Attack_Distance>10.0</Targeting_Min_Attack_Distance>
+
+      <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+      <Attack_Category_Restrictions> Structure </Attack_Category_Restrictions>
+
+      <Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>30</Turret_Elevate_Extent_Degrees>
+
+      <Targeting_Priority_Set>AntiVehicleTurret</Targeting_Priority_Set>
+      <Attack_Category_Restrictions> Air </Attack_Category_Restrictions>
+      <Targeting_Stickiness_Time_Threshold>30.0</Targeting_Stickiness_Time_Threshold>
+
+      <SFXEvent_Fire></SFXEvent_Fire>
+
+      <CategoryMask> Structure | AntiVehicle </CategoryMask>
+
+      <AI_Combat_Power>150</AI_Combat_Power>
+      <Score_Cost_Credits> 1000 </Score_Cost_Credits>
+
+      <SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor </SFXEvent_Turret_Rotating_Loop>
+      <SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+   </Template>
+
+
+   <Template Name="Abstract_Anti_Aircraft_Turret">
+      <Variant_Of_Existing_Type> Abstract_Turret </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_STRUCTURE_TURRET_AA</Text_ID>
+      <Encyclopedia_Text>TEXT_TOOLTIP_AA_TURRET</Encyclopedia_Text>
+
+      <Turret_Rotate_Speed>10.0</Turret_Rotate_Speed>
+      <Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+      <Attack_Category_Restrictions> Infantry, Vehicle, Structure </Attack_Category_Restrictions>
+      <Fire_Category_Restrictions> Infantry, Vehicle, Structure </Fire_Category_Restrictions>
+
+      <Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+      <Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+      <Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+      <Targeting_Priority_Set>AntiAirTurret</Targeting_Priority_Set>
+      <Attack_Category_Restrictions>Infantry | Vehicle | LandHero | Structure</Attack_Category_Restrictions>
+      <Targeting_Stickiness_Time_Threshold>30.0</Targeting_Stickiness_Time_Threshold>
+
+      <Targeting_Fire_Inaccuracy> Infantry, 60.0 </Targeting_Fire_Inaccuracy>
+      <Targeting_Fire_Inaccuracy> Vehicle, 35.0 </Targeting_Fire_Inaccuracy>
+      <Targeting_Fire_Inaccuracy> Air, 1.0 </Targeting_Fire_Inaccuracy>
+      <Targeting_Fire_Inaccuracy> Structure, 25.0 </Targeting_Fire_Inaccuracy>
+
+      <CategoryMask> Structure | AntiAir </CategoryMask>
+
+      <AI_Combat_Power>125</AI_Combat_Power>
+      <Score_Cost_Credits> 1300 </Score_Cost_Credits>
+
+      <SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor </SFXEvent_Turret_Rotating_Loop>
+      <SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+   </Template>
+
+
+   <Template Name="Abstract_Sensor_Node">
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_TOOLTIP_SENSOR_NODE</Encyclopedia_Text>
+      <Land_Model_Name>NB_SensorNode.alo</Land_Model_Name>
+      <Icon_Name>i_button_sensor_node.tga</Icon_Name>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+      <SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Sensor_Array_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+      <Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+      <Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+      <Behavior>SELECTABLE, TACTICAL_SELL</Behavior>
+      <LandBehavior> IDLE, REVEAL, HIDE_WHEN_FOGGED, LAND_OBSTACLE </LandBehavior>
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+
+      <Land_FOW_Reveal_Range>500.0</Land_FOW_Reveal_Range>
+      <Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+      <Select_Box_Scale>50</Select_Box_Scale>
+
+      <Mass>1.0</Mass>
+      <Scale_Factor>0.75</Scale_Factor>
+
+      <Shield_Points>0</Shield_Points>
+      <Tactical_Health>100</Tactical_Health>
+      <Armor_Type> Armor_Turret </Armor_Type>
+      <Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+      <Victory_Relevant>No</Victory_Relevant>
+      <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+      <CategoryMask>Structure</CategoryMask>
+      <GUI_Bracket_Width>20</GUI_Bracket_Width>
+      <GUI_Bracket_Height>0</GUI_Bracket_Height>
+      <GUI_Bracket_Size>1</GUI_Bracket_Size>
+      <Has_Land_Evaluator>True</Has_Land_Evaluator>
+      <Influences_Capture_Point>False</Influences_Capture_Point>
+      <Target_Stealth_Units>Yes</Target_Stealth_Units>
+   </Template>
+
+
+</Template_Data>

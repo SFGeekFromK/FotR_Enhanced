@@ -1,0 +1,1511 @@
+<?xml version="1.0"?>
+<Template_Data>
+
+   <!--# This file contains basic template data for space units.-->
+   <!--It contains assumptions about the game's xml tags: 1 = purpose known, 2 = purpose unsure, 3 = no clue-->
+
+   <!--Hierarchy:
+   =Template_Space_Unit_Base
+    +=+==Template_Space_Unit_Capital_Base
+    | +=+===Template_Space_Unit_Corvette
+    | | +======Template_Space_Hero_Corvette
+    | +=+===Template_Space_Unit_Cruiser
+    | | +======Template_Space_Hero_Cruiser
+    | +=+===Template_Space_Unit_Light_Battleship
+    | | +======Template_Space_Hero_Light_Battleship
+    | +=+===Template_Space_Unit_Medium_Battleship
+    | | +======Template_Space_Hero_Medium_Battleship
+    | +=+===Template_Space_Unit_Heavy_Battleship
+    | | +======Template_Space_Hero_Heavy_Battleship
+    | +=====Template_Space_Unit_Transport
+    +=+==Template_Space_Unit_Fighter_Multi 
+      +=====Template_Space_Hero_Fighter_Multi
+      +=+===Template_Space_Unit_Fighter_Single
+      | +======Template_Space_Hero_Fighter_Single
+      +=====Template_Space_Unit_Bomber_Multi
+      +=====(Template_Space_Unit_Direct_Fire)    
+   =Template_Space_Deathclone
+   =Template_Space_Squadron
+   =Template_Space_Container   
+   -->
+
+   <Template Name="Template_Space_Unit_Base" Description="Base template - do not use"><!--#-->   
+   
+      <!--Prevent this from being builable-->
+      <Tech_Level>99</Tech_Level>
+   
+      <!--1: Name of the unit displayed in the game, referenced through the MasterTextFile-->
+      <Text_ID>TEXT_NONE</Text_ID>
+      
+      <!--1: Description of the unit displayed in the game, referenced through the MasterTextFile-->
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+      
+      <!--1: Name of the unit displayed in the game, referenced through the MasterTextFile. May contain multiple text enries.-->
+      <Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+      
+      <!--1: Displays up to 3 icons of the unit (xml name) the unit is good/bad against in the tooltip-->
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>      
+      
+      <!--1: Name of the icon in the command bar-->
+      <Icon_Name>MISSING.tga</Icon_Name>
+      
+      <!--1: Name of the model-->
+      <Space_Model_Name>MISSING.ALO</Space_Model_Name>
+      
+      <!--1: Scale of the model. 1=no change, smaller values make the model smaller and vice versa-->
+      <Scale_Factor>1.0</Scale_Factor>
+          
+      <!--2:
+      //Locomotors:
+         SIMPLE_SPACE_LOCOMOTOR: Default space locomotor
+         FIGHTER_LOCOMOTOR: Used for, *suprise*, fighters
+      ABILITY_COUNTDOWN: Required for all abilities that have a cooldown
+      AMBIENT_SFX: Used for playing ambient sounds. Related tags: <SFXEvent_Ambient_Moving>
+      ASTEROID_FIELD_DAMAGE: The unit will take damage when flying through any object tagged with <Is_Asteroid_Field>Yes</Is_Asteroid_Field> 
+      DAMAGE_TRACKING: ???  Used for nearly every unit 
+      DUMMY_TOOLTIP: ??? Used by the Eclipse
+      HIDE_WHEN_FOGGED: Unit can't be seen when under fog of war      
+      ION_STUN_EFFECT: The unit can be influenced by any weapon that causes ion stun 
+      NEBULA: The ship is affected by nebulas (Objects with <Is_Nebula>Yes</Is_Nebula>)
+      POWERED: ???
+      REVEAL: The unit can lift fog of war. Related xml tags: <Land_FOW_Reveal_Range>
+      SELECTABLE: Obvious
+      SHIELDED: Used when the unit has a shield. Related xml tags: <Shield_Points>, <Shield_Refresh_Rate>
+      SPAWN_SQUADRON
+      TARGETING: ??? Used by nearly all units. It seems that this is needed for some abilities that target something (e.g. the "Drain" ability)
+      UNIT_AI: ???  There is a prop comment "pod should be seen thru FoW", so there seems to be some kind of FOW relation     
+      WEAPON: This is required if the unit fires a weapon through the unit code, ie mostly fighters. If the unit uses hardpoints instead it leave it out
+      //Special behaviors required for certain special abilities to work
+         BARRAGE
+         HUNT
+         LURE
+         SELF_DESTRUCT
+      -->
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, TARGETING, UNIT_AI</SpaceBehavior>
+    
+      <!--2: Color of the "team color" part of textures when the unit is neutral-->
+      <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+
+      <!--1: The unit can be seen on the radar-->
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>    
+      <!--1: If this is no, the unit can only be seen by allies-->
+      <Is_Visible_On_Enemy_Radar>Yes</Is_Visible_On_Enemy_Radar>
+      <!--1: Name of the unit's icon on the minimap, referenced in the CommandBar-->
+      <Radar_Icon_Name></Radar_Icon_Name>
+      <!--1: Scale factor for the radar icon-->
+      <Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+      <!--1: The unit can even be seen under FOW-->
+      <Visible_On_Radar_When_Fogged>false</Visible_On_Radar_When_Fogged>
+      <!--1: This allows scaling on two axes, x,y-->
+      <!--Radar_Icon_Size>0.4  0.4</Radar_Icon_Size-->
+      <!--2: Used by Eclipse ans Death Star. I think this is necessary to put the object before planets/nebulas since they have <In_Background>Yes</In_Background>-->
+      <!--Radar_Register_As_Foreground_Object>Yes</Radar_Register_As_Foreground_Object-->
+      
+      <!--1: This makes a cloaked unit visible to all allied units nearby-->
+      <Target_Stealth_Units>No</Target_Stealth_Units>
+
+      <!--1: Do we want to loop the first idle animation? (PS: Space units usually don't have idle anims)-->
+      <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>   
+            
+      <!--2: Mostly ranges around 0.999. Affects <Max_Thrust>-->
+      <Mass>0.999</Mass>
+
+      <!--1: Max speed to which a unit accelerates-->
+      <Max_Speed>2.0</Max_Speed>
+      <!--2: Used for corvettes and fighters but nothing beyond that size-->
+      <!--Min_Speed>1.0</Min_Speed-->
+      
+      <!--3: Used by some fighters-->
+      <!--Min_Speed_Fraction_For_Turn>0.7</Min_Speed_Fraction_For_Turn-->
+      
+      <!--1: How FAR the unit will roll sideways around its own axis when moving in a curve.-->
+      <Bank_Turn_Angle>5</Bank_Turn_Angle>
+      
+      <!--1: How FAST the unit will roll sideways to the angle defined in <Bank_Turn_Angle> when moving in a curve.-->
+      <Max_Rate_Of_Roll>0.3</Max_Rate_Of_Roll>
+      
+      <!--1: Thrust is how fast a unit accelerates based newtonian acceleration using <Mass>. It can be disabled with <OverrideAcceleration>. Thrust makes the unit accelerate differently depending on whether a movementorder was given closeby or across the map.-->
+      <Max_Thrust>0.1</Max_Thrust>
+            
+      <!--2: How fast the unit can turn around. After faster base speed requires a faster turn rate.-->
+      <Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+      
+      <!--1: These damage particles will be spawned on the ship when it's moving through an asteroid field-->
+      <Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+      <!--1: Allows units to travel between planets in galactic view-->
+      <Hyperspace>Yes</Hyperspace>
+      
+      <!--1: Defines how fast a unit travels between planets in galactic view-->
+      <Hyperspace_Speed>1.5</Hyperspace_Speed>
+      
+      <!--3: Not sure what exactly the implications are. If this is Yes and the Ship_Class set to Bomber this will enable the unit to perform bombing runs if a bombing run version is coded-->
+      <Is_Bomber>no</Is_Bomber>
+      
+      <!--3: "No" for Interdictor and bombers. Not set for capitals-->
+      <!--Is_Escort>Yes</Is_Escort--> 
+      
+      <!--1: Defines the number of fighters in a squadron. For all bigger ships always 1-->
+      <Number_per_Squadron>1</Number_per_Squadron>  
+      
+      <!--3: How many squadrons a unit can cary when moving into hyperspace? May be deprecated.-->
+      <Squadron_Capacity>20</Squadron_Capacity>       
+            
+      <!--2: Defines the role of the unit (type [Corvette, Frigate, Capital, SpaceHero, NonCombatHero, Structure] + targeting priority [AntiFighter, AntiBomber, AntiCorvette, AntiFrigate, AntiCapital]), such as Corvette | SpaceHero | AntiFighter | AntiBomber-->
+      <CategoryMask>Capital</CategoryMask>
+      
+      <!--2: Values are: Space, Infantry, Flying, Tracked, Wheeled, Spotter, Walker, LargeWalker, Hover, LargeHover-->
+      <MovementClass>Space</MovementClass>
+      
+      <!--3: Values are fighter, bomber, corvette, frigate, capital, super. There is also capital_ship in some DCs which I consider an error. If this is Bomber and Is_Bomber set to Yes this will enable the unit to perform bombing runs if a bombing run version is coded-->
+      <Ship_Class>capital</Ship_Class>    
+      
+      <!--1: Required for the deploy ability, requires deploy animations-->
+      <Deploys>No</Deploys>     
+      <!--1: The unit will automatically deploy when given an attack order and being in range. Default is YES-->
+      <!--Auto_Deploys>No</Auto_Deploys-->   
+      <!--1: Speed of the deploy animation-->
+      <!--Deployment_Anim_Rate>1.0</Deployment_Anim_Rate-->
+      <!--1: Increased max attack distance in deployed state-->
+      <!--Deployed_Max_Attack_Distance_Multiplier>1.0</Deployed_Max_Attack_Distance_Multiplier-->    
+      <!--3: ???-->
+      <!--Must_Face_Target_To_Attack_When_Deployed>Yes</Must_Face_Target_To_Attack_When_Deployed-->
+      <!--1: The shield will only be considered active in the deployed state-->
+      <!--Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed-->
+      <!--1: This allows for a changed turret behaviour in the deployed state-->
+      <!--Deployed_Turret_Elevate_Extent_Degrees>180</Deployed_Turret_Elevate_Extent_Degrees>
+      <Deployed_Turret_Rotate_Extent_Degrees>360</Deployed_Turret_Rotate_Extent_Degrees-->
+     
+      <!--3: No idea, in my tests units were also able to fire undeployed even if the second tag was set to NO-->
+      <!--Fire_Weapon_When_Deployed>No</Fire_Weapon_When_Deployed>
+      <Fire_Weapon_When_Undeployed>Yes</Fire_Weapon_When_Undeployed-->
+      
+      <!--1: ROCKET_ATTACK ability specific strings-->
+      <!--Fire_Weapon_When_In_Normal_Attack_Mode>Yes</Fire_Weapon_When_In_Normal_Attack_Mode>
+      <Fire_Weapon_When_In_Rocket_Attack_Mode>No</Fire_Weapon_When_In_Rocket_Attack_Mode-->     
+      
+      <!--2: Always 0, pretty sure that this is a deprectated tag not used in the game-->
+      <Political_Control>0</Political_Control>
+      <!--Political_Faction>Empire</Political_Faction-->
+
+      <!--1: The faction of the unit-->
+      <Affiliation>Neutral</Affiliation>
+      
+      <!--1: Always NO except for planets-->
+      <Show_Name>No</Show_Name>
+      
+      <!--3: ???-->
+      <Size_Value>300</Size_Value>
+      
+      <!--3: See comment in ground template-->
+      <Damage>40</Damage>
+      
+      <!--1: Shield health-->
+      <Shield_Points>1000</Shield_Points>
+      
+      <!--2: Shields restored per second-->
+      <Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+      
+      <!--1: Health of any unit that doesn't use hardpoints with health. If the latter is the case, this should be roughly the same as the sum of all hardpoint health as there is a relation between hp health and this tag (<Hull_Vs_Hard_Points_Health_Constraint>)-->
+      <Tactical_Health>2000</Tactical_Health>      
+      
+      <!--2: Energy is directly correlated with shield recharge. And weapons can do energy damage. So, if an Ion Canon depletes a units Energy pool, shield recharge is reduced.
+      Energy also seems to affect the firing of integrated weapons - so weapons, that are not hardpoints, but set up like the laser satellite. Here, you can set the energy used per shot. If the energy pool is depleted the unit doesn't shoot anymore - or it only shoots at the energy recharge value.
+      Hardpointed weapons are not affected by that.-->
+      <Energy_Capacity>99999</Energy_Capacity>
+      <Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+      
+      <!--1: A match can't be won before the unit is killed-->
+      <Victory_Relevant>yes</Victory_Relevant>
+  
+      <!--1: If No, the unit can't be attacked-->
+      <Is_Valid_Target>Yes</Is_Valid_Target> 
+      
+      <!--1: Without moving, the unit can only attack units within the given range-->
+      <!--Targeting_Min_Attack_Distance>0</Targeting_Min_Attack_Distance-->
+      <Targeting_Max_Attack_Distance>1500.0</Targeting_Max_Attack_Distance>    
+
+      <!--1: How much fog ov war the unit lifts around it-->
+      <Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+      
+      <!--3: Nearly every time 0.2, for scout 0.75-->
+      <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+      
+      <!--3: Not set for most space unit but yes for the capitals-->
+      <Multisample_FOW_Check>No</Multisample_FOW_Check>
+
+      <!--1: Units will always fire at the root bone of another unit. If this is set higher, hostiles will target the unit above the root bone unless there are <Target_Bones> specified.-->
+      <Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>  
+      
+      <!--1: Without it, projectiles would fly right through the unit-->
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      
+      <!--3: Some units, such as AT-ATs or Podwalkers have this set to NO-->
+      <Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+      <!--1: See GameConstants-->
+      <Armor_Type>Armor_HeavyBS</Armor_Type>
+      <Shield_Armor_Type>Armor_HeavyBS</Shield_Armor_Type>
+      
+      <!--1: Sounds referenced in the SFX xmls. The trigger when the specific command is issued. <SFXEvent_Fleet_Move> is used on the galactic layer, all others are tactical-->
+      <SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+      <SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+      <SFXEvent_Attack></SFXEvent_Attack>   
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+      <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+      <SFXEvent_Move_Opposite></SFXEvent_Move_Opposite>
+      <SFXEvent_Move></SFXEvent_Move>
+      <SFXEvent_Select></SFXEvent_Select>  
+      <SFXEvent_Stop></SFXEvent_Stop>
+      
+      <!--1: Played when the unit is on low health-->
+      <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+      <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+
+      <!--3: Played when the enemy unit is on low health-->
+      <SFXEvent_Enemy_Damaged_Health_Low_Warning/>
+      <SFXEvent_Enemy_Damaged_Health_Critical_Warning/>
+      
+      <!--2: Most likely the default move/attack sound will be overwritten by this if multiple units are selected-->
+      <SFXEvent_Group_Move></SFXEvent_Group_Move>
+      <SFXEvent_Group_Attack></SFXEvent_Group_Attack>
+      
+      <!--1: Special ability related sound effects-->
+      <!--SFXEvent_Barrage></SFXEvent_Barrage-->
+      
+      <!--2: Deprecated I believe. Only found on the TIE fighter-->
+      <!--SFXEvent_Hardpoint> Unit_Hardpoint_TIE_Fighter </SFXEvent_Hardpoint-->
+      
+      <!--1: Only required for units capable of surface bombardment as added in Factions.xml, <Bombardment_Required_Orbital_Ships>-->
+      <!--SFXEvent_Bombard_Incoming> UHD_Bombard_Incoming  </SFXEvent_Bombard_Incoming>
+      <SFXEvent_Bombard_Select_Target> UHD_Bombard_Select_Target </SFXEvent_Bombard_Select_Target-->    
+      
+      <!--2: Engine sound effects-->
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Nebulon_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+      
+      <!--1: When a hardpoint of the specified type is destroyed a sound is being played-->
+      <!--SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Attack_Hardpoint>
+      <SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Arc_Hammer </SFXEvent_Attack_Hardpoint>
+      <SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Arc_Hammer </SFXEvent_Attack_Hardpoint>
+      <SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Acclamator </SFXEvent_Attack_Hardpoint>
+      <SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Arc_Hammer </SFXEvent_Attack_Hardpoint>
+      <SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_HP_SHIELDS_Arc_Hammer </SFXEvent_Attack_Hardpoint>
+      <SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Acclamator </SFXEvent_Attack_Hardpoint>
+      <SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Acclamator </SFXEvent_Attack_Hardpoint>
+      <SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Tyber_Zann_Space </SFXEvent_Attack_Hardpoint>
+      <SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Victory_Destroyer </SFXEvent_Attack_Hardpoint-->
+      
+      <!--1: Can be used multiple times. First, the hardpoint is listed, second the sound. Cf <SFXEvent_Attack_Hardpoint>-->
+      <!--SFXEvent_Hardpoint_Destroyed></SFXEvent_Hardpoint_Destroyed-->
+      
+      <!--1: Sound when a ship flying trough an asteroid field is being damaged-->
+      <SFXEvent_Damaged_By_Asteroid>SFX_Asteroid_Detonation</SFXEvent_Damaged_By_Asteroid>
+      
+      <!--3: Only used by the Broadside-->
+      <!--SFXEvent_Attack_With_Non_Hero_Ability>Unit_Barrage_Broadside_Cruiser</SFXEvent_Attack_With_Non_Hero_Ability-->
+      
+      <!--1: Sounds played when unit construction starts/cancles/ends-->
+      <SFXEvent_Tactical_Build_Started></SFXEvent_Tactical_Build_Started>
+      <SFXEvent_Tactical_Build_Cancelled></SFXEvent_Tactical_Build_Cancelled>
+      <SFXEvent_Tactical_Build_Complete></SFXEvent_Tactical_Build_Complete>
+          
+      <!--2: Plays upon the unit's destruction (start of the animation. Not sure which counts, this or DC. Unit_Lost is meant to be a non-3D speech sound-->
+      <SFXEvent_Unit_Lost></SFXEvent_Unit_Lost>
+      <Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+      
+      <!--1: When self destruct sequence begins (ability). Not using the tag for units with the ability will result in an error. Mind the typo!-->
+      <!--Selt_Destruct_SFXEvent_Start_Die></Selt_Destruct_SFXEvent_Start_Die-->
+      
+      <!--1: If false, this prevents the unit from being targeted with the cinematic camera (space key)-->
+      <Movie_Object>true</Movie_Object>      
+      
+      <!--2: This value is used to calculate the outcome of the auto battle in GC. It also determines force strength for the AI, e.g., when planning attacks (GC + skirmish). A higher value means that the AI will build the unit more likely. A value of 100.000 is used: The AI should be deterred from attacking this-->
+      <AI_Combat_Power>5000</AI_Combat_Power>  
+
+      <!--2: I thinks it's how long the unit will keep targeting (as in turning towrads to) an enemy that moved out of range-->
+      <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+      
+      <!--1: Values: Capital, Frigate, Corvette, SpaceArtillery, Bomber, Fighter. Makes the unit want to attack certain targets and prevents it from attack others. See GroundUnitTargetingPriorities.xml-->
+      <Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+      
+      <!--3: Used on some Corvtettes but not for bigger ships-->
+      <!--Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker-->
+
+      <!--1: Depending on the damage type the unit was hit by on death, the specified death clone will be triggered. Can be used multiple times-->
+      <!--Death_Clone>Damage_Normal, Tartan_Patrol_Cruiser_Death_Clone</Death_Clone-->
+      
+      <!--1: These particles will be spawned on death resp. when the death animation finishes-->
+      <Death_Explosions>Large_Explosion_Space</Death_Explosions>
+      <!--Death_Explosions_End></Death_Explosions_End-->
+
+      <!--1: How much credits it costs to convert this unit using the TACTICAL_BRIBE ability-->
+      <Tactical_Bribe_Cost>3000</Tactical_Bribe_Cost>
+      
+      <!--3: ???-->
+      <Formation_Priority>1</Formation_Priority>
+      
+      <!--2: On the galactic layer, the income will be reduced by the given amount of money (1=100 percent)? Might not work.-->
+      <Maintenance_Cost>0.05</Maintenance_Cost>
+ 
+      <!--1: If the unit is a TRANSPORT this defines the lander that deploys units on the ground map-->
+      <!--Landing_Transport_Variant>Moldy_Crow_Landing</Landing_Transport_Variant-->
+      
+      <!--2: Also added in factions.xml, <Bombardment_Required_Orbital_Ships>-->
+      <Surface_Bombardment_Capable>no</Surface_Bombardment_Capable>
+      
+      <!--2: Only used on the Interdictor with set to "no". The gravity_well ability should take care of this -->
+      <Disallows_Hyperspace_Retreat>No</Disallows_Hyperspace_Retreat>
+      
+      <!--3: "Yes" for interdictor and gravity well generator-->
+      <Is_Interdictor>No</Is_Interdictor>
+      
+      <!--1: When being attacked in GC this may enforce a battle without offering autoresolve-->
+      <Prevents_Story_Campaign_Autoresolve>No</Prevents_Story_Campaign_Autoresolve>
+
+      <!--3: This seems to scale the collision mesh of a unit.-->
+      <Collision_Box_Modifier>1.0</Collision_Box_Modifier>    
+     
+      <!--3: Only used on the Tantive_IV-->
+      <!--Should_Attacker_Hold_Fire_For_Special_Ability>True</Should_Attacker_Hold_Fire_For_Special_Ability-->
+      
+      <!--3: Used by some pirate ships-->
+      <!--Override_Bounty_MP>1800</Override_Bounty_MP>
+      <Override_Bounty_SP>1800</Override_Bounty_SP-->
+      
+      <!--2: Only found on the Venator. I think they are obsolete and added by the ability instead-->
+      <!--Defend_Mode_Energy_Regen_Multiplier>5.0</Defend_Mode_Energy_Regen_Multiplier>
+      <Defend_Mode_Shield_Regen_Multiplier>5.0</Defend_Mode_Shield_Regen_Multiplier>
+      <Defend_Mode_Speed_Multiplier>0.5</Defend_Mode_Speed_Multiplier>
+      <Defend_Mode_Weapon_Delay_Multiplier>3.0</Defend_Mode_Weapon_Delay_Multiplier-->
+
+      <!--1: The unit will run the specified GameObject lua script (file name without ending)-->
+      <!--Lua_Script>Sundered_Heart</Lua_Script-->
+
+   </Template>
+   
+   <Template Name="Template_Space_Unit_Capital_Base" Description="Base template - do not use"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Base</Variant_Of_Existing_Type>
+      <Number_per_Squadron>1</Number_per_Squadron> 
+      
+      <!--1: Assigns a specific set of names to the unit as defined in the text file. The tag is not used as this is also done by <ShipNameTextFiles> in GameConstants.xml-->
+      <!--Moniker>Alliance_Assault_Frigate.txt</Moniker-->
+      
+      <!--1: General behaviours:
+      ABILITY_COUNTDOWN / SHIELDED / POWERED: Capitals usually have this as a space behavior, so the template does this as well
+      DUMMY_STARSHIP: ??? Required for every bigger ship but not  for fighters
+      POWERED: ???
+      SELECTABLE: Self-explanatory
+      TRANSPORT: Required if a company exits that list this unit as a transport. Important for all units that have a ground and a space intance
+      -->
+      <Behavior>DUMMY_STARSHIP, POWERED, SELECTABLE</Behavior>
+      
+      <!--1: Defines the size of the selection circle. The value is multiplied with the <Scale_Factor>-->
+      <Select_Box_Scale>500</Select_Box_Scale>
+      
+      <!--1: The selection box can be set higher or lower-->
+      <Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+      
+      <!--1: Values range from 0 to 2. This scales the health and shieldbar of units, with 0 = Small, 1 = Medium, 2 = Large-->
+      <GUI_Bracket_Size>2</GUI_Bracket_Size>
+      
+      <!--3: Mostly 0, but 500 for Arc Hammer and Home One-->
+      <!--GUI_Bracket_Height>0</GUI_Bracket_Height-->
+      
+      <!--3: Usually not set, 500 for the Home One-->
+      <!--GUI_Bracket_Width>500</GUI_Bracket_Width-->    
+      
+      <!--1: Sets the distance of the health bar to the unit, the smaller the unit the smaller the value. Ranges from 0.1 to 2.0-->
+      <!--GUI_Bounds_Scale>0.35</GUI_Bounds_Scale-->
+      
+      <!--3: ???-->
+      <!--GUI_Offset>0 0 0</GUI_Offset-->
+      
+      <!--3: ???-->
+      <!--GUI_Velocity>45</GUI_Velocity-->
+      
+      <!--3: This is usually a duplicate of the regular model. Leaving it out doesn't seem to have any effect.-->
+      <!--GUI_Model_Name>RV_CORVETTE.ALO</GUI_Model_Name-->
+      
+      <!--3: ???-->
+      <GUI_Distance>900</GUI_Distance>
+      
+      <!--1: Hides health + shield bar. If set to No the player can only see the health of own ships when selected in the dashboard-->
+      <!--GUI_Hide_Health_Bar>false</GUI_Hide_Health_Bar-->
+      
+      <!--1: Units will always target the root point of the model unless specific target bones are specified-->
+      <!--Target_Bones>MISSILE_TARGET00, MISSILE_TARGET01, MISSILE_TARGET02</Target_Bones-->
+      
+      <!--1: Units on different layers ignore each other (and can fly above above/below each other). Used values are: Corvette, Frigate, Capital, SuperCapital-->
+      <Space_Layer>Capital</Space_Layer>
+      
+      <!--1: This tag overwrites <Max_Thrust>, adding a constant acceleration to a unit.  
+      IMPORTANT: Some containers use this tag with an underscore-->
+      <OverrideAcceleration>.02</OverrideAcceleration>
+      <OverrideDeceleration>.02</OverrideDeceleration>
+      <!--Override_Acceleration>.1</Override_Acceleration>
+      <Override_Deceleration>.1</Override_Deceleration-->
+      
+      <!--3: Pretty much always true-->
+      <Has_Space_Evaluator>True</Has_Space_Evaluator>
+      
+      <!--1: Defines how many units of the given type are spawned/active at the same time resp. can be respawned. -1 means infinite. Requires a hangar hardpoint and SPAWN_SQUADRON behaviour. Doesn't overwrite and can be used multiple times-->
+      <!--Starting_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 2</Starting_Spawned_Units_Tech_0-->
+      <!--Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, -1</Reserve_Spawned_Units_Tech_0-->
+      <!--1: The delay between each squadron is spawned.-->
+      <!--Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds-->           
+      
+      <!--3: How many land units the ship can cary when moving into hyperspace? May be deprecated.-->
+      <Transport_Capacity>30</Transport_Capacity>
+      
+      <!--3: Used by a few corvettes. I assume it's no longer used-->
+      <!--FormationPriority>3</FormationPriority-->
+      
+      <!--2: Might be related to GC sorting with the lowest value being on top-->
+      <Ranking_In_Category>6</Ranking_In_Category>
+      
+      <!--2: The unit can fully stop moving (unlike fighters)? Not set for corvettes-->
+      <!--Space_Full_Stop_Command>yes</Space_Full_Stop_Command-->
+      
+      <!--3: ???-->
+      <Autoresolve_Health>150</Autoresolve_Health>
+      
+      <!--3: Used in conjunction with the barrage ability. Makes the projectiles scatter in the target area-->
+      <!--Targeting_Fire_Inaccuracy_Fixed_Radius>220</Targeting_Fire_Inaccuracy_Fixed_Radius-->
+      
+      <!--1: This moves the unit (based on the root bone) be higher or lower. Space units should be moved in a way that their meshes don't collide with units on different Space_layers-->
+      <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+      
+      <!--2: Not sure about the relataion to the AMBIENT_SFX behavior. Not sure what the difference to an engine sound is.-->
+      <SFXEvent_Ambient_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+      
+      <!--1: Engine sound effects-->
+      <SFXEvent_Engine_Idle_Loop>Unit_Nebulon_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+      
+      <!--1: Only in galactic layer-->
+      <SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+      
+      <!--1: In cinematic mode, this tag adds special camera movements when the unit is in focus. Sadly, there is no tool to create/edit the existing ones-->
+      <!--Glory_Cinematics>CAM_SDestroyer_Glory01.tec</Glory_Cinematics-->
+      
+      <!--1: When the unit is in state X, it will follow hostile units for the given distance. Minus 1 (infinite?) is also possible-->
+      <Idle_Chase_Range>400.0</Idle_Chase_Range>
+      <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+      <Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+      
+      <!--3: Not used by fighters-->
+      <Score_Cost_Credits>5000</Score_Cost_Credits>
+      
+      <!--1: How much does slicing the tech cost? Rebels only. <Build_Can_Be_Unlocked_By_Slicer> must be true-->
+      <Slice_Cost_Credits>1800</Slice_Cost_Credits>
+      
+      <!--3: This might be related to the UL_Bounty_Upgrade-->
+      <Piracy_Value_Credits>50</Piracy_Value_Credits>
+      
+      <!--3: Only used for underworld units-->
+      <Cheap_Bribe_Cost>300</Cheap_Bribe_Cost> 
+      <Expensive_Bribe_Cost>500</Expensive_Bribe_Cost>
+      
+      <!--1: Makes the unit use TURNL and TURNR animations-->
+      <Has_Pre_Turn_Anim>No</Has_Pre_Turn_Anim> 
+      
+      <!--3: Prevents the deathclone from disapperaing? No instance with yes found-->
+      <!--Death_Leave_Hulk_Behind>No</Death_Leave_Hulk_Behind-->  
+      
+      <!--3: TRANSPORTs may be used in space only and then have a different pop cap than the company?-->
+      <!--Space_Override_Population_Value>3</Space_Override_Population_Value-->   
+      
+      <!--1: Defines the row in which a unit is builable on the dashboard. 0 = upper row, 1 = lower row-->      
+      <GUI_Row>1</GUI_Row>
+      
+      <!--2: Not as obvious as at seems, since there also buildtabs I can't identify, such as <Build_Tab_Space_Station>, <Build_Tab_Special_Structures>, <Build_Tab_Heroes>, or <Build_Tab_Outpost>-->
+      <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>    
+      
+      <!--1: Galactic price-->      
+      <Build_Cost_Credits>1500</Build_Cost_Credits>
+      <!--1: Galactic construction time-->  
+      <Build_Time_Seconds>20</Build_Time_Seconds>
+      <!--1: Multiple barracks allow the unit to be built faster. The build time reduction is defined in the GameConstants-->
+      <Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+      <!--1: The unit is not available for the player without research (Rebels)-->
+      <Build_Initially_Locked>No</Build_Initially_Locked>
+      <!--1: Defines if the unit can be unlocked by using the Rebel tech system (stealing tech)-->
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>  
+      
+      <!--1: How much PopCop the unit(s) use.-->
+      <Population_Value>1</Population_Value> 
+      
+      <!--2: I think that this tag is deprectated-->
+      <Required_Timeline>0</Required_Timeline>
+      <!--2: The ground base level is defined through the number of player buildings I think. This tag does NOT derive to variants!-->
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <!--1: Level of the Starbase. This tag does NOT derive to variants!-->
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <!--1: Does also count for skirmish. Can be used multiple times, doesn't overwrite-->
+      <Required_Special_Structures></Required_Special_Structures>
+      <!--1: Can be used multiple times, doesn't overwrite-->
+      <Required_Planets></Required_Planets>
+      <!--1: Needs this unit in orbit-->
+      <Required_Orbiting_Units></Required_Orbiting_Units>
+      <!--2: I think that this tag is deprectated-->
+      <Required_Tech_Structure></Required_Tech_Structure>
+ 
+      <!--1: Build time and cost for skirmish-->
+      <Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+      <!--1: Can be used multiple times and doesn't overwrite-->
+      <Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+      <!--1: Values are Tactical_Units and Tactical_Upgrades-->
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+      
+      <!--1: Build limitations. Minus one means infinite (=no limitation)-->
+      <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+      <Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+      <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+ 
+   </Template>
+
+
+   <Template Name="Template_Space_Unit_Fighter_Multi"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Base</Variant_Of_Existing_Type>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+      <Icon_Name>i_button_a_wing.tga</Icon_Name>
+      <SpaceBehavior>FIGHTER_LOCOMOTOR, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, NEBULA, POWERED, REVEAL, SELECTABLE, TARGETING</SpaceBehavior>
+      <Mass>0.98</Mass>
+      <Max_Speed>4.0</Max_Speed>
+      <Min_Speed>2.5</Min_Speed>
+      <Bank_Turn_Angle>45</Bank_Turn_Angle>
+      <Max_Rate_Of_Roll>4.0</Max_Rate_Of_Roll>
+      <Max_Thrust>1.0</Max_Thrust>
+      <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+      <Hyperspace>No</Hyperspace>
+      <Is_Escort>yes</Is_Escort>
+      <Number_per_Squadron>5</Number_per_Squadron>
+      <Squadron_Capacity>0</Squadron_Capacity>
+      <CategoryMask>Fighter | AntiFighter | AntiBomber</CategoryMask>
+      <Ship_Class>fighter</Ship_Class>
+      <Armor_Type>Armor_Fighter</Armor_Type>
+      <Shield_Armor_Type>Armor_Fighter</Shield_Armor_Type>
+      <Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+      <Size_Value>8</Size_Value>
+      <Damage>12</Damage>
+      <Shield_Points>30</Shield_Points>
+      <Shield_Refresh_Rate>3</Shield_Refresh_Rate>
+      <Tactical_Health>50</Tactical_Health>
+      <Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+      <Space_FOW_Reveal_Range>500.0</Space_FOW_Reveal_Range>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Headhunter_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <AI_Combat_Power>60</AI_Combat_Power>
+      <Death_Explosions>Small_Explosion_Space</Death_Explosions>
+      <Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
+      <Formation_Priority>1</Formation_Priority>
+      <Collision_Box_Modifier>2.0</Collision_Box_Modifier>
+      
+      <Population_Value>0</Population_Value>
+      
+      <!--3: ?-->
+      <Property_Flags>SmallShip</Property_Flags>
+      
+      <!--3: ?-->
+      <Remove_Upon_Death>true</Remove_Upon_Death>
+      
+      <!--3: 1 or 2. Used by many fighters but not all. I guess it's a squadron-only tag?-->
+      <!--FormationOrder>1</FormationOrder--> 
+      
+      <!--3:?-->
+      <Max_Lift>4</Max_Lift> 
+      
+      <!--3: How units break formation to attack?-->
+      <Strafe_Distance>500.0</Strafe_Distance>    
+      
+      <!--3: Only used by the TIE scout-->
+      <!--Avoid_Enemy_Exclusion_Range>500.0</Avoid_Enemy_Exclusion_Range-->
+      
+      <!--3:?-->
+      <Begin_Turn_Towards_Distance>500.0</Begin_Turn_Towards_Distance>
+      
+      <!--2: Fighter equivalent of <Idle_Chase_Range>?-->
+      <Minimum_Follow_Distance>50.0</Minimum_Follow_Distance>
+      
+      <!--3: Set for a Corvette and some fighters. Do not confuse with <Custom_Soft_Footprint_Radius>-->
+      <Custom_Footprint_Radius>7.0</Custom_Footprint_Radius>
+      
+      <!--3: When not fighting the unit is more vulnerable to attacks?-->
+      <Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+      
+      <!--2: Makes the unit easier to select-->
+      <Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+      
+      <!--2: Require the AMBIENT_SFX behavior. Not sure what the difference to an engine sound is. A unit can't have ambient sounds and engine sounds together-->
+      <SFXEvent_Ambient_Moving>Unit_Y_Wing_Fly_By</SFXEvent_Ambient_Moving>
+      <SFXEvent_Ambient_Moving_Min_Delay_Seconds>5</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+      <SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+      
+      <!--1: Flying units can spin away on death onstead of displaying a seperate death clone-->
+      <Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+      <Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+      <Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+      <Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+      <Spin_Away_On_Death_SFXEvent_Start_Die></Spin_Away_On_Death_SFXEvent_Start_Die>
+      
+      <!--1: Create a squadron-->
+      <Create_Team>Yes</Create_Team>
+      
+   </Template>
+   
+   
+   <Template Name="Template_Space_Hero_Fighter_Multi" Description="This _hero_ template is only meant for a single hero unit that is part of a squadron. For his mates, use the _unit_ template."><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Fighter_Multi</Variant_Of_Existing_Type>
+      <Is_Named_Hero>Yes</Is_Named_Hero>
+      <Is_Generic_Hero>No</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Ranking_In_Category>3</Ranking_In_Category>
+      <Score_Cost_Credits>500</Score_Cost_Credits>     
+      <CategoryMask>Fighter | SpaceHero</CategoryMask>
+      
+      <!--Heroes should be able to hyperspace as the AI will get problems otherwise-->
+      <Hyperspace>Yes</Hyperspace>
+      
+      <!--1: When the hero is being shot is, his squadron mates will take damage instead until noone else is left-->
+      <Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>  
+      
+      <!--1: Amount of damage is taken from the combined squadron health-->
+      <Share_Damage_With_Teammates>No</Share_Damage_With_Teammates> 
+      
+      <!--3: ?-->
+      <Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+      
+   </Template>
+   
+   
+   <Template Name="Template_Space_Unit_Fighter_Single"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Fighter_Multi</Variant_Of_Existing_Type>
+      <AI_Combat_Power>1500</AI_Combat_Power>
+      <Idle_Chase_Range>400.0</Idle_Chase_Range>                
+      <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+      <Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+      <Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+      <Death_Explosions>Medium_Explosion_Space</Death_Explosions> 
+      <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+      <Size_Value>120</Size_Value>
+      <Formation_Priority>5</Formation_Priority>
+      <GUI_Bracket_Size>0</GUI_Bracket_Size>
+      <Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+      <Number_per_Squadron>1</Number_per_Squadron>
+      <Tactical_Health>800</Tactical_Health>
+      <Shield_Points>300</Shield_Points>
+      <Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+      <Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+      <Space_Full_Stop_Command>yes</Space_Full_Stop_Command>
+      <Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+      
+      <Armor_Type>Armor_Hero_Fighter</Armor_Type>
+      <Shield_Armor_Type>Armor_Hero_Fighter</Shield_Armor_Type>
+      <Create_Team>No</Create_Team>
+      
+      <Behavior>DUMMY_STARSHIP, POWERED</Behavior>
+      <SpaceBehavior>FIGHTER_LOCOMOTOR, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, NEBULA, POWERED, REVEAL, SELECTABLE, TARGETING, UNIT_AI</SpaceBehavior>     
+      
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+
+      <GUI_Row>1</GUI_Row>
+      <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>    
+      <Build_Cost_Credits>1500</Build_Cost_Credits>
+      <Build_Time_Seconds>20</Build_Time_Seconds>
+      <Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+      <Build_Initially_Locked>No</Build_Initially_Locked>
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>  
+      <Population_Value>1</Population_Value>                                    
+      <Required_Star_Base_Level>0</Required_Star_Base_Level> 
+      <Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+      
+      <!--Not given for single fighters-->
+      <Property_Flags> </Property_Flags>
+      <Strafe_Distance> </Strafe_Distance>
+      <Custom_Footprint_Radius> </Custom_Footprint_Radius> 
+      <Out_Of_Combat_Defense_Adjustment> </Out_Of_Combat_Defense_Adjustment>
+      <Mouse_Collide_Override_Sphere_Radius> </Mouse_Collide_Override_Sphere_Radius>
+      
+      <!--3: ?-->
+      <Hover_Offset>30.0</Hover_Offset>
+      
+      <!--2: The ground base level is defined through the number of player buildings I think. This tag does NOT derive to variants!-->
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <!--1: Level of the Starbase. This tag does NOT derive to variants!-->
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      
+   </Template>
+   
+   
+   <Template Name="Template_Space_Hero_Fighter_Single"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Fighter_Single</Variant_Of_Existing_Type>    
+      <Is_Named_Hero>Yes</Is_Named_Hero>
+      <Is_Generic_Hero>No</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Max_Speed>6.0</Max_Speed>
+      <Min_Speed>3.5</Min_Speed>
+      <Ranking_In_Category>3</Ranking_In_Category>
+      <Score_Cost_Credits>8000</Score_Cost_Credits>     
+      <CategoryMask>Fighter | SpaceHero</CategoryMask>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>     
+      
+      <!--Heroes should be able to hyperspace as the AI will get problems otherwise-->
+      <Hyperspace>Yes</Hyperspace>
+      
+      <!--3: Used by all fighter heroes except for the Millennium_Falcon-->
+      <Display_Contained_Hero_Grab_Bars>True</Display_Contained_Hero_Grab_Bars>
+      
+   </Template>
+   
+   
+   <Template Name="Template_Space_Unit_Bomber_Multi"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Fighter_Multi</Variant_Of_Existing_Type>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+      <Mass>0.985</Mass>
+      <Max_Speed>3.2</Max_Speed>
+      <Min_Speed>2.0</Min_Speed>
+      <Bank_Turn_Angle>35</Bank_Turn_Angle>
+      <Max_Rate_Of_Roll>3.0</Max_Rate_Of_Roll>
+      <Max_Thrust>1.0</Max_Thrust>
+      <Max_Rate_Of_Turn>1.3</Max_Rate_Of_Turn>
+      <Is_Bomber>yes</Is_Bomber>
+      <Is_Escort>no</Is_Escort>
+      <Number_per_Squadron>3</Number_per_Squadron>
+      <CategoryMask>Bomber | AntiCapital</CategoryMask>
+      <Ship_Class>bomber</Ship_Class>
+      <Armor_Type>Armor_Bomber</Armor_Type>
+      <Shield_Armor_Type>Armor_Bomber</Shield_Armor_Type>
+      <Targeting_Priority_Set>Bomber</Targeting_Priority_Set>
+      <Tactical_Health>60</Tactical_Health>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Y_Wing_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <AI_Combat_Power>80</AI_Combat_Power>
+      <Formation_Priority>2</Formation_Priority>
+      
+      <Custom_Footprint_Radius>15.0</Custom_Footprint_Radius>
+      <Begin_Turn_Towards_Distance>800.0</Begin_Turn_Towards_Distance>
+      <Max_Lift>3</Max_Lift> 
+      
+      <!--1: Define a bombing run variant-->
+      <!--Land_Bomber_Type>TIE_Bomber_Bombing_Run</Land_Bomber_Type-->
+      
+      <!--2: Used by fighters of that bombing run-->
+      <!--Air_Vehicle_Turret_Target>Yes</Air_Vehicle_Turret_Target-->  
+      
+   </Template>
+   
+   
+   <Template Name="Template_Space_Unit_Direct_Fire" Description="Direct fire template. Do not use alone but add to existing template! Requires WEAPON behaviour!"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Fighter_Multi</Variant_Of_Existing_Type>
+      <SpaceBehavior>FIGHTER_LOCOMOTOR, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, NEBULA, POWERED, REVEAL, SELECTABLE, TARGETING, WEAPON</SpaceBehavior>
+      
+      <!--1: See table in GameConstants.xml-->
+      <Damage_Type>Damage_Fighter</Damage_Type>
+      
+      <!--1: Weapon sound of units. Can also be referenced in hardpoints-->
+      <SFXEvent_Fire></SFXEvent_Fire>
+      
+      <!--1: Projectile fired by the unit. Requires WEAPON behaviour-->
+      <Projectile_Types>Proj_Ship_Small_Laser_Cannon_Generic</Projectile_Types>
+      
+      <!--1: How long it takes to reload between each salvo, how many shots per salvo, time between each single shot in a salvo-->
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>     
+      
+      <!--1: Prevents the unit from attacking other units with the specified <CategoryMask>. Manual targeting is NOT possible.-->
+      <!--Attack_Category_Restrictions> Fighter | Bomber | Transport </Attack_Category_Restrictions-->
+    
+      <!--1: Prevents the unit from attacking other units with the specified <CategoryMask>. Manual targeting is STILL possible.-->
+      <!--Fire_Category_Restrictions> Fighter, Bomber, Transport </Fire_Category_Restrictions-->
+      
+      <!--3: No for fighters. Y-Wing_Bombing_Run: This must be YES in order to fire missiles without concern of the firing cone in Calculate_Projectile_Facing() -->
+      <Fires_Forward>no</Fires_Forward>
+      
+      <!--2: Defines the firing arc. Equivalent of <Fire_Cone_Width> and <Fire_Cone_Height> used in hardpoints-->
+      <Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+      
+      <!--1: Inaccurracy when firing at other unit types. First value specifies the CategoryMask, the second one the likeliness to miss. 
+      IMPORTANT: Doesn't work for units that have hardpoints as this is then part of the hardpoint code.-->
+      <Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>      
+      <Fire_Inaccuracy_Distance> Corvette, 15.0 </Fire_Inaccuracy_Distance>      
+      <Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+      
+   </Template>
+   
+   
+   <Template Name="Template_Space_Unit_Corvette"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Capital_Base</Variant_Of_Existing_Type>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+      <GUI_Bracket_Size>2</GUI_Bracket_Size>
+      <GUI_Distance>600</GUI_Distance>
+      <Space_Layer>Corvette</Space_Layer>
+      <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+      <Mass>0.995</Mass>
+      <Max_Speed>2.75</Max_Speed>
+      <Min_Speed>1.0</Min_Speed>
+      <Max_Thrust>0.8</Max_Thrust>
+      <OverrideAcceleration>.06</OverrideAcceleration>
+      <OverrideDeceleration>.06</OverrideDeceleration>
+      <Max_Rate_Of_Turn>1.4</Max_Rate_Of_Turn>
+      <Bank_Turn_Angle>15</Bank_Turn_Angle>
+      <AI_Combat_Power>1300</AI_Combat_Power> 
+      <Armor_Type>Armor_Corvette</Armor_Type>
+      <Shield_Armor_Type>Armor_Corvette</Shield_Armor_Type>
+      <Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+      <Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+      <Autoresolve_Health>800</Autoresolve_Health>
+      <CategoryMask>Corvette | AntiFighter | AntiBomber</CategoryMask>
+      <Ship_Class>corvette</Ship_Class>
+      <Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+      <Damage>20</Damage>
+      <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+      <SFXEvent_Ambient_Loop>Unit_Corvette_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Corvette_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <SFXEvent_Engine_Moving_Loop>Unit_Corvette_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Idle_Loop>Unit_Corvette_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+      <Is_Escort>Yes</Is_Escort>
+      <Ranking_In_Category>7</Ranking_In_Category>
+      <Select_Box_Scale>250</Select_Box_Scale>
+      <Tactical_Health>1200</Tactical_Health>
+      <Shield_Points>600</Shield_Points>
+      <Shield_Refresh_Rate>16</Shield_Refresh_Rate> 
+      <Size_Value>120</Size_Value>
+      <Space_FOW_Reveal_Range>1100.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
+      
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      
+      <Population_Value>2</Population_Value>
+      <Maintenance_Cost>0.05</Maintenance_Cost>
+      <Score_Cost_Credits>1400</Score_Cost_Credits>
+      <Build_Cost_Credits>1500</Build_Cost_Credits> 
+      <Build_Time_Seconds>15</Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>1650</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+      <Lua_Script>ObjectScript_HW_Small</Lua_Script> 
+   </Template>
+   
+   
+   <Template Name="Template_Space_Unit_Cruiser"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Capital_Base</Variant_Of_Existing_Type>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+      <GUI_Distance>1000</GUI_Distance>
+      <Space_Layer>Frigate</Space_Layer> 
+      <Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+      <Mass>0.999</Mass>
+      <Max_Speed>2.25</Max_Speed>
+      <Max_Thrust>1.5</Max_Thrust>
+      <OverrideAcceleration>.05</OverrideAcceleration>
+      <OverrideDeceleration>.05</OverrideDeceleration>
+      <Max_Rate_Of_Turn>0.6</Max_Rate_Of_Turn>
+      <Bank_Turn_Angle>10</Bank_Turn_Angle>
+      <AI_Combat_Power>2400</AI_Combat_Power> 
+      <Armor_Type>Armor_Cruiser</Armor_Type>
+      <Shield_Armor_Type>Armor_Cruiser</Shield_Armor_Type>
+      <Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+      <Autoresolve_Health>1500</Autoresolve_Health>
+      <CategoryMask>Frigate | AntiCorvette</CategoryMask>
+      <Ship_Class>frigate</Ship_Class>
+      <Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+      <Damage>30</Damage>
+      <Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+      <SFXEvent_Ambient_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+      <SFXEvent_Engine_Idle_Loop>Engine_Default_Low_Idle</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Default_Low</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Default_Low_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <Is_Escort>Yes</Is_Escort>
+      <Ranking_In_Category>6</Ranking_In_Category>
+      <Select_Box_Scale>280</Select_Box_Scale>
+      <Tactical_Health>1400</Tactical_Health>
+      <Shield_Points>800</Shield_Points>
+      <Shield_Refresh_Rate>21</Shield_Refresh_Rate>
+      <Size_Value>120</Size_Value>
+      <Space_FOW_Reveal_Range>1150.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1450.0</Targeting_Max_Attack_Distance>
+      <Space_Full_Stop_Command>yes</Space_Full_Stop_Command>
+      
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      
+      <Population_Value>4</Population_Value>
+      <Maintenance_Cost>0.1</Maintenance_Cost>
+      <Score_Cost_Credits>2000</Score_Cost_Credits>
+      <Build_Cost_Credits>2100</Build_Cost_Credits>
+      <Build_Time_Seconds>30</Build_Time_Seconds> 
+      <Tactical_Build_Cost_Multiplayer>2200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds> 
+      <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+   </Template>
+   
+   
+   <Template Name="Template_Space_Unit_Light_Battleship"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Capital_Base</Variant_Of_Existing_Type>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+      <GUI_Distance>1500</GUI_Distance> 
+      <Space_Layer>Frigate</Space_Layer> 
+      <Layer_Z_Adjust>-30.0</Layer_Z_Adjust>
+      <Mass>0.999</Mass>
+      <Max_Speed>2.0</Max_Speed>
+      <Max_Thrust>1.5</Max_Thrust>
+      <OverrideAcceleration>.04</OverrideAcceleration>
+      <OverrideDeceleration>.04</OverrideDeceleration>
+      <Max_Rate_Of_Turn>0.6</Max_Rate_Of_Turn>
+      <AI_Combat_Power>3000</AI_Combat_Power> 
+      <Armor_Type>Armor_LightBS</Armor_Type>
+      <Shield_Armor_Type>Armor_LightBS</Shield_Armor_Type>
+      <Autoresolve_Health>2300</Autoresolve_Health>
+      <CategoryMask>Capital | AntiFrigate</CategoryMask>
+      <Ship_Class>capital</Ship_Class>
+      <Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+      <Damage>40</Damage>
+      <Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+      <SFXEvent_Ambient_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+      <SFXEvent_Engine_Idle_Loop>Unit_Nebulon_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Nebulon_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <Hyperspace_Speed>1.3</Hyperspace_Speed>
+      <Is_Escort>Yes</Is_Escort>
+      <Ranking_In_Category>6</Ranking_In_Category>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Tactical_Health>2200</Tactical_Health>
+      <Shield_Points>1500</Shield_Points>
+      <Shield_Refresh_Rate>40</Shield_Refresh_Rate>
+      <Size_Value>150</Size_Value>
+      <Space_FOW_Reveal_Range>1225.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1525.0</Targeting_Max_Attack_Distance>
+      <Space_Full_Stop_Command>yes</Space_Full_Stop_Command>
+      
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      
+      <Population_Value>5</Population_Value>
+      <Maintenance_Cost>0.15</Maintenance_Cost>
+      <Score_Cost_Credits>2500</Score_Cost_Credits>
+      <Build_Cost_Credits>2800</Build_Cost_Credits>
+      <Build_Time_Seconds>45</Build_Time_Seconds> 
+      <Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>21</Tactical_Build_Time_Seconds> 
+      <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+   </Template>
+   
+   
+   <Template Name="Template_Space_Unit_Medium_Battleship"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Capital_Base</Variant_Of_Existing_Type>
+      <GUI_Distance>1800</GUI_Distance>
+      <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+      <Space_Layer>Frigate</Space_Layer> 
+      <Layer_Z_Adjust>-40.0</Layer_Z_Adjust>
+      <Mass>0.9995</Mass>
+      <Max_Speed>1.75</Max_Speed>
+      <Max_Thrust>0.2</Max_Thrust>
+      <OverrideAcceleration>.03</OverrideAcceleration>
+      <OverrideDeceleration>.03</OverrideDeceleration>
+      <Max_Rate_Of_Turn>0.5</Max_Rate_Of_Turn>
+      <AI_Combat_Power>4000</AI_Combat_Power> 
+      <Armor_Type>Armor_MediumBS</Armor_Type>
+      <Shield_Armor_Type>Armor_MediumBS</Shield_Armor_Type>
+      <Idle_Chase_Range>0.0</Idle_Chase_Range>
+      <Autoresolve_Health>3600</Autoresolve_Health>
+      <CategoryMask>Capital | AntiFrigate | AntiCapital</CategoryMask>
+      <Ship_Class>capital</Ship_Class>
+      <Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+      <Damage>50</Damage>
+      <Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
+      <SFXEvent_Ambient_Loop>Unit_Calamari_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+      <SFXEvent_Engine_Idle_Loop>Engine_Default_Heavy_Idle</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Default_Heavy</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Default_Heavy_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <Hyperspace_Speed>1.2</Hyperspace_Speed>
+      <Ranking_In_Category>6</Ranking_In_Category>
+      <Select_Box_Scale>500</Select_Box_Scale>
+      <Tactical_Health>2700</Tactical_Health>
+      <Shield_Points>2700</Shield_Points>
+      <Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+      <Size_Value>200</Size_Value>
+      <Space_FOW_Reveal_Range>1375.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1675.0</Targeting_Max_Attack_Distance>
+      <Space_Full_Stop_Command>yes</Space_Full_Stop_Command>
+    
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      
+      <Population_Value>6</Population_Value>
+      <Maintenance_Cost>0.2</Maintenance_Cost>
+      <Score_Cost_Credits>3000</Score_Cost_Credits>
+      <Build_Cost_Credits>3800</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>  
+      <Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>26</Tactical_Build_Time_Seconds> 
+      <Lua_Script>ObjectScript_HW_Big</Lua_Script>
+   </Template>
+   
+   
+   <Template Name="Template_Space_Unit_Heavy_Battleship"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Capital_Base</Variant_Of_Existing_Type>
+      <GUI_Distance>2300</GUI_Distance> 
+      <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+      <Space_Layer>Capital</Space_Layer>
+      <Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+      <Mass>0.9995</Mass>
+      <Max_Speed>1.5</Max_Speed>
+      <Max_Thrust>0.1</Max_Thrust>
+      <OverrideAcceleration>.02</OverrideAcceleration>
+      <OverrideDeceleration>.02</OverrideDeceleration>
+      <Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+      <AI_Combat_Power>5000</AI_Combat_Power> 
+      <Armor_Type>Armor_HeavyBS</Armor_Type>
+      <Shield_Armor_Type>Armor_HeavyBS</Shield_Armor_Type>
+      <Idle_Chase_Range>0.0</Idle_Chase_Range>  
+      <Autoresolve_Health>5000</Autoresolve_Health>
+      <CategoryMask>Capital | AntiCapital</CategoryMask>
+      <Ship_Class>capital</Ship_Class>
+      <Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+      <Damage>65</Damage>
+      <Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
+      <SFXEvent_Ambient_Loop>Unit_Calamari_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+      <SFXEvent_Engine_Idle_Loop>Engine_Default_Heavy_Idle</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Default_Heavy</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Default_Heavy_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <Formation_Priority>5</Formation_Priority>
+      <Hyperspace_Speed>1.0</Hyperspace_Speed>
+      <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+      <Dense_FOW_Reveal_Range_Multiplier>0.24</Dense_FOW_Reveal_Range_Multiplier>
+      <Ranking_In_Category>5</Ranking_In_Category> 
+      <Select_Box_Scale>800</Select_Box_Scale>
+      <Tactical_Health>3800</Tactical_Health>
+      <Shield_Points>3500</Shield_Points>
+      <Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+      <Size_Value>300</Size_Value>
+      <Space_FOW_Reveal_Range>1550.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1850.0</Targeting_Max_Attack_Distance>
+      <Space_Full_Stop_Command>yes</Space_Full_Stop_Command>
+      
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      
+      <Population_Value>8</Population_Value>
+      <Maintenance_Cost>0.3</Maintenance_Cost>
+      <Score_Cost_Credits>40000</Score_Cost_Credits> 
+      <Build_Cost_Credits>5400</Build_Cost_Credits>
+      <Build_Time_Seconds>90</Build_Time_Seconds> 
+      <Tactical_Build_Cost_Multiplayer>4800</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds> 
+      <Lua_Script>ObjectScript_HW_Big</Lua_Script>
+   </Template>
+   
+                  
+   <Template Name="Template_Space_Hero_Corvette"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Corvette</Variant_Of_Existing_Type>
+      <CategoryMask>Corvette | SpaceHero | AntiFighter | AntiBomber</CategoryMask>
+      <AI_Combat_Power>1800</AI_Combat_Power> 
+      <Armor_Type>Armor_Hero_Corvette</Armor_Type>
+      <Shield_Armor_Type>Armor_Hero_Corvette</Shield_Armor_Type>
+      <Autoresolve_Health>1800</Autoresolve_Health>
+      <Ranking_In_Category>7</Ranking_In_Category>
+      <Tactical_Health>1800</Tactical_Health>
+      <Shield_Points>1100</Shield_Points>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      
+      <!--1: This will make the hero respawn in GC ("major hero")-->
+      <Is_Named_Hero>Yes</Is_Named_Hero>
+      
+      <!--1: The game will consider this unit a minor hero (no GC respawn)-->
+      <Is_Generic_Hero>No</Is_Generic_Hero>
+
+      <!--1: Show the hero icon in the upper right of the screen-->
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      
+      <!--1: Used for heroes that are not space or ground only-->
+      <Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+      <Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+      
+      <!--1: Obvious-->
+      <!--Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit-->
+      
+      <!--3: I think this locks a unit for the AI in GC-->
+      <IsBuildable>No</IsBuildable>
+      
+      <!--1: Credits to kill the hero in GC using the neutralization ability-->
+      <Neutralization_Cost>1400.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+      
+      <!--1: GC respawn sound-->
+      <SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+      
+      <!--2: When the hero is spotted by the enemy faction they will hear some VO-->
+      <!--Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting-->
+      
+   </Template>
+   
+   
+   <Template Name="Template_Space_Hero_Cruiser"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Cruiser</Variant_Of_Existing_Type>
+      <CategoryMask>Frigate | SpaceHero | AntiCorvette</CategoryMask>
+      <AI_Combat_Power>3000</AI_Combat_Power> 
+      <Armor_Type>Armor_Hero_Cruiser</Armor_Type>
+      <Shield_Armor_Type>Armor_Hero_Cruiser</Shield_Armor_Type>
+      <Autoresolve_Health>2000</Autoresolve_Health>
+      <Ranking_In_Category>7</Ranking_In_Category>
+      <Tactical_Health>2000</Tactical_Health>
+      <Shield_Points>1300</Shield_Points>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Is_Named_Hero>Yes</Is_Named_Hero>
+      <Is_Generic_Hero>No</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <IsBuildable>No</IsBuildable>
+      <Neutralization_Cost>2200.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes> 
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>  
+   </Template>
+   
+   
+   <Template Name="Template_Space_Hero_Light_Battleship"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Light_Battleship</Variant_Of_Existing_Type>
+      <CategoryMask>Capital | SpaceHero | AntiFrigate</CategoryMask>
+      <AI_Combat_Power>3500</AI_Combat_Power> 
+      <Armor_Type>Armor_Hero_LightBS</Armor_Type>
+      <Shield_Armor_Type>Armor_Hero_LightBS</Shield_Armor_Type>
+      <Autoresolve_Health>2800</Autoresolve_Health>
+      <Ranking_In_Category>7</Ranking_In_Category>
+      <Tactical_Health>2800</Tactical_Health>
+      <Shield_Points>1900</Shield_Points>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Is_Named_Hero>Yes</Is_Named_Hero>
+      <Is_Generic_Hero>No</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <IsBuildable>No</IsBuildable>
+      <Neutralization_Cost>2800.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>  
+      <Required_Star_Base_Level>1</Required_Star_Base_Level> 
+   </Template>
+   
+   
+   <Template Name="Template_Space_Hero_Medium_Battleship"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Medium_Battleship</Variant_Of_Existing_Type>
+      <CategoryMask>Capital | SpaceHero | AntiFrigate | AntiCapital</CategoryMask>
+      <AI_Combat_Power>5000</AI_Combat_Power> 
+      <Armor_Type>Armor_Hero_MediumBS</Armor_Type>
+      <Shield_Armor_Type>Armor_Hero_MediumBS</Shield_Armor_Type>
+      <Autoresolve_Health>3400</Autoresolve_Health>
+      <Ranking_In_Category>7</Ranking_In_Category>
+      <Tactical_Health>3400</Tactical_Health>
+      <Shield_Points>3400</Shield_Points>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Is_Named_Hero>Yes</Is_Named_Hero>
+      <Is_Generic_Hero>No</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <IsBuildable>No</IsBuildable>
+      <Neutralization_Cost>3600.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>  
+   </Template>
+   
+   
+   <Template Name="Template_Space_Hero_Heavy_Battleship"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Heavy_Battleship</Variant_Of_Existing_Type>
+      <CategoryMask>Capital | SpaceHero | AntiCapital</CategoryMask>
+      <AI_Combat_Power>7000</AI_Combat_Power> 
+      <Armor_Type>Armor_Hero_HeavyBS</Armor_Type>
+      <Shield_Armor_Type>Armor_Hero_HeavyBS</Shield_Armor_Type>
+      <Autoresolve_Health>4500</Autoresolve_Health>
+      <Ranking_In_Category>7</Ranking_In_Category>
+      <Tactical_Health>4500</Tactical_Health>
+      <Shield_Points>4100</Shield_Points>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Is_Named_Hero>Yes</Is_Named_Hero>
+      <Is_Generic_Hero>No</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <IsBuildable>No</IsBuildable>
+      <Neutralization_Cost>4500.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>     
+   </Template>
+
+     
+   <Template Name="Template_Space_Unit_Transport"><!--#-->
+      <Variant_Of_Existing_Type>Template_Space_Unit_Capital_Base</Variant_Of_Existing_Type>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+      <Space_Layer>Corvette</Space_Layer>
+      <GUI_Bracket_Size>0</GUI_Bracket_Size>
+      <Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+      <Mass>0.995</Mass>
+      <Max_Speed>2.0</Max_Speed>
+      <Min_Speed>0</Min_Speed>
+      <Max_Thrust>0.8</Max_Thrust>
+      <Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+      <Max_Rate_Of_Turn>0.5</Max_Rate_Of_Turn>
+      <Bank_Turn_Angle>15</Bank_Turn_Angle>
+      <AI_Combat_Power>10</AI_Combat_Power> 
+      <Armor_Type>Armor_Transport</Armor_Type>
+      <Shield_Armor_Type>Armor_Transport</Shield_Armor_Type>
+      <Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+      <Autoresolve_Health>400</Autoresolve_Health>
+      <CategoryMask>Transport</CategoryMask>
+      <Ship_Class>Transport</Ship_Class>
+      <Damage>5</Damage>
+      <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+      <SFXEvent_Ambient_Loop>Unit_Gallofree_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+      <SFXEvent_Ambient_Moving_Max_Delay_Seconds>2</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+      <SFXEvent_Ambient_Moving_Min_Delay_Seconds>1</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+      <SFXEvent_Ambient_Moving>Unit_Falcon_Fly_By</SFXEvent_Ambient_Moving>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Gallofree_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <SFXEvent_Engine_Moving_Loop>Unit_Gallofree_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Idle_Loop>Unit_Gallofree_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+      <Is_Escort>No</Is_Escort>
+      <Select_Box_Scale>200</Select_Box_Scale>
+      <Tactical_Health>350</Tactical_Health>
+      <Shield_Points>50</Shield_Points>
+      <Shield_Refresh_Rate>10</Shield_Refresh_Rate> 
+      <Size_Value>120</Size_Value>
+      <Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+      <OverrideAcceleration>.05</OverrideAcceleration>
+      <OverrideDeceleration>.05</OverrideDeceleration>
+      
+      <!--Land specific values-->
+      <Behavior>SELECTABLE, TRANSPORT</Behavior>
+      <LandBehavior>SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+      <Land_Model_Name>MISSING.ALO</Land_Model_Name> 
+      <Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+      <Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+      <Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+      <Blob_Shadow_Scale>120.0, 90.0</Blob_Shadow_Scale>
+      <Fire_Category_Restrictions> Infantry, Vehicle, Structure, Air, Transport </Fire_Category_Restrictions>
+      <Hover_Offset>50.0</Hover_Offset>
+      <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+      
+      <!--3: ???-->
+      <Obstacle_Width>120.0</Obstacle_Width>
+      <Obstacle_Height>120.0</Obstacle_Height>
+      <Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+      <Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+      
+      <!--3: ???-->
+      <TacticalBehavior> SELECTABLE </TacticalBehavior>
+          
+      <!--3: Used for a special transport of r2/c3po-->
+      <!--Can_Participate_In_Space_Battle>No</Can_Participate_In_Space_Battle-->
+      
+      <!--3: Defines the direction will the units leave the transport?-->
+      <Exit_Door_Angle_Degrees>90.0</Exit_Door_Angle_Degrees>
+      
+      <!--2: Defines how far behind the center of the transport units will the units be spawned-->
+      <Exit_Door_Distance>0.0</Exit_Door_Distance>
+      
+      <!--1: The variant used for landing. It adds some additional tags that would be wrong for the space unit, such as being a non valid target-->
+      <!--Landing_Transport_Variant>Alliance_Shuttle_Landing</Landing_Transport_Variant-->
+      
+      <!--3: ???-->
+      <Use_Special_Submit_Rules> true </Use_Special_Submit_Rules>
+           
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      
+      <Population_Value>0</Population_Value>
+      <Score_Cost_Credits>0</Score_Cost_Credits>
+      <Build_Cost_Credits>1</Build_Cost_Credits> 
+      <Build_Time_Seconds>1</Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+      <Lua_Script>ObjectScript_HW_Small</Lua_Script> 
+   </Template>
+   
+   
+   <Template Name="Template_Space_Deathclone"><!--#-->
+      <!--Should be the same as the unit-->
+      <Affiliation>Neutral</Affiliation>
+      <Space_Model_Name>MISSING.ALO</Space_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      
+      <!--1: Makes the deathclone disappear after the animation-->
+      <Death_Persistence_Duration>0</Death_Persistence_Duration> 
+      
+      <!--3: ?-->
+      <Remove_Upon_Death>true</Remove_Upon_Death>   
+      
+      <!--Unused-->
+      <Text_ID>TEXT_NONE</Text_ID>
+      <xxxSpace_Model_Name>MISSING.ALO</xxxSpace_Model_Name>
+      
+      <!--1: Plays upon the unit's destruction (end of the animation)-->
+      <Death_SFXEvent_End_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_End_Die>
+      
+      <!--No idea why that stuff is defined-->
+      <Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+      <Death_Explosions>Large_Explosion_Space</Death_Explosions>
+      <Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+      <Max_Speed>0.25</Max_Speed>
+      <Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+      <Max_Thrust>0.05</Max_Thrust>
+      <Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>5</Bank_Turn_Angle>      
+      <Ship_Class>corvette</Ship_Class>
+   </Template>
+   
+   
+   <Template Name="Template_Space_Squadron" Description="Sadly, variant inheritance is broken for squadrons when it comes to Squadron_Offsets. New offsets cannot be added to the child and will not overwrite the ones from the template. As soon as it is used in the child, squadron offets no longer work and units are stuck (exactly) inside each other. This does happen even when there are no Squadron_Offsets in the template at all."><!--#-->
+      <!--//Implicit tags given to each squadron-->
+      <Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+      <Is_Dummy>Yes</Is_Dummy>
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+      <Build_Initially_Locked>No</Build_Initially_Locked>
+      <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+      <Political_Control>0</Political_Control>
+      <Property_Flags>SmallShip</Property_Flags>
+      <GUI_Distance>115</GUI_Distance>
+      <GUI_Model_Name>MISSING.ALO</GUI_Model_Name>
+      <GUI_Offset>0 0 0</GUI_Offset>
+      <GUI_Velocity>45</GUI_Velocity>
+      <GUI_Row>1</GUI_Row>
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+
+      <!--//Can be adjusted if necessary-->
+      <Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+      <Autoresolve_Health>300</Autoresolve_Health>
+      <Cheap_Bribe_Cost>10</Cheap_Bribe_Cost>
+      <Expensive_Bribe_Cost>20</Expensive_Bribe_Cost>
+      <Piracy_Value_Credits>50</Piracy_Value_Credits>
+      <Population_Value>1</Population_Value>
+      <Damage>15</Damage>
+      <Formation_Priority>1</Formation_Priority>
+      <FormationOrder>1</FormationOrder>
+      <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+      <Idle_Chase_Range>200.0</Idle_Chase_Range>
+      <Score_Cost_Credits>500</Score_Cost_Credits>
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+      <SFXEvent_Tactical_Build_Started></SFXEvent_Tactical_Build_Started>
+      <SFXEvent_Tactical_Build_Cancelled></SFXEvent_Tactical_Build_Cancelled>
+      <SFXEvent_Tactical_Build_Complete></SFXEvent_Tactical_Build_Complete>
+
+      <!--2: The lower the tolerance the less chance of the squadron trying to zoom around lightspeeding the map to get back into formation-->
+      <Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+
+      <!--3: Used for a few squadrons. Since we don't use LOD meshes I disabled it-->
+      <!--LOD_Bias>10</LOD_Bias-->
+
+      <!--//Adjust if playable-->
+      <Build_Cost_Credits>300</Build_Cost_Credits>
+      <Build_Time_Seconds>20</Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>850</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+
+      <!--//Need to be adjusted for each squadron individually-->
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+      <Icon_Name>MISSING.tga</Icon_Name>
+      <Affiliation>Neutral</Affiliation>
+      <Tech_Level>99</Tech_Level>
+      <Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker> <!--500 for fighters and 300 for bombers-->
+
+      <!--2: Which units are part of the squadron. Can be used multiple times and doesn't overwrite. The number of tags and units per tag may relate the formation stiffness?-->
+      <!--<Squadron_Units>TIE_Fighter, TIE_Fighter, TIE_Fighter, TIE_Fighter</Squadron_Units>
+		<Squadron_Units>TIE_Fighter, TIE_Fighter, TIE_Fighter</Squadron_Units>-->
+
+      <!--1: For each unit, define a position in the formation (x,y,z, front is +x). Can be used multiple times and doesn't overwrite.-->
+      <Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-120.0,90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-120.0,-90.0,0.0</Squadron_Offsets>
+
+      <Max_Squad_Size>6</Max_Squad_Size>
+      <Is_Bomber>no</Is_Bomber>
+      <Is_Escort>yes</Is_Escort>
+
+      <!--1: Optionally define a container if necessary-->
+      <!--Create_Team_Type>Y_Wing_Squadron_Container </Create_Team_Type-->
+
+      <!--If we have a hero-->
+      <!--Is_Named_Hero>Yes</Is_Named_Hero-->
+      <!--SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned-->
+      <!--Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies-->
+
+      <!--3: Set to yes for Red_Squadron/Rogue_Squadron_Space-->
+      <!--Is_Homogeneous>Yes</Is_Homogeneous-->
+
+      <!--2: The ground base level is defined through the number of player buildings I think. This tag does NOT derive to variants!-->
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <!--1: Level of the Starbase. This tag does NOT derive to variants!-->
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+     
+   </Template>
+   
+   
+   <Template Name="Template_Space_Container"><!--#-->
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>      
+      <Icon_Name>MISSING.tga</Icon_Name>
+      <Affiliation>Neutral</Affiliation>
+      <Tech_Level>99</Tech_Level> 
+      <CategoryMask> Fighter | AntiBomber</CategoryMask>
+      <Hyperspace>yes</Hyperspace>
+      <Is_Bomber>no</Is_Bomber>
+      <Is_Escort>No</Is_Escort>
+      
+      <Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+      <SpaceBehavior>REVEAL</SpaceBehavior>
+      <Max_Speed>5.0</Max_Speed>
+      <Min_Speed>1.5</Min_Speed>
+      <Show_Name>No</Show_Name>
+      
+      <Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+      <!--Squadron_Offsets>0.0,20.0,0.0</Squadron_Offsets-->   
+      
+      <!--Duplicates from the sqaudron but I'm not sure if any of those values matter-->
+      <AI_Combat_Power>3000</AI_Combat_Power>
+      <Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+      <Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+      <Autoresolve_Health>1600</Autoresolve_Health>
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+      <Build_Initially_Locked>No</Build_Initially_Locked>
+      <Damage>50</Damage>
+      <Formation_Priority>1</Formation_Priority>
+      <FormationOrder>2</FormationOrder>
+      <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+      <Hyperspace_Speed>1.5</Hyperspace_Speed>
+      <Hyperspace>yes</Hyperspace>
+      <Idle_Chase_Range>200.0</Idle_Chase_Range>     
+      <Is_Dummy>No</Is_Dummy>     
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <MovementClass>Space</MovementClass>
+      <Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+      <Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+      
+      <!--Hero-->
+      <!--Is_Named_Hero>Yes</Is_Named_Hero-->
+
+      <Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>     
+      <Abilities SubObjectList="Yes"> </Abilities>
+      
+   </Template>
+
+</Template_Data>

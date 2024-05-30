@@ -1,0 +1,1582 @@
+<?xml version="1.0"?>
+<Template_Data>
+
+    <!--# This file contains basic template data for ground units.-->
+    <!--It contains assumptions about the game's xml tags: 1 = purpose known, 2 = purpose unsure, 3 = no clue-->
+    <!--By Locutus-->
+
+
+    <Template Name="Template_Ground_Unit">        <!--#-->
+
+        <!--Prevent this from being builable-->
+        <Tech_Level>99</Tech_Level>
+
+        <!--1: Name of the unit displayed in the game, referenced through the MasterTextFile-->
+        <Text_ID>TEXT_NONE</Text_ID>
+
+        <!--1: Description of the unit displayed in the game, referenced through the MasterTextFile-->
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+
+        <!--1: Name of the unit displayed in the game, referenced through the MasterTextFile. May contain multiple text enries.-->
+        <Encyclopedia_Text>TEXT_UNIT_UNDERWORLD_MERC_ENCYC TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+
+        <!--1: Displays up to 3 icons of the unit (xml name) the unit is good/bad against in the tooltip-->
+        <Encyclopedia_Good_Against>Rebel_Trooper Stormtrooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>TIE_Crawler Dark_Trooper_PhaseII UC_Rebel_Buildable_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+
+        <!--1: Name of the icon in the command bar-->
+        <Icon_Name>MISSING.tga</Icon_Name>
+
+        <!--1: Name of the model-->
+        <Land_Model_Name>MISSING.ALO</Land_Model_Name>
+
+        <!--2: This seems to influence the transition of animation of units being in a squad-->
+        <!--Land_Model_Anim_Override_Name>Goauld_Land_Unit_Jaffa.alo</Land_Model_Anim_Override_Name-->
+
+        <!--1: Assigns a specific model based on a planet's climate-->
+        <!--<Land_Terrain_Model_Mapping>
+        Temperate,          RI_INFANTRY.ALO,
+        Urban,             RI_INFANTRY.ALO,
+        Arctic,          RI_INFANTRY_Snow.ALO,
+        Volcanic,          RI_INFANTRY_Desert.ALO,
+        Desert,          RI_INFANTRY_Desert.ALO,
+        Forest,          RI_INFANTRY_Forest.ALO,
+        Swamp,             RI_INFANTRY_Forest.ALO
+      </Land_Terrain_Model_Mapping>-->
+
+        <!--1: Scale of the model. 1=no change, smaller values make the model smaller and vice versa-->
+        <Scale_Factor>1.0</Scale_Factor>
+
+        <!--3: General behaviours. Should not be used on infantry heroes.
+      SELECTABLE: Self-explanatory
+      POWERED: ??? Only used on air vehicles-->
+        <Behavior>SELECTABLE</Behavior>
+
+        <!--2:
+      //Locomotors: Define how the unit moves
+         BIKE_LOCOMOTOR: (Vehicles) Used for the speeder bike
+         FLYING_LOCOMOTOR: (Vehicles) Used for flying units
+         WALK_LOCOMOTOR: Default land unit behavior, also for hover vehicles
+         LAND_TEAM_INFANTRY_LOCOMOTOR: (Infantry) Always used for units that are in a squad
+      ABILITY_COUNTDOWN: Required for all abilities that have a cooldown
+      AFFECTED_BY_SHIELD: (Vehicles) ??? Might be related to <Base_Shield_Penetration_Particle> but Infantry also has an effect, no?
+      AMBIENT_SFX: Used for playing ambient sounds. Related tags: <SFXEvent_Ambient_Moving>
+      DAMAGE_TRACKING: ???  Used for nearly every unit   
+      DUMMY_TOOLTIP: ??? Used by some Felucia plants
+      DYNAMIC_TRANSFORM: ??? Only used on Cuddles_The_Rancor, I think it's used when the Rancor is spawned, like a growth animation 
+      GARRISON_HOVER: (Vehicles) See GARRISON_VEHICLE, but for hover units. I think this also allows vehicles to land on the ground in order to load troops
+      GARRISON_UNIT: This allows a unit to enter a transport or anything which can carry garrison units. For groups, this is given through the container. 
+      GARRISON_VEHICLE: (Vehicles) The unit can carry troops. Related xml tags: <Garrison_Category>, <Num_Garrison_Slots>, <Garrison_Exit_Dist>, <Garrison_Enter_Dist>, <Garrison_Radius>
+      HARASS: (Infantry) ??? Only used by Sand_Person_Sniper_A and Imperial_Elite_Guard. Related xml tags: <Harass_Enemy_Exclusion_Range> 
+      HIDE_WHEN_FOGGED: Unit can't be seen when under fog of war 
+      HOLSTER_WEAPON: Used by jedi. Allows them to run without a drawn light saber 
+      IDLE: Allows the unit to play its idle animation
+      IMPOSING_PRESENCE: This enables <Presence_Induced_Animations>
+      INDIGENOUS_UNIT: ??? 
+      ION_STUN_EFFECT: The unit can be influenced by any weapon that causes ion stun 
+      LANDING: ??? Only used by  field commanders and Squad_Stormtrooper. Might be related to the rope-down animation
+      POWERED: (Vehicles) ???
+      REVEAL: The unit can lift fog of war. Related xml tags: <Land_FOW_Reveal_Range>
+      SELECTABLE: (Infantry) I think this is only used for units which are company by themselves, i.e. single heroes
+      SHIELDED: Used when the unit has a shield. Related xml tags: <Shield_Points>, <Shield_Refresh_Rate>
+      SQUASH: (Vehicles) Allows the unit to kill infantry with <Is_Squashable> by driving over it. Not related to <Is_Supercrusher>. Requires hidden "Crusher" boxes on the model.
+      STUNNABLE: The unit can be stunned by weapons that cause a stun effect
+      SURFACE_FX: Allows the unit to leave footprints/trails. Related tags: <SurfaceFX_Name>
+      TARGETING: ??? Used by nearly all units. It seems that this is needed for some abilities that target something (e.g. the "Drain" ability)
+      TELEKINESIS_TARGET: The unit can be attacked by the telekinis special auto-ability used by some force heroes
+      TREAD_SCROLL: Used for units that have wheels
+      TURRET: (Vehicles) Used if they have a turret. If the unit itself is a turret it makes it turn to face. This behavior is needed to play the TURNL/TURNR animations
+      UNIT_AI: Makes the AI controller pickup units. (Also the case when an object script is being used). There is a prop comment "pod should be seen thru FoW", so there might be some kind of FOW relation
+      WEAPON: This is required if the unit fires a weapon through the unit code, ie most infantry units. If the unit uses hardpoints instead it leave it out
+      WIND_DISTURBANCE: (Vehicles) ??? See <Wind_Disturbance_Strength>, <Wind_Disturbance_Radius>, <Wind_Disturbance_Sphere_Alpha>  
+      //Special behaviors required for certain special abilities to work
+         DEPLOY_TROOPERS
+         BARRAGE
+         HUNT
+         SELF_DESTRUCT
+         VEHICLE_THIEF
+         DEMOLITION (used for STICKY_BOMB)      
+      -->
+        <!--LandBehavior>SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, STUNNABLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ABILITY_COUNTDOWN</LandBehavior-->
+
+        <!--2: Units can have multiple locomotors, for example when a jetpack is used-->
+        <!--Uses_Multiple_Locomotors> Yes </Uses_Multiple_Locomotors>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+      <Secondary_Locomotor_Name>JETPACK_LOCOMOTOR</Secondary_Locomotor_Name>
+      <Alternate_Max_Speed> 2.5 </Alternate_Max_Speed>
+      <Alternate_Max_Rate_Of_Turn> 6.0 </Alternate_Max_Rate_Of_Turn-->
+
+        <!--1: Found on r3/c3po. Yes: If one unit dies all die-->
+        <Share_Damage_With_Teammates>No</Share_Damage_With_Teammates>
+
+        <!--3: Found on r3/c3po-->
+        <!--Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed-->
+
+        <!--2: Color of the "team color" part of textures when the unit is neutral-->
+        <No_Colorization_Color>33, 33, 33, 255</No_Colorization_Color>
+
+        <!--2: Ranges from 0 to 10, also decimal values. It is related to the camera distance, when the model changes its detail level. A lower value means the LODs will change faster.-->
+        <LOD_Bias>5</LOD_Bias>
+
+        <!--1: Values range from 0 to 2. This scales the health and shieldbar of units, with 0 = Small, 1 = Medium, 2 = Large-->
+        <GUI_Bracket_Size>0</GUI_Bracket_Size>
+
+        <!--3: Mostly 0, but 500 for Arc Hammer and Home One-->
+        <!--GUI_Bracket_Height>0</GUI_Bracket_Height-->
+
+        <!--3: Usually 5 for ground infantry, not set for vehicles-->
+        <!--GUI_Bracket_Width>5</GUI_Bracket_Width-->
+
+        <!--1: Sets the distance of the health bar to the unit, the smaller the unit the smaller the value. Ranges from 0.1 to 2.0-->
+        <!--GUI_Bounds_Scale>0.35</GUI_Bounds_Scale-->
+
+        <!--3: ???-->
+        <!--GUI_Offset>0 0 5</GUI_Offset-->
+
+        <!--3: ???-->
+        <!--GUI_Velocity>45</GUI_Velocity-->
+
+        <!--1: Hides health + shield bar. If set to No the player can only see the health of own ships when selected in the dashboard-->
+        <!--GUI_Hide_Health_Bar>false</GUI_Hide_Health_Bar-->
+
+        <!--1: The unit can be seen on the radar-->
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <!--1: If this is no, the unit can only be seen by allies-->
+        <Is_Visible_On_Enemy_Radar>Yes</Is_Visible_On_Enemy_Radar>
+        <!--1: Name of the unit's icon on the minimap, referenced in the CommandBar-->
+        <Radar_Icon_Name></Radar_Icon_Name>
+        <!--1: Scale factor for the radar icon-->
+        <Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+        <!--1: The unit can even be seen under FOW-->
+        <Visible_On_Radar_When_Fogged>false</Visible_On_Radar_When_Fogged>
+
+        <!--1: This makes a cloaked unit visible to all allied units nearby-->
+        <Target_Stealth_Units>No</Target_Stealth_Units>
+
+        <!--1: Do we want to loop the first idle animation?-->
+        <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+
+        <!--3: Might be related to ground flyer path finding. Is mostly land, but sometimes also "None" for non-flying units-->
+        <Space_Layer>Land</Space_Layer>
+
+        <!--2: Nearly always one. Some flyers users lighter values such as 0.985. Affects <Max_Thrust>-->
+        <Mass>1.0</Mass>
+
+        <!--2: Seems to disable the transition between animations-->
+        <!--Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay-->
+
+        <!--1: Animation speed modifiers. A lower value results in a faster animation.-->
+        <Movement_Animation_Speed>1.0</Movement_Animation_Speed>
+        <Rotation_Animation_Speed>1.0</Rotation_Animation_Speed>
+        <Walk_Animation_Speed>1.0</Walk_Animation_Speed>
+        <Crouch_Animation_Speed>1.0</Crouch_Animation_Speed>
+
+        <!--1: Max speed to which a unit accelerates-->
+        <Max_Speed>1.0</Max_Speed>
+
+        <!--1: This tag overwrites <Max_Thrust>, adding a constant acceleration to a unit.  
+      IMPORTANT: Some containers use this tag with an underscore-->
+        <!--OverrideAcceleration>.07</OverrideAcceleration>
+      <OverrideDeceleration>.07</OverrideDeceleration-->
+        <!--Override_Acceleration>.1</Override_Acceleration>
+      <Override_Deceleration>.1</Override_Deceleration-->
+
+        <!--2: How fast the unit can turn around. 8=slow, 50=fast. Values below 3 are not recommended as this will result in the units rotating too slow when they turn and then just move right away without rotating into the new target direction-->
+        <Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+
+        <!--1: Distance of the unit next to its neighbors when being spawned via transport or when the unit is moving. This value seems to be dominant over the <FormationSpacing> set in the container-->
+        <FormationSpacing>1.0</FormationSpacing>
+
+        <!--3: Range from 1 to 8-->
+        <FormationOrder>1</FormationOrder>
+
+        <!--3: Values are Standard, Solo-->
+        <FormationGrouping>Standard</FormationGrouping>
+
+        <!--3: ???-->
+        <FormationRaggedness>0.0</FormationRaggedness>
+
+        <!--3: I think that the default value is true-->
+        <!--WaitsForFormationFormup>false</WaitsForFormationFormup-->
+
+        <!--3: Only known value is WaitNone-->
+        <!--Formation_Formup_Wait_Style>WaitNone</Formation_Formup_Wait_Style-->
+
+        <!--1: If 0, the units will stay in a perfect chess/dartboard. The higher the value the more unprecise the final position of the unit in the formation will be-->
+        <MaxJiggleDistance>0</MaxJiggleDistance>
+
+        <!--2: Defines the role of the unit (type [Infantry, Vehicle, Air, LandHero, NonCombatHero, Structure] + targeting priority [AntiInfantry, AntiVehicle, AntiAir, AntiStructure]), such as Infantry | AntiVehicle or LandHero | Vehicle | AntiVehicle | AntiStructure-->
+        <CategoryMask>Infantry</CategoryMask>
+
+        <!--1: Defnies the terrain a unit can pass on a map, see MovementClassTypeDefs.xml. I.e. Infantry can pass Clear | Shield | InfantryOnly-->
+        <MovementClass>Infantry</MovementClass>
+
+        <!--1: How the weather influences the unit. Values are: Default, Infantry, LargeWalker, Speeder, Walker, Tracked, Hover, Wheeled, Flying. See WeatherModifiers.xml-->
+        <Weather_Category>Infantry</Weather_Category>
+
+        <!--3: Tags are: Build Pad, Infantry, Bike, Vehicle, Large Vehicle, Giant Vehicle, Landing Transport-->
+        <UnitCollisionClass>Infantry</UnitCollisionClass>
+
+        <!--3: Prevents a unit from auto-attacking another unit of the given category type. Values are Infantry | Vehicle | LandHero | Structure -->
+        <!--Attack_Category_Restrictions> Infantry | Vehicle | LandHero | Structure </Attack_Category_Restrictions-->
+
+        <!--1: Required for the deploy ability, requires deploy animations-->
+        <Deploys>No</Deploys>
+        <!--1: The unit will automatically deploy when given an attack order and being in range. Default is YES-->
+        <!--Auto_Deploys>No</Auto_Deploys-->
+        <!--1: Speed of the deploy (walk) animation-->
+        <!--Deployment_Anim_Rate>1.0</Deployment_Anim_Rate-->
+        <!--Deployed_Walk_Anim_Speed>2</Deployed_Walk_Anim_Speed-->
+        <!--1: Increased max attack distance in deployed state-->
+        <!--Deployed_Max_Attack_Distance_Multiplier>1.0</Deployed_Max_Attack_Distance_Multiplier-->
+        <!--1: Movement speed when deployed. Does only work in conjunction with <Max_Dist_Walk_While_Deployed>-->
+        <!--Deployed_Walk_Speed>2.5</Deployed_Walk_Speed-->
+        <!--1: If the unit is given a move order outside this range, it will undeploy to move. This also disables the possibility to manually disengage a deploy-->
+        <!--Max_Dist_Walk_While_Deployed>150.0</Max_Dist_Walk_While_Deployed-->
+        <!--3: ???-->
+        <!--Must_Face_Target_To_Attack_When_Deployed>Yes</Must_Face_Target_To_Attack_When_Deployed-->
+        <!--1: The shield will only be considered active in the deployed state-->
+        <!--Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed-->
+        <!--1: This allows for a changed turret behaviour in the deployed state-->
+        <!--Deployed_Turret_Elevate_Extent_Degrees>180</Deployed_Turret_Elevate_Extent_Degrees>
+        <Deployed_Turret_Rotate_Extent_Degrees>360</Deployed_Turret_Rotate_Extent_Degrees-->
+
+        <!--3: No idea, in my tests units were also able to fire undeployed even if the second tag was set to NO-->
+        <!--Fire_Weapon_When_Deployed>No</Fire_Weapon_When_Deployed>
+        <Fire_Weapon_When_Undeployed>Yes</Fire_Weapon_When_Undeployed-->
+
+        <!--1: ROCKET_ATTACK ability specific strings-->
+        <Fire_Weapon_When_In_Normal_Attack_Mode>Yes</Fire_Weapon_When_In_Normal_Attack_Mode>
+        <Fire_Weapon_When_In_Rocket_Attack_Mode>No</Fire_Weapon_When_In_Rocket_Attack_Mode>
+
+        <!--3: 'This must be YES in order to fire missiles without concern of the firing cone in Calculate_Projectile_Facing()'. Forces the shots to launch in the direction of the muzzle/fire bones, but this essentially fixes accuracy to one direction,  and should not be used for normal weapons -->
+        <!--Fires_Forward>Yes</Fires_Forward-->
+
+        <!--2: Always 0, pretty sure that this is a deprectated tag not used in the game-->
+        <Political_Control>0</Political_Control>
+
+        <!--2: A unit may have multiple property flags (in seperate tags or in one tag). I think they are required for the AI only and called by scripts.
+         Fodder: ??? Might mean that the unit has not much value and can even be used for suicide plans
+         IsSupercrusher: For very big vehicles, they can kill everything with <Is_Squashable_By_Supercrusher> set to yes
+         GoodInfantryCrusher: For bigger vehicles that can kill infantry by driving over them
+         CanContainGarrison: Used by transporters
+        -->
+        <!--Property_Flags>Fodder</Property_Flags-->
+
+        <!--3: Is 10 for small, 60 for big and 100 for very big units. seems to be formation related-->
+        <MinimumPushReturnDistance>10</MinimumPushReturnDistance>
+
+        <!--1: The faction of the unit-->
+        <Affiliation>Neutral</Affiliation>
+
+        <!--1: Always NO except for planets-->
+        <Show_Name>No</Show_Name>
+
+        <!--1: Galactic build costs and time. Should usually be part of the company-->
+        <!--Build_Cost_Credits>1</Build_Cost_Credits>
+      <Build_Time_Seconds>1</Build_Time_Seconds-->
+
+        <!--3: Usually 10 for infantry. Potentially unused.-->
+        <Size_Value>10</Size_Value>
+
+        <!--1: The tag is obsolete (and doesn't have any relation to projectile damage or auto-resolve result) but is required for "combatant" behavior, which lets the AI use a unit at all.-->
+        <Damage>1</Damage>
+
+        <!--3: Ground units reveal other units on the minimap within this range?-->
+        <Sensor_Range>20</Sensor_Range>
+
+        <!--1: Shield health-->
+        <Shield_Points>0</Shield_Points>
+
+        <!--2: Shields restored per second-->
+        <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+        <!--1: Health of any unit that doesn't use hardpoints with health. If the latter is the case, this should be the same as the sum of all hardpoint health as there is a relation between hp health and this tag (<Hull_Vs_Hard_Points_Health_Constraint>)-->
+        <Tactical_Health>35</Tactical_Health>
+
+        <!--3: Not sure, does NOT seem to be related to auto-resolve.-->
+        <Autoresolve_Health>35</Autoresolve_Health>
+
+        <!--2: Fairly sure that these tags are not used by the game at all-->
+        <Energy_Capacity>99999</Energy_Capacity>
+        <Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+
+        <!--1: A match can't be won before the unit is killed-->
+        <Victory_Relevant>yes</Victory_Relevant>
+
+        <!--1: Obvious-->
+        <Influences_Capture_Point>True</Influences_Capture_Point>
+
+        <!--3: No idea. But Rebel_Infiltrator, MPTL_Spotter, Jabba_The_Hutt and Noghri_Assassin can do it-->
+        <Stealth_Capable>No</Stealth_Capable>
+
+        <!--1: Projectile fired by the unit. Requires WEAPON behaviour-->
+        <!--Projectile_Types>Proj_Merc_Concussion_Grenade</Projectile_Types-->
+
+        <!--1: How long it takes to reload between each salvo, how many shots per salvo, time between each single shot in a salvo-->
+        <!--Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds-->
+
+        <!--1: Prevents the unit from attacking other units with the specified <CategoryMask>. Manual targeting is STILL possible.-->
+        <!--Fire_Category_Restrictions>Infantry, Vehicle, Structure</Fire_Category_Restrictions-->
+
+        <!--1: Prevents the unit from attacking other units with the specified <CategoryMask>. Manual targeting is NOT possible.-->
+        <!--Attack_Category_Restrictions> Infantry | Vehicle | LandHero </Attack_Category_Restrictions-->
+
+        <!--1: If No, the unit can't be attacked-->
+        <Is_Valid_Target>Yes</Is_Valid_Target>
+
+        <!--1: Without moving, the unit can only attack units within the given range-->
+        <!--Targeting_Min_Attack_Distance>0</Targeting_Min_Attack_Distance-->
+        <Targeting_Max_Attack_Distance>240.0</Targeting_Max_Attack_Distance>
+
+        <!--1: Inaccurracy when firing at other unit types. First value specifies the CategoryMask, the second one the likeliness to miss. 
+         IMPORTANT: Doesn't work for ground units that don't have hardpoints.
+         The inaccuracy itself is defined by an angle in degrees and determines how far off a unit shoots away from the target. It randomizes between 0 (perfect accuracy) and the value given and generates a firing cone from that-->
+        <Targeting_Fire_Inaccuracy>Infantry, 5.0</Targeting_Fire_Inaccuracy>
+        <Targeting_Fire_Inaccuracy>Vehicle, 3.0</Targeting_Fire_Inaccuracy>
+        <Targeting_Fire_Inaccuracy>Air, 70.0</Targeting_Fire_Inaccuracy>
+        <Targeting_Fire_Inaccuracy>Structure, 5.0</Targeting_Fire_Inaccuracy>
+
+        <!--3: Might be barrage/artillery related.-->
+        <!--Targeting_Fire_Inaccuracy_Fixed_Radius>40</Targeting_Fire_Inaccuracy_Fixed_Radius-->
+
+        <!--1: How much fog of war the unit lifts around it-->
+        <Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+
+        <!--3: ???-->
+        <Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+
+        <!--3: ???-->
+        <Multisample_FOW_Check>No</Multisample_FOW_Check>
+
+        <!--1: Units will always fire at the root bone of another unit. If this is set higher, hostiles will target the unit above the root bone unless there are <Target_Bones> specified. This is especially important for walkers for example, so units don't fire between their legs.-->
+        <Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+
+        <!--1: This makes the unit (based on the root bone) be higher or lower. Typically used for flyers to be spawned above ground. Do not confuse with <Ranged_Target_Z_Adjust>, <Hover_Height>, or <Hover_Offset> -->
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+
+        <!--2: Makes the unit easier to select-->
+        <Mouse_Collide_Override_Sphere_Radius>10.0</Mouse_Collide_Override_Sphere_Radius>
+
+        <!--1: Without it, projectiles would fly right through the unit-->
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+        <!--3: Some units, such as AT-ATs or Podwalkers have this set to NO-->
+        <Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+        <!--1: See GameConstants-->
+        <Armor_Type>Armor_Infantry</Armor_Type>
+        <Shield_Armor_Type>Armor_Infantry</Shield_Armor_Type>
+
+        <!--1: Sounds referenced in the SFX xmls. The trigger when the specific command is issued. <SFXEvent_Fleet_Move> is used on the galactic layer, all others are tactical-->
+        <SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+        <SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+        <SFXEvent_Attack></SFXEvent_Attack>
+        <SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+        <SFXEvent_Guard></SFXEvent_Guard>
+        <SFXEvent_Move></SFXEvent_Move>
+        <SFXEvent_Select></SFXEvent_Select>
+
+        <!--1: Played when the unit is on low health-->
+        <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+        <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+
+        <!--2: Most likely the default move/attack sound will be overwritten by this if multiple units are selected-->
+        <SFXEvent_Group_Move></SFXEvent_Group_Move>
+        <SFXEvent_Group_Attack></SFXEvent_Group_Attack>
+
+        <!--1: Weapon sound of units. Can also be referenced in hardpoints.-->
+        <SFXEvent_Fire></SFXEvent_Fire>
+
+        <!--1: Special ability related sound effects-->
+        <SFXEvent_Barrage></SFXEvent_Barrage>
+
+        <!--1: Can be used multiple times. First, the hardpoint is listed, second the sound-->
+        <SFXEvent_Hardpoint_Destroyed></SFXEvent_Hardpoint_Destroyed>
+
+        <!--2: Require the AMBIENT_SFX behavior. Not sure what the difference to an engine sound is. A unit can't have ambient sounds and engine sounds together-->
+        <!--SFXEvent_Ambient_Loop></SFXEvent_Ambient_Loop>
+      <SFXEvent_Ambient_Moving></SFXEvent_Ambient_Moving>
+      <SFXEvent_Ambient_Moving_Min_Delay_Seconds>7</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+      <SFXEvent_Ambient_Moving_Max_Delay_Seconds>12</SFXEvent_Ambient_Moving_Max_Delay_Seconds-->
+
+        <!--1: Used in conjunction with holstered weapons-->
+        <SFXEvent_Draw_Weapon></SFXEvent_Draw_Weapon>
+        <SFXEvent_Holster_Weapon></SFXEvent_Holster_Weapon>
+
+        <!--1: Sounds played when unit construction starts/cancles/ends-->
+        <SFXEvent_Tactical_Build_Started></SFXEvent_Tactical_Build_Started>
+        <SFXEvent_Tactical_Build_Cancelled></SFXEvent_Tactical_Build_Cancelled>
+        <SFXEvent_Tactical_Build_Complete></SFXEvent_Tactical_Build_Complete>
+
+        <!--1: Plays upon the unit's destruction (start of the animation and end). Unit_Lost is meant to be a non-3D speech sound-->
+        <SFXEvent_Unit_Lost></SFXEvent_Unit_Lost>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <Death_SFXEvent_End_Die></Death_SFXEvent_End_Die>
+
+        <!--1: When self destruct sequence begins (ability). Mind the typo!-->
+        <Selt_Destruct_SFXEvent_Start_Die></Selt_Destruct_SFXEvent_Start_Die>
+
+        <!--3: It's always 1x1-->
+        <OccupationStyle>1x1</OccupationStyle>
+
+        <!--1: A blob shadow will disable any shadow mesh of a unit. Instead, a decal will be displayed, immitating a simple shadow. See ShadowBlobMaterials.xml-->
+        <Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+        <!--1: The blob shadow will only be displayed if the detail level is below the given value. Detail levels are defined in graphic details, values can be set ingame. 0 = low, 1 = medium, 2 = high, 3 = very high.-->
+        <Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
+        <!--1: Size of the blop material, x, y-->
+        <Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+
+        <!--2: The unit will not be reflected/refracted by water (ooor maybe on metal textures?) if the detail level is below the given value. Detail levels are defined in graphic details, values can be set ingame. 0 = low, 1 = medium, 2 = high, 3 = very high.-->
+        <No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>99</No_Refraction_Below_Detail_Level>
+
+        <!--3: ???-->
+        <Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+
+        <!--1: The unit can be run over (=killed) by other, bigger units-->
+        <Is_Squashable>Yes</Is_Squashable>
+
+        <!--1: The unit can be run over (=killed) by other units that are considered supercrushers-->
+        <Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+
+        <!--1: Makes the unit a supercrusher-->
+        <Is_Supercrusher>No</Is_Supercrusher>
+
+        <!--1: Does not interact with <Damage_Type> for damage calculation but allows enabling a specific death clone based on the damage type-->
+        <!--Squash_Damage_Type>Damage_Force_Whirlwind</Squash_Damage_Type-->
+
+        <!--3: Since all units stop when ordered to attack attack I'm not sure what it does. Typically found on lightsaber heroes-->
+        <!--Is_Stationary_When_Attacking>Yes</Is_Stationary_When_Attacking-->
+
+        <!--1: Units will not try to pathfind around this object-->
+        <!--Avoidance_Disabled>true</Avoidance_Disabled-->
+
+        <!--3: Only used on indigenous units-->
+        <!--Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop-->
+
+        <!--3: Related to HARASS behavior-->
+        <!--Harass_Enemy_Exclusion_Range>100.0</Harass_Enemy_Exclusion_Range-->
+
+        <!--1: If false, this prevents the unit from being targeted with the cinematic camera (space key)-->
+        <Movie_Object>true</Movie_Object>
+
+        <!--2: This value is used to calculate the outcome of the auto battle in GC, selected difficulty has no influence. If the sum of the AICP values of all the attacker's forces is greater than or equal to 75% of the sum of the defending forces' AICP, the attacker will win. See <AutoResolveWinnerAttrition> in GameConstants.xml.
+        It also determines force strength for the AI, e.g., when planning attacks (GC + skirmish). A higher value means that the AI will build the unit more likely.-->
+        <AI_Combat_Power>14</AI_Combat_Power>
+
+        <!--2: I thinks it's how long the unit will keep targeting an enemy that moved out of range-->
+        <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+
+        <!--1: Influences behaviour of the unit. Makes the unit want to attack certain targets and prevents it from attack others. See GroundUnitTargetingPriorities.xml-->
+        <Targeting_Priority_Set>AvoidAntiInfantryTurrets</Targeting_Priority_Set>
+
+        <!--1: When the unit is in state X, it will follow hostile units for the given distance. Minus 1 (infinite?) is also possible, it should disable that the unit follows anything-->
+        <Idle_Chase_Range>50.0</Idle_Chase_Range>
+        <Guard_Chase_Range>200.0</Guard_Chase_Range>
+        <Attack_Move_Response_Range>250.0</Attack_Move_Response_Range>
+
+        <!--1: The selection box can be set higher or lower-->
+        <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+        <!--2: Makes the turret auto-attack the unit I think-->
+        <Ground_Infantry_Turret_Target>Yes</Ground_Infantry_Turret_Target>
+        <Ground_Vehicle_Turret_Target>No</Ground_Vehicle_Turret_Target>
+        <Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>
+
+        <!--3: I think that these tags are only relevant for TEC files which we cant edit or create-->
+        <!--Pause_During_Cinematic_Anim>yes</Pause_During_Cinematic_Anim>
+      <Cinematic_Anim_Speed>1.0</Cinematic_Anim_Speed>
+      <Cinematic_Anim_Blend_Seconds>1.0</Cinematic_Anim_Blend_Seconds>
+      <Cinematic_Anim_Index>00</Cinematic_Anim_Index-->
+
+        <!--1: The death clone will not stay on the field-->
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+
+        <!--1: How long the transition takes from the deathclone being visible to complete disappearance-->
+        <Death_Fade_Time>0.25</Death_Fade_Time>
+
+
+        <!--1: How long a unit's deathclone will lay on the map after the death animation has ended-->
+        <Death_Persistence_Duration>0.0</Death_Persistence_Duration>
+
+        <!--1: This will trigger the DIE_O*number* deathclone. Mostly used inside of the deathclone than the actual unit-->
+        <!--Specific_Death_Anim_Index>1</Specific_Death_Anim_Index-->
+
+        <!--1: Depending on the damage type the unit was hit by on death, the specified death clone will be triggered. Can be used multiple times-->
+        <!--Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_00</Death_Clone>
+      <Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_01</Death_Clone>
+      <Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
+      <Death_Clone>Damage_Remote_Bomb, Underworld_Merc_Remote_Bomb_Death_Clone</Death_Clone-->
+
+        <!--1: These particles will be spawned on death resp. when the death animation finishes-->
+        <Death_Explosions></Death_Explosions>
+        <!--Death_Explosions_End></Death_Explosions_End-->
+
+        <!--1: How much credits it costs to convert this unit using the TACTICAL_BRIBE ability-->
+        <Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
+
+        <!--2: All related to ignite caused by the FLAME_THROWER ability. Last three tags are obvious but I'm not sure what <Is_Combustible> changes, maybe it makes you lose control over the unit-->
+        <Is_Combustible>No</Is_Combustible>
+        <On_Fire_Speed_Modifier>1.2f</On_Fire_Speed_Modifier>
+        <Targeting_Allowed_When_Burning>no</Targeting_Allowed_When_Burning>
+        <Burning_Damage_Per_Second>0.2</Burning_Damage_Per_Second>
+
+        <!--1: Used by Jedi to walk with their lightsaber holstered. Requires HOLSTER_WEAPON behavior-->
+        <!--Holster_Weapon_Bone_Name> b_saber </Holster_Weapon_Bone_Name>
+		<Holster_Drawn_Bone_Translation> 0.0, 0.0, 0.0 </Holster_Drawn_Bone_Translation>
+		<Holster_Holstered_Bone_Translation> 0.0, -5.1705, 0.0 </Holster_Holstered_Bone_Translation>
+		<Holster_Transition_Time_In_Secs> 0.17 </Holster_Transition_Time_In_Secs>
+		<Holster_Minimum_Drawn_Time_In_Secs> 15.0 </Holster_Minimum_Drawn_Time_In_Secs>
+		<Holster_Disable_Engine_Loops> Yes </Holster_Disable_Engine_Loops-->
+
+        <!--1: Triggers a certain animation if the specified units are nearby. See IMPOSING_PRESENCE behavior-->
+        <!--Presence_Induced_Animations>
+         Attention, 
+            Emperor_Palpatine,
+            Darth_Vader,
+         Celebrate, 
+            AT_AT_Walker_Cable_Attack_Death_Clone,
+            AT_AT_Walker_Death_Clone_00,
+            AT_AT_Walker_Death_Clone_01,
+            AT_AT_Walker_Death_Clone_02
+      </Presence_Induced_Animations-->
+
+        <!--1: Defines the range for <Presence_Induced_Animations>-->
+        <!--Presence_Range>200.0</Presence_Range-->
+
+        <!--1: Unit name the converted unit is being changed to-->
+        <!--Conversion_Ability_Changes_To_Enemy>Underworld_Merc_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy-->
+
+        <!--3: Found on some field commanders-->
+        <!--Execute_Script_On_Type>true</Execute_Script_On_Type-->
+
+        <!--1: The unit will run the specified GameObject lua script (file name without ending)-->
+        <!--Lua_Script>SpeederBike</Lua_Script-->
+
+    </Template>
+
+
+    <Template Name="Template_Ground_Infantry">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Unit</Variant_Of_Existing_Type> 
+
+        <!--3: Seems to be locomotor related, values are Walk, Hover, Tracked, Fly. Not used on all units!-->
+        <Type>Walk</Type>
+
+        <!--3: True for nearly all infantry units. I think it's size related. Not set for any bigger vehicles. -->
+        <CanCellStack>yes</CanCellStack>
+
+        <!--3: only used by infantry-->
+        <Surface_Type_Cover_Damage_Shield>.5</Surface_Type_Cover_Damage_Shield>
+
+        <!--2: Size of the footsteps defined in <SurfaceFX_Name>-->
+        <Custom_Soft_Footprint_Radius>3.5</Custom_Soft_Footprint_Radius>
+
+        <!--1: Name of the SurfaceFX that is left behind, name of the SurfaceFX decal. Requires SURFACE_FX behavior-->
+        <SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
+
+        <!--3: Where the shadow will be applied to? Related tags: <Blob_Shadow_Material_Name>, <Blob_Shadow_Below_Detail_Level>, <Blob_Shadow_Scale>-->
+        <Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
+
+        <!--2: This seems to extend the collision box (not mesh) of a unit. It depends on the scale of the unit, so if the model has a Scale_Factor of 2, the custom extent will be twice as big. The collision mesh will be unaffected but the collision box influences passability and pathfinding (how close units can move to each other).
+            Custom_Hard_XExtent corresponds with the Y axis is in max, and the other way around. Regarding the shape, it doesn't seem to ben actual "box". it definitely has some clear edges but it's closer to an octagon. (or a rectangle with rounded corner, sth like that)
+            Prop_Ruins_D (w_ruins03.alo) has some insightful values for testing: when imported, the size of the bounding box is 54,533 | 80,691. the custom hard extent is  defined with 27,0 | 41,0 -> so pretty much exactly the half. however, the logic fails to translate properly for space, at least the factor is of...
+            The offsets move that box based from the root point of the model. Depending on the direction the ship spawns, there is an additional blocking area in front of the ship caused by <Space_Reinforcement_Collision_Check_Distance> in the GameConstants.xml. Apparently this tag seems to mess with the box, as it seems to make X and Y dependend on each other. No sideeffects with 0.0-->
+        <Custom_Hard_XExtent>2.0</Custom_Hard_XExtent>
+        <Custom_Hard_YExtent>2.0</Custom_Hard_YExtent>
+        <!--Custom_Hard_XExtent_Offset>-9.0</Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset>21.0</Custom_Hard_YExtent_Offset>
+      <Custom_Hard_YExtent_Deployed>24.0</Custom_Hard_YExtent_Deployed--> 
+
+    </Template>
+
+
+    <Template Name="Template_Ground_Infantry_Single">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry</Variant_Of_Existing_Type>
+        <LandBehavior>WALK_LOCOMOTOR, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+        <Autoresolve_Health>400</Autoresolve_Health>
+        <AI_Combat_Power>250</AI_Combat_Power>
+
+        <!--3: ??? Can be Infantry, Vehicle, or both.-->
+        <Garrison_Category>Infantry</Garrison_Category>
+
+        <!--3: How much slots the units takes up when being carried by a transport vehicle?-->
+        <Garrison_Value>1</Garrison_Value>
+
+        <!--1: Radius of the selection circle. It's multiplied with the <Scale_Factor> of the model-->
+        <Select_Box_Scale>27</Select_Box_Scale>
+
+        <!--1: The distance in alamo units a unit will move towards an attacker if it is being attacked-->
+        <Autonomous_Move_Extension_Vs_Attacker>0.0</Autonomous_Move_Extension_Vs_Attacker>
+
+    </Template>
+
+
+    <Template Name="Template_Ground_Infantry_Multi">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry</Variant_Of_Existing_Type>
+        <!-- Removed TARGETING as it caused the units to not attack buildings  -->
+        <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+        <OverrideAcceleration>0.05</OverrideAcceleration>
+        <OverrideDeceleration>0.05</OverrideDeceleration>
+
+        <!--1: The unit is part of a squad-->
+        <Create_Team>Yes</Create_Team>
+
+    </Template>
+
+    <Template Name="Template_Ground_Infantry_Single_Hero">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+        <CategoryMask>LandHero</CategoryMask>
+        <Custom_Soft_Footprint_Radius>6.5</Custom_Soft_Footprint_Radius>
+        <Custom_Hard_XExtent>5.0</Custom_Hard_XExtent>
+        <Custom_Hard_YExtent>5.0</Custom_Hard_YExtent>
+
+        <!--1: This will make the hero respawn in GC ("major hero")-->
+        <Is_Named_Hero>Yes</Is_Named_Hero>
+
+        <!--1: The game will consider this unit a minor hero (no GC respawn)-->
+        <Is_Generic_Hero>No</Is_Generic_Hero>
+
+        <!--1: Show the hero icon in the upper right of the screen-->
+        <Show_Hero_Head>Yes</Show_Hero_Head>
+
+        <!--3: My guess is that he can identify force heroes, though I'm not sure what identifies a hero as such. Also not sure how that detection works-->
+        <Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+
+        <!--3: ???-->
+        <GalacticBehavior>SELECTABLE</GalacticBehavior>
+
+        <!--2: Only used by heroes. Might be related to GC sorting with the lowest value being on top-->
+        <Ranking_In_Category>3</Ranking_In_Category>
+
+        <!--1: Used for heroes that are not space or ground only-->
+        <Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+        <Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+
+        <!--1: Obvious-->
+        <!--Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit-->
+
+        <!--3: Might determine if the unit looks for and is affected and bound by terrain (cliffs and rivers on land, asteroid fields and space stations in space)-->
+        <Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+        <!--3: I think this locks a unit for the AI in GC-->
+        <IsBuildable>No</IsBuildable>
+
+        <!--1: Credits to kill the hero in GC using the neutralization ability-->
+        <Neutralization_Cost>1500.0</Neutralization_Cost>
+        <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+        <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+        <!--2: ???-->
+        <!--Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting-->
+
+        <!--2: Values go into GameStoring.lua, to determine the score at the end of the game-->
+        <Score_Cost_Credits>10000</Score_Cost_Credits>
+
+        <!--1: This adds a new selection circle to units-->
+        <!--<Selection_Blob_Material_Name>Selection_Rebel_Hero</Selection_Blob_Material_Name>-->
+
+        <!--1: See <Blob_Shadow_Material_Name>. This adds a decal below the unit specified in the ShadowBlobMaterials.xml. It is always visible, even when the unit is not selected. There is a bug with this decal staying on the grund when it is deployed if the unit has SELECTABLE as <Behavior>-->
+        <!--<Highlight_Blob_Material_Name>Highlight_Rebel_Hero</Highlight_Blob_Material_Name>-->
+
+        <!--1: If available, the unit will spawn on that planet in GC-->
+        <!--Spawn_Planet>Alderaan</Spawn_Planet-->
+
+        <!--3: ???-->
+        <!--Respawn_Tied_To_Structure>Ground_Cantina_R</Respawn_Tied_To_Structure-->
+
+        <!--3: Used on Underworld heroes only-->
+        <Destroy_When_Used_As_Corruption_Prereq>No</Destroy_When_Used_As_Corruption_Prereq>
+
+    </Template>
+
+    <Template Name="Template_Ground_Infantry_Multi_Hero">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+        <CategoryMask>LandHero</CategoryMask>
+        <Custom_Soft_Footprint_Radius>6.5</Custom_Soft_Footprint_Radius>
+        <Custom_Hard_XExtent>5.0</Custom_Hard_XExtent>
+        <Custom_Hard_YExtent>5.0</Custom_Hard_YExtent>
+
+        <!--1: This will make the hero respawn in GC ("major hero")-->
+        <Is_Named_Hero>Yes</Is_Named_Hero>
+
+        <!--1: The game will consider this unit a minor hero (no GC respawn)-->
+        <Is_Generic_Hero>No</Is_Generic_Hero>
+
+        <!--1: Show the hero icon in the upper right of the screen-->
+        <Show_Hero_Head>Yes</Show_Hero_Head>
+
+        <!--3: My guess is that he can identify force heroes, though I'm not sure what identifies a hero as such. Also not sure how that detection works-->
+        <Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+
+        <!--3: ???-->
+        <GalacticBehavior>SELECTABLE</GalacticBehavior>
+
+        <!--2: Only used by heroes. Might be related to GC sorting with the lowest value being on top-->
+        <Ranking_In_Category>3</Ranking_In_Category>
+
+        <!--1: Used for heroes that are not space or ground only-->
+        <Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+        <Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+
+        <!--1: Obvious-->
+        <!--Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit-->
+
+        <!--3: ???-->
+        <Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+        <!--3: I think this locks a unit for the AI in GC-->
+        <IsBuildable>No</IsBuildable>
+
+        <!--1: Credits to kill the hero in GC using the neutralization ability-->
+        <Neutralization_Cost>1500.0</Neutralization_Cost>
+        <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+        <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+        <!--2: ???-->
+        <!--Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting-->
+
+        <!--3: ???-->
+        <Score_Cost_Credits>10000</Score_Cost_Credits>
+
+        <!--3: ???-->
+        <!--<Selection_Blob_Material_Name>Selection_Rebel_Hero</Selection_Blob_Material_Name>-->
+
+        <!--1: See <Blob_Shadow_Material_Name>. Adds an additional decal to heroes-->
+        <!--<Highlight_Blob_Material_Name>Highlight_Rebel_Hero</Highlight_Blob_Material_Name>-->
+
+        <!--1: If available, the unit will spawn on that planet in GC-->
+        <!--Spawn_Planet>Alderaan</Spawn_Planet-->
+
+        <!--3: ???-->
+        <!--Respawn_Tied_To_Structure>Ground_Cantina_R</Respawn_Tied_To_Structure-->
+
+        <!--3: Used on Underworld heroes only-->
+        <Destroy_When_Used_As_Corruption_Prereq>No</Destroy_When_Used_As_Corruption_Prereq>
+
+    </Template>
+
+
+
+
+    <!--#Faction specific templates-->
+    <Template Name="Template_Ground_Infantry_Multi_Goauld">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+        <Affiliation>Rebel</Affiliation>
+        <Scale_Factor>1.258</Scale_Factor>
+        <Tactical_Health>90</Tactical_Health>
+        <Movement_Animation_Speed>1.5</Movement_Animation_Speed>
+        <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+        <Walk_Animation_Speed>0.45</Walk_Animation_Speed>
+        <Crouch_Animation_Speed>0.25</Crouch_Animation_Speed>
+        <Max_Speed>1</Max_Speed>
+        <Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+        <Formation_Formup_Wait_Style>WaitNone</Formation_Formup_Wait_Style>
+        <Custom_Soft_Footprint_Radius>3.5</Custom_Soft_Footprint_Radius>
+        <FormationSpacing>0.5</FormationSpacing>
+        <FormationOrder>2</FormationOrder>
+        <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.8</Projectile_Fire_Pulse_Delay_Seconds>
+        <Death_Clone>Damage_Infection, Infantry_Infection_G_Death_Clone_00</Death_Clone>
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Goauld_Infantry_Auto_Heal">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type></Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color></Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </Template>
+    <Template Name="Template_Ground_Infantry_Single_Hero_Goauld">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero</Variant_Of_Existing_Type>
+        <Affiliation>Rebel</Affiliation>
+        <Scale_Factor>1.258</Scale_Factor>
+        <Tactical_Health>500</Tactical_Health>
+        <Movement_Animation_Speed>1.5</Movement_Animation_Speed>
+        <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+        <Walk_Animation_Speed>0.45</Walk_Animation_Speed>
+        <Crouch_Animation_Speed>0.25</Crouch_Animation_Speed>
+        <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.8</Projectile_Fire_Pulse_Delay_Seconds>
+        <Death_Fade_Time>0.65</Death_Fade_Time>
+        <Death_Persistence_Duration>1.0</Death_Persistence_Duration>
+        <Select_Box_Scale>33</Select_Box_Scale>
+        <Selection_Blob_Material_Name>Highlight_Rebel_Hero</Selection_Blob_Material_Name>
+        <Death_Clone>Damage_Infection, Infantry_Infection_G_Death_Clone_00</Death_Clone>
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Goauld_Infantry_Auto_Heal">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type></Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color></Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </Template>
+    <Template Name="Template_Ground_Infantry_Single_Hero_Goauld_Slow">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld</Variant_Of_Existing_Type>
+        <Max_Speed>0.7</Max_Speed>
+        <Movement_Animation_Speed>1.5</Movement_Animation_Speed>
+        <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+        <Walk_Animation_Speed>0.45</Walk_Animation_Speed>
+        <Crouch_Animation_Speed>0.25</Crouch_Animation_Speed>
+    </Template>
+    <Template Name="Template_Ground_Infantry_Multi_Tauri">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Scale_Factor>1</Scale_Factor>
+        <Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+        <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+        <Walk_Animation_Speed> 1.0 </Walk_Animation_Speed>
+        <Crouch_Animation_Speed> .45 </Crouch_Animation_Speed>
+        <OverrideAcceleration> .11 </OverrideAcceleration>
+        <OverrideDeceleration> .09 </OverrideDeceleration>
+        <Max_Speed>1</Max_Speed>
+        <WaitsForFormationFormup>false</WaitsForFormationFormup>
+        <Formation_Formup_Wait_Style>WaitNone</Formation_Formup_Wait_Style>
+        <FormationSpacing>0.5</FormationSpacing>
+        <FormationOrder>2</FormationOrder>
+        <Death_Clone>Damage_Infection, Infantry_Infection_Death_Clone_00</Death_Clone>
+    </Template>
+    <Template Name="Template_Ground_Infantry_Single_Tauri">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Scale_Factor>1</Scale_Factor>
+        <Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+        <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+        <Walk_Animation_Speed> 0.9 </Walk_Animation_Speed>
+        <Crouch_Animation_Speed> .425 </Crouch_Animation_Speed>
+        <OverrideAcceleration> .09 </OverrideAcceleration>
+        <OverrideDeceleration> .09 </OverrideDeceleration>
+        <Max_Speed>1</Max_Speed>
+        <WaitsForFormationFormup>false</WaitsForFormationFormup>
+        <Formation_Formup_Wait_Style>WaitNone</Formation_Formup_Wait_Style>
+        <FormationSpacing>1.0</FormationSpacing>
+        <FormationOrder>2</FormationOrder> 
+        <Death_Clone>Damage_Infection, Infantry_Infection_Death_Clone_00</Death_Clone>  
+    </Template>
+    <Template Name="Template_Ground_Infantry_Single_Hero_Tauri">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Scale_Factor>1</Scale_Factor>
+        <Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+        <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+        <Walk_Animation_Speed> 1.0 </Walk_Animation_Speed>
+        <Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+        <OverrideAcceleration> .07 </OverrideAcceleration>
+        <OverrideDeceleration> .07 </OverrideDeceleration>
+        <Death_Fade_Time>0.65</Death_Fade_Time>
+        <Death_Persistence_Duration>1.0</Death_Persistence_Duration>
+        <Select_Box_Scale>33</Select_Box_Scale>
+        <Selection_Blob_Material_Name>Highlight_Underworld_Hero</Selection_Blob_Material_Name>
+        <Death_Clone>Damage_Infection, Infantry_Infection_Death_Clone_00</Death_Clone>
+    </Template>
+    <Template Name="Template_Ground_Infantry_Multi_Hero_Tauri">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Hero</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+        <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+        <Walk_Animation_Speed> 1.0 </Walk_Animation_Speed>
+        <Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+        <OverrideAcceleration> .07 </OverrideAcceleration>
+        <OverrideDeceleration> .07 </OverrideDeceleration>
+        <Death_Clone>Damage_Infection, Infantry_Infection_Death_Clone_00</Death_Clone>
+    </Template>
+    <Template Name="Template_Ground_Infantry_Multi_Wraith">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+        <Affiliation>Empire</Affiliation>
+        <Scale_Factor>1.62</Scale_Factor>
+        <Tactical_Health>90</Tactical_Health>
+        <Movement_Animation_Speed>0.8</Movement_Animation_Speed>
+        <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+        <Walk_Animation_Speed>.366</Walk_Animation_Speed>
+        <Crouch_Animation_Speed>.537</Crouch_Animation_Speed>
+        <Max_Speed>1</Max_Speed>
+        <Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+        <FormationSpacing>0.5</FormationSpacing>
+        <FormationOrder>2</FormationOrder>
+        <Death_Clone>Damage_Infection, Infantry_Infection_Death_Clone_00</Death_Clone>
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Wraith_Infantry_Auto_Heal">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type></Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color></Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </Template>
+    <Template Name="Template_Ground_Infantry_Single_Hero_Wraith">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero</Variant_Of_Existing_Type>
+        <Affiliation>Empire</Affiliation>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+        <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+        <Walk_Animation_Speed> 1.0 </Walk_Animation_Speed>
+        <Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+        <OverrideAcceleration> .07 </OverrideAcceleration>
+        <OverrideDeceleration> .07 </OverrideDeceleration>
+        <Death_Fade_Time>0.65</Death_Fade_Time>
+        <Death_Persistence_Duration>1.0</Death_Persistence_Duration>
+        <Select_Box_Scale>33</Select_Box_Scale>
+        <Selection_Blob_Material_Name>Highlight_Empire_Hero</Selection_Blob_Material_Name>
+        <Death_Clone>Damage_Infection, Infantry_Infection_Death_Clone_00</Death_Clone>
+        <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="Wraith_Hero_Auto_Heal">
+              <Activation_Style>Ground_Automatic</Activation_Style>
+              <Heal_Range>0.0</Heal_Range>
+              <Heal_Percent>0.01</Heal_Percent>
+              <Heal_Amount>0.0</Heal_Amount>
+              <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+              <Single_Target_Heal>No</Single_Target_Heal>
+              <Applicable_Unit_Categories/>
+              <Applicable_Unit_Types/>
+              <SFXEvent_Target_Affected/>
+              <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+              <Owner_Light_Effect_Type></Owner_Light_Effect_Type>
+              <Owner_Light_Effect_Color></Owner_Light_Effect_Color>
+              <Owner_Light_Effect_Color2/>
+              <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+              <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </Template>
+
+
+    <Template Name="Template_Ground_Vehicle">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Unit</Variant_Of_Existing_Type>
+        <LandBehavior>WALK_LOCOMOTOR, AFFECTED_BY_SHIELD, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, POWERED, REVEAL, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON, WIND_DISTURBANCE</LandBehavior>
+        <GUI_Bracket_Size>1</GUI_Bracket_Size>
+        <Max_Speed>1.0</Max_Speed>
+        <Select_Box_Scale>40</Select_Box_Scale>
+        <Has_Land_Evaluator>True</Has_Land_Evaluator>
+        <CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+        <MovementClass>Walker</MovementClass>
+        <Weather_Category>Walker</Weather_Category>
+        <UnitCollisionClass>Vehicle</UnitCollisionClass>
+        <Targeting_Max_Attack_Distance>250.0</Targeting_Max_Attack_Distance>
+        <Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+        <Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
+        <OverrideAcceleration>0.2</OverrideAcceleration>
+        <OverrideDeceleration>0.2</OverrideDeceleration>
+        <Armor_Type>Armor_Vehicle</Armor_Type>
+        <Shield_Armor_Type>Armor_Vehicle</Shield_Armor_Type>
+        <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+        <Ground_Infantry_Turret_Target>No</Ground_Infantry_Turret_Target>
+        <Ground_Vehicle_Turret_Target>Yes</Ground_Vehicle_Turret_Target>
+        <Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>
+        <Is_Squashable>No</Is_Squashable>
+        <Autonomous_Move_Extension_Vs_Attacker>150.0</Autonomous_Move_Extension_Vs_Attacker>
+        <Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+        <Score_Cost_Credits>200</Score_Cost_Credits>
+        <Influences_Capture_Point>False</Influences_Capture_Point>
+        <Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+        <Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
+        <Ranking_In_Category>6</Ranking_In_Category>
+
+        <!--1: The unit is considered repulsorlift-driven and can't be used if a gravity field generator is active-->
+        <Is_Affected_By_Gravity_Control_Field>No</Is_Affected_By_Gravity_Control_Field>
+
+        <!--1: When a unit is destroyed, the specified unit will be spawned. Second value is the likeliness-->
+        <!--Destruction_Survivors>Scout_Trooper_No_Bike, 1.0</Destruction_Survivors-->
+
+        <!--1: This allows for units to switch between different submeshes in the model file (*.ALO), their names end on _ALT? where ? can be any number. These tags are interconected. 
+      <Land_Damage_Alternates> list all of the _ALT submeshes, here ALT0, ALT1, and ALT2.
+      <Land_Damage_SFX> triggers a sound effect when the ALT submesh changes. 
+      <Land_Damage_Thresholds> defines when a submesh changes. 1 means the unit is at 100% (full) health; in this case it will switch to the next ALT state when it reaches 66% resp. 33% of its health.-->
+        <!--Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+      <Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds-->
+
+        <!--1: The unit has to move forward and gain the minimum amount of speed (0=standing still, 1=max speed) before it can turn-->
+        <Min_Speed_Fraction_For_Turn>0</Min_Speed_Fraction_For_Turn>
+
+        <!--1: Makes the unit use TURNL and TURNR animations-->
+        <Has_Pre_Turn_Anim>No</Has_Pre_Turn_Anim>
+
+        <!--1: Engine sound. The first one can only be heard when the cinematic camera is active-->
+        <SFXEvent_Engine_Cinematic_Focus_Loop></SFXEvent_Engine_Cinematic_Focus_Loop>
+        <SFXEvent_Engine_Moving_Loop></SFXEvent_Engine_Moving_Loop>
+        <SFXEvent_Engine_Idle_Loop></SFXEvent_Engine_Idle_Loop>
+
+        <!--3: Requires the WIND_DISTURBANCE behavior.-->
+        <Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+        <Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+        <Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+
+        <!--3: Needed to prevent the AT-AT turn from looking awful. Also used by other units-->
+        <!--Close_Enough_Angle_For_Move_Start>30</Close_Enough_Angle_For_Move_Start-->
+
+        <!--1: Default for all units is YES, since we want units like infantry to remain upgright and not pitch up and down at targets of different 
+         elevations. Also, this won't apply to units with turrets, since they don't need to turn to face the enemy. This is needed to be NO for 
+         the TIE Crawler, because it has no turret, so it needs to turn and face enemy units. But, it also hugs the terrain on pitch and roll,
+         so we don't want it to flatten out with the horizontal ground plane.-->
+        <Targeting_Land_Model_Stay_Horiz_Flat>Yes</Targeting_Land_Model_Stay_Horiz_Flat>
+
+        <!--1: This particle can be seen when the unit moves through the base shield. Requires AFFECTED_BY_SHIELD behavior-->
+        <Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+
+        <!--3: Only used by the AT-AT-->
+        <!--Cache_Crusher_Boxes>No</Cache_Crusher_Boxes-->
+
+        <!--3: ???-->
+        <!--MovementPredictionInterval>5.0</MovementPredictionInterval>
+      <MovementBoxExpansionFactor>8.0</MovementBoxExpansionFactor-->
+
+        <!--1: For vehicle pitching up and down on terrain, 20.0 = first-pass test value. 0.0 means don't pitch up and down on terrain. The length for pitching is auto-calculated by the game, this tag overwrites it.-->
+        <Overall_Length>20.0</Overall_Length>
+
+        <!--1: For vehicle rolling left and right on terrain, 20.0 = first-pass test value.-->
+        <Overall_Width>20.0</Overall_Width>
+
+        <!--2: I think this prevents a unit from moving out of a landing zone when another unit is being deployed nearby-->
+        <!--Should_Reinforcements_Move>false</Should_Reinforcements_Move-->
+
+        <!--1: After the set time a converted unit will die-->
+        <Converted_To_Enemy_Die_Time_Seconds>60</Converted_To_Enemy_Die_Time_Seconds>
+
+        <!--1: Where units can enter/exit a transport-->
+        <!--Exit_Door_Angle_Degrees>90.0</Exit_Door_Angle_Degrees>
+      <Exit_Door_Distance>50.0</Exit_Door_Distance-->
+
+        <!--1: How many units can be carried-->
+        <!--Num_Garrison_Slots>4</Num_Garrison_Slots>
+      <Garrison_Bone_Names>b_garrison_00</Garrison_Bone_Names>
+		<Garrison_Exit_Dist>0</Garrison_Exit_Dist>
+		<Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+      <Garrison_Radius>30</Garrison_Radius-->
+
+    </Template>
+
+
+    <Template Name="Template_Ground_Flyer">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Unit</Variant_Of_Existing_Type>
+        <Behavior>SELECTABLE, POWERED</Behavior>
+        <LandBehavior>FLYING_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, STUNNABLE, TARGETING, TELEKINESIS_TARGET, UNIT_AI, WEAPON, WIND_DISTURBANCE</LandBehavior>
+        <Mass>0.985</Mass>
+        <Max_Speed>4.0</Max_Speed>
+        <GUI_Bracket_Size>1</GUI_Bracket_Size>
+
+        <Max_Rate_Of_Turn>5.0</Max_Rate_Of_Turn>
+        <Size_Value>15</Size_Value>
+        <Type>Fly</Type>
+        <CategoryMask>Air | AntiStructure</CategoryMask>
+        <MovementClass>Flying</MovementClass>
+        <Weather_Category>Flying</Weather_Category>
+        <Ground_Infantry_Turret_Target>No</Ground_Infantry_Turret_Target>
+        <Ground_Vehicle_Turret_Target>No</Ground_Vehicle_Turret_Target>
+        <Air_Vehicle_Turret_Target>Yes</Air_Vehicle_Turret_Target>
+        <Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+        <Space_Layer>Frigate</Space_Layer>
+        <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+        <Targeting_Max_Attack_Distance>450.0</Targeting_Max_Attack_Distance>
+        <FormationGrouping>Solo</FormationGrouping>
+        <Armor_Type>Armor_Air</Armor_Type>
+        <Shield_Armor_Type>Armor_Air</Shield_Armor_Type>
+        <Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
+        <Idle_Chase_Range>150.0</Idle_Chase_Range>
+        <Guard_Chase_Range>200.0</Guard_Chase_Range>
+        <Attack_Move_Response_Range>250.0</Attack_Move_Response_Range>
+        <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+        <Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+        <Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+        <Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
+        <Is_Affected_By_Gravity_Control_Field>Yes</Is_Affected_By_Gravity_Control_Field>
+        <Influences_Capture_Point>False</Influences_Capture_Point>
+
+        <!--Flyers must not have this or their firing behaviour will be odd. They start firing before they have turned and will not hit the target. Not even close-->
+        <UnitCollisionClass></UnitCollisionClass>
+
+        <!--2: The unit can't stop and will not move slower than this. For some reason also used on some soldiers. Requires FLYING_LOCOMOTOR-->
+        <Min_Speed>1.0</Min_Speed>
+
+        <!--1: How FAR the unit will roll sideways around its own axis when moving in a curve. Requires FLYING_LOCOMOTOR-->
+        <Bank_Turn_Angle>20</Bank_Turn_Angle>
+
+        <!--1: How FAST the unit will roll sideways to the angle defined in <Bank_Turn_Angle> when moving in a curve. Requires FLYING_LOCOMOTOR-->
+        <Max_Rate_Of_Roll>2.5</Max_Rate_Of_Roll>
+
+        <!--1: Changes the speed at which a unit can adjust its z position. 0  stops units from moving up and down. Requires FLYING_LOCOMOTOR-->
+        <Max_Lift>2.5</Max_Lift>
+
+        <!--1: Thrust is how fast a unit accelerates based newtonian acceleration using <Mass>. It can be disabled with <OverrideAcceleration>. Thrust makes the unit accelerate differently depending on whether a movementorder was given closeby or across the map.-->
+        <!--Max_Thrust>0.1</Max_Thrust-->
+
+        <!--3: ???-->
+        <MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+
+        <!--3: Not quite sure, but when given an order, the unit will perform the order this many frames later-->
+        <PathFrameDelay>4</PathFrameDelay>
+
+        <!--3: ???-->
+        <Prepare_Strafe_Height>150.0</Prepare_Strafe_Height>
+
+        <!--1: When the unit is damaged, this particle will be added-->
+        <Damaged_Smoke_Asset_Name>P_Smoke_Small02.alo</Damaged_Smoke_Asset_Name>
+
+        <!--3: I believe this causes for example soldiers to attack the unit on sight-->
+        <Should_Cause_Limited_Turrets_To_Turn>true</Should_Cause_Limited_Turrets_To_Turn>
+
+        <!--3: Maybe that's needed for when the unit is on the ground after being deployed by transport?-->
+        <Stationary_Space_Layer>Land</Stationary_Space_Layer>
+
+        <!--2: Used for jetpacks, the distance land flyers have to the ground and other unknown purpose. See also: <Hover_Height>-->
+        <Hover_Offset>90.0</Hover_Offset>
+
+        <!--1: Flying units can spin away on death onstead of displaying a seperate death clone-->
+        <Spin_Away_On_Death>No</Spin_Away_On_Death>
+        <Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+        <Spin_Away_On_Death_Time>1.5f</Spin_Away_On_Death_Time>
+        <Spin_Away_On_Death_Explosion>Medium_Explosion_Land</Spin_Away_On_Death_Explosion>
+        <Spin_Away_On_Death_SFXEvent_Start_Die>Unit_A_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+    </Template>
+
+    <Template Name="Template_Ground_Walker">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Vehicle</Variant_Of_Existing_Type>
+        <Max_Speed>1.0</Max_Speed>
+        <Type>Walk</Type>
+        <MovementClass>Walker</MovementClass>
+        <Weather_Category>Walker</Weather_Category>
+        <UnitCollisionClass>Vehicle</UnitCollisionClass>
+        <Has_Pre_Turn_Anim>Yes</Has_Pre_Turn_Anim>
+        
+        <!--3: Breaks the walk animation of our Wraith walkers-->
+        <!--Walk_Transition>Yes</Walk_Transition-->
+
+        <!--3: Used for AT-AT and AT-ST-->
+        <Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+
+        <!--1: If the unit doesn't move forward, it can turn this fast.-->
+        <Stopped_Rate_Of_Turn>3.1</Stopped_Rate_Of_Turn>
+
+        <!--1: Instead of shooting the root bone (default) enemies will target the listed bones instead.-->
+        <!--Target_Bones>MISSILE_TARGET00, MISSILE_TARGET01, MISSILE_TARGET02</Target_Bones-->
+
+    </Template>
+
+    <Template Name="Template_Ground_Wheeled">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Vehicle</Variant_Of_Existing_Type>
+        <LandBehavior>WALK_LOCOMOTOR, AFFECTED_BY_SHIELD, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, POWERED, REVEAL, STUNNABLE, SURFACE_FX, TARGETING, TREAD_SCROLL, UNIT_AI, WEAPON, WIND_DISTURBANCE</LandBehavior>
+        <Max_Speed>1.5</Max_Speed>
+        <Type>Tracked</Type>
+        <MovementClass>Tracked</MovementClass>
+        <Weather_Category>Tracked</Weather_Category>
+        <UnitCollisionClass>Vehicle</UnitCollisionClass>
+        <SurfaceFX_Name>Generic_Track</SurfaceFX_Name>
+
+        <!--3: ???-->
+        <UseSecondaryFacing>true</UseSecondaryFacing>
+        <SecondaryTurnInPlaceROTCoefficient>.4</SecondaryTurnInPlaceROTCoefficient>
+        <SecondaryTurnAngle>90</SecondaryTurnAngle>
+        <MinSecondaryTurnROTCoefficient>.4</MinSecondaryTurnROTCoefficient>
+        <MaxSecondaryTurnROTCoefficient>.9</MaxSecondaryTurnROTCoefficient>
+        <SecondaryTurnLookaheadDistance>60</SecondaryTurnLookaheadDistance>
+
+        <!--3: ???-->
+        <Tread_Scroll_Rate>0.167</Tread_Scroll_Rate>
+
+    </Template>
+
+
+    <Template Name="Template_Ground_Hover">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Vehicle</Variant_Of_Existing_Type>
+        <Type>Hover</Type>
+        <MovementClass>Hover</MovementClass>
+        <Weather_Category>Hover</Weather_Category>
+        <SurfaceFX_Name>Hover</SurfaceFX_Name>
+        <Is_Affected_By_Gravity_Control_Field>Yes</Is_Affected_By_Gravity_Control_Field>
+        <SFXEvent_Engine_Idle_Loop>Unit_T2B_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+        <SFXEvent_Engine_Moving_Loop>Unit_T2B_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+
+        <!--1: Distance of the unit from the ground. See also: <Hover_Offset>-->
+        <Hover_Height>3.0</Hover_Height>
+
+        <!--3: Only used by the Gargantuan. The unit doesn't need to turn to move backwards?-->
+        <!--Movement_Directions_Count>2</Movement_Directions_Count-->
+
+        <!--1: Obvious-->
+        <Destroy_When_Stunned_Over_Water>Yes</Destroy_When_Stunned_Over_Water>
+
+    </Template>
+
+
+    <Template Name="Template_Ground_Speederbike">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Hover</Variant_Of_Existing_Type>
+        <LandBehavior>BIKE_LOCOMOTOR, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, POWERED, REVEAL, STUNNABLE, SURFACE_FX, TARGETING, WEAPON, WIND_DISTURBANCE</LandBehavior>
+        <UnitCollisionClass>Bike</UnitCollisionClass>
+        <Weather_Category>Speeder</Weather_Category>
+        <Max_Speed>5.0</Max_Speed>
+        <Max_Rate_Of_Turn>7.5</Max_Rate_Of_Turn>
+        <Max_Rate_Of_Roll>2</Max_Rate_Of_Roll>
+        <Bank_Turn_Angle>35</Bank_Turn_Angle>
+
+        <!--For some reason, this must be set for speeders or the unit will be incredibly slow-->
+        <Walk_Transition>Yes</Walk_Transition>
+
+        <!--2: When the unit is flying a curve, this will define how much it is dragged to the outside-->
+        <LateralAcceleration>0.15</LateralAcceleration>
+
+    </Template>
+
+
+    <Template Name="Template_Turret" Description="Do not use as variant, only copy content">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Vehicle</Variant_Of_Existing_Type>
+
+        <!--This behaviour needs to be added-->
+        <LandBehavior>TURRET</LandBehavior>
+
+        <!--1: The barrel model refers to the part of the turret which emits the shot (up-down tilt), the turret bone refers to the base part of the turret that rotates-->
+        <Barrel_Bone_Name>Barrel_00</Barrel_Bone_Name>
+        <Turret_Bone_Name>Turret_00</Turret_Bone_Name>
+        <Turret_Rotate_Speed>3.0</Turret_Rotate_Speed>
+        <Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+        <Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+        <Turret_Rest_Angle>0.0, 0.0, 0.0</Turret_Rest_Angle>
+        <Turret_Deployed_Rest_Angle>0.0, -45.0, 0.0</Turret_Deployed_Rest_Angle>
+
+        <!--1: Sound effect when the turret rotates-->
+        <SFXEvent_Turret_Rotating_Loop></SFXEvent_Turret_Rotating_Loop>
+
+        <!--3: Values are 0-2 with the number standing for x,y,z-->
+        <Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+        <Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+
+        <!--2: Prevents the turret from inclining-->
+        <Turret_XY_Only>Yes</Turret_XY_Only>
+
+        <!--1: Set targeting priorities for turrets. Ground vehicles priority 1, ground infantry priority 2, air vehicles priority 3 (N/A = 9999) -->
+        <Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+        <Turret_Targets_Ground_Infantry>4</Turret_Targets_Ground_Infantry>
+        <Turret_Targets_Air_Vehicles>2</Turret_Targets_Air_Vehicles>
+        <Turret_Targets_Anything_Else>3</Turret_Targets_Anything_Else>
+
+    </Template>
+    
+
+    <!--Companies can somewhat be considered as the entity that groups everything together. 
+   A company can be understood as the glue that brings everything together. It contains the button information when a unit is build, links space and ground units, defines build requirements and so on-->
+    <Template Name="Template_Ground_Company">        <!--#-->
+
+        <!--Duplicate values that should usually match the single unit-->
+        <Text_ID></Text_ID>
+        <Encyclopedia_Text></Encyclopedia_Text>
+        <Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+        <Icon_Name></Icon_Name>
+
+        <!--3: I have no idea, but it's usually the same as the regular model-->
+        <GUI_Model_Name></GUI_Model_Name>
+        <!--3: I think think this tag is deprecated or a coding error by the makers-->
+        <!--GUI_Model>RV_snowspeeder.ALO</GUI_Model-->
+        <!--3: No idea about the GUI tags-->
+        <!--GUI_Offset>0 0 0</GUI_Offset-->
+        <!--GUI_Velocity>90</GUI_Velocity-->
+        <!--GUI_Bounds_Scale>0.3</GUI_Bounds_Scale-->
+
+        <!--1: Defines the row in which a unit is builable on the dashboard. 0 = upper row, 1 = lower row-->
+        <GUI_Row>1</GUI_Row>
+
+        <!--Duplicate values that should usually match the single unit-->
+        <LOD_Bias>5</LOD_Bias>
+        <Affiliation>Neutral</Affiliation>
+
+        <!--3: Maybe this prevents the units from being shown through radar abilities (<See_Minor_Stealth_Heroes>)-->
+        <Is_Stealth_Company>No</Is_Stealth_Company>
+
+        <!--3: Maybe that just says that we have no actual unit here, just the company-->
+        <Is_Dummy>Yes</Is_Dummy>
+
+        <!--1: Value is irrelevant but without it the AI won't work properly. "Obsolete, but required for"combatant" behavior, which lets the AI use a unit".-->
+        <Damage>20</Damage>
+        <!--3: Does NOT influence the outcome of autoresolve battles: That's only being calculated via AI_COMBAT_POWER. Is nearly always 100 and typically not set for heroes-->
+        <Autoresolve_Health>100</Autoresolve_Health>
+        <!--3: Typically vary from 0-500 for regular units and 7000 to 25000 for hero companies-->
+        <Score_Cost_Credits>100</Score_Cost_Credits>
+
+        <!--3: This might be related to the UL_Bounty_Upgrade-->
+        <Piracy_Value_Credits>50</Piracy_Value_Credits>
+
+        <!--1: Galactic price-->
+        <Build_Cost_Credits>150</Build_Cost_Credits>
+        <!--1: Galactic construction time-->
+        <Build_Time_Seconds>20</Build_Time_Seconds>
+        <!--1: Multiple barracks allow the unit to be built faster. The build time reduction is defined in the GameConstants-->
+        <Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+        <!--1: The unit is not available for the player without research-->
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <!--1: Defines if the unit can be unlocked by using the Rebel tech system (stealing tech)-->
+        <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+        <!--3: Not as obvious as at seems, since there also buildtabs I can't identify, such as <Build_Tab_Space_Station>, <Build_Tab_Special_Structures>, <Build_Tab_Heroes>, or <Build_Tab_Outpost>-->
+        <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+
+        <!--1: How much does slicing the tech cost? Rebels only. <Build_Can_Be_Unlocked_By_Slicer> must be true-->
+        <Slice_Cost_Credits>1800</Slice_Cost_Credits>
+
+        <!--1: Which tech level the player needs to reach before the unit becomes available-->
+        <Tech_Level>99</Tech_Level>
+
+        <!--1: Used by all ground companies-->
+        <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+        <!--3: Not used for single units.-->
+        <Formation_Priority>2</Formation_Priority>
+
+        <!--3: ???-->
+        <Is_Escort>yes</Is_Escort>
+
+        <!--3: Values are artillery, infantry, tank, walker-->
+        <Ship_Class>infantry</Ship_Class>
+
+        <!--1: Defines the ship which transports the units in space. This also encompasses a landing variant for ground. See also <Landing_Transport_Variant>-->
+        <Company_Transport_Unit></Company_Transport_Unit>
+
+        <!--1: Creates a container-->
+        <!--Create_Team_Type>Template_Infantry_Container</Create_Team_Type-->
+
+        <!--1: Contains the individual ground units, seperated by comma-->
+        <Company_Units></Company_Units>
+
+        <!--1: The number of units in a container. If more units are listed as <Company_Units> multiple containers will be created-->
+        <Max_Squad_Size>1</Max_Squad_Size>
+
+        <!--2: On the galactic layer, the income will be reduced by the given amount of money (1=100 percent).-->
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+
+        <!--1: How much PopCop the unit(s) use. Refers to the ground units only.-->
+        <Population_Value>1</Population_Value>
+
+        <!--3: Only used for underworld units-->
+        <Cheap_Bribe_Cost>5</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>10</Expensive_Bribe_Cost>
+
+        <!--Sound effects-->
+        <SFXEvent_Build_Started></SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <SFXEvent_Tactical_Build_Started></SFXEvent_Tactical_Build_Started>
+        <SFXEvent_Tactical_Build_Cancelled></SFXEvent_Tactical_Build_Cancelled>
+        <SFXEvent_Tactical_Build_Complete></SFXEvent_Tactical_Build_Complete>
+        <SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+        <SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+
+        <!--2: I think that this tag is deprectated-->
+        <Required_Timeline>0</Required_Timeline>
+        <!--2: The ground base level is defined through the number of player buildings I think. This tag does NOT derive to variants!-->
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <!--1: Level of the Starbase. This tag does NOT derive to variants!-->
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <!--1: Does also count for skirmish. Can be used multiple times, doesn't overwrite-->
+        <Required_Special_Structures></Required_Special_Structures>
+        <!--1: Can be used multiple times, doesn't overwrite-->
+        <Required_Planets></Required_Planets>
+        <!--1: Needs this unit in orbit-->
+        <Required_Orbiting_Units></Required_Orbiting_Units>
+        <!--2: I think that this tag is deprectated-->
+        <Required_Tech_Structure></Required_Tech_Structure>
+
+        <!--1: Build time and cost for skirmish-->
+        <Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+        <!--1: Can be used multiple times and doesn't overwrite-->
+        <Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+        <!--1: Values are Tactical_Units and Tactical_Upgrades-->
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+
+        <!--1: Build limitations. Minus one means infinite (=no limitation)-->
+        <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+        <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+        <Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+        <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+
+        <!--2: Only used by Rebel_Artillery_Brigade. Might be related to when the game re-grants a "spent" <Population_Value>-->
+        <!--Ignore_For_Reoptimization>MPTL_Spotter</Ignore_For_Reoptimization-->
+
+        <!--2: Prevents units inside of a company from respawning, if a unit of the company dies it will stay dead, if the company is reused in the GC later.-->
+        <!--Is_Homogeneous>Yes</Is_Homogeneous-->
+
+        <!--1: Only used for indigenous units. Prevents them from changing faction through an ability-->
+        <!--Is_Indigenous_Unit_Corruptible>false</Is_Indigenous_Unit_Corruptible-->
+
+        <!--A company also needs to include the abilities. This can be achieved by leaving this empty and YES-->
+        <Unit_Abilities_Data SubObjectList="Yes"></Unit_Abilities_Data>
+
+    </Template>
+
+
+    <Template Name="Template_Ground_Hero_Company">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+        <Autoresolve_Health></Autoresolve_Health>
+        <Damage>100</Damage>
+        <Score_Cost_Credits>10000</Score_Cost_Credits>
+        <Maintenance_Cost>0</Maintenance_Cost>
+        <Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+        <Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Build_Initially_Locked>Yes</Build_Initially_Locked>
+        <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+        <!--3: Not as obvious as it seems since it's no for Droids_Team-->
+        <Available_In_Skirmish>Yes</Available_In_Skirmish>
+
+        <!--3: Since Build_Limits exist I don't know what it does. Usually true for heroes-->
+        <Can_Be_Only_One>true</Can_Be_Only_One>
+
+        <!--3: Except for the Garm_Bel_Iblis_Team this is always 0-->
+        <Combat_Power_Value>0</Combat_Power_Value>
+
+        <!--3: Values are LandHero, SpaceHero, NonCombatHero-->
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+
+        <!--Hero-related tags that should be identical to the single unit-->
+        <Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+        <Is_Named_Hero>Yes</Is_Named_Hero>
+        <Is_Generic_Hero>No</Is_Generic_Hero>
+
+    </Template>
+
+    <Template Name="Template_Ground_Minor_Hero_Company">        <!--#-->
+        <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+        <Available_In_Skirmish>No</Available_In_Skirmish>
+        <Is_Named_Hero>No</Is_Named_Hero>
+        <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    </Template>
+
+
+    <!--A container unit must be created first by using <Create_Team_Type>. Containers create the team movement of units so they can be selected as a group.
+   For easier understanding, a container can be seen as an invisible unit that is walking in between an infantry squad. It has its own icon, can be clicked on, 
+   has its own selection circle and makes sure that the unit it encompasses don't leave it. It changes the movement of the units so they walk in a formation.-->
+    <Template Name="Template_Infantry_Container">        <!--#-->
+
+        <!--Duplicate values that should usually match the single unit-->
+        <Text_ID>TEXT_OBJECT_TEAM</Text_ID>
+        <Encyclopedia_Text></Encyclopedia_Text>
+        <Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+        <Icon_Name></Icon_Name>
+
+        <!--I have no idea why containers require certain behaviors...-->
+        <!--2: Container behaviors:
+         SELECTABLE: Used for all ground containers except for Tactical_R2_3PO_Team
+         TARGETING: Used for space squadrons and the bombing run units
+         TEAM: Used for all ground containers
+         TEAM_LOCOMOTOR: Used for space squadrons and the bombing run units
+         UNIT_AI: Used for all ground containers
+         -->
+        <Behavior>SELECTABLE, TEAM, UNIT_AI</Behavior>
+
+        <!--2: Container land behaviors:
+      ABILITY_COUNTDOWN: Only required for units that have an ability with cooldown
+      GARRISON_UNIT: This allows a unit to enter a transport or anything which can carry garrison units. For groups, this is given through the container. 
+      LAND_TEAM_CONTAINER_LOCOMOTOR: Used for all ground containers
+      REVEAL: The container reveals FOW
+      SELECTABLE: The container can be selected
+      TEAM_TARGETING: Used for all nearly all ground  containers
+      -->
+        <LandBehavior>GARRISON_UNIT, LAND_TEAM_CONTAINER_LOCOMOTOR, REVEAL, TEAM_TARGETING</LandBehavior>
+
+        <!--3: For some reason most containers have this-->
+        <SpaceBehavior>REVEAL</SpaceBehavior>
+
+        <!--1: Values are Rows and Dartboard. The first can be seen as "chessboard".-->
+        <ContainerArrangement>Dartboard</ContainerArrangement>
+
+        <!--This needs to be adjusted depending on how many units are in the container and how big they are-->
+        <Select_Box_Scale>50</Select_Box_Scale>
+
+        <!--I have no idea why this is used for the container if also the individual unit has this-->
+        <Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
+
+        <!--Movement related stuff. 
+      I think that values such as Max_Speed should match the value of the individual unit because even if the individual unit was faster it wouldn't be allowed to move faster (except for catching up) due to the limits of the container-->
+        <Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+        <Max_Speed>1.0</Max_Speed>
+
+        <!--Duplicate values that should usually match the single unit-->
+        <Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+        <FormationOrder>3</FormationOrder>
+        <FormationSpacing>0.5</FormationSpacing>
+
+        <Guard_Chase_Range>200.0</Guard_Chase_Range>
+        <Idle_Chase_Range>50.0</Idle_Chase_Range>
+        <Targeting_Max_Attack_Distance>240.0</Targeting_Max_Attack_Distance>
+        <Attack_Move_Response_Range>250.0</Attack_Move_Response_Range>
+        <Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+
+        <!-- "Scale" for containers' icons is the world-space ACTUAL SIZE of these icons.
+      This is done because containers don't have constant size/radius and change constantly, whereas supposed to be shown on Radar as one constant-sized blip -->
+        <Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+
+        <!--No idea why this is part of containers. Not used by every unit but many-->
+        <!--Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range-->
+
+        <!--Values that are nearly always given in every container-->
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Show_Name>No</Show_Name>
+        <CategoryMask>Infantry</CategoryMask>
+        <MovementClass>Infantry</MovementClass>
+        <UnitCollisionClass>Infantry</UnitCollisionClass>
+        <Garrison_Category>Infantry</Garrison_Category>
+        <MovementPredictionInterval>4.0</MovementPredictionInterval>
+        <OccupationStyle>1x1</OccupationStyle>
+        <Override_Acceleration>0.1</Override_Acceleration>
+        <Override_Deceleration>0.1</Override_Deceleration>
+        <Space_Layer>Land</Space_Layer>
+        <Is_Squashable>true</Is_Squashable>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+        <!--1: Only used for indigenous units. Prevents them from changing faction through an ability-->
+        <!--Is_Indigenous_Unit_Corruptible>false</Is_Indigenous_Unit_Corruptible-->
+
+        <!--Used for hero containers only-->
+        <!--Is_Named_Hero>Yes</Is_Named_Hero-->
+
+        <!--A container also needs to include the abilities.
+      A single-unit ability should be _indicated_ on the container object(i.e. only the ability type, with no parameters). The ability should be DEFINED on the unit itself. 
+      A _team ability_ like ION CANNON SHOT on the other hand needs also be part of the container-->
+        <!--Unit_Abilities_Data SubObjectList="Yes"-->
+
+    </Template>
+
+
+</Template_Data>

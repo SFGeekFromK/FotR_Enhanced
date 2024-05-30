@@ -61,6 +61,8 @@ Hutt_HuttGuard.ALO
 ------Todo Lists------
 ORS Planet trade routes, campaign editing etc 
 
+Wolfpack team ring missing, health bar length
+
 Wolfpack phase 2
 
 Write Texts for wolpack

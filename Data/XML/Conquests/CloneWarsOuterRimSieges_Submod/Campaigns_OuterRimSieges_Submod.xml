@@ -53,6 +53,7 @@
 			Mustafar,
 			Muunilinst,
 			Mygeeto,
+			Nelvaan,
 			New_Bornalex,
 			New_Plympto,
 			Ord_Mantell,
@@ -1388,7 +1389,7 @@
 		<Camera_Shift_Y> 0.0 </Camera_Shift_Y>
 		<Camera_Distance> 1000.0 </Camera_Distance>
 
-		<Locations>
+    <Locations>
 			Alderaan,
 			Anaxes,
 			Balmorra,
@@ -1424,6 +1425,7 @@
 			Mustafar,
 			Muunilinst,
 			Mygeeto,
+			Nelvaan,
 			New_Bornalex,
 			New_Plympto,
 			Ord_Mantell,
@@ -2798,6 +2800,7 @@
 			Mustafar,
 			Muunilinst,
 			Mygeeto,
+			Nelvaan,
 			New_Bornalex,
 			New_Plympto,
 			Ord_Mantell,
@@ -4188,6 +4191,7 @@
 			Mustafar,
 			Muunilinst,
 			Mygeeto,
+			Nelvaan,
 			New_Bornalex,
 			New_Plympto,
 			Ord_Mantell,
@@ -5564,6 +5568,7 @@
 			Mustafar,
 			Muunilinst,
 			Mygeeto,
+			Nelvaan,
 			New_Bornalex,
 			New_Plympto,
 			Ord_Mantell,
@@ -6897,6 +6902,7 @@
 			Mustafar,
 			Muunilinst,
 			Mygeeto,
+			Nelvaan,
 			New_Bornalex,
 			New_Plympto,
 			Ord_Mantell,

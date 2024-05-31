@@ -10869,7 +10869,7 @@
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 
-		<Create_Team_Type> Wolfpack_Team </Create_Team_Type>
+		<Create_Team_Type> Wolfpack_Phase_One_Team</Create_Team_Type>
 		<Max_Squad_Size> 9 </Max_Squad_Size>
 		<Company_Transport_Unit>CR25_Landing_Craft_Clones</Company_Transport_Unit>
 

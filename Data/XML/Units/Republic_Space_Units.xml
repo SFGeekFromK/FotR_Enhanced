@@ -3020,9 +3020,7 @@
 
 	</SpaceUnit>
 
-	<!-- FotR_Enhanced --> <!--Tector Icon Changed-->
-
-	<SpaceUnit Name="Generic_Tector">
+	<SpaceUnit Name="Generic_Tector"> <!-- FotR_Enhanced --> <!--Tector Icon Changed-->
 		<Variant_Of_Existing_Type>Template_Tector</Variant_Of_Existing_Type>
 		
 		<Encyclopedia_Text>
@@ -3938,7 +3936,41 @@
 	</SpaceUnit>
 
 	<!-- FotR_Enhanced Ships-->
+
+	<SpaceUnit NAme="Charger_C70_OFC">
+		<Variant_Of_Existing_Type>Charger_C70</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_C70_OFC</Text_ID>
+		<Encyclopedia_Text>
+		
+		</Encyclopedia_Text>
+		
+		<Build_Limit_Current_Per_Player></Build_Limit_Current_Per_Player>
+
+	</SpaceUnit>
 	
+	<SpaceUnit Name="Acclamator_Assualt_Ship_I_OFC">
+		<Variant_Of_Existing_Type>Generic_Acclamator_Assault_Ship_I</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_ACCLAMATOR_I_OFC</Text_ID>
+		<Encyclopedia_Text>
+			TEXT_TOOLTIP_ACCLAMATOR_I_OFC
+			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+			TEXT_TOOLTIP_ACCLAMATOR_I_HULL
+			TEXT_TOOLTIP_ACCLAMATOR_I_SHIELD
+			TEXT_TOOLTIP_ACCLAMATOR_I_MOVE
+			TEXT_TOOLTIP_ACCLAMATOR_I_SQUADRON
+			TEXT_TOOLTIP_ACCLAMATOR_I_WEAP1
+			TEXT_TOOLTIP_ACCLAMATOR_I_WEAP2 
+			TEXT_TOOLTIP_ACCLAMATOR_I_WEAP3 
+			TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+			TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+			TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN 
+			TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_ACCLAMATOR_REP_OFC.TGA</Icon_Name>
+
+		<Build_Limit_Current_Per_Player>24</Build_Limit_Current_Per_Player>
+	</SpaceUnit>
+
 	<SpaceUnit Name="Venator_OFC">
 		<Variant_Of_Existing_Type>Generic_Venator</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_VENATOR_OFC</Text_ID>
@@ -4137,6 +4169,16 @@
 			HP_Venator_Hero_05, HP_Venator_Hero_06, HP_Venator_Hero_07, HP_Venator_Hero_08,
 			Venator_Hero_Bay, Venator_Hero_Engines
 		</Hardpoints>
+	</SpaceUnit>
+
+	<!-- FotR_Enhanced Fighters -->
+
+	<SpaceUnit Name="ARC_170_OFC">
+		<Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
+		<Text_ID></Text_ID>
+		<Icon_Name></Icon_Name>
+
+		<Space_Model_Name></Space_Model_Name>
 	</SpaceUnit>
 
 	<!-- Fighters -->

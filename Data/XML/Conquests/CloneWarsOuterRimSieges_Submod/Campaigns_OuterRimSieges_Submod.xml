@@ -7,7 +7,7 @@
 <Campaigns>
 
 	<Campaign Name="Sandbox_OuterRimSieges_Submod_CIS">
-		<Campaign_Set>Sandbox_OuterRimSieges</Campaign_Set>
+		<Campaign_Set>Sandbox_OuterRimSieges_Submod</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 
 		<Text_ID>TEXT_CAMPAIGN_SINGLE_ORS</Text_ID>
@@ -1378,7 +1378,7 @@
  	</Campaign>
 
 	<Campaign Name="Sandbox_AU_1_OuterRimSieges_Submod_CIS">
-		<Campaign_Set>Sandbox_AU_1_OuterRimSieges</Campaign_Set>
+		<Campaign_Set>Sandbox_AU_1_OuterRimSieges_Submod</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 		<Is_Listed>false</Is_Listed>
 
@@ -1389,7 +1389,7 @@
 		<Camera_Shift_Y> 0.0 </Camera_Shift_Y>
 		<Camera_Distance> 1000.0 </Camera_Distance>
 
-    <Locations>
+    	<Locations>
 			Alderaan,
 			Anaxes,
 			Balmorra,
@@ -1563,9 +1563,9 @@
 
         <Starting_Active_Player> Rebel </Starting_Active_Player>
 		
-		<Rebel_Story_Name>Conquests\CloneWarsOuterRimSieges\Story_Plots_Sandbox_OuterRimSieges_CIS.xml</Rebel_Story_Name>
-       	<Empire_Story_Name>Conquests\CloneWarsOuterRimSieges\Story_Plots_Sandbox_OuterRimSieges_Republic.xml</Empire_Story_Name>
-		<Underworld_Story_Name>Conquests\CloneWarsOuterRimSieges\Story_Plots_Sandbox_OuterRimSieges_Container.xml</Underworld_Story_Name>
+		<Rebel_Story_Name>Conquests\CloneWarsOuterRimSieges\Story_Plots_Sandbox_OuterRimSieges_Submod_CIS.xml</Rebel_Story_Name>
+       	<Empire_Story_Name>Conquests\CloneWarsOuterRimSieges\Story_Plots_Sandbox_OuterRimSieges_Submod_Republic.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Conquests\CloneWarsOuterRimSieges\Story_Plots_Sandbox_OuterRimSieges_Submod_Container.xml</Underworld_Story_Name>
 		
 		<AI_Player_Control> Rebel, SandboxHuman </AI_Player_Control>
 		<AI_Player_Control> Empire, RepublicAI </AI_Player_Control>
@@ -2753,7 +2753,7 @@
  	</Campaign>
 
 	<Campaign Name="Sandbox_AU_2_OuterRimSieges_Submod_CIS">
-		<Campaign_Set>Sandbox_AU_2_OuterRimSieges</Campaign_Set>
+		<Campaign_Set>Sandbox_AU_2_OuterRimSieges_Submod</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 		<Is_Listed>false</Is_Listed>
 
@@ -4144,7 +4144,7 @@
  	</Campaign>
 
 	<Campaign Name="Sandbox_AU_3_OuterRimSieges_Submod_CIS">
-		<Campaign_Set>Sandbox_AU_3_OuterRimSieges</Campaign_Set>
+		<Campaign_Set>Sandbox_AU_3_OuterRimSieges_Submod</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 		<Is_Listed>false</Is_Listed>
 
@@ -5522,7 +5522,7 @@
  	</Campaign>
 
 	<Campaign Name="Sandbox_OuterRimSieges_Submod_Republic">
-		<Campaign_Set>Sandbox_OuterRimSieges</Campaign_Set>
+		<Campaign_Set>Sandbox_OuterRimSieges_Submod</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 
 		<Text_ID>TEXT_CAMPAIGN_SINGLE_ORS</Text_ID>
@@ -6855,7 +6855,7 @@
 	</Campaign>
 
 	<Campaign Name="Sandbox_AU_1_OuterRimSieges_Submod_Republic">
-		<Campaign_Set>Sandbox_AU_1_OuterRimSieges</Campaign_Set>
+		<Campaign_Set>Sandbox_AU_1_OuterRimSieges_Submod</Campaign_Set>
 		<Sort_Order>209</Sort_Order>
 		<Is_Listed>false</Is_Listed>
 

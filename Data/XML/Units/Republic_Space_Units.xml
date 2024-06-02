@@ -3937,7 +3937,7 @@
 
 	<!-- FotR_Enhanced Ships-->
 
-	<SpaceUnit NAme="Charger_C70_OFC">
+	<SpaceUnit Name="Charger_C70_OFC">
 		<Variant_Of_Existing_Type>Charger_C70</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_C70_OFC</Text_ID>
 		<Encyclopedia_Text>

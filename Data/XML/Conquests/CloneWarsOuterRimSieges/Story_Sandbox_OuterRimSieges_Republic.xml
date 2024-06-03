@@ -1,0 +1,700 @@
+<?xml version="1.0" ?>
+
+<!--****************************************************-->
+<!--****   Fall of the Republic: Outer Rim Sieges   ****-->
+<!--****************************************************-->
+
+<Story>
+
+	<Event Name="Rep_GC_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+
+	<Event Name="Delayed_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_Rep_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_STORY_START</Event_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="Spawn_Anakin">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Anakin_Eta_Team</Reward_Param1>
+		<Reward_Param2>Cato_Neimoidia</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_ObiWan">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Obi_Wan_Eta_Team</Reward_Param1>
+		<Reward_Param2>Cato_Neimoidia</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Cody">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Cody2_Team</Reward_Param1>
+		<Reward_Param2>Cato_Neimoidia</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Secura">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Aayla_Secura_Eta_Team</Reward_Param1>
+		<Reward_Param2>Brentaal</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Plo">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Plo_Koon_Delta_Team</Reward_Param1>
+		<Reward_Param2>Corellia</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Romodi">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Romodi_Team</Reward_Param1>
+		<Reward_Param2>Orinda</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Delta">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Delta_Squad</Reward_Param1>
+		<Reward_Param2>Kashyyyk</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Dodonna">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Dodonna_Ardent</Reward_Param1>
+		<Reward_Param2>Corellia</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Yularen">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Yularen_Integrity</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Tarkin">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tarkin_Venator</Reward_Param1>
+		<Reward_Param2>Eriadu</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Wessex">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Wessex_Redoubt</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Cato_Castle_Clash_Tactical">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_INTRO_START</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Cato_Neimoidia</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_LAND_CATO_CASTLE_CLASH_REP.TED</Reward_Param4>
+		<Reward_Param5>Rebel</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Cato_Castle_Clash.xml</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param13>0</Reward_Param13>
+	</Event>
+
+	<Event Name="Rep_Cato_Castle_Clash_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_01</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>6</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_02</Reward_Param1>
+		<Reward_Param2>9.5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_Rep</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_Rep_Act_I</Story_Tag>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="Rep_Camera_Jump_Felucia">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Felucia</Reward_Param1>
+		<Reward_Param2>0, 0, 0</Reward_Param2>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="Rep_Flash_Felucia">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Felucia</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Felucia_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="Rep_Remove_Flash_Felucia">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Felucia_GUI_Flash</Reward_Param1>
+		<Prereq>Rep_Flash_Felucia</Prereq>
+	</Event>
+
+	<Event Name="Rep_Flash_Saleucami">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Saleucami</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Saleucami_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="Rep_Remove_Flash_Saleucami">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Saleucami_GUI_Flash</Reward_Param1>
+		<Prereq>Rep_Flash_Saleucami</Prereq>
+	</Event>
+
+	<Event Name="Rep_Flash_Mygeeto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Mygeeto</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Mygeeto_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="Rep_Remove_Flash_Mygeeto">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Mygeeto_GUI_Flash</Reward_Param1>
+		<Prereq>Rep_Flash_Mygeeto</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_I_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_ACT_I_PLANETS_CONQUERED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_Rep_Act_I</Reward_Param1>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_03">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>40</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_03</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Anakin_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_I_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_II_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_Rep</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_Rep_Act_II</Story_Tag>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_03</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_II_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_MECHNO_MOVED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_Rep_Act_II</Reward_Param1>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_04</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Piett_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_II_Completed</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act III *************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_III_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>40</Event_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_04</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Rep_Outer_Rim_Sieges_Act_III">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_III_Timer</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_05">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_ACT_III_START</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_05</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Piett_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_III_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_Rep</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_Rep_Act_III</Story_Tag>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_05</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Outer_Rim_Sieges_Jedi_Charros_01">
+		<Event_Type>STORY_DEPLOY</Event_Type>
+		<Event_Param1></Event_Param1>
+		<Event_Param2>Charros</Event_Param2>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_III_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Jedi_Charros_02">
+		<Event_Type>STORY_DEPLOY</Event_Type>
+		<Event_Param1></Event_Param1>
+		<Event_Param2>Charros</Event_Param2>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_III_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_III_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_Rep_Act_III</Reward_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Jedi_Charros_01, Rep_Outer_Rim_Sieges_Jedi_Charros_02</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act IV *************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_IV_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_III_Completed</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Rep_Outer_Rim_Sieges_Act_IV">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_IV_Timer</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_06">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_ACT_IV_START</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_06</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>ObiWan_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_07">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_07</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>ObiWan_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_06</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_IV_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_Rep</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_Rep_Act_IV</Story_Tag>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_07</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Conquest_Tythe">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Tythe</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_IV_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Jedi_Tythe_01">
+		<Event_Type>STORY_DEPLOY</Event_Type>
+		<Event_Param1></Event_Param1>
+		<Event_Param2>Tythe</Event_Param2>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_IV_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Jedi_Tythe_02">
+		<Event_Type>STORY_DEPLOY</Event_Type>
+		<Event_Param1></Event_Param1>
+		<Event_Param2>Tythe</Event_Param2>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_IV_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_IV_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_Rep_Act_IV</Reward_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Jedi_Tythe_01</Prereq>
+		<Prereq>Rep_Outer_Rim_Sieges_Jedi_Tythe_02</Prereq>
+		<Prereq>Rep_Conquest_Tythe</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act V **************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_08">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_08</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Mace_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_IV_Completed</Prereq>
+	</Event>
+
+	<Event Name="Rep_Camera_Jump_Coruscant">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Coruscant</Reward_Param1>
+		<Reward_Param2>0, 0, 0</Reward_Param2>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_08</Prereq>
+	</Event>
+
+	<Event Name="Rep_Flash_Coruscant">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Coruscant</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Coruscant_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_08</Prereq>
+	</Event>
+
+	<Event Name="Rep_Remove_Flash_Coruscant">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Coruscant_GUI_Flash</Reward_Param1>
+		<Prereq>Rep_Flash_Coruscant</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_V_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_Rep</Story_Dialog>
+		<Story_Chapter>5</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_Rep_Act_V</Story_Tag>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_08</Prereq>
+	</Event>
+
+	<Event Name="Rep_Jedi_Entry_Coruscant">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Coruscant</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_V_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Crushing_Coruscant_Tactical">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param4>Coruscant</Event_Param4>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_V_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Crushing_Coruscant_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>Rep_Crushing_Coruscant_Tactical</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_V_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_Rep_Act_V</Reward_Param1>
+		<Prereq>Rep_Crushing_Coruscant_Epilogue</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_09">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_09</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_V_Completed</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act VI *************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_10">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>30</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_10</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Mace_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_09</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_VI_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_Rep</Story_Dialog>
+		<Story_Chapter>6</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_Rep_Act_VI</Story_Tag>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_10</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_VI_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REP_ACT_VI_PLANETS_CONQUERED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_Rep_Act_VI</Reward_Param1>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act VII *************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Outer_Rim_Sieges_Speech_11">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>200</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_REP_SPEECH_11</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>PalpatineFotR_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Rep_Cato_Castle_Clash_Epilogue</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_VII_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_Rep</Story_Dialog>
+		<Story_Chapter>7</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_Rep_Act_VII</Story_Tag>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_11</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Unlock_Experimental_Frigate">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Research_Experimental_Frigate_Doctrine</Reward_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_VII_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Experimental_Frigate_Construction">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Dummy_Research_Experimental_Frigate_Doctrine</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Dummy_Research_Experimental_Frigate_Doctrine</Reward_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_III_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_VII_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_Rep_Act_VII</Reward_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Experimental_Frigate_Construction</Prereq>
+	</Event>
+
+	<Event Name="Rep_Unlock_Victory_I_Frigate">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Victory_I_Frigate</Reward_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Experimental_Frigate_Construction</Prereq>
+	</Event>
+
+	<Event Name="Rep_Unlock_Imperial_I_Frigate">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Imperial_I_Frigate</Reward_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Experimental_Frigate_Construction</Prereq>
+	</Event>
+
+	<Event Name="Rep_Lock_Arquitens">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Arquitens</Reward_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Experimental_Frigate_Construction</Prereq>
+	</Event>
+
+	<Event Name="Rep_Lock_Assault_Acclamator">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Generic_Acclamator_Assault_Ship_Leveler</Reward_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Experimental_Frigate_Construction</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act VIII ************-->
+	<!--************************************-->
+
+	<Event Name="Rep_Outer_Rim_Sieges_Act_VIII_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>40</Event_Param1>
+		<Prereq>Rep_Outer_Rim_Sieges_Speech_09</Prereq>
+	</Event>
+
+	<Event Name="Trigger_Rep_Outer_Rim_Sieges_Act_VIII">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_VIII_Timer</Prereq>
+	</Event>
+
+</Story>

@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" ?>
+
+<!--****************************************************-->
+<!--****   Fall of the Republic: Outer Rim Sieges   ****-->
+<!--****************************************************-->
+
+<Story>
+
+	<Event Name="CIS_GC_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+
+	<Event Name="Delayed_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_CIS_Story_Start">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_STORY_START</Event_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--*********** Story Handler **********-->
+	<!--************************************-->
+
+	<Event Name="Spawn_Dooku">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Dooku_Team</Reward_Param1>
+		<Reward_Param2>Serenno</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Sora">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Sora_Bulq_Team</Reward_Param1>
+		<Reward_Param2>Saleucami</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Vazus">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Vazus_Team</Reward_Param1>
+		<Reward_Param2>Ossus</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Gunray">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Gunray_Team</Reward_Param1>
+		<Reward_Param2>Murkhana</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Cyber_Trench">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Trench_Invulnerable</Reward_Param1>
+		<Reward_Param2>Serenno</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Harsol">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Harsol_Munificent</Reward_Param1>
+		<Reward_Param2>Siskeen</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Trilm">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Calli_Trilm_Bulwark</Reward_Param1>
+		<Reward_Param2>Sluis_Van</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Spar">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Spar_Team</Reward_Param1>
+		<Reward_Param2>New_Bornalex</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Fenn_Shysa">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Fenn_Shysa_Team</Reward_Param1>
+		<Reward_Param2>New_Bornalex</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Tobbi_Dala">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tobbi_Dala_Team</Reward_Param1>
+		<Reward_Param2>New_Bornalex</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Trigger_CIS_Grievous_Destroyed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_GRIEVOUS_DEAD</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Grievous_Mission</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act I **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Cato_Castle_Clash_Tactical">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_INTRO_START</Event_Param2>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Cato_Neimoidia</Reward_Param1>
+		<Reward_Param2>LAND</Reward_Param2>
+		<Reward_Param3>Empire</Reward_Param3>
+		<Reward_Param4>_FOTG_LAND_CATO_CASTLE_CLASH_CIS.TED</Reward_Param4>
+		<Reward_Param5>Rebel</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Cato_Castle_Clash.xml</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>1</Reward_Param11>
+		<Reward_Param13>0</Reward_Param13>
+	</Event>
+
+	<Event Name="CIS_Cato_Castle_Clash_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_01">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0.25</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_01</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_02</Reward_Param1>
+		<Reward_Param2>15</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_01</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_I_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>15</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_CIS</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_CIS_Act_I</Story_Tag>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_I_Completed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_ACT_I_PLANETS_CONQUERED</Event_Param2>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_CIS_Act_I</Reward_Param1>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act II *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_03">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_03</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Outer_Rim_Sieges_Act_I_Dialog</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_04">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_04</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_03</Prereq>
+	</Event>
+
+	<Event Name="CIS_Camera_Jump_Belderone">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Belderone</Reward_Param1>
+		<Reward_Param2>0, 0, 0</Reward_Param2>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_04</Prereq>
+	</Event>
+
+	<Event Name="CIS_Flash_Belderone">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Belderone</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Belderone_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_04</Prereq>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Belderone">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Belderone_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Belderone</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_II_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_CIS</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_CIS_Act_II</Story_Tag>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_04</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Grievous_Entry_Belderone">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Belderone</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>CIS_Outer_Rim_Sieges_Act_II_Dialog</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="CIS_Breaking_Belderone_Tactical">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>LINK_TACTICAL</Reward_Type>
+		<Reward_Param1>Belderone</Reward_Param1>
+		<Reward_Param2>SPACE</Reward_Param2>
+		<Reward_Param3>Rebel</Reward_Param3>
+		<Reward_Param4>_FOTG_SPACE_BREAKING_BELDERONE.TED</Reward_Param4>
+		<Reward_Param5>Empire</Reward_Param5>
+		<Reward_Param6></Reward_Param6>
+		<Reward_Param7>StoryEvents\Plot_Breaking_Belderone.XML</Reward_Param7>
+		<Reward_Param8>1</Reward_Param8>
+		<Reward_Param9>0</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Reward_Param11>0</Reward_Param11>
+		<Prereq>CIS_Grievous_Entry_Belderone</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="CIS_Belderone_Unrestricted">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_PLANET_RESTRICTED</Reward_Type>
+		<Reward_Param1>Belderone</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>CIS_Breaking_Belderone_Tactical</Prereq>
+		<Prereq>Trigger_CIS_Grievous_Destroyed</Prereq>
+	</Event>
+
+	<Event Name="CIS_Breaking_Belderone_Tactical_Failed">
+		<Event_Type>STORY_MISSION_LOST</Event_Type>
+		<Event_Param1>StoryEvents\Plot_Breaking_Belderone.XML</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Breaking_Belderone_Retry_Log</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="CIS_Breaking_Belderone_Tactical_Completed">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Event_Param4>Belderone</Event_Param4>
+		<Prereq>CIS_Breaking_Belderone_Tactical</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="CIS_Breaking_Belderone_Tactical_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>CIS_Breaking_Belderone_Tactical_Completed</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_II_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_CIS_Act_II</Reward_Param1>
+		<Prereq>CIS_Breaking_Belderone_Tactical_Epilogue</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act III *************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_III_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Prereq>CIS_Grievous_Entry_Belderone</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="Trigger_CIS_Outer_Rim_Sieges_Act_III">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>CIS_Outer_Rim_Sieges_Act_III_Timer</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_05">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_ACT_III_START</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_05</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_III_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_CIS</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_CIS_Act_III</Story_Tag>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_05</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+
+	<Event Name="CIS_Grievous_Gunray_Meeting">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_GRIEVOUS_GUNRAY_MEETING_START</Event_Param2>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_III_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_CIS_Act_III</Reward_Param1>
+		<Prereq>CIS_Outer_Rim_Sieges_Act_III_Dialog, CIS_Grievous_Gunray_Meeting</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_06">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_06</Reward_Param1>
+		<Reward_Param2>10</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Grievous_Gunray_Meeting</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_07">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_07</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Gunray_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_06</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_08">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>8.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_08</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_07</Prereq>
+		<Branch>Grievous_Mission</Branch>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act IV **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_IV_Timer">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>400</Event_Param1>
+		<Prereq>CIS_Breaking_Belderone_Tactical</Prereq>
+	</Event>
+
+	<Event Name="Trigger_CIS_Outer_Rim_Sieges_Act_IV">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>Trigger_CIS_Grievous_Destroyed</Prereq>
+		<Prereq>CIS_Outer_Rim_Sieges_Act_IV_Timer</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_09">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_ACT_IV_START</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_09</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_IV_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_CIS</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_CIS_Act_IV</Story_Tag>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_09</Prereq>
+	</Event>
+
+	<Event Name="CIS_Camera_Jump_Tythe">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Tythe</Reward_Param1>
+		<Reward_Param2>0, 0, 0</Reward_Param2>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_09</Prereq>
+	</Event>
+
+	<Event Name="CIS_Flash_Tythe">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>7</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Tythe</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Tythe_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_09</Prereq>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Tythe">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Tythe_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Tythe</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Tythe_Conquest">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Tythe</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Dooku_Landing_Tythe">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_TYTHE_TRAP_COMPLETE</Event_Param2>
+	</Event>
+
+	<Event Name="CIS_Tythe_Trap_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Prereq>CIS_Dooku_Landing_Tythe</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_IV_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_CIS_Act_IV</Reward_Param1>
+		<Prereq>CIS_Tythe_Trap_Epilogue</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--*************** Act V **************-->
+	<!--************************************-->
+
+	<Event Name="Trigger_CIS_Outer_Rim_Sieges_Act_V">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Prereq>CIS_Tythe_Trap_Epilogue</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_10">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_ACT_V_START</Event_Param2>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_10</Reward_Param1>
+		<Reward_Param2>14</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8>Dooku_Speech</Reward_Param8>
+		<Reward_Param9>Dooku_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="CIS_Camera_Jump_Coruscant">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>POSITION_CAMERA</Reward_Type>
+		<Reward_Param1>Coruscant</Reward_Param1>
+		<Reward_Param2>0, 0, 0</Reward_Param2>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_10</Prereq>
+	</Event>
+
+	<Event Name="CIS_Flash_Coruscant">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>FLASH_PLANET_GUI</Reward_Type>
+		<Reward_Param1>Coruscant</Reward_Param1>
+		<Reward_Param2>FLASH_PLANET</Reward_Param2>
+		<Reward_Param4>Coruscant_GUI_Flash</Reward_Param4>
+		<Reward_Param5>True</Reward_Param5>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_10</Prereq>
+	</Event>
+
+	<Event Name="CIS_Remove_Flash_Coruscant">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>HIDE_TUTORIAL_CURSOR</Reward_Type>
+		<Reward_Param1>Coruscant_GUI_Flash</Reward_Param1>
+		<Prereq>CIS_Flash_Coruscant</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_V_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>14</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_CIS</Story_Dialog>
+		<Story_Chapter>5</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_CIS_Act_V</Story_Tag>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_10</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Grievous_Entry_Coruscant">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Coruscant</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_10</Prereq>
+	</Event>
+
+	<Event Name="CIS_Coruscant_Conquest">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Coruscant</Event_Param1>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_Crushing_Coruscant_Epilogue">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Prereq>CIS_Coruscant_Conquest</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_V_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_CIS_Act_V</Reward_Param1>
+		<Prereq>CIS_Crushing_Coruscant_Epilogue</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_11">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_11</Reward_Param1>
+		<Reward_Param2>11</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Crushing_Coruscant_Epilogue</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_12">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>11.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_12</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Grievous_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_11</Prereq>
+	</Event>
+
+	<!--************************************-->
+	<!--************** Act XI **************-->
+	<!--************************************-->
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_13">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_13</Reward_Param1>
+		<Reward_Param2>8</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Emperor_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_12</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_14">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_14</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Emperor_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_13</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Speech_15">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12.5</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_OUTER_RIM_SIEGES_CIS_SPEECH_15</Reward_Param1>
+		<Reward_Param2>12</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Emperor_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_14</Prereq>
+	</Event>
+
+	<Event Name="CIS_Outer_Rim_Sieges_Act_XI_Dialog">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>12</Event_Param1>
+		<Story_Dialog>Dialog_Outer_Rim_Sieges_CIS</Story_Dialog>
+		<Story_Chapter>11</Story_Chapter>
+		<Story_Tag>Outer_Rim_Sieges_CIS_Act_XI</Story_Tag>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_15</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Unlock_GC_Progression">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>CIS_Outer_Rim_Sieges_Speech_14</Prereq>
+	</Event>
+
+	<Event Name="CIS_GC_Progression_Research">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>GC_Progression_Dummy</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>GC_Progression_Dummy</Reward_Param1>
+		<Prereq>Trigger_CIS_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="CIS_GC_Progression">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Prereq>CIS_GC_Progression_Research</Prereq>
+	</Event>
+
+</Story>

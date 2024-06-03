@@ -2014,6 +2014,7 @@
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>																						 
 		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
+		<Space_Model_Name>ARC-170_starfighter_OFC</Space_Model_Name>
 		
 		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
@@ -2092,6 +2093,8 @@
 		TEXT_STATBLOCK_ARC170_WEAP3
 		TEXT_STATBLOCK_ARC170_WEAP4
 		</Encyclopedia_Text>
+
+		<Space_Model_Name>ARC-170_starfighter_OFC</Space_Model_Name>
 		
 		<Tactical_Health>90</Tactical_Health>
 		<Shield_Points>75</Shield_Points>

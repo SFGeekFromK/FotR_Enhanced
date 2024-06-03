@@ -61,6 +61,8 @@ Hutt_HuttGuard.ALO
 ------Todo Lists------
 ORS Planet trade routes, campaign editing etc 
 
+Yularen still respawning in integrity death
+
 Wolfpack team ring missing, health bar length
 
 Wolfpack phase 2

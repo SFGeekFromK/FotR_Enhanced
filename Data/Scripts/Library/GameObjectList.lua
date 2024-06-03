@@ -280,6 +280,8 @@ return {
 ["YULAREN_RESOLUTE_SPHAT"] = true,
 ["TJ912_RECUSANT"] = true,
 ["TM171_DH_OMNI"] = true,
+["CHARGER_C70_OFC"] = true,
+["ACCLAMATOR_ASSAULT_SHIP_I_OFC"] = true,
 ["VENATOR_OFC"] = true,
 ["VENATOR_OFC_CAMPAIGN"] = true, 
 ["VENATOR_SPHA_T"] = true,

@@ -3941,6 +3941,8 @@
 		<Variant_Of_Existing_Type>Charger_C70</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_C70_OFC</Text_ID>
 		
+		<Space_Model_Name>Consular-class_c70_ofc.alo</Space_Model_Name>
+
 		<Build_Limit_Current_Per_Player>50</Build_Limit_Current_Per_Player>
 
 	</SpaceUnit>

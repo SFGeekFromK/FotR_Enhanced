@@ -89,8 +89,8 @@
 		</Unit_Abilities_Data>
 	</DummyStructure>
 
-	<SpaceUnit Name="OFC_SPHA_T_Refit">
-		<Variant_Of_Existing_Type>Venator_OFC</Variant_Of_Existing_Type>
+	<DummyStructure Name="OFC_SPHA_T_Refit">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 		<GUI_Row> 0 </GUI_Row>
 
 		<Population_Value>0</Population_Value>
@@ -100,7 +100,7 @@
 		<AI_Combat_Power>1000</AI_Combat_Power>
 		
 		<Text_ID>TEXT_UNIT_OFC_SPHA_T_REFIT</Text_ID>
-		<Lua_Script>HeroSwitcher</Lua_Script>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
 		<Affiliation>Empire</Affiliation>
 		<Icon_Name>i_button_jedi_Cruiser_rep_OFC_SPHA_T.tga</Icon_Name>
 
@@ -134,7 +134,11 @@
 		<Required_Orbiting_Units>Venator_OFC, Anakin_Eta</Required_Orbiting_Units>
 		<Build_Limit_Lifetime_Per_Player>3</Build_Limit_Lifetime_Per_Player>
 		
-	</SpaceUnit>
+		<Unit_Abilities_Data SubObjectList="No">
+
+		</Unit_Abilities_Data>
+
+	</DummyStructure>
 
 	<!--<SpaceUnit Name="Venator_Decolorize">
 		<Variant_Of_Existing_Type>Generic_Venator</Variant_Of_Existing_Type>

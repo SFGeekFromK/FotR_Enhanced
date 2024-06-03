@@ -851,6 +851,7 @@ TEXT_CONQUEST_GOVERNMENT_HUTTS_ULAL_AVAILABLE,[Ulal has joined your forces]
 TEXT_CONQUEST_GOVERNMENT_REP_HERO_REPLACEMENT_SPEECH_KILIAN,Admiral Kilian:  My days of fighting are nearly over.  I have decided to retire on Anaxes and train young cadets for a career in the military. [Shoan Kilian has retired from the Republic Command Staff]
 TEXT_CONQUEST_GOVERNMENT_REP_HERO_REPLACEMENT_SPEECH_MARTZ,Republic Intelligence Officer:  I regret to report that Captain Martz has been declared KIA after a commando team found the Prosecutor had been commandeered by Trandoshan mercenaries.  [Stinnet Martz has been removed from the Republic Command Staff]
 TEXT_CONQUEST_GOVERNMENT_REP_HERO_REPLACEMENT_SPEECH_TENANT,Rear Admiral Tenant:  Reports indicate that Admiral Dao's fleet was dead on arrival.  I have been tasked with taking over his forces.  [Nils Tenant (Venator) has been added to the Republic Command Staff]
+TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL,The war seems to near its end. I shall share my skill of piloting for the new generations of ace pilots. [Bythen Forral has retired and established Vensenor Flight Academy]
 TEXT_CONTAINS,Contains :
 TEXT_CONTINUE,Continue
 TEXT_COREY_PATRON_SWAP,%s has entered service
@@ -2464,6 +2465,7 @@ TEXT_GOVERNMENT_REPUBLIC_MOFF_WESSEX,- Denn Wessex (Venator) [ Requires Venator 
 TEXT_GOVERNMENT_REPUBLIC_SECTORFORCES,Several Republic sectors are maintaining independent control of their own defenses at the moment. This faction (dark red, also indicated with the Republic's galactic roundel next to their planets) will not attack you, and will only defend their own territory. Increasing your senate support via missions will cause one of these planets to join you. Attacking them may result in negative consequences.
 TEXT_GOVERNMENT_REPUBLIC_SECTORFORCES_HEADER,Republic-Aligned Sector Forces:
 TEXT_GOVERNMENT_REQUIREMENTS_NONE,Requirements: Always Present
+TEXT_GOVERNMENT_SENATOR_LIST,Active Senators:
 TEXT_GOVERNMENT_STIMULUS_COMMERCE,Stimulus: Commerce Guild
 TEXT_GOVERNMENT_STIMULUS_COMMERCE_DESCRIPTION,Increases the Commerce Guild's support for the Separatist Council by 5% and integrates one of this subfaction's planets.
 TEXT_GOVERNMENT_STIMULUS_IGBC,Stimulus: IGBC
@@ -11833,6 +11835,7 @@ TEXT_TOOLTIP_ATXT_WEAP2,2x Proton Grenades: 1 / 6.0s / 400m
 TEXT_TOOLTIP_AUREK_STARFIGHTER,The last, latest models of the venerable Aurek-series of strike fighters, a product of Outer Rim engineers rather than now-defunct megacorps. Speedy and armed with modern weapons, but the light construction and poor handling show the age of the base design even with new components and constant tuning. 
 TEXT_TOOLTIP_AUTEM,Sagoro was once a Senate Guard, but left the guard after he was forced to resort to fratricide to stop an assassination attempt by his brother. He found himself in prison on Brentaal IV for mercenary work at the outbreak of the Clone Wars, where he was in a position to help liberate the planet and earn his freedom. Autem joined the fleet to further assist the war effort.
 TEXT_TOOLTIP_AUTEM_OVERRIDE,Fighter Override: Mercenary snubfighters on Assault Acclamators
+TEXT_TOOLTIP_AUTEM_OVERRIDE_2,Fighter Override: NTB-630 Naval Bomber on OCF Venator
 TEXT_TOOLTIP_AUTO, A Super Tactical Droid with a penchant for using a combination of large battleships and gunboat escorts. It was programmed specifically to defend important assets such as codebreakers, supercomputers and fleet bases.
 TEXT_TOOLTIP_AUXILIA,An antiquated but well-rounded cruiser. It was designed to run down pirate vessels by the Trade Defense Force several centuries before the Clone Wars, and commonly sees service alongside the Captor-class that shares its base design. Well suited to engaging medium capital ships and escort vessels.
 TEXT_TOOLTIP_AUXILIA_HULL,Hull: 2310 (Frigate)
@@ -12102,7 +12105,7 @@ TEXT_TOOLTIP_BUILDLIMIT_SMUGGLERS_DEPLOY,Smuggler Deployments: +10
 TEXT_TOOLTIP_BUILDLIMIT_SUBJUGATOR,Build Limit: 5 | Lifetime: ∞
 TEXT_TOOLTIP_BUILDLIMIT_TAXES,Build Limit: 2 | Total: ∞
 TEXT_TOOLTIP_BUILDLIMIT_TRADE_STATION,Build Limit: 1 | Total: 15
-TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC,Build Limit: 12 | Lifetime: "
+TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC,Build Limit: 12 | Lifetime: ∞
 TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC_SPHA_T,Build Limit: 3 | Lifetime: 1
 TEXT_TOOLTIP_BULQ_HEALTH,Health: 250 [2%/5s] (Hero)
 TEXT_TOOLTIP_BULQ_MOVE,Speed: 1.25 
@@ -12998,7 +13001,9 @@ TEXT_TOOLTIP_ESCORT_NORULAC2,1x - Marauder Cruiser
 TEXT_TOOLTIP_ESCORT_NORULAC3,1x - Action VI Tender
 TEXT_TOOLTIP_ESCORT_OOM_DROID_COMMANDER,6x - B1 Battle Droid Squad
 TEXT_TOOLTIP_ESCORT_P1,4x - Clone Trooper Squad (P1)
+TEXT_TOOLTIP_ESCORT_P1_WOLFFE_SPECIAL,1x - Wolfpack Squad (P1)
 TEXT_TOOLTIP_ESCORT_P2,4x - Clone Trooper Squad (P2)
+TEXT_TOOLTIP_ESCORT_P2_WOLFFE_SPECIAL,1x - Wolfpack Squad (P2)
 TEXT_TOOLTIP_ESCORT_PALPATINE_P1,2x - Diplomatic Service Trooper Squad (P1)
 TEXT_TOOLTIP_ESCORT_PALPATINE_P2,2x - Shock Trooper Squad (P2)
 TEXT_TOOLTIP_ESCORT_PALPATINE_RED_GUARD,2x - Red Guards
@@ -14860,6 +14865,7 @@ TEXT_TOOLTIP_RESHUL,Reshul was a Shell Hutt of some repute, a small and somewhat
 TEXT_TOOLTIP_RESIDUAL_INFLUENCE,Residual Influence
 TEXT_TOOLTIP_RESOLUTE_SPHAT_UPGRADE,Equip Resolute with SPHA-T in the hanger.
 TEXT_TOOLTIP_RESOURCE_GARRISON,Corporate Security Trooper Squad: 1 / 0
+TEXT_TOOLTIP_RESOURCE_GARRISON_TNT, Treaded Neutron Torch: 1 / 0
 TEXT_TOOLTIP_RESPAWN_DOOKU,Force Doppelgänger: Respawns after his first death
 TEXT_TOOLTIP_RESPAWN_DURGE,Ancient Revenant: Respawn chance after his death (Decreases after each death)
 TEXT_TOOLTIP_RESPAWN_GRIEVOUS_TIER1,Abandon Ship: Grievous respawns in a Providence after defeat
@@ -16135,6 +16141,7 @@ TEXT_TOOLTIP_WAXER_WEAP1,1x DC-15S Blaster Carbine: 3 / 1.25s / 220m
 TEXT_TOOLTIP_WAXER_WEAP2,1x Ion Grenade: 1 / 15.0s / 200m
 TEXT_TOOLTIP_WAYPOINT,Set waypoint
 TEXT_TOOLTIP_WAYPOINT_01,The selected units will move to the targeted point on the map.  You can continue clicking the map to create a path for the units to follow until waypoint mode is turned off.
+TEXT_TOOLTIP_WESSEX_OVERRIDE,Fighter Override: NTB-630 Naval Bomber on OCF Venator
 TEXT_TOOLTIP_WHORM,Whorm Loathsom was a Kerkoiden male who hailed from the species homeworld and served both in his homeworld's planetary forces and as the general of the Retail Caucus's military forces in the Confederacy of Independent Systems. He never resigned his Planetary Forces commission, making him technically a treasonous Republic officer. An accomplished commander, his numerous victories led him to infamy throughout the Inner Core and implanted a streak of overconfidence.
 TEXT_TOOLTIP_WIELER,A new member of the Republic Officer Corps, Wieler is a male Human with a short history of working with Jedi Generals Kit Fisto, Plo Koon, and Tauht. His expertise and experience have leaned towards attacking Confederate resource worlds with adaptable blockade tactics being preferred.
 TEXT_TOOLTIP_WINDU,Korun Human Jedi Master who sat on the Jedi Council and was prior holder of the "Master of the Order" title. One of the best swordsmen of the Jedi Order, Mace Windu created the dangerously powerful Vaapad saber form with the aid of Sora Bulq. Mace would be one of the most ardent defenders of the Republic, and believed only the civilisation it provided could forge peace in the galaxy.
@@ -16155,6 +16162,15 @@ TEXT_TOOLTIP_WOLFFE_P2_HEALTH,Health: 160 (Hero)
 TEXT_TOOLTIP_WOLFFE_P2_MOVE,Speed: 1.3
 TEXT_TOOLTIP_WOLFFE_WEAP1,1x DC-15S Blaster Carbine: 3 / 1.25s / 220m
 TEXT_TOOLTIP_WOLFFE_WEAP2,1x Thermal Grenade: 1 / 15.0s / 200m
+TEXT_TOOLTIP_WOLFPACK_P1_SQUAD,Squad: 9x - Wolfpack Troopers(P1)
+TEXT_TOOLTIP_WOLFPACK_P2_SQUAD,Squad: 9x - Wolfpack Troopers(P1)
+TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP1,4x Blaster Carbine: 3 / 1.25s / 220m
+TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP2,3x Blaster Rifle: 1 / 1.0s / 240m
+TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP3,2x Concussion Grenade: 1 / 15.0s / 200m
+TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP4,1x Ion Grenade: 1 / 15.0s / 200m
+TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP5,1x EMP Launcher: 1 / 5.0s / 240m
+TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP6,1x Wrist Rocket: 1 / 10.0s / 220m
+TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP7,1x Light Repeating Blaster: 5 / 1.0s / 240m
 TEXT_TOOLTIP_WOOKFLUTTER,Wookiee master craftsmen build vehicles out of the wood of the wroshyr trees they also call their home. Unusual but effective, these fluttercraft are excellent scouts that mount a heavy bowcaster on their back.
 TEXT_TOOLTIP_WOOKFLUTTER_COMPANY,Company: 8x - Raddaugh Gnasp Fluttercraft
 TEXT_TOOLTIP_WOOKFLUTTER_HEALTH,Health: 40 (Speeder)
@@ -16234,6 +16250,7 @@ TEXT_UNIT_2_WARPOD,#2 Warpod
 TEXT_UNIT_31ST_FLIGHT_VULTURE,31st Flight Vulture Droid
 TEXT_UNIT_A5RX,A5-RX Battle Tank
 TEXT_UNIT_A5RX_COMPANY,A5-RX Battle Tank Company
+TEXT_UNIT_A6_PROTOTYPE,A6 Juggernaut Prototype
 TEXT_UNIT_AAT,Armored Assault Tank-1
 TEXT_UNIT_AAT_COMPANY,AAT-1 Company
 TEXT_UNIT_AAT_PDF,PDF Armored Assault Tank
@@ -17263,6 +17280,15 @@ TEXT_UNIT_WLO5_TANK,WLO-5 Speeder Tank
 TEXT_UNIT_WLO5_TANK_COMMAND,Command WLO-5 Speeder Tank
 TEXT_UNIT_WLO5_TANK_COMMANDER,WLO-5 Speeder Tank Commander
 TEXT_UNIT_WLO5_TANK_COMPANY,WLO-5 Speeder Tank Company
+TEXT_UNIT_WOLFPACK_P1_CARBINER,Wolfpack Carbineer (Phase I)
+TEXT_UNIT_WOLFPACK_P1_CARBINER_GRENADIER,Wolfpack Carbineer Grenadier(Phase I)
+TEXT_UNIT_WOLFPACK_P1_RIFLEMAN,Wolfpack Rifleman (Phase I)
+TEXT_UNIT_WOLFPACK_P1_RIFLEMAN_GRENADIER,Wolfpack Rifleman Grenadier(Phase I)
+TEXT_UNIT_WOLFPACK_P2_CARBINER,Wolfpack Carbineer (Phase II)
+TEXT_UNIT_WOLFPACK_P2_CARBINER_GRENADIER,Wolfpack Rifleman Carbineer(Phase II)
+TEXT_UNIT_WOLFPACK_P2_RIFLEMAN,Wolfpack Rifleman (Phase II)
+TEXT_UNIT_WOLFPACK_P2_RIFLEMAN_GRENADIER,Wolfpack Rifleman Grenadier(Phase II)
+TEXT_UNIT_WOLFPACK_P2_SQUAD,Wolfpack Squad (Phase II)
 TEXT_UNIT_WOOKFLUTTER,Raddaugh Gnasp Fluttercraft
 TEXT_UNIT_WOOKFLUTTER_COMPANY,Raddaugh Gnasp Fluttercraft Company
 TEXT_UNIT_X_WING,X-wing

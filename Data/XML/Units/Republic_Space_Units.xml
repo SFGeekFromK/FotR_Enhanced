@@ -3942,6 +3942,7 @@
 		<Text_ID>TEXT_UNIT_C70_OFC</Text_ID>
 		
 		<Space_Model_Name>Consular-class_c70_ofc.alo</Space_Model_Name>
+		<Icon_Name>i_button_c70_rep_ofc.tga</Icon_Name>
 
 		<Build_Limit_Current_Per_Player>50</Build_Limit_Current_Per_Player>
 
@@ -4001,20 +4002,8 @@
 		</Encyclopedia_Text>
 
 		<Affiliation>Empire</Affiliation>
-		<Tech_Level>0</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
-		<Required_Special_Structures>
-		Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four,
-		AI_Category_Dummy | Capital_Category_Dummy		
-		</Required_Special_Structures>
-		<Required_Planets/>
 		<GUI_Row> 1 </GUI_Row>
 		<Build_Limit_Current_Per_Player>12</Build_Limit_Current_Per_Player>
-		
-		<Build_Initially_Locked>Yes</Build_Initially_Locked>
-		
-		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 
         <!-- fighter spawn -->
 
@@ -4102,7 +4091,6 @@
 		  Venator_Bay, Venator_Engines, HP_Venator_01, HP_Venator_02, HP_Venator_03, HP_Venator_04, HP_Venator_05, HP_Venator_06, HP_Venator_07, HP_Venator_08, HP_Venator_Turret_01, HP_Venator_Turret_02, HP_Venator_Turret_03, HP_Venator_Turret_04, Yularen_Venator_Bay_SPHAT
 		</HardPoints>
 		<Tech_Level>99</Tech_Level>
-		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
 		<Icon_Name>i_button_jedi_Cruiser_rep_OFC_SPHA_T.tga</Icon_Name>
 		
 		<Death_Clone>Damage_Normal, Venator_OFC_Death_Clone</Death_Clone>

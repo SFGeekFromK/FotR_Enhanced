@@ -1994,7 +1994,7 @@
 	</HeroCompany>
 
 	<UniqueUnit Name="Odd_Ball_ARC170">
-		<Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>ARC_170_OFC</Variant_Of_Existing_Type>
 
 		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
 		<Encyclopedia_Text>
@@ -2014,7 +2014,6 @@
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>																						 
 		<Icon_Name>i_button_odd_ball_p2.tga</Icon_Name>
-		<Space_Model_Name>ARC-170_starfighter_OFC</Space_Model_Name>
 		
 		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
@@ -2080,7 +2079,7 @@
 	</UniqueUnit>
 
 	<UniqueUnit Name="ARC170_Squad_Seven">
-		<Variant_Of_Existing_Type>Generic_ARC_170</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>ARC_170_OFC</Variant_Of_Existing_Type>
 
 		<Text_ID>TEXT_UNIT_SQUAD_SEVEN_ARC170</Text_ID>
 		<Encyclopedia_Text> 

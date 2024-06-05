@@ -796,6 +796,8 @@
 		<Death_Clone>DamageL_Ion, Infantry_Electric_Death_Clone_01</Death_Clone>
 		<Death_CLone>Damage_Normal, Small_Explosion_Land</Death_CLone>
 
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
 		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
 		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
@@ -971,7 +973,7 @@
 				<Type>SELF_DESTRUCT</Type>
 				<Expiration_Seconds>2</Expiration_Seconds>
 				<Recharge_Seconds>10</Recharge_Seconds>
-				<Spawned_Object_Type> Ground_Tank_Self_Destruct_Blast </Spawned_Object_Type>
+				<Spawned_Object_Type> Ground_Droid_Self_Destruct_Blast  </Spawned_Object_Type>
 				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
@@ -1107,7 +1109,7 @@
 				<Type>SELF_DESTRUCT</Type>
 				<Expiration_Seconds>2</Expiration_Seconds>
 				<Recharge_Seconds>10</Recharge_Seconds>
-				<Spawned_Object_Type> Ground_Tank_Self_Destruct_Blast </Spawned_Object_Type>
+				<Spawned_Object_Type> Ground_Droid_Self_Destruct_Blast  </Spawned_Object_Type>
 				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
@@ -1373,7 +1375,7 @@
 				<Type>SELF_DESTRUCT</Type>
 				<Expiration_Seconds>2</Expiration_Seconds>
 				<Recharge_Seconds>10</Recharge_Seconds>
-				<Spawned_Object_Type> Ground_Tank_Self_Destruct_Blast </Spawned_Object_Type>
+				<Spawned_Object_Type> Ground_Droid_Self_Destruct_Blast  </Spawned_Object_Type>
 				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
@@ -1463,7 +1465,7 @@
 				<Type>SELF_DESTRUCT</Type>
 				<Expiration_Seconds>2</Expiration_Seconds>
 				<Recharge_Seconds>10</Recharge_Seconds>
-				<Spawned_Object_Type> Ground_Tank_Self_Destruct_Blast </Spawned_Object_Type>
+				<Spawned_Object_Type> Ground_Droid_Self_Destruct_Blast  </Spawned_Object_Type>
 				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
@@ -1837,7 +1839,10 @@
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 	</GroundCompany>
 
-  <!--<GroundInfantry Name="Morgukai_Clone">
-    
-  </GroundInfantry>-->
+	<GroundInfantry Name="Morgukai_Clone">
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> </Encyclopedia_Text>
+  	</GroundInfantry>
+
 </CIS_Organic_Units>

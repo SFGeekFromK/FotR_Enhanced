@@ -61,7 +61,7 @@ function Begin_GC(message)
             maxroutes = 5,
 			id = "DEFAULT",
             year_start = 19,
-            unlocktech = false,
+            unlocktech = true,
             is_generated = false,
             statemachine_dsl_config = {
                 transition_policy_factory = EawXTransitionPolicyFactory,

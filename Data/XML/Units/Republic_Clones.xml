@@ -10477,7 +10477,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
-		<Icon_Name>I_BUTTON_WOLFPACK.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_WOLFPACK_P1.tga</Icon_Name>
 		
 		<Land_Model_Name>clone_jumptrooper_phase1_legions.ALO</Land_Model_Name>
 		
@@ -11030,6 +11030,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_WOLFPACK_P2.tga</Icon_Name>
 
 		<Tactical_Health>24</Tactical_Health>
 		<Max_Speed>1.2</Max_Speed>

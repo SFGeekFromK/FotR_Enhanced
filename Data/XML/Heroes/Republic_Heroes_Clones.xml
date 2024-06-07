@@ -4108,7 +4108,7 @@
 
 		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
 
-		<Starting_Spawned_Units_Tech_0>Clonetrooper_Phase_Two_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Wolfpack_Phase_Two_Team_Deployed, 1</Starting_Spawned_Units_Tech_0>
 
 		<Lua_Script>GroundHero</Lua_Script>
 

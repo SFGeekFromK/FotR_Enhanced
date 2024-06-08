@@ -53,14 +53,15 @@ function Begin_GC(message)
         --        :with_sink(holocron_sink)
         --        :with_log_level(3)
 
-        GlobalValue.Set("CURRENT_ERA", 5)
+        GlobalValue.Set("CURRENT_ERA", 4)
 
         local plugin_list = ModContentLoader.get("InstalledPlugins")
         local context = {
             plot = plot,
             maxroutes = 5,
 			id = "DEFAULT",
-            year_start = 19,
+            year_start = 20,
+            year_month = 8,
             unlocktech = true,
             is_generated = false,
             statemachine_dsl_config = {

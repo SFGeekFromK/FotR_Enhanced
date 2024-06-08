@@ -126,4 +126,18 @@ a6 prototype
 
 replace missiles with grenades(same as the one from at-xt), no tower, rear gun replaced with heavy aa blaster
 
-300 275 240 220
+
+
+
+ORS submod Plan
+
+time line 
+starting mission : battle of honoghr
+20bby 10 16:1 30 battle of rendili
+20bby 11 16:2 31 
+20bby 12 16:3 32 
+19bby 1 16:4 33 
+19bby 2 16:5
+19bby 3 16:6
+
+original + saleucami deployment mission

@@ -65,7 +65,7 @@ Yularen still respawning in integrity death(base mod behavior)
 
 Wolfpack team ring missing, health bar length
 
-Bythen Forral Replenish wingmen ability fix
+Bythen Forral Order 65 options bug : multimedia 
 
 Royal Guards fix(
 	issues

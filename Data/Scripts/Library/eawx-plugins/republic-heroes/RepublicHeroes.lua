@@ -1040,10 +1040,8 @@ end
 function RepublicHeroes:Order_65_Handler()
 	--init_hero_system(senator_data)
 	Forral_Check()
-	if Handle_Hero_Add("Forral", admiral_data) then
-		if admiral_data.active_player.Is_Human() then
-			StoryUtil.Multimedia("TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL", 20, nil, "Commander_Moff_Loop", 0)
-		end
+	if admiral_data.active_player.Is_Human() then
+		StoryUtil.Multimedia("TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL", 20, nil, "Commander_Moff_Loop", 0)
 	end
 end
 

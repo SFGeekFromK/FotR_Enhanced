@@ -111,3 +111,4 @@ TEXT_UNIT_WOLFPACK_P1_EMP,Wolfpack EMP Gunner (Phase I)
 TEXT_TOOLTIP_WOLFPACK_P2_HEALTH,Health: 24 (Infantry)
 TEXT_UNIT_WOLFPACK_P2_GUNNER_LIGHT,Wolfpack Light Gunner (Phase II)
 TEXT_UNIT_WOLFPACK_P2_EMP,Wolfpack EMP Gunner (Phase II)
+TEXT_TOOLTIP_WOLFPACK,These Elite Soldiers from the 104th serve under Jedi General Plo Koon and Commander Wolffe. They accompanied them in various battles, Relief Efforts and Rescue missions.

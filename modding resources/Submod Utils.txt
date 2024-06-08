@@ -61,16 +61,9 @@ Hutt_HuttGuard.ALO
 ------Todo Lists------
 ORS Planet trade routes, campaign editing etc 
 
-Yularen still respawning in integrity death
+Yularen still respawning in integrity death(base mod behavior)
 
 Wolfpack team ring missing, health bar length
-
-Wolfpack phase 2
-
-Write Texts for wolpack 
-[
-	TEXT_TOOLTIP_WOLFPACK,
-]
 
 Bythen Forral Replenish wingmen ability fix
 

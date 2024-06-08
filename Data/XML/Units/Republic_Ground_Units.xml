@@ -3917,7 +3917,7 @@
 		<AI_Combat_Power>270</AI_Combat_Power>
 		<Score_Cost_Credits>400</Score_Cost_Credits>
 
-		<Lua_Script>A6_Prototype_Mesh</Lua_Script>
+		<Lua_Script>ObjectScript_A6_Prototype</Lua_Script>
 
 		<Tactical_Health>1300</Tactical_Health>
 		<Autoresolve_Health>1300</Autoresolve_Health>

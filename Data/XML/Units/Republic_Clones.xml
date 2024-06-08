@@ -10524,7 +10524,7 @@
 		<Max_Lift> .6 </Max_Lift>
 
 		<Armor_Type> ArmourG_Infantry </Armor_Type>
-		<Tactical_Health>22</Tactical_Health>
+		<Tactical_Health>30</Tactical_Health>
 		<Surface_Type_Cover_Damage_Shield>.5</Surface_Type_Cover_Damage_Shield>
 
 		<Damage>0.6</Damage>
@@ -10838,7 +10838,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
-		<Icon_Name>I_BUTTON_WOLFPACK.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_WOLFPACK_P1.tga</Icon_Name>
 
 		<Autoresolve_Health>100</Autoresolve_Health>
 		<Damage>18</Damage>
@@ -10937,7 +10937,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
-		<Icon_Name>I_BUTTON_WOLFPACK.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_WOLFPACK_P1.tga</Icon_Name>
 
 		<Select_Box_Scale>45</Select_Box_Scale>
 		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
@@ -11032,7 +11032,7 @@
 		</Encyclopedia_Text>
 		<Icon_Name>I_BUTTON_WOLFPACK_P2.tga</Icon_Name>
 
-		<Tactical_Health>24</Tactical_Health>
+		<Tactical_Health>38</Tactical_Health>
 		<Max_Speed>1.2</Max_Speed>
 
 		<Land_Model_Name>clone_jumptrooper_phase2_legions.ALO</Land_Model_Name>
@@ -11201,7 +11201,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
-		<Icon_Name>I_BUTTON_WOLFPACK.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_WOLFPACK_P2.tga</Icon_Name>
 
 		<Autoresolve_Health>100</Autoresolve_Health>
 		<Damage>18</Damage>
@@ -11305,7 +11305,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE 
 		</Encyclopedia_Text>
-		<Icon_Name>I_BUTTON_WOLFPACK.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_WOLFPACK_P2.tga</Icon_Name>
 
 		<Select_Box_Scale>45</Select_Box_Scale>
 		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>

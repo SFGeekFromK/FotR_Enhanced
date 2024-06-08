@@ -41,8 +41,8 @@ TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT,V-19 Torrent Squadron, Hunter Squadron
 TEXT_TOOLTIP_COMMAND_NEGOTIATOR,Venator Star Destroyer, Negotiator
 TEXT_TOOLTIP_COMMAND_VILGILANCE,Venator Star Destroyer, Vigilance
 TEXT_TOOLTIP_DARK_ACOLYTE,Dark Acolytes are Dark Jedis who joined the Confederacy of Independent Systems and directly serve its Head of State, Count Dooku. They served various roles from assassins to spies to civilian commanders. Although trained by Dooku, they are not considered to be Sith due to the Rule of Two.
-TEXT_TOOLTIP_ESCORT_P1_WOLFFE_SPECIAL,1x - Wolfpack Squad (P1)
-TEXT_TOOLTIP_ESCORT_P2_WOLFFE_SPECIAL,1x - Wolfpack Squad (P2)
+TEXT_TOOLTIP_ESCORT_P1_WOLFFE_SPECIAL,2x - Wolfpack Squad (P1)
+TEXT_TOOLTIP_ESCORT_P2_WOLFFE_SPECIAL,2x - Wolfpack Squad (P2)
 TEXT_TOOLTIP_ESCORT_PALPATINE_RED_GUARD,2x - Red Guards
 TEXT_TOOLTIP_JAG, CT-55/11-9009, known as Jai'galaar or Jag, was a clone pilot captin in the Clone Army. Originally a Clone Commander, he was demoted to captain after the Retreat at Katraasii. Later, Jedi General Plo Koon drafted the captin as the test pilot for the new ARC-170 starfighters and flew with him on many battles including the battle over Cato Neimoidia.
 TEXT_TOOLTIP_NEEDA,A commanding officer of the Carrack-class cruiser Integrity in Home Fleet Strike Group Five of the Coruscant Home Fleet. 
@@ -79,7 +79,10 @@ TEXT_TOOLTIP_VENATOR_OFC_WEAP1,4x Heavy Dual Turbolasers: 5 / 3.5s / 7.2km
 TEXT_TOOLTIP_VENATOR_SQUADRON_OFC,Fighters: 2 / 8 [E2-3], 3 / 8 [E4-5] | Bombers: 2 / 6
 TEXT_TOOLTIP_WARTHOG,"Warthog" was a veteran clone trooper pilot who often served as the wingman of Jedi general Plo Koon and was also often attached to his 104th battalion. He went on various battles and missions, including First Battle of Felucia, Battle of Kadavo.
 TEXT_TOOLTIP_WESSEX_OVERRIDE,Fighter Override: NTB-630 Naval Bomber on OCF Venator
+TEXT_TOOLTIP_WOLFPACK,These Elite Soldiers from the 104th serve under Jedi General Plo Koon and Commander Wolffe. They accompanied them in various battles, Relief Efforts and Rescue missions.
+TEXT_TOOLTIP_WOLFPACK_P1_HEALTH,Health: 30 (Infantry)
 TEXT_TOOLTIP_WOLFPACK_P1_SQUAD,Squad: 9x - Wolfpack Troopers(P1)
+TEXT_TOOLTIP_WOLFPACK_P2_HEALTH,Health: 38 (Infantry)
 TEXT_TOOLTIP_WOLFPACK_P2_SQUAD,Squad: 9x - Wolfpack Troopers(P1)
 TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP1,4x Blaster Carbine: 3 / 1.25s / 220m
 TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP2,3x Blaster Rifle: 1 / 1.0s / 240m
@@ -97,18 +100,15 @@ TEXT_UNIT_VENATOR_OFC,OCF Venator Star Destroyer
 TEXT_UNIT_VENATOR_OFC_SPHA_T,OCF Venator Star Destroyer (SPHA-T)
 TEXT_UNIT_WOLFPACK_P1_CARBINER,Wolfpack Carbineer (Phase I)
 TEXT_UNIT_WOLFPACK_P1_CARBINER_GRENADIER,Wolfpack Carbineer Grenadier(Phase I)
+TEXT_UNIT_WOLFPACK_P1_EMP,Wolfpack EMP Gunner (Phase I)
+TEXT_UNIT_WOLFPACK_P1_GUNNER_LIGHT,Wolfpack Light Gunner (Phase I)
 TEXT_UNIT_WOLFPACK_P1_RIFLEMAN,Wolfpack Rifleman (Phase I)
 TEXT_UNIT_WOLFPACK_P1_RIFLEMAN_GRENADIER,Wolfpack Rifleman Grenadier(Phase I)
+TEXT_UNIT_WOLFPACK_P1_SQUAD,Wolfpack Squad (Phase I)
 TEXT_UNIT_WOLFPACK_P2_CARBINER,Wolfpack Carbineer (Phase II)
 TEXT_UNIT_WOLFPACK_P2_CARBINER_GRENADIER,Wolfpack Rifleman Carbineer(Phase II)
+TEXT_UNIT_WOLFPACK_P2_EMP,Wolfpack EMP Gunner (Phase II)
+TEXT_UNIT_WOLFPACK_P2_GUNNER_LIGHT,Wolfpack Light Gunner (Phase II)
 TEXT_UNIT_WOLFPACK_P2_RIFLEMAN,Wolfpack Rifleman (Phase II)
 TEXT_UNIT_WOLFPACK_P2_RIFLEMAN_GRENADIER,Wolfpack Rifleman Grenadier(Phase II)
 TEXT_UNIT_WOLFPACK_P2_SQUAD,Wolfpack Squad (Phase II)
-TEXT_UNIT_WOLFPACK_P1_SQUAD,Wolfpack Squad (Phase I)
-TEXT_TOOLTIP_WOLFPACK_P1_HEALTH,Health: 22 (Infantry)
-TEXT_UNIT_WOLFPACK_P1_GUNNER_LIGHT,Wolfpack Light Gunner (Phase I)
-TEXT_UNIT_WOLFPACK_P1_EMP,Wolfpack EMP Gunner (Phase I)
-TEXT_TOOLTIP_WOLFPACK_P2_HEALTH,Health: 24 (Infantry)
-TEXT_UNIT_WOLFPACK_P2_GUNNER_LIGHT,Wolfpack Light Gunner (Phase II)
-TEXT_UNIT_WOLFPACK_P2_EMP,Wolfpack EMP Gunner (Phase II)
-TEXT_TOOLTIP_WOLFPACK,These Elite Soldiers from the 104th serve under Jedi General Plo Koon and Commander Wolffe. They accompanied them in various battles, Relief Efforts and Rescue missions.

@@ -132,12 +132,17 @@ replace missiles with grenades(same as the one from at-xt), no tower, rear gun r
 ORS submod Plan
 
 time line 
-starting mission : battle of honoghr
-20bby 10 16:1 30 battle of rendili
-20bby 11 16:2 31 
+20bby 10 16:1 30 battle of sarrish (intro battle planned)
+20bby 11 16:2 31 boz pity 
 20bby 12 16:3 32 
-19bby 1 16:4 33 
-19bby 2 16:5
+----------------- submod gc area ends here ------------------
+19bby 1 16:4 33 siege of cato nemoidia 
+19bby 2 16:5 battle of coruscant,  battle of felucia, siskeen, kashyyyk, utapau, mustafar
 19bby 3 16:6
 
-original + saleucami deployment mission
+1. ORS base mod extension : 
+	set in 19bby (Era 5)
+	starts with cato castle clash
+	triad of evil message pop up
+	deployment of aayla secura story event pop up(deploy her to saleucami)
+	

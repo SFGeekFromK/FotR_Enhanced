@@ -593,7 +593,21 @@ function State_Rep_Story_Set_Up()
 		event_act_1.Clear_Dialog_Text()
 		for _,p_planet in pairs(triad_of_evil_list) do
 			if p_planet.Get_Owner() ~= p_republic then
-				event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)
+				if p_planet.Get_Planet_Location() == FindPlanet("Saleucami") then
+					if TestValid(Find_First_Object("Aayla_Secura2")) or TestValid(Find_First_Object("Aayla_Secura_Eta_Team")) then
+						event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_SALEUCAMI", p_planet)
+					else
+						event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)
+					end
+				elseif p_planet.Get_Planet_Location() == FindPlanet("Mygeeto") then
+					if TestValid(Find_First_Object("Ki_Adi_Mundi2")) or TestValid(Find_First_Object("Ki_Adi_Mundi_Eta_Team")) then
+						event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_MYGEETO", p_planet)
+					else
+						event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)
+					end
+				else
+					event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)
+				end
 			else
 				event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION_COMPLETE", p_planet)
 			end

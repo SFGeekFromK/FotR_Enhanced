@@ -140,9 +140,11 @@ time line
 19bby 2 16:5 battle of coruscant,  battle of felucia, siskeen, kashyyyk, utapau, mustafar
 19bby 3 16:6
 
-1. ORS base mod extension : 
+ORS Base Mod Extension Goals 
 	set in 19bby (Era 5)
 	starts with cato castle clash
 	triad of evil message pop up
-	deployment of aayla secura story event pop up(deploy her to saleucami)
-	
+	deployment of aayla secura and ki adi mundi story event pop up(deploy each to saleucami, mygeeto respectly)
+	reworked corsucant chaos (narrative tactical battle like anaxes_annexation)
+	kashyyyk owner change post coruscant chaos event
+	utapau(deploy obi wan), felucia(deploy secura) narrative mission

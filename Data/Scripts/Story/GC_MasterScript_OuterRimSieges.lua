@@ -585,6 +585,7 @@ function State_Rep_Story_Set_Up()
 			FindPlanet("Murkhana"),
 			FindPlanet("Praesitlyn"),
 			FindPlanet("YagDhul"),
+			FindPlanet("Kashyyyk")
 		}
 
 		local plot = Get_Story_Plot("Conquests\\CloneWarsOuterRimSieges\\Story_Sandbox_OuterRimSieges_Republic.XML")

@@ -2580,7 +2580,7 @@
 
 	<!-- Capitals/Tier 3 -->
 
-	<SpaceUnit Name="Generic_Victory_Fleet_Destroyer">
+	<SpaceUnit Name="Generic_Victory_Fleet_Destroyer"> <!-- FotR_Enhanced --> <!-- Aurebesh Icon-->
 		<Variant_Of_Existing_Type>Template_Victory_Destroyer</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_VICTORY_DESTROYER_MK1_ALT</Text_ID>
 		<Encyclopedia_Text>
@@ -2618,7 +2618,7 @@
 		<Starting_Spawned_Units_Tech_4>Generic_V-Wing_Squadron, 1</Starting_Spawned_Units_Tech_4>
 		<Reserve_Spawned_Units_Tech_4>Generic_V-Wing_Squadron, 1</Reserve_Spawned_Units_Tech_4>
 
-		<Icon_Name>i_button_victory_fleet_class_rep.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_VICTORY_FLEET_CLASS_REP_AUREBESH.tga</Icon_Name>
 		<Lua_Script>GenericGameObject</Lua_Script>
 		
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
@@ -3020,7 +3020,7 @@
 
 	</SpaceUnit>
 
-	<SpaceUnit Name="Generic_Tector"> <!-- FotR_Enhanced --> <!--Tector Icon Changed-->
+	<SpaceUnit Name="Generic_Tector"> <!-- FotR_Enhanced --> <!--Aurebesh Icon-->
 		<Variant_Of_Existing_Type>Template_Tector</Variant_Of_Existing_Type>
 		
 		<Encyclopedia_Text>

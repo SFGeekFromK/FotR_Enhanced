@@ -3839,7 +3839,7 @@
 	</DummyStructure>
 
 
-	<HeroUnit Name="Wolffe"> <!-- FotR_Enhanced ; New Escort : wolfpack squad-->
+	<HeroUnit Name="Wolffe">
 		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Land_Model_Name>Clone_commander_Wolffe_phase1.alo</Land_Model_Name>
@@ -4025,7 +4025,7 @@
 		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
 	</HeroCompany>
 
-	<HeroUnit Name="Wolffe2">
+	<HeroUnit Name="Wolffe2"> <!-- FotR_Enhanced ; New Escort : wolfpack squad-->
 		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Land_Model_Name>Clone_commander_Wolffe_phase2.alo</Land_Model_Name>

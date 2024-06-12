@@ -1040,13 +1040,14 @@ end
 function RepublicHeroes:Order_65_Handler()
 	--init_hero_system(senator_data)
 	Forral_Check()
-	if admiral_data.active_player.Is_Human() then
+	-- below doesn't work
+	--[[if admiral_data.active_player.Is_Human() then 
 		StoryUtil.Multimedia("TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL", 20, nil, "Commander_Moff_Loop", 0)
-	end
+	end]]
 end
 
 function Forral_Check()
-	--Logger:trace("entering RepublicHeroes:Autem_Check")
+	--Logger:trace("entering RepublicHeroes:Forral_Check")
 	Forral_Checks = Forral_Checks + 1
 	if Forral_Checks == 2 then
 		Handle_Hero_Add("Forral", admiral_data)

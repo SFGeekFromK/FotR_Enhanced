@@ -129,11 +129,11 @@ replace missiles with grenades(same as the one from at-xt), no tower, rear gun r
 
 
 
-ORS submod Plan
+ORS Reworked Timeline for FOTR
 
 time line 
 20bby 10 16:1 30 battle of sarrish (intro battle planned)
-20bby 11 16:2 31 boz pity 
+20bby 11 16:2 31 battle of rendili boz pity 
 20bby 12 16:3 32 
 ----------------- submod gc area ends here ------------------
 19bby 1 16:4 33 siege of cato nemoidia 
@@ -148,3 +148,7 @@ ORS Base Mod Extension Goals
 	reworked corsucant chaos (narrative tactical battle like anaxes_annexation)
 	kashyyyk owner change post coruscant chaos event
 	utapau(deploy obi wan), felucia(deploy secura) narrative mission
+
+
+ORS Submod Plans
+	set in 20bby month 10 (Late Era 4)

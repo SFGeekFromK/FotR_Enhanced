@@ -130,7 +130,7 @@
 		<Prereq>Delayed_Story_Start</Prereq>
 	</Event>
 
-	<!--************************************-->
+	<!--************************************-->		<!-- Triad Of Evil -->
 	<!--*************** Act I **************-->
 	<!--************************************-->
 
@@ -237,15 +237,7 @@
 		<Prereq>Rep_Outer_Rim_Sieges_Speech_02</Prereq>
 	</Event>
 
-	<Event Name="Rep_Secura_Entry_Saleucami">
-		<Event_Type>STORY_ENTER</Event_Type>
-		<Event_Param1>Saleucami</Event_Param1>
-		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
-		<Event_Param3></Event_Param3>
-		<Prereq>Rep_Outer_Rim_Sieges_Act_I_Dialog</Prereq>
-		<Branch>Grievous_Mission</Branch>
-	</Event>
-
+	
 	<Event Name="Rep_Remove_Flash_Saleucami">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>10</Event_Param1>
@@ -272,6 +264,29 @@
 		<Prereq>Rep_Flash_Mygeeto</Prereq>
 	</Event>
 
+	<Event Name="Rep_Saleucami_Entry_01">
+		<Event_Type>STORY_DEPLOY</Event_Type>
+		<Event_Param1></Event_Param1>
+		<Event_Param2>Saleucami</Event_Param2>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_I_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Saleucami_Entry_02">
+		<Event_Type>STORY_DEPLOY</Event_Type>
+		<Event_Param1></Event_Param1>
+		<Event_Param2>Saleucami</Event_Param2>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_I_Dialog</Prereq>
+	</Event>
+
+	<Event Name="Rep_Saleucami_Conquered">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Outer_Rim_Sieges_Rep_Act_III</Reward_Param1>
+		<Prereq>Rep_Saleucami_Entry_01, Rep_Saleucami_Entry_02</Prereq>
+	</Event>
+
+<!-- Finish Saleucami Story mission -->
+
 	<Event Name="Rep_Outer_Rim_Sieges_Act_I_Completed">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>REP_ACT_I_PLANETS_CONQUERED</Event_Param2>
@@ -279,7 +294,7 @@
 		<Reward_Param1>Outer_Rim_Sieges_Rep_Act_I</Reward_Param1>
 	</Event>
 
-	<!--************************************-->
+	<!--************************************-->		<!-- Move Mechno -->
 	<!--*************** Act II *************-->
 	<!--************************************-->
 
@@ -333,7 +348,7 @@
 		<Prereq>Rep_Outer_Rim_Sieges_Act_II_Completed</Prereq>
 	</Event>
 
-	<!--************************************-->
+	<!--************************************-->		<!-- Charros Mision -->
 	<!--************** Act III *************-->
 	<!--************************************-->
 
@@ -396,7 +411,7 @@
 		<Prereq>Rep_Outer_Rim_Sieges_Jedi_Charros_01, Rep_Outer_Rim_Sieges_Jedi_Charros_02</Prereq>
 	</Event>
 
-	<!--************************************-->
+	<!--************************************--> <!-- Recapturing Tythe -->
 	<!--*************** Act IV *************-->
 	<!--************************************-->
 
@@ -484,7 +499,7 @@
 		<Prereq>Rep_Conquest_Tythe</Prereq>
 	</Event>
 
-	<!--************************************-->
+	<!--************************************--> <!-- Coruscant Chaos -->
 	<!--*************** Act V **************-->
 	<!--************************************-->
 
@@ -624,9 +639,9 @@
 		<Reward_Param1>Outer_Rim_Sieges_Rep_Act_VI</Reward_Param1>
 	</Event>
 
-	<!--************************************-->
-	<!--************** Act VII *************-->
-	<!--************************************-->
+	<!--************************************-->		<!-- Experimental Frigate Research -->
+	<!--************** Act VII *************-->		<!-- unlocks : victory I frigate & Imp I frigate -->
+	<!--************************************-->		<!-- locks : Acc assaults & Arquitens -->
 
 	<Event Name="Rep_Outer_Rim_Sieges_Speech_11">
 		<Event_Type>STORY_ELAPSED</Event_Type>

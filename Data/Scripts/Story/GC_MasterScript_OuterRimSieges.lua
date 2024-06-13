@@ -349,7 +349,7 @@ function State_CIS_Planet_Checker()
 	end
 end
 
-function State_CIS_Grievous_Checker()
+function State_CIS_Grievous_Checker() -- sets hero entry parameter in conquest story missionsby checking if grievous is alive
 	local plot = Get_Story_Plot("Conquests\\CloneWarsOuterRimSieges\\Story_Sandbox_OuterRimSieges_CIS.XML")
 
 	if TestValid(Find_First_Object("Grievous_Soulless_One_Ground")) or TestValid(Find_First_Object("Soulless_One")) or TestValid(Find_First_Object("Grievous_Team_Soulless_One")) then
@@ -397,7 +397,7 @@ function State_CIS_Grievous_Checker()
 	end
 	Sleep(2.5)
 	if savety_check > 2 then
-		Story_Event("CIS_GRIEVOUS_DEAD")
+		Story_Event("CIS_GRIEVOUS_DEAD") -- disables all grievous requiring events ; changes it to geneirc conquer mission.
 	else
 		Create_Thread("State_CIS_Grievous_Checker")
 	end
@@ -603,12 +603,6 @@ function State_Rep_Story_Set_Up()
 					else
 						event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)
 					end
-				elseif p_planet.Get_Planet_Location() == FindPlanet("Mygeeto") then
-					if TestValid(Find_First_Object("Ki_Adi_Mundi2")) or TestValid(Find_First_Object("Ki_Adi_Mundi_Eta_Team")) then
-						event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_MYGEETO", p_planet)
-					else
-						event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)
-					end
 				else
 					event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)
 				end
@@ -636,14 +630,26 @@ function State_Rep_Story_Set_Up()
 	end
 end
 
-function State_Rep_Planet_Checker_01()
+function State_Rep_Planet_Checker_01() -- triad of evil checker
 	local plot = Get_Story_Plot("Conquests\\CloneWarsOuterRimSieges\\Story_Sandbox_OuterRimSieges_Republic.XML")
 	local event_act_1 = plot.Get_Event("Rep_Outer_Rim_Sieges_Act_I_Dialog")
 	event_act_1.Set_Dialog("DIALOG_OUTER_RIM_SIEGES_REP")
 	event_act_1.Clear_Dialog_Text()
 	for _,p_planet in pairs(triad_of_evil_list) do
 		if p_planet.Get_Owner() ~= p_republic then
-			event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)
+			if p_planet.Get_Planet_Location() == FindPlanet("Saleucami") then
+				if (TestValid(Find_First_Object("Aayla_Secura2")) or TestValid(Find_First_Object("Aayla_Secura_Eta_Team"))) and TestValid(Find_First_Object("Autem_Venator")) then
+					event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_SALEUCAMI", p_planet)
+				elseif (TestValid(Find_First_Object("Aayla_Secura2")) or TestValid(Find_First_Object("Aayla_Secura_Eta_Team"))) and not TestValid(Find_First_Object("Autem_Venator")) then
+					event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_SALEUCAMI", p_planet)
+				elseif not (TestValid(Find_First_Object("Aayla_Secura2")) or TestValid(Find_First_Object("Aayla_Secura_Eta_Team"))) and TestValid(Find_First_Object("Autem_Venator")) then
+					event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_SALEUCAMI", p_planet)
+				else
+					event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)
+				end
+			else
+				event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)
+			end
 		else
 			event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION_COMPLETE", p_planet)
 		end
@@ -659,7 +665,7 @@ function State_Rep_Planet_Checker_01()
 	end
 end
 
-function State_Rep_Planet_Checker_02()
+function State_Rep_Planet_Checker_02() -- target planet checker
 	plot = Get_Story_Plot("Conquests\\CloneWarsOuterRimSieges\\Story_Sandbox_OuterRimSieges_Republic.XML")
 	event_act_6 = plot.Get_Event("Rep_Outer_Rim_Sieges_Act_VI_Dialog")
 	event_act_6.Set_Dialog("DIALOG_OUTER_RIM_SIEGES_REP")

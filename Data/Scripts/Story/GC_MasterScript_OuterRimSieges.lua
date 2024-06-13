@@ -566,7 +566,10 @@ function State_Rep_Story_Set_Up()
 
 		StoryUtil.RevealPlanet("CORUSCANT", false)
 		StoryUtil.RevealPlanet("TYTHE", false)
+		StoryUtil.RevealPlanet("Saleucami", false)
 
+		StoryUtil.SetPlanetRestricted("Saleucami", false)
+		
 		if (GlobalValue.Get("ORS_Rep_GC_Version") == 1) then
 			p_republic.Unlock_Tech(Find_Object_Type("Generic_Gladiator"))
 		end

@@ -50,7 +50,7 @@
 		<Prereq>Delayed_Story_Start</Prereq>
 	</Event>
 
-	<Event Name="Spawn_Secura">
+	<Event Name="Spawn_Secura"> <!-- Change Spawning Location : Secura and Bly -->
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
 		<Reward_Param1>Aayla_Secura_Eta_Team</Reward_Param1>
@@ -119,6 +119,14 @@
 		<Reward_Type>SPAWN_HERO</Reward_Type>
 		<Reward_Param1>Autem_Venator</Reward_Param1>
 		<Reward_Param2>Commenor</Reward_Param2>
+		<Prereq>Delayed_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Bly">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Bly2_Team</Reward_Param1>
+		<Reward_Param2>Brentaal</Reward_Param2>
 		<Prereq>Delayed_Story_Start</Prereq>
 	</Event>
 
@@ -227,6 +235,15 @@
 		<Reward_Param4>Saleucami_GUI_Flash</Reward_Param4>
 		<Reward_Param5>True</Reward_Param5>
 		<Prereq>Rep_Outer_Rim_Sieges_Speech_02</Prereq>
+	</Event>
+
+	<Event Name="Rep_Secura_Entry_Saleucami">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Saleucami</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Prereq>Rep_Outer_Rim_Sieges_Act_I_Dialog</Prereq>
+		<Branch>Grievous_Mission</Branch>
 	</Event>
 
 	<Event Name="Rep_Remove_Flash_Saleucami">

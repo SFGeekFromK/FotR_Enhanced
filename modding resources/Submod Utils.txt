@@ -24,6 +24,8 @@ Hutt_HuttGuard.ALO
 ------Todo Lists------
 ORS Planet trade routes, campaign editing etc 
 
+ARC170 Ground
+
 Yularen still respawning in integrity death(base mod behavior)
 
 Wolfpack team ring missing, health bar length

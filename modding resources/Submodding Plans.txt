@@ -42,12 +42,16 @@ a peace treaty dummy will appear which results in automatic victory
 
 # Outer Rim Sieges Story Missions(or narrative)
 - Battle of rendili(Foerost or ORS?)
-- Boz pity
-- Salucemi
+- Boz pity ()
+- Salucemi (Narrative for now, story planned)
 - battle of Coruscant
 - battle of utapau
 - 
-- mustafar duel 
+- mustafar duel (Planned)
+
+
+# Ground ARC170
+
 
 
 # Additional Ground Category filter UI

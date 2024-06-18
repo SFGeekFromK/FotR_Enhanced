@@ -4056,5 +4056,16 @@
 		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 	</GroundCompany>
+	
+	<GroundVehicle Name="Generic_ARC_170_Ground">
+	  <Text_ID></Text_ID>
+	  <Encyclopedia_Text>
+	    
+	  </Encyclopedia_Text>
+	  <Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+	  <Land_Model_Name></Land_Model_Name>
+	  <Icon_Name></Icon_Name>
+	  
+	</GroundVehicle>
 
 </Republic_Ground_Companies>

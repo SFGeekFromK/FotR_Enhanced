@@ -4114,7 +4114,7 @@
 		
 		<LandBehavior>ABILITY_COUNTDOWN, FLYING_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, HUNT,  WEAPON, TURRET, POWERED, AMBIENT_SFX,UNIT_AI,TARGETING,STUNNABLE, WIND_DISTURBANCE,DAMAGE_TRACKING</LandBehavior>
 
-		<HardPoints> HP_Flashblind_Laser_Main, HP_Flashblind_Laser_Left, HP_Flashblind_Laser_Right </HardPoints>
+		<HardPoints> HP_ARC_170_Ground_00, HP_ARC_170_Ground_01, HP_ARC_170_Ground_02, HP_ARC_170_Ground_03 </HardPoints>
 		
 		<Lua_Script/>
 

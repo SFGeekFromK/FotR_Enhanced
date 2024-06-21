@@ -4145,9 +4145,9 @@
 		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
 		<SFXEvent_Unit_Lost> RHD_Unit_Destroyed </SFXEvent_Unit_Lost>
 
-		<SFXEvent_Select>Unit_Select_Assault_Speeder</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Assault_Speeder</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
+		<SFXEvent_Select>Unit_Select_Clone_Arc_170</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Clone_Arc_170</SFXEvent_Move>
+		<!--<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>-->
 		<SFXEvent_Attack>Unit_Attack_Assault_Speeder</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Assault_Speeder</SFXEvent_Guard>
 		<SFXEvent_Assist_Move> Unit_Assist_Move_Assault_Speeder </SFXEvent_Assist_Move>

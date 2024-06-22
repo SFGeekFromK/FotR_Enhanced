@@ -4058,6 +4058,7 @@
 	</GroundCompany>
 	
 	<GroundVehicle Name="Generic_ARC170_Ground">
+		<!-- Unit Infos -->
 		<Text_ID>TEXT_UNIT_ARC170</Text_ID>
 		<Encyclopedia_Text>
 	    TEXT_TOOLTIP_ARC170
@@ -4068,58 +4069,87 @@
 		TEXT_TOOLTIP_ARC170_GROUND_WEAP2
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
-		<Land_Model_Name>ARC-170_starfighter.alo</Land_Model_Name>
 		<Icon_Name>i_button_arc170.tga</Icon_Name>
-		
+		<!-- End -->
+
+		<!-- Property -->
+		<CategoryMask> Air | AntiVehicle </CategoryMask>
+		<LandBehavior>
+			ABILITY_COUNTDOWN, IDLE, FLYING_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, HUNT, 
+			POWERED, AMBIENT_SFX, UNIT_AI, TARGETING, STUNNABLE, WIND_DISTURBANCE, SHIELDED, DAMAGE_TRACKING
+		</LandBehavior>
+		<Behavior>SELECTABLE, POWERED</Behavior>
+		<MovementClass> Flying </MovementClass>
+		<Type>Hover</Type>
+		<HardPoints> HP_ARC_170_Ground_00, HP_ARC_170_Ground_01, <!--HP_ARC_170_Ground_02, HP_ARC_170_Ground_03--> </HardPoints>
+
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Deploys>Yes</Deploys>
+		<Lua_Script>ObjectScript_ARC170_Ground</Lua_Script>
+		<!-- End -->
+
+		<!-- Model Wise -->
+		<Land_Model_Name>ARC-170_starfighter_Ground.alo</Land_Model_Name>
 		<No_Colorization_Color/>
-		<Scale_Factor>2.0</Scale_Factor>
+		<Scale_Factor>4.0</Scale_Factor>
 		<Select_Box_Scale>40</Select_Box_Scale>
 		<Select_Box_Z_Adjust>5.0</Select_Box_Z_Adjust>
 		<Size_Value>15</Size_Value>
+		<!-- End -->
 
+		<!-- Physics : movement, speed, health, acceleration -->
 		<Mass>0.985</Mass>
 		<Max_Speed>5.0</Max_Speed>
 		<Max_Thrust>1.0</Max_Thrust>
 		<OverrideAcceleration> 1.0 </OverrideAcceleration>
 		<OverrideDeceleration> 0.33 </OverrideDeceleration>
 		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Min_Speed>1.0</Min_Speed>
+		<Max_Rate_Of_Roll>4.5</Max_Rate_Of_Roll>
+		<Max_Lift>2.5</Max_Lift>
+		<MaxJiggleDistance>4</MaxJiggleDistance> <!-- Was 3.5 -->
+		
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+
+		<Space_Layer> Frigate </Space_Layer>
+		<UnitCollisionClass>Giant Vehicle</UnitCollisionClass>
+		<MinimumPushReturnDistance>100</MinimumPushReturnDistance>
 
 		<Armor_Type> ArmourG_SpeederHeavy </Armor_Type>
 		<Tactical_Health>250</Tactical_Health>
 		<Autoresolve_Health>40.0</Autoresolve_Health>
 		<Shield_Armor_Type>ShieldG_SpeederHeavy</Shield_Armor_Type>
 		<Shield_Points>165</Shield_Points>
-		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Shield_Refresh_Rate>0.6</Shield_Refresh_Rate>
+		<!-- End -->
 
-		<Energy_Capacity>1000</Energy_Capacity>
-		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
-		<Damage>8</Damage>
+		<!-- Targeting -->
+		<Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+		<Targeting_Priority_Set>AntiVehicleAir</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+
+		<!-- End -->
+		
 		<AI_Combat_Power>51</AI_Combat_Power>
 		
 		<Affiliation>Empire</Affiliation>
+
 		<Political_Control>0</Political_Control>
 
-		<Type>Hover</Type>
-		<CategoryMask> Air | AntiVehicle </CategoryMask>
+		
+		
 		<Ranking_In_Category>6</Ranking_In_Category>
 		<Property_Flags/>
 		<Weather_Category>Flying</Weather_Category>
 		<Visible_To_Enemies_When_Empty>true</Visible_To_Enemies_When_Empty>
-		<Victory_Relevant>yes</Victory_Relevant>
-
-		<Influences_Capture_Point>False</Influences_Capture_Point>
+		
 
 		<Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
 		<Score_Cost_Credits>50</Score_Cost_Credits>
 		
-		<LandBehavior>
-			ABILITY_COUNTDOWN, FLYING_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, HUNT, 
-			POWERED, AMBIENT_SFX, UNIT_AI, TARGETING, STUNNABLE, WIND_DISTURBANCE, SHIELDED, DAMAGE_TRACKING
-		</LandBehavior>
-
-		<HardPoints> HP_ARC_170_Ground_00, HP_ARC_170_Ground_01, <!--HP_ARC_170_Ground_02, HP_ARC_170_Ground_03--> </HardPoints>
 		
-		<Lua_Script/>
 
 		<Garrison_Category/>
 		<Num_Garrison_Slots>0</Num_Garrison_Slots>
@@ -4136,10 +4166,7 @@
 		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
 		<Remove_Upon_Death>true</Remove_Upon_Death>
 
-		<!--<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
-		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
-		<Land_Damage_SFX>null, SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>-->
-
+		<!-- SFX -->
 		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
 		<SFXEvent_Tactical_Build_Complete> EHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
@@ -4164,25 +4191,25 @@
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
 		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Arc_170_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<!-- End -->
 
-		<MovementClass> Flying </MovementClass>
-		<Space_Layer> Frigate </Space_Layer>
-		<UnitCollisionClass>Giant Vehicle</UnitCollisionClass>
+		
 		<OccupationStyle>1x1</OccupationStyle>
 		<Custom_Hard_XExtent>30.0</Custom_Hard_XExtent>
 		<Custom_Hard_YExtent>30.0</Custom_Hard_YExtent>
-		<FormationSpacing> 1.5 </FormationSpacing>
+		<FormationSpacing> 2 </FormationSpacing>
 		<FormationOrder> 2 </FormationOrder>
 		<FormationGrouping> Standard </FormationGrouping>
 		<FormationRaggedness> 2.4 </FormationRaggedness>
-		<MaxJiggleDistance>3.5</MaxJiggleDistance>
-		<MinimumPushReturnDistance>100</MinimumPushReturnDistance>
+		
+		
 		<UseSecondaryFacing>false</UseSecondaryFacing>
 		<SecondaryTurnInPlaceROTCoefficient>0.5</SecondaryTurnInPlaceROTCoefficient>
 		<SecondaryTurnAngle>90</SecondaryTurnAngle>
 		<MinSecondaryTurnROTCoefficient>0.01</MinSecondaryTurnROTCoefficient>
 		<MaxSecondaryTurnROTCoefficient>0.7</MaxSecondaryTurnROTCoefficient>
 		<SecondaryTurnLookaheadDistance>500</SecondaryTurnLookaheadDistance>
+		
 
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
 
@@ -4195,14 +4222,13 @@
 		<Attack_Move_Response_Range>500.0</Attack_Move_Response_Range>
 		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
 
-		<Targeting_Priority_Set>AntiVehicleAir</Targeting_Priority_Set>
-		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		
 
 		<Overall_Length>30.0</Overall_Length>
 		<Overall_Width>30.0</Overall_Width>
 		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
 
-		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		
 		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
 		<Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
 		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
@@ -4215,9 +4241,7 @@
 		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
 		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
 
-		<Min_Speed>1.0</Min_Speed>
-		<Max_Rate_Of_Roll>4.5</Max_Rate_Of_Roll>
-		<Max_Lift>2.5</Max_Lift>
+		
 		<Bank_Turn_Angle>20</Bank_Turn_Angle>
 		<Stationary_Space_Layer> Land </Stationary_Space_Layer>
 		<PathFrameDelay> 4 </PathFrameDelay>
@@ -4225,16 +4249,22 @@
 		<Prepare_Strafe_Height>100.0</Prepare_Strafe_Height>
 		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
 		<Should_Cause_Limited_Turrets_To_Turn> false </Should_Cause_Limited_Turrets_To_Turn>
-		<Behavior>SELECTABLE, POWERED</Behavior>
+		
 		<Damaged_Smoke_Asset_Name>P_Smoke_med01.alo</Damaged_Smoke_Asset_Name>
 		
 		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
-		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Chance>0.6</Spin_Away_On_Death_Chance>
 		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
 		<Spin_Away_On_Death_Explosion>Large_Explosion_Land</Spin_Away_On_Death_Explosion>
 		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_X_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
 		
-		<Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+		
+
+		<!-- Unused/Dummy Tags -->
+
+		<Energy_Capacity>1000</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+		<Damage>8</Damage>
 	  
 	</GroundVehicle>
 

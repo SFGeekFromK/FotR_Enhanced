@@ -25,6 +25,7 @@ Mod_Multiplier in Combat_Bonus_Ability doesn't work
 
 weapon range display = fire_range_distance * 0.8
 
+<UseSecondaryFacing> : seems to be used for juggernaut's backward movement
 
 
 

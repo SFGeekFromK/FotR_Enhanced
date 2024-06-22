@@ -93,7 +93,7 @@
 		<Starting_Tech_Level> Empire, 3 </Starting_Tech_Level>
 		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
 		
-		<Starting_Forces> Empire, Coruscant, Empire_Star_Base_2 </Starting_Forces>
+		<!--<Starting_Forces> Empire, Coruscant, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Corellian_Corvette </Starting_Forces>
@@ -120,9 +120,12 @@
 		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>-->
 		
 		<!-- FotR_Enhaced : Custom ground starting forces -->
+		<Starting_Forces> Empire, Coruscant, Generic_ARC170_Ground_Company </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Republic_LAAT_Group </Starting_Forces> <!-- Size Comparison -->
+		<Starting_Forces> Empire, Coruscant, Republic_Flashblind_Group </Starting_Forces> <!-- Size Comparison -->
 		<Starting_Forces> Empire, Coruscant, Republic_A6_Prototype_Company </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Republic_A6_Juggernaut_Company </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Republic_A5_Juggernaut_Company </Starting_Forces>
@@ -136,6 +139,9 @@
 		<Starting_Forces> Empire, Coruscant, Senate_Commando_Platoon </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Republic_Navy_Trooper_Squad </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Republic_Trooper_Team </Starting_Forces>
+
+		<Starting_Forces> Empire, Coruscant, Wolffe_Team </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Wolffe2_Team </Starting_Forces>
 		
 		<Starting_Forces> Empire, Coruscant, E_Ground_Barracks </Starting_Forces>
 		<!--

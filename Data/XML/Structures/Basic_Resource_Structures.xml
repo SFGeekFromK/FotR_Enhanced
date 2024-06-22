@@ -55,7 +55,7 @@
 
 	</SpecialStructure>
 
-	<SpecialStructure Name="Mining_Facility">
+	<SpecialStructure Name="Mining_Facility"> <!-- TNT garrison added -->
 		
 		<Variant_Of_Existing_Type>Template_Mining_Facility</Variant_Of_Existing_Type>
 		

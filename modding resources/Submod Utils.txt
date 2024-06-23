@@ -25,15 +25,11 @@ Hutt_HuttGuard.ALO
 ORS Planet trade routes, campaign editing etc 
 
 ARC170 Ground fix (
-		1. Rescale(Too small)
-		2. collides with the ground when spawned
-		3. awkward movement(looks to nimble)
-		4. wings not folded (fixed?)
-
-		fix 1 fix
-		1. deploy animation doesn't work with undeploy objectscript
-		2. object still spawns too deep beneath ground
-		3. 
+		fix 3 fix
+		1. deploy animation doesn't work with undeploy objectscript (solved with manual spoiler_lock ability)
+		2. object still spawns too deep beneath ground(Maybe unfixable? ; AOTR doesn't have this problem)
+		3. Movement Adjustment
+		4. rescaling(bit small)
 	)
 
 Yularen still respawning in integrity death(base mod behavior)

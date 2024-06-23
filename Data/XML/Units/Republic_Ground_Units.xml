@@ -4223,9 +4223,8 @@
 		<Autonomous_Move_Extension_Vs_Attacker>50.0</Autonomous_Move_Extension_Vs_Attacker>
 
 		
-
-		<Overall_Length>30.0</Overall_Length>
-		<Overall_Width>30.0</Overall_Width>
+		<Overall_Length>20.0</Overall_Length>
+		<Overall_Width>20.0</Overall_Width>
 		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
 
 		
@@ -4242,7 +4241,7 @@
 		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
 
 		
-		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Bank_Turn_Angle>30</Bank_Turn_Angle>
 		<Stationary_Space_Layer> Land </Stationary_Space_Layer>
 		<PathFrameDelay> 4 </PathFrameDelay>
 		<Hover_Offset>100.0</Hover_Offset>
@@ -4265,6 +4264,22 @@
 		<Energy_Capacity>1000</Energy_Capacity>
 		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
 		<Damage>8</Damage>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			
+			<Unit_Ability>
+				<Type>SPOILER_LOCK</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.3f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	0.3f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		            0.6</Mod_Multiplier>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
 	  
 	</GroundVehicle>
 
@@ -4312,7 +4327,7 @@
 
 		<Create_Team_Type/>
 		<Max_Squad_Size>1</Max_Squad_Size>
-		<Company_Transport_Unit>CR25_Landing_Craft_Air</Company_Transport_Unit>
+		<Company_Transport_Unit>CR25_Landing_Craft_Heavy</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
@@ -4322,19 +4337,24 @@
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
 		<Formation_Prority>1</Formation_Prority>
+		
 		<Company_Units>Generic_ARC170_Ground, Generic_ARC170_Ground</Company_Units>
-		<!--<Unit_Abilities_Data SubObjectList="Yes">
 
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
 			
 			<Unit_Ability>
 				<Type>SPOILER_LOCK</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.3f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	0.3f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		            0.6</Mod_Multiplier>
+			</Unit_Ability>
 
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
-				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	3.0f</Mod_Multiplier>
-				<Mod_Multiplier>SPEED_MULTIPLIER,		            1.5</Mod_Multiplier>
+			<Unit_Ability>
+				<Type>HUNT</Type>
 			</Unit_Ability>
 			
-		</Unit_Abilities_Data>-->
+		</Unit_Abilities_Data>
 		<Maintenance_Cost>0.0</Maintenance_Cost>
 		
 						<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->

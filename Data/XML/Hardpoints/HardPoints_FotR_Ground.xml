@@ -4143,7 +4143,7 @@
 		<Fire_Cone_Height>40.0</Fire_Cone_Height>
 		<Fire_Projectile_Type>Proj_AV_Blaster_Green</Fire_Projectile_Type> <!-- Green lasers in Ep 3 -->
 		<Fire_Pulse_Count>4</Fire_Pulse_Count>
-		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
 		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
 		<Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
 		<Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
@@ -4151,19 +4151,11 @@
 		<Fire_Range_Distance>550.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Arc_170_Fire</Fire_SFXEvent>
 
-		<Fire_Inaccuracy_Distance> Infantry, 5.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Air, 15.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Structure, 20.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>LandHero, 15.0 </Fire_Inaccuracy_Distance>
-		
-			<Fire_Inaccuracy_Distance> Fighter, 3.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Bomber, 3.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Transport, 3.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Corvette, 3.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Frigate, 3.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> Capital, 3.0 </Fire_Inaccuracy_Distance>
-			<Fire_Inaccuracy_Distance> SuperCapital, 3.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 15.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> LandHero, 25.0 </Fire_Inaccuracy_Distance>
     </HardPoint>
 
 	<HardPoint Name="HP_ARC_170_Ground_01">
@@ -4179,17 +4171,16 @@
         <Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
         <Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
         <Fire_Pulse_Count>2</Fire_Pulse_Count>
-        <Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+        <Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
         <Fire_Range_Distance>500.0</Fire_Range_Distance>
 	    <Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
 		<Fire_SFXEvent>Unit_Empire_Ship_Laser_Fire</Fire_SFXEvent>
-		<Fire_Inaccuracy_Distance> Fighter, 10.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Bomber, 10.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Transport, 10.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Corvette, 10.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Frigate, 10.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> Capital, 10.0 </Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance> SuperCapital, 10.0 </Fire_Inaccuracy_Distance>
+		
+		<Fire_Inaccuracy_Distance> Infantry, 15.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 1.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> LandHero, 25.0 </Fire_Inaccuracy_Distance>
 	</HardPoint>
 
 	<!-- <HardPoint Name="HP_ARC_170_Ground_02">

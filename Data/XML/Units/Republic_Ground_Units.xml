@@ -4093,24 +4093,28 @@
 		<!-- Model Wise -->
 		<Land_Model_Name>ARC-170_starfighter_Ground.alo</Land_Model_Name>
 		<No_Colorization_Color/>
-		<Scale_Factor>4.0</Scale_Factor>
+		<Scale_Factor>1.0</Scale_Factor>
 		<Select_Box_Scale>40</Select_Box_Scale>
 		<Select_Box_Z_Adjust>5.0</Select_Box_Z_Adjust>
 		<Size_Value>15</Size_Value>
 		<!-- End -->
 
 		<!-- Physics : movement, speed, health, acceleration -->
+		<Layer_Z_Adjust>-12</Layer_Z_Adjust>
+		
 		<Mass>0.985</Mass>
-		<Max_Speed>5.0</Max_Speed>
+		<Max_Speed>7.0</Max_Speed>
 		<Max_Thrust>1.0</Max_Thrust>
 		<OverrideAcceleration> 1.0 </OverrideAcceleration>
 		<OverrideDeceleration> 0.33 </OverrideDeceleration>
 		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
-		<Min_Speed>1.0</Min_Speed>
+		<Min_Speed>1.2</Min_Speed>
 		<Max_Rate_Of_Roll>4.5</Max_Rate_Of_Roll>
 		<Max_Lift>2.5</Max_Lift>
 		<MaxJiggleDistance>4</MaxJiggleDistance> <!-- Was 3.5 -->
 		
+		<Bank_Turn_Angle>30</Bank_Turn_Angle>
+
 		<SurfaceFX_Name>Hover</SurfaceFX_Name>
 
 		<Space_Layer> Frigate </Space_Layer>
@@ -4197,7 +4201,7 @@
 		<OccupationStyle>1x1</OccupationStyle>
 		<Custom_Hard_XExtent>30.0</Custom_Hard_XExtent>
 		<Custom_Hard_YExtent>30.0</Custom_Hard_YExtent>
-		<FormationSpacing> 2 </FormationSpacing>
+		<FormationSpacing> 1 </FormationSpacing>
 		<FormationOrder> 2 </FormationOrder>
 		<FormationGrouping> Standard </FormationGrouping>
 		<FormationRaggedness> 2.4 </FormationRaggedness>
@@ -4241,7 +4245,7 @@
 		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
 
 		
-		<Bank_Turn_Angle>30</Bank_Turn_Angle>
+		
 		<Stationary_Space_Layer> Land </Stationary_Space_Layer>
 		<PathFrameDelay> 4 </PathFrameDelay>
 		<Hover_Offset>100.0</Hover_Offset>
@@ -4272,7 +4276,7 @@
 				<Type>SPOILER_LOCK</Type>
 				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.3f</Mod_Multiplier>
 				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	0.3f</Mod_Multiplier>
-				<Mod_Multiplier>SPEED_MULTIPLIER,		            0.6</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		            0.9</Mod_Multiplier>
 			</Unit_Ability>
 
 			<Unit_Ability>
@@ -4337,7 +4341,7 @@
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Planets/>
 		<Formation_Prority>1</Formation_Prority>
-		
+
 		<Company_Units>Generic_ARC170_Ground, Generic_ARC170_Ground</Company_Units>
 
 		<Unit_Abilities_Data SubObjectList="Yes">

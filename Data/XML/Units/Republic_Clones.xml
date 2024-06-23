@@ -11039,7 +11039,7 @@
 		<Land_Terrain_Model_Mapping>
 			Temperate, 			clone_jumptrooper_phase2_legions.ALO,
 			Urban, 				clone_jumptrooper_phase2_legions.ALO,
-			Arctic, 			clone_jumptrooper_phase2_snow_legions.ALO,
+			Arctic, 			clone_jumptrooper_phase2_legions.ALO,
 			Volcanic, 			clone_jumptrooper_phase2_legions.ALO,
 			Desert, 			clone_jumptrooper_phase2_legions.ALO,
 			Forest, 			clone_jumptrooper_phase2_legions.ALO,

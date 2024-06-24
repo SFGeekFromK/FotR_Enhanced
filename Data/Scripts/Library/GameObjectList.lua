@@ -278,6 +278,7 @@ return {
 ["BLOCK_NEGOTIATOR"] = true,
 ["BLOCK_VIGILANCE"] = true,
 ["YULAREN_RESOLUTE_SPHAT"] = true,
+["VADER_EXACTOR"] = true,
 ["TJ912_RECUSANT"] = true,
 ["TM171_DH_OMNI"] = true,
 ["CHARGER_C70_OFC"] = true,

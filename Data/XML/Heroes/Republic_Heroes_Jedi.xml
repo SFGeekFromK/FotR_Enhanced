@@ -12692,7 +12692,7 @@
 		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
 		<Death_Persistence_Duration>5.0</Death_Persistence_Duration>
 		<Death_Fade_Time>0.25</Death_Fade_Time>
-		<Lua_Script>GroundHero</Lua_Script>
+		<Lua_Script>GroundSpaceHero</Lua_Script>
 
 		<Target_Stealth_Units>Yes</Target_Stealth_Units>
 
@@ -13129,7 +13129,7 @@
 		<Landing_Transport_Variant>Vader_Eta_Landing</Landing_Transport_Variant>
 
 		<Tech_Level>99</Tech_Level>
-		
+		<Affiliation>Empire</Affiliation>
 
 		<CategoryMask> Capital | AntiCapital | AntiFrigate | SpaceHero </CategoryMask>
 
@@ -13151,6 +13151,9 @@
 		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
 		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
 		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
+		<Abilities SubObjectList="Yes">
+		    
+		</Abilities>
 
 	</UniqueUnit>
 

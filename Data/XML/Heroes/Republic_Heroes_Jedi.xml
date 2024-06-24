@@ -12593,7 +12593,7 @@
 		<CanCellStack>yes</CanCellStack>
 		<Mass>1.0</Mass>
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
-		<Unique_Space_Unit>Vader_Eta</Unique_Space_Unit>
+		<Unique_Space_Unit>Vader_Exactor</Unique_Space_Unit>
 		
 		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
 		<Max_Speed>1.1</Max_Speed>
@@ -12940,7 +12940,7 @@
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
-		<Company_Transport_Unit>Vader_Eta</Company_Transport_Unit>
+		<Company_Transport_Unit>Vader_Exactor</Company_Transport_Unit>
 		<Company_Units>Vader</Company_Units>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
@@ -13006,7 +13006,7 @@
 		
 		<Energy_Capacity>600</Energy_Capacity>
 		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
-		<Behavior>SELECTABLE, TRANSPORT</Behavior>
+		<Behavior>SELECTABLE</Behavior>
 		<Collision_Box_Modifier>1.0</Collision_Box_Modifier>
 		
 		<SpaceBehavior>HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, REVEAL, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
@@ -13054,7 +13054,6 @@
 		<Damage>1</Damage>
 		<AI_Combat_Power>80</AI_Combat_Power>
 		<Population_Value>0</Population_Value>	
-		<Landing_Transport_Variant>Vader_Eta_Landing</Landing_Transport_Variant>
 		
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Vader_Combat_Bonus">
@@ -13115,6 +13114,46 @@
 	</TransportUnit>
 
 	<!-- FotR_Enhanced -->
+
+	<UniqueUnit Name="Vader_Exactor">
+		<Variant_Of_Existing_Type>Generic_Star_Destroyer</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_VADER</Text_ID>
+		<Encyclopedia_Text>
+		TODO
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VADER.TGA</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Behavior> SELECTABLE, TRANSPORT, DUMMY_STARSHIP </Behavior>
+		<Property_Flags>GTSImmune</Property_Flags>
+		<Landing_Transport_Variant>Vader_Eta_Landing</Landing_Transport_Variant>
+
+		<Tech_Level>99</Tech_Level>
+		
+
+		<CategoryMask> Capital | AntiCapital | AntiFrigate | SpaceHero </CategoryMask>
+
+		<SFXEvent_Select> Unit_Select_Vader </SFXEvent_Select>
+		<SFXEvent_Move> Unit_Move_Vader </SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Vader</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack> Unit_Attack_Vader </SFXEvent_Attack>
+		<SFXEvent_Guard> Unit_Guard_Vader </SFXEvent_Guard>
+		<SFXEvent_Group_Move>Unit_Group_Move_Vader</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_Vader</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Vader </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Vader </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Defeat_Vader </Death_SFXEvent_Start_Die> 
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
+
+	</UniqueUnit>
+
 	<!-- Red Guards(Palpatine Escort, Capital Garrison)-->
 	
 	<HeroUnit Name="Red_Guard">

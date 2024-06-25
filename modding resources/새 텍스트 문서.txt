@@ -29,3 +29,8 @@ after a commando team found the Prosecutor had been commandeered by Trandoshan m
 [Stinnet Martz has been removed from the Republic Command Staff]
 Rear Admiral Tenant:  Reports indicate that Admiral Dao's fleet was dead on arrival.  I have been tasked with taking over his forces.  
 [Nils Tenant (Venator) has been added to the Republic Command Staff]
+
+The gargantuan A6 Juggernaut serves as a well armed and armored superheavy vehicle, significantly larger than the A5 Juggernaut it succeeded. 
+The unit is capable against a variety of targets with its laser cannons and missile launchers.
+
+A prototype of the A6 Juggernaut, it is rather well armed and armored than its predecessor, the A5 Juggernaut. Though stripped down version of the final product, it is still capable of handling large enemies on it own.

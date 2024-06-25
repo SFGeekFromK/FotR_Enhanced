@@ -4114,8 +4114,8 @@
 		<Barrel_Bone_Name>BARREL_01</Barrel_Bone_Name>
 
 		<Fire_Projectile_Type>Proj_Heavy_AI_Blaster_Green_Blue</Fire_Projectile_Type>
-        <Fire_Min_Recharge_Seconds>1.0</Fire_Min_Recharge_Seconds>
-        <Fire_Max_Recharge_Seconds>1.0</Fire_Max_Recharge_Seconds>
+        <Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
+        <Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
         <Fire_Pulse_Count>8</Fire_Pulse_Count>
         <Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
         <Fire_Range_Distance>500.0</Fire_Range_Distance>

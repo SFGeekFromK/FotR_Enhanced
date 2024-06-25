@@ -121,7 +121,7 @@
 		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>-->
-		
+
 		<!-- FotR_Enhaced : Custom ground starting forces -->
 		<Starting_Forces> Empire, Coruscant, Generic_ARC170_Ground_Company </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Republic_LAAT_Group </Starting_Forces> <!-- Size Comparison -->
@@ -142,8 +142,17 @@
 
 		<Starting_Forces> Empire, Coruscant, Wolffe_Team </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Wolffe2_Team </Starting_Forces>
-		
+		<Starting_Forces> Empire, Coruscant, Vader_Team </Starting_Forces>
+
+		<Starting_Forces> Empire, Coruscant, Corellian_Gunboat </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Star_Destroyer </Starting_Forces>
+
 		<Starting_Forces> Empire, Coruscant, E_Ground_Barracks </Starting_Forces>
+
+
 		<!--
 		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Clonetrooper_Phase_One_Team </Starting_Forces>

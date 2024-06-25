@@ -12963,7 +12963,8 @@
 
 		<CategoryMask> LandHero | SpaceHero </CategoryMask>
 		<Ranking_In_Category> 3 </Ranking_In_Category>
-		<Population_Value>1</Population_Value>
+		<Population_Value>31</Population_Value>
+		<Land_Override_Population_Value>1</Land_Override_Population_Value>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
 		<Tactical_Build_Cost_Multiplayer>1</Tactical_Build_Cost_Multiplayer>
@@ -12995,10 +12996,9 @@
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD </Encyclopedia_Unit_Class>
 		<Icon_Name>I_BUTTON_VADER.TGA</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
 
 		<Variant_Of_Existing_Type>Eta2_Actis</Variant_Of_Existing_Type>
-		<Hyperspace>Yes</Hyperspace>
-		<Hyperspace_Speed>1.5</Hyperspace_Speed>
 
 		<No_Colorization_Color> 15, 15, 15, 255 </No_Colorization_Color>
 		
@@ -13099,6 +13099,56 @@
 		
 	</UniqueUnit>
 
+	<Container Name="Vader_Eta_Squadron_Container">
+		<Variant_Of_Existing_Type>Eta2_Actis_Squadron_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND4_LANDSPACE
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_UNIT_ETA2_FIGHTER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ANAKIN_ETA2_BASE
+		TEXT_STATBLOCK_ETA2_MOVE
+		TEXT_STATBLOCK_ETA2_WEAP1
+		TEXT_STATBLOCK_ETA2_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VADER.TGA</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+	</Container>
+
+	<Squadron Name="Vader_Eta_Squadron">
+		<Variant_Of_Existing_Type>Eta2_Actis_Squadron</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND4_LANDSPACE
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_UNIT_ETA2_FIGHTER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_STATBLOCK_ANAKIN_ETA2_BASE
+		TEXT_STATBLOCK_ETA2_MOVE
+		TEXT_STATBLOCK_ETA2_WEAP1
+		TEXT_STATBLOCK_ETA2_WEAP2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VADER.TGA</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Create_Team>Vader_Eta_Squadron_Container</Create_Team>
+		<Squadron_Units>Vader_Eta</Squadron_Units>
+	</Squadron>
+
 	<TransportUnit Name="Vader_Eta_Landing">
 		<Variant_Of_Existing_Type>Vader_Eta</Variant_Of_Existing_Type>
 		<Land_Model_Name>RV_Eta_2_Lander.alo</Land_Model_Name>
@@ -13117,7 +13167,7 @@
 
 	<UniqueUnit Name="Vader_Exactor">
 		<Variant_Of_Existing_Type>Generic_Star_Destroyer</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_HERO_VADER</Text_ID>
+		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
 		TEXT_TOOLTIP_TRAIT_COMMAND4_LANDSPACE
@@ -13147,7 +13197,8 @@
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
 		<Icon_Name>I_BUTTON_VADER.TGA</Icon_Name>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Behavior> SELECTABLE, TRANSPORT, DUMMY_STARSHIP </Behavior>
+		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, TRANSPORT </Behavior>
 		<Property_Flags>GTSImmune</Property_Flags>
 		<Landing_Transport_Variant>Vader_Eta_Landing</Landing_Transport_Variant>
 
@@ -13155,7 +13206,7 @@
 		<Tech_Level>99</Tech_Level>
 		<Affiliation>Empire</Affiliation>
 
-		<CategoryMask> Capital | AntiCapital | AntiFrigate | SpaceHero </CategoryMask>
+		<CategoryMask> SpaceHero | AntiCapital | AntiFrigate  </CategoryMask>
 
 		<SFXEvent_Select> Unit_Select_Vader </SFXEvent_Select>
 		<SFXEvent_Move> Unit_Move_Vader </SFXEvent_Move>

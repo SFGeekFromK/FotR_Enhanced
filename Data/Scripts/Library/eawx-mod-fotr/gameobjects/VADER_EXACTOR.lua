@@ -19,8 +19,9 @@ return {
 		["GENERIC_BTLB_Y-WING_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 2, ResearchType = "~RepublicWarpods"}
 		},
-		["VADER_ETA"] = {
+		["VADER_ETA_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 0}
+		},
 	},
 	Scripts = {"multilayer", "fighter-spawn"}
 }

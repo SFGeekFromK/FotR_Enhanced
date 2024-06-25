@@ -1,5 +1,6 @@
 ﻿TEXT_NOTE,Put text changes for submods here
 
+
 TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL,The war seems to near its end. I shall share my skill of piloting for the new generations of ace pilots. [Bythen Forral has retired and established Vensenor Flight Academy]
 TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_UMBARA_FOTR,Umbara: Can build Umbaran Support Frigate at 8+ influence.
 TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+10% Firing Rate (OCF Venator & OCF Venator SPHA-T Only) [Stacking bonus]
@@ -28,6 +29,12 @@ TEXT_STATBLOCK_CLOAKSHAPE_CW_BYTHEN_FORRAL_BASE,Health: 90 | Unshielded
 TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE,Health: 70 | Shields: 45
 TEXT_STATBLOCK_WARTHOG_REPUBLIC_Z95_BASE,Health: 150 | Shields: 60
 TEXT_STORY_MALEVOLENCE_HUNT_REP_ACT_I_HINT_03,Only for the duration of this campaign, Open Circle Fleet Venators will replace Generic Venators.
+TEXT_TOOLTIP_A6_PROTOTYPE,A prototype of the A6 Juggernaut, it is rather well armed and armored than its predecessor, the A5 Juggernaut. Though stripped down version of the final product, it is still capable of handling large enemies on it own.
+TEXT_TOOLTIP_A6_PROTOTYPE_HEALTH,Health: 1300 (Heavy Vehicle)
+TEXT_TOOLTIP_A6_PROTOTYPE_WEAP1,1x Heavy AV Blaster Cannon: 3 / 2.0s / 480m
+TEXT_TOOLTIP_A6_PROTOTYPE_WEAP2,1x Heavy AI Blaster Cannon: 8 / 2.0s / 480m
+TEXT_TOOLTIP_A6_PROTOTYPE_WEAP3,2x AI Blaster Cannons (AOE): 2 / 1.0s / 320m
+TEXT_TOOLTIP_A6_PROTOTYPE_WEAP4,2x Proton Missiles: 3 / 20.0s / 480m
 TEXT_TOOLTIP_AUTEM_OVERRIDE_2,Fighter Override: NTB-630 Naval Bomber on OCF Venator
 TEXT_TOOLTIP_BLOCK,Admiral Block was the commanding officer of the Negotiator, and later Vigilance, both serving the role as the flagship of Jedi general Obi Wan Kenobi.
 TEXT_TOOLTIP_BLOCK_VILGILANCE_RESPAWN,Block respawns in a Vigilance(Venator) after his first death
@@ -36,6 +43,7 @@ TEXT_TOOLTIP_BUILDLIMIT_VENATOR_OFC_SPHA_T,Build Limit: 3 | Lifetime: 1
 TEXT_TOOLTIP_CAPITAL_GAR_16,Red Guard: 2 / 0
 TEXT_TOOLTIP_COMMAND_127TH_ARC170,ARC-170 Starfighter Squadron, 127th Gunship Wing
 TEXT_TOOLTIP_COMMAND_CARRACK_INTEGRITY,Carrack Cruiser, Integrity
+TEXT_TOOLTIP_COMMAND_EXACTOR,Imperator Star Destroyer, Exactor
 TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95,Republic Z-95 Headhunter Squadron, Hunter Squadron
 TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT,V-19 Torrent Squadron, Hunter Squadron
 TEXT_TOOLTIP_COMMAND_NEGOTIATOR,Venator Star Destroyer, Negotiator
@@ -70,6 +78,7 @@ TEXT_TOOLTIP_UMBARAN_FRIGATE_SHIELD,Shields: 1300 [19.25/R] (Frigate)
 TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP1,4x Light Turbolasers 2 / 1.0s / 5.1 km
 TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP2,4x Dual Light Lasercannons 2 / 0.4s / 3.7km
 TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP3,2x Light Anti-Fighter Ion Cannons 2 / 1.7s / 3.2km
+TEXT_TOOLTIP_VADER_SPECIAL,Special: Vader's Eta-2 Actis Interceptor
 TEXT_TOOLTIP_VENAOTR_OFC_SPECIAL,Special: 2x Republic Z-95 Squadron 1/2 [E3]
 TEXT_TOOLTIP_VENATOR_DECOLORIZE,Decolorize Venators to wipe out traces of Republic.
 TEXT_TOOLTIP_VENATOR_OFC,Venator Star Destroyer assigned under Open Circle Fleet. It has increased fire power in exchange for fighter complements.
@@ -92,6 +101,8 @@ TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP5,1x EMP Launcher: 1 / 5.0s / 240m
 TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP6,1x Wrist Rocket: 1 / 10.0s / 220m
 TEXT_TOOLTIP_WOLFPACK_SQUAD_WEAP7,1x Light Repeating Blaster: 5 / 1.0s / 240m
 TEXT_UNIT_A6_PROTOTYPE,A6 Juggernaut Prototype
+TEXT_UNIT_ACCLAMATOR_I_OFC,OCF Acclamator-I (Carrier Loadout)
+TEXT_UNIT_C70_OFC,OCF Charger C70
 TEXT_UNIT_DARK_ACOLYTE,Dark Acolyte 
 TEXT_UNIT_DARK_ACOLYTE_COMPANY,Dark Acolyte Squad
 TEXT_UNIT_RED_GUARD,Red Guard
@@ -112,17 +123,3 @@ TEXT_UNIT_WOLFPACK_P2_GUNNER_LIGHT,Wolfpack Light Gunner (Phase II)
 TEXT_UNIT_WOLFPACK_P2_RIFLEMAN,Wolfpack Rifleman (Phase II)
 TEXT_UNIT_WOLFPACK_P2_RIFLEMAN_GRENADIER,Wolfpack Rifleman Grenadier(Phase II)
 TEXT_UNIT_WOLFPACK_P2_SQUAD,Wolfpack Squad (Phase II)
-
-TEXT_TOOLTIP_A6_PROTOTYPE,TODO
-TEXT_TOOLTIP_A6_PROTOTYPE_HEALTH,Health: 1300 (Heavy Vehicle)
-TEXT_TOOLTIP_A6_PROTOTYPE_WEAP1,1x Heavy AV Blaster Cannon: 3 / 2.0s / 480m
-TEXT_TOOLTIP_A6_PROTOTYPE_WEAP2,1x Heavy AI Blaster Cannon: 8 / 2.0s / 480m
-TEXT_TOOLTIP_A6_PROTOTYPE_WEAP3,2x AI Blaster Cannons (AOE): 2 / 1.0s / 320m
-TEXT_TOOLTIP_A6_PROTOTYPE_WEAP4,2x Proton Missiles: 3 / 20.0s / 480m
-
-TEXT_UNIT_C70_OFC,OCF Charger C70
-TEXT_UNIT_ACCLAMATOR_I_OFC,OCF Acclamator-I (Carrier Loadout)
-TEXT_TOOLTIP_ACCLAMATOR_I_OFC,TODO
-
-TEXT_TOOLTIP_COMMAND_EXACTOR,Imperator Star Destroyer, Exactor
-TEXT_TOOLTIP_VADER_SPECIAL,Special: Vader's Eta-2 Actis Interceptor

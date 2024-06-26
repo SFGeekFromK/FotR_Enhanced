@@ -100,7 +100,7 @@ time line
 ORS Base Mod Extension Goals 
 	set in 19bby (Era 5)
 	starts with cato castle clash
-	triad of evil message pop up
+	triad of evil message pop up(Probably Done?)
 	deployment of aayla secura and ki adi mundi story event pop up(deploy each to saleucami, mygeeto respectly)
 	reworked corsucant chaos (narrative tactical battle like anaxes_annexation)
 	kashyyyk owner change post coruscant chaos event

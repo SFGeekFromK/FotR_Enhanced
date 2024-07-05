@@ -2,13 +2,22 @@ Fleet List :
 
 cis
 
-diamond(8), munificient(12), recusant(6), recusant dread(1) providence(2), providence dread(1) lucrehulk(battleship 1, carrier 1) 
+diamond(8), munificient(12), recusant(6), recusant dread(1) providence(3), providence dread(1) lucrehulk(battleship 1, carrier 1) 
 
 
 rep
 
 initial battle 
 
-cr90(5), () carrack(8) dreadnaut(6) venator (5) ; home fleet strike group five(Needa)
+cr90(5), charger c70(10) () carrack(8) dreadnaut(6) venator (5) ; home fleet strike group five(Needa), screed(overall commander of home fleet)
 
 final battle
+
+
+wave 1(pre ocf)
+
+tector(1), isd(1), victory2(2)
+
+wave 2(post ocf)
+
+open circle fleet venators (), charger c70, acc II (), ; yularen, anakin & obi wan

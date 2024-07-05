@@ -588,7 +588,7 @@ function State_Rep_Story_Set_Up()
 			FindPlanet("Murkhana"),
 			FindPlanet("Praesitlyn"),
 			FindPlanet("YagDhul"),
-			FindPlanet("Kashyyyk")
+			FindPlanet("Kashyyyk"),
 		}
 
 		local plot = Get_Story_Plot("Conquests\\CloneWarsOuterRimSieges\\Story_Sandbox_OuterRimSieges_Republic.XML")
@@ -639,10 +639,13 @@ function State_Rep_Planet_Checker_01() -- triad of evil checker
 		if p_planet.Get_Owner() ~= p_republic then
 			if p_planet.Get_Planet_Location() == FindPlanet("Saleucami") then
 				if (TestValid(Find_First_Object("Aayla_Secura2")) or TestValid(Find_First_Object("Aayla_Secura_Eta_Team"))) and TestValid(Find_First_Object("Autem_Venator")) then
+					-- aayla and autem both present
 					event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_SALEUCAMI", p_planet)
 				elseif (TestValid(Find_First_Object("Aayla_Secura2")) or TestValid(Find_First_Object("Aayla_Secura_Eta_Team"))) and not TestValid(Find_First_Object("Autem_Venator")) then
+					-- only aayla	
 					event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_SALEUCAMI", p_planet)
 				elseif not (TestValid(Find_First_Object("Aayla_Secura2")) or TestValid(Find_First_Object("Aayla_Secura_Eta_Team"))) and TestValid(Find_First_Object("Autem_Venator")) then
+					-- only autem
 					event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_SALEUCAMI", p_planet)
 				else
 					event_act_1.Add_Dialog_Text("TEXT_INTERVENTION_PLANET_CONQUEST_LOCATION", p_planet)

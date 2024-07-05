@@ -118,7 +118,7 @@
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
 		<Reward_Param1>Autem_Venator</Reward_Param1>
-		<Reward_Param2>Commenor</Reward_Param2>
+		<Reward_Param2>Brentaal</Reward_Param2>
 		<Prereq>Delayed_Story_Start</Prereq>
 	</Event>
 
@@ -264,6 +264,46 @@
 		<Prereq>Rep_Flash_Mygeeto</Prereq>
 	</Event>
 
+	<!-- Saleucami mission bounce ; trim it to fit ORS -->
+
+	<Event Name="Rep_Saleucami_Bounce_Speech_02">
+		<Event_Type>STORY_FLEET_BOUNCED</Event_Type>
+		<Event_Param1>Ryloth</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_REP_BOUNCE_SPEECH_02</Reward_Param1>
+		<Reward_Param2>14</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>Commander_Moff_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Rep_Rimward_Bounce_Speech_03">
+		<Event_Type>STORY_INVASION_BOUNCED</Event_Type>
+		<Event_Param1>Ryloth</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_STORY_RIMWARD_CAMPAIGN_REP_BOUNCE_SPEECH_03</Reward_Param1>
+		<Reward_Param2>14</Reward_Param2>
+		<Reward_Param3 />
+		<Reward_Param4 />
+		<Reward_Param5 />
+		<Reward_Param6 />
+		<Reward_Param7 />
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9>ObiWan2_Loop</Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Trigger_Rep_Story_Start</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<!--************************************************-->
+
 	<Event Name="Rep_Saleucami_Entry_01">
 		<Event_Type>STORY_DEPLOY</Event_Type>
 		<Event_Param1></Event_Param1>
@@ -285,7 +325,7 @@
 		<Prereq>Rep_Saleucami_Entry_01, Rep_Saleucami_Entry_02</Prereq>
 	</Event>
 
-<!-- Finish Saleucami Story mission -->
+	<!-- Finish Saleucami Story mission -->
 
 	<Event Name="Rep_Outer_Rim_Sieges_Act_I_Completed">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>

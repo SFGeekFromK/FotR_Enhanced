@@ -567,8 +567,10 @@ function State_Rep_Story_Set_Up()
 		StoryUtil.RevealPlanet("CORUSCANT", false)
 		StoryUtil.RevealPlanet("TYTHE", false)
 		StoryUtil.RevealPlanet("Saleucami", false)
+		StoryUtil.RevealPlanet("Mygeeto", false)
 
 		StoryUtil.SetPlanetRestricted("Saleucami", false)
+		StoryUtil.SetPlanetRestricted("Mygeeto", false)
 		
 		if (GlobalValue.Get("ORS_Rep_GC_Version") == 1) then
 			p_republic.Unlock_Tech(Find_Object_Type("Generic_Gladiator"))
@@ -640,7 +642,15 @@ function State_Rep_Planet_Checker_01() -- triad of evil checker
 			if p_planet.Get_Planet_Location() == FindPlanet("Saleucami") then
 				if (TestValid(Find_First_Object("Aayla_Secura2")) or TestValid(Find_First_Object("Aayla_Secura_Eta_Team"))) and TestValid(Find_First_Object("Autem_Venator")) then
 					-- aayla and autem both present
-					event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_SALEUCAMI", p_planet)
+					event_act_3.Add_Dialog_Text("TEXT_STORY_OUTER_RIM_SIEGES_REP_ACT_III_OBJECTIVE_01")
+					event_act_3.Add_Dialog_Text("TEXT_NONE")
+					event_act_3.Add_Dialog_Text("TEXT_INTERVENTION_LOCATION", FindPlanet("Charros"))
+
+				event_act_3_01_task = plot.Get_Event("Rep_Outer_Rim_Sieges_Jedi_Charros_01")
+				event_act_3_01_task.Set_Event_Parameter(0, Find_Object_Type("Anakin_Eta_Team"))
+
+				event_act_3_02_task = plot.Get_Event("Rep_Outer_Rim_Sieges_Jedi_Charros_02")
+				event_act_3_02_task.Set_Event_Parameter(0, Find_Object_Type("Obi_Wan_Eta_Team"))
 				elseif (TestValid(Find_First_Object("Aayla_Secura2")) or TestValid(Find_First_Object("Aayla_Secura_Eta_Team"))) and not TestValid(Find_First_Object("Autem_Venator")) then
 					-- only aayla	
 					event_act_1.Add_Dialog_Text("TEXT_STORY_ORS_REP_LOCATION_SALEUCAMI", p_planet)

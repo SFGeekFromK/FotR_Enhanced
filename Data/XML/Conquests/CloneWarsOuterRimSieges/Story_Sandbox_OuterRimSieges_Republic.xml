@@ -284,7 +284,7 @@
 		<Perpetual>True</Perpetual>
 	</Event>
 
-	<Event Name="Rep_Rimward_Bounce_Speech_03">
+	<Event Name="Rep_Saleucami_Bounce_Speech_03">
 		<Event_Type>STORY_INVASION_BOUNCED</Event_Type>
 		<Event_Param1>Ryloth</Event_Param1>
 		<Reward_Type>MULTIMEDIA</Reward_Type>
@@ -304,19 +304,16 @@
 
 	<!--************************************************-->
 
-	<Event Name="Rep_Saleucami_Entry_01">
-		<Event_Type>STORY_DEPLOY</Event_Type>
-		<Event_Param1></Event_Param1>
-		<Event_Param2>Saleucami</Event_Param2>
-		<Prereq>Rep_Outer_Rim_Sieges_Act_I_Dialog</Prereq>
+	<Event Name="Rep_Seizing_Saleucami_Tactical">
+		<
 	</Event>
 
-	<Event Name="Rep_Saleucami_Entry_02">
+	<!--<Event Name="Rep_Saleucami_Entry_01">
 		<Event_Type>STORY_DEPLOY</Event_Type>
 		<Event_Param1></Event_Param1>
 		<Event_Param2>Saleucami</Event_Param2>
 		<Prereq>Rep_Outer_Rim_Sieges_Act_I_Dialog</Prereq>
-	</Event>
+	</Event>-->
 
 	<Event Name="Rep_Saleucami_Conquered">
 		<Event_Type>STORY_TRIGGER</Event_Type>

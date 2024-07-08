@@ -14,7 +14,7 @@ function State_Init(message)
 
 		
 	if message == OnEnter then
-        Hide_Sub_Object(Object, 1, "jumptroop")
+        Hide_Sub_Object(Object, 1, "jumptroop") -- unnecessary mesh
         Hide_Sub_Object(Object, 1, "body_LOD0")
 		Hide_Sub_Object(Object, 1, "body_LOD1")
 		Hide_Sub_Object(Object, 1, "helmet_LOD0")
@@ -30,11 +30,10 @@ function State_Init(message)
 		Hide_Sub_Object(Object, 1, "Head_LOD1")
 		Hide_Sub_Object(Object, 0, "Head_104_LOD0")
 		Hide_Sub_Object(Object, 0, "Head_104_LOD1")
+
+		-- lense hide
         Hide_Sub_Object(Object, 1, "lenseP1")
-        
-        if GlobalValue.Get("CURRENT_CLONE_PHASE") == 2 then -- 
-            Hide_Sub_Object(Object, 1, "lenseP2")
-        end
+    	Hide_Sub_Object(Object, 1, "lenseP2")
 		
         ScriptExit()
 	end

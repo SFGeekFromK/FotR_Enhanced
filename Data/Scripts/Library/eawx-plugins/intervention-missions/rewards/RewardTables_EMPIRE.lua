@@ -63,6 +63,7 @@ return {
 			{"Dreadnaught_Carrier", 2},
 			{"Republic_A5RX_Company", 2},
 			{"Republic_VAAT_Group", 2},
+			{"SPHA_T_Company", 1},
 		},
 		{
 			{"Republic_RX200_Falchion_Company", 1},

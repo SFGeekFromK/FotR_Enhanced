@@ -9423,5 +9423,431 @@
 
 		<Required_Orbiting_Units>Nu_Shuttle_Landing_Craft_Aden</Required_Orbiting_Units>
 	</DummyStructure>
+
+	<HeroUnit Name="Prudii_Skirata">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Land_Model_Name>arc_clone_phase1.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedHero.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>I_BUTTON_PRUDII.tga</Icon_Name>
+
+		<Text_ID>TEXT_HERO_PRUDII</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_CREATIVE
+		TEXT_TOOLTIP_TRAIT_STEALTHOPS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_PRUDII
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ORDO_P1_HEALTH
+		TEXT_TOOLTIP_ORDO_P1_MOVE
+		TEXT_TOOLTIP_ORDO_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT </Encyclopedia_Unit_Class>
+		<No_Colorization_Color> 69, 155, 212, 255 </No_Colorization_Color>
+
+		<Tactical_Health>185</Tactical_Health>
+
+		<Max_Speed>1.1</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<OverrideAcceleration> 1.1 </OverrideAcceleration>
+		<OverrideDeceleration> 1.1 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Land_FOW_Reveal_Range>450.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>400.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>HP_Hero_Clone_Rifle</HardPoints>
+		
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> Unit_Complete_Alpha_17 </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		
+		<SFXEvent_Select>Unit_Select_Alpha_17</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Alpha_17</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Move_Alpha_17</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Alpha_17</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Alpha_17</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Alpha_17</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Alpha_17</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Death_Alpha_17</Death_SFXEvent_Start_Die>
+		
+		<Death_SFXEvent_Start_Die>Unit_Death_Clone_Trooper</Death_SFXEvent_Start_Die>
+
+		<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<AI_Combat_Power>37</AI_Combat_Power>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->	
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 8.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TARGETED_HACK</Type>
+				<Recharge_Seconds>120.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Ordo_Hack_Ability </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Guard_Clone_Trooper </SFXEvent_Target_Ability> 
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			
+			<Combat_Bonus_Ability Name="Ordo_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+				<Ability_Recharge_Bonus_Percentage>-0.05</Ability_Recharge_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Hack_Ability Name="Ordo_Hack_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range> 5.0 </Activation_Min_Range>
+				<Activation_Max_Range> 30.0 </Activation_Max_Range>
+				<Applicable_Unit_Categories> </Applicable_Unit_Categories>
+			
+			<!--	List needs to be updated as stuff is added -->
+				<Applicable_Unit_Types>  
+					Empire_Anti_Aircraft_Turret,
+					Empire_Anti_Infantry_Turret,
+					Empire_Anti_Vehicle_Turret,
+					Rebel_Anti_Aircraft_Turret,
+					Rebel_Anti_Infantry_Turret,
+					Rebel_Anti_Vehicle_Turret,
+					Generic_Ground_Turbolaser_Tower
+				</Applicable_Unit_Types>
+			
+				<Lightning_Effect_Name> Hack_Electicity_Zaps </Lightning_Effect_Name>
+				<Lightning_Source_Bone_Name> </Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 1 </Lightning_Max_Targets> 					
+				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>		
+				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate> 					<!-- STUB PLACEHOLDER for Frank -->
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect> 	<!-- STUB PLACEHOLDER for Gary -->
+				<Target_Particle_Bone_Name> B_Turret </Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
+				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
+			</Hack_Ability>
+			
+		</Abilities>
+	</HeroUnit>
+
+	<HeroCompany Name="Prudii_Skirata_Team">
+		<Text_ID>TEXT_HERO_PRUDII</Text_ID>
+		<Icon_Name>I_BUTTON_PRUDII.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Nu_Shuttle_Landing_Craft_Prudii</Company_Transport_Unit>
+		<Company_Units>Prudii_Skirata</Company_Units>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Score_Cost_Credits> 18000 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Veers</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Veers</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>EHD_Reinforcements_En_Route</SFXEvent_Fleet_Move>
+
+		<Population_Value>1</Population_Value>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>860</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies></Build_Limit_Lifetime_For_All_Allies>   
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND5_LAND
+		TEXT_TOOLTIP_TRAIT_CREATIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ORDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ORDO_P1_HEALTH
+		TEXT_TOOLTIP_ORDO_P1_MOVE
+		TEXT_TOOLTIP_ORDO_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN </Encyclopedia_Unit_Class>
+
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+	</HeroCompany>
+
+	<HeroUnit Name="Prudii_Skirata2">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Land_Model_Name>arc_clone_phase2.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedHero.alo</Land_Model_Anim_Override_Name>
+		<Icon_Name>I_BUTTON_PRUDII_P2.tga</Icon_Name>
+
+		<Text_ID>TEXT_HERO_PRUDII</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND5_LAND
+		TEXT_TOOLTIP_TRAIT_CREATIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ORDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ORDO_P2_HEALTH
+		TEXT_TOOLTIP_ORDO_P2_MOVE
+		TEXT_TOOLTIP_ORDO_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN </Encyclopedia_Unit_Class>
+		<No_Colorization_Color> 228, 45, 49, 255 </No_Colorization_Color>
+
+		<Tactical_Health>195</Tactical_Health>
+
+		<Max_Speed>1.3</Max_Speed>
+		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+		<OverrideAcceleration> 1.3 </OverrideAcceleration>
+		<OverrideDeceleration> 1.3 </OverrideDeceleration>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Scale_Factor>1.1</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Land_FOW_Reveal_Range>450.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>400.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>HP_Hero_Verpine_Sniper</HardPoints>
+		
+		<SFXEvent_Select>Unit_Select_Clone_Trooper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Clone_Trooper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Trooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Clone_Trooper</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Clone_Trooper </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Clone_Trooper </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_Clone_Trooper</SFXEvent_Guard>
+		
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> Unit_Complete_ARC_Trooper </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		
+		<Death_SFXEvent_Start_Die>Unit_Death_Clone_Trooper</Death_SFXEvent_Start_Die>
+
+		<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<AI_Combat_Power>38</AI_Combat_Power>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<Lua_Script>GroundHero</Lua_Script>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->	
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 8.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TARGETED_HACK</Type>
+				<Recharge_Seconds>120.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Ordo_Hack_Ability </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Guard_Clone_Trooper </SFXEvent_Target_Ability> 
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			
+			<Combat_Bonus_Ability Name="Ordo_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+				<Ability_Recharge_Bonus_Percentage>-0.05</Ability_Recharge_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Hack_Ability Name="Ordo_Hack_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range> 5.0 </Activation_Min_Range>
+				<Activation_Max_Range> 30.0 </Activation_Max_Range>
+				<Applicable_Unit_Categories> </Applicable_Unit_Categories>
+			
+			<!--	List needs to be updated as stuff is added -->
+				<Applicable_Unit_Types>  
+					Empire_Anti_Aircraft_Turret,
+					Empire_Anti_Infantry_Turret,
+					Empire_Anti_Vehicle_Turret,
+					Rebel_Anti_Aircraft_Turret,
+					Rebel_Anti_Infantry_Turret,
+					Rebel_Anti_Vehicle_Turret,
+					Generic_Ground_Turbolaser_Tower
+				</Applicable_Unit_Types>
+			
+				<Lightning_Effect_Name> Hack_Electicity_Zaps </Lightning_Effect_Name>
+				<Lightning_Source_Bone_Name> </Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 1 </Lightning_Max_Targets> 					
+				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>		
+				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate> 					<!-- STUB PLACEHOLDER for Frank -->
+				<SFXEvent_Target_Affected />
+				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect> 	<!-- STUB PLACEHOLDER for Gary -->
+				<Target_Particle_Bone_Name> B_Turret </Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
+				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
+			</Hack_Ability>
+			
+		</Abilities>
+	</HeroUnit>
+
+	<HeroCompany Name="Prudii_Skirata2_Team">
+		<Text_ID>TEXT_HERO_ORDO</Text_ID>
+		<Icon_Name>I_BUTTON_ORDO.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Affiliation>Empire</Affiliation>
+		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Nu_Shuttle_Landing_Craft_Ordo</Company_Transport_Unit>
+		<Company_Units>Ordo_Skirata2</Company_Units>
+		<Is_Homogeneous>No</Is_Homogeneous>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Score_Cost_Credits> 18000 </Score_Cost_Credits>
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete>Unit_Respawn_Veers</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Veers</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>EHD_Reinforcements_En_Route</SFXEvent_Fleet_Move>
+
+		<Population_Value>1</Population_Value>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>860</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies></Build_Limit_Lifetime_For_All_Allies>   
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND5_LAND
+		TEXT_TOOLTIP_TRAIT_CREATIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ORDO
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ORDO_P2_HEALTH
+		TEXT_TOOLTIP_ORDO_P2_MOVE
+		TEXT_TOOLTIP_ORDO_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN </Encyclopedia_Unit_Class>
+		
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+	</HeroCompany>
+
+	<DummyStructure Name="Prudii_Assign">
+		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_ORDO</Text_ID>
+		<Icon_Name>i_button_ordo_command.tga</Icon_Name>
+		
+		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>	
+
+		<Affiliation>Empire</Affiliation>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_REPUBLIC_COMMANDO
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND5_LAND
+		TEXT_TOOLTIP_TRAIT_CREATIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ORDO
+		</Encyclopedia_Text>
+	</DummyStructure>
+
+	<DummyStructure Name="Prudii_Retire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_ORDO</Text_ID>
+		<Icon_Name>i_button_ordo_retire.tga</Icon_Name>
+		
+		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_RETIRE_REPUBLIC_COMMANDO
+		</Encyclopedia_Text>
+
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Orbiting_Units>Nu_Shuttle_Landing_Craft_Ordo</Required_Orbiting_Units>
+	</DummyStructure>
 	
 </Republic_Heroes>

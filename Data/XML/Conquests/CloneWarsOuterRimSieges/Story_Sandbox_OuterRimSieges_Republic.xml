@@ -304,8 +304,14 @@
 
 	<!--************************************************-->
 
-	<Event Name="Rep_Seizing_Saleucami_Tactical">
-		<
+	<Event Name="Rep_Seizing_Saleucami_Space">
+		<Event_Type>STORY_ENTER</Event_Type>
+		<Event_Param1>Saleucami</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3></Event_Param3>
+		<Event_Param4></Event_Param4>
+		<Prereq>CIS_Foerost_Campaign_Act_II_Dialog</Prereq>
+		<Branch>Rendili_Chain</Branch>
 	</Event>
 
 	<!--<Event Name="Rep_Saleucami_Entry_01">

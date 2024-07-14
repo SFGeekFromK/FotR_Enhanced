@@ -1,7 +1,10 @@
 import xml.etree.ElementTree as ET
 
-
 List = [x for x in input("Enter Heroes to make Decolorized variant of(please separate with space):").split()]
+
+if len(List)==0 :
+    print("No hero entry detected.")
+    exit()    
 
 xml_name=str(input("Enter xml name to be used(type without .xml): "))
 

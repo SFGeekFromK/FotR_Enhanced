@@ -22,7 +22,7 @@ ARC170 Ground fix (
 
 Yularen still respawning in integrity death(base mod behavior)
 
-Wolfpack health bar length
+Wolfpack icon not visible enough
 
 Bythen Forral Order 65 options bug : multimedia 
 

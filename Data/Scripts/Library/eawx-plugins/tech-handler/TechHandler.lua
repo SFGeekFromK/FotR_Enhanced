@@ -111,8 +111,8 @@ function TechManager:new(galactic_conquest, human_player, planets, unlocktech)
 		self.YearTwoRep = GenericResearch(self.galactic_conquest,
 			"YEAR_TWO_REP",
 			"Template_Research_Dummy", {"Empire"},
-			{"Generic_Acclamator_Assault_Ship_II", "Republic_HAET_Group", "Republic_AT_AP_Walker_Company", "Republic_AT_OT_Walker_Company"},
-			{"Republic_Flashblind_Group"})
+			{"Generic_Acclamator_Assault_Ship_II", "Republic_HAET_Group", "Republic_AT_AP_Walker_Company", "Republic_AT_OT_Walker_Company", "Republic_A6_Juggernaut_Company"},
+			{"Republic_Flashblind_Group", "Republic_A5_Juggernaut_Company"})
 
 		-- Year Three
 		-- We don't do these.			

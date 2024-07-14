@@ -3944,6 +3944,7 @@
 		<Space_Model_Name>Consular-class_c70_ofc.alo</Space_Model_Name>
 		<Icon_Name>i_button_c70_rep_ofc.tga</Icon_Name>
 
+		<Tech_Level>99</Tech_Level>
 		<Build_Limit_Current_Per_Player>50</Build_Limit_Current_Per_Player>
 
 	</SpaceUnit>
@@ -3969,7 +3970,7 @@
 		<Icon_Name>I_BUTTON_ACCLAMATOR_REP_OFC.TGA</Icon_Name>
 
 		<Space_Model_Name>ev_acclamator_i_ofc.alo</Space_Model_Name>
-
+		<Tech_Level>99</Tech_Level>
 		<Build_Limit_Current_Per_Player>24</Build_Limit_Current_Per_Player>
 	</SpaceUnit>
 
@@ -4055,7 +4056,7 @@
 		
 	</SpaceUnit>
 
-	<SpaceUnit Name="Venator_OFC_Campaign"> <!-- Historical Campaign Variant : has no build limit -->
+	<SpaceUnit Name="Venator_OFC_Campaign"> <!-- Historical Campaign Variant : no build limit -->
 		<Variant_Of_Existing_Type>Venator_OFC</Variant_Of_Existing_Type>
 		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
 	</SpaceUnit>

@@ -13,7 +13,7 @@ return {
 		["MISSILE_NIMBUS_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 4, TechLevel = GreaterThan(4)}
 		},
-		["GENERIC_ARC_170_SQUADRON"] = {
+		["ARC_170_OFC_Squadron"] = {
 			DEFAULT = {Initial = 1, Reserve = 4}
 		},
 		["2_WARPOD_SQUADRON"] = {

@@ -14,7 +14,7 @@ return {
 		["GENERIC_V-WING_SQUADRON"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, HeroOverride = {{"SATE_PESTAGE","MON_MOTHMA"}, {"ELITE_GUARD_NIMBUS_SQUADRON","ELITE_GUARD_NIMBUS_SQUADRON"}}, TechLevel = GreaterThan(3)}
 		},
-		["GENERIC_ARC_170_SQUADRON"] = {
+		["ARC_170_OFC_Squadron"] = {
 			DEFAULT = {Initial = 1, Reserve = 4}
 		},
 		["2_WARPOD_SQUADRON"] = {

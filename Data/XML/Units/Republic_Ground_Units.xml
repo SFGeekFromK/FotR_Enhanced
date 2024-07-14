@@ -3551,7 +3551,7 @@
 		
 	</GroundVehicle>
 
-	<GroundCompany Name="Republic_A6_Juggernaut_Company"> <!-- Research Locked -->
+	<GroundCompany Name="Republic_A6_Juggernaut_Company"> <!-- (Will be) Research Locked -->
 
 		<Text_ID>TEXT_UNIT_JUGGERNAUT_A6</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TRANSPORT</Encyclopedia_Unit_Class>
@@ -4023,7 +4023,7 @@
 		<Score_Cost_Credits>600</Score_Cost_Credits>
 		<Population_Value>1</Population_Value>
 
-		<Tech_Level>0</Tech_Level>
+		<Tech_Level>99</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 		
 		<Affiliation>Empire</Affiliation>

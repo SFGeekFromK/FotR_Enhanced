@@ -5,18 +5,6 @@
 
 
 
-Bythen Forral
-
-
-T19 : 1.9
-ATL Interceptor : 1.23
-r22 spearhed 1.3
-cloakshape fotr : 2.35
-I_beam : 1.87
-
-
-
-
 Red nikto guard model(for bok & morgukai shadow army)
 Hutt_HuttGuard_NoHelmet.ALO
 Hutt_HuttGuard.ALO
@@ -53,21 +41,8 @@ null class arcs
 
 
 update submod changes.txt
-----------------------
 
-
-
-      <!-- FotR_Enhanced -->
-			<Combat_Bonus_Ability Name="_OFC_Officer_Bonus">
-				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
-				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
-				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
-				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
-				<Stacking_Category>1</Stacking_Category>
-			</Combat_Bonus_Ability>
+------- end --------
 
 
 
@@ -85,7 +60,7 @@ replace missiles with grenades(same as the one from at-xt), no tower, rear gun r
 
 
 
-************************** ORS Submodding Rules
+************************** ORS Submodding Rules *****************************
 
 ORS Reworked Timeline for FOTR
 
@@ -129,7 +104,35 @@ ORS Submod Plans
 
 
 
-Unit Behavior Resoureces {
+
+
+
+
+
+ 
+ 
+ 
+
+
+      <!-- FotR_Enhanced -->
+			<Combat_Bonus_Ability Name="_OFC_Officer_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>
+				<Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+
+
+
+
+
+
+Resoureces {
 				
 		Generic ARC170 : HUNT, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA 
 		Squad Seven ARC170 : REVEAL, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR,  SELECTABLE, TARGETING, WEAPON, POWERED,  SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA 
@@ -167,4 +170,12 @@ Unit Behavior Resoureces {
 
 		Generic cloakshape
 		HUNT, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA
+
+
+		T19 : 1.9
+		ATL Interceptor : 1.23
+		r22 spearhed 1.3
+		cloakshape fotr : 2.35
+		I_beam : 1.87
+
 }

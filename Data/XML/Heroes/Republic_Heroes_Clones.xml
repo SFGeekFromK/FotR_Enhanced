@@ -9439,9 +9439,9 @@
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_PRUDII
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_TOOLTIP_ORDO_P1_HEALTH
-		TEXT_TOOLTIP_ORDO_P1_MOVE
-		TEXT_TOOLTIP_ORDO_WEAP1
+		TEXT_TOOLTIP_PRUDII_P1_HEALTH
+		TEXT_TOOLTIP_PRUDII_P1_MOVE
+		TEXT_TOOLTIP_PRDUII_WEAP1
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
@@ -9505,6 +9505,10 @@
 				<GUI_Activated_Ability_Name> Ordo_Hack_Ability </GUI_Activated_Ability_Name>
 				<SFXEvent_Target_Ability> Unit_Guard_Clone_Trooper </SFXEvent_Target_Ability> 
 				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>STICKY_BOMB</Type>
 			</Unit_Ability>
 			
 		</Unit_Abilities_Data>

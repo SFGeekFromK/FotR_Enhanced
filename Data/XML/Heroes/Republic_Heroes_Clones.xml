@@ -9448,7 +9448,7 @@
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_LIEUTENANT </Encyclopedia_Unit_Class>
 		<No_Colorization_Color> 69, 155, 212, 255 </No_Colorization_Color>
 
-		<Tactical_Health>185</Tactical_Health>
+		<Tactical_Health>150</Tactical_Health>
 
 		<Max_Speed>1.1</Max_Speed>
 		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
@@ -9491,20 +9491,13 @@
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary ability -->	
 			<Unit_Ability>
-				<Type>SPRINT</Type>
-				<Expiration_Seconds> 8.0 </Expiration_Seconds>
-				<Recharge_Seconds> 45.0 </Recharge_Seconds>
-				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
-				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<Type>STEALTH</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_CLOAKING</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_CLOAKING_DESCRIPTION</Alternate_Description_Text>
+				<Recharge_Seconds>10.0</Recharge_Seconds>
+				<Expiration_Seconds>40.0</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Stealth_Prudii</GUI_Activated_Ability_Name> 
 				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
-			</Unit_Ability>
-
-			<Unit_Ability>
-				<Type>TARGETED_HACK</Type>
-				<Recharge_Seconds>120.0</Recharge_Seconds>
-				<GUI_Activated_Ability_Name> Ordo_Hack_Ability </GUI_Activated_Ability_Name>
-				<SFXEvent_Target_Ability> Unit_Guard_Clone_Trooper </SFXEvent_Target_Ability> 
-				<Supports_Autofire>False</Supports_Autofire>
 			</Unit_Ability>
 
 			<Unit_Ability>
@@ -9515,7 +9508,7 @@
 
 		<Abilities SubObjectList="Yes">
 			
-			<Combat_Bonus_Ability Name="Ordo_Combat_Bonus">
+			<Combat_Bonus_Ability Name="Prudii_Combat_Bonus">
 				<Activation_Style>Ground_Automatic</Activation_Style>
 				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
@@ -9528,38 +9521,11 @@
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
 
-			<Hack_Ability Name="Ordo_Hack_Ability">
+			<Stealth_Ability Name="Stealth_Prudii">
 				<Activation_Style> User_Input </Activation_Style>
-				<Activation_Min_Range> 5.0 </Activation_Min_Range>
-				<Activation_Max_Range> 30.0 </Activation_Max_Range>
-				<Applicable_Unit_Categories> </Applicable_Unit_Categories>
-			
-			<!--	List needs to be updated as stuff is added -->
-				<Applicable_Unit_Types>  
-					Empire_Anti_Aircraft_Turret,
-					Empire_Anti_Infantry_Turret,
-					Empire_Anti_Vehicle_Turret,
-					Rebel_Anti_Aircraft_Turret,
-					Rebel_Anti_Infantry_Turret,
-					Rebel_Anti_Vehicle_Turret,
-					Generic_Ground_Turbolaser_Tower
-				</Applicable_Unit_Types>
-			
-				<Lightning_Effect_Name> Hack_Electicity_Zaps </Lightning_Effect_Name>
-				<Lightning_Source_Bone_Name> </Lightning_Source_Bone_Name>
-				<Lightning_Target_Bone_Name> B_Turret </Lightning_Target_Bone_Name>
-				<Lightning_Max_Targets> 1 </Lightning_Max_Targets> 					
-				<Lightning_Targets_Radius> 0.0 </Lightning_Targets_Radius>		
-				<SFXEvent_Activate> Unit_Force_Lightning </SFXEvent_Activate> 					<!-- STUB PLACEHOLDER for Frank -->
-				<SFXEvent_Target_Affected />
-				<Target_Particle_Effect> Force_Lightning_Smoke </Target_Particle_Effect> 	<!-- STUB PLACEHOLDER for Gary -->
-				<Target_Particle_Bone_Name> B_Turret </Target_Particle_Bone_Name>
-				<Target_Light_Effect_Type> Linear_Pulse </Target_Light_Effect_Type>
-				<Target_Light_Effect_Color> 0.3, 0.3, 0.8 </Target_Light_Effect_Color>
-				<Target_Light_Effect_Color2 />
-				<Target_Light_Effect_Duration> 2.3893 </Target_Light_Effect_Duration>
-				<Target_Light_Effect_Pulse_Count> 25 </Target_Light_Effect_Pulse_Count>
-			</Hack_Ability>
+				<Stealth_Color>255, 255, 255, 255</Stealth_Color>
+				<Stealth_Transition_Time>.6</Stealth_Transition_Time>
+			</Stealth_Ability>
 			
 		</Abilities>
 	</HeroUnit>

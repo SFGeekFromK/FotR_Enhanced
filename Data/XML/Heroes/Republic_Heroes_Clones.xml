@@ -9502,6 +9502,10 @@
 
 			<Unit_Ability>
 				<Type>STICKY_BOMB</Type>
+				<Recharge_Seconds>15.0f </Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Prudii_Grenade_Attack </GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
 			
 		</Unit_Abilities_Data>
@@ -9526,6 +9530,27 @@
 				<Stealth_Color>255, 255, 255, 255</Stealth_Color>
 				<Stealth_Transition_Time>.6</Stealth_Transition_Time>
 			</Stealth_Ability>
+
+			<Grenade_Attack_Ability Name="Prudii_Grenade_Attack">
+				<Activation_Style> User_Input </Activation_Style> <!-- Was Special_Attack -->
+				<!-- We need to be within this distance of the clicked target to consider throwing the grenade -->
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>300.0</Activation_Max_Range>
+				<Requires_Direct_Player_Command> No </Requires_Direct_Player_Command> <!-- Was NO -->
+				
+				<Grenade_Type>Proj_Hero_Sticky_Bomb</Grenade_Type>
+				<Grenade_Toss_Anim>BOMBTOSS</Grenade_Toss_Anim>
+				<Grenade_Spawn_Frame>12.0</Grenade_Spawn_Frame>
+				<Grenade_Spawn_Bone>MuzzleA_00</Grenade_Spawn_Bone>
+				<Grenade_Explode_Timer_In_Secs>3.0</Grenade_Explode_Timer_In_Secs>
+				<!-- Percentage chance to activate given a certain number of valid targets in range. -->
+				<!-- First number in the pair is the number of valid targets, second is the chance to activate. -->
+				<Activation_Chance>0,0.0, 1,1.0, 5,1.0, 500,1.0</Activation_Chance>
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Vehicle, Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate></SFXEvent_Activate>
+			</Grenade_Attack_Ability>
 			
 		</Abilities>
 	</HeroUnit>

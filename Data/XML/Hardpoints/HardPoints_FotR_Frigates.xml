@@ -3,7 +3,7 @@
 
 <!-- Hardpoints for DH-Omni Supply Ship -->
 
-	 <HardPoint Name="HP_Supplyship_Laser_01">
+	<HardPoint Name="HP_Supplyship_Laser_01">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
             <Is_Targetable>Yes</Is_Targetable>
             <Is_Destroyable>Yes</Is_Destroyable>
@@ -44,7 +44,7 @@
 
     </HardPoint>
 
-	 <HardPoint Name="HP_Supplyship_Laser_02">
+	<HardPoint Name="HP_Supplyship_Laser_02">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
             <Is_Targetable>Yes</Is_Targetable>
             <Is_Destroyable>Yes</Is_Destroyable>
@@ -85,7 +85,7 @@
 
     </HardPoint>
 
-	 <HardPoint Name="HP_Supplyship_Laser_03">
+	<HardPoint Name="HP_Supplyship_Laser_03">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
             <Is_Targetable>Yes</Is_Targetable>
             <Is_Destroyable>Yes</Is_Destroyable>
@@ -125,7 +125,7 @@
 
     </HardPoint>
 
-	 <HardPoint Name="HP_Supplyship_Laser_04">
+	<HardPoint Name="HP_Supplyship_Laser_04">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
             <Is_Targetable>Yes</Is_Targetable>
             <Is_Destroyable>Yes</Is_Destroyable>
@@ -166,7 +166,7 @@
 
     </HardPoint>
 
-	 <HardPoint Name="HP_Supplyship_Laser_05">
+	<HardPoint Name="HP_Supplyship_Laser_05">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
             <Is_Targetable>Yes</Is_Targetable>
             <Is_Destroyable>Yes</Is_Destroyable>
@@ -207,7 +207,7 @@
 
     </HardPoint>
 
-	 <HardPoint Name="HP_Supplyship_Laser_06">
+	<HardPoint Name="HP_Supplyship_Laser_06">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
             <Is_Targetable>Yes</Is_Targetable>
             <Is_Destroyable>Yes</Is_Destroyable>
@@ -248,7 +248,7 @@
 
     </HardPoint>
 
-	 <HardPoint Name="HP_Supplyship_Laser_07">
+	<HardPoint Name="HP_Supplyship_Laser_07">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
             <Is_Targetable>Yes</Is_Targetable>
             <Is_Destroyable>Yes</Is_Destroyable>
@@ -289,7 +289,7 @@
 
     </HardPoint>
 
-	 <HardPoint Name="HP_Supplyship_Laser_08">
+	<HardPoint Name="HP_Supplyship_Laser_08">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
             <Is_Targetable>Yes</Is_Targetable>
             <Is_Destroyable>Yes</Is_Destroyable>
@@ -357,9 +357,9 @@
             	<Damage_Particles>SPAWN_00</Damage_Particles>
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>  <!-- STUBBED PLACEHOLDER -->
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent> <!-- STUBBED PLACEHOLDER -->
-   </HardPoint>
+	</HardPoint>
 
-    <HardPoint Name="HP_Supplyship_Hangar_02">
+	<HardPoint Name="HP_Supplyship_Hangar_02">
 		<Type> HARD_POINT_FIGHTER_BAY </Type>
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
@@ -370,7 +370,7 @@
             	<Damage_Particles>SPAWN_01</Damage_Particles>
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>  <!-- STUBBED PLACEHOLDER -->
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent> <!-- STUBBED PLACEHOLDER -->
-   </HardPoint>
+	</HardPoint>
 
 	<!-- Storm Fleet Destroyer -->
 
@@ -2303,7 +2303,7 @@
      	<Is_Targetable>Yes</Is_Targetable>
      	<Is_Destroyable>Yes</Is_Destroyable>
      	<Tooltip_Text>TEXT_WEAPON_TURBOLASER_LIGHT</Tooltip_Text>
-     	<Health>260.0</Health>
+     	<Health>170.0</Health>
 
      	<Death_Explosion_Particles> Medium_Explosion_Space </Death_Explosion_Particles>
      	<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2342,7 +2342,7 @@
      	<Is_Targetable>Yes</Is_Targetable>
      	<Is_Destroyable>Yes</Is_Destroyable>
      	<Tooltip_Text>TEXT_WEAPON_TURBOLASER_LIGHT</Tooltip_Text>
-     	<Health>260.0</Health>
+     	<Health>170.0</Health>
 
 		<Death_Explosion_Particles> Medium_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2381,7 +2381,7 @@
      	<Is_Targetable>Yes</Is_Targetable>
         	<Is_Destroyable>Yes</Is_Destroyable>
         	<Tooltip_Text>TEXT_WEAPON_TURBOLASER_LIGHT</Tooltip_Text>
-        	<Health>260.0</Health>
+        	<Health>170.0</Health>
 
 		<Death_Explosion_Particles> Medium_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2420,7 +2420,7 @@
         <Is_Targetable>Yes</Is_Targetable>
         <Is_Destroyable>Yes</Is_Destroyable>
         <Tooltip_Text>TEXT_WEAPON_TURBOLASER_LIGHT</Tooltip_Text>
-        <Health>260.0</Health>
+        <Health>170.0</Health>
 
 		<Death_Explosion_Particles> Medium_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
@@ -2460,7 +2460,7 @@
         <Is_Targetable>Yes</Is_Targetable>
         <Is_Destroyable>Yes</Is_Destroyable>
         <Tooltip_Text>TEXT_WEAPON_LASERCANNON_LIGHT_DUAL</Tooltip_Text>
-        <Health>200.0</Health>
+        <Health>170.0</Health>
 
 		<Death_Explosion_Particles> Small_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
@@ -2502,7 +2502,7 @@
         <Is_Targetable>Yes</Is_Targetable>
         <Is_Destroyable>Yes</Is_Destroyable>
         <Tooltip_Text>TEXT_WEAPON_LASERCANNON_LIGHT_DUAL</Tooltip_Text>
-        <Health>200.0</Health>
+        <Health>170.0</Health>
 
 		<Death_Explosion_Particles>Small_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
@@ -2544,7 +2544,7 @@
         <Is_Targetable>Yes</Is_Targetable>
         <Is_Destroyable>Yes</Is_Destroyable>
         <Tooltip_Text>TEXT_WEAPON_LASERCANNON_LIGHT_DUAL</Tooltip_Text>
-        <Health>200.0</Health>
+        <Health>170.0</Health>
 
 		<Death_Explosion_Particles> Small_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
@@ -2586,7 +2586,7 @@
         <Is_Targetable>Yes</Is_Targetable>
         <Is_Destroyable>Yes</Is_Destroyable>
         <Tooltip_Text>TEXT_WEAPON_LASERCANNON_LIGHT_DUAL</Tooltip_Text>
-        <Health>200.0</Health>
+        <Health>170.0</Health>
 
 		<Death_Explosion_Particles>Small_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
@@ -2628,7 +2628,7 @@
         <Is_Targetable>Yes</Is_Targetable>
         <Is_Destroyable>Yes</Is_Destroyable>
         <Tooltip_Text>TEXT_WEAPON_IONCANNON_LIGHT_PD</Tooltip_Text>
-        <Health>200.0</Health>
+        <Health>170.0</Health>
 
 
 		<Death_Explosion_Particles>Medium_Explosion_Space</Death_Explosion_Particles>
@@ -2671,7 +2671,7 @@
         <Is_Targetable>Yes</Is_Targetable>
         <Is_Destroyable>Yes</Is_Destroyable>
         <Tooltip_Text>TEXT_WEAPON_IONCANNON_LIGHT_PD</Tooltip_Text>
-        <Health>200.0</Health>
+        <Health>170.0</Health>
 
 
 		<Death_Explosion_Particles>Medium_Explosion_Space</Death_Explosion_Particles>
@@ -2715,7 +2715,7 @@
         <Is_Targetable>Yes</Is_Targetable>
         <Is_Destroyable>Yes</Is_Destroyable>
         <Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
-        <Health>260.0</Health>
+        <Health>170.0</Health>
 
 		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Engines_Death</Death_Explosion_SFXEvent>

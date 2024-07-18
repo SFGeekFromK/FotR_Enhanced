@@ -1822,16 +1822,16 @@
 		<Shield_Points>1300</Shield_Points>
 		<Shield_Refresh_Rate>19.25</Shield_Refresh_Rate>
 		<Armor_Type> ArmourS_Frigate </Armor_Type>
-		<Tactical_Health>1200</Tactical_Health>
+		<Tactical_Health>2040</Tactical_Health>
 
 		<Energy_Capacity>3000</Energy_Capacity>
 		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>	
 		
-		<AI_Combat_Power>308</AI_Combat_Power>
+		<AI_Combat_Power>216</AI_Combat_Power>
 		<Autoresolve_Health>2400</Autoresolve_Health>
 		<Damage>40</Damage>
 		
-		<Affiliation>Rebel, Empire</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels</Affiliation>
 		<Political_Control>0</Political_Control>
 		<Maintenance_Cost>0.2</Maintenance_Cost>
 

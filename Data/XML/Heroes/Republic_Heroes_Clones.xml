@@ -9424,6 +9424,8 @@
 		<Required_Orbiting_Units>Nu_Shuttle_Landing_Craft_Aden</Required_Orbiting_Units>
 	</DummyStructure>
 
+<!-- FotR_Enhanced -->
+
 	<HeroUnit Name="Prudii_Skirata">
 		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
 		<Is_Named_Hero>Yes</Is_Named_Hero>

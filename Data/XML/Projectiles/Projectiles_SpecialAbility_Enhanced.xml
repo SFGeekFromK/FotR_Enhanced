@@ -1,0 +1,1209 @@
+<?xml version="1.0"?>
+<Projectiles>
+
+
+
+<!-- ************************************************************************************** -->
+<!-- ********************                       Ground                       ************** -->
+<!-- ************************************************************************************** -->
+
+	<!-- Self-heal button for advanced vehicles -->
+	<Projectile Name="Proj_Special_Advanced_Vehicle_Instant_Heal_Blast">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<!-- No damage, stun blast -->
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate>Unit_Force_Area_Heal</Projectile_SFXEvent_Detonate>
+		<!-- Frank STUB PLACEHOLDER -->
+		<Projectile_Object_Detonation_Particle>Shield_Sparks_Large</Projectile_Object_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Ground_Detonation_Particle>Shield_Sparks_Large</Projectile_Ground_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Lifetime_Detonation_Particle>Shield_Sparks_Large</Projectile_Lifetime_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<!-- Heal specifics -->
+		<Projectile_Instant_Heal_On_Detonation> Yes </Projectile_Instant_Heal_On_Detonation>
+		<Projectile_Instant_Heal_Duration_Frames> 90 </Projectile_Instant_Heal_Duration_Frames>
+		<Projectile_Instant_Heal_Radius> 1 </Projectile_Instant_Heal_Radius>
+		<Projectile_Instant_Heal_Spawn_Effect> Unit_Healed_Particles </Projectile_Instant_Heal_Spawn_Effect>
+		<Projectile_Instant_Heal_Targets_Category_Mask> Vehicle </Projectile_Instant_Heal_Targets_Category_Mask>
+		<Projectile_Instant_Heal_Health_Increase> 50 </Projectile_Instant_Heal_Health_Increase>
+		<!-- Heals X health instantly -->
+	</Projectile>
+
+	<Projectile Name="Proj_Special_Han_Solo_Stun_Blast">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate>SFX_Stun_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Object_Detonation_Particle>Tani_Stun_Particles</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Tani_Stun_Particles</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Tani_Stun_Particles</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Projectile_Stun_On_Detonation>Yes</Projectile_Stun_On_Detonation>
+		<Projectile_Stun_Duration_Frames>600</Projectile_Stun_Duration_Frames>
+		<Projectile_Stun_Radius>150</Projectile_Stun_Radius>
+		<Projectile_Stun_Spawn_Effect> Han_Solo_Target_Stun_Effect </Projectile_Stun_Spawn_Effect>
+		<Projectile_Stun_Victims_Category_Mask> Vehicle | Structure </Projectile_Stun_Victims_Category_Mask>
+		<Projectile_Stun_Victims_Unit_Types/>
+	</Projectile>
+	
+	<!-- Obiwans's special invisible heal blast projectile that is created by his area effect heal special power, instantly detonates to heal those nearby -->
+	<Projectile Name="Proj_Special_Obiwan_Instant_Heal_Blast">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<!-- No damage, stun blast -->
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate>Unit_Force_Area_Heal</Projectile_SFXEvent_Detonate>
+		<!-- Frank STUB PLACEHOLDER -->
+		<Projectile_Object_Detonation_Particle>Force_Instant_Heal_Particles</Projectile_Object_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Ground_Detonation_Particle>Force_Instant_Heal_Particles</Projectile_Ground_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Lifetime_Detonation_Particle>Force_Instant_Heal_Particles</Projectile_Lifetime_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<!-- Heal specifics -->
+		<Projectile_Instant_Heal_On_Detonation> Yes </Projectile_Instant_Heal_On_Detonation>
+		<Projectile_Instant_Heal_Duration_Frames> 90 </Projectile_Instant_Heal_Duration_Frames>
+		<Projectile_Instant_Heal_Radius> 300 </Projectile_Instant_Heal_Radius>
+		<Projectile_Instant_Heal_Spawn_Effect> Unit_Healed_Particles </Projectile_Instant_Heal_Spawn_Effect>
+		<Projectile_Instant_Heal_Targets_Category_Mask> Infantry | LandHero </Projectile_Instant_Heal_Targets_Category_Mask>
+		<Projectile_Instant_Heal_Health_Increase> 200 </Projectile_Instant_Heal_Health_Increase>
+		<!-- Heals X health instantly -->
+	</Projectile>
+	
+	<!-- Obiwans's special invisible targeted invulnerability projectile that is created by his targeted invulnerability special power, instantly detonates to effectthose nearby -->
+	<Projectile Name="Proj_Special_Obiwan_Instant_Invulnerability_Blast">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<!-- No damage -->
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate>Unit_Force_Distract</Projectile_SFXEvent_Detonate>
+		<!-- Frank STUB PLACEHOLDER -->
+		<Projectile_Object_Detonation_Particle>Distract_Particles</Projectile_Object_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Ground_Detonation_Particle>Distract_Particles</Projectile_Ground_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Lifetime_Detonation_Particle>Distract_Particles</Projectile_Lifetime_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<!-- Invulnerability on friendly specifics
+			Note that this ability now works like a simple targetted ability.
+			If we change that, it be an inconsistant ability in that it behaves
+			like area of effect at range, but is targeted on a unit.  Also,
+			Obiwan's AI will need be be rewritten if this is changed. SCC -->
+		<Projectile_Cause_Invulnerability_On_Detonation> Yes </Projectile_Cause_Invulnerability_On_Detonation>
+		<Projectile_Cause_Invulnerability_Duration_Frames> 300 </Projectile_Cause_Invulnerability_Duration_Frames>
+		<Projectile_Cause_Invulnerability_Radius> 0.0 </Projectile_Cause_Invulnerability_Radius>
+		<Projectile_Cause_Invulnerability_Max_Targets> 1 </Projectile_Cause_Invulnerability_Max_Targets>
+		<Projectile_Cause_Invulnerability_Spawn_Effect> Invulnerable_Small </Projectile_Cause_Invulnerability_Spawn_Effect>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Cause_Invulnerability_Targets_Category_Mask> Infantry | LandHero | Vehicle | Structure </Projectile_Cause_Invulnerability_Targets_Category_Mask>
+	</Projectile>
+	
+	<!-- Emperor Palpatines's special Dark Side Force corruption/conversion blast projectile that is created by his area effect convert special power, instantly detonates to convert those nearby -->
+	<Projectile Name="Proj_Special_Emperor_Instant_Dark_Side_Corrupt_Blast">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<!-- No damage, stun blast -->
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate>Unit_Force_Convert</Projectile_SFXEvent_Detonate>
+		<!-- Frank STUB PLACEHOLDER -->
+		<Projectile_Object_Detonation_Particle>Emperor_Force_Convert_Particles</Projectile_Object_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Ground_Detonation_Particle>Emperor_Force_Convert_Particles</Projectile_Ground_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Lifetime_Detonation_Particle>Emperor_Force_Convert_Particles</Projectile_Lifetime_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<!-- Convert enemy specifics -->
+		<Projectile_Convert_Enemy_On_Detonation> Yes </Projectile_Convert_Enemy_On_Detonation>
+		<Projectile_Convert_Enemy_Radius> 100 </Projectile_Convert_Enemy_Radius>
+		<Projectile_Convert_Enemy_Spawn_Effect> Stun_Particles </Projectile_Convert_Enemy_Spawn_Effect>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Convert_Enemy_Targets_Category_Mask> Infantry | Vehicle </Projectile_Convert_Enemy_Targets_Category_Mask>
+	</Projectile>
+	
+	<Projectile Name="Proj_Special_Head_Master_Instant_Dark_Side_Corrupt_Blast">
+		<Variant_Of_Existing_Type>Proj_Special_Emperor_Instant_Dark_Side_Corrupt_Blast</Variant_Of_Existing_Type>
+	</Projectile>
+
+	<!-- Force Pyro Ability -->
+	<Projectile Name="Proj_Special_Force_Pyrokinesis">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Damage_Type> DamageL_Flamer </Damage_Type>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>50.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage> 175.0 </Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range> 55 </Projectile_Blast_Area_Range>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<!-- Frank STUB PLACEHOLDER -->
+		<Projectile_Object_Detonation_Particle>Ewok_Suicide_Bomb_Explosion</Projectile_Object_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Ground_Detonation_Particle>Ewok_Suicide_Bomb_Explosion</Projectile_Ground_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Lifetime_Detonation_Particle>Ewok_Suicide_Bomb_Explosion</Projectile_Lifetime_Detonation_Particle>
+		<!-- Gary STUB PLACEHOLDER -->
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate>Unit_Flamethrower_Fire</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> Unit_Flamethrower_Fire </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+
+	
+<!-- ************************************************************************************** -->
+<!-- ********************                       Space                        ************** -->
+<!-- ************************************************************************************** -->
+
+<!--
+	<Projectile Name="Antilles_Weaken_Enemy_Effect">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>0.3</Scale_Factor>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		 Instant explosion
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		 Not used 
+		<Projectile_Damage>0.0</Projectile_Damage>
+		  Ask artists to adjust detonation particle to be the same size as area blast range for correct visual effect -->
+		<Projectile_Weaken_Enemy_On_Detonation>Yes</Projectile_Weaken_Enemy_On_Detonation>
+		<Projectile_Weaken_Enemy_Duration_Seconds>15.0</Projectile_Weaken_Enemy_Duration_Seconds>
+		  If you change this radius, update the Area_Effect_Decal_Distance for the WEAKEN_ENEMY ability in the Sundered_Heart -->
+		<Projectile_Weaken_Enemy_Radius>300</Projectile_Weaken_Enemy_Radius>
+		  Adjust particle lifetime to correspond to duration of this effect in (Particles.XML) -->
+		<Projectile_Weaken_Enemy_Spawn_Effect>Weaken_Enemy_Particle_Effect</Projectile_Weaken_Enemy_Spawn_Effect>
+		  When the weakened unit takes damage x, it'll be multiplied by (1.0f + Projectile_Weaken_Enemy_Vulnerability_Percent) -->
+		<Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>0</Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>
+		  When the weakened unit causes damage x, it'll be multiplied by (1.0f - Projectile_Weaken_Enemy_Damage_Reduction_Percent) -->
+		<Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>0.2</Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>
+		  Types of the units that can be weakened (enemies only) -->
+		<Projectile_Weaken_Enemy_Targets_Category_Mask>All</Projectile_Weaken_Enemy_Targets_Category_Mask>
+		<Projectile_SFXEvent_Detonate>SFX_Weaken_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Lifetime_Detonation_Particle>Weaken_Enemy_Detonation_Effect</Projectile_Lifetime_Detonation_Particle>
+	</Projectile>
+	
+	<Projectile Name="Fel_Weaken_Enemy_Effect">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>0.3</Scale_Factor>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		  Instant explosion -->
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		  Not used -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		  Ask artists to adjust detonation particle to be the same size as area blast range for correct visual effect -->
+		<Projectile_Weaken_Enemy_On_Detonation>Yes</Projectile_Weaken_Enemy_On_Detonation>
+		<Projectile_Weaken_Enemy_Duration_Seconds>15.0</Projectile_Weaken_Enemy_Duration_Seconds>
+		  If you change this radius, update the Area_Effect_Decal_Distance for the WEAKEN_ENEMY ability in the Sundered_Heart -->
+		<Projectile_Weaken_Enemy_Radius>100</Projectile_Weaken_Enemy_Radius>
+		  Adjust particle lifetime to correspond to duration of this effect in (Particles.XML) -->
+		<Projectile_Weaken_Enemy_Spawn_Effect>Weaken_Enemy_Particle_Effect</Projectile_Weaken_Enemy_Spawn_Effect>
+		  When the weakened unit takes damage x, it'll be multiplied by (1.0f + Projectile_Weaken_Enemy_Vulnerability_Percent) -->
+		<Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>0.5</Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>
+		  When the weakened unit causes damage x, it'll be multiplied by (1.0f - Projectile_Weaken_Enemy_Damage_Reduction_Percent) -->
+		<Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>0.5</Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>
+		  Types of the units that can be weakened (enemies only) -->
+		<Projectile_Weaken_Enemy_Targets_Category_Mask>Fighter | Bomber | Transport</Projectile_Weaken_Enemy_Targets_Category_Mask>
+		<Projectile_SFXEvent_Detonate>SFX_Weaken_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Lifetime_Detonation_Particle>Weaken_Enemy_Detonation_Effect</Projectile_Lifetime_Detonation_Particle>
+	</Projectile>
+	
+	<Projectile Name="Lumiya_Space_Weaken_Enemy_Effect">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>10.0</Scale_Factor>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		  Instant explosion -->
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		  Not used -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		  Ask artists to adjust detonation particle to be the same size as area blast range for correct visual effect -->
+		<Projectile_Weaken_Enemy_On_Detonation>Yes</Projectile_Weaken_Enemy_On_Detonation>
+		<Projectile_Weaken_Enemy_Duration_Seconds>15.0</Projectile_Weaken_Enemy_Duration_Seconds>
+		  If you change this radius, update the Area_Effect_Decal_Distance for the WEAKEN_ENEMY ability in the Sundered_Heart -->
+		<Projectile_Weaken_Enemy_Radius>5000</Projectile_Weaken_Enemy_Radius>
+		  Adjust particle lifetime to correspond to duration of this effect in (Particles.XML) -->
+		<Projectile_Weaken_Enemy_Spawn_Effect>Weaken_Enemy_Particle_Effect</Projectile_Weaken_Enemy_Spawn_Effect>
+		  When the weakened unit takes damage x, it'll be multiplied by (1.0f + Projectile_Weaken_Enemy_Vulnerability_Percent) -->
+		<Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>0.1</Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>
+		  When the weakened unit causes damage x, it'll be multiplied by (1.0f - Projectile_Weaken_Enemy_Damage_Reduction_Percent) -->
+		<Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>0.1</Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>
+		  Types of the units that can be weakened (enemies only) -->
+		<Projectile_Weaken_Enemy_Targets_Category_Mask>All</Projectile_Weaken_Enemy_Targets_Category_Mask>
+		<Projectile_SFXEvent_Detonate>SFX_Weaken_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Lifetime_Detonation_Particle>Weaken_Enemy_Detonation_Effect</Projectile_Lifetime_Detonation_Particle>
+	</Projectile>
+	
+	<Projectile Name="Lumiya_Ground_Weaken_Enemy_Effect">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>5.0</Scale_Factor>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		  Instant explosion -->
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		  Not used -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		  Ask artists to adjust detonation particle to be the same size as area blast range for correct visual effect -->
+		<Projectile_Weaken_Enemy_On_Detonation>Yes</Projectile_Weaken_Enemy_On_Detonation>
+		<Projectile_Weaken_Enemy_Duration_Seconds>15.0</Projectile_Weaken_Enemy_Duration_Seconds>
+		  If you change this radius, update the Area_Effect_Decal_Distance for the WEAKEN_ENEMY ability in the Sundered_Heart -->
+		<Projectile_Weaken_Enemy_Radius>1000</Projectile_Weaken_Enemy_Radius>
+		  Adjust particle lifetime to correspond to duration of this effect in (Particles.XML) -->
+		<Projectile_Weaken_Enemy_Spawn_Effect>Weaken_Enemy_Particle_Effect</Projectile_Weaken_Enemy_Spawn_Effect>
+		  When the weakened unit takes damage x, it'll be multiplied by (1.0f + Projectile_Weaken_Enemy_Vulnerability_Percent) -->
+		<Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>0.1</Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>
+		  When the weakened unit causes damage x, it'll be multiplied by (1.0f - Projectile_Weaken_Enemy_Damage_Reduction_Percent) -->
+		<Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>0.1</Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>
+		  Types of the units that can be weakened (enemies only) -->
+		<Projectile_Weaken_Enemy_Targets_Category_Mask>All</Projectile_Weaken_Enemy_Targets_Category_Mask>
+		<Projectile_SFXEvent_Detonate>SFX_Weaken_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Lifetime_Detonation_Particle>Weaken_Enemy_Detonation_Effect</Projectile_Lifetime_Detonation_Particle>
+	</Projectile>	
+	
+	  Base game Zann Flagship -->
+	<Projectile Name="Proj_Ship_Krayt_Megaweapon_Ion">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>p_kraytdestoyer_presuperblast.alo</Space_Model_Name>
+		<Land_Model_Name>p_kraytdestoyer_presuperblast.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type> DamageS_TurboIon </Damage_Type>
+		<Max_Speed>20.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior>IDLE</SpaceBehavior>
+		<LandBehavior>IDLE</LandBehavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2500.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>600.0</Projectile_Damage>
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>Yes</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Shield_Sparks_Large</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+		<Projectile_Disables_Engines_When_Power_Drained>Yes</Projectile_Disables_Engines_When_Power_Drained>
+		<Projectile_Disable_Engines_Duration>3.0</Projectile_Disable_Engines_Duration>
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		  Stun specifics - this is more for visual effect than stun ability -->
+		<Projectile_Ion_Stun_On_Detonation>true</Projectile_Ion_Stun_On_Detonation>
+		<Projectile_Ion_Stun_Duration>3.0</Projectile_Ion_Stun_Duration>
+		  must be same as Projectile_Disable_Engines_Duration in this case -->
+		<Projectile_Ion_Stun_Speed_Reduction_Percent>0.5f</Projectile_Ion_Stun_Speed_Reduction_Percent>
+		  almost total speed reduction -->
+		<Projectile_Ion_Stun_Shot_Rate_Reduction_Percent>0.3</Projectile_Ion_Stun_Shot_Rate_Reduction_Percent>  fire rate reduced to 20% -->
+		<Projectile_Ion_Stun_Stack_Duration>Yes</Projectile_Ion_Stun_Stack_Duration>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Krayt_Megaweapon_Damage">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>p_kraytdestoyer_superblast.alo</Space_Model_Name>
+		<Land_Model_Name>p_kraytdestoyer_superblast.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type> Damage_Krayt_Damage_Blast </Damage_Type>
+		<Max_Speed>16.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior>IDLE</SpaceBehavior>
+		<LandBehavior>IDLE</LandBehavior>
+		<Projectile_Category>LASER</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2500.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>400.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>300.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>200.0</Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>p_kraytdestoyer_detonate</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Huge_Explosion_Space</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Huge_Dud</Projectile_Lifetime_Detonation_Particle>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Krayt_Special_Megaweapon_Damage">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>p_kraytdestroyer_superblast_special.alo</Space_Model_Name>
+		<Land_Model_Name>p_kraytdestroyer_superblast_special.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type> Damage_Krayt_Damage_Blast </Damage_Type>
+		<Max_Speed>16.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<SpaceBehavior>IDLE</SpaceBehavior>
+		<LandBehavior>IDLE</LandBehavior>
+		<Projectile_Category>LASER</Projectile_Category>
+		<Projectile_Max_Flight_Distance>2500.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>600.0</Projectile_Damage>
+		<Projectile_Blast_Area_Damage>400.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>250.0</Projectile_Blast_Area_Range>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_SFXEvent_Detonate>SFX_Concussion_Missile_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>p_kraytdestoyer_detonate_special</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Huge_Explosion_Space</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle>Huge_Dud</Projectile_Lifetime_Detonation_Particle>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+	</Projectile>
+	
+	<Projectile Name="Proj_Ship_Ion_Cannon_Blast">
+		<Variant_Of_Existing_Type>Proj_Ship_Ion_Cannon_Light</Variant_Of_Existing_Type>
+		<Scale_Factor>0.2625</Scale_Factor>
+		
+		<Projectile_Disables_Engines_When_Power_Drained>Yes</Projectile_Disables_Engines_When_Power_Drained>
+		<Projectile_Disable_Engines_Duration>15.0</Projectile_Disable_Engines_Duration>
+
+		  Stun specifics - this is more for visual effect than stun ability -->
+		<Projectile_Ion_Stun_On_Detonation>true</Projectile_Ion_Stun_On_Detonation>
+		<Projectile_Ion_Stun_Duration>10.0</Projectile_Ion_Stun_Duration>   must be same as Projectile_Disable_Engines_Duration in this case -->
+		<Projectile_Ion_Stun_Speed_Reduction_Percent>0.999f</Projectile_Ion_Stun_Speed_Reduction_Percent>   almost total speed reduction -->
+		<Projectile_Ion_Stun_Shot_Rate_Reduction_Percent>100000</Projectile_Ion_Stun_Shot_Rate_Reduction_Percent>  fire rate reduced to 20% -->
+		<Projectile_Ion_Stun_Stack_Duration>Yes</Projectile_Ion_Stun_Stack_Duration>
+
+		<AI_Combat_Power>20000</AI_Combat_Power>
+
+	</Projectile>
+
+	<Projectile Name="Krennel_Weaken_Enemy_Effect">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>0.3</Scale_Factor>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		  Instant explosion -->
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		  Not used -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		  Ask artists to adjust detonation particle to be the same size as area blast range for correct visual effect -->
+		<Projectile_Weaken_Enemy_On_Detonation>Yes</Projectile_Weaken_Enemy_On_Detonation>
+		<Projectile_Weaken_Enemy_Duration_Seconds>15.0</Projectile_Weaken_Enemy_Duration_Seconds>
+		  If you change this radius, update the Area_Effect_Decal_Distance for the WEAKEN_ENEMY ability in the Sundered_Heart -->
+		<Projectile_Weaken_Enemy_Radius>300</Projectile_Weaken_Enemy_Radius>
+		  Adjust particle lifetime to correspond to duration of this effect in (Particles.XML) -->
+		<Projectile_Weaken_Enemy_Spawn_Effect>Weaken_Enemy_Particle_Effect</Projectile_Weaken_Enemy_Spawn_Effect>
+		  When the weakened unit takes damage x, it'll be multiplied by (1.0f + Projectile_Weaken_Enemy_Vulnerability_Percent) -->
+		<Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>0.25</Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>
+		  When the weakened unit causes damage x, it'll be multiplied by (1.0f - Projectile_Weaken_Enemy_Damage_Reduction_Percent) -->
+		<Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>-0.15</Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>
+		  Types of the units that can be weakened (enemies only) -->
+		<Projectile_Weaken_Enemy_Targets_Category_Mask>All</Projectile_Weaken_Enemy_Targets_Category_Mask>
+		<Projectile_SFXEvent_Detonate>SFX_Weaken_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Lifetime_Detonation_Particle>Weaken_Enemy_Detonation_Effect</Projectile_Lifetime_Detonation_Particle>
+	</Projectile>
+	<Projectile Name="Proj_Fleet_Tender_Fighter_Heal">
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+        <Damage_Type> Damage_Default </Damage_Type>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Max_Speed>0.0</Max_Speed>
+        <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+        <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+        <Projectile_Category>DEFAULT</Projectile_Category>
+        <Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Lifetime>0.0</Projectile_Max_Lifetime>
+        <Projectile_Damage>0.0</Projectile_Damage>
+        <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+        <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+        <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+        <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+        <Projectile_SFXEvent_Detonate/>
+        <Projectile_Object_Detonation_Particle>Unit_Healed_Particles</Projectile_Object_Detonation_Particle>
+        <Projectile_Ground_Detonation_Particle>Unit_Healed_Particles</Projectile_Ground_Detonation_Particle>
+        <Projectile_Lifetime_Detonation_Particle>Unit_Healed_Particles</Projectile_Lifetime_Detonation_Particle>
+        <Projectile_Absorbed_By_Shields_Particle />
+        <AI_Combat_Power>0</AI_Combat_Power>
+        <Projectile_Instant_Heal_On_Detonation> Yes </Projectile_Instant_Heal_On_Detonation>
+        <Projectile_Instant_Heal_Duration_Frames> 30 </Projectile_Instant_Heal_Duration_Frames>
+        <Projectile_Instant_Heal_Radius> 900 </Projectile_Instant_Heal_Radius>
+        <Projectile_Instant_Heal_Spawn_Effect> Unit_Healed_Particles </Projectile_Instant_Heal_Spawn_Effect>
+        <Projectile_Instant_Heal_Targets_Category_Mask> Fighter | Bomber </Projectile_Instant_Heal_Targets_Category_Mask>
+        <Projectile_Instant_Heal_Health_Increase> 10 </Projectile_Instant_Heal_Health_Increase>
+    </Projectile>
+		<Projectile Name="Proj_No_Retreat">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Max_Speed>0.0</Max_Speed>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, BOMB</Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN</SpaceBehavior>
+		<Projectile_Category>STATIC_BOMB</Projectile_Category>
+		<Projectile_Blast_Area_Range>0.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>0.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Grenade_Sticks_On_Collision>no</Projectile_Grenade_Sticks_On_Collision>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Death_Explosions> Tiny_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> SFX_Seismic_Detonation </Death_SFXEvent_Start_Die>
+		<AI_Combat_Power>100</AI_Combat_Power>
+		<Projectile_Blast_Area_Dropoff>True</Projectile_Blast_Area_Dropoff>
+		<Projectile_Blast_Area_Dropoff_Tiers>3</Projectile_Blast_Area_Dropoff_Tiers>
+		  detonation particle and SFX -->
+		<Projectile_Object_Detonation_Particle> Tiny_Explosion_Space </Projectile_Object_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle> Tiny_Explosion_Space </Projectile_Lifetime_Detonation_Particle>
+		<Projectile_SFXEvent_Detonate>
+		</Projectile_SFXEvent_Detonate>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+				  Primary ability -->
+				<Unit_Ability>
+					<Type>INTERDICT</Type>
+					<Disable_Movement>No</Disable_Movement>
+					<Active_By_Default>Yes</Active_By_Default>
+					
+					<SFXEvent_GUI_Unit_Ability_Activated />
+					<SFXEvent_GUI_Unit_Ability_Deactivated />
+				</Unit_Ability>
+			
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="No_Retreat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Capital | Corvette | Frigate | Fighter</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>-0.2</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>-0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Retreat_Prevention_Ability Name="No_Retreat_Retreat_Prevention">
+				  maybe it should be space only? -->
+				<Activation_Style>Combat_Automatic</Activation_Style>
+			</Retreat_Prevention_Ability>
+			
+		</Abilities>
+	</Projectile>
+	
+	<Projectile Name="Proj_Special_Fanaticism_Blast">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		  No damage -->
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate>Unit_Force_Distract</Projectile_SFXEvent_Detonate>
+		  Frank STUB PLACEHOLDER -->
+		<Projectile_Object_Detonation_Particle>Distract_Particles</Projectile_Object_Detonation_Particle>
+		  Gary STUB PLACEHOLDER -->
+		<Projectile_Ground_Detonation_Particle>Distract_Particles</Projectile_Ground_Detonation_Particle>
+		  Gary STUB PLACEHOLDER -->
+		<Projectile_Lifetime_Detonation_Particle>Distract_Particles</Projectile_Lifetime_Detonation_Particle>
+		  Gary STUB PLACEHOLDER -->
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		  Invulnerability on friendly specifics
+			Note that this ability now works like a simple targetted ability.
+			If we change that, it be an inconsistant ability in that it behaves
+			like area of effect at range, but is targeted on a unit.  Also,
+			Obiwan's AI will need be be rewritten if this is changed. SCC -->
+		  <Projectile_Cause_Invulnerability_On_Detonation> Yes </Projectile_Cause_Invulnerability_On_Detonation>
+		<Projectile_Cause_Invulnerability_Duration_Frames> 300 </Projectile_Cause_Invulnerability_Duration_Frames>
+		<Projectile_Cause_Invulnerability_Radius> 0.0 </Projectile_Cause_Invulnerability_Radius>
+		<Projectile_Cause_Invulnerability_Max_Targets> 1 </Projectile_Cause_Invulnerability_Max_Targets>
+		<Projectile_Cause_Invulnerability_Spawn_Effect> Invulnerable_Small </Projectile_Cause_Invulnerability_Spawn_Effect>
+		<Projectile_Cause_Invulnerability_Targets_Category_Mask> Capital | Corvette | Frigate | Fighter </Projectile_Cause_Invulnerability_Targets_Category_Mask> -->
+		
+		<Destruction_Survivors> 
+			Proj_Fanaticism_Friendly_Blast, 1.0
+		</Destruction_Survivors>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Fanaticism_Friendly_Blast">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Max_Speed>0.0</Max_Speed>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE</Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN</SpaceBehavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>10000.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Grenade_Sticks_On_Collision>no</Projectile_Grenade_Sticks_On_Collision>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Death_Explosions> Tiny_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> SFX_Seismic_Detonation </Death_SFXEvent_Start_Die>
+		<AI_Combat_Power>100</AI_Combat_Power>
+		<Projectile_Blast_Area_Dropoff>False</Projectile_Blast_Area_Dropoff>
+		<Projectile_Blast_Area_Dropoff_Tiers>3</Projectile_Blast_Area_Dropoff_Tiers>
+		  detonation particle and SFX -->
+		<Projectile_Object_Detonation_Particle> Tiny_Explosion_Space </Projectile_Object_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle> Tiny_Explosion_Space </Projectile_Lifetime_Detonation_Particle>
+		<Projectile_SFXEvent_Detonate>
+		</Projectile_SFXEvent_Detonate>
+		
+		<Affiliation>Hostile</Affiliation>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Special_Duelist_Blast">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>50.0</Projectile_Damage>
+		  No damage -->
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate>Unit_Force_Distract</Projectile_SFXEvent_Detonate>
+		  Frank STUB PLACEHOLDER -->
+		<Projectile_Object_Detonation_Particle>Carbonite_Missile_Explosion</Projectile_Object_Detonation_Particle>
+		  Gary STUB PLACEHOLDER -->
+		<Projectile_Ground_Detonation_Particle>Carbonite_Missile_Explosion</Projectile_Ground_Detonation_Particle>
+		  Gary STUB PLACEHOLDER -->
+		<Projectile_Lifetime_Detonation_Particle>Carbonite_Missile_Explosion</Projectile_Lifetime_Detonation_Particle>
+		  Gary STUB PLACEHOLDER -->
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>15</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>-0.8</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>MAL_Slow_Effect</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask> LandHero</Projectile_Combat_Mod_Category_Mask>
+	</Projectile>
+
+	<Projectile Name="Proj_Special_Hero_Incapacitate">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate>SFX_Stun_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_Object_Detonation_Particle>Saber_Sparks</Projectile_Object_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Saber_Sparks</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Saber_Sparks</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Projectile_Stun_On_Detonation>Yes</Projectile_Stun_On_Detonation>
+		<Projectile_Stun_Duration_Frames>600</Projectile_Stun_Duration_Frames>
+		<Projectile_Stun_Radius>10</Projectile_Stun_Radius>
+		<Projectile_Stun_Spawn_Effect> Han_Solo_Target_Stun_Effect </Projectile_Stun_Spawn_Effect>
+		<Projectile_Stun_Victims_Category_Mask> LandHero </Projectile_Stun_Victims_Category_Mask>
+		<Projectile_Stun_Victims_Unit_Types/>
+	</Projectile>
+	
+	<Projectile Name="Proj_Useless">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+	</Projectile>
+	
+	<Projectile Name="Proj_Attack_Animations">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Scale_Factor>0.1</Scale_Factor>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Max_Speed>17</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>400.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<AI_Combat_Power>40</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_Space_Maximum_Firepower_Dummy_Laser">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Scale_Factor>0.05</Scale_Factor>
+		<Damage_Type> DamageS_Laser </Damage_Type>
+		<Max_Speed>80</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>500.0</Projectile_Max_Flight_Distance>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Damage>0</Projectile_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+	</Projectile>
+
+	<Projectile Name="Proj_Ground_Maximum_Firepower_Dummy_Laser">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Scale_Factor>0.15</Scale_Factor>
+		<Damage_Type> DamageL_AntiVehicleBlaster </Damage_Type>
+		<Max_Speed>35.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Projectile_Max_Flight_Distance>1200.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>5</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle/>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle/>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<Projectile_Ground_Detonation_SurfaceFX/>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate/>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor/>
+	</Projectile>
+	
+	<Projectile Name="Proj_Buff_Dummy_Init">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.alo</Land_Model_Name>
+		<Space_Model_Name>W_LASER_INVISIBLE.alo</Space_Model_Name>
+		
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Speed>0.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>DEFAULT</Projectile_Category>
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		  No damage, stun blast -->
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_SFXEvent_Detonate></Projectile_SFXEvent_Detonate>
+		  Frank STUB PLACEHOLDER -->
+		<Projectile_Object_Detonation_Particle>Force_Instant_Heal_Particles</Projectile_Object_Detonation_Particle>
+		  Gary STUB PLACEHOLDER -->
+		<Projectile_Ground_Detonation_Particle>Force_Instant_Heal_Particles</Projectile_Ground_Detonation_Particle>
+		  Gary STUB PLACEHOLDER -->
+		<Projectile_Lifetime_Detonation_Particle>Force_Instant_Heal_Particles</Projectile_Lifetime_Detonation_Particle>
+		  Gary STUB PLACEHOLDER -->
+		<Projectile_Absorbed_By_Shields_Particle/>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		  Heal specifics -->
+		<Projectile_Instant_Heal_On_Detonation> Yes </Projectile_Instant_Heal_On_Detonation>
+		<Projectile_Instant_Heal_Duration_Frames> 0 </Projectile_Instant_Heal_Duration_Frames>
+		<Projectile_Instant_Heal_Radius> 300 </Projectile_Instant_Heal_Radius>
+		<Projectile_Instant_Heal_Spawn_Effect> Unit_Healed_Particles </Projectile_Instant_Heal_Spawn_Effect>
+		<Projectile_Instant_Heal_Targets_Category_Mask> Infantry | LandHero </Projectile_Instant_Heal_Targets_Category_Mask>
+		<Projectile_Instant_Heal_Health_Increase> 1 </Projectile_Instant_Heal_Health_Increase>
+		  Heals X health instantly -->
+		
+		<Projectile_Blast_Area_Range>0.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>0.0</Projectile_Blast_Area_Damage>
+	</Projectile>
+	
+	<Projectile Name="Proj_Buff_Dummy_Mod">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.alo</Land_Model_Name>
+		<Space_Model_Name>W_LASER_INVISIBLE.alo</Space_Model_Name>
+		<Scale_Factor>0.3</Scale_Factor>
+		<Max_Speed>6.0</Max_Speed>
+		<Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+		
+		<Projectile_Blast_Area_Max_Victims>1.0</Projectile_Blast_Area_Max_Victims> 
+		
+		  Instant explosion -->
+		<Projectile_Max_Flight_Distance>0.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Lifetime>0.0</Projectile_Max_Lifetime>
+		
+		  Not used - area_blast damage override this -->
+		<Projectile_Damage>0.0</Projectile_Damage>
+		
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+
+		<Damage_Type>Damage_Default</Damage_Type>
+		<Projectile_Damage_Delay_Secs>0</Projectile_Damage_Delay_Secs>
+
+		<Projectile_SFXEvent_Detonate />
+		
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		
+		<Projectile_Object_Detonation_Particle />
+		<Projectile_Ground_Detonation_Particle />
+		<Projectile_Lifetime_Detonation_Particle />
+		<Projectile_Absorbed_By_Shields_Particle />
+		
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED, ABILITY_COUNTDOWN, SELF_DESTRUCT</Behavior>
+		
+		<Projectile_Blast_Area_Range>10</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>0.001</Projectile_Blast_Area_Damage>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Fighter_Shield_Local_Buff_Init_1">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Init</Variant_Of_Existing_Type>
+		
+		<Projectile_Instant_Heal_Radius> 1000 </Projectile_Instant_Heal_Radius>
+		<Projectile_Instant_Heal_Spawn_Effect> Fighter_Shield_Local_Buff_Particle_1 </Projectile_Instant_Heal_Spawn_Effect> 
+		<Projectile_Instant_Heal_Targets_Category_Mask> Fighter | Bomber </Projectile_Instant_Heal_Targets_Category_Mask>
+		
+	</Projectile>
+	  
+	<Projectile Name="Proj_Fighter_Shield_Init_2">
+		<Variant_Of_Existing_Type>Proj_Fighter_Shield_Init_1</Variant_Of_Existing_Type>
+		<Projectile_Instant_Heal_Spawn_Effect> Fighter_Shield_Particle_2 </Projectile_Instant_Heal_Spawn_Effect> 
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Fighter_Shield_Init_3">
+		<Variant_Of_Existing_Type>Proj_Fighter_Shield_Init_1</Variant_Of_Existing_Type>
+		<Projectile_Instant_Heal_Spawn_Effect> Fighter_Shield_Particle_3 </Projectile_Instant_Heal_Spawn_Effect> 
+		
+	</Projectile> -->
+	
+	<Projectile Name="Proj_Fighter_Shield_Local_Buff_Mod_1">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_DEFENSE</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>0.30</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Buff_Particle_Dummy_Attached</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask> Fighter | Bomber  | AntiBomber</Projectile_Combat_Mod_Category_Mask>
+		<SFXEvent_Fire>Unit_MAL_Carbonite_Fire</SFXEvent_Fire>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Fighter_Shield_Local_Buff_Mod_2">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_DAMAGE</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>0.20</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Local_Buff_Mod_2</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask> Fighter | Bomber | AntiBomber</Projectile_Combat_Mod_Category_Mask>
+		<SFXEvent_Fire>Unit_MAL_Carbonite_Fire</SFXEvent_Fire>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Fighter_Shield_Local_Buff_Mod_3">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>0.10</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Local_Buff_Mod_3</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask> Fighter | Bomber  | AntiBomber</Projectile_Combat_Mod_Category_Mask>
+		<SFXEvent_Fire>Unit_MAL_Carbonite_Fire</SFXEvent_Fire>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_EX_F_Explosion">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>p_seismic_bomb00.alo</Land_Model_Name>
+		<Space_Model_Name>p_seismic_bomb00.ALO</Space_Model_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Max_Speed>0.0</Max_Speed>
+		<Damage_Type> DamageS_ProtonBomb </Damage_Type>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, BOMB</Behavior>
+		<Projectile_Category>STATIC_BOMB</Projectile_Category>
+		<Projectile_Blast_Area_Range>3000.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>20000.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Grenade_Sticks_On_Collision>no</Projectile_Grenade_Sticks_On_Collision>
+		<Projectile_Damage>8000.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Death_Explosions> Friggin_Huge_Explosion_Space </Death_Explosions>
+		<Death_SFXEvent_Start_Die> SFX_Seismic_Detonation </Death_SFXEvent_Start_Die>
+		<AI_Combat_Power>300</AI_Combat_Power>
+		<Projectile_Blast_Area_Dropoff>False</Projectile_Blast_Area_Dropoff>
+        <Projectile_Blast_Area_Dropoff_Tiers>0</Projectile_Blast_Area_Dropoff_Tiers>
+		
+		  detonation particle and SFX -->
+		<Projectile_Object_Detonation_Particle> Friggin_Huge_Explosion_Space </Projectile_Object_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle> Friggin_Huge_Explosion_Space </Projectile_Lifetime_Detonation_Particle>
+		<Projectile_SFXEvent_Detonate> </Projectile_SFXEvent_Detonate>
+
+	</Projectile>
+	
+	<Projectile Name="Proj_EX_F_Local_Buff_Init_1">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Init</Variant_Of_Existing_Type>
+		
+		<Projectile_Instant_Heal_Targets_Category_Mask> All </Projectile_Instant_Heal_Targets_Category_Mask>
+		<Projectile_Instant_Heal_Radius> 3000 </Projectile_Instant_Heal_Radius>
+		<Projectile_Instant_Heal_Spawn_Effect> EX_F_Local_Buff_Particle_1 </Projectile_Instant_Heal_Spawn_Effect> 
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_EX_F_Local_Buff_Mod_1">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_FIRE_RATE </Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>0.15</Projectile_Combat_Mod_Value>
+		<Projectile_Combat_Mod_Effect>EX_F_Buff_Particle</Projectile_Combat_Mod_Effect>
+          <Projectile_Combat_Mod_Effect>Buff_Particle_Dummy_Attached</Projectile_Combat_Mod_Effect> -->
+        <Projectile_Combat_Mod_Category_Mask> All </Projectile_Combat_Mod_Category_Mask>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_EX_F_Local_Buff_Mod_2">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_DAMAGE</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>0.20</Projectile_Combat_Mod_Value>
+          <Projectile_Combat_Mod_Effect>Self_Destruct_Effect</Projectile_Combat_Mod_Effect> -->
+        <Projectile_Combat_Mod_Category_Mask> All </Projectile_Combat_Mod_Category_Mask>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_EX_F_Local_Buff_Mod_3">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>0.20</Projectile_Combat_Mod_Value>
+          <Projectile_Combat_Mod_Effect>Weaken_Enemy_Detonation_Effect</Projectile_Combat_Mod_Effect> -->
+        <Projectile_Combat_Mod_Category_Mask> All </Projectile_Combat_Mod_Category_Mask>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Art_of_War_Local_Buff_Init_1">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Init</Variant_Of_Existing_Type>
+		
+		<Projectile_Instant_Heal_Targets_Category_Mask> All </Projectile_Instant_Heal_Targets_Category_Mask>
+		<Projectile_Instant_Heal_Radius> 3000 </Projectile_Instant_Heal_Radius>
+		<Projectile_Instant_Heal_Spawn_Effect> Art_of_War_Local_Buff_Particle_1 </Projectile_Instant_Heal_Spawn_Effect> 
+		
+	</Projectile>
+
+	<Projectile Name="Proj_Art_of_War_Local_Buff_Mod_1">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_DEFENSE </Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>0.15</Projectile_Combat_Mod_Value>
+		<Projectile_Combat_Mod_Effect>Buff_Particle_Dummy_Attached</Projectile_Combat_Mod_Effect>
+       <Projectile_Combat_Mod_Category_Mask> All </Projectile_Combat_Mod_Category_Mask>
+		<SFXEvent_Fire>Unit_MAL_Carbonite_Fire</SFXEvent_Fire>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Art_of_War_Local_Buff_Mod_2">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_DAMAGE</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>0.20</Projectile_Combat_Mod_Value>
+		<Projectile_Combat_Mod_Effect>Particle_Local_Buff_Mod_2</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask> All </Projectile_Combat_Mod_Category_Mask>
+		<SFXEvent_Fire>Unit_MAL_Carbonite_Fire</SFXEvent_Fire>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Art_of_War_Local_Buff_Mod_3">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>0.10</Projectile_Combat_Mod_Value>
+		<Projectile_Combat_Mod_Effect>Particle_Local_Buff_Mod_3</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask> All </Projectile_Combat_Mod_Category_Mask>
+		<SFXEvent_Fire>Unit_MAL_Carbonite_Fire</SFXEvent_Fire>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Cronal_Local_Debuff_Mod_1">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Blast_Area_Range>1000</Projectile_Blast_Area_Range>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_FIRE_RATE </Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>-0.10</Projectile_Combat_Mod_Value>
+		<Projectile_Combat_Mod_Effect>Cronal_DeBuff_Particle</Projectile_Combat_Mod_Effect>
+       <Projectile_Combat_Mod_Category_Mask> All </Projectile_Combat_Mod_Category_Mask>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Cronal_Local_Debuff_Mod_2">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Blast_Area_Range>1000</Projectile_Blast_Area_Range>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_DAMAGE</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>-0.20</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Category_Mask> All </Projectile_Combat_Mod_Category_Mask>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Cronal_Local_Debuff_Mod_3">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Blast_Area_Range>1000</Projectile_Blast_Area_Range>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>-0.30</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Category_Mask> All </Projectile_Combat_Mod_Category_Mask>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Inspire_Fear_Local_Debuff_Mod_1">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Blast_Area_Range>300</Projectile_Blast_Area_Range>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_DEFENSE </Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>-0.30</Projectile_Combat_Mod_Value>
+		<Projectile_Combat_Mod_Effect> Buff_Particle_Dummy_Attached </Projectile_Combat_Mod_Effect>
+       <Projectile_Combat_Mod_Category_Mask> Fighter | Bomber </Projectile_Combat_Mod_Category_Mask>
+		<SFXEvent_Fire>Unit_MAL_Carbonite_Fire</SFXEvent_Fire>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Inspire_Fear_Local_Debuff_Mod_2">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Blast_Area_Range>300</Projectile_Blast_Area_Range>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_DAMAGE </Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>-0.15</Projectile_Combat_Mod_Value>
+		<Projectile_Combat_Mod_Effect>Particle_Local_Buff_Mod_2</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask> Fighter | Bomber </Projectile_Combat_Mod_Category_Mask>
+		<SFXEvent_Fire>Unit_MAL_Carbonite_Fire</SFXEvent_Fire>
+		
+	</Projectile>
+	
+	<Projectile Name="Proj_Inspire_Fear_Local_Debuff_Mod_3">
+		<Variant_Of_Existing_Type>Proj_Buff_Dummy_Mod</Variant_Of_Existing_Type>
+		
+		<Projectile_Blast_Area_Range>300</Projectile_Blast_Area_Range>
+		
+		<Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+          This duration should match the particle duration (if one is specified) -->
+        <Projectile_Combat_Mod_Duration>1</Projectile_Combat_Mod_Duration>
+		<Projectile_Combat_Mod_Value>-0.10</Projectile_Combat_Mod_Value>
+		<Projectile_Combat_Mod_Effect>Particle_Local_Buff_Mod_3</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask> Fighter | Bomber </Projectile_Combat_Mod_Category_Mask>
+		<SFXEvent_Fire>Unit_MAL_Carbonite_Fire</SFXEvent_Fire>
+		
+	</Projectile>
+
+	  Wraith Squadron's "hack" ability -->
+	<Projectile Name="Proj_Harmonic_Bomb_Wraith_Squadron">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_LASER_INVISIBLE.alo</Land_Model_Name>
+		<Space_Model_Name>W_LASER_INVISIBLE.alo</Space_Model_Name>
+		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+		<Max_Speed>0.0</Max_Speed>
+		<Damage_Type> Damage_Default </Damage_Type>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, BOMB</Behavior>
+		<Projectile_Category>STATIC_BOMB</Projectile_Category>
+		<Projectile_Blast_Area_Range>400.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>300.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Grenade_Sticks_On_Collision>no</Projectile_Grenade_Sticks_On_Collision>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Death_Explosions> Corrupt_Systems_Flare_Effect </Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Shields_Go_Down </Death_SFXEvent_Start_Die>
+		<AI_Combat_Power>100</AI_Combat_Power>
+		<Projectile_Blast_Area_Dropoff>False</Projectile_Blast_Area_Dropoff>
+		<Projectile_Blast_Area_Dropoff_Tiers>1</Projectile_Blast_Area_Dropoff_Tiers>
+		  detonation particle and SFX -->
+		<Projectile_Object_Detonation_Particle> Corrupt_Systems_Flare_Effect </Projectile_Object_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle> Corrupt_Systems_Flare_Effect </Projectile_Lifetime_Detonation_Particle>
+		<Projectile_SFXEvent_Detonate> Unit_Shields_Go_Down </Projectile_SFXEvent_Detonate>
+	</Projectile> 
+-->
+</Projectiles>

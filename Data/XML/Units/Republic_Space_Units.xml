@@ -3954,12 +3954,36 @@
 		<Icon_Name>I_BUTTON_DREADNAUGHT_RENDILI.TGA</Icon_Name>
 		<Text_ID>TEXT_UNIT_DREADNAUGHT_RENDILI</Text_ID>
 		<Encyclopedia_Text>
-		
+		TEXT_TOOLTIP_DREADNAUGHT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_DREADNAUGHT_HULL 
+		TEXT_TOOLTIP_DREADNAUGHT_SHIELD
+		TEXT_TOOLTIP_DREADNAUGHT_MOVE 
+		TEXT_TOOLTIP_DREADNAUGHT_SQUADRON_FOTR
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP1
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP2
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP3
+		TEXT_TOOLTIP_DREADNAUGHT_WEAP4 
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
 		</Encyclopedia_Text>
-
+        <Affiliation>Empire, Sector_Forces, Rebel</Affiliation>
 		<No_Colorization_Color>255, 255, 255 ,255</No_Colorization_Color>
 
-		<HardPoints></HardPoints>
+		<HardPoints>
+		    HP_Dreadnaught_Republic_Weapon_01,
+			HP_Dreadnaught_Republic_Weapon_02,
+			HP_Dreadnaught_Republic_Weapon_03,
+			HP_Dreadnaught_Republic_Weapon_04,
+			HP_Dreadnaught_Republic_Weapon_05,
+			HP_Dreadnaught_Republic_Weapon_06,
+			HP_Dreadnaught_Republic_Weapon_07,
+			HP_Dreadnaught_Republic_Weapon_08,
+			HP_Dreadnaught_Republic_Fighter_Bay,
+			HP_Dreadnaught_Hero_Extra,
+			HP_Dreadnaught_Republic_Engines
+			</HardPoints>
 
 		<Tech_Level>99</Tech_Level>
 	</SpaceUnit>	

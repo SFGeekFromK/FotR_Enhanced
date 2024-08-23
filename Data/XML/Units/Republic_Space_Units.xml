@@ -3948,6 +3948,21 @@
 		<Build_Limit_Current_Per_Player>50</Build_Limit_Current_Per_Player>
 
 	</SpaceUnit>
+
+	<SpaceUnit Name="Dreadnaught_Rendili">
+		<Variant_Of_Existing_Type>Dreadnaught</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_DREADNAUGHT_RENDILI.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_DREADNAUGHT_RENDILI</Text_ID>
+		<Encyclopedia_Text>
+		
+		</Encyclopedia_Text>
+
+		<No_Colorization_Color>255, 255, 255 ,255</No_Colorization_Color>
+
+		<HardPoints></HardPoints>
+
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>	
 	
 	<SpaceUnit Name="Acclamator_Assualt_Ship_I_OFC">
 		<Variant_Of_Existing_Type>Generic_Acclamator_Assault_Ship_I</Variant_Of_Existing_Type>

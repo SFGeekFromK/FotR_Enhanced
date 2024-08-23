@@ -1,3 +1,3 @@
 return {
-    Flags= {FULLINHERIT = "Charger_C70"}
+    Flags= {FULLINHERIT = "CHARGER_C70"}
 }

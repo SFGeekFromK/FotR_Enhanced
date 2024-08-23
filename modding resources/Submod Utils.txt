@@ -84,7 +84,13 @@ ORS Base Mod Extension Goals
 
 ORS Submod Plans
 	set in 20bby month 10 (Late Era 4)
-
+	starts with battle of bomis koori iv
+	outer rim sieges message pop up
+	phase 1 target pop up
+	bumped up starting units for separatist strongholds(mygeeto, saleucami, boz pity, sarrish,)
+	battle of rendili(jace dallin unlocked, rendili DHC defense fleet reward)
+	mission to maramere(kill durge)
+	battle of boz pity
 
 
 

@@ -59,6 +59,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("REPUBLIC_FIGHTER_ENABLE", self.Add_Fighter_Sets, self)
 	crossplot:subscribe("REPUBLIC_FIGHTER_DISABLE", self.Remove_Fighter_Sets, self)
 	-- FotR_Enhanced
+	crossplot:subscribe("DALLIN_UNLLOCK", self.Dallin_Unlock, self)
 	crossplot:subscribe("GEEN_UNLOCK", self.Geen_Unlock, self)
 	--crossplot:subscribe("FORRAL_RETIRE", self.Forral_Switch, self)
 	crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)
@@ -95,7 +96,6 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Block"] = {"BLOCK_ASSIGN",{"BLOCK_RETIRE","BLOCK_RETIRE2"},{"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, "Block"}
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
-			"Dallin",
 			"Maarisa",
 			"Grumby",
 			"Needa"
@@ -237,7 +237,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		total_slots = 3,			--Max slot number. Set at the start of the GC and never change
 		free_hero_slots = 3,		--Slots open to buy
 		vacant_hero_slots = 0,	    --Slots that need another action to move to free
-		vacant_limit = 8,           --Number of times a lost slot can be reopened
+		vacant_limit = 9,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
 			["Alpha"] = {"ALPHA_ASSIGN",{"ALPHA_RETIRE","ALPHA_RETIRE"},{"ALPHA_17","ALPHA_17_2"},"Alpha-17", ["Companies"] = {"ALPHA_17_TEAM","ALPHA_17_2_TEAM"}},
@@ -248,6 +248,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Omega"] = {"OMEGA_ASSIGN",{"OMEGA_RETIRE"},{"OMEGA_SQUAD"},"Omega Squad", ["Units"] = {{"DARMAN","ATIN","FI","NINER"}}},
 			["Ordo"] = {"ORDO_ASSIGN",{"ORDO_RETIRE","ORDO_RETIRE"},{"ORDO_SKIRATA","ORDO_SKIRATA2"},"Ordo Skirata", ["Companies"] = {"ORDO_SKIRATA_TEAM","ORDO_SKIRATA2_TEAM"}},
 			["Aden"] = {"ADEN_ASSIGN",{"ADEN_RETIRE","ADEN_RETIRE"},{"ADEN_SKIRATA","ADEN_SKIRATA2"},"A'den Skirata", ["Companies"] = {"ADEN_SKIRATA_TEAM","ADEN_SKIRATA2_TEAM"}},
+			["Prudii"] = {"PRUDII_ASSIGN",{"PRUDII_RETIRE","PRUDII_RETIRE"},{"PRUDII_SKIRATA","PRUDII_SKIRATA2"},"Prudii Skirata", ["Companies"] = {"PRUDII_SKIRATA_TEAM","PRUDII_SKIRATA2_TEAM"}},
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Alpha",
@@ -258,6 +259,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			"Omega",
 			"Ordo",
 			"Aden",
+			"Prudii"
 		},
 		story_locked_list = {},--Heroes not accessible, but able to return with the right conditions
 		active_player = Find_Player("Empire"),
@@ -1054,4 +1056,8 @@ function Forral_Check()
 		Clear_Fighter_Hero("BYTHEN_FORRAL_SQUADRON")
 		RepublicHeroes:Remove_Fighter_Set("Bythen_Forral_Location_Set")
 	end
+end
+
+function RepublicHeroes:Dallin_Unlock()
+	Handle_Hero_Add("Dallin", admiral_data)
 end

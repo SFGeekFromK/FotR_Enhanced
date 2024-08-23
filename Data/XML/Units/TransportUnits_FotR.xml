@@ -1739,6 +1739,17 @@
 		<Variant_Of_Existing_Type>CIS_Sheathipede_Landing_Craft_Landing</Variant_Of_Existing_Type>
 	</TransportUnit>
 
+	<!-- Prudii Skirata -->
+
+	<TransportUnit Name="Nu_Shuttle_Landing_Craft_Prudii">
+		<Variant_Of_Existing_Type>Nu_Shuttle_Landing_Craft</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Nu_Shuttle_Landing_Craft_Prudii_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="Nu_Shuttle_Landing_Craft_Prudii_Landing">
+		<Variant_Of_Existing_Type>Nu_Shuttle_Landing_Craft_Landing</Variant_Of_Existing_Type>
+	</TransportUnit>
+
 	<!-- Order 65 Senator Heroes -->
 
 	<!--

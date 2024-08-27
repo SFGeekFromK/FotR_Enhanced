@@ -42,6 +42,9 @@ null class arcs
 
 update submod changes.txt
 
+combat octuptarra droid (size similar to crab droid, yellow lasers, faster movement)
+magna tri droid missile variant(late war feature)
+
 ------- end --------
 
 

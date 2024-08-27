@@ -2542,6 +2542,14 @@
 	</Container>
 
 
+	<GroundInfantry Name="Combat_Tri">
+	
+	</GroundInfantry>
+
+	<GroundCompany Name="Combata_Tri_Company">
+		
+	</GroundCompany>
+
 	<GroundInfantry Name="Dwarf_Spider_Droid_Spawner">
 		<Variant_Of_Existing_Type>Dwarf_Spider_Droid</Variant_Of_Existing_Type>
 
@@ -2997,7 +3005,7 @@
 		<Cheap_Bribe_Cost>0</Cheap_Bribe_Cost>
 		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
 		
-	<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>225</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>

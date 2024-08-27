@@ -1207,7 +1207,7 @@
 		</Unit_Abilities_Data>
 		<Maintenance_Cost>0.0</Maintenance_Cost>
 		
-	<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>590</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>22</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
@@ -3375,6 +3375,26 @@
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 	</GroundCompany>
 
+	<GroundVehicle Name="Magna_Tri_Missile">
+		<Variant_Of_Existing_Type>Magna_Tri</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_MAGNATRI_MISSILE</Text_ID>
+		<Encyclopedia_Text>
+		
+		</Encyclopedia_Text>
+		<Icon_Name></Icon_Name>
+
+		<HardPoints>HP_MagnaTri,</HardPoints>
+
+		<AI_Combat_Power></AI_Combat_Power>
+
+	</GroundVehicle>
+
+	<GroundCompany Name="Magna_Missile_Company">
+		<Variant_Of_Existing_Type>Magna_Company</Variant_Of_Existing_Type>
+
+		<Company_Units>Magna_Tri_Missile, Magna_Tri_Missile</Company_Units>
+		<Tech_Level></Tech_Level>
+	</GroundCompany>
 	
     <GroundVehicle Name="Super_Tank">
 

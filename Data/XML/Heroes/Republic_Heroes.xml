@@ -3904,7 +3904,7 @@
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
-		<Icon_Name>i_button_autem.tga</Icon_Name>
+		<Icon_Name>i_button_autem_submod.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
 
 		<Text_ID>TEXT_HERO_AUTEM</Text_ID>
@@ -4008,7 +4008,7 @@
 		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
 
 		<Text_ID>TEXT_HERO_AUTEM</Text_ID>
-		<Icon_Name>i_button_autem_command.tga</Icon_Name>
+		<Icon_Name>i_button_autem_submod_command.tga</Icon_Name>
 
 		<Affiliation>Empire</Affiliation>
 
@@ -4030,7 +4030,7 @@
 		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
 
 		<Text_ID>TEXT_HERO_AUTEM</Text_ID>
-		<Icon_Name>i_button_autem_retire.tga</Icon_Name>
+		<Icon_Name>i_button_autem_submod_retire.tga</Icon_Name>
 
 		<Tech_Level>0</Tech_Level>
 

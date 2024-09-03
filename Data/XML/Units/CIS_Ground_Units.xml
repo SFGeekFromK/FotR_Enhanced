@@ -3377,20 +3377,39 @@
 
 	<GroundVehicle Name="Magna_Tri_Missile">
 		<Variant_Of_Existing_Type>Magna_Tri</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_MAGNATRI_MISSILE</Text_ID>
 		<Encyclopedia_Text>
-		
+		TEXT_TOOLTIP_MAGNATRI 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_MAGNATRI_COMPANY
+		TEXT_TOOLTIP_MAGNATRI_HEALTH
+		TEXT_TOOLTIP_MAGNATRI_MOVE 
+		TEXT_TOOLTIP_MAGNATRI_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_MAGNATRI_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
 		</Encyclopedia_Text>
-		<Icon_Name></Icon_Name>
+		<Icon_Name>i_button_magnatri_missile.tga</Icon_Name>
 
-		<HardPoints>HP_MagnaTri,</HardPoints>
+		<HardPoints>HP_MagnaTri, HP_MagnaTri_Missile</HardPoints>
 
 		<AI_Combat_Power></AI_Combat_Power>
 
+		<Unit_Abilities_Data>
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_WEAPON_SWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_MAGNATRI_SWAP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_SWAP_WEAPONS.TGA</Alternate_Icon_Name>
+				<Targeting_Max_Attack_Distance>375</Targeting_Max_Attack_Distance>
+				<Recharge_Seconds> 9.0 </Recharge_Seconds>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
 	</GroundVehicle>
 
 	<GroundCompany Name="Magna_Missile_Company">
 		<Variant_Of_Existing_Type>Magna_Company</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_MAGNATRI_MISSILE</Text_ID>
 
 		<Company_Units>Magna_Tri_Missile, Magna_Tri_Missile</Company_Units>
 		<Tech_Level></Tech_Level>

@@ -2542,13 +2542,15 @@
 	</Container>
 
 
+	<!--
 	<GroundInfantry Name="Combat_Tri">
-	
+		<Text_ID></Text_ID>
 	</GroundInfantry>
 
 	<GroundCompany Name="Combata_Tri_Company">
 		
 	</GroundCompany>
+	-->
 
 	<GroundInfantry Name="Dwarf_Spider_Droid_Spawner">
 		<Variant_Of_Existing_Type>Dwarf_Spider_Droid</Variant_Of_Existing_Type>

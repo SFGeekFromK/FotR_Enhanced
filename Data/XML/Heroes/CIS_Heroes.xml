@@ -3424,7 +3424,7 @@
 	</UniqueUnit>
 	
 	<UniqueUnit Name="Mellor_Yago_Rendili_Reign">
-		<Variant_Of_Existing_Type>Dreadnaught</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Dreadnaught_Rendili</Variant_Of_Existing_Type>
 		<Icon_Name>I_BUTTON_MELLOR_YAGO.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
 		<Is_Named_Hero>Yes</Is_Named_Hero>	

@@ -3969,7 +3969,8 @@
 			TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
 			TEXT_TOOLTIP_CAPABILITY_BOARDABLE
 		</Encyclopedia_Text>
-        <Affiliation>Empire, Sector_Forces</Affiliation>
+        <Affiliation>Sector_Forces</Affiliation>
+
 		<No_Colorization_Color>255, 255, 255 ,255</No_Colorization_Color>
 
 		<HardPoints>
@@ -3977,8 +3978,8 @@
 			HP_Dreadnaught_Republic_Weapon_05, HP_Dreadnaught_Republic_Weapon_06, HP_Dreadnaught_Republic_Weapon_07, HP_Dreadnaught_Republic_Weapon_08,
 			HP_Dreadnaught_Republic_Fighter_Bay, HP_Dreadnaught_Hero_Extra, HP_Dreadnaught_Republic_Engines
 		</HardPoints>
-
-		<Tech_Level>99</Tech_Level>
+		<Required_Planets>Rendili</Required_Planets>
+		<Tech_Level>0</Tech_Level>
 	</SpaceUnit>	
 	
 	<SpaceUnit Name="Acclamator_Assualt_Ship_I_OFC">

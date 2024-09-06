@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<Projectiles>
+
+	<!-- ************************************************************************************** -->
+	<!-- ********************                    Missiles                        ************** -->
+	<!-- ************************************************************************************** -->
+
+	<!--<Projectile Name="Proj_Heavy_Concussion_Missile">
+		<Variant_Of_Existing_Type>Proj_Concussion_Missile</Variant_Of_Existing_Type>
+		<Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+		<Scale_Factor>0.15</Scale_Factor>
+	</Projectile>
+
+	<Projectile Name="Proj_Proton_Missile">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>p_rocket.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type>DamageL_ProtonWarhead</Damage_Type>
+		<Max_Speed>9.0</Max_Speed>
+		<Max_Rate_Of_Turn>1.4</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Missile</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>3.0</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>0.0</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>0.0</Projectile_Rocket_Straight_Distance>
+		<Projectile_Target_Point_On_Terrain>False</Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>800.0</Projectile_Max_Flight_Distance>
+		<Explode_When_Reached_Target_Radius>Yes</Explode_When_Reached_Target_Radius>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Blast_Area_Range>20.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>15.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Object_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Rocket_Explosion_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Rocket_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle />
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor>Unit_Anti_Air_Small_Explosion_SFX</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<AI_Combat_Power>15.0</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_Heavy_Proton_Missile">
+		<Variant_Of_Existing_Type>Proj_Proton_Missile</Variant_Of_Existing_Type>
+		<Land_Model_Name>w_proton_projectile.alo</Land_Model_Name>
+		<Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+		<Projectile_Blast_Area_Range>25.0</Projectile_Blast_Area_Range>
+		<Scale_Factor>1.0</Scale_Factor>
+		<AI_Combat_Power>20</AI_Combat_Power>
+	</Projectile>
+
+	<Projectile Name="Proj_Proton_Missile_Hailfire">
+		<Variant_Of_Existing_Type>Proj_Proton_Missile</Variant_Of_Existing_Type>
+		<Land_Model_Name>Proj_FailRocket.ALO</Land_Model_Name>
+		<Scale_Factor>0.075</Scale_Factor>
+		<Damage_Type> DamageL_ProtonWarhead </Damage_Type>
+		<Max_Speed>8.0</Max_Speed>
+		<Max_Rate_Of_Turn>0</Max_Rate_Of_Turn>
+		<Projectile_Category>MPTL_Rocket</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>30</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>40</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>0</Projectile_Rocket_Straight_Distance>
+		<Explode_When_Reached_Target_Radius> True </Explode_When_Reached_Target_Radius>
+		<Projectile_Target_Point_On_Terrain> True </Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>720.0</Projectile_Max_Flight_Distance>
+		<Projectile_Max_Scan_Range>700.0</Projectile_Max_Scan_Range>
+	</Projectile>
+
+	<Projectile Name="Proj_Proton_Missile_MPTL">
+		<Variant_Of_Existing_Type>Proj_Proton_Missile</Variant_Of_Existing_Type>
+		<Projectile_Category>MPTL_Rocket</Projectile_Category>
+		<Max_Speed>18.0</Max_Speed>
+		<Max_Rate_Of_Turn>2.8</Max_Rate_Of_Turn>
+		<Projectile_Rocket_Curve_Distance>50</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>7</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>100</Projectile_Rocket_Straight_Distance>
+		<Explode_When_Reached_Target_Radius> True </Explode_When_Reached_Target_Radius>
+		<Projectile_Target_Point_On_Terrain> True </Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>3600.0</Projectile_Max_Flight_Distance>
+	</Projectile>
+
+	<Projectile Name="Proj_Flak_M`issile">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>p_rocket_white.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Damage_Type>DamageL_Flak</Damage_Type>
+		<Max_Speed>15.0</Max_Speed>
+		<Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Category>Missile</Projectile_Category>
+		<Projectile_Rocket_Curve_Distance>3.0</Projectile_Rocket_Curve_Distance>
+		<Projectile_Rocket_Curve_Offset>0.0</Projectile_Rocket_Curve_Offset>
+		<Projectile_Rocket_Straight_Distance>0.0</Projectile_Rocket_Straight_Distance>
+		<Projectile_Target_Point_On_Terrain>False</Projectile_Target_Point_On_Terrain>
+		<Projectile_Max_Flight_Distance>1800.0</Projectile_Max_Flight_Distance>
+		<Explode_When_Reached_Target_Radius>Yes</Explode_When_Reached_Target_Radius>
+		<Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Blast_Area_Range>25.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>15.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Object_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Rocket_Explosion_Land</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle>Rocket_Explosion_Land</Projectile_Ground_Detonation_Particle>
+		<Projectile_Lifetime_Detonation_Particle>Rocket_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+		<Projectile_Absorbed_By_Shields_Particle />
+		<Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor>Unit_Anti_Air_Small_Explosion_SFX</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<AI_Combat_Power>15.0</AI_Combat_Power>
+	</Projectile>-->
+
+</Projectiles>

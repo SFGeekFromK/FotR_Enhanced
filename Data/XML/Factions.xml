@@ -145,6 +145,7 @@
 		Auxiliary_Lucrehulk,
 		Storm_Fleet_Destroyer,
 		<!--Submod Units/Heores-->
+		Dreadnaught_Rendili,
 		TJ912_Recusant,
 		TM171_DH_Omni,
 		<!--Heroes-->
@@ -897,11 +898,12 @@
 		Invincible_Cruiser,
 		Generic_Tagge_Battlecruiser,
 		<!--Submod Units/Heroes-->
+		Dreadnaught_Rendili,
 		Venator_OFC,
 		Venator_SPHA_T,
-		Needa_Integrity,
 		Block_Negotiator,
 		Block_Vigilance,
+		Needa_Integrity,
 		Yularen_Resolute_SPHAT,
 		Vader_Exactor,
 		<!--Heroes-->
@@ -4767,6 +4769,8 @@
 			Generic_Gladiator,
 			Invincible_Cruiser,
 			Generic_Tagge_Battlecruiser,		
+			<!--Submod Units/Heroes-->
+			Dreadnaught_Rendili,
 		</Bombardment_Required_Orbital_Ships>
 		<Bombardment_Projectile> Proj_Republic_Bombardment_Turbolaser </Bombardment_Projectile>
 		<Bombardment_Particle> Bombard_Particle_Effect </Bombardment_Particle>

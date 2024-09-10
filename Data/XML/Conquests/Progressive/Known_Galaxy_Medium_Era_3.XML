@@ -13,6 +13,7 @@
     <Camera_Shift_X>0.0</Camera_Shift_X>
     <Camera_Shift_Y>0.0</Camera_Shift_Y>
     <Camera_Distance>1000.0</Camera_Distance>
+    
     <Locations>
 			Agamar,
 			Alderaan,
@@ -120,7 +121,8 @@
 			Yavin,
 			Ylesia,
 			Zanbar,
-</Locations>
+    </Locations>
+    
     <Trade_Routes>
 			Agamar_Dantooine,
 			Agamar_Dathomir,
@@ -322,7 +324,8 @@
 			Talcene_Trandosha,
 			Talcene_Zanbar,
 			Tibrin_YagDhul,
-</Trade_Routes>
+    </Trade_Routes>
+    
     <Starting_Active_Player>Empire</Starting_Active_Player>
     <AI_Player_Control>Banking_Clan, None</AI_Player_Control>
     <AI_Player_Control>Chiss, None</AI_Player_Control>
@@ -362,10 +365,14 @@
     <Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
     <Human_Victory_Conditions>Galactic_All_Planets_Controlled</Human_Victory_Conditions>
     <AI_Victory_Conditions>Galactic_All_Planets_Controlled</AI_Victory_Conditions>
-    <Story_Name>Rebel, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_CIS.xml,
-Empire, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Republic.xml,
-Hutt_Cartels, Conquests\Story_Plots_Generic_Hutt_Cartels.xml,
-Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</Story_Name>
+    
+    <Story_Name>
+      Rebel, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_CIS.xml,
+      Empire, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Republic.xml,
+      Hutt_Cartels, Conquests\Story_Plots_Generic_Hutt_Cartels.xml,
+      Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml
+    </Story_Name>
+    
     <Starting_Credits>Banking_Clan, 10000</Starting_Credits>
     <Starting_Tech_Level>Banking_Clan, 1</Starting_Tech_Level>
     <Max_Tech_Level>Banking_Clan, 5</Max_Tech_Level>
@@ -770,6 +777,7 @@ Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</S
     <Starting_Forces>Hutt_Cartels, Nar_Hekka, Generate_Force</Starting_Forces>
     <Starting_Forces>Trade_Federation, Pantora, Generate_Force</Starting_Forces>
   </Campaign>
+  
   <Campaign Name="Known_Galaxy_Medium_Era_3_Hutt_Cartels">
     <Campaign_Set>Known_Galaxy_Medium_Era_3</Campaign_Set>
     <Sort_Order>003</Sort_Order>
@@ -890,7 +898,8 @@ Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</S
 			Yavin,
 			Ylesia,
 			Zanbar,
-</Locations>
+    </Locations>
+    
     <Trade_Routes>
 			Agamar_Dantooine,
 			Agamar_Dathomir,
@@ -1092,7 +1101,8 @@ Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</S
 			Talcene_Trandosha,
 			Talcene_Zanbar,
 			Tibrin_YagDhul,
-</Trade_Routes>
+    </Trade_Routes>
+    
     <Starting_Active_Player>Hutt_Cartels</Starting_Active_Player>
     <AI_Player_Control>Banking_Clan, None</AI_Player_Control>
     <AI_Player_Control>Chiss, None</AI_Player_Control>
@@ -1132,10 +1142,13 @@ Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</S
     <Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
     <Human_Victory_Conditions>Galactic_All_Planets_Controlled</Human_Victory_Conditions>
     <AI_Victory_Conditions>Galactic_All_Planets_Controlled</AI_Victory_Conditions>
+    
     <Story_Name>Rebel, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_CIS.xml,
-Empire, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Republic.xml,
-Hutt_Cartels, Conquests\Story_Plots_Generic_Hutt_Cartels.xml,
-Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</Story_Name>
+      Empire, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Republic.xml,
+      Hutt_Cartels, Conquests\Story_Plots_Generic_Hutt_Cartels.xml,
+      Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml
+    </Story_Name>
+    
     <Starting_Credits>Banking_Clan, 10000</Starting_Credits>
     <Starting_Tech_Level>Banking_Clan, 1</Starting_Tech_Level>
     <Max_Tech_Level>Banking_Clan, 5</Max_Tech_Level>
@@ -1540,6 +1553,7 @@ Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</S
     <Starting_Forces>Hutt_Cartels, Nar_Hekka, Generate_Force</Starting_Forces>
     <Starting_Forces>Trade_Federation, Pantora, Generate_Force</Starting_Forces>
   </Campaign>
+  
   <Campaign Name="Known_Galaxy_Medium_Era_3_Rebel">
     <Campaign_Set>Known_Galaxy_Medium_Era_3</Campaign_Set>
     <Sort_Order>003</Sort_Order>
@@ -1660,7 +1674,8 @@ Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</S
 			Yavin,
 			Ylesia,
 			Zanbar,
-</Locations>
+    </Locations>
+    
     <Trade_Routes>
 			Agamar_Dantooine,
 			Agamar_Dathomir,
@@ -1862,7 +1877,8 @@ Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</S
 			Talcene_Trandosha,
 			Talcene_Zanbar,
 			Tibrin_YagDhul,
-</Trade_Routes>
+    </Trade_Routes>
+    
     <Starting_Active_Player>Rebel</Starting_Active_Player>
     <AI_Player_Control>Banking_Clan, None</AI_Player_Control>
     <AI_Player_Control>Chiss, None</AI_Player_Control>
@@ -1902,10 +1918,14 @@ Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</S
     <Markup_Filename>Warlords, DefaultGalacticHints</Markup_Filename>
     <Human_Victory_Conditions>Galactic_All_Planets_Controlled</Human_Victory_Conditions>
     <AI_Victory_Conditions>Galactic_All_Planets_Controlled</AI_Victory_Conditions>
-    <Story_Name>Rebel, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_CIS.xml,
-Empire, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Republic.xml,
-Hutt_Cartels, Conquests\Story_Plots_Generic_Hutt_Cartels.xml,
-Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</Story_Name>
+    
+    <Story_Name>
+      Rebel, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_CIS.xml,
+      Empire, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Republic.xml,
+      Hutt_Cartels, Conquests\Story_Plots_Generic_Hutt_Cartels.xml,
+      Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml
+    </Story_Name>
+    
     <Starting_Credits>Banking_Clan, 10000</Starting_Credits>
     <Starting_Tech_Level>Banking_Clan, 1</Starting_Tech_Level>
     <Max_Tech_Level>Banking_Clan, 5</Max_Tech_Level>

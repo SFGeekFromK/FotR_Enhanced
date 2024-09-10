@@ -3424,7 +3424,7 @@
 		</Encyclopedia_Text>
 
 		<Company_Units>Magna_Tri_Missile, Magna_Tri_Missile</Company_Units>
-		<Tech_Level></Tech_Level>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 	</GroundCompany>
 	
     <GroundVehicle Name="Super_Tank">

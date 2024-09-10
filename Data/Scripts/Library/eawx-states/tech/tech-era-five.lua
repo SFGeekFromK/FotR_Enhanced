@@ -41,7 +41,8 @@ return {
 				"Pursuer_Enforcement_Ship_Squadron",
 				"Battleship_Lucrehulk",
 				"HMP_Group",
-                "Destroyer_Droid_II_Company"
+                "Destroyer_Droid_II_Company",
+                "Magna_Missile_Company"
             })
 
 			UnitUtil.SetLockList("BANKING_CLAN", {

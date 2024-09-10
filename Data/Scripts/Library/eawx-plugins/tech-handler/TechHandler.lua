@@ -95,8 +95,8 @@ function TechManager:new(galactic_conquest, human_player, planets, unlocktech)
 		self.YearTwoCIS = GenericResearch(self.galactic_conquest,
 			"YEAR_TWO_CIS",
 			"Template_Research_Dummy", {"Rebel"},
-			{"HMP_Group", "Destroyer_Droid_II_Company"},
-			{},
+			{"HMP_Group", "Destroyer_Droid_II_Company", "Magna_Missile_Company"},
+			{"Magna_Company"},
 			{},"Raxus_Second",
 			{"YEAR_TWO_CORPS_FINISHED"})
 

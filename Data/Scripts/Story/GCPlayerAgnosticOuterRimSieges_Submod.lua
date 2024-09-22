@@ -62,7 +62,7 @@ function Begin_GC(message)
 			id = "DEFAULT",
             year_start = 20,
             year_month = 8,
-            unlocktech = true,
+            unlocktech = false,
             is_generated = false,
             statemachine_dsl_config = {
                 transition_policy_factory = EawXTransitionPolicyFactory,

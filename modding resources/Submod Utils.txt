@@ -10,6 +10,8 @@ Hutt_HuttGuard_NoHelmet.ALO
 Hutt_HuttGuard.ALO
 
 ------Todo Lists------
+finish imperialized republic heroes scripts
+
 ORS Planet trade routes, campaign editing etc 
 
 ARC170 Ground fix (

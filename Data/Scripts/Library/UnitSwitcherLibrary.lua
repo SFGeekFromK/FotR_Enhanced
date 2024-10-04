@@ -28,8 +28,8 @@ function Get_Swap_Entry(upgrade_object)
 		["GRIEVOUS_TEAM_MALEVOLENCE_RECUSANT"] = {"Grievous_Recusant","Grievous_Team_Malevolence"},
 		["DUMMY_RESEARCH_MALEVOLENCE_2_RECUSANT"] = {"Grievous_Recusant","Grievous_Team_Malevolence_2"},
 		["DUMMY_RESEARCH_MALEVOLENCE_2_MUNIFICENT"] = {"Grievous_Munificent","Grievous_Team_Malevolence_2"},
-		["YULAREN_RESOLUTE_UPGRADE_INVINCIBLE"] = {"Yularen_Resolute","Yularen_Invincible"},
-		["YULAREN_INTEGRITY_UPGRADE_INVINCIBLE"] = {"Yularen_Integrity","Yularen_Invincible"},
+		--["YULAREN_RESOLUTE_UPGRADE_INVINCIBLE"] = {"Yularen_Resolute","Yularen_Invincible"},
+		--["YULAREN_INTEGRITY_UPGRADE_INVINCIBLE"] = {"Yularen_Integrity","Yularen_Invincible"},
 		["MAARISA_RETALIATION_UPGRADE"] = {"Maarisa_Captor","Maarisa_Retaliation"},
 		["TALLON_BATTALION_UPGRADE"] = {"Tallon_Sundiver","Tallon_Battalion"},
 		["TARKIN_EXECUTRIX_UPGRADE"] = {"Tarkin_Venator","Tarkin_Executrix"},
@@ -42,8 +42,8 @@ function Get_Swap_Entry(upgrade_object)
 		["SUPPORT_DEATH_WATCH"] = {nil,{"Pre_Vizsla_Team", "Bo_Katan_Team", "Lorka_Gedyc_Team", "Mandalorian_Soldier_Company", "Mandalorian_Commando_Company"}},
 		["SHADOW_COLLECTIVE"] = {nil,{"Darth_Maul_Team", "Savage_Opress_Team", "Mandalorian_Commando_Company", "Mandalorian_Commando_Company"}},
 		--FotR_Enhanced
-		["YULAREN_RESOLUTE_UPGRADE_RESOLUTE_SPHAT"] = {"Yularen_Resolute","Yularen_Resolute_SPHAT"},
-		["YULAREN_RESOLUTE_SPHAT_UPGRADE_INVINCIBLE"] = {"Yularen_Resolute_SPHAT","Yularen_Invincible"},
+		--["YULAREN_RESOLUTE_UPGRADE_RESOLUTE_SPHAT"] = {"Yularen_Resolute","Yularen_Resolute_SPHAT"},
+		--["YULAREN_RESOLUTE_SPHAT_UPGRADE_INVINCIBLE"] = {"Yularen_Resolute_SPHAT","Yularen_Invincible"},
 		["OFC_SPHA_T_REFIT"] = {"Venator_OFC","Venator_SPHA_T",["location_check"] = true},
 	}
 	return swaps[upgrade_object]

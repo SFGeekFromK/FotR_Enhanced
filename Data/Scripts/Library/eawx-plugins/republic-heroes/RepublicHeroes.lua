@@ -26,6 +26,8 @@ require("eawx-util/StoryUtil")
 require("HeroSystem")
 require("SetFighterResearch")
 
+UnitUtil = require("eawx-util/UnitUtil")
+
 RepublicHeroes = class()
 
 function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_clones_p2_disabled)
@@ -71,29 +73,29 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_limit = 22,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
 		initialized = false,
 		full_list = { --All options for reference operations
-			["Yularen"] = --[[FotR_Enhanced Resolute sphat Version added]]{"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3","YULAREN_RETIRE_1"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT"},"Wulff Yularen"},
-			["Wieler"] = {"WIELER_ASSIGN",{"WIELER_RETIRE"},{"WIELER_RESILIENT"},"Wieler"},
-			["Coburn"] = {"COBURN_ASSIGN",{"COBURN_RETIRE"},{"COBURN_TRIUMPHANT"},"Barton Coburn"},
-			["Kilian"] = {"KILIAN_ASSIGN",{"KILIAN_RETIRE"},{"KILIAN_ENDURANCE"},"Shoan Kilian"},
-			["Tenant"] = {"TENANT_ASSIGN",{"TENANT_RETIRE"},{"TENANT_VENATOR"},"Nils Tenant"},
-			["Dao"] = {"DAO_ASSIGN",{"DAO_RETIRE"},{"DAO_VENATOR"},"Dao"},
-			["Denimoor"] = {"DENIMOOR_ASSIGN",{"DENIMOOR_RETIRE"},{"DENIMOOR_TENACIOUS"},"Denimoor"},
-			["Dron"] = {"DRON_ASSIGN",{"DRON_RETIRE"},{"DRON_VENATOR"},"Dron"},
-			["Screed"] = {"SCREED_ASSIGN",{"SCREED_RETIRE"},{"SCREED_ARLIONNE"},"Terrinald Screed"},
-			["Dodonna"] = {"DODONNA_ASSIGN",{"DODONNA_RETIRE"},{"DODONNA_ARDENT"},"Jan Dodonna"},
-			["Parck"] = {"PARCK_ASSIGN",{"PARCK_RETIRE"},{"PARCK_STRIKEFAST"},"Voss Parck"},
-			["Pellaeon"] = {"PELLAEON_ASSIGN",{"PELLAEON_RETIRE"},{"PELLAEON_LEVELER"},"Gilad Pellaeon"},
-			["Tallon"] = {"TALLON_ASSIGN",{"TALLON_RETIRE", "TALLON_RETIRE2"},{"TALLON_SUNDIVER", "TALLON_BATTALION"},"Adar Tallon"},
+			["Yularen"] = --[[FotR_Enhanced Resolute sphat Version added]]{"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3","YULAREN_RETIRE_1"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT","YULRAEN_INTEGRITY_IMP"},"Wulff Yularen"},
+			["Wieler"] = {"WIELER_ASSIGN",{"WIELER_RETIRE","WIELER_RETIRE_IMP"},{"WIELER_RESILIENT","WIELER_RESILIENT_IMP"},"Wieler"},
+			["Coburn"] = {"COBURN_ASSIGN",{"COBURN_RETIRE","COBURN_RETIRE_IMP"},{"COBURN_TRIUMPHANT","COBURN_TRIUMPHANT_IMP"},"Barton Coburn"},
+			["Kilian"] = {"KILIAN_ASSIGN",{"KILIAN_RETIRE","KILIAN_RETIRE_IMP"},{"KILIAN_ENDURANCE","KILIAN_ENDURANCE_IMP"},"Shoan Kilian"},
+			["Tenant"] = {"TENANT_ASSIGN",{"TENANT_RETIRE","TENANT_RETIRE_IMP"},{"TENANT_VENATOR","TENANT_VENATOR_IMP"},"Nils Tenant"},
+			["Dao"] = {"DAO_ASSIGN",{"DAO_RETIRE","DAO_RETIRE_IMP"},{"DAO_VENATOR","DAO_VENATOR_IMP"},"Dao"},
+			["Denimoor"] = {"DENIMOOR_ASSIGN",{"DENIMOOR_RETIRE","DENIMOOR_RETIRE_IMP"},{"DENIMOOR_TENACIOUS","DENIMOOR_TENACIOUS_IMP"},"Denimoor"},
+			["Dron"] = {"DRON_ASSIGN",{"DRON_RETIRE","DRON_RETIRE_IMP"},{"DRON_VENATOR","DRON_VENATOR_IMP"},"Dron"},
+			["Screed"] = {"SCREED_ASSIGN",{"SCREED_RETIRE","SCREED_RETIRE_IMP"},{"SCREED_ARLIONNE","SCREED_ARLIONNE_IMP"},"Terrinald Screed"},
+			["Dodonna"] = {"DODONNA_ASSIGN",{"DODONNA_RETIRE","DODONNA_RETIRE_IMP"},{"DODONNA_ARDENT","DODONNA_ARDENT_IMP"},"Jan Dodonna"},
+			["Parck"] = {"PARCK_ASSIGN",{"PARCK_RETIRE","PARCK_RETIRE_IMP"},{"PARCK_STRIKEFAST","PARCK_STRIKEFAST_IMP"},"Voss Parck"},
+			["Pellaeon"] = {"PELLAEON_ASSIGN",{"PELLAEON_RETIRE","PELLAEON_RETIRE_IMP"},{"PELLAEON_LEVELER","PELLAEON_LEVELER_IMP"},"Gilad Pellaeon"},
+			["Tallon"] = {"TALLON_ASSIGN",{"TALLON_RETIRE", "TALLON_RETIRE2", "TALLON_RETIRE_IMP"},{"TALLON_SUNDIVER","TALLON_BATTALION","TALLON_SUNDIVER_IMP"},"Adar Tallon"},
 			["Dallin"] = {"DALLIN_ASSIGN",{"DALLIN_RETIRE"},{"DALLIN_KEBIR"},"Jace Dallin"},
 			["Autem"] = {"AUTEM_ASSIGN",{"AUTEM_RETIRE"},{"AUTEM_VENATOR"},"Sagoro Autem"},
-			["Forral"] = {"FORRAL_ASSIGN",{"FORRAL_RETIRE"},{"FORRAL_VENSENOR"},"Bythen Forral"},
-			["Maarisa"] = {"MAARISA_ASSIGN",{"MAARISA_RETIRE", "MAARISA_RETIRE2"},{"MAARISA_CAPTOR", "MAARISA_RETALIATION"},"Maarisa Zsinj"},
-			["Grumby"] = {"GRUMBY_ASSIGN",{"GRUMBY_RETIRE"},{"GRUMBY_INVINCIBLE"},"Jona Grumby"},
-			["Baraka"] = {"BARAKA_ASSIGN",{"BARAKA_RETIRE"},{"BARAKA_NEXU"},"Arikakon Baraka"},
-			["Martz"] = {"MARTZ_ASSIGN",{"MARTZ_RETIRE"},{"MARTZ_PROSECUTOR"},"Stinnet Martz"},
+			["Forral"] = {"FORRAL_ASSIGN",{"FORRAL_RETIRE","FORRAL_RETIRE_IMP"},{"FORRAL_VENSENOR","FORRAL_VENSENOR_IMP"},"Bythen Forral"},
+			["Maarisa"] = {"MAARISA_ASSIGN",{"MAARISA_RETIRE", "MAARISA_RETIRE2", "MAARISA_RETIRE_IMP", "MAARISA_RETIRE2_IMP"},{"MAARISA_CAPTOR","MAARISA_RETALIATION","MAARISA_RETALIATION_IMP"},"Maarisa Zsinj"},
+			["Grumby"] = {"GRUMBY_ASSIGN",{"GRUMBY_RETIRE", "GRUMBY_RETIRE_IMP"},{"GRUMBY_INVINCIBLE","GRUMBY_INVINCIBLE_IMP"},"Jona Grumby"},
+			["Baraka"] = {"BARAKA_ASSIGN",{"BARAKA_RETIRE", "BARAKA_RETIRE_IMP"},{"BARAKA_NEXU","BARAKA_NEXU_IMP"},"Arikakon Baraka"},
+			["Martz"] = {"MARTZ_ASSIGN",{"MARTZ_RETIRE"},{"MARTZ_PROSECUTOR","MARTZ_PROSECUTOR_IMP"},"Stinnet Martz"},
 			-- FotR_Enhanced
-			["Needa"] = {"NEEDA_ASSIGN",{"NEEDA_RETIRE"},{"NEEDA_INTEGRITY"},"Lorth Needa"},
-			["Block"] = {"BLOCK_ASSIGN",{"BLOCK_RETIRE","BLOCK_RETIRE2"},{"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, "Block"}
+			["Needa"] = {"NEEDA_ASSIGN",{"NEEDA_RETIRE", "NEEDA_RETIRE_IMP"},{"NEEDA_INTEGRITY",},"Lorth Needa"},
+			["Block"] = {"BLOCK_ASSIGN",{"BLOCK_RETIRE","BLOCK_RETIRE2", "BLOCK_RETIRE_IMP", "BLOCK_RETIRE2_IMP"},{"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE","BLOCK_NEGOTIATOR_IMP","BLOCK_VIGILANCE_IMP"}, "Block"}
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Maarisa",
@@ -359,6 +361,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	Venator_init = false
 
 	Forral_Checks = 0
+
+	Decolor_Table = {admiral_data, moff_data, general_data}
 end
 
 function RepublicHeroes:on_production_finished(planet, object_type_name)--object_type_name, owner)
@@ -911,6 +915,21 @@ function RepublicHeroes:Order_66_Handler()
 	Clear_Fighter_Hero("IMA_GUN_DI_DELTA")
 	Decrement_Hero_Amount(10, council_data)
 	Forral_Check()
+	for i, Hero_Table in pairs(Decolor_Table) do
+		local unlocked_list = Hero_Table.full_list
+
+		for j, Hero_id in pairs(unlocked_list) do
+			local Hero_Entry = Hero_Table.full_list[Hero_id]
+			local Hero_Unit = Hero_Entry[3][Hero_Entry.unit_id]
+
+			local Hero_Rep = Find_Object_Type(Hero_Unit)
+			local Hero_Imperial = Hero_Unit[3][-1]
+			if Hero_Rep then
+				UnitUtil.ReplaceAtLocation(Hero_Rep, Hero_Imperial)
+			end
+			set_unit_index(Hero_id, -1, Hero_Table)
+		end
+	end
 end
 
 function RepublicHeroes:New_Padawan_Handler()

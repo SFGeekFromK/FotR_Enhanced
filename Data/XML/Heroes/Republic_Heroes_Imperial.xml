@@ -23,6 +23,7 @@
 	<UniqueUnit Name="Maarisa_Retaliation_Imp">
         <Variant_Of_Existing_Type>Maarisa_Retaliation</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
     </UniqueUnit>
     
 	<DummyStructure Name="Maarisa_Retire2_Imp">
@@ -143,21 +144,119 @@
 	<UniqueUnit Name="Yularen_Integrity_Imp">
         <Variant_Of_Existing_Type>Yularen_Integrity</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+
+        <Encyclopedia_Text> 
+            TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+            TEXT_TOOLTIP_TRAIT_COMMAND2_SPACE
+            TEXT_TOOLTIP_TRAIT_SKYWATCHER 
+            TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+            TEXT_TOOLTIP_YULAREN
+            TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+            TEXT_TOOLTIP_COMMAND_INTEGRITY
+            TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+            TEXT_TOOLTIP_VENATOR_HULL 
+            TEXT_TOOLTIP_VENATOR_SHIELD
+            TEXT_TOOLTIP_VENATOR_MOVE
+            TEXT_TOOLTIP_VENATOR_SQUADRON
+            TEXT_TOOLTIP_VENATOR_WEAP1
+            TEXT_TOOLTIP_VENATOR_WEAP2 
+            TEXT_TOOLTIP_VENATOR_WEAP3
+            TEXT_TOOLTIP_VENATOR_WEAP4
+            TEXT_TOOLTIP_VENATOR_WEAP5
+            TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+            TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT 
+            TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+
+        <Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+		
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_ability_Admiral_Yularen_Defence_Tactic</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_CAUTIOUSNESS_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_CAUTIOUSNESS_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_Cautiousness.tga</Alternate_Icon_Name>
+				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically).
+					 Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
+				<Effective_Radius>1</Effective_Radius>
+		
+				<Target_Types />
+
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Expiration_Seconds>20</Expiration_Seconds>
+		
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Particle_Effect>Cautiousness_Ability_Particle</Particle_Effect>
+
+				<Mod_Multiplier />
+				<Supports_Autofire>False</Supports_Autofire>	
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Yularen_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.15</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Yularen_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.15</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+
+			<Combat_Bonus_Ability Name="Yularen_Combat_Bonus_Skywalker">
+				<Unit_Strength_Category />
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Anakin_Delta, Anakin_Eta, Vader_Eta</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.30</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.30</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.30</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<!-- note stacking category, this stacks with other hero combat bonuses -->
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<System_Spy_Ability Name="Yularen_Spy_Network">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>Yes</See_Base_Levels>
+				<See_Credit_Income>No</See_Credit_Income>
+				<See_Credit_Income_Breakdown>No</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>Yes</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>No</See_Fleet_Contents>
+				<See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>No</See_Ground_Company_Contents>
+				<See_Special_Structures>No</See_Special_Structures>
+				<See_Political_Control>Yes</See_Political_Control>
+				<See_Political_Control_Breakdown>Yes</See_Political_Control_Breakdown>
+				<See_Current_Production>No</See_Current_Production>
+				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
     </UniqueUnit>
     
 	<DummyStructure Name="Yularen_Retire2_Imp">
         <Variant_Of_Existing_Type>Yularen_Retire2</Variant_Of_Existing_Type>
         <Required_Orbiting_Units>Yularen_Integrity_Imp</Required_Orbiting_Units>
-    </DummyStructure>
-    
-	<UniqueUnit Name="Yularen_Invincible_Imp">
-        <Variant_Of_Existing_Type>Yularen_Invincible</Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
-    </UniqueUnit>
-    
-	<DummyStructure Name="Yularen_Retire3_Imp">
-        <Variant_Of_Existing_Type>Yularen_Retire3</Variant_Of_Existing_Type>
-        <Required_Orbiting_Units>Yularen_Invincible_Imp</Required_Orbiting_Units>
     </DummyStructure>
     
 	<UniqueUnit Name="Kilian_Endurance_Imp">

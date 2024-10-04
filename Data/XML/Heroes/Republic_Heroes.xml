@@ -2847,6 +2847,8 @@
 		<Tech_Level>99</Tech_Level>
 		<Affiliation>Empire</Affiliation>
 
+		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+
 		<Starting_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron_Double, 1</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>Torrent_Squadron, 1</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>H60_Tempest_Squadron_Double, 1</Starting_Spawned_Units_Tech_0>

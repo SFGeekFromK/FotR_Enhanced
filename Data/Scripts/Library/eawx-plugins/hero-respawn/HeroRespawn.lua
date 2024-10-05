@@ -68,8 +68,12 @@ function HeroRespawn:on_galactic_hero_killed(hero_name, owner)
 	-- FotR_Enhanced
 	elseif hero_name == "BLOCK_NEGOTIATOR" then
 		self:spawn_block("BLOCK_VIGILANCE")
+	elseif hero_name == "BLOCK_NEGOTIATOR_IMP" then
+		self:spawn_block("BLOCK_VIGILANCE_IMP")
 	elseif hero_name == "YULAREN_RESOLUTE_SPHAT" then
 		self:spawn_yularen("Yularen_Integrity")
+	elseif hero_name == "YULAREN_RESOLUTE_IMP" then
+		self:spawn_yularen("Yularen_Integrity_Imp")
 	end
 end
 

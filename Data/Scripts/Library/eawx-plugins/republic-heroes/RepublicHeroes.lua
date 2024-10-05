@@ -73,7 +73,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_limit = 22,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
 		initialized = false,
 		full_list = { --All options for reference operations
-			["Yularen"] = --[[FotR_Enhanced Resolute sphat Version added]]{"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3","YULAREN_RETIRE_1"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT","YULRAEN_INTEGRITY_IMP"},"Wulff Yularen"},
+			["Yularen"] = --[[FotR_Enhanced Resolute sphat Version added]]{"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3","YULAREN_RETIRE_1","YULAREN_RETIRE_IMP","YULAREN_RETIRE3_IMP",},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT","YULAREN_RESOLUTE_IMP","YULRAEN_INTEGRITY_IMP"},"Wulff Yularen"},
 			["Wieler"] = {"WIELER_ASSIGN",{"WIELER_RETIRE","WIELER_RETIRE_IMP"},{"WIELER_RESILIENT","WIELER_RESILIENT_IMP"},"Wieler"},
 			["Coburn"] = {"COBURN_ASSIGN",{"COBURN_RETIRE","COBURN_RETIRE_IMP"},{"COBURN_TRIUMPHANT","COBURN_TRIUMPHANT_IMP"},"Barton Coburn"},
 			["Kilian"] = {"KILIAN_ASSIGN",{"KILIAN_RETIRE","KILIAN_RETIRE_IMP"},{"KILIAN_ENDURANCE","KILIAN_ENDURANCE_IMP"},"Shoan Kilian"},
@@ -89,7 +89,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Dallin"] = {"DALLIN_ASSIGN",{"DALLIN_RETIRE"},{"DALLIN_KEBIR"},"Jace Dallin"},
 			["Autem"] = {"AUTEM_ASSIGN",{"AUTEM_RETIRE"},{"AUTEM_VENATOR"},"Sagoro Autem"},
 			["Forral"] = {"FORRAL_ASSIGN",{"FORRAL_RETIRE","FORRAL_RETIRE_IMP"},{"FORRAL_VENSENOR","FORRAL_VENSENOR_IMP"},"Bythen Forral"},
-			["Maarisa"] = {"MAARISA_ASSIGN",{"MAARISA_RETIRE", "MAARISA_RETIRE2", "MAARISA_RETIRE_IMP", "MAARISA_RETIRE2_IMP"},{"MAARISA_CAPTOR","MAARISA_RETALIATION","MAARISA_RETALIATION_IMP"},"Maarisa Zsinj"},
+			["Maarisa"] = {"MAARISA_ASSIGN",{"MAARISA_RETIRE", "MAARISA_RETIRE2", "MAARISA_RETIRE_IMP", "MAARISA_RETIRE2_IMP"},{"MAARISA_CAPTOR","MAARISA_RETALIATION","MAARISA_CAPTOR_IMP","MAARISA_RETALIATION_IMP"},"Maarisa Zsinj"},
 			["Grumby"] = {"GRUMBY_ASSIGN",{"GRUMBY_RETIRE", "GRUMBY_RETIRE_IMP"},{"GRUMBY_INVINCIBLE","GRUMBY_INVINCIBLE_IMP"},"Jona Grumby"},
 			["Baraka"] = {"BARAKA_ASSIGN",{"BARAKA_RETIRE", "BARAKA_RETIRE_IMP"},{"BARAKA_NEXU","BARAKA_NEXU_IMP"},"Arikakon Baraka"},
 			["Martz"] = {"MARTZ_ASSIGN",{"MARTZ_RETIRE"},{"MARTZ_PROSECUTOR","MARTZ_PROSECUTOR_IMP"},"Stinnet Martz"},
@@ -119,7 +119,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_limit = 12,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
-			["Tarkin"] = {"TARKIN_ASSIGN",{"TARKIN_RETIRE","TARKIN_RETIRE2"},{"TARKIN_VENATOR","TARKIN_EXECUTRIX"},"Wilhuff Tarkin"},
+			["Tarkin"] = {"TARKIN_ASSIGN",{"TARKIN_RETIRE","TARKIN_RETIRE2","TARKIN_RETIRE_IMP"},{"TARKIN_VENATOR","TARKIN_EXECUTRIX","TARKIN_VENATOR_IMP"},"Wilhuff Tarkin"},
 			["Trachta"] = {"TRACHTA_ASSIGN",{"TRACHTA_RETIRE"},{"TRACHTA_VENATOR"},"Trachta"},
 			["Wessex"] = {"WESSEX_ASSIGN",{"WESSEX_RETIRE"},{"WESSEX_REDOUBT"},"Denn Wessex"},
 			["Grant"] = {"GRANT_ASSIGN",{"GRANT_RETIRE"},{"GRANT_VENATOR"},"Octavian Grant"},
@@ -923,7 +923,7 @@ function RepublicHeroes:Order_66_Handler()
 			local Hero_Unit = Hero_Entry[3][Hero_Entry.unit_id]
 
 			local Hero_Rep = Find_Object_Type(Hero_Unit)
-			local Hero_Imperial = Hero_Unit[3][-1]
+			local Hero_Imperial = Hero_Unit.."_IMP"
 			
 			--if  then
 				

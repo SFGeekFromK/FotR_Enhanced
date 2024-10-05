@@ -924,9 +924,15 @@ function RepublicHeroes:Order_66_Handler()
 
 			local Hero_Rep = Find_Object_Type(Hero_Unit)
 			local Hero_Imperial = Hero_Unit[3][-1]
-			if Hero_Rep then
-				UnitUtil.ReplaceAtLocation(Hero_Rep, Hero_Imperial)
-			end
+			
+			--if  then
+				
+			
+
+			--	if Hero_Rep then
+			--		UnitUtil.ReplaceAtLocation(Hero_Rep, Hero_Imperial)
+			--	end
+			--end
 			set_unit_index(Hero_id, -1, Hero_Table)
 		end
 	end

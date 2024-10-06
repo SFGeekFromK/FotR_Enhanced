@@ -26,9 +26,7 @@ function EventManager:new(galactic_conquest, human_player, planets)
 	
 	self.RendiliConquerREP = GenericConquer(self.galactic_conquest,
         "CONQUER_RENDILI_REP",
-        "RENDILI", {"Empire"},
-        {"Dreadnaught_Rendili", "Dreadnaught_Rendili", "Dreadnaught_Rendili", "Dreadnaught_Rendili", "Dreadnaught_Rendili", 
-		"Dreadnaught_Rendili", "Dreadnaught_Rendili", "Dreadnaught_Rendili", "Dreadnaught_Rendili", "Dreadnaught_Rendili"}, false, nil, nil, nil, "DALLIN_UNLLOCK")
+        "RENDILI", {"Empire"}, {}, false, nil, nil, nil, "DALLIN_UNLLOCK")
 
 	self.MonCalConquer = GenericConquer(self.galactic_conquest,
         "CONQUER_MON_CALAMARI",

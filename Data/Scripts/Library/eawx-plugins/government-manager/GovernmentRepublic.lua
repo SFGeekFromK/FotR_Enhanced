@@ -307,12 +307,12 @@ function GovernmentRepublic:GC_AI_Republic_Future()
             UnitUtil.ReplaceAtLocation(Venator_Despawn, "Generic_Venator_Imperial")
         end ]]
 		--- [[FotR_Enhanced
-		UnitUtil.SetLockList("EMPIRE", {"Yularen_Resolute_Upgrade_Invincible", "Yularen_Integrity_Upgrade_Invincible","Tarkin_Executrix_Upgrade", --[[FotR_Enhanced]] "Yularen_Resolute_SPHAT_Upgrade_Invincible"}) 
+		UnitUtil.SetLockList("EMPIRE", { --[[FotR_Enhanced]] "Yularen_Resolute_Imp_Upgrade_Invincible", "Yularen_Integrity_Imp_Upgrade_Invincible", "Tarkin_Executrix_Upgrade",}) 
 		--]]
 		UnitUtil.ReplaceAtLocation("Anakin", "Vader_Team")
 		UnitUtil.ReplaceAtLocation("Anakin2", "Vader_Team")
 
-		StoryUtil.SpawnAtSafePlanet("CORUSCANT", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Emperor_Palpatine_Team","Mulleen_Imperator","Rohn_Team"})
+		StoryUtil.SpawnAtSafePlanet("CORUSCANT", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Emperor_Palpatine_Team","Mulleen_Imperator_Imp","Rohn_Team"})
 		crossplot:publish("ORDER_66_EXECUTED", "empty")
 	else
 		UnitUtil.DespawnList({"Sate_Pestage"})	
@@ -675,7 +675,7 @@ function GovernmentRepublic:UpdateDisplay(favour_table, market_name, market_list
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_LIST")
         government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_NEEDA") -- FotR_Enhanced
 		--government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_DALLIN")
-		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_DALLIN_SUBMOD") -- FotR_Enhanced
+		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_DALLIN_RENDILI") -- FotR_Enhanced
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_MAARISA")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_PELLAEON")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_ADMIRAL_TALLON")

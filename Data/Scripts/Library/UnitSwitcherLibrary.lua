@@ -32,7 +32,7 @@ function Get_Swap_Entry(upgrade_object)
 		--["YULAREN_INTEGRITY_UPGRADE_INVINCIBLE"] = {"Yularen_Integrity","Yularen_Invincible"},
 		["MAARISA_RETALIATION_UPGRADE"] = {"Maarisa_Captor","Maarisa_Retaliation"},
 		["TALLON_BATTALION_UPGRADE"] = {"Tallon_Sundiver","Tallon_Battalion"},
-		["TARKIN_EXECUTRIX_UPGRADE"] = {"Tarkin_Venator","Tarkin_Executrix"},
+		--["TARKIN_EXECUTRIX_UPGRADE"] = {"Tarkin_Venator","Tarkin_Executrix"},
 		["ONARA_KUAT_MANDATOR_UPGRADE"] = {"Onara_Kuat","Onara_Kuat_Mandator"},
 		["DREADNAUGHT_CARRIER_UPGRADE"] = {"Dreadnaught_Lasers","Dreadnaught_Carrier",["location_check"] = true},
 		["MANDATOR_II_UPGRADE"] = {"Generic_Mandator","Generic_Mandator_II",["location_check"] = true},
@@ -46,6 +46,7 @@ function Get_Swap_Entry(upgrade_object)
 		["YULAREN_RESOLUTE_IMP_UPGRADE_INVINCIBLE"] = {"Yularen_Resolute_Imp","Yularen_Invincible"},
 		["YULAREN_INTEGRITY_IMP_UPGRADE_INVINCIBLE"] = {"Yularen_Integrity_Imp","Yularen_Invincible"},
 		["MAARISA_RETALIATION_IMP_UPGRADE"] = {"Maarisa_Captor_Imp","Maarisa_Retaliation_Imp"},
+		["TARKIN_EXECUTRIX_UPGRADE"] = {"Tarkin_Venator_Imp","Tarkin_Executrix"},
 	}
 	return swaps[upgrade_object]
 end

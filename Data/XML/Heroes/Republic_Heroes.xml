@@ -3118,7 +3118,7 @@
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four</Required_Special_Structures>
 	</DummyStructure>
 
-	<DummyStructure Name="Yularen_Resolute_SPHAT_Upgrade_Invincible">
+	<DummyStructure Name="Yularen_Resolute_Imp_Upgrade_Invincible">
 		<Variant_Of_Existing_Type>Template_Flagship_Swap</Variant_Of_Existing_Type>
 		<GUI_Row> 1 </GUI_Row>
 		<Build_Cost_Credits>1700</Build_Cost_Credits>
@@ -3135,11 +3135,11 @@
 		</Encyclopedia_Text>
 
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
-		<Required_Orbiting_Units>Yularen_Resolute_SPHAT</Required_Orbiting_Units>
+		<Required_Orbiting_Units>Yularen_Resolute_Imp</Required_Orbiting_Units>
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four</Required_Special_Structures>
 	</DummyStructure>
 
-	<DummyStructure Name="Yularen_Resolute_Upgrade_Invincible">
+	<DummyStructure Name="Yularen_Integrity_Imp_Upgrade_Invincible">
 		<Variant_Of_Existing_Type>Template_Flagship_Swap</Variant_Of_Existing_Type>
 		<GUI_Row> 1 </GUI_Row>
 		<Build_Cost_Credits>1700</Build_Cost_Credits>
@@ -3156,31 +3156,9 @@
 		</Encyclopedia_Text>
 
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
-		<Required_Orbiting_Units>Yularen_Resolute</Required_Orbiting_Units>
+		<Required_Orbiting_Units>Yularen_Integrity_Imp</Required_Orbiting_Units>
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four</Required_Special_Structures>
 	</DummyStructure>
-
-	<DummyStructure Name="Yularen_Integrity_Upgrade_Invincible">
-		<Variant_Of_Existing_Type>Template_Flagship_Swap</Variant_Of_Existing_Type>
-		<GUI_Row> 1 </GUI_Row>
-		<Build_Cost_Credits>1700</Build_Cost_Credits>
-		<Build_Time_Seconds>3</Build_Time_Seconds>
-
-		<Text_ID>TEXT_TOOLTIP_COMMAND_YULAREN_INVINCIBLE</Text_ID>
-		<Tech_Level>1</Tech_Level>
-		<Affiliation>Empire</Affiliation>
-		<Icon_Name>i_button_yularen.tga</Icon_Name>
-		<Build_Initially_Locked>Yes</Build_Initially_Locked>
-
-		<Encyclopedia_Text> 
-		TEXT_TOOLTIP_UPGRADE_FLAG
-		</Encyclopedia_Text>
-
-		<Required_Star_Base_Level>1</Required_Star_Base_Level>
-		<Required_Orbiting_Units>Yularen_Integrity</Required_Orbiting_Units>
-		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four</Required_Special_Structures>
-	</DummyStructure>
-
 
 	<UniqueUnit Name="Kilian_Endurance">
 		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
@@ -5293,6 +5271,8 @@
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
 
+		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+
 		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
 		<Lua_Script>GenericGameObject</Lua_Script>
 		<Tech_Level>99</Tech_Level>
@@ -5396,7 +5376,7 @@
 
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Planets>Kuat</Required_Planets>
-		<Required_Orbiting_Units>Tarkin_Venator</Required_Orbiting_Units>
+		<Required_Orbiting_Units>Tarkin_Venator_Imp</Required_Orbiting_Units>
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four</Required_Special_Structures>
 	</DummyStructure>
 
@@ -9408,7 +9388,7 @@
 		<Population_Value>1</Population_Value>
 	</HeroCompany>
 
-	<!-- FotR_Enhanced : Padme Edited to fit new model-->
+	<!-- FotR_Enhanced : Padme has new model-->
 
 	<HeroUnit Name="Padme_Amidala"> 
 		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>

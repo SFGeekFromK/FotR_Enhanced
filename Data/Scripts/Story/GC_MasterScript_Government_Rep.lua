@@ -113,7 +113,7 @@ end
 function State_Republic_Future_New_Order(message)
     if message == OnEnter then
 		GlobalValue.Set("ChiefOfState", "DUMMY_CHIEFOFSTATE_EMPEROR_PALPATINE")
-		UnitUtil.SetLockList("EMPIRE", {"Yularen_Resolute_Upgrade_Invincible", "Yularen_Integrity_Upgrade_Invincible", --[[FotR_Enhanced]] "Yularen_Resolute_SPHAT_Upgrade_Invincible"})
+		UnitUtil.SetLockList("EMPIRE", {--[[FotR_Enhanced]] "Yularen_Resolute_Imp_Upgrade_Invincible", "Yularen_Integrity_Imp_Upgrade_Invincible"})
 
 		UnitUtil.ReplaceAtLocation("Anakin", "Vader_Team")
 		UnitUtil.ReplaceAtLocation("Anakin2", "Vader_Team")
@@ -134,7 +134,7 @@ function State_Republic_Imperialization_Execution(message)
     if message == OnEnter then
 		Story_Event("REPUBLIC_IMPERIALIZATION_DONE")
 		Find_Player("Empire").Unlock_Tech(Find_Object_Type("Tarkin_Executrix_Upgrade"))
-		StoryUtil.SpawnAtSafePlanet("CORUSCANT", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Mulleen_Imperator", --[[FotR_Enhanced]] "Rohn_Team"})  
+		StoryUtil.SpawnAtSafePlanet("CORUSCANT", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Mulleen_Imperator_Imp", --[[FotR_Enhanced]] "Rohn_Team"})  
 	end
 end
 

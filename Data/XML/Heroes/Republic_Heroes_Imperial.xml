@@ -1,5 +1,8 @@
 <?xml version="1.0" ?>
 <Republic_Heroes_Imperial>
+
+<!-- Space Heroes -->
+
 	<UniqueUnit Name="Needa_Integrity_Imp">
         <Variant_Of_Existing_Type>Needa_Integrity</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
@@ -19,6 +22,11 @@
         <Variant_Of_Existing_Type>Maarisa_Retire</Variant_Of_Existing_Type>
         <Required_Orbiting_Units>Maarisa_Captor_Imp</Required_Orbiting_Units>
     </DummyStructure>
+    
+	<DummyStructure Name="Maarisa_Retaliation_Imp_Upgrade">
+		<Variant_Of_Existing_Type>Maarisa_Retaliation_Upgrade</Variant_Of_Existing_Type>
+		<Required_Orbiting_Units>Maarisa_Captor_Imp</Required_Orbiting_Units>
+	</DummyStructure>
     
 	<UniqueUnit Name="Maarisa_Retaliation_Imp">
         <Variant_Of_Existing_Type>Maarisa_Retaliation</Variant_Of_Existing_Type>
@@ -84,6 +92,7 @@
 	<UniqueUnit Name="Block_Negotiator_Imp">
         <Variant_Of_Existing_Type>Block_Negotiator</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
     </UniqueUnit>
     
 	<DummyStructure Name="Block_Retire_Imp">
@@ -94,6 +103,7 @@
 	<UniqueUnit Name="Block_Vigilance_Imp">
         <Variant_Of_Existing_Type>Block_Vigilance</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
     </UniqueUnit>
     
 	<DummyStructure Name="Block_Retire2_Imp">
@@ -104,6 +114,7 @@
 	<UniqueUnit Name="Wieler_Resilient_Imp">
         <Variant_Of_Existing_Type>Wieler_Resilient</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
     </UniqueUnit>
     
 	<DummyStructure Name="Wieler_Retire_Imp">
@@ -114,6 +125,7 @@
 	<UniqueUnit Name="Coburn_Triumphant_Imp">
         <Variant_Of_Existing_Type>Coburn_Triumphant</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
     </UniqueUnit>
     
 	<DummyStructure Name="Coburn_Retire_Imp">
@@ -124,6 +136,7 @@
 	<UniqueUnit Name="Yularen_Resolute_Imp">
         <Variant_Of_Existing_Type>Yularen_Resolute</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
     </UniqueUnit>
     
 	<DummyStructure Name="Yularen_Retire_Imp">
@@ -131,19 +144,10 @@
         <Required_Orbiting_Units>Yularen_Resolute_Imp</Required_Orbiting_Units>
     </DummyStructure>
     
-	<UniqueUnit Name="Yularen_Resolute_SPHAT_Imp">
-        <Variant_Of_Existing_Type>Yularen_Resolute_SPHAT</Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
-    </UniqueUnit>
-    
-	<DummyStructure Name="Yularen_Retire_1_Imp">
-        <Variant_Of_Existing_Type>Yularen_Retire_1</Variant_Of_Existing_Type>
-        <Required_Orbiting_Units>Yularen_Resolute_SPHAT_Imp</Required_Orbiting_Units>
-    </DummyStructure>
-    
 	<UniqueUnit Name="Yularen_Integrity_Imp">
         <Variant_Of_Existing_Type>Yularen_Integrity</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
 
         <Encyclopedia_Text> 
             TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
@@ -262,6 +266,7 @@
 	<UniqueUnit Name="Kilian_Endurance_Imp">
         <Variant_Of_Existing_Type>Kilian_Endurance</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
     </UniqueUnit>
     
 	<DummyStructure Name="Kilian_Retire_Imp">
@@ -272,6 +277,7 @@
 	<UniqueUnit Name="Dao_Venator_Imp">
         <Variant_Of_Existing_Type>Dao_Venator</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
     </UniqueUnit>
     
 	<DummyStructure Name="Dao_Retire_Imp">
@@ -282,6 +288,7 @@
 	<UniqueUnit Name="Tenant_Venator_Imp">
         <Variant_Of_Existing_Type>Tenant_Venator</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
 	</UniqueUnit>
     
 	<DummyStructure Name="Tenant_Retire_Imp">
@@ -302,6 +309,7 @@
 	<UniqueUnit Name="Dron_Venator_Imp">
         <Variant_Of_Existing_Type>Dron_Venator</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
 	</UniqueUnit>
     
 	<DummyStructure Name="Dron_Retire_Imp">
@@ -382,6 +390,7 @@
 	<UniqueUnit Name="Tarkin_Venator_Imp">
         <Variant_Of_Existing_Type>Tarkin_Venator</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <Space_Model_Name>EV_Venator.alo</Space_Model_Name>
     </UniqueUnit>
     
 	<DummyStructure Name="Tarkin_Retire_Imp">
@@ -389,19 +398,10 @@
         <Required_Orbiting_Units>Tarkin_Venator_Imp</Required_Orbiting_Units>
     </DummyStructure>
     
-	<UniqueUnit Name="Tarkin_Executrix_Imp">
-        <Variant_Of_Existing_Type>Tarkin_Executrix</Variant_Of_Existing_Type>
-        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
-    </UniqueUnit>
-    
-	<DummyStructure Name="Tarkin_Retire2_Imp">
-        <Variant_Of_Existing_Type>Tarkin_Retire2</Variant_Of_Existing_Type>
-        <Required_Orbiting_Units>Tarkin_Executrix_Imp</Required_Orbiting_Units>
-    </DummyStructure>
-    
-	<UniqueUnit Name="Wessex_Redoubt_Imp">
+	<UniqueUnit Name="Wessex_Redoubt_Imp">  <!-- change model if the kdy marking doesn't have team color -->
         <Variant_Of_Existing_Type>Wessex_Redoubt</Variant_Of_Existing_Type>
         <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+        <!-- <Space_Model_Name>EV_Venator.alo</Space_Model_Name> -->
     </UniqueUnit>
     
 	<DummyStructure Name="Wessex_Retire_Imp">
@@ -483,5 +483,286 @@
 		<Variant_Of_Existing_Type>Mulleen_Imperator</Variant_Of_Existing_Type>
 		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
 	</UniqueUnit>
+
+<!-- Army Generals -->
+
+    <HeroUnit Name="Rom_Mohc_Imp">
+		<Variant_Of_Existing_Type>Rom_Mohc</Variant_Of_Existing_Type>
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+	</HeroUnit>
+
+	<HeroCompany Name="Rom_Mohc_Team_Imp">
+        <Variant_Of_Existing_Type>Rom_Mohc_Team</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Nu_Shuttle_Landing_Craft_Rom_Mohc_Imp</Company_Transport_Unit>
+		<Company_Units>Rom_Mohc</Company_Units>
+	</HeroCompany>
+
+	<DummyStructure Name="Rom_Mohc_Retire_Imp">
+		<Variant_Of_Existing_Type>Rom_Mohc_Retire</Variant_Of_Existing_Type>
+		<Required_Orbiting_Units>Nu_Shuttle_Landing_Craft_Rom_Mohc_Imp</Required_Orbiting_Units>
+	</DummyStructure>
+
+
+	<UniqueUnit Name="Romodi_A5_Juggernaut_Imp">
+		<Variant_Of_Existing_Type>Romodi_A5_Juggernaut</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FANATICISM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FANATICISM_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_FANATICISM.TGA</Alternate_Icon_Name>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 1.5f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.05f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.25</Damage_Percent_When_Activated>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+	</UniqueUnit>
+
+	<HeroCompany Name="Romodi_Team_Imp">
+        <Variant_Of_Existing_Type>Romodi_Team</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>CR25_Landing_Craft_Romodi_Imp</Company_Transport_Unit>
+		<Company_Units>Romodi_A5_Juggernaut_Imp</Company_Units>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FANATICISM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FANATICISM_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_FANATICISM.TGA</Alternate_Icon_Name>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 1.5f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.05f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.25</Damage_Percent_When_Activated>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+	</HeroCompany>
+
+	<DummyStructure Name="Romodi_Retire_Imp">
+		<Variant_Of_Existing_Type>Romodi_Retire</Variant_Of_Existing_Type>
+
+		<Required_Orbiting_Units>CR25_Landing_Craft_Romodi_Imp</Required_Orbiting_Units>
+	</DummyStructure>
+
+
+	<UniqueUnit Name="Ozzel_LAAT_Imp">
+		<Variant_Of_Existing_Type>Ozzel_LAAT</Variant_Of_Existing_Type>
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+	</UniqueUnit>
+
+	<HeroCompany Name="Ozzel_Team_Imp">
+        <Variant_Of_Existing_Type>Ozzel_Team</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>LAAT_Landing_Craft_Ozzel_Imp</Company_Transport_Unit>
+		<Company_Units>Ozzel_LAAT_Imp</Company_Units>
+		
+    </HeroCompany>
+
+	<DummyStructure Name="Ozzel_Retire_Imp">
+		<Variant_Of_Existing_Type>Ozzel_Retire</Variant_Of_Existing_Type>
+
+		<Required_Orbiting_Units>LAAT_Landing_Craft_Ozzel_Imp</Required_Orbiting_Units>
+	</DummyStructure>
+
+
+	<UniqueUnit Name="Gentis_AT_TE_Imp">
+		<Variant_Of_Existing_Type>Gentis_AT_TE</Variant_Of_Existing_Type>
+        <Land_Model_Name>all_terrain_tactical_enforcer_empire.ALO</Land_Model_Name>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Gentis_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.15</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Ability_Recharge_Bonus_Percentage>-0.05</Ability_Recharge_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Force_Healing_Ability Name="ATTE_Healing">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>150.0</Heal_Range>
+				<Heal_Amount> 3.0 </Heal_Amount>
+				<Heal_Percent> 0.0 </Heal_Percent>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Heal_Infantry_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Infantry | LandHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Excluded_Unit_Types>Romodi_A5_Juggernaut, MPTL_Spotter, Veers_AT_AT_Walker, Carvin, Melvar_Juggernaut, </Excluded_Unit_Types>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2/>
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.1, 1.2, 1.1</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+	</UniqueUnit>
+
+	<HeroCompany Name="Gentis_Team_Imp">
+        <Variant_Of_Existing_Type>Gentis_Team</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>CR25_Landing_Craft_Gentis_Imp</Company_Transport_Unit>
+		<Company_Units>Gentis_AT_TE_Imp</Company_Units>
+		
+	</HeroCompany>
+
+	<DummyStructure Name="Gentis_Retire_Imp">
+		<Variant_Of_Existing_Type>Gentis_Retire</Variant_Of_Existing_Type>
+
+		<Required_Orbiting_Units>CR25_Landing_Craft_Gentis_Imp</Required_Orbiting_Units>
+	</DummyStructure>
+
+
+	<UniqueUnit Name="Geen_UT_AT_Imp">
+		<Variant_Of_Existing_Type>Geen_UT_AT</Variant_Of_Existing_Type>
+		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+	</UniqueUnit>
+
+	<HeroCompany Name="Geen_Team_Imp">
+        <Variant_Of_Existing_Type>Geen_Team_Imp</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>CR25_Landing_Craft_Geen_Imp</Company_Transport_Unit>
+		<Company_Units>Geen_UT_AT_Imp</Company_Units>
+	</HeroCompany>
+
+	<DummyStructure Name="Geen_Retire_Imp">
+		<Variant_Of_Existing_Type>Geen_Retire</Variant_Of_Existing_Type>
+		<Required_Orbiting_Units>CR25_Landing_Craft_Geen_Imp</Required_Orbiting_Units>
+	</DummyStructure>
+
+
+	<UniqueUnit Name="Solomahal_RX200_Imp">
+		<Variant_Of_Existing_Type>Solomahal_RX200</Variant_Of_Existing_Type>
+		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+	</UniqueUnit>
+
+	<HeroCompany Name="Solomahal_Team_Imp">
+        <Variant_Of_Existing_Type>Solomahal_Team</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>CR25_Landing_Craft_Solomahal</Company_Transport_Unit>
+		<Company_Units>Solomahal_RX200_Imp</Company_Units>
+		
+	</HeroCompany>
+
+	<DummyStructure Name="Solomahal_Retire_Imp">
+		<Variant_Of_Existing_Type>Solomahal_Retire</Variant_Of_Existing_Type>
+		<Required_Orbiting_Units>CR25_Landing_Craft_Solomahal_Imp</Required_Orbiting_Units>
+
+	</DummyStructure>
+
+    <HeroUnit Name="Jayfon_Imp">
+		<Variant_Of_Existing_Type>Jayfon</Variant_Of_Existing_Type>
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+	</HeroUnit>
+
+	<HeroCompany Name="Jayfon_Team_Imp">
+		<Variant_Of_Existing_Type>Jayfon_Team</Variant_Of_Existing_Type>
+        <Company_Transport_Unit>Theta_Shuttle_Landing_Craft_Jayfon_Imp</Company_Transport_Unit>
+		<Company_Units>Jayfon_Imp</Company_Units>
+	
+    </HeroCompany>
+
+	<DummyStructure Name="Jayfon_Retire_Imp">
+		<Variant_Of_Existing_Type>Jayfon_Retire</Variant_Of_Existing_Type>
+		<Required_Orbiting_Units>Theta_Shuttle_Landing_Craft_Jayfon_Imp</Required_Orbiting_Units>
+	</DummyStructure>
+
+	<HeroUnit Name="Jesra_Loture_Imp">
+		<Variant_Of_Existing_Type>Jesra_Loture</Variant_Of_Existing_Type>
+		
+		<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FANATICISM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FANATICISM_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_FANATICISM.TGA</Alternate_Icon_Name>
+				<Expiration_Seconds> 10.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 1.5f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.05f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>.25</Damage_Percent_When_Activated>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>BERSERKER</Type>
+				<Recharge_Seconds>66.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Jesra_Berserk_Attack </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Effective_Radius> 300.0 </Effective_Radius>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_BERSERKER_INFANTRY_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_BERSERKER_INFANTRY_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</HeroUnit>
+
+	<HeroCompany Name="Jesra_Loture_Team_Imp">
+        <Variant_Of_Existing_Type>Jesra_Loture_Team_Imp</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Theta_Shuttle_Landing_Craft_Jesra_Loture_Imp</Company_Transport_Unit>
+		<Company_Units>Jesra_Loture_Imp</Company_Units>
+		
+	</HeroCompany>
+
+	<DummyStructure Name="Jesra_Loture_Retire_Imp">
+		<Variant_Of_Existing_Type>Jesra_Loture_Retire</Variant_Of_Existing_Type>
+		<Required_Orbiting_Units>Theta_Shuttle_Landing_Craft_Jesra_Loture_Imp</Required_Orbiting_Units>
+	</DummyStructure>
+
+<!-- Gaffa A5RX -->
+
+    <UniqueUnit Name="Gaffa_A5RX_Imp">
+		<Variant_Of_Existing_Type>Gaffa_A5RX</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+	</UniqueUnit>
+
+	<HeroCompany Name="Gaffa_Team_Imp">
+        <Variant_Of_Existing_Type>Gaffa_Team</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>CR25_Landing_Craft_Gaffa_Imp</Company_Transport_Unit>
+		<Company_Units>Gaffa_A5RX_Imp</Company_Units>
+		
+	</HeroCompany>
+
+	<DummyStructure Name="Gaffa_Retire_Imp">
+		<Variant_Of_Existing_Type>Gaffa_Retire</Variant_Of_Existing_Type>
+		<Required_Orbiting_Units>CR25_Landing_Craft_Gaffa_Imp</Required_Orbiting_Units>
+	</DummyStructure>
+
 
 </Republic_Heroes_Imperial>

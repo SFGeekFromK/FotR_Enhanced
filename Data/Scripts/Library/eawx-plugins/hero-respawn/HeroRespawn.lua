@@ -58,7 +58,7 @@ function HeroRespawn:on_galactic_hero_killed(hero_name, owner)
 	elseif hero_name == "YULAREN_RESOLUTE" then
 		self:spawn_yularen("Yularen_Integrity")
 	elseif hero_name == "YULAREN_INVINCIBLE" then
-		self:spawn_yularen("Yularen_Integrity_Imp")
+		self:spawn_yularen_imp("Yularen_Integrity_Imp")
 	elseif hero_name == "TRENCH_INVINCIBLE" then
 		self:start_cyber_trench_countdown()
 	elseif hero_name == "TRENCH_INVINCIBLE" then
@@ -69,11 +69,11 @@ function HeroRespawn:on_galactic_hero_killed(hero_name, owner)
 	elseif hero_name == "BLOCK_NEGOTIATOR" then
 		self:spawn_block("BLOCK_VIGILANCE")
 	elseif hero_name == "BLOCK_NEGOTIATOR_IMP" then
-		self:spawn_block("BLOCK_VIGILANCE_IMP")
+		self:spawn_block_imp("BLOCK_VIGILANCE_IMP")
 	elseif hero_name == "YULAREN_RESOLUTE_SPHAT" then
 		self:spawn_yularen("Yularen_Integrity")
 	elseif hero_name == "YULAREN_RESOLUTE_IMP" then
-		self:spawn_yularen("Yularen_Integrity_Imp")
+		self:spawn_yularen_imp("Yularen_Integrity_Imp")
 	end
 end
 
@@ -185,6 +185,52 @@ function HeroRespawn:spawn_block(team)
 		SpawnList({team}, planet, p_republic, true, false)
 		if Find_Player("Empire").Is_Human() then
 			StoryUtil.Multimedia("TEXT_SPEECH_BLOCK_RETURNS_VIGILANCE", 15, nil, "Piett_Loop", 0)
+		end
+	end
+end
+
+function HeroRespawn:spawn_yularen_imp(team)
+	--Logger:trace("entering HeroRespawn:spawn_yularen")
+
+	local p_republic = Find_Player("Empire")
+	local planet
+	local capital = Find_First_Object("Remnant_Capital")
+	if TestValid(capital) then
+		planet = capital.Get_Planet_Location()
+	end
+	if not TestValid(planet) then
+		planet = StoryUtil.FindFriendlyPlanet(p_republic)
+	end
+	if not StoryUtil.CheckFriendlyPlanet(planet,p_republic) then
+		planet = StoryUtil.FindFriendlyPlanet(p_republic)
+	end
+	if planet then
+		SpawnList({team}, planet, p_republic, true, false)
+		if Find_Player("Empire").Is_Human() then
+			StoryUtil.Multimedia("TEXT_SPEECH_YULAREN_RETURNS_INTEGRITY_IMP", 15, nil, "Piett_Loop", 0)
+		end
+	end
+end
+
+function HeroRespawn:spawn_block_imp(team)
+	--Logger:trace("entering HeroRespawn:spawn_block")
+
+	local p_republic = Find_Player("Empire")
+	local planet
+	local capital = Find_First_Object("Remnant_Capital")
+	if TestValid(capital) then
+		planet = capital.Get_Planet_Location()
+	end
+	if not TestValid(planet) then
+		planet = StoryUtil.FindFriendlyPlanet(p_republic)
+	end
+	if not StoryUtil.CheckFriendlyPlanet(planet,p_republic) then
+		planet = StoryUtil.FindFriendlyPlanet(p_republic)
+	end
+	if planet then
+		SpawnList({team}, planet, p_republic, true, false)
+		if Find_Player("Empire").Is_Human() then
+			StoryUtil.Multimedia("TEXT_SPEECH_BLOCK_RETURNS_VIGILANCE_IMP", 15, nil, "Commander_Moff_Loop", 0)
 		end
 	end
 end

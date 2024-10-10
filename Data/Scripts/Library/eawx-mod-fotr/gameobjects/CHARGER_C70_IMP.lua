@@ -1,5 +1,4 @@
 return {
-	Ship_Crew_Requirement = 1, 
-	Fighters = {}, 
-	Scripts = {"multilayer"}
+  Flags = {FULLINHERIT = 
+    "CHARGER_C70"}
 }

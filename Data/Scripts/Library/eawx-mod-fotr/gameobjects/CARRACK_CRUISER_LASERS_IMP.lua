@@ -1,7 +1,7 @@
 return {
 	Ship_Crew_Requirement = 5,
 	Fighters = {
-		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_HALF"] = {
+		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_HALF_IMP"] = {
 			DEFAULT = {Initial = 1, Reserve = 0, ResearchType = "TIERacks"}
 		}
 	},

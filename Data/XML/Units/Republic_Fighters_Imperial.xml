@@ -105,6 +105,20 @@
 		<Squadron_Units>Generic_ARC_170_Imp, Generic_ARC_170_Imp, Generic_ARC_170_Imp, Generic_ARC_170_Imp</Squadron_Units>
     </Squadron>
 
+    <!-- BTLB Y-Wing -->
+
+    <SpaceUnit Name="Generic_BTLB_Y-Wing_Imp">
+        <Variant_Of_Existing_Type>Generic_BTLB_Y-Wing</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+    </SpaceUnit>
+
+    <Squadron Name="Generic_BTLB_Y-Wing_Squadron_Imp">
+        <Variant_Of_Existing_Type>Generic_BTLB_Y-Wing_Squadron</Variant_Of_Existing_Type>
+        <Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
+		<Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
+		<Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
+    </Squadron>
+
     <!-- NTB 630 -->
     <SpaceUnit Name="NTB_630_Imp">
         <Variant_Of_Existing_Type>NTB_630</Variant_Of_Existing_Type>

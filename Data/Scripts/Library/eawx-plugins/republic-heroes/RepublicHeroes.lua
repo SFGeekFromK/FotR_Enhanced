@@ -61,7 +61,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("REPUBLIC_FIGHTER_ENABLE", self.Add_Fighter_Sets, self)
 	crossplot:subscribe("REPUBLIC_FIGHTER_DISABLE", self.Remove_Fighter_Sets, self)
 	-- FotR_Enhanced
-	crossplot:subscribe("DALLIN_UNLLOCK", self.Dallin_Unlock, self)
+	--crossplot:subscribe("DALLIN_UNLLOCK", self.Dallin_Unlock, self)
 	crossplot:subscribe("GEEN_UNLOCK", self.Geen_Unlock, self)
 	--crossplot:subscribe("FORRAL_RETIRE", self.Forral_Switch, self)
 	crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)

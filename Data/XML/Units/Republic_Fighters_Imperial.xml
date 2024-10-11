@@ -64,6 +64,37 @@
         <Squadron_Units>Delta7_Imp, Delta7_Imp, Delta7_Imp, Delta7_Imp </Squadron_Units>
         <Squadron_Units>Delta7_Imp, Delta7_Imp, Delta7_Imp, Delta7_Imp </Squadron_Units>
     </Squadron>
+
+    <!-- Eta -->
+
+    <SpaceUnit Name="Eta2_Actis_Imp">
+        <Variant_Of_Existing_Type>Eta2_Actis</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+	</SpaceUnit>
+
+	<Squadron Name="Eta2_Actis_Squadron_Imp">
+        <Variant_Of_Existing_Type>Eta2_Actis_Squadron</Variant_Of_Existing_Type>
+
+		<Squadron_Units>Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp</Squadron_Units>
+		<Squadron_Units>Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp</Squadron_Units>
+		<Squadron_Units>Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp</Squadron_Units>
+	</Squadron>
+
+	<Squadron Name="Eta2_Actis_Squadron_Double_Imp">
+        <Variant_Of_Existing_Type>Eta2_Actis_Squadron_Double</Variant_Of_Existing_Type>
+		
+		<Squadron_Units>Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp</Squadron_Units>
+		<Squadron_Units>Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp</Squadron_Units>
+		<Squadron_Units>Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp</Squadron_Units>
+		<Squadron_Units>Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp</Squadron_Units>
+		<Squadron_Units>Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp</Squadron_Units>
+		<Squadron_Units>Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp</Squadron_Units>
+	</Squadron>
+
+	<Squadron Name="Eta2_Actis_Squadron_Half_Imp">
+        <Variant_Of_Existing_Type>Eta2_Actis_Squadron_Half</Variant_Of_Existing_Type>
+		<Squadron_Units>Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp, Eta2_Actis_Imp</Squadron_Units>
+	</Squadron>
     
     <!-- arc 170 -->
     <SpaceUnit Name="Generic_ARC_170_Imp">
@@ -118,6 +149,21 @@
 		<Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
 		<Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
     </Squadron>
+
+    <Squadron Name="Generic_BTLB_Y-Wing_Squadron_Double_Imp">
+        <Variant_Of_Existing_Type>Generic_BTLB_Y-Wing_Squadron_Double</Variant_Of_Existing_Type>
+        <Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
+		<Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
+		<Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
+        <Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
+		<Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
+		<Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
+    </Squadron>
+
+    <Squadron Name="Generic_BTLB_Y-Wing_Squadron_Half_Imp">
+        <Variant_Of_Existing_Type>Generic_BTLB_Y-Wing_Squadron_Half</Variant_Of_Existing_Type>
+        <Squadron_Units>Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp, Generic_BTLB_Y-Wing_Imp</Squadron_Units>
+	</Squadron>
 
     <!-- NTB 630 -->
     <SpaceUnit Name="NTB_630_Imp">

@@ -9747,4 +9747,25 @@
 
 		<Required_Orbiting_Units>Nu_Shuttle_Landing_Craft_Prudii</Required_Orbiting_Units>
 	</DummyStructure>
+
+	<DummyStructure Name="Prudii_Retire2">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_HERO_PRUDII</Text_ID>
+		<Icon_Name>i_button_prudii_retire.tga</Icon_Name>
+		
+		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_RETIRE_REPUBLIC_COMMANDO
+		</Encyclopedia_Text>
+
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Orbiting_Units>Nu_Shuttle_Landing_Craft_Prudii</Required_Orbiting_Units>
+	</DummyStructure>
 </Republic_Heroes>

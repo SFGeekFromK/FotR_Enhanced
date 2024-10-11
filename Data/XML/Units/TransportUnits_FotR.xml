@@ -1750,6 +1750,55 @@
 		<Variant_Of_Existing_Type>Nu_Shuttle_Landing_Craft_Landing</Variant_Of_Existing_Type>
 	</TransportUnit>
 
+	<!-- Order 66 grey army commanders -->
+
+	<TransportUnit Name="Nu_Shuttle_Landing_Craft_Rom_Mohc_Imp">
+		<Variant_Of_Existing_Type>Nu_Shuttle_Landing_Craft</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Nu_Shuttle_Landing_Craft_Rom_Mohc_Landing</Landing_Transport_Variant>
+	</TransportUnit>\
+
+	<TransportUnit Name="Theta_Shuttle_Landing_Craft_Jayfon_Imp">
+		<Variant_Of_Existing_Type>Theta_Shuttle_Landing_Craft</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Theta_Shuttle_Landing_Craft_Jayfon_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="Theta_Shuttle_Landing_Craft_Jesra_Loture_Imp">
+		<Variant_Of_Existing_Type>Theta_Shuttle_Landing_Craft</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Theta_Shuttle_Landing_Craft_Jesra_Loture_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="LAAT_Landing_Craft_Ozzel_Imp">
+		<Variant_Of_Existing_Type>LAAT_Landing_Craft</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>LAAT_Landing_Craft_Ozzel_Landing</Landing_Transport_Variant>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+	</TransportUnit>
+
+	<TransportUnit Name="CR25_Landing_Craft_Romodi_Imp">
+		<Variant_Of_Existing_Type>CR25_Landing_Craft_Heavy</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>CR25_Landing_Craft_Romodi_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="CR25_Landing_Craft_Gentis_Imp">
+		<Variant_Of_Existing_Type>CR25_Landing_Craft_Heavy</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>CR25_Landing_Craft_Gentis_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="CR25_Landing_Craft_Geen_Imp">
+		<Variant_Of_Existing_Type>CR25_Landing_Craft_Heavy</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>CR25_Landing_Craft_Geen_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="CR25_Landing_Craft_Solomahal_Imp">
+		<Variant_Of_Existing_Type>CR25_Landing_Craft_Heavy</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>CR25_Landing_Craft_Solomahal_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="CR25_Landing_Craft_Gaffa_Imp">
+		<Variant_Of_Existing_Type>CR25_Landing_Craft_Heavy</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>CR25_Landing_Craft_Gaffa_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+
 	<!-- Order 65 Senator Heroes -->
 
 	<!--

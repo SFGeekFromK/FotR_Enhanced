@@ -125,7 +125,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Maarisa",
 			"Grumby",
-			"Needa"
+			"Needa",
+			"Dallin"
 		},
 		story_locked_list = {--Heroes not accessible, but able to return with the right conditions
 			["Tenant"] = true,
@@ -773,7 +774,7 @@ function RepublicHeroes:on_galactic_hero_killed(hero_name, owner)
 			if hero_name == "YULAREN_INVINCIBLE" then 
 				UnitUtil.SetLockList("EMPIRE", {"Yularen_Integrity_Imp_Upgrade_Invincible"}, false)
 			end
-			admiral_data.full_list["Yularen"].unit_id = 4 --YULAREN_INTEGRITY
+			admiral_data.full_list["Yularen"].unit_id = 2 --YULAREN_INTEGRITY
 			Handle_Hero_Add("Yularen", admiral_data)
 			if Find_Player("Empire").Is_Human() then
 				StoryUtil.Multimedia("TEXT_SPEECH_YULAREN_RETURNS_INTEGRITY_IMP", 15, nil, "Piett_Loop", 0)

@@ -1,15 +1,15 @@
 return {
 	Ship_Crew_Requirement = 30,
 	Fighters = {
-		["TORRENT_SQUADRON_DOUBLE"] = {
+		["TORRENT_SQUADRON_DOUBLE_IMP"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, TechLevel = LessOrEqualTo(3)},
 			HOSTILE = {Initial = 1, Reserve = 2},
 			WARLORDS = {Initial = 1, Reserve = 2}
 		},
-		["V-WING_SQUADRON_DOUBLE"] = {
+		["V-WING_SQUADRON_DOUBLE_IMP"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, HeroOverride = {{"EMPEROR_PALPATINE"}, {"ELITE_GUARD_NIMBUS_SQUADRON"}}, TechLevel = GreaterThan(3)}
 		},
-		["GENERIC_ARC_170_SQUADRON"] = {
+		["GENERIC_ARC_170_SQUADRON_IMP"] = {
 			DEFAULT = {Initial = 1, Reserve = 2}
 		},
 		["EARLY_SKIPRAY_SQUADRON_HALF"] = {
@@ -18,7 +18,7 @@ return {
 		["2_WARPOD_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 2, ResearchType = "RepublicWarpods"}
 		},
-		["GENERIC_BTLB_Y-WING_SQUADRON"] = {
+		["GENERIC_BTLB_Y-WING_SQUADRON_IMP"] = {
 			DEFAULT = {Initial = 1, Reserve = 2, ResearchType = "~RepublicWarpods"}
 		},
 		["TRIFIGHTER_SQUADRON"] = {

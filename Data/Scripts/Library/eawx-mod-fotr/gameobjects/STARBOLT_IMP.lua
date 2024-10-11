@@ -17,7 +17,7 @@ return {
 			SECTOR_FORCES = {Initial = 1, Reserve = 2, TechLevel = LessOrEqualTo(3)},
 			WARLORDS = {Initial = 1, Reserve = 2, TechLevel = LessOrEqualTo(3)}
 		},
-		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_HALF"] = {
+		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_HALF_IMP"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, TechLevel = GreaterThan(3)},
 			HOSTILE = {Initial = 1, Reserve = 2, TechLevel = GreaterThan(3)},
 			SECTOR_FORCES = {Initial = 1, Reserve = 2, TechLevel = GreaterThan(3)},

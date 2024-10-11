@@ -1,3 +1,3 @@
 return {
-	Flags = {FULLINHERIT = "GENERIC_VENATOR"}
+	Flags = {FULLINHERIT = "GENERIC_VENATOR_IMP"}
 }

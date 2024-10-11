@@ -1,5 +1,5 @@
 return {
 	Ship_Crew_Requirement = 10,
 	Scripts = {"multilayer", "fighter-spawn"},
-	Flags = {FIGHTERINHERIT = "GENERIC_VENATOR"}
+	Flags = {FIGHTERINHERIT = "GENERIC_VENATOR_IMP"}
 }

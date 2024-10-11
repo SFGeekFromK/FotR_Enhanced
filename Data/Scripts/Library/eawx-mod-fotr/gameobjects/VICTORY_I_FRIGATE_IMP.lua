@@ -1,5 +1,3 @@
 return {
-	Ship_Crew_Requirement = 5,
-	Fighters = {},
-	Scripts = {"multilayer", "single-unit-retreat"}
+	Flags = {FULLINHERIT = "VICTORY_I_FRIGATE"}
 }

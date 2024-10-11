@@ -7,7 +7,7 @@ return {
 			EMPIRE = {Initial = 1, Reserve = 4, TechLevel = LessOrEqualTo(3)},
 			HOSTILE = {Initial = 1, Reserve = 4, TechLevel = LessOrEqualTo(3)}
 		},
-		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_DOUBLE"] = {
+		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_DOUBLE_IMP"] = {
 			CIS = {Initial = 1, Reserve = 4, TechLevel = GreaterThan(3)},
 			EMPIRE = {Initial = 1, Reserve = 4, TechLevel = GreaterThan(3)},
 			HOSTILE = {Initial = 1, Reserve = 4, TechLevel = GreaterThan(3)}
@@ -15,7 +15,7 @@ return {
 		["CLOAKSHAPE_SQUADRON"] = {
 			DEFAULT = {Initial = 1, Reserve = 4, TechLevel = LessOrEqualTo(2)}
 		},
-		["GENERIC_ARC_170_SQUADRON"] = {
+		["GENERIC_ARC_170_SQUADRON_IMP"] = {
 			DEFAULT = {Initial = 1, Reserve = 4, TechLevel = GreaterThan(2)}
 		}
 	},

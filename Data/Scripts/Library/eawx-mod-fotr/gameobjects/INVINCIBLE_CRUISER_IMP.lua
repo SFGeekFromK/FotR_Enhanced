@@ -9,7 +9,7 @@ return {
 			SECTOR_FORCES = {Initial = 1, Reserve = 2, TechLevel = LessOrEqualTo(3)},
 			WARLORDS = {Initial = 1, Reserve = 2, TechLevel = LessOrEqualTo(3)}
 		},
-		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_DOUBLE"] = {
+		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_DOUBLE_IMP"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, TechLevel = GreaterThan(3)},
 			HOSTILE = {Initial = 1, Reserve = 2, TechLevel = GreaterThan(3)}
 		},
@@ -21,13 +21,13 @@ return {
 			SECTOR_FORCES = {Initial = 1, Reserve = 4, TechLevel = LessThan(2)},
 			WARLORDS = {Initial = 1, Reserve = 4, TechLevel = LessThan(2)}
 		},
-		["TORRENT_SQUADRON"] = {
+		["TORRENT_SQUADRON_IMP"] = {
 			EMPIRE = {Initial = 1, Reserve = 4, TechLevel = IsOneOf({2, 3})},
 			HOSTILE = {Initial = 1, Reserve = 4, TechLevel = IsOneOf({2, 3})},
 			SECTOR_FORCES = {Initial = 1, Reserve = 4, TechLevel = IsOneOf({2, 3})},
 			WARLORDS = {Initial = 1, Reserve = 4, TechLevel = IsOneOf({2, 3})}
 		},
-		["GENERIC_V-WING_SQUADRON"] = {
+		["GENERIC_V-WING_SQUADRON_IMP"] = {
 			EMPIRE = {Initial = 1, Reserve = 2, TechLevel = GreaterThan(3)},
 			HOSTILE = {Initial = 1, Reserve = 2, TechLevel = GreaterThan(3)},
 			SECTOR_FORCES = {Initial = 1, Reserve = 2, TechLevel = GreaterThan(3)},

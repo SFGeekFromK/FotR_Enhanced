@@ -4,22 +4,22 @@ return {
 		["GENERIC_Z95_HEADHUNTER_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 1, Reserve = 3, TechLevel = LessOrEqualTo(3)}
 		},
-		["V-WING_SQUADRON_DOUBLE"] = {
+		["V-WING_SQUADRON_DOUBLE_IMP"] = {
 			DEFAULT = {Initial = 1, Reserve = 3, TechLevel = GreaterThan(3)}
 		},
 		["CLOAKSHAPE_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 1, Reserve = 3, TechLevel = LessOrEqualTo(3)}
 		},
-		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON"] = {
+		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_IMP"] = {
 			DEFAULT = {Initial = 1, Reserve = 3, TechLevel = GreaterThan(3)}
 		},
-		["GENERIC_ARC_170_SQUADRON"] = {
+		["GENERIC_ARC_170_SQUADRON_IMP"] = {
 			DEFAULT = {Initial = 1, Reserve = 3, TechLevel = GreaterThan(3)}
 		},
 		["2_WARPOD_SQUADRON_DOUBLE"] = {
 			DEFAULT = {Initial = 1, Reserve = 3, TechLevel = LessOrEqualTo(3)}
 		},
-		["GENERIC_BTLB_Y-WING_SQUADRON_DOUBLE"] = {
+		["GENERIC_BTLB_Y-WING_SQUADRON_DOUBLE_IMP"] = {
 			DEFAULT = {Reserve = 3, Initial = 1, TechLevel = GreaterThan(3)}
 		}
 	},

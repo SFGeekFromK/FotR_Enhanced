@@ -1,6 +1,6 @@
 return {
 	Fighters = {
-		["MISSILE_TIE_SQUADRON"] = {
+		["MISSILE_TIE_SQUADRON_IMP"] = {
 			DEFAULT = {Initial = 3, Reserve = 10}
 		},
 		["EARLY_SKIPRAY_SQUADRON_DOUBLE"] = {

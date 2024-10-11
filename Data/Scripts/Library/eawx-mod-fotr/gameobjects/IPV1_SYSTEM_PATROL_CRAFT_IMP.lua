@@ -1,5 +1,3 @@
 return {
-	Ship_Crew_Requirement = 1,
-	Fighters = {},
-	Scripts = {"multilayer"}
+	Flags = {FULLINHERIT = "IPV1_SYSTEM_PATROL_CRAFT"}
 }

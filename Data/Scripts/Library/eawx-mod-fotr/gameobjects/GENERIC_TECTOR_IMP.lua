@@ -1,5 +1,3 @@
 return {
-	Ship_Crew_Requirement = 30, 
-	Fighters = {}, 
-	Scripts = {"multilayer"}
+	Flags = {FULLINHERIT = "GENERIC_TECTOR"}
 }

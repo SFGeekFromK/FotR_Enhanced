@@ -6,15 +6,12 @@ return {
 			SECTOR_FORCES = {Initial = 1, Reserve = 2},
 			WARLORDS = {Initial = 1, Reserve = 2}
 		},
-		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON"] = {
+		["TWIN_ION_ENGINE_STARFIGHTER_SQUADRON_IMP"] = {
 			EMPIRE = {Initial = 1, Reserve = 2}
 		},
-		["2_WARPOD_SQUADRON"] = {
-			EMPIRE = {Initial = 1, Reserve = 2, ResearchType = "RepublicWarpods"},
-		},
-		["GENERIC_BTLB_Y-WING_SQUADRON"] = {
+		["GENERIC_BTLB_Y-WING_SQUADRON_IMP"] = {
 			CIS = {Initial = 1, Reserve = 2},
-			EMPIRE = {Initial = 1, Reserve = 2, ResearchType = "~RepublicWarpods"},
+			EMPIRE = {Initial = 1, Reserve = 2},
 			SECTOR_FORCES = {Initial = 1, Reserve = 2},
 			WARLORDS = {Initial = 1, Reserve = 2},
 			HOSTILE = {Initial = 1, Reserve = 2}

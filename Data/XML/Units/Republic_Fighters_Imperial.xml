@@ -228,6 +228,39 @@
         <Squadron_Units>Torrent_Imp, Torrent_Imp, Torrent_Imp, Torrent_Imp, Torrent_Imp, Torrent_Imp</Squadron_Units>        
     </Squadron>
 
+    <!-- Republic Z-95 -->
+
+    <SpaceUnit Name="Republic_Z-95_Headhunter_Imp">
+        <Variant_Of_Existing_Type>Republic_Z-95_Headhunter</Variant_Of_Existing_Type>
+        <No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+    </SpaceUnit>
+
+    <Squadron Name="Republic_Z-95_Headhunter_Squadron_Imp">
+        <Variant_Of_Existing_Type>Republic_Z-95_Headhunter_Squadron</Variant_Of_Existing_Type>
+        <Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+		<Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+		<Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+		<Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+    </Squadron>
+
+    <Squadron Name="Republic_Z-95_Headhunter_Squadron_Double_Imp">
+        <Variant_Of_Existing_Type>Republic_Z-95_Headhunter_Squadron_Double</Variant_Of_Existing_Type>
+        <Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+		<Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+		<Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+		<Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+        <Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+		<Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+		<Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+		<Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+    </Squadron>
+
+    <Squadron Name="Republic_Z-95_Headhunter_Half_Imp">
+        <Variant_Of_Existing_Type>Republic_Z-95_Headhunter_Squadron_Half</Variant_Of_Existing_Type>
+        <Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+		<Squadron_Units>Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp, Republic_Z-95_Headhunter_Imp</Squadron_Units>
+    </Squadron>
+
     <!-- Nimbus V wing -->
     <SpaceUnit Name="Generic_Nimbus_V-Wing_Imp">
         <Variant_Of_Existing_Type>Generic_Nimbus_V-Wing</Variant_Of_Existing_Type>

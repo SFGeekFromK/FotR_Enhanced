@@ -26,7 +26,6 @@ require("eawx-util/StoryUtil")
 require("HeroSystem")
 require("SetFighterResearch")
 
-UnitUtil = require("eawx-util/UnitUtil")
 
 RepublicHeroes = class()
 
@@ -930,7 +929,7 @@ function RepublicHeroes:Order_66_Handler()
 			end
 
 			local Hero_Check = Find_Object_Type(Hero_Rep)
-			local Hero_Imperial = Hero_Unit.."_IMP"
+			local Hero_Imperial = Hero_Rep.."_IMP"
 			if TestValid(Hero_Check) then
 				if Hero_Rep == "YULAREN_RESOLUTE_SPHAT" then
 					Hero_Imperial = "YULAREN_RESOLUTE_IMP"

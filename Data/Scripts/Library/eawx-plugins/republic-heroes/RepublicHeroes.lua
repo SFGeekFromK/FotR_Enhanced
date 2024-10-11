@@ -61,7 +61,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("REPUBLIC_FIGHTER_ENABLE", self.Add_Fighter_Sets, self)
 	crossplot:subscribe("REPUBLIC_FIGHTER_DISABLE", self.Remove_Fighter_Sets, self)
 	-- FotR_Enhanced
-	--crossplot:subscribe("DALLIN_UNLLOCK", self.Dallin_Unlock, self)
+	crossplot:subscribe("DALLIN_UNLLOCK", self.Dallin_Unlock, self)
 	crossplot:subscribe("GEEN_UNLOCK", self.Geen_Unlock, self)
 	--crossplot:subscribe("FORRAL_RETIRE", self.Forral_Switch, self)
 	crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)
@@ -73,7 +73,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_limit = 22,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
 		initialized = false,
 		full_list = { --All options for reference operations
-			["Yularen"] = --[[FotR_Enhanced Resolute sphat Version added]]{"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE_IMP","YULAREN_RETIRE2","YULAREN_RETIRE2_IMP","YULAREN_RETIRE3","YULAREN_RETIRE_1"},{"YULAREN_RESOLUTE","YULAREN_RESOLUTE_IMP","YULAREN_INTEGRITY","YULRAEN_INTEGRITY_IMP","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT"},"Wulff Yularen"},
+			--[[
+			["Yularen"] = {"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE_IMP","YULAREN_RETIRE2","YULAREN_RETIRE2_IMP","YULAREN_RETIRE3","YULAREN_RETIRE_1"},{"YULAREN_RESOLUTE","YULAREN_RESOLUTE_IMP","YULAREN_INTEGRITY","YULRAEN_INTEGRITY_IMP","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT"},"Wulff Yularen"},
 			["Wieler"] = {"WIELER_ASSIGN",{"WIELER_RETIRE","WIELER_RETIRE_IMP"},{"WIELER_RESILIENT","WIELER_RESILIENT_IMP"},"Wieler"},
 			["Coburn"] = {"COBURN_ASSIGN",{"COBURN_RETIRE","COBURN_RETIRE_IMP"},{"COBURN_TRIUMPHANT","COBURN_TRIUMPHANT_IMP"},"Barton Coburn"},
 			["Kilian"] = {"KILIAN_ASSIGN",{"KILIAN_RETIRE","KILIAN_RETIRE_IMP"},{"KILIAN_ENDURANCE","KILIAN_ENDURANCE_IMP"},"Shoan Kilian"},
@@ -94,8 +95,32 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Baraka"] = {"BARAKA_ASSIGN",{"BARAKA_RETIRE", "BARAKA_RETIRE_IMP"},{"BARAKA_NEXU","BARAKA_NEXU_IMP"},"Arikakon Baraka"},
 			["Martz"] = {"MARTZ_ASSIGN",{"MARTZ_RETIRE","MARTZ_RETIRE_IMP"},{"MARTZ_PROSECUTOR","MARTZ_PROSECUTOR_IMP"},"Stinnet Martz"},
 			-- FotR_Enhanced
-			["Needa"] = {"NEEDA_ASSIGN",{"NEEDA_RETIRE", "NEEDA_RETIRE_IMP"},{"NEEDA_INTEGRITY",},"Lorth Needa"},
+			["Needa"] = {"NEEDA_ASSIGN",{"NEEDA_RETIRE", "NEEDA_RETIRE_IMP"},{"NEEDA_INTEGRITY","NEEDA_INTEGRITY_IMP"},"Lorth Needa"},
 			["Block"] = {"BLOCK_ASSIGN",{"BLOCK_RETIRE","BLOCK_RETIRE_IMP","BLOCK_RETIRE2","BLOCK_RETIRE2_IMP"},{"BLOCK_NEGOTIATOR","BLOCK_NEGOTIATOR_IMP","BLOCK_VIGILANCE","BLOCK_VIGILANCE_IMP"}, "Block"}
+			]]
+			["Yularen"] = {"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"},"Wulff Yularen"},
+			["Wieler"] = {"WIELER_ASSIGN",{"WIELER_RETIRE"},{"WIELER_RESILIENT"},"Wieler"},
+			["Coburn"] = {"COBURN_ASSIGN",{"COBURN_RETIRE"},{"COBURN_TRIUMPHANT"},"Barton Coburn"},
+			["Kilian"] = {"KILIAN_ASSIGN",{"KILIAN_RETIRE"},{"KILIAN_ENDURANCE"},"Shoan Kilian"},
+			["Tenant"] = {"TENANT_ASSIGN",{"TENANT_RETIRE"},{"TENANT_VENATOR"},"Nils Tenant"},
+			["Dao"] = {"DAO_ASSIGN",{"DAO_RETIRE"},{"DAO_VENATOR"},"Dao"},
+			["Denimoor"] = {"DENIMOOR_ASSIGN",{"DENIMOOR_RETIRE"},{"DENIMOOR_TENACIOUS"},"Denimoor"},
+			["Dron"] = {"DRON_ASSIGN",{"DRON_RETIRE"},{"DRON_VENATOR"},"Dron"},
+			["Screed"] = {"SCREED_ASSIGN",{"SCREED_RETIRE"},{"SCREED_ARLIONNE"},"Terrinald Screed"},
+			["Dodonna"] = {"DODONNA_ASSIGN",{"DODONNA_RETIRE"},{"DODONNA_ARDENT"},"Jan Dodonna"},
+			["Parck"] = {"PARCK_ASSIGN",{"PARCK_RETIRE"},{"PARCK_STRIKEFAST"},"Voss Parck"},
+			["Pellaeon"] = {"PELLAEON_ASSIGN",{"PELLAEON_RETIRE"},{"PELLAEON_LEVELER"},"Gilad Pellaeon"},
+			["Tallon"] = {"TALLON_ASSIGN",{"TALLON_RETIRE", "TALLON_RETIRE2"},{"TALLON_SUNDIVER", "TALLON_BATTALION"},"Adar Tallon"},
+			["Dallin"] = {"DALLIN_ASSIGN",{"DALLIN_RETIRE"},{"DALLIN_KEBIR"},"Jace Dallin"},
+			["Autem"] = {"AUTEM_ASSIGN",{"AUTEM_RETIRE"},{"AUTEM_VENATOR"},"Sagoro Autem"},
+			["Forral"] = {"FORRAL_ASSIGN",{"FORRAL_RETIRE"},{"FORRAL_VENSENOR"},"Bythen Forral"},
+			["Maarisa"] = {"MAARISA_ASSIGN",{"MAARISA_RETIRE", "MAARISA_RETIRE2"},{"MAARISA_CAPTOR", "MAARISA_RETALIATION"},"Maarisa Zsinj"},
+			["Grumby"] = {"GRUMBY_ASSIGN",{"GRUMBY_RETIRE"},{"GRUMBY_INVINCIBLE"},"Jona Grumby"},
+			["Baraka"] = {"BARAKA_ASSIGN",{"BARAKA_RETIRE"},{"BARAKA_NEXU"},"Arikakon Baraka"},
+			["Martz"] = {"MARTZ_ASSIGN",{"MARTZ_RETIRE"},{"MARTZ_PROSECUTOR"},"Stinnet Martz"},
+			["Needa"] = {"NEEDA_ASSIGN",{"NEEDA_RETIRE", "NEEDA_RETIRE_IMP"},{"NEEDA_INTEGRITY"},"Lorth Needa"},
+			["Block"] = {"BLOCK_ASSIGN",{"BLOCK_RETIRE","BLOCK_RETIRE2"},{"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE",}, "Block"}
+
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Maarisa",
@@ -119,6 +144,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_limit = 12,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
+			--[[
 			["Tarkin"] = {"TARKIN_ASSIGN",{"TARKIN_RETIRE","TARKIN_RETIRE_IMP","TARKIN_RETIRE2"},{"TARKIN_VENATOR","TARKIN_VENATOR_IMP","TARKIN_EXECUTRIX"},"Wilhuff Tarkin"},
 			["Trachta"] = {"TRACHTA_ASSIGN",{"TRACHTA_RETIRE","TRACHTA_RETIRE_IMP"},{"TRACHTA_VENATOR","TRACHTA_VENATOR_IMP"},"Trachta"},
 			["Wessex"] = {"WESSEX_ASSIGN",{"WESSEX_RETIRE","WESSEX_RETIRE_IMP"},{"WESSEX_REDOUBT","WESSEX_REDOUBT_IMP"},"Denn Wessex"},
@@ -131,6 +157,19 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Praji"] = {"PRAJI_ASSIGN",{"PRAJI_RETIRE","PRAJI_RETIRE_IMP"},{"PRAJI_VALORUM","PRAJI_VALORUM_IMP"},"Collin Praji"},
 			["Ravik"] = {"RAVIK_ASSIGN",{"RAVIK_RETIRE","RAVIK_RETIRE_IMP"},{"RAVIK_VICTORY","RAVIK_VICTORY_IMP"},"Ravik"},
 			["Therbon"] = {"THERBON_ASSIGN",{"THERBON_RETIRE","THERBON_RETIRE_IMP"},{"THERBON_CERULEAN_SUNRISE","THERBON_CERULEAN_SUNRISE_IMP"},"Therbon"},
+			]]
+			["Tarkin"] = {"TARKIN_ASSIGN",{"TARKIN_RETIRE","TARKIN_RETIRE2"},{"TARKIN_VENATOR","TARKIN_EXECUTRIX"},"Wilhuff Tarkin"},
+			["Trachta"] = {"TRACHTA_ASSIGN",{"TRACHTA_RETIRE"},{"TRACHTA_VENATOR"},"Trachta"},
+			["Wessex"] = {"WESSEX_ASSIGN",{"WESSEX_RETIRE"},{"WESSEX_REDOUBT"},"Denn Wessex"},
+			["Grant"] = {"GRANT_ASSIGN",{"GRANT_RETIRE"},{"GRANT_VENATOR"},"Octavian Grant"},
+			["Vorru"] = {"VORRU_ASSIGN",{"VORRU_RETIRE"},{"VORRU_VENATOR"},"Fliry Vorru"},
+			["Byluir"] = {"BYLUIR_ASSIGN",{"BYLUIR_RETIRE"},{"BYLUIR_VENATOR"},"Byluir"},
+			["Hauser"] = {"HAUSER_ASSIGN",{"HAUSER_RETIRE"},{"HAUSER_DREADNAUGHT"},"Lynch Hauser"},
+			["Wessel"] = {"WESSEL_ASSIGN",{"WESSEL_RETIRE"},{"WESSEL_ACCLAMATOR"},"Marcellin Wessel"},
+			["Seerdon"] = {"SEERDON_ASSIGN",{"SEERDON_RETIRE"},{"SEERDON_INVINCIBLE"},"Kohl Seerdon"},			
+			["Praji"] = {"PRAJI_ASSIGN",{"PRAJI_RETIRE"},{"PRAJI_VALORUM"},"Collin Praji"},
+			["Ravik"] = {"RAVIK_ASSIGN",{"RAVIK_RETIRE"},{"RAVIK_VICTORY"},"Ravik"},
+			["Therbon"] = {"THERBON_ASSIGN",{"THERBON_RETIRE"},{"THERBON_CERULEAN_SUNRISE"},"Therbon"},
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Hauser",
@@ -278,6 +317,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_limit = 8,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
+			--[[
 			["Rom"] = {"ROM_MOHC_ASSIGN",{"ROM_MOHC_RETIRE","ROM_MOHC_RETIRE_IMP"},{"ROM_MOHC","ROM_MOHC_IMP"},"Rom Mohc", ["Companies"] = {"ROM_MOHC_TEAM","ROM_MOHC_TEAM_IMP"}},
 			["Gentis"] = {"GENTIS_ASSIGN",{"GENTIS_RETIRE","GENTIS_RETIRE_IMP"},{"GENTIS_AT_TE","GENTIS_AT_TE_IMP"},"Gentis", ["Companies"] = {"GENTIS_TEAM","GENTIS_TEAM_IMP"}},
 			["Geen"] = {"GEEN_ASSIGN",{"GEEN_RETIRE","GEEN_RETIRE_IMP"},{"GEEN_UT_AT","GEEN_UT_AT_IMP"},"Locus Geen", ["Companies"] = {"GEEN_TEAM","GEEN_TEAM_IMP"}},
@@ -286,7 +326,15 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Solomahal"] = {"SOLOMAHAL_ASSIGN",{"SOLOMAHAL_RETIRE","SOLOMAHAL_RETIRE_IMP"},{"SOLOMAHAL_RX200","SOLOMAHAL_RX200_IMP"},"Solomahal", ["Companies"] = {"SOLOMAHAL_TEAM","SOLOMAHAL_TEAM_IMP"}},
 			["Jesra"] = {"JESRA_LOTURE_ASSIGN",{"JESRA_LOTURE_RETIRE","JESRA_LOTURE_RETIRE_IMP"},{"JESRA_LOTURE","JESRA_LOTURE_IMP"},"Jesra Loture", ["Companies"] = {"JESRA_LOTURE_TEAM","JESRA_LOTURE_TEAM_IMP"}},
 			["Jayfon"] = {"JAYFON_ASSIGN",{"JAYFON_RETIRE","JAYFON_RETIRE_IMP"},{"JAYFON","JAYFON_IMP"},"Jayfon", ["Companies"] = {"JAYFON_TEAM","JAYFON_TEAM_IMP"}},
-		
+			]]
+			["Rom"] = {"ROM_MOHC_ASSIGN",{"ROM_MOHC_RETIRE"},{"ROM_MOHC"},"Rom Mohc", ["Companies"] = {"ROM_MOHC_TEAM"}},
+			["Gentis"] = {"GENTIS_ASSIGN",{"GENTIS_RETIRE"},{"GENTIS_AT_TE"},"Gentis", ["Companies"] = {"GENTIS_TEAM"}},
+			["Geen"] = {"GEEN_ASSIGN",{"GEEN_RETIRE"},{"GEEN_UT_AT"},"Locus Geen", ["Companies"] = {"GEEN_TEAM"}},
+			["Ozzel"] = {"OZZEL_ASSIGN",{"OZZEL_RETIRE"},{"OZZEL_LAAT"},"Kendal Ozzel", ["Companies"] = {"OZZEL_TEAM"}},
+			["Romodi"] = {"ROMODI_ASSIGN",{"ROMODI_RETIRE"},{"ROMODI_A5_JUGGERNAUT"},"Hurst Romodi", ["Companies"] = {"ROMODI_TEAM"}},
+			["Solomahal"] = {"SOLOMAHAL_ASSIGN",{"SOLOMAHAL_RETIRE"},{"SOLOMAHAL_RX200"},"Solomahal", ["Companies"] = {"SOLOMAHAL_TEAM"}},
+			["Jesra"] = {"JESRA_LOTURE_ASSIGN",{"JESRA_LOTURE_RETIRE"},{"JESRA_LOTURE"},"Jesra Loture", ["Companies"] = {"JESRA_LOTURE_TEAM"}},
+			["Jayfon"] = {"JAYFON_ASSIGN",{"JAYFON_RETIRE"},{"JAYFON"},"Jayfon", ["Companies"] = {"JAYFON_TEAM"}},
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Rom",
@@ -916,6 +964,7 @@ function RepublicHeroes:Order_66_Handler()
 	Clear_Fighter_Hero("IMA_GUN_DI_DELTA")
 	Decrement_Hero_Amount(10, council_data)
 	Forral_Check()
+	--[[
 	for i, Hero_Table in pairs(Decolor_Table) do
 		local Heroes_All = Hero_Table.full_list
 
@@ -941,6 +990,7 @@ function RepublicHeroes:Order_66_Handler()
 
 	UnitUtil.ReplaceAtLocation("GAFFA_TEAM","GAFFA_TEAM_IMP")
 	set_unit_index("Gaffa", 2, clone_data)
+	]]
 end
 
 function RepublicHeroes:New_Padawan_Handler()

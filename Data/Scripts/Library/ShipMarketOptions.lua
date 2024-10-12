@@ -86,7 +86,7 @@ return {
 					association = nil,
 					readable_name = "Tector-class Star Destroyer",
 					text_requirement = "[ Requires Order 66 and the KDY Contract ]",
-					order = 5,
+					order = 7,
 				},
 				["GENERIC_STAR_DESTROYER"] = {
 					locked = true,
@@ -97,7 +97,7 @@ return {
 					association = nil,
 					readable_name = "Imperator-class Star Destroyer",
 					text_requirement = "[ Requires Order 66 and the KDY Contract ]",
-					order = 6,
+					order = 8,
 				},
 				-- order 66 decolorized
 				["GENERIC_PROCURATOR_IMP"] = {
@@ -109,7 +109,7 @@ return {
 					association = nil,
 					readable_name = "Procurator-class Battlecruiser",
 					text_requirement = "",
-					order = 7,
+					order = 9,
 				},
 				["GENERIC_PRAETOR_IMP"] = {
 					locked = true,
@@ -120,7 +120,7 @@ return {
 					association = nil,
 					readable_name = "Praetor Mark I Battlecruiser",
 					text_requirement = "",
-					order = 8,
+					order = 10,
 				},
 				-- leftover amounts after order 66
 				["GENERIC_MAELSTROM_IMP"] = {
@@ -132,7 +132,7 @@ return {
 					association = nil,
 					readable_name = "Maelstrom-class Battlecruiser",
 					text_requirement = "[ Requires Venator Research, Locked after the KDY Contract ]",
-					order = 9,
+					order = 11,
 				},
 			},
 		},

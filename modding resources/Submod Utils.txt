@@ -128,7 +128,7 @@ ORS Submod Plans
       <!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,    0.9f</Mod_Multiplier>

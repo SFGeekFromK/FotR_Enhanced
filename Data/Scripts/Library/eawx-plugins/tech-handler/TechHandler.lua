@@ -24,7 +24,7 @@ function TechManager:new(galactic_conquest, human_player, planets, unlocktech)
 		self.VenatorResearch = GenericResearch(self.galactic_conquest, 
 			"VENATOR_RESEARCH", 
 			"Dummy_Research_Venator", {"Empire"},
-			{"Generic_Venator", "Venator_OFC", "OFC_SPHA_T_Refit"},
+			{"Generic_Venator", "Generic_Venator_OFC", "OFC_SPHA_T_Refit"},
 			{},
 			{},
 			"Kuat",

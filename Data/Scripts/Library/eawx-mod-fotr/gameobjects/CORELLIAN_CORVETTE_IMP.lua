@@ -1,3 +1,0 @@
-return {
-	Flags={FULLINHERI="CORELLIAN_CORVETTE"}
-}

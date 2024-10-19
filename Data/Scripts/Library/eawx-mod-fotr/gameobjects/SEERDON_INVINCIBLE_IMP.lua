@@ -1,3 +1,0 @@
-return {
-	Flags = {FULLINHERIT = "INVINCIBLE_CRUISER_IMP"}
-}

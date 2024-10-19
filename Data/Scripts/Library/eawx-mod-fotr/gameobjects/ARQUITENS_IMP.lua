@@ -1,4 +1,0 @@
-return { 
-  Flags = {FULLINHERIT = 
-    "ARQUITENS"}
-}

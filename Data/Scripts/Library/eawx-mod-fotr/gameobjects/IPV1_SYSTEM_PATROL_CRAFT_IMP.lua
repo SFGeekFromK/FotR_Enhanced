@@ -1,3 +1,0 @@
-return {
-	Flags = {FULLINHERIT = "IPV1_SYSTEM_PATROL_CRAFT"}
-}

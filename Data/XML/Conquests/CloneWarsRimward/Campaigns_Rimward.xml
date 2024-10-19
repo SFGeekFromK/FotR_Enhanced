@@ -1063,8 +1063,8 @@
 		<Starting_Forces> Empire, Kamino, Empire_Star_Base_3 </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Republic_Shipyard_Level_Two </Starting_Forces>
 
-		<Starting_Forces> Empire, Kamino, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Kamino, Venator_OFC </Starting_Forces> <!-- AI gets an extra Venator -->
+		<Starting_Forces> Empire, Kamino, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Kamino, Generic_Venator_OFC </Starting_Forces> <!-- AI gets an extra Venator -->
 		<Starting_Forces> Empire, Kamino, Generic_Venator </Starting_Forces> <!-- AI gets an extra Venator -->
 		<Starting_Forces> Empire, Kamino, Generic_Venator </Starting_Forces> <!-- AI gets an extra Venator -->
 		<Starting_Forces> Empire, Kamino, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
@@ -2962,8 +2962,8 @@
 		<Starting_Forces> Empire, Kamino, Empire_Star_Base_3 </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Republic_Shipyard_Level_Two </Starting_Forces>
 
-		<Starting_Forces> Empire, Kamino, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Kamino, Venator_OFC </Starting_Forces> <!-- AI gets an extra Venator -->
+		<Starting_Forces> Empire, Kamino, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Kamino, Generic_Venator_OFC </Starting_Forces> <!-- AI gets an extra Venator -->
 		<Starting_Forces> Empire, Kamino, Generic_Venator </Starting_Forces> <!-- AI gets an extra Venator -->
 		<Starting_Forces> Empire, Kamino, Generic_Venator </Starting_Forces> <!-- AI gets an extra Venator -->
 		<Starting_Forces> Empire, Kamino, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
@@ -4871,7 +4871,7 @@
 		<Starting_Forces> Empire, Kamino, Empire_Star_Base_3 </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Republic_Shipyard_Level_Two </Starting_Forces>
 
-		<Starting_Forces> Empire, Kamino, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Kamino, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Arquitens </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Arquitens </Starting_Forces>
@@ -6759,7 +6759,7 @@
 		<Starting_Forces> Empire, Kamino, Empire_Star_Base_3 </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Republic_Shipyard_Level_Two </Starting_Forces>
 
-		<Starting_Forces> Empire, Kamino, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Kamino, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Arquitens </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Arquitens </Starting_Forces>
@@ -8650,8 +8650,8 @@
 		<Starting_Forces> Empire, Kamino, Empire_Star_Base_3 </Starting_Forces>
 		<Starting_Forces> Empire, Kamino, Republic_Shipyard_Level_Two </Starting_Forces>
 
-		<Starting_Forces> Empire, Kamino, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Kamino, Venator_OFC </Starting_Forces> <!-- AI gets an extra Venator -->
+		<Starting_Forces> Empire, Kamino, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Kamino, Generic_Venator_OFC </Starting_Forces> <!-- AI gets an extra Venator -->
 		<Starting_Forces> Empire, Kamino, Generic_Venator </Starting_Forces> <!-- AI gets an extra Venator -->
 		<Starting_Forces> Empire, Kamino, Generic_Venator </Starting_Forces> <!-- AI gets an extra Venator -->
 		<Starting_Forces> Empire, Kamino, Generic_Acclamator_Assault_Ship_I </Starting_Forces>

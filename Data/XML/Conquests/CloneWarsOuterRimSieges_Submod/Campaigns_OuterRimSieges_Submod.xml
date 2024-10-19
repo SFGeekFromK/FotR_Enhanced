@@ -1206,7 +1206,7 @@
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Eriadu, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Eriadu, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Venator </Starting_Forces>	
 		<Starting_Forces> Empire, Eriadu, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>		
@@ -2206,8 +2206,8 @@
 		<!-- AI Extra Victory, 2 extra Venators, 2 extra Acc-1, 4 extra carrack -->
 		<Starting_Forces> Empire, Coruscant, Empire_Star_Base_5 </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
@@ -2605,7 +2605,7 @@
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Eriadu, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Eriadu, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Venator </Starting_Forces>	
 		<Starting_Forces> Empire, Eriadu, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>		
@@ -3605,8 +3605,8 @@
 		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
@@ -3996,7 +3996,7 @@
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Eriadu, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Eriadu, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Venator </Starting_Forces>	
 		<Starting_Forces> Empire, Eriadu, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>		
@@ -5374,7 +5374,7 @@
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Eriadu, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Eriadu, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Venator </Starting_Forces>	
 		<Starting_Forces> Empire, Eriadu, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Acclamator_Assault_Ship_Leveler </Starting_Forces>		
@@ -6322,8 +6322,8 @@
 		<!-- AI Extra Victory, 2 extra Venators, 2 extra Acc-1, 4 extra carrack -->
 		<Starting_Forces> Empire, Coruscant, Empire_Star_Base_5 </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
@@ -6688,7 +6688,7 @@
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Eriadu, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Eriadu, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Dreadnaught </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Dreadnaught </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Dreadnaught </Starting_Forces>
@@ -7661,8 +7661,8 @@
 		<!-- AI Extra Victory, 2 extra Venators, 2 extra Acc-1, 4 extra carrack -->
 		<Starting_Forces> Empire, Coruscant, Empire_Star_Base_5 </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Coruscant, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
 		<Starting_Forces> Empire, Coruscant, Generic_Venator </Starting_Forces>
@@ -8027,7 +8027,7 @@
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Generic_Victory_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Eriadu, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Eriadu, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Dreadnaught </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Dreadnaught </Starting_Forces>
 		<Starting_Forces> Empire, Eriadu, Dreadnaught </Starting_Forces>

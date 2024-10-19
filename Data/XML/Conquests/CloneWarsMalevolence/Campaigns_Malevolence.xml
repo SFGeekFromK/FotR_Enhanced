@@ -495,10 +495,10 @@
 		<Starting_Forces> Empire, Bormus, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
 		<Starting_Forces> Empire, Bormus, Carrack_Cruiser_Lasers </Starting_Forces>
 		<Starting_Forces> Empire, Bormus, Carrack_Cruiser_Lasers </Starting_Forces>
-		<Starting_Forces> Empire, Bormus, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Bormus, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Bormus, Venator_OFC </Starting_Forces> <!-- AI extra Venator -->
-		<Starting_Forces> Empire, Bormus, Venator_OFC </Starting_Forces> <!-- AI extra Venator -->
+		<Starting_Forces> Empire, Bormus, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Bormus, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Bormus, Generic_Venator_OFC </Starting_Forces> <!-- AI extra Venator -->
+		<Starting_Forces> Empire, Bormus, Generic_Venator_OFC </Starting_Forces> <!-- AI extra Venator -->
 		<Starting_Forces> Empire, Bormus, Generic_Acclamator_Assault_Ship_I </Starting_Forces> <!-- AI gets additional Acclamator -->
 		<Starting_Forces> Empire, Bormus, Generic_Acclamator_Assault_Ship_I </Starting_Forces> <!-- AI gets additional Acclamator -->
 		<Starting_Forces> Empire, Bormus, Generic_Acclamator_Assault_Ship_I </Starting_Forces> <!-- AI gets additional Acclamator -->
@@ -539,7 +539,7 @@
 		<Starting_Forces> Empire, Ghorman, E_Ground_Barracks </Starting_Forces>
 		<Starting_Forces> Empire, Ghorman, Generic_Galactic_Turbolaser_Tower_Defenses </Starting_Forces>
 		<Starting_Forces> Empire, Ghorman, Republic_Shipyard_Level_Two </Starting_Forces>
-		<Starting_Forces> Empire, Ghorman, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Ghorman, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Ghorman, Class_C_Frigate </Starting_Forces>
 		<Starting_Forces> Empire, Ghorman, Carrack_Cruiser_Lasers </Starting_Forces>
 		<Starting_Forces> Empire, Ghorman, Carrack_Cruiser_Lasers </Starting_Forces>
@@ -627,7 +627,7 @@
 		<Starting_Forces> Empire, Naboo, Carrack_Cruiser_Lasers </Starting_Forces>
 		<Starting_Forces> Empire, Naboo, Corellian_Corvette </Starting_Forces>
 		<Starting_Forces> Empire, Naboo, Corellian_Corvette </Starting_Forces>
-		<Starting_Forces> Empire, Naboo, Venator_OFC </Starting_Forces> <!-- AI gets additional Venator -->
+		<Starting_Forces> Empire, Naboo, Generic_Venator_OFC </Starting_Forces> <!-- AI gets additional Venator -->
 		<Starting_Forces> Empire, Naboo, Generic_Acclamator_Assault_Ship_I </Starting_Forces> <!-- AI gets additional Acclamator -->
 
 		<Starting_Forces> Empire, Rugosa, Empire_Star_Base_1 </Starting_Forces>
@@ -663,10 +663,10 @@
 		<Starting_Forces> Empire, Sanbra, E_Ground_Light_Vehicle_Factory </Starting_Forces>		
 
 		<!-- Ryndellia is disputed -->
-		<Starting_Forces> Empire, Ryndellia, Venator_OFC </Starting_Forces> <!-- AI extra Venator -->
-		<Starting_Forces> Empire, Ryndellia, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Ryndellia, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Ryndellia, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Ryndellia, Generic_Venator_OFC </Starting_Forces> <!-- AI extra Venator -->
+		<Starting_Forces> Empire, Ryndellia, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Ryndellia, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Ryndellia, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Ryndellia, Generic_Acclamator_Assault_Ship_I </Starting_Forces> <!-- AI gets additional Acclamator -->
 		<Starting_Forces> Empire, Ryndellia, Generic_Acclamator_Assault_Ship_I </Starting_Forces> <!-- AI gets additional Acclamator -->
 		<Starting_Forces> Empire, Ryndellia, Generic_Acclamator_Assault_Ship_I </Starting_Forces> <!-- AI gets additional Acclamator -->
@@ -1256,8 +1256,8 @@
 		<Starting_Forces> Empire, Bormus, Generic_Acclamator_Assault_Ship_I </Starting_Forces>
 		<Starting_Forces> Empire, Bormus, Carrack_Cruiser_Lasers </Starting_Forces>
 		<Starting_Forces> Empire, Bormus, Carrack_Cruiser_Lasers </Starting_Forces>
-		<Starting_Forces> Empire, Bormus, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Bormus, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Bormus, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Bormus, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Bormus, Arquitens </Starting_Forces>
 		<Starting_Forces> Empire, Bormus, Republic_Shipyard_Level_Three </Starting_Forces>
 		<Starting_Forces> Empire, Bormus, E_Ground_Heavy_Vehicle_Factory </Starting_Forces>
@@ -1384,8 +1384,8 @@
 		<Starting_Forces> Empire, Sanbra, E_Ground_Light_Vehicle_Factory </Starting_Forces>		
 
 		<!-- Ryndellia is disputed -->
-		<Starting_Forces> Empire, Ryndellia, Venator_OFC </Starting_Forces>
-		<Starting_Forces> Empire, Ryndellia, Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Ryndellia, Generic_Venator_OFC </Starting_Forces>
+		<Starting_Forces> Empire, Ryndellia, Generic_Venator_OFC </Starting_Forces>
 		<Starting_Forces> Empire, Ryndellia, Class_C_Frigate </Starting_Forces>
 		<Starting_Forces> Empire, Ryndellia, Class_C_Frigate </Starting_Forces>
 		<Starting_Forces> Empire, Ryndellia, Carrack_Cruiser_Lasers </Starting_Forces>

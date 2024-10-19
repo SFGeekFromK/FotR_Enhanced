@@ -4007,7 +4007,7 @@
 		<Build_Limit_Current_Per_Player>24</Build_Limit_Current_Per_Player>
 	</SpaceUnit>
 
-	<SpaceUnit Name="Venator_OFC">
+	<SpaceUnit Name="Generic_Venator_OFC">
 		<Variant_Of_Existing_Type>Generic_Venator</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_VENATOR_OFC</Text_ID>
 		<Icon_Name>i_button_jedi_Cruiser_rep_OFC.tga</Icon_Name>
@@ -4090,12 +4090,12 @@
 	</SpaceUnit>
 
 	<SpaceUnit Name="Venator_OFC_Campaign"> <!-- Historical Campaign Variant : no build limit -->
-		<Variant_Of_Existing_Type>Venator_OFC</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Generic_Venator_OFC</Variant_Of_Existing_Type>
 		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
 	</SpaceUnit>
 
-	<SpaceUnit Name="Venator_SPHA_T">
-		<Variant_Of_Existing_Type>Venator_OFC</Variant_Of_Existing_Type>
+	<SpaceUnit Name="Generic_Venator_SPHA_T">
+		<Variant_Of_Existing_Type>Generic_Venator_OFC</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_VENATOR_OFC_SPHA_T</Text_ID>
         
 		<Encyclopedia_Text> 

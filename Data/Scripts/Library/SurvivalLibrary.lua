@@ -96,9 +96,9 @@ return {
 			Find_Object_Type("Space_ARC_Cruiser"),
 			Find_Object_Type("Calamari_Cruiser_Liner"),
 			-- FotR_Enhanced
-			Find_Object_Type("Venator_OFC"),
+			Find_Object_Type("Generic_Venator_OFC"),
 			Find_Object_Type("Venator_OFC_Campaign"),
-			Find_Object_Type("Venator_SPHA_T"),
+			Find_Object_Type("Generic_Venator_SPHA_T"),
         },
         {
             Find_Object_Type("Invincible_Cruiser"),-- Republic

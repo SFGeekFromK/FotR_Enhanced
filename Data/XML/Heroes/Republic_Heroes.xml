@@ -1783,7 +1783,7 @@
 			<!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="Block_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
@@ -1974,7 +1974,7 @@
 			<!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="Wieler_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
@@ -2135,7 +2135,7 @@
 			<!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="Coburn_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage><Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
@@ -2383,7 +2383,7 @@
 			<!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="Yularen_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage><Ability_Recharge_Bonus_Percentage>-0.20</Ability_Recharge_Bonus_Percentage>
@@ -2548,7 +2548,7 @@
 			<!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="Yularen_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
@@ -2789,7 +2789,7 @@
 			<!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="Yularen_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
@@ -3265,7 +3265,7 @@
 			<!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="Kilian_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
@@ -3553,7 +3553,7 @@
 			<!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="Tenant_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
@@ -3972,7 +3972,7 @@
 			<!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="Autem_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
@@ -5178,7 +5178,7 @@
 			<!-- FotR_Enhanced -->
 			<Combat_Bonus_Ability Name="Tarkin_OFC_Officer_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Types>Venator_OFC, Venator_SPHA_T</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator_OFC, Generic_Venator_SPHA_T</Applicable_Unit_Types>
 				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
 				<Health_Bonus_Percentage>0.10</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
@@ -5540,7 +5540,7 @@
 			<Reduce_Production_Price_Ability Name="Wessex_Reduce_Production_Price">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Generic_Venator, Generic_Victory_Destroyer, Generic_Star_Destroyer<!-- FotR_Enhanced-->Generic_Victory_Fleet_Destroyer, Venator_OFC,</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Generic_Venator, Generic_Victory_Destroyer, Generic_Star_Destroyer<!-- FotR_Enhanced-->Generic_Victory_Fleet_Destroyer, Generic_Venator_OFC,</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.10</Price_Reduction_Percentage>
 				<Stacking_Category>0</Stacking_Category>
 			</Reduce_Production_Price_Ability>

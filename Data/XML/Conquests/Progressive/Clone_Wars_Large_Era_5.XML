@@ -459,7 +459,7 @@
     <Starting_Forces>Empire, Carida, Republic_Shipyard_Level_Two</Starting_Forces>
     <Starting_Forces>Empire, Carida, Secondary_Golan_One</Starting_Forces>
     <Starting_Forces>Empire, Carida, Generic_Victory_Destroyer</Starting_Forces>
-    <Starting_Forces>Empire, Carida, Venator_OFC</Starting_Forces>
+    <Starting_Forces>Empire, Carida, Generic_Venator_OFC</Starting_Forces>
     <Starting_Forces>Empire, Carida, Arquitens</Starting_Forces>
     <Starting_Forces>Empire, Carida, Arquitens</Starting_Forces>
     <Starting_Forces>Empire, Carida, Corellian_Corvette</Starting_Forces>
@@ -1263,7 +1263,7 @@
     <Starting_Forces>Empire, Carida, Republic_Shipyard_Level_Two</Starting_Forces>
     <Starting_Forces>Empire, Carida, Secondary_Golan_One</Starting_Forces>
     <Starting_Forces>Empire, Carida, Generic_Victory_Destroyer</Starting_Forces>
-    <Starting_Forces>Empire, Carida, Venator_OFC</Starting_Forces>
+    <Starting_Forces>Empire, Carida, Generic_Venator_OFC</Starting_Forces>
     <Starting_Forces>Empire, Carida, Arquitens</Starting_Forces>
     <Starting_Forces>Empire, Carida, Arquitens</Starting_Forces>
     <Starting_Forces>Empire, Carida, Corellian_Corvette</Starting_Forces>
@@ -2064,7 +2064,7 @@ Underworld, Conquests\Progressive\Story_Plots_Sandbox_CloneWars_Container.xml</S
     <Starting_Forces>Empire, Carida, Republic_Shipyard_Level_Two</Starting_Forces>
     <Starting_Forces>Empire, Carida, Secondary_Golan_One</Starting_Forces>
     <Starting_Forces>Empire, Carida, Generic_Victory_Destroyer</Starting_Forces>
-    <Starting_Forces>Empire, Carida, Venator_OFC</Starting_Forces>
+    <Starting_Forces>Empire, Carida, Generic_Venator_OFC</Starting_Forces>
     <Starting_Forces>Empire, Carida, Arquitens</Starting_Forces>
     <Starting_Forces>Empire, Carida, Arquitens</Starting_Forces>
     <Starting_Forces>Empire, Carida, Corellian_Corvette</Starting_Forces>

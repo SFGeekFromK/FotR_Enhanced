@@ -131,7 +131,7 @@
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_UNIT_UPGRADE</Encyclopedia_Unit_Class>
 		
 		<Required_Special_Structures>AI_Category_Dummy | Capital_Category_Dummy </Required_Special_Structures>
-		<Required_Orbiting_Units>Venator_OFC, Anakin_Eta</Required_Orbiting_Units>
+		<Required_Orbiting_Units>Generic_Venator_OFC, Anakin_Eta</Required_Orbiting_Units>
 		<Build_Limit_Lifetime_Per_Player>3</Build_Limit_Lifetime_Per_Player>
 		
 		<Unit_Abilities_Data SubObjectList="No">

@@ -899,8 +899,8 @@
 		Generic_Tagge_Battlecruiser,
 		<!--Submod Units/Heroes-->
 		Dreadnaught_Rendili,
-		Venator_OFC,
-		Venator_SPHA_T,
+		Generic_Venator_OFC,
+		Generic_Venator_SPHA_T,
 		Block_Negotiator,
 		Block_Vigilance,
 		Needa_Integrity,

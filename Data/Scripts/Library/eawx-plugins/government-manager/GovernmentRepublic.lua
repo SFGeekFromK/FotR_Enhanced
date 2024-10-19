@@ -63,6 +63,12 @@ function GovernmentRepublic:new(gc,id,gc_name)
 		["OUTER_RIM_SIEGES"] = {EventName = "START_SECTOR_GOVERNANCE_DECREE"},
 	}
 
+	OFC_Units = {
+		"Generic_Venator",
+		"Generic_Acclamator_Assault_Ship_I",
+		"Charger_C70",
+	}
+
 	self.id = id
 	self.gc_name = gc_name
 
@@ -265,7 +271,7 @@ function GovernmentRepublic:GC_AI_Republic_Future()
 		self.CurrentMilitarizationTag = "IMPERIALIZATION"
 		crossplot:publish("UPDATE_MOBILIZATION", "empty")
 
-		UnitUtil.SetLockList("EMPIRE", {"Jedi_Temple", "Republic_Jedi_Squad", "View_Council", "Venator_OFC"}, false) -- FotR_Enhanced
+		UnitUtil.SetLockList("EMPIRE", {"Jedi_Temple", "Republic_Jedi_Squad", "View_Council", "Generic_Venator_OFC"}, false) -- FotR_Enhanced
 
 		UnitUtil.DespawnList({
 			"YODA", "YODA2",
@@ -287,32 +293,27 @@ function GovernmentRepublic:GC_AI_Republic_Future()
 			"KOTAS_MILITIA_TROOPER", "KOTAS_MILITIA_TROOPER_GUNNER_HEAVY", "KOTAS_MILITIA_TROOPER_GRENADIER", "KOTAS_MILITIA_TROOPER_HAT", "KOTAS_MILITIA_TROOPER_SERGEANT_SPAWNER",
 			"ANTARIAN_RANGER_RIFLE", "ANTARIAN_RANGER_RIFLE_GRENADIER", "ANTARIAN_RANGER_RIFLE_CAPTAIN_SPAWNER",
 		})
-		---[[ FotR_Enhanced
-		local Venator_OFC_All=Find_All_Objects_Of_Type("Venator_OFC")
-        for i, Venator_OFC_Despawn in pairs(Venator_OFC_All) do
-            UnitUtil.ReplaceAtLocation(Venator_OFC_Despawn, "Generic_Venator")
-        end
+		-- FotR_Enhanced
+		for i, OFC_Type in pairs(OFC_Units) do
+			local Type_Despawn_All = Find_All_Objects_Of_Type(OFC_Type.."OFC")
+			for j, Type_Despawn in pairs(Type_Despawn_All) do
+				UnitUtil.ReplaceAtLocation(Type_Despawn, OFC_Type)
+			end
+		end
 
-        local Venator_SPHA_T_All=Find_All_Objects_Of_Type("Venator_SPHA_T")
+        local SPHA_T_All=Find_All_Objects_Of_Type("Generic_Venator_SPHA_T")
         for j, Venator_SPHA_T_Despawn in pairs(Venator_SPHA_T_All) do
             UnitUtil.ReplaceAtLocation(Venator_SPHA_T_Despawn, "Generic_Venator")
 		end
-		--]]
 
-		--[[ FotR_Enhanced
-		UnitUtil.SetLockList("EMPIRE", {"Generic_Venator_Imperial", "Venator_Decolorize"}) 
 
-        local Generic_Venator_All=Find_All_Objects_Of_Type("Generic_Venator")
-        for _, Venator_Despawn in pairs(Generic_Venator_All) do
-            UnitUtil.ReplaceAtLocation(Venator_Despawn, "Generic_Venator_Imperial")
-        end ]]
-		--- [[FotR_Enhanced
+		-- FotR_Enhanced
 		UnitUtil.SetLockList("EMPIRE", { --[[FotR_Enhanced]] "Yularen_Resolute_Imp_Upgrade_Invincible", "Yularen_Integrity_Imp_Upgrade_Invincible", "Tarkin_Executrix_Upgrade",}) 
-		--]]
+
 		UnitUtil.ReplaceAtLocation("Anakin", "Vader_Team")
 		UnitUtil.ReplaceAtLocation("Anakin2", "Vader_Team")
 
-		StoryUtil.SpawnAtSafePlanet("CORUSCANT", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Emperor_Palpatine_Team","Mulleen_Imperator_Imp","Rohn_Team"})
+		StoryUtil.SpawnAtSafePlanet("CORUSCANT", Find_Player("Empire"), StoryUtil.GetSafePlanetTable(), {"Emperor_Palpatine_Team","Mulleen_Imperator","Rohn_Team"})
 		crossplot:publish("ORDER_66_EXECUTED", "empty")
 	else
 		UnitUtil.DespawnList({"Sate_Pestage"})	

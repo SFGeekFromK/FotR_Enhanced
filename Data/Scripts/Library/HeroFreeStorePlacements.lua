@@ -267,7 +267,7 @@ return {
 	,CONSULAR_HERO_CONVOY = {"Is_Convoy_Planet", true}
     ,VENATOR_TRANQUILITY = {"Is_Convoy_Planet", true}
 
-    -- FotR_Enhanced
+-- FotR_Enhanced
     ,NEEDA_INTEGRITY = {nil, true}
     ,TJ912_RECUSANT = {nil, true}
     ,TM171_DH_OMNI={nil, true}
@@ -276,45 +276,11 @@ return {
     ,YULAREN_RESOLUTE_SPHAT = {nil, true}
     ,ROHN_TEAM = {nil, false}
 
-    -- heroes order 66 grey variants
-
-    -- space
-    ,BARAKA_NEXU_IMP = {nil, true}
-    ,BYLUIR_VENATOR_IMP = {nil, true}
-    ,COBURN_TRIUMPHANT_IMP = {nil, true}
-    ,DAO_VENATOR_IMP = {nil, true}
-    ,DENIMOOR_TENACIOUS_IMP = {nil, true}
-    ,DODONNA_ARDENT_IMP = {nil, true}
-    ,DRON_VENATOR_IMP = {nil, true}
-    ,FORRAL_VENSENOR_IMP = {nil, true}
-    ,GRANT_VENATOR_IMP = {nil, true}
-    ,GRUMBY_INVINCIBLE_IMP = {nil, true}
-    ,HAUSER_DREADNAUGHT_IMP = {nil, true}
-    ,KILIAN_ENDURANCE_IMP = {nil, true}
-    ,MAARISA_CAPTOR_IMP = {nil, true}
-    ,MAARISA_RETALIATION_IMP = {nil, true}
-    ,MARTZ_PROSECUTOR_IMP = {nil, true}
-    ,MULLEEN_IMPERATOR_IMP = {nil, true}
-    ,PARCK_STRIKEFAST_IMP = {nil, true}
-    ,PELLAEON_LEVELER_IMP = {nil, true}
-    ,PRAJI_VALORUM_IMP = {nil, true}
-    ,RAVIK_VICTORY_IMP = {nil, true}
-    ,SCREED_ARLIONNE_IMP = {nil, true}
-    ,SEERDON_INVINCIBLE_IMP = {nil, true}
-    ,TALLON_SUNDIVER_IMP = {nil, true}
-    ,TARKIN_VENATOR_IMP = {nil, true}
-    ,TENANT_VENATOR_IMP = {nil, true}
-    ,THERBON_CERULEAN_SUNRISE_IMP = {nil, true}
-    ,TRACHTA_VENATOR_IMP = {nil, true}
-    ,VORRU_VENATOR_IMP = {nil, true}
-    ,WESSEL_ACCLAMATOR_IMP = {nil, true}
-    ,WESSEX_REDOUBT_IMP = {nil, true}
-    ,WIELER_RESILIENT_IMP = {nil, true}
+   
     ,YULAREN_INTEGRITY_IMP = {nil, true}
     ,YULAREN_RESOLUTE_IMP = {nil, true}
     ,BLOCK_NEGOTIATOR_IMP = {nil, true}
     ,BLOCK_VIGILANCE_IMP = {nil, true}
-    ,NEEDA_INTEGRITY_IMP = {nil, true}
 
     -- Ground
 

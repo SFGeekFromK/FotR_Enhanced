@@ -420,26 +420,26 @@ function Story_Handle_Esc()
 
 					if not TestValid(player_plo) then
 						p_republic = Find_Player("Empire")
-						player_plo = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_plo_move_to, p_republic, 1)
+						player_plo = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_plo_move_to, p_republic, 1)
 					else
 						player_plo.Despawn()
-						player_plo = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_plo_move_to, p_republic, 1)
+						player_plo = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_plo_move_to, p_republic, 1)
 					end
 
 					if not TestValid(venator_1) then
 						p_republic = Find_Player("Empire")
-						venator_1 = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_1_move_to, p_republic, nil)
+						venator_1 = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_1_move_to, p_republic, nil)
 					else
 						venator_1.Despawn()
-						venator_1 = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_1_move_to, p_republic, 1)
+						venator_1 = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_1_move_to, p_republic, 1)
 					end
 
 					if not TestValid(venator_2) then
 						p_republic = Find_Player("Empire")
-						venator_2 = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_2_move_to, p_republic, nil)
+						venator_2 = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_2_move_to, p_republic, nil)
 					else
 						venator_2.Despawn()
-						venator_2 = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_2_move_to, p_republic, 1)
+						venator_2 = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_2_move_to, p_republic, 1)
 					end
 
 					if not TestValid(player_intro_malevolence) then
@@ -755,26 +755,26 @@ function Story_Handle_Esc()
 
 					if not TestValid(player_plo) then
 						p_republic = Find_Player("Empire")
-						player_plo = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_plo_move_to, p_republic, 1)
+						player_plo = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_plo_move_to, p_republic, 1)
 					else
 						player_plo.Despawn()
-						player_plo = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_plo_move_to, p_republic, 1)
+						player_plo = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_plo_move_to, p_republic, 1)
 					end
 
 					if not TestValid(venator_1) then
 						p_republic = Find_Player("Empire")
-						venator_1 = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_1_move_to, p_republic, nil)
+						venator_1 = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_1_move_to, p_republic, nil)
 					else
 						venator_1.Despawn()
-						venator_1 = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_1_move_to, p_republic, 1)
+						venator_1 = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_1_move_to, p_republic, 1)
 					end
 
 					if not TestValid(venator_2) then
 						p_republic = Find_Player("Empire")
-						venator_2 = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_2_move_to, p_republic, nil)
+						venator_2 = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_2_move_to, p_republic, nil)
 					else
 						venator_2.Despawn()
-						venator_2 = StoryUtil.SpawnUnitSpace("Venator_OFC", venator_2_move_to, p_republic, 1)
+						venator_2 = StoryUtil.SpawnUnitSpace("Generic_Venator_OFC", venator_2_move_to, p_republic, 1)
 					end
 
 					if not TestValid(player_intro_malevolence) then

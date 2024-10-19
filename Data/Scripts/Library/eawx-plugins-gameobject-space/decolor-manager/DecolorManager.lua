@@ -12,7 +12,7 @@ function DecolorManager:new()
 
 		if team_Color == 1 then
 			Hide_Sub_Object(Object, 1, "Origin")
-			Hide_Sub_Object(Object, 0, "Grey")
+			Hide_Sub_Object(Object, 0, "Gray")
         end
 end
 

@@ -91,8 +91,6 @@
 	<File>Units\Republic_Space_Units.xml</File>
 	<!-- FotR_Enhanced -->
 	
-	
-	<File>Units\Republic_Space_Units_Imperial.xml</File>
 	<File>Units\Republic_Fighters_Imperial.xml</File>
 	<!--
 	<File>Units\Republic_Ground_Units_Imperial.xml</File>
@@ -143,7 +141,6 @@
 	<File>Heroes\Republic_Heroes_Clones.xml</File>
 	<!-- FotR_Enhanced -->
 	<File>Heroes\Republic_Heroes_Fighter.xml</File>
-	<File>Heroes\Republic_Heroes_Imperial.xml</File>
 	<!-- End -->
 	<File>Heroes\Republic_Heroes_Jedi.xml</File>
 	<File>Heroes\Other_Heroes.xml</File>

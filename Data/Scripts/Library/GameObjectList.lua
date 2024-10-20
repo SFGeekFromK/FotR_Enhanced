@@ -292,7 +292,5 @@ return {
 -- heroes order 66 grey variants
 ["YULAREN_INTEGRITY_IMP"] = true,
 ["YULAREN_RESOLUTE_IMP"] = true,
-["BLOCK_NEGOTIATOR_IMP"] = true,
-["BLOCK_VIGILANCE_IMP"] = true,
 -- [""] = true,
 }

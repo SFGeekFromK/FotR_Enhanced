@@ -94,7 +94,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Martz"] = {"MARTZ_ASSIGN",{"MARTZ_RETIRE"},{"MARTZ_PROSECUTOR"},"Stinnet Martz"},
 			-- FotR_Enhanced
 			["Needa"] = {"NEEDA_ASSIGN",{"NEEDA_RETIRE"},{"NEEDA_INTEGRITY"},"Lorth Needa"},
-			["Block"] = {"BLOCK_ASSIGN",{"BLOCK_RETIRE","BLOCK_RETIRE_IMP","BLOCK_RETIRE2","BLOCK_RETIRE2_IMP"},{"BLOCK_NEGOTIATOR","BLOCK_NEGOTIATOR_IMP","BLOCK_VIGILANCE","BLOCK_VIGILANCE_IMP"}, "Block"},
+			["Block"] = {"BLOCK_ASSIGN",{"BLOCK_RETIRE","BLOCK_RETIRE2"},{"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, "Block"},
 
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
@@ -212,7 +212,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Faie"] = {"FAIE_ASSIGN",{"FAIE_RETIRE"},{"FAIE"},"Faie", ["Companies"] = {"FAIE_TEAM"}},
 			["Bacara"] = {"BACARA_ASSIGN",{"BACARA_RETIRE","BACARA_RETIRE"},{"BACARA","BACARA2"},"Bacara", ["Companies"] = {"BACARA_TEAM","BACARA2_TEAM"}},
 			["Jet"] = {"JET_ASSIGN",{"JET_RETIRE","JET_RETIRE"},{"JET","JET2"},"Jet", ["Companies"] = {"JET_TEAM","JET2_TEAM"}},
-			["Gaffa"] = {"GAFFA_ASSIGN",{"GAFFA_RETIRE","GAFFA_RETIRE_IMP"},{"GAFFA_A5RX","GAFFA_A5RX_IMP"},"Gaffa", ["Companies"] = {"GAFFA_TEAM","GAFFA_TEAM_IMP"}},
+			["Gaffa"] = {"GAFFA_ASSIGN",{"GAFFA_RETIRE"},{"GAFFA_A5RX"},"Gaffa", ["Companies"] = {"GAFFA_TEAM"}},
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Cody",
@@ -279,15 +279,14 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_limit = 8,           --Number of times a lost slot can be reopened
 		initialized = false,
 		full_list = { --All options for reference operations
-			["Rom"] = {"ROM_MOHC_ASSIGN",{"ROM_MOHC_RETIRE","ROM_MOHC_RETIRE_IMP"},{"ROM_MOHC","ROM_MOHC_IMP"},"Rom Mohc", ["Companies"] = {"ROM_MOHC_TEAM","ROM_MOHC_TEAM_IMP"}},
-			["Gentis"] = {"GENTIS_ASSIGN",{"GENTIS_RETIRE","GENTIS_RETIRE_IMP"},{"GENTIS_AT_TE","GENTIS_AT_TE_IMP"},"Gentis", ["Companies"] = {"GENTIS_TEAM","GENTIS_TEAM_IMP"}},
-			["Geen"] = {"GEEN_ASSIGN",{"GEEN_RETIRE","GEEN_RETIRE_IMP"},{"GEEN_UT_AT","GEEN_UT_AT_IMP"},"Locus Geen", ["Companies"] = {"GEEN_TEAM","GEEN_TEAM_IMP"}},
-			["Ozzel"] = {"OZZEL_ASSIGN",{"OZZEL_RETIRE","OZZEL_RETIRE_IMP"},{"OZZEL_LAAT","OZZEL_LAAT_IMP"},"Kendal Ozzel", ["Companies"] = {"OZZEL_TEAM","OZZEL_TEAM_IMP"}},
-			["Romodi"] = {"ROMODI_ASSIGN",{"ROMODI_RETIRE","ROMODI_RETIRE_IMP"},{"ROMODI_A5_JUGGERNAUT","ROMODI_A5_JUGGERNAUT_IMP"},"Hurst Romodi", ["Companies"] = {"ROMODI_TEAM","ROMODI_TEAM_IMP"}},
-			["Solomahal"] = {"SOLOMAHAL_ASSIGN",{"SOLOMAHAL_RETIRE","SOLOMAHAL_RETIRE_IMP"},{"SOLOMAHAL_RX200","SOLOMAHAL_RX200_IMP"},"Solomahal", ["Companies"] = {"SOLOMAHAL_TEAM","SOLOMAHAL_TEAM_IMP"}},
-			["Jesra"] = {"JESRA_LOTURE_ASSIGN",{"JESRA_LOTURE_RETIRE","JESRA_LOTURE_RETIRE_IMP"},{"JESRA_LOTURE","JESRA_LOTURE_IMP"},"Jesra Loture", ["Companies"] = {"JESRA_LOTURE_TEAM","JESRA_LOTURE_TEAM_IMP"}},
-			["Jayfon"] = {"JAYFON_ASSIGN",{"JAYFON_RETIRE","JAYFON_RETIRE_IMP"},{"JAYFON","JAYFON_IMP"},"Jayfon", ["Companies"] = {"JAYFON_TEAM","JAYFON_TEAM_IMP"}},
-			
+			["Rom"] = {"ROM_MOHC_ASSIGN",{"ROM_MOHC_RETIRE"},{"ROM_MOHC"},"Rom Mohc", ["Companies"] = {"ROM_MOHC_TEAM"}},
+			["Gentis"] = {"GENTIS_ASSIGN",{"GENTIS_RETIRE"},{"GENTIS_AT_TE"},"Gentis", ["Companies"] = {"GENTIS_TEAM"}},
+			["Geen"] = {"GEEN_ASSIGN",{"GEEN_RETIRE"},{"GEEN_UT_AT"},"Locus Geen", ["Companies"] = {"GEEN_TEAM"}},
+			["Ozzel"] = {"OZZEL_ASSIGN",{"OZZEL_RETIRE"},{"OZZEL_LAAT"},"Kendal Ozzel", ["Companies"] = {"OZZEL_TEAM"}},
+			["Romodi"] = {"ROMODI_ASSIGN",{"ROMODI_RETIRE"},{"ROMODI_A5_JUGGERNAUT"},"Hurst Romodi", ["Companies"] = {"ROMODI_TEAM"}},
+			["Solomahal"] = {"SOLOMAHAL_ASSIGN",{"SOLOMAHAL_RETIRE"},{"SOLOMAHAL_RX200"},"Solomahal", ["Companies"] = {"SOLOMAHAL_TEAM"}},
+			["Jesra"] = {"JESRA_LOTURE_ASSIGN",{"JESRA_LOTURE_RETIRE"},{"JESRA_LOTURE"},"Jesra Loture", ["Companies"] = {"JESRA_LOTURE_TEAM"}},
+			["Jayfon"] = {"JAYFON_ASSIGN",{"JAYFON_RETIRE"},{"JAYFON"},"Jayfon", ["Companies"] = {"JAYFON_TEAM"}},
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Rom",
@@ -363,8 +362,6 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	Venator_init = false
 
 	Forral_Checks = 0
-
-	Decolor_Table = {admiral_data, moff_data, general_data}
 end
 
 function RepublicHeroes:on_production_finished(planet, object_type_name)--object_type_name, owner)
@@ -917,31 +914,7 @@ function RepublicHeroes:Order_66_Handler()
 	Clear_Fighter_Hero("IMA_GUN_DI_DELTA")
 	Decrement_Hero_Amount(10, council_data)
 	Forral_Check()
-	for i, Hero_Table in pairs(Decolor_Table) do
-		local Heroes_All = Hero_Table.full_list
-
-		for j, Hero_id in pairs(Heroes_All) do
-			local Hero_Entry = Hero_Table.full_list[Hero_id]
-			local Hero_Rep = Hero_Entry[3][Hero_Entry.unit_id]
-			
-			if Hero_Entry.Companies then
-				Hero_Rep = Hero_Entry.Companies[Hero_Entry.unit_id]
-			end
-
-			local Hero_Check = Find_Object_Type(Hero_Rep)
-			local Hero_Imperial = Hero_Rep.."_IMP"
-			if TestValid(Hero_Check) then
-				if Hero_Rep == "YULAREN_RESOLUTE_SPHAT" then
-					Hero_Imperial = "YULAREN_RESOLUTE_IMP"
-				end
-				UnitUtil.ReplaceAtLocation(Hero_Rep, Hero_Imperial)
-			end
-			set_unit_index(Hero_id, Hero_Entry.unit_id+1, Hero_Table)
-		end
-	end
-
-	UnitUtil.ReplaceAtLocation("GAFFA_TEAM","GAFFA_TEAM_IMP")
-	set_unit_index("Gaffa", 2, clone_data)
+	
 end
 
 function RepublicHeroes:New_Padawan_Handler()

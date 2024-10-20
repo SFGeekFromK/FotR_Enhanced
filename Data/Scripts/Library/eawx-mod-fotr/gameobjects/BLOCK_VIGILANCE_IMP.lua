@@ -1,3 +1,0 @@
-return {
-	Flags = {FULLINHERIT = "BLOCK_NEGOTIATOR_IMP"}
-}

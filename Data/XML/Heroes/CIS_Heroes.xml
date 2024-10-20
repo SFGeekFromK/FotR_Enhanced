@@ -3459,17 +3459,17 @@
 		<Tactical_Health>2420</Tactical_Health>
 
 		<HardPoints>
-			HP_Dreadnaught_Republic_Weapon_01,
-			HP_Dreadnaught_Republic_Weapon_02,
-			HP_Dreadnaught_Republic_Weapon_03,
-			HP_Dreadnaught_Republic_Weapon_04,
-			HP_Dreadnaught_Republic_Weapon_05,
-			HP_Dreadnaught_Republic_Weapon_06,
+			HP_Dreadnaught_Republic_Weapon_01_Red,
+			HP_Dreadnaught_Republic_Weapon_02_Red,
+			HP_Dreadnaught_Republic_Weapon_03_Red,
+			HP_Dreadnaught_Republic_Weapon_04_Red,
+			HP_Dreadnaught_Republic_Weapon_05_Red,
+			HP_Dreadnaught_Republic_Weapon_06_Red,
 			HP_Dreadnaught_Republic_Weapon_07,
 			HP_Dreadnaught_Republic_Weapon_08,
 			HP_Dreadnaught_Republic_Fighter_Bay,
-			HP_Dreadnaught_Hero_Extra,
 			HP_Dreadnaught_Republic_Engines
+			HP_Dreadnaught_Hero_Extra
 		</HardPoints>
 
 		<Starting_Spawned_Units_Tech_0>Generic_Z95_Headhunter_Squadron, 1</Starting_Spawned_Units_Tech_0>

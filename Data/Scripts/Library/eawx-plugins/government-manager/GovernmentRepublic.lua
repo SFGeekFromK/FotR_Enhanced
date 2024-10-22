@@ -63,7 +63,7 @@ function GovernmentRepublic:new(gc,id,gc_name)
 		["OUTER_RIM_SIEGES"] = {EventName = "START_SECTOR_GOVERNANCE_DECREE"},
 	}
 
-	OFC_Units = {
+	self.OFC_Units = {
 		"Generic_Venator",
 		"Generic_Acclamator_Assault_Ship_I",
 		"Charger_C70",
@@ -294,21 +294,20 @@ function GovernmentRepublic:GC_AI_Republic_Future()
 			"ANTARIAN_RANGER_RIFLE", "ANTARIAN_RANGER_RIFLE_GRENADIER", "ANTARIAN_RANGER_RIFLE_CAPTAIN_SPAWNER",
 		})
 		-- FotR_Enhanced
-		for i, OFC_Type in pairs(OFC_Units) do
-			local Type_Despawn_All = Find_All_Objects_Of_Type(OFC_Type.."OFC")
+		for i, OFC_Type in pairs(self.OFC_Units) do
+			local Type_Despawn_All = Find_All_Objects_Of_Type(OFC_Type.."_OFC")
 			for j, Type_Despawn in pairs(Type_Despawn_All) do
 				UnitUtil.ReplaceAtLocation(Type_Despawn, OFC_Type)
 			end
 		end
 
-        local SPHA_T_All=Find_All_Objects_Of_Type("Generic_Venator_SPHA_T")
+        local Venator_SPHA_T_All=Find_All_Objects_Of_Type("Generic_Venator_SPHA_T")
         for j, Venator_SPHA_T_Despawn in pairs(Venator_SPHA_T_All) do
             UnitUtil.ReplaceAtLocation(Venator_SPHA_T_Despawn, "Generic_Venator")
 		end
-
-
+		GlobalValue.Set("SHIPS_DECOLORED", 1)
 		-- FotR_Enhanced
-		UnitUtil.SetLockList("EMPIRE", { --[[FotR_Enhanced]] "Yularen_Resolute_Imp_Upgrade_Invincible", "Yularen_Integrity_Imp_Upgrade_Invincible", "Tarkin_Executrix_Upgrade",}) 
+		UnitUtil.SetLockList("EMPIRE", { --[[FotR_Enhanced]] "Yularen_Resolute_Upgrade_Invincible", "Yularen_Integrity_Upgrade_Invincible", "Tarkin_Executrix_Upgrade",}) 
 
 		UnitUtil.ReplaceAtLocation("Anakin", "Vader_Team")
 		UnitUtil.ReplaceAtLocation("Anakin2", "Vader_Team")

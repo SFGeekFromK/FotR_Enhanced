@@ -93,7 +93,7 @@ function State_Republic_Future_Jedi_Gone(message)
 
 		---[[ FotR_Enhanced
 		for i, OFC_Type in pairs(OFC_Units) do
-			local Type_Despawn_All = Find_All_Objects_Of_Type(OFC_Type.."OFC")
+			local Type_Despawn_All = Find_All_Objects_Of_Type(OFC_Type.."_OFC")
 			for j, Type_Despawn in pairs(Type_Despawn_All) do
 				UnitUtil.ReplaceAtLocation(Type_Despawn, OFC_Type)
 			end
@@ -113,7 +113,8 @@ end
 function State_Republic_Future_New_Order(message)
     if message == OnEnter then
 		GlobalValue.Set("ChiefOfState", "DUMMY_CHIEFOFSTATE_EMPEROR_PALPATINE")
-		UnitUtil.SetLockList("EMPIRE", {--[[FotR_Enhanced]] "Yularen_Resolute_Imp_Upgrade_Invincible", "Yularen_Integrity_Imp_Upgrade_Invincible"})
+		GlobalValue.Set("SHIPS_DECOLORED", 1)
+		UnitUtil.SetLockList("EMPIRE", {--[[FotR_Enhanced]] "Yularen_Resolute_Upgrade_Invincible", "Yularen_Integrity_Upgrade_Invincible"})
 
 		UnitUtil.ReplaceAtLocation("Anakin", "Vader_Team")
 		UnitUtil.ReplaceAtLocation("Anakin2", "Vader_Team")

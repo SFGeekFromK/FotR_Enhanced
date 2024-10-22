@@ -78,7 +78,7 @@ function State_GC_Set_Up(message)
 		--Find_Player("Empire").Unlock_Tech(Find_Object_Type("Generic_Venator"))
 		Find_Player("Empire").Unlock_Tech(Find_Object_Type("Invincible_Cruiser"))
 		-- FotR_Enhanced
-		Find_Player("Empire").Unlock_Tech(Find_Object_Type("Venator_OFC_Campaign"))
+		Find_Player("Empire").Unlock_Tech(Find_Object_Type("Generic_Venator_OFC_Campaign"))
 
 		Find_Player("Empire").Lock_Tech(Find_Object_Type("Remnant_Capital"))
 		Find_Player("Empire").Lock_Tech(Find_Object_Type("Generic_Victory_Destroyer"))

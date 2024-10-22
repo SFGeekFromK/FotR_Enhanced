@@ -3950,7 +3950,7 @@
 
 	</SpaceUnit>	
 	
-	<SpaceUnit Name="Acclamator_Assualt_Ship_I_OFC">
+	<SpaceUnit Name="Generic_Acclamator_Assualt_Ship_I_OFC">
 		<Variant_Of_Existing_Type>Generic_Acclamator_Assault_Ship_I</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_ACCLAMATOR_I_OFC</Text_ID>
 		<Encyclopedia_Text>
@@ -4057,7 +4057,7 @@
 		
 	</SpaceUnit>
 
-	<SpaceUnit Name="Venator_OFC_Campaign"> <!-- Historical Campaign Variant : no build limit -->
+	<SpaceUnit Name="Generic_Venator_OFC_Campaign"> <!-- Historical Campaign Variant : no build limit -->
 		<Variant_Of_Existing_Type>Generic_Venator_OFC</Variant_Of_Existing_Type>
 		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
 	</SpaceUnit>

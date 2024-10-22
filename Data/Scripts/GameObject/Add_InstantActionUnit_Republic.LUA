@@ -53,7 +53,7 @@ function Definitions()
 	"GENERIC_GLADIATOR",
 	"GENERIC_IMPERIAL_I_FRIGATE",
 	-- FotR_Enhanced
-	"VENATOR_OFC",
+	"GENEIRC_VENATOR_OFC",
 	"YULAREN_RESOLUTE_SPHAT", -- ofc testing purpose
 }
 

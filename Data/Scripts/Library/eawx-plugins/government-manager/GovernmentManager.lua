@@ -118,7 +118,7 @@ function GovernmentManager:Mobilization_Market_Adjustments()
             {"EMPIRE", "KDY_MARKET", "GENERIC_TECTOR", false},
             {"EMPIRE", "KDY_MARKET", "GENERIC_SECUTOR", false},
             {"EMPIRE", "KDY_MARKET", "GENERIC_STAR_DESTROYER", false},
-        }
+        }  
     end
 
     if table.getn(adjustment_lists) > 0 then
@@ -193,8 +193,8 @@ function GovernmentManager:GC_Specific_Market_Setup()
         },
         ["TENNUUTTA"] = {
             adjustment_lists = {
-                {"EMPIRE", "KDY_MARKET", "GENERIC_TECTOR", 100, true},
-                {"EMPIRE", "KDY_MARKET", "GENERIC_STAR_DESTROYER", 100, true},
+                {"EMPIRE", "KDY_MARKET", "GENERIC_TECTOR", 600, true},
+                {"EMPIRE", "KDY_MARKET", "GENERIC_STAR_DESTROYER", 700, true},
             },
             lock_lists = {
                 {"EMPIRE", "KDY_MARKET", "GENERIC_PROCURATOR", nil, nil, true},

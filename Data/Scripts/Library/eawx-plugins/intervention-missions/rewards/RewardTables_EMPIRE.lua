@@ -46,7 +46,7 @@ return {
 			--{"Republic_A6_Juggernaut_Company", 1}, Temporary
 			{"Republic_A6_Prototype_Company", 1}, -- FotR_Enhanced
 			{"Starbolt", 3},
-			{"Acclamator_Assualt_Ship_I_OFC", 1}
+			{"Generic_Acclamator_Assualt_Ship_I_OFC", 1}
 		}
 	},
 	Era_3 = {
@@ -74,7 +74,7 @@ return {
 			{"Republic_RX200_Falchion_Company", 1},
 			{"Republic_A6_Juggernaut_Company", 1},
 			{"Starbolt", 3},
-			{"Acclamator_Assualt_Ship_I_OFC", 1}
+			{"Generic_Acclamator_Assualt_Ship_I_OFC", 1}
 		}
 	},		
 	Era_4 = {

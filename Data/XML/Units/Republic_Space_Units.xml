@@ -3980,7 +3980,7 @@
 		<Text_ID>TEXT_UNIT_VENATOR_OFC</Text_ID>
 		<Icon_Name>i_button_jedi_Cruiser_rep_OFC.tga</Icon_Name>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
-        
+        <Lua_Script>GenericGameObject</Lua_Script>
 		<Encyclopedia_Text> 
 			TEXT_TOOLTIP_VENATOR_OFC
 			TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -4059,13 +4059,14 @@
 
 	<SpaceUnit Name="Generic_Venator_OFC_Campaign"> <!-- Historical Campaign Variant : no build limit -->
 		<Variant_Of_Existing_Type>Generic_Venator_OFC</Variant_Of_Existing_Type>
+		<Lua_Script>GenericGameObject</Lua_Script>
 		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
 	</SpaceUnit>
 
 	<SpaceUnit Name="Generic_Venator_SPHA_T">
 		<Variant_Of_Existing_Type>Generic_Venator_OFC</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_VENATOR_OFC_SPHA_T</Text_ID>
-        
+        <Lua_Script>GenericGameObject</Lua_Script>
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_VENATOR_OFC_SPHA_T
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 

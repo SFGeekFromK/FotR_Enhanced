@@ -110,31 +110,19 @@ function GovernmentManager:Mobilization_Market_Adjustments()
         end
     elseif self.REPGOV.CurrentMilitarizationTag == "IMPERIALIZATION" then
         adjustment_lists = {
-            {"EMPIRE", "KDY_MARKET", "GENERIC_PROCURATOR_IMP", -15},
-            {"EMPIRE", "KDY_MARKET", "GENERIC_PRAETOR_IMP", -10},
+            {"EMPIRE", "KDY_MARKET", "GENERIC_PROCURATOR", -15},
+            {"EMPIRE", "KDY_MARKET", "GENERIC_PRAETOR", -10},
         }
         lock_lists = {
-            {"EMPIRE", "KDY_MARKET", "GENERIC_MAELSTROM", true, true, true},
-            {"EMPIRE", "KDY_MARKET", "GENERIC_TECTOR_IMP", false},
+            {"EMPIRE", "KDY_MARKET", "GENERIC_MAELSTROM", true},
+            {"EMPIRE", "KDY_MARKET", "GENERIC_TECTOR", false},
             {"EMPIRE", "KDY_MARKET", "GENERIC_SECUTOR", false},
-            {"EMPIRE", "KDY_MARKET", "GENERIC_STAR_DESTROYER_IMP", false},
-            {"EMPIRE", "KDY_MARKET", "GENERIC_PROCURATOR", true, true, true},
-            {"EMPIRE", "KDY_MARKET", "GENERIC_PRAETOR", true, true, true},
-            {"EMPIRE", "KDY_MARKET", "GENERIC_PROCURATOR_IMP", false, nil, false},
-            {"EMPIRE", "KDY_MARKET", "GENERIC_PRAETOR_IMP", false, nil, false}
-        }
-        add_lists = {
-            {"EMPIRE", "KDY_MARKET", "GENERIC_PROCURATOR_IMP", self.SHIPMARKET.market_types["EMPIRE"]["KDY_MARKET"].list["GENERIC_PROCURATOR"].amount, true},
-            {"EMPIRE", "KDY_MARKET", "GENERIC_PRAETOR_IMP", self.SHIPMARKET.market_types["EMPIRE"]["KDY_MARKET"].list["GENERIC_PRAETOR"].amount, true},
-            {"EMPIRE", "KDY_MARKET", "GENERIC_MAELSTROM_IMP", self.SHIPMARKET.market_types["EMPIRE"]["KDY_MARKET"].list["GENERIC_PRAETOR"].amount, true},
+            {"EMPIRE", "KDY_MARKET", "GENERIC_STAR_DESTROYER", false},
         }
     end
 
     if table.getn(adjustment_lists) > 0 then
         self.SHIPMARKET:adjust_ship_chance(adjustment_lists)
-    end
-    if table.getn(add_lists) > 0 then
-        self.SHIPMARKET:add_or_remove_amount(add_lists)
     end
     if table.getn(lock_lists) > 0 then
         self.SHIPMARKET:lock_or_unlock_options(lock_lists)

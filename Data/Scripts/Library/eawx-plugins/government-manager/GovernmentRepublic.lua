@@ -33,6 +33,8 @@ function GovernmentRepublic:new(gc,id,gc_name)
 		"Default clone armour set to 41st"		
 	}
 
+	GlobalValue.Set("SHIPS_DECOLORED", 0)
+
 	self.War_Mobilization = false
 	self.Imperialization = false
 

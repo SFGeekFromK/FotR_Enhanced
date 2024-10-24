@@ -41,5 +41,5 @@ return {
 	["GENERIC_SECUTOR"] = 0,
 	-- FotR_Enhanced
 	["GENERIC_VENATOR_OFC"] = 0,
-    ["VENATOR_SPHA_T"] = 0,
+    ["GENERIC_VENATOR_SPHA_T"] = 0,
 }

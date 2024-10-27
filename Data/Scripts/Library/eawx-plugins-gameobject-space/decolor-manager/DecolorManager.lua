@@ -15,7 +15,7 @@ function DecolorManager:new()
 			Hide_Sub_Object(Object, 1, "Origin")
 			-- victory varinats
 			Hide_Sub_Object(Object, 1, "central_mesh") 
-			Hide_Sub_Object(Object, 1, "main_hull_mesh")
+			Hide_Sub_Object(Object, 1, "main_hull_mesh") -- isd included
 			-- corellian corvette
 			Hide_Sub_Object(Object, 1, "objCylinder001")
 			Hide_Sub_Object(Object, 1, "objFull")

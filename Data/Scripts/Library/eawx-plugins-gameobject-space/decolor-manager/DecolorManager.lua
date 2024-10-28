@@ -19,7 +19,10 @@ function DecolorManager:new()
 			-- corellian corvette
 			Hide_Sub_Object(Object, 1, "objCylinder001")
 			Hide_Sub_Object(Object, 1, "objFull")
-			
+			-- Pelta variants
+			Hide_Sub_Object(Object, 1, "objpCube32")
+			Hide_Sub_Object(Object, 1, "objLeft")
+			Hide_Sub_Object(Object, 1, "objRight")
 			
 			Hide_Sub_Object(Object, 0, "Gray")
 
@@ -28,6 +31,10 @@ function DecolorManager:new()
 			
 			Hide_Sub_Object(Object, 0, "objFullGray")
 			Hide_Sub_Object(Object, 0, "objCylinder001Gray")
+
+			Hide_Sub_Object(Object, 0, "objpCube32Gray")
+			Hide_Sub_Object(Object, 0, "objLeftGray")
+			Hide_Sub_Object(Object, 0, "objRightGray")
         else 
 			-- general mesh names
 			Hide_Sub_Object(Object, 0, "Origin")
@@ -37,6 +44,10 @@ function DecolorManager:new()
 			-- corellian corvette
 			Hide_Sub_Object(Object, 0, "objCylinder001")
 			Hide_Sub_Object(Object, 0, "objFull")
+
+			Hide_Sub_Object(Object, 0, "objpCube32")
+			Hide_Sub_Object(Object, 0, "objLeft")
+			Hide_Sub_Object(Object, 0, "objRight")
 			
 			
 			Hide_Sub_Object(Object, 1, "Gray")
@@ -46,6 +57,10 @@ function DecolorManager:new()
 			
 			Hide_Sub_Object(Object, 1, "objFullGray")
 			Hide_Sub_Object(Object, 1, "objCylinder001Gray")
+
+			Hide_Sub_Object(Object, 1, "objpCube32Gray")
+			Hide_Sub_Object(Object, 1, "objLeftGray")
+			Hide_Sub_Object(Object, 1, "objRightGray")
 		end
 end
 

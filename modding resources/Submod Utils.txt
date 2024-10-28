@@ -115,7 +115,9 @@ ORS Submod Plans
 
 
 
-
+		<!-- Tythe --> <Galactic_Position>1002, -929, 10</Galactic_Position>
+        <!-- Llanic --> <Galactic_Position>857, -915, 10</Galactic_Position>
+        <!-- Lok --> <Galactic_Position>916, -948, 10</Galactic_Position>
 
 
 

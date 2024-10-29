@@ -25,7 +25,8 @@ return {
                 "Republic_Gaba18_Group",
                 "Republic_AT_XT_Company",
 				"Republic_Flashblind_Group",
-				"Republic_Gian_Company"
+				"Republic_Gian_Company",
+                "Republic_A5_Juggernaut_Company"
             }, false)
 			
 			UnitUtil.SetLockList("EMPIRE", {

@@ -85,12 +85,19 @@ function State_Republic_Future_Jedi_Gone(message)
 			"ANTARIAN_RANGER_RIFLE", "ANTARIAN_RANGER_RIFLE_GRENADIER", "ANTARIAN_RANGER_RIFLE_CAPTAIN_SPAWNER",
 		})
 
-		local OFC_Units = {
+		local Non_OFC_Units = {
 			"Generic_Venator",
 			"Generic_Acclamator_Assault_Ship_I",
 			"Charger_C70",
 		}
 
+        --[[
+        for Non_OFC_Unit, _ in pairs(Non_OFC_Units) do
+            local OFC_Unit =Find_First_Object(Non_OFC_Unit.."_OFC")
+            if TestValid(OFC_Unit) then
+                local unit_object_list = Find_All_Objects_Of_Type(OFC_Unit)
+                if table.getn(unit_object_list) ~= 0 then
+                ]]
 		---[[ FotR_Enhanced
 		for i, OFC_Type in pairs(OFC_Units) do
 			local Type_Despawn_All = Find_All_Objects_Of_Type(OFC_Type.."_OFC")

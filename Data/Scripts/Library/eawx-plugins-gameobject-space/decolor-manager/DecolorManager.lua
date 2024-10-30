@@ -1,5 +1,5 @@
 require("deepcore/std/class")
-
+require("eawx-util/StoryUtil")
 DecolorManager = class()
 
 function DecolorManager:new()
@@ -9,6 +9,8 @@ function DecolorManager:new()
 		return
 	end
 		local team_Color = GlobalValue.Get("SHIPS_DECOLORED")
+
+		StoryUtil.ShowScreenText("team_Color = "..team_Color, 10)
 
 		if team_Color == 1 then
 			-- general mesh names

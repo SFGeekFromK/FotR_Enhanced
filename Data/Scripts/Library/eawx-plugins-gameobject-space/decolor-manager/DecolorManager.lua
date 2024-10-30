@@ -42,40 +42,7 @@ function DecolorManager:new()
 
 			Hide_Sub_Object(Object, 0, "Consular_Body_Main_low_Gray")
 			Hide_Sub_Object(Object, 0, "C70_Main_Gray")
-        else 
-			-- general mesh names
-			Hide_Sub_Object(Object, 0, "Origin")
-			-- victory varinats
-			Hide_Sub_Object(Object, 0, "central_mesh") 
-			Hide_Sub_Object(Object, 0, "main_hull_mesh")
-			-- corellian corvette
-			Hide_Sub_Object(Object, 0, "objCylinder001")
-			Hide_Sub_Object(Object, 0, "objFull")
-			-- pelta varinats
-			Hide_Sub_Object(Object, 0, "objpCube32")
-			Hide_Sub_Object(Object, 0, "objLeft")
-			Hide_Sub_Object(Object, 0, "objRight")
-
-			--Consular Refit aka consular armed
-			Hide_Sub_Object(Object, 0, "Consular_Body_Main_low")
-			Hide_Sub_Object(Object, 0, "C70_Main")
-			
-			
-			Hide_Sub_Object(Object, 1, "Gray")
-
-			Hide_Sub_Object(Object, 1, "central_mesh_gray")
-			Hide_Sub_Object(Object, 1, "main_hull_mesh_gray")
-			
-			Hide_Sub_Object(Object, 1, "objFullGray")
-			Hide_Sub_Object(Object, 1, "objCylinder001Gray")
-
-			Hide_Sub_Object(Object, 1, "objpCube32Gray")
-			Hide_Sub_Object(Object, 1, "objLeftGray")
-			Hide_Sub_Object(Object, 1, "objRightGray")
-
-			Hide_Sub_Object(Object, 1, "Consular_Body_Main_low_Gray")
-			Hide_Sub_Object(Object, 1, "C70_Main_Gray")
-		end
+        end
 end
 
 return DecolorManager

@@ -30,7 +30,7 @@ return {
             }, false)
 			
 			UnitUtil.SetLockList("EMPIRE", {
-                
+                "Republic_A6_Juggernaut_Company"
             })
            
             UnitUtil.SetLockList("REBEL", {

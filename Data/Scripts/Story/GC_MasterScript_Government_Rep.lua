@@ -91,26 +91,27 @@ function State_Republic_Future_Jedi_Gone(message)
 			"Charger_C70",
 		}
 
-        --[[
-        for Non_OFC_Unit, _ in pairs(Non_OFC_Units) do
-            local OFC_Unit =Find_First_Object(Non_OFC_Unit.."_OFC")
-            if TestValid(OFC_Unit) then
-                local unit_object_list = Find_All_Objects_Of_Type(OFC_Unit)
-                if table.getn(unit_object_list) ~= 0 then
-                ]]
-		---[[ FotR_Enhanced
-		for i, OFC_Type in pairs(OFC_Units) do
-			local Type_Despawn_All = Find_All_Objects_Of_Type(OFC_Type.."_OFC")
-			for j, Type_Despawn in pairs(Type_Despawn_All) do
-				UnitUtil.ReplaceAtLocation(Type_Despawn, OFC_Type)
+        for _, Non_OFC_Unit in pairs(Non_OFC_Units) do --Loop each unit in Non_OFC_Units
+			local OFC_Unit = Non_OFC_Unit.."_OFC" --Assign suffix name to unit
+			if TestValid(Find_First_Object(OFC_Unit)) then --Check OFC object exists
+				local Unit_Object_List = Find_All_Objects_Of_Type(OFC_Unit) --Get all objects of OFC unit
+				if table.getn(Unit_Object_List) ~= 0 then --Check if list is not empty
+					for _, _ in pairs(Unit_Object_List) do --Loop through list
+						UnitUtil.ReplaceAtLocation(OFC_Unit, Non_OFC_Unit) --Replace OFC unit with non OFC
+					end
+				end
 			end
 		end
-
-        local SPHA_T_All=Find_All_Objects_Of_Type("Generic_Venator_SPHA_T")
-        for j, Venator_SPHA_T_Despawn in pairs(Venator_SPHA_T_All) do
-            UnitUtil.ReplaceAtLocation(Venator_SPHA_T_Despawn, "Generic_Venator")
-		end
 		
+		local SPHA_T_Ven = "Generic_Venator_SPHA_T" --Same process as above
+		if TestValid(Find_First_Object(SPHA_T_Ven)) then
+			local SPHA_T_List = Find_All_Objects_Of_Type(SPHA_T_Ven)
+			if table.getn(SPHA_T_List) ~= 0 then
+				for _, _ in pairs(SPHA_T_List) do
+					UnitUtil.ReplaceAtLocation(SPHA_T_Ven, "Generic_Venator")
+				end
+			end
+		end
 		crossplot:publish("ORDER_66_EXECUTED", "empty")
 	else
 		crossplot:update()

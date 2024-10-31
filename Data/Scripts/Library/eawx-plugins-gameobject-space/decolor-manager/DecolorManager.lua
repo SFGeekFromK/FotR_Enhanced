@@ -22,10 +22,11 @@ function DecolorManager:new()
 			Hide_Sub_Object(Object, 1, "objpCube32")
 			Hide_Sub_Object(Object, 1, "objLeft")
 			Hide_Sub_Object(Object, 1, "objRight")
-
 			--Consular Refit aka consular armed
 			Hide_Sub_Object(Object, 1, "Consular_Body_Main_low")
 			Hide_Sub_Object(Object, 1, "C70_Main")
+			-- invincible engine
+			Hide_Sub_Object(Object, 1, "Invincible_Engine")
 			
 			Hide_Sub_Object(Object, 0, "Gray")
 
@@ -41,6 +42,8 @@ function DecolorManager:new()
 
 			Hide_Sub_Object(Object, 0, "Consular_Body_Main_low_Gray")
 			Hide_Sub_Object(Object, 0, "C70_Main_Gray")
+
+			Hide_Sub_Object(Object, 0, "Invincible_Engine_Gray")
         end
 end
 

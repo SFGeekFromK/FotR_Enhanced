@@ -96,8 +96,8 @@ function State_Republic_Future_Jedi_Gone(message)
 			if TestValid(Find_First_Object(OFC_Unit)) then --Check OFC object exists
 				local Unit_Object_List = Find_All_Objects_Of_Type(OFC_Unit) --Get all objects of OFC unit
 				if table.getn(Unit_Object_List) ~= 0 then --Check if list is not empty
-					for _, _ in pairs(Unit_Object_List) do --Loop through list
-						UnitUtil.ReplaceAtLocation(OFC_Unit, Non_OFC_Unit) --Replace OFC unit with non OFC
+					for _, despawn_target in pairs(Unit_Object_List) do --Loop through list
+						UnitUtil.ReplaceAtLocation(despawn_target, Non_OFC_Unit) --Replace OFC unit with non OFC
 					end
 				end
 			end
@@ -107,8 +107,8 @@ function State_Republic_Future_Jedi_Gone(message)
 		if TestValid(Find_First_Object(SPHA_T_Ven)) then
 			local SPHA_T_List = Find_All_Objects_Of_Type(SPHA_T_Ven)
 			if table.getn(SPHA_T_List) ~= 0 then
-				for _, _ in pairs(SPHA_T_List) do
-					UnitUtil.ReplaceAtLocation(SPHA_T_Ven, "Generic_Venator")
+				for _, despawn_target in pairs(SPHA_T_List) do
+					UnitUtil.ReplaceAtLocation(despawn_target, "Generic_Venator")
 				end
 			end
 		end

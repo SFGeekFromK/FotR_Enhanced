@@ -3917,7 +3917,7 @@
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
-		<Icon_Name>i_button_autem_submod.tga</Icon_Name>
+		<Icon_Name>i_button_autem_alt.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
 
 		<Text_ID>TEXT_HERO_AUTEM</Text_ID>
@@ -4021,7 +4021,7 @@
 		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
 
 		<Text_ID>TEXT_HERO_AUTEM</Text_ID>
-		<Icon_Name>i_button_autem_submod_command.tga</Icon_Name>
+		<Icon_Name>i_button_autem_alt_command.tga</Icon_Name>
 
 		<Affiliation>Empire</Affiliation>
 
@@ -4043,7 +4043,7 @@
 		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
 
 		<Text_ID>TEXT_HERO_AUTEM</Text_ID>
-		<Icon_Name>i_button_autem_submod_retire.tga</Icon_Name>
+		<Icon_Name>i_button_autem_alt_retire.tga</Icon_Name>
 
 		<Tech_Level>0</Tech_Level>
 
@@ -11582,7 +11582,7 @@
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
 
-		<SpaceBehavior> ABILITY_COUNTDOWN, SPAWN_SQUADRON, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
 		<Lua_Script>GenericGameObject</Lua_Script>
 		<Tech_Level>99</Tech_Level>
 

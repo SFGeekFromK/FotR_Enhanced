@@ -32,6 +32,7 @@ function HeroRespawn:new(herokilled_finished_event, human_player)
     herokilled_finished_event:attach_listener(self.on_galactic_hero_killed, self)
 	self.durge_chance = 105
 	self.dooku_died = false
+	self.ventress_died = false
 end
 
 function HeroRespawn:on_galactic_hero_killed(hero_name, owner)
@@ -66,6 +67,8 @@ function HeroRespawn:on_galactic_hero_killed(hero_name, owner)
 	elseif hero_name == "ZOZRIDOR_SLAYKE_CARRACK" then
 		self:slaykes_second_chance()
 	-- FotR_Enhanced
+	--elseif hero_name == "VENTRESS_TEAM" then
+	--	self:check_ventress_recover()
 	elseif hero_name == "BLOCK_NEGOTIATOR" then
 		self:spawn_block("BLOCK_VIGILANCE")
 	elseif hero_name == "YULAREN_RESOLUTE_SPHAT" then
@@ -184,3 +187,16 @@ function HeroRespawn:spawn_block(team)
 		end
 	end
 end
+
+--[[
+function HeroRespawn:check_ventress_recover()
+	--Logger:trace("entering HeroRespawn:check_dooku_doppelganger")
+	if self.dooku_died == false then
+		local p_CIS = Find_Player("Rebel")
+		local planet = StoryUtil.FindFriendlyPlanet(p_CIS)
+		StoryUtil.SpawnAtSafePlanet("BOZ_PITY", p_CIS, StoryUtil.GetSafePlanetTable(), {"Ventress_Team"})
+		--StoryUtil.Multimedia("TEXT_SPEECH_DOOKU_DOPPELGANGER_SPAWN", 15, nil, "Dooku_Loop", 0)
+		self.ventress_died = true
+	end
+end
+]]

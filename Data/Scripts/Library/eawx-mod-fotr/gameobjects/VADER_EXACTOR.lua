@@ -20,5 +20,5 @@ return {
 			DEFAULT = {Initial = 1, Reserve = 0}
 		},
 	},
-	Scripts = {"multilayer", "fighter-spawn"}
+	Scripts = {"multilayer", "fighter-spawn", "decolor-manager"}
 }

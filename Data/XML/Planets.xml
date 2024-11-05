@@ -51553,23 +51553,33 @@
 
     <!-- FotR_Enhanced -->
 
-    <!--
+    
     <Planet Name="Maramere">
         
-        <Galactic_Position>881, -1020, 10</Galactic_Position> subject to change
+        <Galactic_Position>881, -1020, 10</Galactic_Position>
 
 
 
     </Planet>
-    -->
     
-    <!--
+    
+    
     <Planet Name="Anzat">
-    
+        
     </Planet>
 
     <Planet Name="Trigalis">
 
+        <Galactic_Position></Galactic_Position>
+
     </Planet>
-    -->
+
+    <Planet Name="Ruhe">
+
+    </Planet>
+
+    <Planet Name="Orto">
+
+    </Planet>
+    
 </Planets>

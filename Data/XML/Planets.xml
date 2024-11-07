@@ -51553,45 +51553,44 @@
 
     <!-- FotR_Enhanced -->
 
-    
-    <Planet Name="Maramere">
-        
+    <Planet Name="Anzat"> <!-- Rocky, mountain, dirt looking -->
+        <Text_ID></Text_ID>
+        <Encyclopedia_Text></Encyclopedia_Text>
+        <Galactic_Position></Galactic_Position>
+    </Planet>
+
+
+    <Planet Name="Baldemnic">
+        <Text_ID></Text_ID>
+        <Galactic_Position></Galactic_Position>
+    </Planet>
+
+    <Planet Name="Maramere"> <!-- luxurious, temperate, green, urban -->
+        <Text_ID></Text_ID>
         <Galactic_Position>881, -1020, 10</Galactic_Position>
-
-
 
     </Planet>
     
-    
-    
-    <Planet Name="Anzat">
+    <Planet Name="Orto">
+        <Text_ID></Text_ID>
+        <Galactic_Position></Galactic_Position>
+    </Planet>
+
+    <Planet Name="Ruhe"> <!-- Forest, Green, Trees -->
+        <Text_ID></Text_ID>
+        <Encyclopedia_Text></Encyclopedia_Text>
         <Galactic_Position></Galactic_Position>
     </Planet>
 
     <Planet Name="Trigalis">
-
+        <Text_ID></Text_ID>
         <Galactic_Position></Galactic_Position>
 
-    </Planet>
-
-    <Planet Name="Ruhe">
-        <Galactic_Position></Galactic_Position>
-    </Planet>
-
-    <Planet Name="Orto">
-        <Galactic_Position></Galactic_Position>
     </Planet>
     
-    <Planet Name="Dellat">
-        <Galactic_Position></Galactic_Position>
-    </Planet>
-
-    <Planet Name="Baldemnic">
-        <Galactic_Position></Galactic_Position>
-    </Planet>
-
     <Planet Name="Ywllandr">
-
+        <Text_ID></Text_ID>
+        <Galactic_Position></Galactic_Position>
     </Planet>
 
 </Planets>

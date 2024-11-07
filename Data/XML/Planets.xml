@@ -51565,7 +51565,7 @@
     
     
     <Planet Name="Anzat">
-        
+        <Galactic_Position></Galactic_Position>
     </Planet>
 
     <Planet Name="Trigalis">
@@ -51575,11 +51575,23 @@
     </Planet>
 
     <Planet Name="Ruhe">
-
+        <Galactic_Position></Galactic_Position>
     </Planet>
 
     <Planet Name="Orto">
-
+        <Galactic_Position></Galactic_Position>
     </Planet>
     
+    <Planet Name="Dellat">
+        <Galactic_Position></Galactic_Position>
+    </Planet>
+
+    <Planet Name="Baldemnic">
+        <Galactic_Position></Galactic_Position>
+    </Planet>
+
+    <Planet Name="Ywllandr">
+
+    </Planet>
+
 </Planets>

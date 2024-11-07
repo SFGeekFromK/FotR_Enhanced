@@ -86,7 +86,7 @@
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
 		<Reward_Param1>Dodonna_Ardent</Reward_Param1>
-		<Reward_Param2>Corellia</Reward_Param2>
+		<Reward_Param2>Cato_Neimoidia</Reward_Param2>
 		<Prereq>Delayed_Story_Start</Prereq>
 	</Event>
 

@@ -35,6 +35,7 @@
 			Commenor,
 			Corellia,
 			Coruscant,
+			Deko_neimoidia,
 			Duro,
 			Empress_Teta,
 			Eriadu,
@@ -45,6 +46,7 @@
 			Honoghr,
 			Jabiim,
 			Kashyyyk,
+			Koru_Neimoidia,
 			Kuat,
 			Lianna,
 			Llanic,
@@ -63,6 +65,7 @@
 			Ossus,
 			Praesitlyn,
 			Ragmar,
+			Raxus_Second,
 			Rendili,
 			Roche,
 			Ryloth,
@@ -80,6 +83,7 @@
 			Triton,
 			Tythe,
 			Utapau,
+			Wayland,
 			Xagobah,
 			YagDhul,
 			Yavin,
@@ -187,7 +191,7 @@
 			Thyferra_YagDhul,
 		</Trade_Routes>
 
-		<Home_Location> Rebel, Serenno </Home_Location>
+		<Home_Location> Rebel, Raxus_Second </Home_Location>
        	<Home_Location> Empire, Coruscant </Home_Location>
 
         <Starting_Active_Player> Rebel </Starting_Active_Player>

@@ -33,3 +33,6 @@ locking planets in historical(Maybe progressive too?) is set by SetPlanetRestric
 unlocking is handled through xml event story_trigger;reward_type:SET_PLANET_RESTRICTED
 
 spawning certain heores in cinematic tactical battle requires a story_trigger_zone_00 marker with named hint. (ex ; grievous_marker = Find_Hint("STORY_TRIGGER_ZONE_00", "grievous"))
+
+
+<Apply_Special_Ability_To_Self_On_Creation>Yes/No</Apply_Special_Ability_To_Self_On_Creation> : Used to apply combat bonus to the host unit. Default is No.

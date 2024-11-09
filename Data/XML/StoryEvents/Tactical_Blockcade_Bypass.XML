@@ -1,0 +1,276 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--******** Outer Rim Sieges: Blockade Bypass **********-->
+<!--*****************************************************-->
+
+<!-- Based on Ryloth Ramming from Rimward -->
+
+<Story>
+
+	<Event Name="Battle_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Disable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Retreat_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Reinforcements_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_REINFORCEMENTS</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Reward_Param2>REBEL</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+	<Event Name="Disable_Reinforcements_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_REINFORCEMENTS</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Reward_Param2>EMPIRE</Reward_Param2>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Prevent_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Battle_Start</Prereq>
+	</Event>
+
+
+	<Event Name="Allow_Victory">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ALLOW_STUFF</Event_Param2>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+	</Event>
+
+	<Event Name="Enable_Retreat_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>REBEL</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Allow_Victory</Prereq>
+	</Event>
+
+	<Event Name="Enable_Retreat_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Allow_Victory</Prereq>
+	</Event>
+
+	<Event Name="Enable_Reinforcements_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_REINFORCEMENTS</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Reward_Param2>REBEL</Reward_Param2>
+		<Prereq>Allow_Victory</Prereq>
+	</Event>
+
+	<Event Name="Enable_Reinforcements_Rep">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_REINFORCEMENTS</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Reward_Param2>EMPIRE</Reward_Param2>
+		<Prereq>Allow_Victory</Prereq>
+	</Event>
+
+
+	<Event Name="Victory_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CIS_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Victory_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>REPUBLIC_VICTORY</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>REBEL</Event_Param1>
+	</Event>
+
+	<Event Name="Rep_Victory">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>EMPIRE</Event_Param1>
+	</Event>
+
+
+	<Event Name="Switch_Control_CIS">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_CIS_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>CISMainAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Switch_Control_Rep">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ACTIVATE_REP_AI</Event_Param2>
+		<Reward_Type>SWITCH_CONTROL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>RepublicAI</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Cinematic_Crawl_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CINEMATIC_CRAWL</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_INTRO_01</Reward_Param1>
+		<Reward_Param2>9.5</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+	</Event>
+
+	<Event Name="Cinematic_Crawl_02">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_INTRO_02</Reward_Param1>
+		<Reward_Param2>6.5</Reward_Param2>
+		<Reward_Param6>255 255 255 255</Reward_Param6>
+		<Reward_Param7>1</Reward_Param7>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Cinematic_Crawl_01</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_Rep_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_REP_I</Event_Param2>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Goal_Trigger_Rep_Act_I</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_01</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Rep_Goal_02</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Rep_Goal_01, Victory_Rep</Prereq>
+		<Prereq>Rep_Goal_01, Rep_Victory</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_02, Victory_Rep</Prereq>
+		<Prereq>Rep_Goal_02, Rep_Victory</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Rep_Goal_03, Victory_Rep</Prereq>
+		<Prereq>Rep_Goal_03, Rep_Victory</Prereq>
+	</Event>
+
+
+	<Event Name="Rep_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_REP_01</Reward_Param1>
+		<Prereq>Rep_Goal_01, Victory_CIS</Prereq>
+		<Prereq>Rep_Goal_01, CIS_Victory</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_02_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_REP_02</Reward_Param1>
+		<Prereq>Rep_Goal_02, Victory_CIS</Prereq>
+		<Prereq>Rep_Goal_02, CIS_Victory</Prereq>
+	</Event>
+
+	<Event Name="Rep_Goal_03_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_REP_03</Reward_Param1>
+		<Prereq>Rep_Goal_03, Victory_CIS</Prereq>
+		<Prereq>Rep_Goal_03, CIS_Victory</Prereq>
+	</Event>
+
+
+	<Event Name="Goal_Trigger_CIS_Act_I">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>GOAL_TRIGGER_CIS_I</Event_Param2>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>Goal_Trigger_CIS</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Complete">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, Victory_CIS</Prereq>
+		<Prereq>CIS_Goal_01, CIS_Victory</Prereq>
+	</Event>
+
+
+	<Event Name="CIS_Goal_01_Failed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_MISSION_RYLOTH_RAMMING_OBJECTIVE_CIS_01</Reward_Param1>
+		<Prereq>CIS_Goal_01, Victory_Rep</Prereq>
+		<Prereq>CIS_Goal_01, Rep_Victory</Prereq>
+	</Event>
+
+</Story>

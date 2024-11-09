@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!--*****************************************************-->
+<!--******** Outer Rim Sieges: Blockade Bypass **********-->
+<!--*****************************************************-->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Blockade_Bypass</Lua_Script>
+	<Active_Plot>StoryEvents\Tactical_Blockade_Bypass.XML</Active_Plot>
+
+</Story_Mode_Plots>

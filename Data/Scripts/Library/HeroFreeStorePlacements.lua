@@ -268,19 +268,19 @@ return {
     ,VENATOR_TRANQUILITY = {"Is_Convoy_Planet", true}
 
 -- FotR_Enhanced
-    ,NEEDA_INTEGRITY = {nil, true}
-    ,TJ912_RECUSANT = {nil, true}
-    ,TM171_DH_OMNI={nil, true}
     ,BLOCK_NEGOTIATOR = {nil, true}
     ,BLOCK_VIGILANCE = {nil, true}
-    ,YULAREN_RESOLUTE_SPHAT = {nil, true}
+    ,NEEDA_INTEGRITY = {nil, true}
+    ,POGGLE_TEAM = {"Is_Production_Planet", false}
+    ,TJ912_RECUSANT = {nil, true}
+    ,TM171_DH_OMNI={nil, true}
     ,ROHN_TEAM = {nil, false}
+    ,YULAREN_RESOLUTE_SPHAT = {nil, true}
+   
 
    
     ,YULAREN_INTEGRITY_IMP = {nil, true}
     ,YULAREN_RESOLUTE_IMP = {nil, true}
-    ,BLOCK_NEGOTIATOR_IMP = {nil, true}
-    ,BLOCK_VIGILANCE_IMP = {nil, true}
 
     -- Ground
 

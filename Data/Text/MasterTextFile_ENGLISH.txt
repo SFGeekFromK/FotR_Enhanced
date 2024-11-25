@@ -1282,6 +1282,7 @@ TEXT_DOCUMENTATION_BODY_TRAITAGGRESSIVE,Aggressive: +5% Damage
 TEXT_DOCUMENTATION_BODY_TRAITAIRCOMMANDER,Air Commander: +10% Health\+10% Speed (Air Speeders Only) [Stacking bonus]
 TEXT_DOCUMENTATION_BODY_TRAITALOOF,Aloof: -5% Health\-5% Damage
 TEXT_DOCUMENTATION_BODY_TRAITAMBUSHER,Ambusher: Increased rate of fire for a short duration after entering the battlefield.
+TEXT_DOCUMENTATION_BODY_TRAITARCHDUKE,Archduke of Geonosis: 25% discounts on production time and cost on products produced on Geonosis
 TEXT_DOCUMENTATION_BODY_TRAITARROGANT,Arrogant: -10% Damage\-5% Speed
 TEXT_DOCUMENTATION_BODY_TRAITARTILLERYENGINEER,Artillery Engineer: +10% Damage (Artillery Only) [Stacking bonus]
 TEXT_DOCUMENTATION_BODY_TRAITARTLOVER,Art Lover: +10% Damage
@@ -1538,6 +1539,7 @@ TEXT_ENCYCLOPEDIA_CLASS_ADVANCE,Class: Technology Upgrade
 TEXT_ENCYCLOPEDIA_CLASS_ADVISOR,Class: Advisor
 TEXT_ENCYCLOPEDIA_CLASS_AGENT,Class: Agent
 TEXT_ENCYCLOPEDIA_CLASS_ALLIES,Class: Mercenary Allies
+TEXT_ENCYCLOPEDIA_CLASS_ARCHDUKE,Class: Archduke
 TEXT_ENCYCLOPEDIA_CLASS_ARCHON,Class: Archon
 TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY,Class: Artillery
 TEXT_ENCYCLOPEDIA_CLASS_ASSISTANT_VICEPREX,Class: Assistant Viceprex
@@ -2412,6 +2414,7 @@ TEXT_GOVERNMENT_REPUBLIC_COMMANDO_GREGOR,- Gregor (Clone Commando) [ Locked in 1
 TEXT_GOVERNMENT_REPUBLIC_COMMANDO_LIST,Special Forces options:
 TEXT_GOVERNMENT_REPUBLIC_COMMANDO_OMEGA,- Omega Squad (Clone Commandos)
 TEXT_GOVERNMENT_REPUBLIC_COMMANDO_ORDO,- Ordo Skirata (ARC Trooper)
+TEXT_GOVERNMENT_REPUBLIC_COMMANDO_PRUDII,- Prudii Skirata (ARC Trooper)
 TEXT_GOVERNMENT_REPUBLIC_COMMANDO_VOCA,- Voca (Clone Commando)
 TEXT_GOVERNMENT_REPUBLIC_COUNCIL_AAYLA,- Aayla Secura (Jedi)
 TEXT_GOVERNMENT_REPUBLIC_COUNCIL_AHSOKA,- Ahsoka Tano (Jedi) [ Unlocks in month 11 of 22 BBY | Locked in 19 BBY starts ]
@@ -2954,6 +2957,7 @@ TEXT_HERO_PESTAGE,Sate Pestage
 TEXT_HERO_PIKNAB_CARSELS,Piknab Carsels
 TEXT_HERO_PLAKOT,Plakot the Hutt
 TEXT_HERO_PLO_KOON,Plo Koon
+TEXT_HERO_POGGLE,Poggle The Lesser
 TEXT_HERO_POPARA,Popara Anjiliac Diresto
 TEXT_HERO_PRAJI,Nahdonnis Praji
 TEXT_HERO_PRE_VIZSLA,Pre Vizsla
@@ -11996,7 +12000,7 @@ TEXT_TOOLTIP_BLAST_DOOR_DESCRIPTION,A type of secured door that was used in nume
 TEXT_TOOLTIP_BLAST_DOOR_HEALTH,Health: 300 (Structure)
 TEXT_TOOLTIP_BLAST_DOOR_SHIELD,Shield: 250 (Heavy Vehicle)
 TEXT_TOOLTIP_BLOCK,Admiral Block was the commanding officer of the Negotiator, and later Vigilance, both serving the role as the flagship of Jedi general Obi Wan Kenobi.
-TEXT_TOOLTIP_BLOCK_VILGILANCE_RESPAWN,Block respawns in a Vigilance(Venator) after his first death
+TEXT_TOOLTIP_BLOCK_VILGILANCE_RESPAWN,Block respawns in a Venator(Vigilance) after his first death
 TEXT_TOOLTIP_BLOCKADE_ATTRITION,Blockade Attrition: Kills enemy units in orbit on cycle change (GC Level)
 TEXT_TOOLTIP_BLY,Clone Marshall Commander and Advanced Recon Commando, CC-5052 was nicknamed Bly. He served alongside Jedi General Aayla Secura in the 327th Star Corps, a unit well-known for its constantly changing deployments. Despite his undying respect and loyalty to Aayla, his clone programming had won out when Order 66 was issued; he and his men ruthlessly killed her, continuing to fire even after she had fallen.
 TEXT_TOOLTIP_BLY_P1_HEALTH,Health: 135 (Hero)
@@ -14021,6 +14025,7 @@ TEXT_TOOLTIP_MAGNATRI_COMPANY,Company: 2x - Magna Octuptarra Droid
 TEXT_TOOLTIP_MAGNATRI_HEALTH,Health: 300 (Heavy Vehicle)
 TEXT_TOOLTIP_MAGNATRI_MOVE,Speed: 0.5 | Turn: 2.0 
 TEXT_TOOLTIP_MAGNATRI_WEAP1,1x Super Heavy AV Blaster Cannon: 3 / 2.0s / 400m
+TEXT_TOOLTIP_MAGNATRI_WEAP2,1x Heavy Proton Missiles: 2 / 8.33s / 480m
 TEXT_TOOLTIP_MAGNEPULSE_BUTTON,Fire the Magnapulse Cannon
 TEXT_TOOLTIP_MAGNETIC_BLAST_DOOR_DESCRIPTION,Heavily protected, these blast doors can withstand normal weaponry easily, forcing attackers to deactivate them manually through a control station or similar.
 TEXT_TOOLTIP_MAGNETIC_BLAST_DOOR_HEALTH,Health: ∞ (Structure)
@@ -14593,6 +14598,7 @@ TEXT_TOOLTIP_PLO_KOON,Kel Dor male from the planet Dorin who became a Jedi Maste
 TEXT_TOOLTIP_PLO_KOON_HEALTH,Health: 175 [2%/5s] (Hero)
 TEXT_TOOLTIP_PLO_KOON_MOVE,Speed: 1.4
 TEXT_TOOLTIP_PLO_KOON_WEAP1,1x Lightsaber: 1 / 0.2s / 1m
+TEXT_TOOLTIP_POGGLE,Archduke Poggle the Lesser is one of the leading members of the Separatist council.
 TEXT_TOOLTIP_POLICE_RESPONDER,Local police units geared in riot armor and long weapons for emergency combat duty. While somewhat well-protected, they have poor mobility and offensive capabilities and can engage infantry at best.
 TEXT_TOOLTIP_POLICE_RESPONDER_COMPANY,Company: 40x - Police Enforcer
 TEXT_TOOLTIP_POLICE_RESPONDER_COMPANY_WEAP1,20x Blaster Carbine: 3 / 1.25s / 220m
@@ -14633,6 +14639,7 @@ TEXT_TOOLTIP_PRAETOR_I_WEAP1,20x Heavy Quad Turbolasers: 2 / 5.0s / 7.8km
 TEXT_TOOLTIP_PRAETOR_I_WEAP2,8x Medium Dual Turbolasers: 2 / 4.0s / 6.8km
 TEXT_TOOLTIP_PRAETOR_I_WEAP3,5x Heavy Dual Ion Cannons: 2 / 5.0s / 7.8km
 TEXT_TOOLTIP_PRAETOR_I_WEAP4,8x Medium Dual Ion Cannons: 2 / 4.0s / 6.8km
+TEXT_TOOLTIP_PRDUII_WEAP1,1x DC-15A Blaster Rifle: 1 / 1.0s / 240m
 TEXT_TOOLTIP_PRE_VIZSLA,Pre Vizsla was the leader of the Death Watch faction which sought to restore Mandalore to its old warrior ways instead of the pacifist manner it had adopted under the New Mandalorians. He bided his time as the governor on Concordia while Death Watch gathered their strength with a secret alliance with the CIS. During the Clone Wars he constantly sought to provoke the Republic to “invade” Mandalore and thus allow Death Watch to intervene and appear as liberators, but these plots constantly failed. An alliance with the fugitive Darth Maul finally gave Vizsla the opportunity to overthrow Satine and declare himself Prime Minister and Mand'alor of his home. His reign would be cut short in a duel with Maul for contest over Mandalore's leadership.
 TEXT_TOOLTIP_PRE_VIZSLA_HEALTH,Health: 140 (Hero)
 TEXT_TOOLTIP_PRE_VIZSLA_MOVE,Speed: 1.1
@@ -14706,10 +14713,10 @@ TEXT_TOOLTIP_PROVIDENCE_WEAP3,2x Light Anti-Fighter Ion Cannons: 2 / 1.67s / 3.2
 TEXT_TOOLTIP_PROVIDENCE_WEAP4,3x Light Dual Laser Cannons: 2 / 0.44s / 3.7km
 TEXT_TOOLTIP_PROVIDENCE_WEAP5,4x Light Proton Torpedoes: 4 / 8.0s / 5.2km
 TEXT_TOOLTIP_PROWL,Prowl
-TEXT_TOOLTIP_PRUDII,The Null Class Advanced Recon Commando Null-5 adopted the name Prudii, meaning shadow in Mandalorian, and would join the Clan Skirata on Kyrimorut, Mandalore after Order 66. Prudii was a specialist in sabotage who frequently disrupted droid factories by editing their production recipes in order to make the droid’s armour shatter when hit.
-TEXT_TOOLTIP_PRUDII_P1_HEALTH,Health: 200 (Hero)
+TEXT_TOOLTIP_PRUDII,Given his name by his trainer, Kal Skirata, Null-5 was an Advanced Recon Commando who specialized in droid factory sabotage. After spending a year collecting informations on droid metallurgic structures by interrogating separatist metallurgists, he began to manipulate metal recipe for droid instead of destroying the factory. This act significantly increased battle performance for the clones in the battle.
+TEXT_TOOLTIP_PRUDII_P1_HEALTH,Health: 160 (Hero)
 TEXT_TOOLTIP_PRUDII_P1_MOVE,Speed: 1.1
-TEXT_TOOLTIP_PRUDII_P2_HEALTH,Health: 210 (Hero)
+TEXT_TOOLTIP_PRUDII_P2_HEALTH,Health: 170 (Hero)
 TEXT_TOOLTIP_PRUDII_P2_MOVE,Speed: 1.3
 TEXT_TOOLTIP_PRUDII_WEAP1,1x DC-15A Blaster Rifle: 1 / 1.0s / 240m
 TEXT_TOOLTIP_PRUDII_WEAP2,1x Proton Grenade: 1 / 15.0s / 200m
@@ -15814,6 +15821,7 @@ TEXT_TOOLTIP_TRAIT_AGGRESSIVE,Aggressive
 TEXT_TOOLTIP_TRAIT_AIRCOMMANDER,Air Commander
 TEXT_TOOLTIP_TRAIT_ALOOF,Aloof
 TEXT_TOOLTIP_TRAIT_AMBUSHER,Ambusher
+TEXT_TOOLTIP_TRAIT_ARCHDUKE,Archduke of Geonosis
 TEXT_TOOLTIP_TRAIT_ARROGANT,Arrogant
 TEXT_TOOLTIP_TRAIT_ARTILLERYENGINEER,Artillery Engineer
 TEXT_TOOLTIP_TRAIT_ARTLOVER,Art Lover
@@ -16506,6 +16514,8 @@ TEXT_UNIT_COLICOIDSWARM,Colicoid Swarm
 TEXT_UNIT_COLONY_ONE,Golan-I Space Colony
 TEXT_UNIT_COLONY_THREE,Golan-III Space Colony
 TEXT_UNIT_COLONY_TWO,Golan-II Space Colony
+TEXT_UNIT_COMBATTRI,Combat Octuptarra Droid
+TEXT_UNIT_COMBATTRI_COMPANY,Combat Octuptarra Droid Company
 TEXT_UNIT_CONSULAR,Consular Transport Cruiser
 TEXT_UNIT_CONSULAR_HERO_CONVOY,Consular Transport Cruiser Convoy
 TEXT_UNIT_CONSULAR_REFIT,Consular Armed Cruiser

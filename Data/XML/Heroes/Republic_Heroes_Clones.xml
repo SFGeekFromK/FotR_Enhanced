@@ -9526,7 +9526,7 @@
 				<Stacking_Category>0</Stacking_Category>
 			</Combat_Bonus_Ability>
 
-			<Galactic_Stealth_Ability Name="Gree_Galactic_Stealth">
+			<Galactic_Stealth_Ability Name="Prudii_Galactic_Stealth">
 				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
 			</Galactic_Stealth_Ability>
 

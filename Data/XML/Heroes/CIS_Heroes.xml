@@ -7024,7 +7024,15 @@
 		</Abilities>
 		
 	</UniqueUnit>
+	<!--
+	<HeroUnit Name="Dellso_Ground">
 
+	</HeroUnit>
+
+	<HeroCompany Name="Dellso_Ground_Team">
+
+	</HeroCompany>
+	-->
 	<UniqueUnit Name="Kendu_A6">
 		<Variant_Of_Existing_Type>A6_Juggernaut</Variant_Of_Existing_Type>
 		<LOD_Bias>0.5</LOD_Bias>

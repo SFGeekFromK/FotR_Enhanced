@@ -9731,7 +9731,8 @@
 		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_HERO_PRUDII</Text_ID>
-		<Icon_Name>i_button_prudii_retire.tga</Icon_Name>
+		<!--<Icon_Name>i_button_prudii_retire.tga</Icon_Name>-->
+		<Icon_Name>i_button_prudii.tga</Icon_Name>
 		
 		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
@@ -9752,7 +9753,8 @@
 		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
 		
 		<Text_ID>TEXT_HERO_PRUDII</Text_ID>
-		<Icon_Name>i_button_prudii_retire.tga</Icon_Name>
+		<!--<Icon_Name>i_button_prudii_p2_retire.tga</Icon_Name>-->
+		<Icon_Name>i_button_prudii_p2.tga</Icon_Name>
 		
 		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>

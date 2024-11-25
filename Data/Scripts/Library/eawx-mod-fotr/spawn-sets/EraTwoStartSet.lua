@@ -9,7 +9,7 @@ return {
 	["MON_CALAMARI"] = {"Kit_Fisto_Delta_Team"}
 	},
 	["REBEL"] = {
-	["RAXUS_SECOND"] = {"Lucid_Voice", "Dooku_Team", "SevRance_Team"},
+	["RAXUS_SECOND"] = {"Lucid_Voice", "Dooku_Team", "SevRance_Team", "Poggle_Team"},
 	["YAGDHUL"] = {"Durge_Team"},
 	["YAVIN"] = {"Ventress_Team", --[[FotR_Enhanced]]"TJ912_Recusant"},
 	["SERENNO"] = {"Grievous_Team_Recusant", "Colicoid_Swarm", "Sora_Bulq_Team"},

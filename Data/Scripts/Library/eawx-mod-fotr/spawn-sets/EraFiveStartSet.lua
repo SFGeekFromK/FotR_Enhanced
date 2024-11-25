@@ -15,7 +15,8 @@ return {
 	["SERENNO"] = {"Grievous_Team_Recusant", "Colicoid_Swarm", "Sora_Bulq_Team"},
 	["FELUCIA"] = {"Kalani_Team"},
 	["HYPORI"] = {"TF1726_Munificent"},
-	["PAMMANT"] = {"Gunray_Team", "Harsol_Munificent", "AutO_Providence"}
+	["PAMMANT"] = {"Gunray_Team", "Harsol_Munificent", "AutO_Providence"},
+	["UTAPAU"] = {"Poggle_Team"},
 	},
 	["HUTT_CARTELS"] = {
 		["GAMORR"]  = {

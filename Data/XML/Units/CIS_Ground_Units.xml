@@ -3395,7 +3395,7 @@
 
 		<AI_Combat_Power></AI_Combat_Power>
 
-		<Unit_Abilities_Data>
+		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>
 				<Type>ROCKET_ATTACK</Type>
 				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_WEAPON_SWAP</Alternate_Name_Text>
@@ -3422,7 +3422,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
 		</Encyclopedia_Text>
-
+		<Icon_Name>i_button_magnatri_missile.tga</Icon_Name>
 		<Company_Units>Magna_Tri_Missile, Magna_Tri_Missile</Company_Units>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 	</GroundCompany>

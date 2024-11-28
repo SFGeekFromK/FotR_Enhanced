@@ -59,7 +59,7 @@ function HeroRespawn:on_galactic_hero_killed(hero_name, owner)
 	elseif hero_name == "YULAREN_RESOLUTE" then
 		self:spawn_yularen("Yularen_Integrity")
 	elseif hero_name == "YULAREN_INVINCIBLE" then
-		self:spawn_yularen_imp("Yularen_Integrity_Imp")
+		self:spawn_yularen_imp("Yularen_Integrity")
 	elseif hero_name == "TRENCH_INVINCIBLE" then
 		self:start_cyber_trench_countdown()
 	elseif hero_name == "TRENCH_INVINCIBLE" then

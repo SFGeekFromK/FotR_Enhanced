@@ -550,7 +550,6 @@ function RepublicHeroes:init_heroes()
 		Handle_Hero_Exit("Ahsoka", council_data)
 		Handle_Hero_Exit("Halcyon", council_data)
 		Handle_Hero_Exit("Gregor", commando_data)
-		set_unit_index("Block", 2, admiral_data)
 
 		RepublicHeroes:Add_Fighter_Set("Odd_Ball_ARC170_Location_Set")
 		RepublicHeroes:Add_Fighter_Set("Warthog_Republic_Z95_Location_Set")

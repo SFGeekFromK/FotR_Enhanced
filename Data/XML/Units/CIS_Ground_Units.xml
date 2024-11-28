@@ -3425,6 +3425,17 @@
 		<Icon_Name>i_button_magnatri_missile.tga</Icon_Name>
 		<Company_Units>Magna_Tri_Missile, Magna_Tri_Missile</Company_Units>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_WEAPON_SWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_MAGNATRI_SWAP_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_SWAP_WEAPONS.TGA</Alternate_Icon_Name>
+				<Targeting_Max_Attack_Distance>375</Targeting_Max_Attack_Distance>
+				<Recharge_Seconds> 9.0 </Recharge_Seconds>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
 	</GroundCompany>
 	
     <GroundVehicle Name="Super_Tank">

@@ -72,7 +72,7 @@ return {
             crossplot:publish("CONQUER_RENDILI", "empty")
             crossplot:publish("CONQUER_MON_CALAMARI", "empty")
             -- FotR_Enhanced
-            --crossplot:publish("CONQUER_RENDILI_REP", "empty")
+            crossplot:publish("CONQUER_RENDILI_REP", "empty")
         end
 		
         if self.Active_Planets["MANDALORE"] and self.MandaloreFired == false then

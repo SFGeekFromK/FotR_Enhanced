@@ -60,7 +60,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("REPUBLIC_FIGHTER_ENABLE", self.Add_Fighter_Sets, self)
 	crossplot:subscribe("REPUBLIC_FIGHTER_DISABLE", self.Remove_Fighter_Sets, self)
 	-- FotR_Enhanced
-	crossplot:subscribe("DALLIN_UNLLOCK", self.Dallin_Unlock, self)
+	--crossplot:subscribe("DALLIN_UNLLOCK", self.Dallin_Unlock, self)
 	crossplot:subscribe("GEEN_UNLOCK", self.Geen_Unlock, self)
 	--crossplot:subscribe("FORRAL_RETIRE", self.Forral_Switch, self)
 	crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)
@@ -100,7 +100,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Maarisa",
 			"Grumby",
-			"Needa"
+			"Needa",
+			"Dallin"
 		},
 		story_locked_list = {--Heroes not accessible, but able to return with the right conditions
 			["Tenant"] = true,

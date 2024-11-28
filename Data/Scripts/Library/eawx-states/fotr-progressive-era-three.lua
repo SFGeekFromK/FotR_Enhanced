@@ -91,7 +91,7 @@ return {
             crossplot:publish("VENATOR_RESEARCH_FINISHED", "empty")
             -- FotR_Enhanced
             crossplot:publish("GEEN_UNLOCK", "empty")
-            crossplot:publish("DALLIN_UNLOCK", "empty")
+            --crossplot:publish("DALLIN_UNLOCK", "empty")
         end
 
         if self.Active_Planets["MANDALORE"] and self.MandaloreFired == false then

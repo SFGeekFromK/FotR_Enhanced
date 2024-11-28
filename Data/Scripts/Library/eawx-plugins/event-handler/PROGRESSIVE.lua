@@ -24,11 +24,11 @@ function EventManager:new(galactic_conquest, human_player, planets)
 		"CIS_Dreadnaught", "CIS_Dreadnaught", "CIS_Dreadnaught", "CIS_Dreadnaught", "CIS_Dreadnaught"}, 
 		false)
 	
-	
+	--[[
 	self.RendiliConquerREP = GenericConquer(self.galactic_conquest,
         "CONQUER_RENDILI_REP",
         "RENDILI", {"Empire"}, {}, false, nil, nil, nil, "DALLIN_UNLLOCK")
-		
+	]]	
 	self.MonCalConquer = GenericConquer(self.galactic_conquest,
         "CONQUER_MON_CALAMARI",
         "MON_CALAMARI", {"Rebel"},

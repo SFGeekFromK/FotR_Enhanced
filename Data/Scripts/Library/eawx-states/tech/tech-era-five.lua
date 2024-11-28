@@ -36,6 +36,7 @@ return {
             UnitUtil.SetLockList("REBEL", {
                 "Auxiliary_Lucrehulk",
                 "CIS_GAT_Group",
+                "Magna_Company"
             }, false)
 			
 	        UnitUtil.SetLockList("REBEL", {

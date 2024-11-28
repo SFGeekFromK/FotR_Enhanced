@@ -304,6 +304,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		disabled = true
 	}
 	
+	--[[
 	senator_data = {
 		total_slots = 2,			--Max slot number. Set at the start of the GC and never change
 		free_hero_slots = 2,		--Slots open to buy
@@ -331,7 +332,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		global_display_list = "REP_SENATOR_LIST", --Name of global array used for documention of currently active heroes
 		disabled = true
 	}
-
+	]]
+	
 	fighter_assigns = {
 		"Garven_Dreis_Location_Set",
 		"Nial_Declann_Location_Set",

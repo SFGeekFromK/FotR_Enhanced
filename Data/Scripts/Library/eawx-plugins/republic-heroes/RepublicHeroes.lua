@@ -37,6 +37,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	self.inited = false
 	yularen_second_chance_used = false
 	
+	self.tech_level = GlobalValue.Get("CURRENT_ERA")
+
 	crossplot:subscribe("VENATOR_HEROES", self.Venator_Heroes, self)
 	crossplot:subscribe("VICTORY_HEROES", self.VSD_Heroes, self)
 	crossplot:subscribe("VICTORY2_HEROES", self.VSD2_Heroes, self)
@@ -515,7 +517,7 @@ function RepublicHeroes:init_heroes()
 	end
 	
 	if tech_level > 2 then
-		Handle_Hero_Exit("Dao", admiral_data)
+		--Handle_Hero_Exit("Dao", admiral_data)
 		Handle_Hero_Exit("Martz", admiral_data)
 		Handle_Hero_Exit("71", clone_data)
 
@@ -525,7 +527,7 @@ function RepublicHeroes:init_heroes()
 	end
 	
 	if tech_level > 3 then
-		Handle_Hero_Exit("Kilian", admiral_data)
+		--Handle_Hero_Exit("Kilian", admiral_data)
 		Handle_Hero_Exit("Knol", council_data)
 
 		Handle_Hero_Add("Autem", admiral_data)
@@ -828,10 +830,26 @@ function RepublicHeroes:Venator_Heroes()
 		Handle_Hero_Add("Byluir", moff_data)	
 		-- FotR_Enhanced
 		Handle_Hero_Add("Block", admiral_data)
-		--[[if admiral_data.active_player.Get_Tech_Level() < 3 then
+		if self.tech_level > 2 then
+			Handle_Hero_Exit("Dao", admiral_data)
+		end
+		
+		if self.tech_level > 3 then
+			Handle_Hero_Exit("Kilian", admiral_data)
+		end
+		--[[
+		if admiral_data.active_player.Get_Tech_Level() < 3 then
 			RepublicHeroes:Add_Fighter_Set("Warthog_BTLB_Y-Wing_Location_Set")
-		end]]
+		end
+		]]
+		--[[
 		if admiral_data.active_player.Get_Tech_Level() < 4 then
+			RepublicHeroes:Add_Fighter_Set("Odd_Ball_Torrent_Location_Set")
+			RepublicHeroes:Add_Fighter_Set("Warthog_Torrent_Location_Set")
+		end
+		]]
+
+		if self.tech_level < 4 then
 			RepublicHeroes:Add_Fighter_Set("Odd_Ball_Torrent_Location_Set")
 			RepublicHeroes:Add_Fighter_Set("Warthog_Torrent_Location_Set")
 		end

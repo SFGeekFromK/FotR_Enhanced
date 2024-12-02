@@ -59,7 +59,7 @@ function HeroRespawn:on_galactic_hero_killed(hero_name, owner)
 	elseif hero_name == "YULAREN_RESOLUTE" then
 		self:spawn_yularen("Yularen_Integrity")
 	elseif hero_name == "YULAREN_INVINCIBLE" then
-		self:spawn_yularen_imp("Yularen_Integrity")
+		self:spawn_yularen("Yularen_Integrity_66")
 	elseif hero_name == "TRENCH_INVINCIBLE" then
 		self:start_cyber_trench_countdown()
 	elseif hero_name == "TRENCH_INVINCIBLE" then
@@ -73,6 +73,8 @@ function HeroRespawn:on_galactic_hero_killed(hero_name, owner)
 		self:spawn_block("BLOCK_VIGILANCE")
 	elseif hero_name == "YULAREN_RESOLUTE_SPHAT" then
 		self:spawn_yularen("Yularen_Integrity")
+	elseif hero_name == "YULAREN_RESOLUTE_66" then
+		self:spawn_yularen("Yularen_Integrity_66")
 	end
 end
 
@@ -188,14 +190,15 @@ function HeroRespawn:spawn_block(team)
 	end
 end
 
+
 --[[
 function HeroRespawn:check_ventress_recover()
-	--Logger:trace("entering HeroRespawn:check_dooku_doppelganger")
-	if self.dooku_died == false then
+	--Logger:trace("entering HeroRespawn:check_ventress_recover")
+	if self.ventress_died == false then
 		local p_CIS = Find_Player("Rebel")
 		local planet = StoryUtil.FindFriendlyPlanet(p_CIS)
 		StoryUtil.SpawnAtSafePlanet("BOZ_PITY", p_CIS, StoryUtil.GetSafePlanetTable(), {"Ventress_Team"})
-		--StoryUtil.Multimedia("TEXT_SPEECH_DOOKU_DOPPELGANGER_SPAWN", 15, nil, "Dooku_Loop", 0)
+		StoryUtil.Multimedia("TEXT_SPEECH_VENGEFUL_RECOVER_SPAWN", 15, nil, "Dooku_Loop", 0)
 		self.ventress_died = true
 	end
 end

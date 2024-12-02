@@ -2193,7 +2193,7 @@
 
 
 	<UniqueUnit Name="Yularen_Resolute">
-		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name>
 		<Icon_Name>i_button_yularen.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -2562,7 +2562,7 @@
 	</UniqueUnit>
 
 	<UniqueUnit Name="Yularen_Integrity">
-		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_hero_Integrity.alo</Space_Model_Name>
 		<Icon_Name>i_button_yularen.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -3002,18 +3002,19 @@
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 	</UniqueUnit>
 
-	<UniqueUnit Name="Yularen_Resolute_Imp">
+	<UniqueUnit Name="Yularen_Resolute_66">
 		<Variant_Of_Existing_Type>Yularen_Resolute</Variant_Of_Existing_Type>
-		
+		<Space_Model_Name>EV_Venator.alo</Space_Model_Name>
 	</UniqueUnit>
 
 	<UniqueUnit Name="Yularen_Integrity_66">
 		<Variant_Of_Existing_Type>Yularen_Resolute</Variant_Of_Existing_Type>
-		<Space_Model_Name></Space_Model_Name>
+		<Space_Model_Name>EV_Venator.alo</Space_Model_Name>
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
 		TEXT_TOOLTIP_TRAIT_COMMAND2_SPACE
-		TEXT_TOOLTIP_TRAIT_SKYWATCHER 
+		TEXT_TOOLTIP_TRAIT_SKYWATCHER
+		TEXT_TOOLTIP_TRAIT_OFC_OFFICER 
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
 		TEXT_TOOLTIP_YULAREN
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
@@ -3131,6 +3132,40 @@
 		<Required_Orbiting_Units>Yularen_Invincible</Required_Orbiting_Units>
 	</DummyStructure>
 
+	<DummyStructure Name="Yularen_Retire_66_1">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+
+		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete> Unit_Unassigned_Admiral_Yularen </SFXEvent_Build_Complete>
+
+		<Text_ID>TEXT_HERO_YULAREN</Text_ID>
+		<Icon_Name>i_button_yularen_retire.tga</Icon_Name>
+
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Orbiting_Units>Yularen_Resolute_66</Required_Orbiting_Units>
+	</DummyStructure>
+
+	<DummyStructure Name="Yularen_Retire_66_2">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+
+		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete> Unit_Unassigned_Admiral_Yularen </SFXEvent_Build_Complete>
+
+		<Text_ID>TEXT_HERO_YULAREN</Text_ID>
+		<Icon_Name>i_button_yularen_retire.tga</Icon_Name>
+
+		<Tech_Level>0</Tech_Level>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Orbiting_Units>Yularen_Integrity_66</Required_Orbiting_Units>
+	</DummyStructure>
+
 	<DummyStructure Name="Yularen_Resolute_Upgrade_Resolute_SPHAT">
 		<Variant_Of_Existing_Type>Template_Flagship_Swap</Variant_Of_Existing_Type>
 		<GUI_Row> 1 </GUI_Row>
@@ -3151,7 +3186,7 @@
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four</Required_Special_Structures>
 	</DummyStructure>
 
-	<DummyStructure Name="Yularen_Resolute_Imp_Upgrade_Invincible">
+	<DummyStructure Name="Yularen_Resolute_66_Upgrade_Invincible">
 		<Variant_Of_Existing_Type>Template_Flagship_Swap</Variant_Of_Existing_Type>
 		<GUI_Row> 1 </GUI_Row>
 		<Build_Cost_Credits>1700</Build_Cost_Credits>
@@ -3168,11 +3203,11 @@
 		</Encyclopedia_Text>
 
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
-		<Required_Orbiting_Units>Yularen_Resolute_Imp</Required_Orbiting_Units>
+		<Required_Orbiting_Units>Yularen_Resolute_66</Required_Orbiting_Units>
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four</Required_Special_Structures>
 	</DummyStructure>
  
-	<DummyStructure Name="Yularen_Integrity_Imp_Upgrade_Invincible">
+	<DummyStructure Name="Yularen_Integrity_66_Upgrade_Invincible">
 		<Variant_Of_Existing_Type>Template_Flagship_Swap</Variant_Of_Existing_Type>
 		<GUI_Row> 1 </GUI_Row>
 		<Build_Cost_Credits>1700</Build_Cost_Credits>
@@ -3189,7 +3224,7 @@
 		</Encyclopedia_Text>
 
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
-		<Required_Orbiting_Units>Yularen_Integrity_Imp</Required_Orbiting_Units>
+		<Required_Orbiting_Units>Yularen_Integrity_66</Required_Orbiting_Units>
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Republic_Shipyard_Level_Three | Republic_Shipyard_Level_Four</Required_Special_Structures>
 	</DummyStructure>
 

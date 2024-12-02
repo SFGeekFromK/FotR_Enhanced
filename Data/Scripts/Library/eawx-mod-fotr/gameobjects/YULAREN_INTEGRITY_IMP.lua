@@ -1,3 +1,0 @@
-return {
-	Flags = {FULLINHERIT = "YULAREN_RESOLUTE_IMP"}
-}

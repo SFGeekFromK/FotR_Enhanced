@@ -22,5 +22,5 @@ return {
 			DEFAULT = {Initial = 2, Reserve = 6, ResearchType = "~RepublicWarpods"}
 		}
 	},
-	Scripts = {"multilayer", "fighter-spawn"}
+	Scripts = {"multilayer", "fighter-spawn", "decolor-manager"}
 }

@@ -2427,6 +2427,7 @@ TEXT_GOVERNMENT_REPUBLIC_COUNCIL_LIST,Jedi options:
 TEXT_GOVERNMENT_REPUBLIC_COUNCIL_LUMINARA,- Luminara Unduli (Jedi)
 TEXT_GOVERNMENT_REPUBLIC_COUNCIL_MACE,- Mace Windu (Jedi)
 TEXT_GOVERNMENT_REPUBLIC_COUNCIL_MUNDI,- Ki-Adi-Mundi (Jedi)
+TEXT_GOVERNMENT_REPUBLIC_COUNCIL_OPPO,- Oppo Rancis (Jedi)
 TEXT_GOVERNMENT_REPUBLIC_COUNCIL_PLO,- Plo Koon (Jedi)
 TEXT_GOVERNMENT_REPUBLIC_COUNCIL_SHAAK,- Shaak Ti (Jedi)
 TEXT_GOVERNMENT_REPUBLIC_COUNCIL_YODA,- Yoda (Jedi)
@@ -2943,6 +2944,7 @@ TEXT_HERO_OPEN_REPUBLIC_CLONE,Open Clone Officer Position
 TEXT_HERO_OPEN_REPUBLIC_COMMANDO,Open Special Forces Position
 TEXT_HERO_OPEN_REPUBLIC_COUNCIL,Open Jedi Position
 TEXT_HERO_OPEN_REPUBLIC_MOFF,Open Sector Command Position
+TEXT_HERO_OPPO_RANCISIS,Oppo Rancisis
 TEXT_HERO_ORDO,Ordo Skirata
 TEXT_HERO_ORN_FREE_TAA,Orn Free Taa
 TEXT_HERO_OSI_SOBECK,Osi Sobeck
@@ -14440,6 +14442,9 @@ TEXT_TOOLTIP_OPEN_NR_ADMIRAL,Organize a command position for front line duty (en
 TEXT_TOOLTIP_OPEN_REPUBLIC_COMMANDO,Organize a special forces task group for front line duty (enables hero options)
 TEXT_TOOLTIP_OPEN_REPUBLIC_COUNCIL,Organize a new position for Jedi deployment (enables Jedi options)
 TEXT_TOOLTIP_OPEN_REPUBLIC_MOFF,Organize a position for the military governance of a sector (enables commander options)
+TEXT_TOOLTIP_OPPO_HEALTH,Health: 230 [4%/5s] (Hero)
+TEXT_TOOLTIP_OPPO_MOVE,Speed: 1.1
+TEXT_TOOLTIP_OPPOS_RANCISIS,A Thisspiasian Jedi Master trained by Master Yaddle, he became a key member of the Jedi High Council and a leader in military strategy during the Clone Wars. Rancisis played a critical role in coordinating Republic forces from Coruscant, advising on campaigns like the defense of Kamino and the Battle of Zaadja. Late in the war, he led the five-month siege of Saleucami to stop Sora Bulq’s Shadow Army but was ultimately killed by Bulq during a surprise attack.
 TEXT_TOOLTIP_OPRESS,Savage Opress was one of the Zabrak Nightbrothers under Mother Talzin's Nightsister clan. Savage was given to Asajj Ventress as a tool of revenge against Count Dooku, and he entered Dooku's service briefly as a Dark Acolyte to get close to the Count. He would turn on both his would-be masters in their struggle, and from Mother Talzin then found out about his wayward brother Maul, who Savage would bring home to Dathomir to restore their health. Savage would then become Maul's apprentice, joining his brother's quest for power and revenge.
 TEXT_TOOLTIP_OPRESS_HEALTH,Health: 210 (Hero)
 TEXT_TOOLTIP_OPRESS_MOVE,Speed: 1.25

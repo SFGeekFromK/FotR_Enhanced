@@ -74,7 +74,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 		vacant_limit = 22,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
 		initialized = false,
 		full_list = { --All options for reference operations
-			["Yularen"] = {"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE2","YULAREN_RETIRE3","YULAREN_RETIRE_1"},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT"},"Wulff Yularen"},
+			["Yularen"] = {"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE_66_1","YULAREN_RETIRE2","YULAREN_RETIRE_66_2","YULAREN_RETIRE3","YULAREN_RETIRE_1",},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT","YULAREN_RESOLUTE_66","YULAREN_INTEGRITY_66"},"Wulff Yularen"},
 			["Wieler"] = {"WIELER_ASSIGN",{"WIELER_RETIRE"},{"WIELER_RESILIENT"},"Wieler"},
 			["Coburn"] = {"COBURN_ASSIGN",{"COBURN_RETIRE"},{"COBURN_TRIUMPHANT"},"Barton Coburn"},
 			["Kilian"] = {"KILIAN_ASSIGN",{"KILIAN_RETIRE"},{"KILIAN_ENDURANCE"},"Shoan Kilian"},
@@ -169,7 +169,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			["Shaak"] = {"SHAAK_ASSIGN",{"SHAAK_RETIRE","SHAAK_RETIRE2"},{"SHAAK_TI","SHAAK_TI2"},"Shaak Ti", ["Companies"] = {"SHAAK_TI_DELTA_TEAM","SHAAK_TI_ETA_TEAM"}},
 			["Kota"] = {"KOTA_ASSIGN",{"KOTA_RETIRE"},{"RAHM_KOTA"},"Rahm Kota", ["Companies"] = {"RAHM_KOTA_TEAM"}},
 			["Knol"] = {"KNOL_VENNARI_ASSIGN",{"KNOL_VENNARI_RETIRE"},{"KNOL_VENNARI"},"Knol Ven'nari", ["Companies"] = {"KNOL_VENNARI_TEAM"}},
-			["Halcyon"] = {"NEJAA_HALCYON_ASSIGN",{"NEJAA_HALCYON_RETIRE"},{"NEJAA_HALCYON"},"Nejaa Halcyon", ["Companies"] = {"NEJAA_HALCYON_TEAM"}}
+			["Halcyon"] = {"NEJAA_HALCYON_ASSIGN",{"NEJAA_HALCYON_RETIRE"},{"NEJAA_HALCYON"},"Nejaa Halcyon", ["Companies"] = {"NEJAA_HALCYON_TEAM"}},
+			["Oppo"] = {"OPPO_RANCISIS_ASSIGN",{"OPPO_RANCISIS_RETIRE"},{"OPPO_RANCISIS"},"Oppo Rancisis", ["Companies"] = {"OPPO_RANCISIS_TEAM"}}
 		},
 		available_list = {--Heroes currently available for purchase. Seeded with those who have no special prereqs
 			"Yoda",
@@ -182,8 +183,9 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 			"Aayla",
 			"Shaak",
 			"Kota",
-			"Knol",
-			"Halcyon"
+			--"Knol",
+			"Halcyon",
+			"Oppo"
 		},
 		story_locked_list = {},--Heroes not accessible, but able to return with the right conditions
 		active_player = Find_Player("Empire"),
@@ -725,9 +727,9 @@ function RepublicHeroes:on_galactic_hero_killed(hero_name, owner)
 		if yularen_second_chance_used == false then
 			yularen_second_chance_used = true
 			if hero_name == "YULAREN_INVINCIBLE" then 
-				UnitUtil.SetLockList("EMPIRE", {"Yularen_Integrity_Imp_Upgrade_Invincible"}, false)
+				UnitUtil.SetLockList("EMPIRE", {"Yularen_Integrity_66_Upgrade_Invincible"}, false)
 			end
-			admiral_data.full_list["Yularen"].unit_id = 2 --YULAREN_INTEGRITY
+			admiral_data.full_list["Yularen"].unit_id = 4 --YULAREN_INTEGRITY_66
 			Handle_Hero_Add("Yularen", admiral_data)
 			if Find_Player("Empire").Is_Human() then
 				StoryUtil.Multimedia("TEXT_SPEECH_YULAREN_RETURNS_INTEGRITY_IMP", 15, nil, "Piett_Loop", 0)
@@ -932,6 +934,20 @@ function RepublicHeroes:Order_66_Handler()
 	council_data.vacant_limit = -1
 	Handle_Hero_Exit("Autem", admiral_data)
 	Handle_Hero_Exit("Dallin", admiral_data)
+
+	-- Yularen sphat ability disabling action
+	local yularen_resolute_present = Find_First_Object("YULAREN_RESOLUTE_SPHAT") or Find_First_Object("YULAREN_RESOLUTE")
+	local yularen_integrity_present = Find_First_Object("YULAREN_INTEGRITY")
+	
+	if yularen_resolute_present then
+		UnitUtil.ReplaceAtLocation("YULAREN_RESOLUTE", "YULAREN_RESOLUTE_66")
+		UnitUtil.ReplaceAtLocation("YULAREN_RESOLUTE_SPHAT", "YULAREN_RESOLUTE_66")
+		set_unit_index("Yularen", 2, admiral_data)
+	elseif yularen_integrity_present then	
+		UnitUtil.ReplaceAtLocation("YULAREN_INTEGRITY", "YULAREN_INTEGRITY_66")
+		set_unit_index("Yularen", 4, admiral_data)
+	end
+
 	Clear_Fighter_Hero("IMA_GUN_DI_DELTA")
 	Decrement_Hero_Amount(10, council_data)
 	Forral_Check()

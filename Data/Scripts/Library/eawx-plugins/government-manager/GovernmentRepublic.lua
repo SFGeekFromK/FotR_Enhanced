@@ -283,6 +283,7 @@ function GovernmentRepublic:GC_AI_Republic_Future()
 			"RAHM_KOTA",
 			"NEJAA_HALCYON",
 			"KNOL_VENNARI",
+			"OPPO_RANCISIS",
 			"OBI_WAN", "OBI_WAN2",
 			"JEDI_TEMPLE",
 			"REPUBLIC_JEDI_KNIGHT",
@@ -319,7 +320,7 @@ function GovernmentRepublic:GC_AI_Republic_Future()
 		end
 		GlobalValue.Set("SHIPS_DECOLORED", 1)
 		-- FotR_Enhanced
-		UnitUtil.SetLockList("EMPIRE", { --[[FotR_Enhanced]] "Yularen_Resolute_Upgrade_Invincible", "Yularen_Integrity_Upgrade_Invincible", "Tarkin_Executrix_Upgrade",}) 
+		UnitUtil.SetLockList("EMPIRE", { --[[FotR_Enhanced]] "Yularen_Resolute_66_Upgrade_Invincible", "Yularen_Integrity_66_Upgrade_Invincible", "Tarkin_Executrix_Upgrade",}) 
 
 		UnitUtil.ReplaceAtLocation("Anakin", "Vader_Team")
 		UnitUtil.ReplaceAtLocation("Anakin2", "Vader_Team")
@@ -723,7 +724,8 @@ function GovernmentRepublic:UpdateDisplay(favour_table, market_name, market_list
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_COUNCIL_SHAAK")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_COUNCIL_KOTA")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_COUNCIL_HALCYON")
-		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_COUNCIL_KNOL")
+		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_COUNCIL_OPPO")
+		--government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_COUNCIL_KNOL")
 
 		government_display_event.Add_Dialog_Text("TEXT_DOCUMENTATION_BODY_SEPARATOR")
 		government_display_event.Add_Dialog_Text("TEXT_GOVERNMENT_REPUBLIC_GENERAL_LIST")

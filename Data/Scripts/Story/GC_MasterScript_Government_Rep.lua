@@ -78,6 +78,7 @@ function State_Republic_Future_Jedi_Gone(message)
 			"RAHM_KOTA",
 			"NEJAA_HALCYON",
 			"KNOL_VENNARI",
+			"OPPO_RANCISIS",
 			"OBI_WAN", "OBI_WAN2",
 			"JEDI_TEMPLE",
 			"REPUBLIC_JEDI_KNIGHT",
@@ -122,7 +123,7 @@ function State_Republic_Future_New_Order(message)
     if message == OnEnter then
 		GlobalValue.Set("ChiefOfState", "DUMMY_CHIEFOFSTATE_EMPEROR_PALPATINE")
 		GlobalValue.Set("SHIPS_DECOLORED", 1)
-		UnitUtil.SetLockList("EMPIRE", {--[[FotR_Enhanced]] "Yularen_Resolute_Upgrade_Invincible", "Yularen_Integrity_Upgrade_Invincible"})
+		UnitUtil.SetLockList("EMPIRE", {--[[FotR_Enhanced]] "Yularen_Resolute_66_Upgrade_Invincible", "Yularen_Integrity_66_Upgrade_Invincible"})
 
 		UnitUtil.ReplaceAtLocation("Anakin", "Vader_Team")
 		UnitUtil.ReplaceAtLocation("Anakin2", "Vader_Team")

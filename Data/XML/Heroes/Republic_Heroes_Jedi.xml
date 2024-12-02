@@ -13290,7 +13290,7 @@
 
 		<CategoryMask> LandHero </CategoryMask>
 		<Ranking_In_Category> 2 </Ranking_In_Category>
-		<MovementClass>Infantry</MovementClass>
+		<MovementClass>LightHover</MovementClass>
 		<OccupationStyle>1x1</OccupationStyle>
 		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
 		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
@@ -13509,7 +13509,7 @@
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_JEDI_MASTER </Encyclopedia_Unit_Class>
-		<Icon_Name>i_button_opporancisis.tga</Icon_Name>
+		<Icon_Name>i_button_oppo_rancisis.tga</Icon_Name>
 		<Build_Time_Seconds>15</Build_Time_Seconds>
 		<Tech_Level>99</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
@@ -13602,8 +13602,7 @@
 		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
 
 		<Text_ID>TEXT_HERO_OPPO_RANCISIS</Text_ID>
-		<!--<Icon_Name>i_button_opporancisis_command.tga</Icon_Name>-->
-		<Icon_Name>i_button_oppo_rancisis.tga</Icon_Name>
+		<Icon_Name>i_button_oppo_rancisis_command.tga</Icon_Name>
 
 		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
@@ -13624,7 +13623,7 @@
 		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
 
 		<Text_ID>TEXT_HERO_OPPO_RANCISIS</Text_ID>
-		<!--<Icon_Name>i_button_opporancisis_retire.tga</Icon_Name>-->
+		<!--<Icon_Name>i_button_oppo_rancisis_retire.tga</Icon_Name>-->
 		<Icon_Name>i_button_oppo_rancisis.tga</Icon_Name>
 
 		<SFXEvent_Build_Started> </SFXEvent_Build_Started>

@@ -290,8 +290,7 @@ return {
 ["GENERIC_VENATOR_OFC_CAMPAIGN"] = true, 
 ["GENERIC_VENATOR_SPHA_T"] = true,
 ["MULLEEN_IMPERATOR"] = true,
--- heroes order 66 grey variants
-["YULAREN_INTEGRITY_IMP"] = true,
-["YULAREN_RESOLUTE_IMP"] = true,
+["YULAREN_INTEGRITY_66"] = true,
+["YULAREN_RESOLUTE_66"] = true,
 -- [""] = true,
 }

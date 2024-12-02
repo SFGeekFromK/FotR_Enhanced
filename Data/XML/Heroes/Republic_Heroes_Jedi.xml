@@ -13195,7 +13195,7 @@
 		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
 		
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
-		<LandBehavior>SELECTABLE, SURFACE_FX, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, HOLSTER_WEAPON, GARRISON_UNIT, IMPOSING_PRESENCE </LandBehavior>
+		<LandBehavior>SELECTABLE, SURFACE_FX, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, HOLSTER_WEAPON, GARRISON_UNIT</LandBehavior>
 
 		<!-- Lightsaber holstering data  -->
 		<SFXEvent_Draw_Weapon> Unit_Light_Saber_On </SFXEvent_Draw_Weapon>
@@ -13251,8 +13251,6 @@
 		<Stealth_Capable>No</Stealth_Capable>
 		<Victory_Relevant>yes</Victory_Relevant>
 
-		<Presence_Range>100.0</Presence_Range>
-
 		<Armor_Type> ArmourG_Hero </Armor_Type>
 		
 		<Is_Stationary_When_Attacking>Yes</Is_Stationary_When_Attacking>
@@ -13305,7 +13303,7 @@
 		
 		<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
 
-		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Has_Land_Evaluator>false</Has_Land_Evaluator>
 		<AI_Combat_Power>237</AI_Combat_Power>
 		<Idle_Chase_Range>100.0</Idle_Chase_Range>
 		<Guard_Chase_Range>200.0</Guard_Chase_Range>

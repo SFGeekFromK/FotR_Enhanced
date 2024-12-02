@@ -1,6 +1,4 @@
-﻿TEXT_NOTE,Put text changes for submods here
-
-TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL,The war seems to near its end. I shall share my skill of piloting for the new generations of ace pilots. [Bythen Forral has retired and established Vensenor Flight Academy]
+﻿TEXT_CONQUEST_GOVERNMENT_REP_HERO_SWITCH_SPEECH_FORRAL,The war seems to near its end. I shall share my skill of piloting for the new generations of ace pilots. [Bythen Forral has retired and established Vensenor Flight Academy]
 TEXT_DOCUMENTATION_BODY_INFLUENCE_PLANET_UMBARA_FOTR,Umbara: Can build Umbaran Support Frigate at 8+ influence.
 TEXT_DOCUMENTATION_BODY_TRAITARCHDUKE,Archduke of Geonosis: 25% discounts on production time and cost on products produced on Geonosis
 TEXT_DOCUMENTATION_BODY_TRAITOFCOFFICER,Open Circle Fleet Officer: +10% Health\+5% Shield\+10% Firing Rate (OCF Venator & OCF Venator SPHA-T Only) [Stacking bonus]
@@ -28,8 +26,10 @@ TEXT_HERO_ROHN,Rohn
 TEXT_HERO_TJ912,TJ-912
 TEXT_HERO_TM171,TM-171
 TEXT_HERO_WARTHOG,Warthog
+TEXT_NOTE,Put text changes for submods here
 TEXT_PLANET_INFO_UMBARA_INFLUENCE_REWARD,•Unlocks Umbaran Support Frigate at 8+ influence
 TEXT_SPEECH_BLOCK_RETURNS_VIGILANCE,Admiral Block: Impressive... though it did cost my ship, General Kenobi's idea to self-destruct my ship did manage to deal a huge blow against the enemy at the last moment. - [Admiral Block has returned in control of the Venator-class, Vigilance].
+TEXT_SPEECH_CONQUER_RENDILI_REP_FINISHED,
 TEXT_STATBLOCK_BYTHEN_FORRAL_BASE,Health: 260 | Unshielded
 TEXT_STATBLOCK_CLOAKSHAPE_CW_BYTHEN_FORRAL_BASE,Health: 90 | Unshielded
 TEXT_STATBLOCK_REPUBLIC_Z95_ESCORT_BASE,Health: 70 | Shields: 45
@@ -65,7 +65,7 @@ TEXT_TOOLTIP_OFC_ASSIGN,Assign the Venator Star Destroyer to The Open Circle Fle
 TEXT_TOOLTIP_OFC_SPHA_T_REFIT,Attach SPHA-T on the hanger bay of this OCF Venator.
 TEXT_TOOLTIP_OPPO_HEALTH,Health: 230 [4%/5s] (Hero)
 TEXT_TOOLTIP_OPPO_MOVE,Speed: 1.1
-TEXT_TOOLTIP_OPPOS_RANCISIS,A Thisspiasian Jedi Master trained by Master Yaddle, he became a key member of the Jedi High Council and a leader in military strategy during the Clone Wars. Rancisis played a critical role in coordinating Republic forces from Coruscant, advising on campaigns like the defense of Kamino and the Battle of Zaadja. Late in the war, he led the five-month siege of Saleucami to stop Sora Bulq’s Shadow Army but was ultimately killed by Bulq during a surprise attack.
+TEXT_TOOLTIP_OPPO_RANCISIS,A Thisspiasian Jedi Master trained by Master Yaddle, he became a key member of the Jedi High Council and a leader in military strategy during the Clone Wars. Rancisis played a critical role in coordinating Republic forces from Coruscant, advising on campaigns like the defense of Kamino and the Battle of Zaadja. Late in the war, he led the five-month siege of Saleucami to stop Sora Bulq’s Shadow Army but was ultimately killed by Bulq during a surprise attack.
 TEXT_TOOLTIP_POGGLE,Archduke Poggle the Lesser is one of the leading members of the Separatist council.
 TEXT_TOOLTIP_PRDUII_WEAP1,1x DC-15A Blaster Rifle: 1 / 1.0s / 240m
 TEXT_TOOLTIP_PRUDII,Given his name by his trainer, Kal Skirata, Null-5 was an Advanced Recon Commando who specialized in droid factory sabotage. After spending a year collecting informations on droid metallurgic structures by interrogating separatist metallurgists, he began to manipulate metal recipe for droid instead of destroying the factory. This act significantly increased battle performance for the clones in the battle.
@@ -142,7 +142,5 @@ TEXT_UNIT_WOLFPACK_P2_RIFLEMAN,Wolfpack Rifleman (Phase II)
 TEXT_UNIT_WOLFPACK_P2_RIFLEMAN_GRENADIER,Wolfpack Rifleman Grenadier(Phase II)
 TEXT_UNIT_WOLFPACK_P2_SQUAD,Wolfpack Squad (Phase II)
 
-
 TEXT_TOOLTIP_ARC170_GROUND_WEAP1,
 TEXT_TOOLTIP_ARC170_GROUND_WEAP2,
-TEXT_SPEECH_CONQUER_RENDILI_REP_FINISHED,

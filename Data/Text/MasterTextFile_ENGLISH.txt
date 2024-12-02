@@ -9570,6 +9570,7 @@ TEXT_SPEECH_BULWARK2_RESEARCH_FINISHED,Wat Tambor: Development of the new versio
 TEXT_SPEECH_BULWARK2_UNLOCK,Unlock: Bulwark-II Battlecruiser
 TEXT_SPEECH_CONQUER_MON_CALAMARI_FINISHED,Merai: My people are more divided than ever. Many of my kin believe that the feigned benevolence of this Republic is something to strive for. We will end this tyranny for our intentions are as pure as Dac's beautiful oceans.
 TEXT_SPEECH_CONQUER_RENDILI_FINISHED,Mellor Yago: Dallin is a fool. He is spilling Rendili blood for a Republic that is only fuelling chaos and subjugates our mighty home while keeping us small. Rendili will be free. We won't rot in Kuat's shadow any longer.
+TEXT_SPEECH_CONQUER_RENDILI_REP_FINISHED,
 TEXT_SPEECH_DOOKU_DOPPELGANGER_SPAWN,Count Dooku:  Do not think the Jedi's cowardly attempt on my life is anything more than a mere annoyance.  The dark side is a pathway to many abilities some might consider to be ... unnatural.  Making a doppelganger of oneself through the Force is a powerful tool to deceive a foe. - [Count Dooku has returned]
 TEXT_SPEECH_DURGE_GONE,[Durge has been eliminated]
 TEXT_SPEECH_DURGE_RETURNS,Durge: I was once buried alive—for 60 years! If that didn't kill me… if the Sith and the Mandalorians and the Bloodboilers of Kragis couldn't kill me—then you will not kill me! - [Durge has returned]
@@ -11726,6 +11727,8 @@ TEXT_TOOLTIP_ARC_TROOPER_WEAP7A,1x PLX-2 Rocket Launcher: 1 / 9.0s / 280m
 TEXT_TOOLTIP_ARC_TROOPER_WEAP8,1x Wrist Blaster: 1 / 1.5s / 240m
 TEXT_TOOLTIP_ARC_TROOPER_WEAP9,1x Wrist Flamer: 10 / 10.5s / 220m
 TEXT_TOOLTIP_ARC170,Ancestral to the later X-wing series, a multirole attack snub meant to survive interceptor swarms. The design dates to just before the Clone Wars and has seen service with various groups since. They are used to support dedicated bombers while still being able to assist other fighters or bulking up the firepower of fleet groups.
+TEXT_TOOLTIP_ARC170_GROUND_WEAP1,
+TEXT_TOOLTIP_ARC170_GROUND_WEAP2,
 TEXT_TOOLTIP_ARC170_GUARDIAN,Talented pilots serving under Commander Narra, whose personality would bring the squadron together. The men habitually referred to their commander with nicknames like "Narr," which became a tradition that lasted well beyond his command of Guardian Squadron.
 TEXT_TOOLTIP_ARC170_PDF,Lighter configuration of ARC-170 fighter that lacks the underside tail gun and external munitions hardpoints present on the Republic Navy model. Sold to a variety of interests on the open market. Still an effective multirole snub, if less capable against other fighters in dogfights or attack runs when compared to its counterpart.
 TEXT_TOOLTIP_ARDELLA,The Trandoshan leader of the Black Hammer Pirates who terrorized Galantos with her ships and swoop bikes. Ardella ended up in possession of the Freebird, an Imperial lander with a gruesome part in the Blackwing Virus incident.
@@ -14444,6 +14447,7 @@ TEXT_TOOLTIP_OPEN_REPUBLIC_COUNCIL,Organize a new position for Jedi deployment (
 TEXT_TOOLTIP_OPEN_REPUBLIC_MOFF,Organize a position for the military governance of a sector (enables commander options)
 TEXT_TOOLTIP_OPPO_HEALTH,Health: 230 [4%/5s] (Hero)
 TEXT_TOOLTIP_OPPO_MOVE,Speed: 1.1
+TEXT_TOOLTIP_OPPO_RANCISIS,A Thisspiasian Jedi Master trained by Master Yaddle, he became a key member of the Jedi High Council and a leader in military strategy during the Clone Wars. Rancisis played a critical role in coordinating Republic forces from Coruscant, advising on campaigns like the defense of Kamino and the Battle of Zaadja. Late in the war, he led the five-month siege of Saleucami to stop Sora Bulq’s Shadow Army but was ultimately killed by Bulq during a surprise attack.
 TEXT_TOOLTIP_OPPOS_RANCISIS,A Thisspiasian Jedi Master trained by Master Yaddle, he became a key member of the Jedi High Council and a leader in military strategy during the Clone Wars. Rancisis played a critical role in coordinating Republic forces from Coruscant, advising on campaigns like the defense of Kamino and the Battle of Zaadja. Late in the war, he led the five-month siege of Saleucami to stop Sora Bulq’s Shadow Army but was ultimately killed by Bulq during a surprise attack.
 TEXT_TOOLTIP_OPRESS,Savage Opress was one of the Zabrak Nightbrothers under Mother Talzin's Nightsister clan. Savage was given to Asajj Ventress as a tool of revenge against Count Dooku, and he entered Dooku's service briefly as a Dark Acolyte to get close to the Count. He would turn on both his would-be masters in their struggle, and from Mother Talzin then found out about his wayward brother Maul, who Savage would bring home to Dathomir to restore their health. Savage would then become Maul's apprentice, joining his brother's quest for power and revenge.
 TEXT_TOOLTIP_OPRESS_HEALTH,Health: 210 (Hero)

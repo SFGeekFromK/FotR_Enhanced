@@ -13195,7 +13195,7 @@
 		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
 		
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
-		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, HOLSTER_WEAPON, GARRISON_UNIT</LandBehavior>
+		<LandBehavior>LURE, SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, HOLSTER_WEAPON, GARRISON_UNIT</LandBehavior>
 
 		<!-- Lightsaber holstering data  -->
 		<SFXEvent_Draw_Weapon> Unit_Light_Saber_On </SFXEvent_Draw_Weapon>
@@ -13317,7 +13317,7 @@
 		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
 		<Death_Persistence_Duration>5.0</Death_Persistence_Duration>
 		<Death_Fade_Time>0.25</Death_Fade_Time>
-		<Lua_Script>GroundHero</Lua_Script>
+		<Lua_Script>ObjectScript_Yoda</Lua_Script>
 
 		<Target_Stealth_Units>Yes</Target_Stealth_Units>
 

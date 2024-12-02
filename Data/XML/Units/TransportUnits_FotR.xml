@@ -1750,12 +1750,23 @@
 		<Variant_Of_Existing_Type>Nu_Shuttle_Landing_Craft_Landing</Variant_Of_Existing_Type>
 	</TransportUnit>
 
+	<!-- Oppo Rancisis -->
+
+	<TransportUnit Name="Theta_Shuttle_Landing_Craft_Oppo">
+		<Variant_Of_Existing_Type>Theta_Shuttle_Landing_Craft</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Theta_Shuttle_Landing_Craft_Oppo_Landing</Landing_Transport_Variant>
+	</TransportUnit>
+
+	<TransportUnit Name="Theta_Shuttle_Landing_Craft_Oppo_Landing">
+		<Variant_Of_Existing_Type>Theta_Shuttle_Landing_Craft_Landing</Variant_Of_Existing_Type>
+	</TransportUnit>
+
 	<!-- Order 66 grey army commanders -->
 
 	<TransportUnit Name="Nu_Shuttle_Landing_Craft_Rom_Mohc_Imp">
 		<Variant_Of_Existing_Type>Nu_Shuttle_Landing_Craft</Variant_Of_Existing_Type>
 		<Landing_Transport_Variant>Nu_Shuttle_Landing_Craft_Rom_Mohc_Landing</Landing_Transport_Variant>
-	</TransportUnit>\
+	</TransportUnit>
 
 	<TransportUnit Name="Theta_Shuttle_Landing_Craft_Jayfon_Imp">
 		<Variant_Of_Existing_Type>Theta_Shuttle_Landing_Craft</Variant_Of_Existing_Type>

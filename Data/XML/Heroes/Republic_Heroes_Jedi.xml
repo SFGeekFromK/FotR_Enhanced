@@ -13176,18 +13176,17 @@
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_TOOLTIP_OPPO_HEALTH
 		TEXT_TOOLTIP_OPPO_MOVE
-		TEXT_TOOLTIP_YODA_WEAP1
+		TEXT_TOOLTIP_WINDU_WEAP1
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
 		TEXT_TOOLTIP_BONUS_FORCE_TRAINING
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
-		TEXT_TOOLTIP_LEGIONS_
 		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
 		</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JEDI_MASTER</Encyclopedia_Unit_Class>
 
 		<Land_Model_Name>REP_Oppo_Rancisis.alo</Land_Model_Name>
-		<Icon_Name>i_button_opporancisis.tga</Icon_Name>
+		<Icon_Name>i_button_oppo_rancisis.tga</Icon_Name>
 		<LOD_Bias>5</LOD_Bias>
 		
 		<Affiliation>Empire</Affiliation>
@@ -13196,7 +13195,7 @@
 		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
 		
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
-		<LandBehavior>SELECTABLE, SURFACE_FX, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, HOLSTER_WEAPON, GARRISON_UNIT </LandBehavior>
+		<LandBehavior>SELECTABLE, SURFACE_FX, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, HOLSTER_WEAPON, GARRISON_UNIT, IMPOSING_PRESENCE </LandBehavior>
 
 		<!-- Lightsaber holstering data  -->
 		<SFXEvent_Draw_Weapon> Unit_Light_Saber_On </SFXEvent_Draw_Weapon>
@@ -13219,7 +13218,7 @@
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
 		
 		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
-		<Max_Speed>1.2</Max_Speed>
+		<Max_Speed>1.1</Max_Speed>
 		<Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
 		<Custom_Soft_Footprint_Radius> 6.5 </Custom_Soft_Footprint_Radius>
 		<Custom_Hard_XExtent> 2.0 </Custom_Hard_XExtent>
@@ -13251,6 +13250,8 @@
 		<Damage>100</Damage>
 		<Stealth_Capable>No</Stealth_Capable>
 		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Presence_Range>100.0</Presence_Range>
 
 		<Armor_Type> ArmourG_Hero </Armor_Type>
 		
@@ -13487,6 +13488,158 @@
 
 		</Abilities>
 	</HeroUnit>
+
+	<HeroCompany Name="Oppo_Rancisis_Team">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_HERO_OPPO_RANCISIS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND3_LANDSPACE
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_OPPOS_RANCISIS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OPPO_HEALTH
+		TEXT_TOOLTIP_OPPO_MOVE
+		TEXT_TOOLTIP_YODA_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
+		TEXT_TOOLTIP_BONUS_FORCE_TRAINING
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_JEDI_MASTER </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_opporancisis.tga</Icon_Name>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Build_Cost_Credits> 2000 </Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Theta_Shuttle_Landing_Craft_Oppo</Company_Transport_Unit>
+		<Company_Units>Oppo_Rancisis</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
+		<Can_Be_Only_One>true</Can_Be_Only_One>
+		<Is_Buildable>Yes</Is_Buildable>
+		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>50</Damage>
+		<Affiliation>Empire</Affiliation>
+		
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+
+		<CategoryMask> LandHero | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->  
+		<Tactical_Build_Cost_Multiplayer>1935</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>13</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies></Build_Limit_Lifetime_For_All_Allies>   
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		
+		<Unit_Abilities_Data SubObjectList="Yes"> 
+
+
+			<Unit_Ability>
+				<Type>FORCE_SIGHT</Type>
+				<Recharge_Seconds>50.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Oppo_Force_Sight </GUI_Activated_Ability_Name> 
+				<Effective_Radius> 500.0 </Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated> Unit_ability_forcevision_Master_Yoda </SFXEvent_GUI_Unit_Ability_Activated> 
+				<SFXEvent_Special_Ability_Loop> Unit_Yoda_Force_Sight_Loop </SFXEvent_Special_Ability_Loop> 			
+			</Unit_Ability>
+			
+			<Unit_Ability>
+				<Type>LURE</Type>
+				
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_BATTLE_MEDITATION_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_BATTLE_MEDITATION_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_BATTLE_MEDITATION.tga</Alternate_Icon_Name>
+				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically).
+					 Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
+				<Effective_Radius>1</Effective_Radius>
+				
+				<Target_Types />
+
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Expiration_Seconds>60</Expiration_Seconds>
+				
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Max_Number_Of_Pulses>120</Max_Number_Of_Pulses>
+				<Particle_Effect>BATTLE_MEDITATION_Ground_Ability_Particle</Particle_Effect>
+
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.01f</Mod_Multiplier>
+				<Supports_Autofire>False</Supports_Autofire>
+				
+				<SFXEvent_GUI_Unit_Ability_Activated> Unit_ability_meditate_Master_Yoda </SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+	</HeroCompany>
+
+	<DummyStructure Name="Oppo_Rancisis_Assign">
+		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_OPPO_RANCISIS</Text_ID>
+		<!--<Icon_Name>i_button_opporancisis_command.tga</Icon_Name>-->
+		<Icon_Name>i_button_oppo_rancisis.tga</Icon_Name>
+
+		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>	
+
+		<Affiliation>Empire</Affiliation>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_REPUBLIC_COUNCIL
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE 
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK 
+		TEXT_TOOLTIP_OPPO_RANCISIS
+		</Encyclopedia_Text>
+	</DummyStructure>
+
+	<DummyStructure Name="Oppo_Rancisis_Retire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_OPPO_RANCISIS</Text_ID>
+		<!--<Icon_Name>i_button_opporancisis_retire.tga</Icon_Name>-->
+		<Icon_Name>i_button_oppo_rancisis.tga</Icon_Name>
+
+		<SFXEvent_Build_Started> </SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete> </SFXEvent_Build_Complete>
+		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_RETIRE_REPUBLIC_COUNCIL
+		</Encyclopedia_Text>
+
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Orbiting_Units>Theta_Shuttle_Landing_Craft_Oppo</Required_Orbiting_Units>
+	</DummyStructure>
 
 	<UniqueUnit Name="Vader_Exactor">
 		<Variant_Of_Existing_Type>Generic_Star_Destroyer</Variant_Of_Existing_Type>

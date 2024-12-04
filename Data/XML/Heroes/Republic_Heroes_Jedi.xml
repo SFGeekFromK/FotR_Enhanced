@@ -5318,7 +5318,7 @@
 				<Target_Particle_Bone_Name />
 			</Earthquake_Attack_Ability>
 
-		   <Redirect_Blaster_Ability Name="Plo_Koon_Redirect_Blaster">
+		   	<Redirect_Blaster_Ability Name="Plo_Koon_Redirect_Blaster">
 				<Activation_Style>Take_Damage</Activation_Style>
 				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
 				<Redirect_Chance>0.5</Redirect_Chance>
@@ -5379,7 +5379,7 @@
 			</Force_Healing_Ability>
 			
 			<Force_Confuse_Ability Name="Plo_Koon_Confuse">
-			   <Activation_Style> User_Input </Activation_Style>
+				<Activation_Style> User_Input </Activation_Style>
 				<!-- We need to be within this distance of the clicked target to consider activating Stun -->
 				<Activation_Min_Range>0.0</Activation_Min_Range>
 				<Activation_Max_Range>132.0</Activation_Max_Range>
@@ -13325,12 +13325,15 @@
 
 
 			<Unit_Ability>
-				<Type>FORCE_SIGHT</Type>
-				<Recharge_Seconds>50.0</Recharge_Seconds>
-				<GUI_Activated_Ability_Name> Oppo_Force_Sight </GUI_Activated_Ability_Name> 
+				<Type>FORCE_CONFUSE</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_MALACIA</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_MALACIA_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_MIND_TRICK.tga</Alternate_Icon_Name>
+				<Recharge_Seconds>40.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Oppo_Confuse </GUI_Activated_Ability_Name> 
 				<Effective_Radius> 500.0 </Effective_Radius>
-				<SFXEvent_GUI_Unit_Ability_Activated> Unit_ability_forcevision_Master_Yoda </SFXEvent_GUI_Unit_Ability_Activated> 
-				<SFXEvent_Special_Ability_Loop> Unit_Yoda_Force_Sight_Loop </SFXEvent_Special_Ability_Loop> 			
+				<SFXEvent_GUI_Unit_Ability_Activated> </SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
 			
 			<Unit_Ability>
@@ -13453,10 +13456,29 @@
 				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
 			</Berserker_Ability>
 
-			<Force_Sight_Ability Name="Oppo_Force_Sight">
+			<Force_Confuse_Ability Name="Oppo_Force_Confuse">
 				<Activation_Style> User_Input </Activation_Style>
-				<Force_Sight_Duration_In_Secs>10.0</Force_Sight_Duration_In_Secs>
-			</Force_Sight_Ability>
+				<!-- We need to be within this distance of the clicked target to consider activating Stun -->
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>132.0</Activation_Max_Range>
+				<Confuse_Time_In_Secs>8.0</Confuse_Time_In_Secs>
+				<Confuse_Range>132.0</Confuse_Range>
+				<!-- How long does it take for the shockwave to spread from the hero to the max range? -->
+				<Confuse_Travel_Time_In_Secs>1.2</Confuse_Travel_Time_In_Secs>
+				<Confuse_Effect> Confuse_Particle_Effect </Confuse_Effect>
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Rancor </Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Ability_Confuse</SFXEvent_Activate>
+				<Owner_Particle_Effect>Jedi_Mind_Trick_Effect</Owner_Particle_Effect>
+				<!--<Owner_Particle_Effect>Confuse_Ability_Particles</Owner_Particle_Effect>-->
+				<Owner_Particle_Bone_Name />
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 2.0, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count />
+			</Force_Confuse_Ability>
 
 			<Combat_Bonus_Ability Name="Oppo_Combat_Bonus">
 				<Activation_Style>Space_Automatic</Activation_Style>

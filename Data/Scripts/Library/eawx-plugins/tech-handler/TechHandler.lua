@@ -121,8 +121,8 @@ function TechManager:new(galactic_conquest, human_player, planets, unlocktech)
 	end
 
 	self.CloneSwap = GenericSwap("CLONE_UPGRADES", "EMPIRE",
-		{"Cody", "Rex", "Appo", "Commander_71", "Bacara", "Jet", "Gree_Clone", "Deviss", "Bly", "Wolffe", "Neyo", "Alpha_17", "Fordo", "Ordo_Skirata", "Aden_Skirata"},
-		{"Cody2_Team", "Rex2_Team", "Appo2_Team", "Commander_71_2_Team", "Bacara2_Team", "Jet2_Team", "Gree2_Team", "Deviss2_Team", "Bly2_Team", "Wolffe2_Team", "Neyo2_Team", "Alpha_17_2_Team", "Fordo2_Team", "Ordo_Skirata2_Team", "Aden_Skirata2_Team"})
+		{"Cody", "Rex", "Appo", "Commander_71", "Bacara", "Jet", "Gree_Clone", "Deviss", "Bly", "Wolffe", "Neyo", "Alpha_17", "Fordo", "Ordo_Skirata", "Aden_Skirata", "Prudii_Skirata"},
+		{"Cody2_Team", "Rex2_Team", "Appo2_Team", "Commander_71_2_Team", "Bacara2_Team", "Jet2_Team", "Gree2_Team", "Deviss2_Team", "Bly2_Team", "Wolffe2_Team", "Neyo2_Team", "Alpha_17_2_Team", "Fordo2_Team", "Ordo_Skirata2_Team", "Aden_Skirata2_Team", "Prudii_Skirata2_Team"})
 
 	self.TempestResearch = GenericResearch(self.galactic_conquest,
 		"TEMPEST_RESEARCH",

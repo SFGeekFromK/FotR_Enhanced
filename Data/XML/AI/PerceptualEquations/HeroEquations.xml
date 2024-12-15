@@ -121,7 +121,19 @@
 		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Block_Vigilance"}
 	</Block_Vigilance_In_Orbit>	
 
+	<Dron_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Dron_Venator"}
+	</Dron_In_Orbit>
+
 	<Yularen_Resolute_SPHAT_In_Orbit>
 		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Yularen_Resolute_SPHAT"}
 	</Yularen_Resolute_SPHAT_In_Orbit>
+
+	<Yularen_Resolute_66_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Yularen_Resolute_66"}
+	</Yularen_Resolute_66_In_Orbit>
+
+	<Yularen_Integrity_66_In_Orbit>
+		Variable_Target.FriendlyForce.HasSpaceUnitsBitfield {Parameter_Type = "Yularen_Integrity_66"}
+	</Yularen_Integrity_66_In_Orbit>
 </Equations>

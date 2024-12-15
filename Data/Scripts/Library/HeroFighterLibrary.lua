@@ -39,8 +39,8 @@ function Get_Hero_Entries(upgrade_object)
 		Options = {
 			-- FotR_Enhanced Assignable Heroes changed
 			--{"DODONNA", Locations = {"DODONNA_ARDENT"}},
-			{"PARCK", Locations = {"PARCK_STRIKEFAST"}},
 			{"TARKIN", Locations = {"TARKIN_VENATOR","TARKIN_EXECUTRIX"}},
+			{"PARCK", Locations = {"PARCK_STRIKEFAST"}},
 			{"THERBON", Locations = {"THERBON_CERULEAN_SUNRISE"}},
 		}
 	},
@@ -55,11 +55,11 @@ function Get_Hero_Entries(upgrade_object)
 	["GARVEN_DREIS_LOCATION_SET"] = {
 		Hero_Squadron = "GARVEN_DREIS_RAREFIED_SQUADRON",
 		PopupHeader = "GARVEN_DREIS_SELECTOR_HEADER",
+		NoInit = true,
 		Options = {
-			{"GRANT", Locations = {"GRANT_VENATOR"}},
 			{"RAVIK", Locations = {"RAVIK_VICTORY"}},
 			{"PRAJI", Locations = {"PRAJI_VALORUM"}},
-			--{"GRUMBY", Locations = {"GRUMBY_INVINCIBLE"}},
+			{"GRUMBY", Locations = {"GRUMBY_INVINCIBLE"}},
 			{"SCREED", Locations = {"SCREED_ARLIONNE"}},
 		}
 	},
@@ -78,10 +78,10 @@ function Get_Hero_Entries(upgrade_object)
 		Hero_Squadron = "RHYS_DALLOWS_BRAVO_SQUADRON",
 		PopupHeader = "RHYS_DALLOWS_SELECTOR_HEADER",
 		Options = {
-			{"AUTEM", Locations = {"AUTEM_VENATOR"}},
 			--{"DALLIN", Locations = {"DALLIN_KEBIR"}}, text also changed
 			{"HAUSER", Locations = {"HAUSER_DREADNAUGHT"}},
 			{"MAARISA", Locations = {"MAARISA_CAPTOR","MAARISA_RETALIATION"}},
+			{"GRANT", Locations = {"GRANT_VENATOR"}},
 		}
 	},
 	["ODD_BALL_TORRENT_LOCATION_SET"] = {
@@ -90,8 +90,10 @@ function Get_Hero_Entries(upgrade_object)
 		NoInit = true,
 		Options = {
 			-- FotR_Enhanced Assignable Heroes changed
-			{"YULAREN", Locations = {"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"}, GroundPerceptions = {"Yularen_Resolute_In_Orbit","Yularen_Integrity_In_Orbit","Yularen_Invincible_In_Orbit", "Yularen_Resolute_SPHAT_In_Orbit"}},
-			{"KILIAN", Locations = {"KILIAN_ENDURANCE"}, GroundPerceptions = {"Kilian_In_Orbit"}},
+			{
+			"YULAREN", Locations = {"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT","YULAREN_RESOLUTE_66","YULAREN_INTEGRITY_66"}, 
+			GroundPerceptions = {"Yularen_Resolute_In_Orbit","Yularen_Integrity_In_Orbit","Yularen_Invincible_In_Orbit", "Yularen_Resolute_SPHAT_In_Orbit","Yularen_Resolute_66_In_Orbit","Yularen_Integrity_66_In_Orbit"}
+			},
 			{"WESSEX", Locations = {"WESSEX_REDOUBT"}, GroundPerceptions = {"Wessex_In_Orbit"}},
 			{"BLOCK", Locations = {"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, GroundPerceptions = {"Block_Negotiator_In_Orbit","Block_Vigilance_In_Orbit"}}
 		},
@@ -104,8 +106,10 @@ function Get_Hero_Entries(upgrade_object)
 		NoInit = true,
 		Options = {
 			-- FotR_Enhanced Assignable Heroes changed
-			{"YULAREN", Locations = {"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE"}, GroundPerceptions = {"Yularen_Resolute_In_Orbit","Yularen_Integrity_In_Orbit","Yularen_Invincible_In_Orbit", "Yularen_Resolute_SPHAT_In_Orbit"}},
-			{"KILIAN", Locations = {"KILIAN_ENDURANCE"}, GroundPerceptions = {"Kilian_In_Orbit"}},
+			{
+			"YULAREN", Locations = {"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT","YULAREN_RESOLUTE_66","YULAREN_INTEGRITY_66"}, 
+			GroundPerceptions = {"Yularen_Resolute_In_Orbit","Yularen_Integrity_In_Orbit","Yularen_Invincible_In_Orbit", "Yularen_Resolute_SPHAT_In_Orbit","Yularen_Resolute_66_In_Orbit","Yularen_Integrity_66_In_Orbit"}
+			},
 			{"WESSEX", Locations = {"WESSEX_REDOUBT"}, GroundPerceptions = {"Wessex_In_Orbit"}},
 			{"BLOCK", Locations = {"BLOCK_NEGOTIATOR","BLOCK_VIGILANCE"}, GroundPerceptions = {"Block_Negotiator_In_Orbit","Block_Vigilance_In_Orbit"}}
 		},
@@ -113,18 +117,6 @@ function Get_Hero_Entries(upgrade_object)
 		Faction = "Empire"
 	},
 	-- FotR_Enhanced
-	--[[["WARTHOG_BTLB_Y-WING_LOCATION_SET"] = {
-		Hero_Squadron = "Warthog_BTLB_Y-Wing_Hunter_Squadron",
-		PopupHeader = "WARTHOG_P1_SELECTOR_HEADER",
-		NoInit = true,
-		Options = {
-			{"WIELER", Locations = {"WIELER_RESILIENT"}, GroundPerceptions = {"Wieler_In_Orbit"}},
-			{"COBURN", Locations = {"COBURN_TRIUMPHANT"}, GroundPerceptions = {"Coburn_In_Orbit"}},
-		},
-		--GroundCompany = "",
-		Faction = "Empire"
-
-	},]]
 	["WARTHOG_TORRENT_LOCATION_SET"] = {
 		Hero_Squadron = "WARTHOG_TORRENT_HUNTER_SQUADRON",
 		PopupHeader = "WARTHOG_P1_SELECTOR_HEADER",
@@ -132,8 +124,10 @@ function Get_Hero_Entries(upgrade_object)
 		Options = {
 			{"WIELER", Locations = {"WIELER_RESILIENT"}, GroundPerceptions = {"Wieler_In_Orbit"}},
 			{"COBURN", Locations = {"COBURN_TRIUMPHANT"}, GroundPerceptions = {"Coburn_In_Orbit"}},
+			{"DRON", Locations = {"DRON_VENATOR"}, GroundPerceptions = {"Dron_In_Orbit"}},
+			{"KILIAN", Locations = {"KILIAN_ENDURANCE"}, GroundPerceptions = {"Kilian_In_Orbit"}},
 		},
-		--GroundCompany = "",
+		GroundCompany = "Warthog_P1_Team",
 		Faction = "Empire"
 
 	},
@@ -144,17 +138,21 @@ function Get_Hero_Entries(upgrade_object)
 		Options = {
 			{"WIELER", Locations = {"WIELER_RESILIENT"}, GroundPerceptions = {"Wieler_In_Orbit"}},
 			{"COBURN", Locations = {"COBURN_TRIUMPHANT"}, GroundPerceptions = {"Coburn_In_Orbit"}},
+			{"DRON", Locations = {"DRON_VENATOR"}, GroundPerceptions = {"Dron_In_Orbit"}},
+			{"KILIAN", Locations = {"KILIAN_ENDURANCE"}, GroundPerceptions = {"Kilian_In_Orbit"}},
 		},
-		--GroundCompany = "",
+		GroundCompany = "Warthog_P2_Team",
 		Faction = "Empire"
 
 	},
 	["JAG_ARC170_LOCATION_SET"] = {
 		Hero_Squadron = "JAG_ARC170_127TH_SQUADRON",
 		PopupHeader = "JAG_P2_SELECTOR_HEADER",
+		NoInit = true,
 		Options = {
 			{"DODONNA", Locations = {"DODONNA_ARDENT"}},
-			{"DALLIN", Locations =  {"DALLIN_KEBIR"}}
+			{"DALLIN", Locations =  {"DALLIN_KEBIR"}},
+			{"AUTEM", Locations = {"AUTEM_VENATOR"}},
 		},
 		Faction = "Empire"
 
@@ -163,8 +161,9 @@ function Get_Hero_Entries(upgrade_object)
 		Hero_Squadron = "BYTHEN_FORRAL_SQUADRON",
 		PopupHeader = "BYTHEN_FORRAL_SELECTOR_HEADER",
 		Options = {
-			{"GRUMBY", Locations = {"GRUMBY_INVINCIBLE"}},
 			{"BARAKA", Locations = {"BARAKA_NEXU"}},
+			{"SEERDON", Locations = {"SEERDON_INVINCIBLE"}},
+			{"DENIMOOR", Locations = {"DENIMOOR_TENACIOUS"}}
 		},
 		Faction = "Empire"
 	},

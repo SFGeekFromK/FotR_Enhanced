@@ -68,13 +68,13 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)
 
 	admiral_data = {
-		total_slots = 5,       --Max number of concurrent slots. Set at the start of the GC and never change.
-		free_hero_slots = 5,   --Slots open to fill with a hero.
+		total_slots = 3,       --Max number of concurrent slots. Set at the start of the GC and never change.
+		free_hero_slots = 3,   --Slots open to fill with a hero.
 		vacant_hero_slots = 0, --Slots that need another action to move to free.
 		vacant_limit = 22,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
 		initialized = false,
 		full_list = { --All options for reference operations
-			["Yularen"] = {"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE_66_1","YULAREN_RETIRE2","YULAREN_RETIRE_66_2","YULAREN_RETIRE3","YULAREN_RETIRE_1",},{"YULAREN_RESOLUTE","YULAREN_INTEGRITY","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT","YULAREN_RESOLUTE_66","YULAREN_INTEGRITY_66"},"Wulff Yularen"},
+			["Yularen"] = {"YULAREN_ASSIGN",{"YULAREN_RETIRE","YULAREN_RETIRE_66_1","YULAREN_RETIRE2","YULAREN_RETIRE_66_2","YULAREN_RETIRE3","YULAREN_RETIRE_1",},{"YULAREN_RESOLUTE","YULAREN_RESOLUTE_66","YULAREN_INTEGRITY","YULAREN_INTEGRITY_66","YULAREN_INVINCIBLE","YULAREN_RESOLUTE_SPHAT"},"Wulff Yularen"},
 			["Wieler"] = {"WIELER_ASSIGN",{"WIELER_RETIRE"},{"WIELER_RESILIENT"},"Wieler"},
 			["Coburn"] = {"COBURN_ASSIGN",{"COBURN_RETIRE"},{"COBURN_TRIUMPHANT"},"Barton Coburn"},
 			["Kilian"] = {"KILIAN_ASSIGN",{"KILIAN_RETIRE"},{"KILIAN_ENDURANCE"},"Shoan Kilian"},
@@ -116,8 +116,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	}
 	
 	moff_data = {
-		total_slots = 2,			--Max slot number. Set at the start of the GC and never change
-		free_hero_slots = 2,		--Slots open to buy
+		total_slots = 1,			--Max slot number. Set at the start of the GC and never change
+		free_hero_slots = 1,		--Slots open to buy
 		vacant_hero_slots = 0,	    --Slots that need another action to move to free
 		vacant_limit = 12,           --Number of times a lost slot can be reopened
 		initialized = false,
@@ -400,6 +400,11 @@ function RepublicHeroes:on_production_finished(planet, object_type_name)--object
 	
 	if object_type_name == "REFORM_SQUAD_SEVEN" then
 		RepublicHeroes:Remove_Fighter_Set("Reform_Squad_Seven")
+		UnitUtil.SetBuildable(admiral_data.active_player, "Odd_Ball_Torrent_Location_Set", true)
+		UnitUtil.SetBuildable(admiral_data.active_player, "Odd_Ball_ARC170_Location_Set", true)
+	end
+	if object_type_name == "REFORM_HUNTER_SQUADRON" then
+		RepublicHeroes:Remove_Fighter_Set("Reform_Hunter_Squadron")
 		UnitUtil.SetBuildable(admiral_data.active_player, "Odd_Ball_Torrent_Location_Set", true)
 		UnitUtil.SetBuildable(admiral_data.active_player, "Odd_Ball_ARC170_Location_Set", true)
 	end
@@ -759,6 +764,17 @@ function RepublicHeroes:on_galactic_hero_killed(hero_name, owner)
 		else
 			admiral_data.active_player.Give_Money(-1000)
 		end
+	elseif hero_name == "WARTHOG_P1_TEAM" or hero_name == "WARTHOG_P2_TEAM" then
+		if admiral_data.active_player.Is_Human() then
+			RepublicHeroes:Add_Fighter_Set("Reform_Hunter_Squadron")
+			UnitUtil.SetBuildable(admiral_data.active_player, "Odd_Ball_Torrent_Location_Set", false)
+			UnitUtil.SetBuildable(admiral_data.active_player, "Odd_Ball_ARC170_Location_Set", false)
+			Clear_Fighter_Hero("WARTHOG_TORRENT_HUNTER_SQUADRON")
+			Clear_Fighter_Hero("WARTHOG_REPUBLIC_Z95_HUNTER_SQUADRON")
+			StoryUtil.ShowScreenText("Hunter Squadron has taken crippling casualties and must be reformed.", 5, nil, {r = 244, g = 244, b = 0})
+		else
+			admiral_data.active_player.Give_Money(-1000)
+		end
 	end
 	Handle_Hero_Killed(hero_name, owner, commando_data)
 	Handle_Hero_Killed(hero_name, owner, general_data)
@@ -817,6 +833,11 @@ end
 function RepublicHeroes:Venator_Heroes()
 	--Logger:trace("entering RepublicHeroes:Venator_Heroes")
 	if not Venator_init then
+		admiral_data.total_slots = admiral_data.total_slots + 1
+		admiral_data.free_hero_slots = admiral_data.free_hero_slots + 1
+
+		moff_data.total_slots = moff_data.total_slots + 1
+		moff_data.free_hero_slots = moff_data.free_hero_slots + 1
 		Handle_Hero_Add("Yularen", admiral_data)
 		Handle_Hero_Add("Wieler", admiral_data)
 		Handle_Hero_Add("Coburn", admiral_data)
@@ -840,11 +861,6 @@ function RepublicHeroes:Venator_Heroes()
 			Handle_Hero_Exit("Kilian", admiral_data)
 		end
 		--[[
-		if admiral_data.active_player.Get_Tech_Level() < 3 then
-			RepublicHeroes:Add_Fighter_Set("Warthog_BTLB_Y-Wing_Location_Set")
-		end
-		]]
-		--[[
 		if admiral_data.active_player.Get_Tech_Level() < 4 then
 			RepublicHeroes:Add_Fighter_Set("Odd_Ball_Torrent_Location_Set")
 			RepublicHeroes:Add_Fighter_Set("Warthog_Torrent_Location_Set")
@@ -855,7 +871,8 @@ function RepublicHeroes:Venator_Heroes()
 			RepublicHeroes:Add_Fighter_Set("Odd_Ball_Torrent_Location_Set")
 			RepublicHeroes:Add_Fighter_Set("Warthog_Torrent_Location_Set")
 		end
-		RepublicHeroes:Add_Fighter_Set("Arhul_Narra_Location_Set")		
+		RepublicHeroes:Add_Fighter_Set("Arhul_Narra_Location_Set")
+		RepublicHeroes:Add_Fighter_Set("Bythen_Forral_Location_Set")
 		local upgrade_unit = Find_Object_Type("Maarisa_Retaliation_Upgrade")
 		admiral_data.active_player.Unlock_Tech(upgrade_unit)
 		
@@ -875,7 +892,8 @@ function Autem_Check()
 		RepublicHeroes:Add_Fighter_Set("Odd_Ball_ARC170_Location_Set")
 		Clear_Fighter_Hero("ODD_BALL_TORRENT_SQUAD_SEVEN_SQUADRON")
 		RepublicHeroes:Remove_Fighter_Set("Odd_Ball_Torrent_Location_Set")
-		RepublicHeroes:Add_Fighter_Set("Warthog_Republic_Z95_Hunter_Squadron")
+		RepublicHeroes:Add_Fighter_Set("Warthog_Torrent_Location_Set")
+		Clear_Fighter_Hero("WARTHOG_TORRENT_HUNTER_SQUADRON")
 		RepublicHeroes:Remove_Fighter_Set("Warthog_Torrent_Location_Set")
 	end
 end
@@ -905,6 +923,8 @@ function Vill_Check()
 end
 
 function RepublicHeroes:VSD_Heroes()
+	admiral_data.total_slots = admiral_data.total_slots + 1
+	admiral_data.free_hero_slots = admiral_data.free_hero_slots + 1
 	--Logger:trace("entering RepublicHeroes:VSD_Heroes")
 	Handle_Hero_Add("Dodonna", admiral_data)
 	Handle_Hero_Add("Screed", admiral_data)

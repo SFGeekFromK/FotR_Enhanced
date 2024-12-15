@@ -498,7 +498,7 @@
 		TEXT_TOOLTIP_COMMAND_RAREFIED_AIR_CAVALRY
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
-		TEXT_HERO_GRANT
+		TEXT_HERO_JONA_GRUMBY
 		TEXT_HERO_RAVIK
 		TEXT_HERO_COLLIN_PRAJI
 		TEXT_HERO_TERRINALD_SCREED
@@ -926,7 +926,7 @@
 		TEXT_TOOLTIP_COMMAND_BRAVO_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
-		TEXT_HERO_AUTEM
+		TEXT_HERO_GRANT
 		TEXT_HERO_HAUSER
 		TEXT_HERO_MAARISA
 		</Encyclopedia_Text>
@@ -1520,7 +1520,7 @@
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
 	</DummyStructure>
 
-		<!-- V-19 Torrent -->	
+	<!-- V-19 Torrent -->	
 	
 	<DummyStructure Name="Odd_Ball_Torrent_Location_Set">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
@@ -1550,7 +1550,6 @@
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_YULAREN
-		TEXT_HERO_KILIAN
 		TEXT_HERO_DEN_WESSEX
 		TEXT_HERO_BLOCK
 		</Encyclopedia_Text>
@@ -1565,11 +1564,11 @@
 		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_TRAIT_AIRCOMMANDER
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_ODD_BALL
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_TORRENT
+		TEXT_UNIT_LAAT_COMPANY
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
 		TEXT_TOOLTIP_LAAT_HEALTH 
 		TEXT_TOOLTIP_LAAT_SHIELD 
@@ -1601,6 +1600,21 @@
 		<SFXEvent_Attack>Unit_Attack_Clone_Gunship</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Clone_Gunship</SFXEvent_Guard>
 		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Clone_Gunship</SFXEvent_Health_Low_Warning>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Odd_Ball_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Air</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.1</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+		
 	</UniqueUnit>
 
 	<HeroCompany Name="Odd_Ball_P1_Team">
@@ -1609,20 +1623,12 @@
 		<Text_ID>TEXT_HERO_ODD_BALL</Text_ID>
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_TRAIT_AIRCOMMANDER
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_ODD_BALL
-		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_TORRENT
-		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
-		TEXT_STATBLOCK_ODD_BALL_TORRENT_BASE
-		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
-		TEXT_STATBLOCK_V19_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_UNIT_LAAT_COMPANY
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_STATBLOCK_V19_SQUADRON
-		TEXT_STATBLOCK_V19_MOVE
-		TEXT_STATBLOCK_V19_WEAP1
-		TEXT_STATBLOCK_V19_WEAP2
 		TEXT_TOOLTIP_LAAT_COMPANY
 		TEXT_TOOLTIP_LAAT_HEALTH 
 		TEXT_TOOLTIP_LAAT_SHIELD 
@@ -1887,7 +1893,7 @@
 		</Unit_Abilities_Data>
 	</Squadron>
 
-		<!-- ARC-170 -->
+	<!-- ARC-170 -->
 	
 	<DummyStructure Name="Odd_Ball_ARC170_Location_Set">
 		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
@@ -1917,7 +1923,6 @@
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_YULAREN
-		TEXT_HERO_KILIAN
 		TEXT_HERO_DEN_WESSEX
 		TEXT_HERO_BLOCK
 		</Encyclopedia_Text>
@@ -1931,11 +1936,11 @@
 
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_TRAIT_AIRCOMMANDER
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_ODD_BALL
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
+		TEXT_UNIT_LAAT_COMPANY
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
 		TEXT_TOOLTIP_LAAT_HEALTH 
 		TEXT_TOOLTIP_LAAT_SHIELD 
@@ -1959,22 +1964,12 @@
 
 		<Encyclopedia_Text>
 		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
-		TEXT_TOOLTIP_TRAIT_UNINTERESTING
+		TEXT_TOOLTIP_TRAIT_AIRCOMMANDER
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_ODD_BALL
-		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
-		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
-		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
-		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
-		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
-		TEXT_STATBLOCK_ARC170_ESCORT_BASE
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_UNIT_LAAT_COMPANY
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_STATBLOCK_ARC170_SQUADRON
-		TEXT_STATBLOCK_ARC170_MOVE 
-		TEXT_STATBLOCK_ARC170_WEAP1
-		TEXT_STATBLOCK_ARC170_WEAP2
-		TEXT_STATBLOCK_ARC170_WEAP3
-		TEXT_STATBLOCK_ARC170_WEAP4
 		TEXT_TOOLTIP_LAAT_COMPANY
 		TEXT_TOOLTIP_LAAT_HEALTH 
 		TEXT_TOOLTIP_LAAT_SHIELD 
@@ -2005,7 +2000,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
 		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
 		TEXT_STATBLOCK_ARC170_MOVE 
 		TEXT_STATBLOCK_ARC170_WEAP1
 		TEXT_STATBLOCK_ARC170_WEAP2
@@ -2146,7 +2141,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
 		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
-		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
 		TEXT_STATBLOCK_ARC170_ESCORT_BASE
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2187,7 +2182,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
 		TEXT_TOOLTIP_COMMAND_SQUAD_SEVEN_ARC170
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
-		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
 		TEXT_STATBLOCK_ARC170_ESCORT_BASE
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -2223,6 +2218,35 @@
 	<!-- FotR_Enhanced -->
 
 	<!-- Warthog / Hunter Squadron  -->
+
+	<DummyStructure Name="Reform_Hunter_Squadron">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 0 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		
+		<CategoryMask>Wall</CategoryMask>
+		
+		<Text_ID>TEXT_HERO_REFORM_HUNTER_SQUADRON</Text_ID>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>i_button_warthog_p2.tga</Icon_Name>
+		
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_REFORM_HUNTER_SQUADRON
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
 		
 	<!-- BTLB Y-wing --> <!--22bby-->
 	<!--
@@ -2355,11 +2379,104 @@
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_COBURN
 		TEXT_HERO_WIELER
+		TEXT_HERO_DRON
+		TEXT_HERO_KILIAN
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>		
 	</DummyStructure>
+
+	<UniqueUnit Name="Warthog_P1_Laat">
+		<Variant_Of_Existing_Type>Republic_LAAT</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_UNIT_LAAT_COMPANY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_LAAT_HEALTH 
+		TEXT_TOOLTIP_LAAT_SHIELD 
+		TEXT_TOOLTIP_LAAT_MOVE 
+		TEXT_TOOLTIP_LAAT_WEAP1 
+		TEXT_TOOLTIP_LAAT_WEAP2 
+		TEXT_TOOLTIP_LAAT_WEAP3
+		TEXT_TOOLTIP_LAAT_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_TRANSPORT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Lua_Script>GroundHero</Lua_Script>
+		<Property_Flags>CanContainGarrison | GarrisonCanFire </Property_Flags>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+
+		<No_Colorization_Color> 48, 46, 126, 255 </No_Colorization_Color>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Highlight_Blob_Material_Name>Highlight_Republic_Hero</Highlight_Blob_Material_Name>
+
+		<SFXEvent_Select>Unit_Select_Clone_Gunship</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Clone_Gunship</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Clone_Gunship</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Clone_Gunship</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Clone_Gunship</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Clone_Gunship</SFXEvent_Health_Low_Warning>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Warthog_Plo_Koon_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Plo_Koon</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.2</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>    
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>	
+		</Abilities>
+	</UniqueUnit>
+
+	<HeroCompany Name="Warthog_P1_Team">
+		<Variant_Of_Existing_Type>Republic_LAAT_Group</Variant_Of_Existing_Type>
+	
+		<Text_ID>TEXT_HERO_WARTHOG</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_PLO_BRO
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_WARTHOG
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_UNIT_LAAT_COMPANY
+		TEXT_TOOLTIP_LAAT_COMPANY
+		TEXT_TOOLTIP_LAAT_HEALTH 
+		TEXT_TOOLTIP_LAAT_SHIELD 
+		TEXT_TOOLTIP_LAAT_MOVE 
+		TEXT_TOOLTIP_LAAT_WEAP1 
+		TEXT_TOOLTIP_LAAT_WEAP2 
+		TEXT_TOOLTIP_LAAT_WEAP3
+		TEXT_TOOLTIP_LAAT_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_TRANSPORT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PILOT</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_warthog_p1.tga</Icon_Name>	
+
+		<Company_Units>Warthog_P1_Laat</Company_Units>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Tech_Level>99</Tech_Level>
+	</HeroCompany>
 
 	<UniqueUnit Name="Warthog_Torrent">
 		<Variant_Of_Existing_Type>Torrent</Variant_Of_Existing_Type>
@@ -2371,7 +2488,7 @@
 		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
 		TEXT_TOOLTIP_WARTHOG
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
-		TEXT_STATBLOCK_WARTHOG_TORRENT_BASE
+		TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_STATBLOCK_ODD_BALL_TORRENT_BASE
 		TEXT_STATBLOCK_V19_MOVE
@@ -2568,11 +2685,27 @@
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_COBURN
 		TEXT_HERO_WIELER
+		TEXT_HERO_DRON
+		TEXT_HERO_KILIAN
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
 		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>		
 	</DummyStructure>
+
+	<UniqueUnit Name="Warthog_P2_Laat">
+		<Variant_Of_Existing_Type>Warthog_P1_Laat</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_warthog_p2.tga</Icon_Name>
+	</UniqueUnit>
+
+	<HeroCompany Name="Warthog_P2_Team">
+		<Variant_Of_Existing_Type>Warthog_P1_Team</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_warthog_p2.tga</Icon_Name>	
+
+		<Company_Units>Warthog_P2_Laat</Company_Units>
+	</HeroCompany>
 
 	<UniqueUnit Name="Warthog_Republic_Z95">
 		<Variant_Of_Existing_Type>Republic_Z-95_Headhunter</Variant_Of_Existing_Type>
@@ -2843,6 +2976,7 @@
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
 		TEXT_HERO_JAN_DODONNA
 		TEXT_HERO_DALLIN
+		TEXT_HERO_AUTEM
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 
@@ -2861,7 +2995,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
 		TEXT_TOOLTIP_COMMAND_127TH_ARC170
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
-		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
 		TEXT_STATBLOCK_ARC170_MOVE
 		TEXT_STATBLOCK_ARC170_WEAP1
 		TEXT_STATBLOCK_ARC170_WEAP2
@@ -3000,7 +3134,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
 		TEXT_TOOLTIP_COMMAND_127TH_ARC170
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
-		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
 		TEXT_STATBLOCK_ARC170_ESCORT_BASE
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -3041,7 +3175,7 @@
 		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
 		TEXT_TOOLTIP_COMMAND_127TH_ARC170
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_LEADER_STAT_BLOCK
-		TEXT_STATBLOCK_CLONE_HERO_ARC170_BASE
+		TEXT_STATBLOCK_ODD_BALL_ARC170_BASE
 		TEXT_TOOLTIP_SEPARATOR_FIGHTER_ESCORT_STAT_BLOCK
 		TEXT_STATBLOCK_ARC170_ESCORT_BASE
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -3102,8 +3236,9 @@
 		TEXT_CLOAKSHAPE_SQUADRON
 		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
 		TEXT_TOOLTIP_ASSIGN_LOCATIONS
-		TEXT_HERO_JONA_GRUMBY
 		TEXT_HERO_BARAKA
+		TEXT_HERO_SEERDON
+		TEXT_HERO_DENIMOOR
 		</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
 

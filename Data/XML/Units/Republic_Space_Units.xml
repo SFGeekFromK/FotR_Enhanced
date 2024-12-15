@@ -3950,7 +3950,7 @@
 
 	</SpaceUnit>	
 	
-	<SpaceUnit Name="Generic_Acclamator_Assualt_Ship_I_OFC">
+	<SpaceUnit Name="Generic_Acclamator_Assault_Ship_I_OFC">
 		<Variant_Of_Existing_Type>Generic_Acclamator_Assault_Ship_I</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_ACCLAMATOR_I_OFC</Text_ID>
 		<Encyclopedia_Text>
@@ -4148,19 +4148,6 @@
 				<SFXEvent_Fire>Unit_Rep_venator_SPHA_T_Fire</SFXEvent_Fire>
 			</Super_Laser_Ability>
 		</Abilities>
-	</SpaceUnit>
-
-	<SpaceUnit Name="Template_Venator_Hero">
-		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
-		<Tactical_Health>3576</Tactical_Health>
-		<Shield_Points>3150</Shield_Points>
-		
-		<Hardpoints>
-			HP_Venator_Hero_Turret_01, HP_Venator_Hero_Turret_02, HP_Venator_Hero_Turret_03, HP_Venator_Hero_Turret_04, 
-			HP_Venator_Hero_01, HP_Venator_Hero_02, HP_Venator_Hero_03, HP_Venator_Hero_04, 
-			HP_Venator_Hero_05, HP_Venator_Hero_06, HP_Venator_Hero_07, HP_Venator_Hero_08,
-			Venator_Hero_Bay, Venator_Hero_Engines
-		</Hardpoints>
 	</SpaceUnit>
 
 	<!-- FotR_Enhanced Fighters -->

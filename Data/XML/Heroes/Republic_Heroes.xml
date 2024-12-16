@@ -1662,7 +1662,7 @@
 
 	<UniqueUnit Name="Block_Negotiator">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
 		<Icon_Name>i_button_block.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -1906,7 +1906,7 @@
 
 	<UniqueUnit Name="Wieler_Resilient">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name>
 		<Icon_Name>i_button_wieler.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -2047,7 +2047,7 @@
 
 
 	<UniqueUnit Name="Coburn_Triumphant">
-		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
 		<Icon_Name>i_button_coburn.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -3229,7 +3229,7 @@
 	</DummyStructure>
 
 	<UniqueUnit Name="Kilian_Endurance">
-		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name>
 		<Icon_Name>i_button_kilian.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -3527,7 +3527,7 @@
 
 
 	<UniqueUnit Name="Tenant_Venator">
-		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
 		<Icon_Name>i_button_tenant.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -3950,7 +3950,7 @@
 
 	<UniqueUnit Name="Autem_Venator">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_OFC.alo</Space_Model_Name>
 		<Icon_Name>i_button_autem_alt.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>
@@ -5173,7 +5173,7 @@
 	<!-- Venator heroes -->
 
 	<UniqueUnit Name="Tarkin_Venator">
-		<Variant_Of_Existing_Type>Template_Venator_Hero</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Template_Venator</Variant_Of_Existing_Type>
 		<Space_Model_Name>Venator_Hero.alo</Space_Model_Name> <!-- FotR_Enhanced -->
 		<Icon_Name>i_button_tarkin.tga</Icon_Name>
 		<Prevents_Story_Campaign_Autoresolve>no</Prevents_Story_Campaign_Autoresolve>

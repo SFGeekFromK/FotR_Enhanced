@@ -68,8 +68,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	crossplot:subscribe("ORDER_65_EXECUTED", self.Order_65_Handler, self)
 
 	admiral_data = {
-		total_slots = 5,       --Max number of concurrent slots. Set at the start of the GC and never change.
-		free_hero_slots = 5,   --Slots open to fill with a hero.
+		total_slots = 3,       --Max number of concurrent slots. Set at the start of the GC and never change.
+		free_hero_slots = 3,   --Slots open to fill with a hero.
 		vacant_hero_slots = 0, --Slots that need another action to move to free.
 		vacant_limit = 22,      --Number of times a lost slot becomes a vacant slot (rather than remaining lost forever).
 		initialized = false,
@@ -116,8 +116,8 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	}
 	
 	moff_data = {
-		total_slots = 2,			--Max slot number. Set at the start of the GC and never change
-		free_hero_slots = 2,		--Slots open to buy
+		total_slots = 1,			--Max slot number. Set at the start of the GC and never change
+		free_hero_slots = 1,		--Slots open to buy
 		vacant_hero_slots = 0,	    --Slots that need another action to move to free
 		vacant_limit = 12,           --Number of times a lost slot can be reopened
 		initialized = false,
@@ -833,6 +833,11 @@ end
 function RepublicHeroes:Venator_Heroes()
 	--Logger:trace("entering RepublicHeroes:Venator_Heroes")
 	if not Venator_init then
+		admiral_data.total_slots = admiral_data.total_slots + 1
+		admiral_data.free_hero_slots = admiral_data.free_hero_slots + 1
+
+		moff_data.total_slots = moff_data.total_slots + 1
+		moff_data.free_hero_slots = moff_data.free_hero_slots + 1
 		Handle_Hero_Add("Yularen", admiral_data)
 		Handle_Hero_Add("Wieler", admiral_data)
 		Handle_Hero_Add("Coburn", admiral_data)
@@ -918,6 +923,8 @@ function Vill_Check()
 end
 
 function RepublicHeroes:VSD_Heroes()
+	admiral_data.total_slots = admiral_data.total_slots + 1
+	admiral_data.free_hero_slots = admiral_data.free_hero_slots + 1
 	--Logger:trace("entering RepublicHeroes:VSD_Heroes")
 	Handle_Hero_Add("Dodonna", admiral_data)
 	Handle_Hero_Add("Screed", admiral_data)

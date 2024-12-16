@@ -367,6 +367,7 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, hero_cl
 	Tenant_Checks = 0
 	
 	Venator_init = false
+	VSD_init = false
 
 	Forral_Checks = 0
 end
@@ -923,16 +924,19 @@ function Vill_Check()
 end
 
 function RepublicHeroes:VSD_Heroes()
-	admiral_data.total_slots = admiral_data.total_slots + 1
-	admiral_data.free_hero_slots = admiral_data.free_hero_slots + 1
-	--Logger:trace("entering RepublicHeroes:VSD_Heroes")
-	Handle_Hero_Add("Dodonna", admiral_data)
-	Handle_Hero_Add("Screed", admiral_data)
-	Handle_Hero_Add("Praji", moff_data)
-	Handle_Hero_Add("Ravik", moff_data)
-	
-	RepublicHeroes:Add_Fighter_Set("Arhul_Narra_Location_Set")
-	RepublicHeroes:Add_Fighter_Set("Jag_ARC170_Location_Set")
+	if not VSD_init then
+		admiral_data.total_slots = admiral_data.total_slots + 1
+		admiral_data.free_hero_slots = admiral_data.free_hero_slots + 1
+		--Logger:trace("entering RepublicHeroes:VSD_Heroes")
+		Handle_Hero_Add("Dodonna", admiral_data)
+		Handle_Hero_Add("Screed", admiral_data)
+		Handle_Hero_Add("Praji", moff_data)
+		Handle_Hero_Add("Ravik", moff_data)
+		
+		RepublicHeroes:Add_Fighter_Set("Arhul_Narra_Location_Set")
+		RepublicHeroes:Add_Fighter_Set("Jag_ARC170_Location_Set")
+	end
+	VSD_init = true
 end
 
 function RepublicHeroes:VSD2_Heroes()

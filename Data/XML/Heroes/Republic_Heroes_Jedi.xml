@@ -13326,8 +13326,6 @@
 
 			<Unit_Ability>
 				<Type>FORCE_CONFUSE</Type>
-				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_MALACIA</Alternate_Name_Text>
-				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_MALACIA_DESCRIPTION</Alternate_Description_Text>
 				<Alternate_Icon_Name>I_SA_MIND_TRICK.tga</Alternate_Icon_Name>
 				<Recharge_Seconds>40.0</Recharge_Seconds>
 				<GUI_Activated_Ability_Name> Oppo_Confuse </GUI_Activated_Ability_Name> 

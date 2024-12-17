@@ -2976,6 +2976,7 @@ TEXT_HERO_RANDOM_PIRATE_DEFAULT,[ Low Tier ]
 TEXT_HERO_RANDOM_PIRATE_HEAVY,[ Heavy Tier ]
 TEXT_HERO_RANDOM_PIRATE_LEGEND,[ Legend Tier ]
 TEXT_HERO_RAVIK,Ravik
+TEXT_HERO_REFORM_HUNTER_SQUADRON,Reform Hunter Squadron
 TEXT_HERO_REFORM_SQUAD_SEVEN,Reform Squad Seven
 TEXT_HERO_RENTHAL,Drea Renthal
 TEXT_HERO_RESHUL,Reshul
@@ -12620,8 +12621,8 @@ TEXT_TOOLTIP_COMMAND_GUNGAN_GLORY,Z-95 Squadron, Gungan Glory Squadron
 TEXT_TOOLTIP_COMMAND_HARMZUAY,Kaloth Battlecruiser, Harmzuay
 TEXT_TOOLTIP_COMMAND_HAUSER,Modified Dreadnaught Heavy Cruiser, Ultrachrome
 TEXT_TOOLTIP_COMMAND_HOUNDSTOOTH,Modified YV-666 Light Freighter, Hound's Tooth
-TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95,Republic Z-95 Headhunter Squadron, Hunter Squadron
-TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT,V-19 Torrent Squadron, Hunter Squadron
+TEXT_TOOLTIP_COMMAND_HUNTER_REPUBLIC_Z95,Hunter Squadron (Republic Z-95s in space, LAAT on ground)
+TEXT_TOOLTIP_COMMAND_HUNTER_TORRENT,Hunter Squadron (V-19 Torrents in space, LAAT on ground)
 TEXT_TOOLTIP_COMMAND_IMRU_OOTMIAN,Light Minstrel Yacht, Imru Ootmian
 TEXT_TOOLTIP_COMMAND_INSTINCTION,Lucrehulk Battle Carrier, Instinction
 TEXT_TOOLTIP_COMMAND_INTEGRITY,Modified Venator Star Destroyer, Integrity
@@ -15978,6 +15979,7 @@ TEXT_TOOLTIP_ULAV_WEAP1,1x AV Blaster Cannon: 2 / 2.0s / 320m
 TEXT_TOOLTIP_ULAV_WEAP2,1x AI Blaster Cannon (AOE): 3 / 1.0s / 320m
 TEXT_TOOLTIP_ULAV_WEAP3,1x Concussion Missile: 1 / 15.0s / 320m
 TEXT_TOOLTIP_UMBARAN_FRIGATE,A fleet tender designed by the government of Umbara, this frigate is able to supply and reinforce CIS cruisers in battle and provide reapirs to fighter groups.
+TEXT_TOOLTIP_UMBARAN_FRIGATE_HULL,Hull: 2040 (Frigate)
 TEXT_TOOLTIP_UMBARAN_FRIGATE_MOVE,Speed: 3.25 | Accel: 1.5 | Turn: 0.3
 TEXT_TOOLTIP_UMBARAN_FRIGATE_SHIELD,Shields: 1300 [19.25/R] (Frigate)
 TEXT_TOOLTIP_UMBARAN_FRIGATE_WEAP1,4x Light Turbolasers 2 / 1.0s / 5.1 km

@@ -102,7 +102,7 @@
 		<Text_ID>TEXT_UNIT_OFC_SPHA_T_REFIT</Text_ID>
 		<Lua_Script>DelayedSelfDelete</Lua_Script>
 		<Affiliation>Empire</Affiliation>
-		<Icon_Name>i_button_jedi_Cruiser_rep_OFC_SPHA_T.tga</Icon_Name>
+		<Icon_Name>i_button_jedi_Cruiser_rep_SPHAT.tga</Icon_Name>
 
 		<Tech_Level>4</Tech_Level>
 		

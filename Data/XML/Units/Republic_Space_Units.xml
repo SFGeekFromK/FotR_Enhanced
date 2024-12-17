@@ -4094,7 +4094,7 @@
 		  Venator_Bay, Venator_Engines, HP_Venator_01, HP_Venator_02, HP_Venator_03, HP_Venator_04, HP_Venator_05, HP_Venator_06, HP_Venator_07, HP_Venator_08, HP_Venator_Turret_01, HP_Venator_Turret_02, HP_Venator_Turret_03, HP_Venator_Turret_04, Yularen_Venator_Bay_SPHAT
 		</HardPoints>
 		<Tech_Level>99</Tech_Level>
-		<Icon_Name>i_button_jedi_Cruiser_rep_OFC_SPHA_T.tga</Icon_Name>
+		<Icon_Name>i_button_jedi_Cruiser_rep_SPHAT.tga</Icon_Name>
 		
 		<Death_Clone>Damage_Normal, Venator_OFC_Death_Clone</Death_Clone>
 		

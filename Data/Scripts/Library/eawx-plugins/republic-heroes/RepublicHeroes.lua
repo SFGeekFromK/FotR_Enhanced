@@ -768,8 +768,8 @@ function RepublicHeroes:on_galactic_hero_killed(hero_name, owner)
 	elseif hero_name == "WARTHOG_P1_TEAM" or hero_name == "WARTHOG_P2_TEAM" then
 		if admiral_data.active_player.Is_Human() then
 			RepublicHeroes:Add_Fighter_Set("Reform_Hunter_Squadron")
-			UnitUtil.SetBuildable(admiral_data.active_player, "Odd_Ball_Torrent_Location_Set", false)
-			UnitUtil.SetBuildable(admiral_data.active_player, "Odd_Ball_ARC170_Location_Set", false)
+			UnitUtil.SetBuildable(admiral_data.active_player, "Warthog_Torrent_Location_Set", false)
+			UnitUtil.SetBuildable(admiral_data.active_player, "Warthog_Republic_Z95_Location_Set", false)
 			Clear_Fighter_Hero("WARTHOG_TORRENT_HUNTER_SQUADRON")
 			Clear_Fighter_Hero("WARTHOG_REPUBLIC_Z95_HUNTER_SQUADRON")
 			StoryUtil.ShowScreenText("Hunter Squadron has taken crippling casualties and must be reformed.", 5, nil, {r = 244, g = 244, b = 0})

@@ -13328,7 +13328,7 @@
 				<Type>FORCE_CONFUSE</Type>
 				<Alternate_Icon_Name>I_SA_MIND_TRICK.tga</Alternate_Icon_Name>
 				<Recharge_Seconds>40.0</Recharge_Seconds>
-				<GUI_Activated_Ability_Name> Oppo_Confuse </GUI_Activated_Ability_Name> 
+				<GUI_Activated_Ability_Name> Oppo_Force_Confuse </GUI_Activated_Ability_Name> 
 				<Effective_Radius> 500.0 </Effective_Radius>
 				<SFXEvent_GUI_Unit_Ability_Activated> </SFXEvent_GUI_Unit_Ability_Activated>
 				<Supports_Autofire>True</Supports_Autofire>

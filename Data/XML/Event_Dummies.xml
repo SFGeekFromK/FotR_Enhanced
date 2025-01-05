@@ -407,7 +407,8 @@
 		<Encyclopedia_Text>TEXT_EVENT_TOOLTIP_FIGHTER_SELECTOR </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
 
-		<Icon_Name>i_button_autem.tga</Icon_Name>
+		<!--<Icon_Name>i_button_autem.tga</Icon_Name>-->
+		<Icon_Name>i_button_autem_alt.tga</Icon_Name>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 	</DummyStructure>
 

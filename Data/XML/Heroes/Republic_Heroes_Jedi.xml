@@ -1057,7 +1057,7 @@
 				<Target_Particle_Bone_Name />
 			</Earthquake_Attack_Ability>
 
-		   <Redirect_Blaster_Ability Name="Anakin_Redirect_Blaster">
+		   	<Redirect_Blaster_Ability Name="Anakin_Redirect_Blaster">
 				<Activation_Style>Take_Damage</Activation_Style>
 				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
 				<Redirect_Chance>0.5</Redirect_Chance>
@@ -6658,16 +6658,16 @@
 		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes"> 
 
-			 <Unit_Ability>
-						<Type>FORCE_CLOAK</Type>
-						<Recharge_Seconds>50.0</Recharge_Seconds>
+			<Unit_Ability>
+				<Type>FORCE_CLOAK</Type>
+				<Recharge_Seconds>50.0</Recharge_Seconds>
 				<Expiration_Seconds>25.0</Expiration_Seconds>
-						<GUI_Activated_Ability_Name>Aayla_Force_Cloak</GUI_Activated_Ability_Name> 
+				<GUI_Activated_Ability_Name>Aayla_Force_Cloak</GUI_Activated_Ability_Name> 
 				<SFXEvent_GUI_Unit_Ability_Activated> Unit_ability_Aayla_Secura</SFXEvent_GUI_Unit_Ability_Activated>
 				<Effective_Radius> 500.0 </Effective_Radius>
-					</Unit_Ability>
+			</Unit_Ability>
 
-			</Unit_Abilities_Data>
+		</Unit_Abilities_Data>
 
 		<Abilities SubObjectList="Yes">
 		
@@ -6716,7 +6716,7 @@
 				<Target_Particle_Bone_Name />
 			</Earthquake_Attack_Ability>
 
-		   <Redirect_Blaster_Ability Name="Aayla_Secura_Redirect_Blaster">
+		   	<Redirect_Blaster_Ability Name="Aayla_Secura_Redirect_Blaster">
 				<Activation_Style>Take_Damage</Activation_Style>
 				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
 				<Redirect_Chance>0.5</Redirect_Chance>
@@ -12959,7 +12959,7 @@
 		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
 		<SFXEvent_Build_Complete>Unit_Complete_Anakin_Skywalker</SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned>Unit_Complete_Anakin_Skywalker</SFXEvent_Hero_Respawned>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Anakin_Skywalker</SFXEvent_Fleet_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Vader</SFXEvent_Fleet_Move>
 
 		<CategoryMask> LandHero | SpaceHero </CategoryMask>
 		<Ranking_In_Category> 3 </Ranking_In_Category>
@@ -13050,7 +13050,7 @@
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
 		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_A_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
 
-		<Create_Team>No</Create_Team>
+		<Create_Team>Yes</Create_Team>
 		<Damage>1</Damage>
 		<AI_Combat_Power>80</AI_Combat_Power>
 		<Population_Value>0</Population_Value>	
@@ -13328,7 +13328,7 @@
 				<Type>FORCE_CONFUSE</Type>
 				<Alternate_Icon_Name>I_SA_MIND_TRICK.tga</Alternate_Icon_Name>
 				<Recharge_Seconds>40.0</Recharge_Seconds>
-				<GUI_Activated_Ability_Name> Oppo_Force_Confuse </GUI_Activated_Ability_Name> 
+				<GUI_Activated_Ability_Name>Oppo_Force_Confuse</GUI_Activated_Ability_Name> 
 				<Effective_Radius> 500.0 </Effective_Radius>
 				<SFXEvent_GUI_Unit_Ability_Activated> </SFXEvent_GUI_Unit_Ability_Activated>
 				<Supports_Autofire>True</Supports_Autofire>
@@ -13447,8 +13447,8 @@
 				<Activation_Style> Special_Attack </Activation_Style>
 				<Activation_Min_Range>0.0</Activation_Min_Range>
 				<Activation_Max_Range>120.0</Activation_Max_Range>
-				<Berserker_Speed>5.0</Berserker_Speed>
-				<Berserker_Damage>35.0</Berserker_Damage>
+				<Berserker_Speed>2.0</Berserker_Speed>
+				<Berserker_Damage>20.0</Berserker_Damage>
 				<Berserker_Damage_Range>12.0</Berserker_Damage_Range>
 				<Berserker_Duration_In_Secs>6.0</Berserker_Duration_In_Secs>
 				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
@@ -13544,7 +13544,7 @@
 		<Company_Units>Oppo_Rancisis</Company_Units>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
-		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Available_In_Skirmish>no</Available_In_Skirmish>
 		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
 		<Can_Be_Only_One>true</Can_Be_Only_One>
 		<Is_Buildable>Yes</Is_Buildable>
@@ -13579,12 +13579,13 @@
 
 
 			<Unit_Ability>
-				<Type>FORCE_SIGHT</Type>
-				<Recharge_Seconds>50.0</Recharge_Seconds>
-				<GUI_Activated_Ability_Name> Oppo_Force_Sight </GUI_Activated_Ability_Name> 
+				<Type>FORCE_CONFUSE</Type>
+				<Alternate_Icon_Name>I_SA_MIND_TRICK.tga</Alternate_Icon_Name>
+				<Recharge_Seconds>40.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Oppo_Force_Confuse</GUI_Activated_Ability_Name> 
 				<Effective_Radius> 500.0 </Effective_Radius>
-				<SFXEvent_GUI_Unit_Ability_Activated> Unit_ability_forcevision_Master_Yoda </SFXEvent_GUI_Unit_Ability_Activated> 
-				<SFXEvent_Special_Ability_Loop> Unit_Yoda_Force_Sight_Loop </SFXEvent_Special_Ability_Loop> 			
+				<SFXEvent_GUI_Unit_Ability_Activated> </SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
 			
 			<Unit_Ability>
@@ -13711,13 +13712,13 @@
 		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Vader </SFXEvent_Health_Critical_Warning>
 		<Death_SFXEvent_Start_Die> Unit_Defeat_Vader </Death_SFXEvent_Start_Die> 
 
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Anakin_Skywalker </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Vader </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Vader </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Vader </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Vader </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Vader </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Vader </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Vader </SFXEvent_Attack_Hardpoint>
 		
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Exactor_Combat_Bonus">
